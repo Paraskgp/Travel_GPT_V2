@@ -64,18 +64,15 @@ export default function Home() {
       })
       if (!genRes.ok) throw new Error(await genRes.text())
       const { board: raw }: { board: Board } = await genRes.json()
-      // Deduplicate globally by ID and normalized name (LLM repeats across themes despite instructions)
+      // Deduplicate by ID (LLM occasionally repeats the same id across themes)
       const seenIds = new Set<string>()
-      const seenNames = new Set<string>()
       const generated: Board = {
         ...raw,
         themes: raw.themes.map(t => ({
           ...t,
           experiences: t.experiences.filter(e => {
-            const normName = e.name.toLowerCase().replace(/[^a-z0-9]/g, '')
-            if (seenIds.has(e.id) || seenNames.has(normName)) return false
+            if (seenIds.has(e.id)) return false
             seenIds.add(e.id)
-            seenNames.add(normName)
             return true
           }),
         })).filter(t => t.experiences.length > 0),

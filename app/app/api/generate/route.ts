@@ -98,10 +98,24 @@ export async function POST(
     )
   )
 
+  const seenIds = new Set<string>()
+  const seenNames = new Set<string>()
+
   const themes: Theme[] = []
   themeResults.forEach((result, i) => {
     if (result.status === "fulfilled") {
-      themes.push(result.value)
+      const theme = result.value
+      const deduped = theme.experiences.filter(e => {
+        const normId = e.id.trim().toLowerCase()
+        const normName = e.name.trim().toLowerCase()
+        if (seenIds.has(normId) || seenNames.has(normName)) return false
+        seenIds.add(normId)
+        seenNames.add(normName)
+        return true
+      })
+      if (deduped.length > 0) {
+        themes.push({ ...theme, experiences: deduped })
+      }
     } else {
       console.warn(`[/api/generate] theme "${applicableThemes[i]}" failed:`, result.reason)
     }

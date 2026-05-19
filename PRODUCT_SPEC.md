@@ -1,314 +1,240 @@
 # TravelGPT — Product Specification
 
-**Version:** 0.2 · **Status:** Draft for review
+**Version:** 0.4 · **Status:** Phase 2 shipped and deployed
 
 ---
 
-## Phasing Overview
+## Status Snapshot (as of May 2026)
 
-| Phase | What it does | External dependencies |
+| Phase | What it does | Status |
 |---|---|---|
-| **1.0** | Destination input → LLM → themed experience cards → JSON API | Claude only |
-| **1.1** | Enrich each card with real-world data (photos, reviews, coordinates) | Google Places API |
-| **2** | Stateless UI consuming the Phase 1 API | None beyond Phase 1 |
-| **3** | Persistence — saved trips, preferences, history | Supabase / PostgreSQL |
+| **1.0** | Destination input → LLM → themed experience cards → JSON API | ✅ Shipped |
+| **1.1** | Enrich each card with photos, ratings, coordinates (Google Places) | ✅ Shipped |
+| **2** | Stateless UI — board, map, spirit, weather, shortlist | ✅ Shipped (Vercel) |
+| **2.5** | Prompt quality pass — destination specificity, location accuracy | 🔜 Next |
+| **3** | Itinerary planning — day-by-day schedule from shortlisted experiences | 🔜 Next |
+| **4** | Persistence — saved trips, user accounts, board caching | Later |
 
-Each phase is a working, shippable product. Later phases layer on top without breaking earlier ones.
+Live at: Vercel deployment (connected to GitHub `main` branch — auto-deploys on push).
+Repo: `github.com/Paraskgp/Travel_GPT_V2`
 
 ---
 
-## Phase 1.0 — LLM-Powered Experience Board (Backend Only)
+## What Is Built (Phase 1.0 + 1.1 + 2)
+
+### User flow
+
+1. **Welcome screen** — landing page, single CTA to start
+2. **Input form** — destination (required) + travel month (optional) + preferences (dietary, interests, party type, budget, pace, duration)
+3. **Loading state** — "Building your board…" spinner while LLM generates
+4. **Board** — four tabs:
+   - **Experiences** — themed accordion sections, each with a horizontal card tray
+   - **Spirit** — destination soul, defining pillars, best-for chips, honest notes
+   - **Weather** — 12-month climate table; travel month row highlighted
+   - **Map** — muted Google Maps with pins for enriched experiences
+5. **Experience detail drawer** — slides in from right on card click: photo, rating, full description, tips, action buttons
+6. **Shortlist** — ♥ like or ✕ dismiss any card; liked count shown in header; persists in `localStorage`
+
+### API surface
+
+```
+POST /api/generate    → Board JSON (LLM-powered, ~15–45s)
+POST /api/enrich      → Enriched experience list (Google Places, fire-and-forget from UI)
+GET  /api/places-photo?ref=... → Proxied photo from Places API (keeps key server-side)
+```
+
+---
+
+## LLM Pipeline Architecture
+
+The generate call is a **4-node fan-out**:
+
+```
+User input
+    │
+    ├─► Node 1: Destination Context  ─────┐
+    │   (soul, pillars, themes to run)    │
+    │                                     ├─► (parallel)
+    └─► Node 2: Weather Context  ─────────┘
+               (12-month climate data)
+                    │
+                    ▼
+        Fan out to N Theme Calls (parallel)
+        ├─► signature
+        ├─► unique_local
+        ├─► food_drink
+        ├─► culture
+        ├─► nature
+        └─► ... (LLM selects 6–10 themes per destination)
+                    │
+                    ▼
+        Server-side deduplication
+        (exact name match across themes)
+                    │
+                    ▼
+             Board JSON → client
+                    │
+                    ▼ (background, fire-and-forget)
+        /api/enrich (Google Places for mappable experiences)
+```
+
+**LLM:** OpenAI `gpt-4o` by default. Anthropic `claude-sonnet-4-6` supported via `provider` param.
+**Timeout:** `maxDuration = 180s` on the generate route (Vercel Pro limit).
+
+---
+
+## Prompt Architecture
+
+Three layers of prompt files (in `app/prompts/`):
+
+| File | Purpose |
+|---|---|
+| `system.md` | Core curator persona, de-duplication rules, cross-theme uniqueness, output schema |
+| `destination-context.md` | Prompt for Node 1 — generates soul, pillars, applicable_themes, honest_notes |
+| `weather-context.md` | Prompt for Node 2 — generates 12-month climate table + travel implications |
+| `themes/*.md` | One file per theme — specific instructions for what makes a good card in that category |
+
+---
+
+## Experience Card Schema (as shipped)
+
+Key fields on each experience card:
+
+| Field | Notes |
+|---|---|
+| `id` | kebab-case, unique per board |
+| `name` | Clean display name |
+| `short_description` | 1–2 punchy sentences for the card |
+| `long_description` | 2–3 paragraphs for the detail drawer |
+| `duration`, `effort`, `cost_band`, `booking_difficulty` | Metadata chips |
+| `best_time`, `local_tip`, `watch_out_for` | Specificity fields |
+| `location_hint` | Specific named place for Google Maps pin |
+| `is_mappable` | true if location_hint resolves to a single Maps pin |
+| `places_enrichment` | Populated by /api/enrich: coordinates, photo_url, rating, review_count, maps_url |
+| `personalization_note` | Conflict with user prefs, or null |
+| `tags`, `who_for`, `dietary_flags`, `suitability_tags` | Filtering metadata |
+
+---
+
+## Cross-Theme De-duplication
+
+Because all theme calls run in **parallel**, the LLM cannot know what other themes will generate. Two-layer fix:
+
+1. **System prompt rule:** "Each experience must appear in at most one theme."
+2. **Server-side post-processing:** After all theme calls complete, iterate themes in order; filter any experience whose `name.trim().toLowerCase()` was already seen in an earlier theme. Empty themes are dropped.
+
+Client keeps only ID-based dedup as a last resort (if LLM generates the same `id` twice).
+
+---
+
+## Phase 2.5 — Prompt Quality Pass (Next)
+
+The biggest quality lever right now is prompt accuracy for **location specificity** and **destination handling**.
+
+### Problem areas
+
+**1. location_hint quality**
+The map is only as good as the Places search that powers it. When `location_hint` is vague (e.g., "Higashiyama district" instead of "Kiyomizu-dera Temple"), the Places lookup returns a low-confidence or wrong match — or nothing. This leaves pins missing from the map.
+
+Fix direction:
+- Tighten the `location_hint` rule in `system.md` to require a specific named place, building, or street corner — never a neighborhood or area
+- Add a confidence check in `/api/enrich`: if Places Text Search confidence is below threshold, return `null` rather than a wrong pin
+- Consider a second LLM call to rewrite vague location hints into specific place names before sending to Places
+
+**2. Destination disambiguation**
+"Seattle" and "Seattle, WA" work fine. But "Pacific Northwest" or "Tuscany" or "Greek Islands" are regions — the LLM tends to spread cards across a huge geography, making the map and experience specificity worse.
+
+Fix direction:
+- Classify destination type (city / island / region / national park / neighborhood) in Node 1 (destination context)
+- For regions: either (a) ask the user to pick a base city, or (b) generate sub-region sections with anchored locations
+- For neighborhoods: zoom the board down to walking distance, skip day trip themes
+
+**3. Theme quality per destination type**
+Some themes are applied where they don't fit (e.g., "Hiking & Outdoors" for a dense city like Tokyo where "Hiking" means something very different than Yosemite hiking).
+
+Fix direction:
+- Add destination-type-aware theme filtering to the destination context prompt
+- Add theme-specific examples in the per-theme prompt files that distinguish city vs. nature vs. island contexts
+
+---
+
+## Phase 3 — Itinerary Planning
 
 ### What it is
 
-A single API endpoint. The user sends a destination and optional trip context. The API returns a structured JSON board of themed experience categories, each containing 10–15 curated experience cards. No database. No external search. One round-trip to Claude.
+After a user has shortlisted experiences from their board (via ♥ likes), they click **"Plan my trip"**. The system takes their liked experiences and generates a **day-by-day itinerary** that:
 
-### Why this works without web search
+- Groups experiences geographically (minimize travel time within each day)
+- Respects timing constraints (morning experiences first, evening ones last)
+- Respects effort level (doesn't front-load strenuous activities)
+- Fills gaps with travel time estimates and meal suggestions
+- Fits within the user's stated trip duration
 
-Claude has deep embedded knowledge about destinations worldwide — major experiences, food scenes, local timing, seasonal patterns, what gets overcrowded, what is underrated. The value in Phase 1.0 is not sourcing new information. It is:
+### Inputs
 
-1. **Prompt design** — asking Claude the right questions in the right structure
-2. **Context gathering** — collecting enough user context upfront to personalize well
-3. **De-duplication** — prompting Claude to produce one canonical experience, not 12 operator variants
-4. **Output structure** — returning a consistent, typed JSON schema the UI can rely on
+- Liked experiences from the board (already have location coordinates, effort, duration, best_time)
+- Trip duration (days) — already collected in preferences
+- Base accommodation area (new input — needed for day-by-day geography grouping)
 
-The knowledge cutoff is an acceptable trade-off for Phase 1.0. Major destination experiences are stable. Freshness (new openings, closures, updated hours) is a Phase 1.1 concern handled by Google Places grounding.
-
----
-
-### API Contract
-
-#### Endpoint
+### New API endpoint
 
 ```
-POST /api/generate
+POST /api/plan
 ```
 
-#### Request Body
-
+Request:
 ```json
 {
-  "destination": "Big Island, Hawaii",
-  "preferences": {
-    "dietary": ["vegetarian"],
-    "interests": ["hiking", "food", "nature"],
-    "party_type": "couple",
-    "pace": "moderate",
-    "budget": "mid",
-    "duration_days": 7,
-    "avoid": ["large crowds", "alcohol-centered"]
-  }
+  "destination": "Kyoto, Japan",
+  "experiences": [...liked experience cards...],
+  "duration_days": 5,
+  "base_area": "Gion district"
 }
 ```
 
-`destination` is required. `preferences` is optional — the API returns a useful board even with just a destination name.
-
-#### Response Shape
-
+Response:
 ```json
 {
-  "destination": "Big Island, Hawaii",
-  "destination_summary": "One or two sentences describing what makes this destination worth visiting and what defines it.",
-  "themes": [
+  "days": [
     {
-      "id": "adventure",
-      "name": "Adventure",
-      "description": "One sentence describing this theme for this destination.",
-      "experiences": [
-        {
-          "id": "manta-ray-night-snorkel",
-          "name": "Manta Ray Night Snorkel",
-          "summary": "One sentence.",
-          "why_worth_it": "Why this experience matters for this destination.",
-          "who_for": ["couples", "adventure seekers", "snorkelers"],
-          "who_skip": "Not suitable for non-swimmers or anyone prone to seasickness.",
-          "duration_hours": { "min": 2, "max": 3 },
-          "effort": "moderate",
-          "cost_band": "mid",
-          "booking_difficulty": "reserve_ahead",
-          "best_time": "evening",
-          "avoid_when": "Rough seas — check conditions day-of.",
-          "seasonal_notes": "Year-round, but manta activity peaks October–April.",
-          "local_tip": "Kona side departures are more reliable than Kohala; book 2–3 weeks out.",
-          "what_to_bring": ["swimsuit", "motion sickness band", "cash for tip"],
-          "common_variants": "Some tours are snorkel-only, others offer scuba. Most include gear.",
-          "watch_out_for": "Operators vary significantly in group size and guide quality.",
-          "nearby_pairings": ["Magic Sands Beach", "Kona coffee farm visit"],
-          "dietary_flags": [],
-          "suitability_tags": ["romantic", "adventure", "night"],
-          "personalization_note": null
-        }
-      ]
+      "day": 1,
+      "label": "Eastern Kyoto",
+      "experiences": [...ordered experience list...],
+      "notes": "Heavy on temples — wear comfortable shoes."
     }
   ]
 }
 ```
 
-`personalization_note` is populated when a card conflicts with preferences. Example: `"Contains meat — flagged for vegetarian preference."` It is `null` when there is no conflict.
+### UI
+
+- New **Itinerary tab** in the board view (next to Spirit / Weather / Experiences / Map)
+- Only active once the user has ≥ 3 liked experiences
+- Day cards, each with an ordered list of experiences
+- Each experience shows time estimate, travel time to next
+- Export options: copy as text, PDF (later)
+
+### CTA placement
+
+A **"Plan my trip →"** button appears in the header once ≥ 3 experiences are liked. Currently shown in the liked count chip area. Clicking it navigates to the Itinerary tab and triggers the `/api/plan` call.
 
 ---
 
-### Themes
+## Phase 4 — Persistence
 
-The LLM selects and orders themes based on the destination type. It does not return every theme for every destination — a national park will not have a nightlife theme; a beach town may not have an arts theme.
+Deferred until Phase 3 is validated. Adds:
 
-**Available theme pool:**
-
-| Theme ID | Name |
-|---|---|
-| `signature` | Signature Experiences |
-| `unique_local` | Unique & Local |
-| `food_drink` | Food & Drink |
-| `food_crawls` | Food Crawls, Markets & Neighborhoods |
-| `adventure` | Adventure |
-| `nature` | Nature & Scenic |
-| `hiking` | Hiking & Outdoors |
-| `culture` | Culture & History |
-| `arts` | Arts & Workshops |
-| `family` | Family-Friendly |
-| `romantic` | Romantic & Special Occasion |
-| `rainy_day` | Rainy Day |
-| `nightlife` | Nightlife |
-| `shopping` | Shopping & Markets |
-| `day_trips` | Day Trips |
-| `seasonal` | Seasonal & Time-Bound |
-
-**Per theme:** 10–15 experience cards, ranked by relevance to the destination and the user's preferences.
-
----
-
-### Prompt Design (Phase 1.0 Core Work)
-
-The prompt pipeline has three responsibilities:
-
-**1. Theme selection**
-Given the destination and its type (city, island, national park, etc.), determine which themes apply and in what order.
-
-**2. Experience generation**
-For each theme, generate 10–15 canonical, de-duplicated experience cards. The prompt must explicitly instruct Claude to:
-- Produce one card per underlying experience, not per operator
-- Include local timing, crowd, and packing intelligence — not generic descriptions
-- Flag dietary and suitability conflicts with the user's preferences
-- Be specific: "arrive before 7am" beats "go early"
-
-**3. Structured output**
-Return valid JSON matching the schema above. Use Claude's structured output / tool-use mode to guarantee schema compliance.
-
----
-
-### What Phase 1.0 Does Not Do
-
-- No web search or live data retrieval
-- No database reads or writes
-- No authentication
-- No photo or review data (Phase 1.1)
-- No itinerary generation (later phase)
-- No caching (acceptable for alpha; added in Phase 3)
-
----
-
-## Phase 1.1 — Google Places Grounding
-
-### What it adds
-
-After Phase 1.0 generates experience cards, Phase 1.1 enriches each card with real-world data from the Google Places API. This grounds the LLM output and adds:
-
-- **Photos** (up to 3 per experience)
-- **Star rating** and **review count**
-- **Opening hours**
-- **Address / coordinates** (for mapping later)
-- **Google Maps link**
-- **Price level** (cross-reference against Claude's `cost_band`)
-
-### How it works
-
-A separate enrichment step runs after generation. For each experience card, the API:
-
-1. Constructs a Places search query: `"{experience name} {destination}"` (e.g., `"Manta Ray Night Snorkel Kona Hawaii"`)
-2. Calls Places API Text Search → gets top match
-3. Calls Places API Details → gets photos, hours, rating, coordinates
-4. Attaches the enrichment payload to the card
-
-### Enrichment fields added to each card
-
-```json
-{
-  "places_enrichment": {
-    "place_id": "ChIJ...",
-    "photos": ["url1", "url2", "url3"],
-    "rating": 4.7,
-    "review_count": 312,
-    "opening_hours": ["Mon: 8am–6pm", "..."],
-    "address": "123 Kona Bay Dr, Kailua-Kona, HI",
-    "coordinates": { "lat": 19.6400, "lng": -155.9969 },
-    "maps_url": "https://maps.google.com/?cid=...",
-    "price_level": 2
-  }
-}
-```
-
-`places_enrichment` is `null` for cards where no confident Places match is found. The card still works without it.
-
-### New endpoint
-
-```
-POST /api/enrich
-```
-
-```json
-{
-  "experiences": [
-    { "id": "manta-ray-night-snorkel", "name": "Manta Ray Night Snorkel", "destination": "Big Island, Hawaii" }
-  ]
-}
-```
-
-Returns the same list with `places_enrichment` populated where available.
-
-Alternatively, `/api/generate` can accept an `enrich: true` flag to run both steps in sequence and return a fully enriched board in one call.
-
----
-
-## Phase 2 — Stateless UI
-
-### What it is
-
-A Next.js frontend that consumes the Phase 1 API and renders the experience board. No database. No authentication. All user state lives in `localStorage`.
-
-### What the UI does
-
-- Search input: user types a destination
-- Optional preferences panel: dietary, interests, party type, pace, budget, trip length
-- Board renders themed category rows, each with 10–15 experience cards
-- User can select (keep) or dismiss each card
-- Selected cards accumulate in a shortlist panel
-- At the end: "Plan my itinerary" CTA (disabled / coming soon in Phase 2)
-- Preferences and selections persist in `localStorage` — lost on clearing browser
-
-### What Phase 2 does not do
-
-- No user accounts
-- No server-side state
-- No sharing
-- No itinerary generation
-
----
-
-## Phase 3 — Persistence
-
-### What it adds
-
-- Supabase PostgreSQL database
-- User authentication (Supabase Auth, magic link)
-- Saved trips and shortlists
-- Preference profiles that persist across devices
-- Board caching (generated boards stored so Claude is not re-called on every visit)
-- Shareable shortlist links
-- Historical trip archive
-
-This is where the data model from the earlier spec draft becomes relevant. It is out of scope until Phases 1 and 2 are validated.
-
----
-
-## Experience Card Fields (Full Reference)
-
-| Field | Type | Phase available |
-|---|---|---|
-| `id` | string | 1.0 |
-| `name` | string | 1.0 |
-| `summary` | string | 1.0 |
-| `why_worth_it` | string | 1.0 |
-| `who_for` | string[] | 1.0 |
-| `who_skip` | string | 1.0 |
-| `duration_hours` | {min, max} | 1.0 |
-| `effort` | easy / moderate / strenuous | 1.0 |
-| `cost_band` | free / budget / mid / premium | 1.0 |
-| `booking_difficulty` | walk_in / reserve_ahead / hard_to_get | 1.0 |
-| `best_time` | string | 1.0 |
-| `avoid_when` | string | 1.0 |
-| `seasonal_notes` | string | 1.0 |
-| `local_tip` | string | 1.0 |
-| `what_to_bring` | string[] | 1.0 |
-| `common_variants` | string | 1.0 |
-| `watch_out_for` | string | 1.0 |
-| `nearby_pairings` | string[] | 1.0 |
-| `dietary_flags` | string[] | 1.0 |
-| `suitability_tags` | string[] | 1.0 |
-| `personalization_note` | string or null | 1.0 |
-| `places_enrichment.photos` | string[] | 1.1 |
-| `places_enrichment.rating` | float | 1.1 |
-| `places_enrichment.review_count` | int | 1.1 |
-| `places_enrichment.opening_hours` | string[] | 1.1 |
-| `places_enrichment.address` | string | 1.1 |
-| `places_enrichment.coordinates` | {lat, lng} | 1.1 |
-| `places_enrichment.maps_url` | string | 1.1 |
-| `places_enrichment.price_level` | int | 1.1 |
+- Supabase PostgreSQL + Auth (magic link)
+- Board caching (don't re-call LLM for same destination)
+- Saved trips across devices
+- Shareable itinerary links
+- Preference profiles
 
 ---
 
 ## Open Questions
 
-1. **Single call vs. streaming:** Should `/api/generate` return everything at once (simpler) or stream themes one at a time as Claude generates them (better UX for slow connections)? Proposal: start with single call; add streaming in Phase 2 if latency is a problem.
-2. **Enrich flag vs. separate endpoint:** Should enrichment be an optional flag on `/api/generate` or always a separate `/api/enrich` call? Proposal: separate endpoint so Phase 1.0 stays clean and Phase 1.1 is truly additive.
-3. **How many themes per destination?** Proposal: 6–10, LLM-selected and ordered. Cap at 10 to avoid board overwhelm.
-4. **Itinerary CTA in Phase 2:** Show it as disabled with "coming soon" or hide it entirely? Proposal: show it disabled — sets user expectation for what's next.
+1. **Destination type classification:** Should we classify on the client (from the input string) or in Node 1 (LLM decides)? LLM classification is more robust but adds a small latency cost.
+2. **Itinerary LLM call:** One big call for the full itinerary, or one call per day? One call is simpler; per-day allows streaming individual days as they complete.
+3. **Accommodation input for itinerary:** Required field or best-effort from destination center? Required is more accurate but adds friction.
+4. **Map ↔ Itinerary integration:** Should the Map tab update to show the day-by-day route once an itinerary is generated?
