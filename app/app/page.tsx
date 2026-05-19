@@ -1,8 +1,7 @@
 'use client'
 
-import { useState, useCallback, useEffect } from 'react'
-import { Board, Experience, Preferences } from '@/lib/types'
-import { Shortlist, loadShortlist, saveShortlist, setStatus } from '@/lib/shortlist'
+import { useState, useCallback, useEffect, useMemo } from 'react'
+import { Board, Experience, Itinerary, Preferences } from '@/lib/types'
 import WelcomeScreen from '@/components/welcome/WelcomeScreen'
 import InputForm from '@/components/input/InputForm'
 import ThemeSection from '@/components/board/ThemeSection'
@@ -11,62 +10,101 @@ import SpiritView from '@/components/board/SpiritView'
 import WeatherTable from '@/components/board/WeatherTable'
 import MapView from '@/components/map/MapView'
 import MapErrorBoundary from '@/components/map/MapErrorBoundary'
+import ItineraryView from '@/components/itinerary/ItineraryView'
 
 type Stage = 'welcome' | 'input' | 'loading' | 'board'
 type Tab = 'spirit' | 'weather' | 'experiences' | 'map'
 
 export default function Home() {
-  const [stage, setStage] = useState<Stage>('welcome')
-  const [tab, setTab] = useState<Tab>('experiences')
-  const [board, setBoard] = useState<Board | null>(null)
-  const [loading, setLoading] = useState(false)
-  const [error, setError] = useState<string | null>(null)
-  const [shortlist, setShortlist] = useState<Shortlist>({})
+  const [stage, setStage]       = useState<Stage>('welcome')
+  const [tab, setTab]           = useState<Tab>('experiences')
+  const [board, setBoard]       = useState<Board | null>(null)
+  const [tripDates, setTripDates] = useState<{ startDate: string; endDate: string; arrivalTime: string; departureTime: string } | null>(null)
+  const [itinerary, setItinerary] = useState<Itinerary | null>(null)
+  const [planLoading, setPlanLoading] = useState(false)
+  const [loading, setLoading]   = useState(false)
+  const [error, setError]       = useState<string | null>(null)
   const [selected, setSelected] = useState<Experience | null>(null)
 
-  useEffect(() => {
-    setShortlist(loadShortlist())
-  }, [])
+  // User itinerary signals — accumulated between replans
+  const [forcedIds, setForcedIds]   = useState<Set<string>>(new Set())
+  const [skippedIds, setSkippedIds] = useState<Set<string>>(new Set())
 
-  const updateShortlist = useCallback((next: Shortlist) => {
-    setShortlist(next)
-    saveShortlist(next)
-  }, [])
+  // Derive which experience IDs are currently in the itinerary
+  const includedIds = useMemo<Set<string>>(() => {
+    if (!itinerary) return new Set()
+    const ids = new Set<string>()
+    for (const day of itinerary.days) {
+      for (const row of day.rows) {
+        if (row.experience_id) ids.add(row.experience_id)
+      }
+    }
+    return ids
+  }, [itinerary])
 
-  const handleLike = useCallback((id: string) => {
-    setShortlist(prev => {
-      const next = setStatus(prev, id, prev[id] === 'liked' ? null : 'liked')
-      saveShortlist(next)
-      return next
+  async function callPlan(
+    currentBoard: Board,
+    dates: { startDate: string; endDate: string; arrivalTime: string; departureTime: string },
+    forced: string[],
+    skipped: string[]
+  ): Promise<Itinerary | null> {
+    const res = await fetch('/api/plan', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        board: currentBoard,
+        start_date: dates.startDate,
+        end_date: dates.endDate,
+        arrival_time: dates.arrivalTime || undefined,
+        departure_time: dates.departureTime || undefined,
+        forced_ids: forced,
+        skipped_ids: skipped,
+      }),
     })
-  }, [])
+    if (!res.ok) throw new Error(await res.text())
+    const { itinerary: plan } = await res.json()
+    return plan
+  }
 
-  const handleDismiss = useCallback((id: string) => {
-    setShortlist(prev => {
-      const next = setStatus(prev, id, prev[id] === 'dismissed' ? null : 'dismissed')
-      saveShortlist(next)
-      return next
-    })
-  }, [])
-
-  async function handleGenerate(destination: string, month: string, prefs: Preferences) {
+  async function handleGenerate(
+    destination: string,
+    startDate: string,
+    endDate: string,
+    arrivalTime: string,
+    departureTime: string,
+    prefs: Preferences
+  ) {
     setLoading(true)
     setError(null)
     setStage('loading')
     setBoard(null)
+    setItinerary(null)
+    setForcedIds(new Set())
+    setSkippedIds(new Set())
+
+    const dates = startDate ? { startDate, endDate, arrivalTime, departureTime } : null
+    setTripDates(dates)
 
     try {
       // Step 1: generate board
       const genRes = await fetch('/api/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ destination, month: month || undefined, preferences: prefs }),
+        body: JSON.stringify({
+          destination,
+          ...(startDate     && { start_date: startDate }),
+          ...(endDate       && { end_date: endDate }),
+          ...(arrivalTime   && { arrival_time: arrivalTime }),
+          ...(departureTime && { departure_time: departureTime }),
+          preferences: prefs,
+        }),
       })
       if (!genRes.ok) throw new Error(await genRes.text())
       const { board: raw }: { board: Board } = await genRes.json()
-      // Deduplicate by ID (LLM occasionally repeats the same id across themes)
+
+      // Client-side ID dedup (safety net)
       const seenIds = new Set<string>()
-      const generated: Board = {
+      const generatedBoard: Board = {
         ...raw,
         themes: raw.themes.map(t => ({
           ...t,
@@ -77,20 +115,34 @@ export default function Home() {
           }),
         })).filter(t => t.experiences.length > 0),
       }
-      setBoard(generated)
+      setBoard(generatedBoard)
+
+      // Step 2: auto-plan if dates provided
+      if (dates) {
+        setPlanLoading(true)
+        try {
+          const plan = await callPlan(generatedBoard, dates, [], [])
+          setItinerary(plan)
+        } catch (planErr) {
+          console.warn('Auto-plan failed:', planErr)
+          // Non-fatal — board still shows, user can replan
+        } finally {
+          setPlanLoading(false)
+        }
+      }
+
       setStage('board')
       setTab('experiences')
 
-      // Step 2: enrich in background (fire and forget UI-side)
-      const allExps = generated.themes.flatMap(t => t.experiences)
+      // Step 3: enrich in background (fire and forget)
+      const allExps = generatedBoard.themes.flatMap(t => t.experiences)
       const mappable = allExps.filter(e => e.is_mappable)
-
       if (mappable.length > 0) {
         fetch('/api/enrich', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            destination: generated.destination,
+            destination: generatedBoard.destination,
             experiences: mappable.map(e => ({
               id: e.id,
               name: e.name,
@@ -100,8 +152,8 @@ export default function Home() {
           }),
         })
           .then(r => r.json())
-          .then(({ enriched }: { enriched: { id: string; places_enrichment: Experience['places_enrichment'] }[] }) => {
-            const lookup = Object.fromEntries(enriched.map(e => [e.id, e.places_enrichment]))
+          .then(({ enriched }) => {
+            const lookup = Object.fromEntries(enriched.map((e: { id: string; places_enrichment: Experience['places_enrichment'] }) => [e.id, e.places_enrichment]))
             setBoard(prev => {
               if (!prev) return prev
               return {
@@ -115,15 +167,12 @@ export default function Home() {
                 })),
               }
             })
-            // Update selected exp if open
             setSelected(prev => {
               if (!prev) return prev
-              return lookup[prev.id] !== undefined
-                ? { ...prev, places_enrichment: lookup[prev.id] }
-                : prev
+              return lookup[prev.id] !== undefined ? { ...prev, places_enrichment: lookup[prev.id] } : prev
             })
           })
-          .catch(() => {}) // silent — enrichment is best-effort
+          .catch(() => {})
       }
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Something went wrong')
@@ -133,7 +182,41 @@ export default function Home() {
     }
   }
 
-  const likedCount = Object.values(shortlist).filter(s => s === 'liked').length
+  async function handleReplan() {
+    if (!board || !tripDates) return
+    setPlanLoading(true)
+    setError(null)
+    try {
+      const plan = await callPlan(
+        board,
+        tripDates,
+        Array.from(forcedIds),
+        Array.from(skippedIds)
+      )
+      setItinerary(plan)
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to replan')
+    } finally {
+      setPlanLoading(false)
+    }
+  }
+
+  function handleSkip(id: string) {
+    setSkippedIds(prev => { const n = new Set(prev); n.add(id); return n })
+    setForcedIds(prev => { const n = new Set(prev); n.delete(id); return n })
+  }
+
+  function handleForceInclude(id: string) {
+    setForcedIds(prev => { const n = new Set(prev); n.add(id); return n })
+    setSkippedIds(prev => { const n = new Set(prev); n.delete(id); return n })
+  }
+
+  function handleReset(id: string) {
+    setForcedIds(prev => { const n = new Set(prev); n.delete(id); return n })
+    setSkippedIds(prev => { const n = new Set(prev); n.delete(id); return n })
+  }
+
+  const hasPendingChanges = forcedIds.size > 0 || skippedIds.size > 0
 
   if (stage === 'welcome') {
     return <WelcomeScreen onStart={() => setStage('input')} />
@@ -171,31 +254,23 @@ export default function Home() {
           <div className="flex-1 min-w-0">
             <InputForm onSubmit={handleGenerate} loading={loading} compact />
           </div>
-          {likedCount > 0 && (
-            <span className="text-xs text-rose-500 bg-rose-50 px-2 py-1 rounded-full shrink-0">
-              ♥ {likedCount} saved
-            </span>
-          )}
         </div>
       </header>
 
-      {/* Destination banner */}
+      {/* Destination banner + tabs */}
       {board && (
         <div className="bg-white border-b border-stone-100 px-4 py-3">
           <div className="max-w-3xl mx-auto">
-            <div className="flex items-start justify-between gap-4 flex-wrap">
-              <div>
-                <h1 className="text-base font-semibold text-stone-900">{board.destination}</h1>
-              </div>
-              {/* Tab switcher */}
+            <div className="flex items-center justify-between gap-4 flex-wrap">
+              <h1 className="text-base font-semibold text-stone-900">{board.destination}</h1>
               <div className="flex bg-stone-100 rounded-lg p-0.5 text-xs font-medium shrink-0">
-                {(['spirit', 'weather', 'experiences', 'map'] as Tab[]).map(t => (
+                {(['experiences', 'spirit', 'weather', 'map'] as Tab[]).map(t => (
                   <button
                     key={t}
                     onClick={() => setTab(t)}
                     className={`px-3 py-1.5 rounded-md transition-colors capitalize ${tab === t ? 'bg-white text-stone-900 shadow-sm' : 'text-stone-500 hover:text-stone-700'}`}
                   >
-                    {t === 'spirit' ? 'Spirit' : t === 'weather' ? 'Weather' : t === 'experiences' ? 'Experiences' : 'Map'}
+                    {t === 'experiences' ? 'Trip' : t === 'spirit' ? 'Spirit' : t === 'weather' ? 'Weather' : 'Map'}
                   </button>
                 ))}
               </div>
@@ -215,18 +290,56 @@ export default function Home() {
         )}
 
         {board && tab === 'experiences' && (
-          <div className="p-4 space-y-1.5">
-            {board.themes.map((theme, i) => (
-              <ThemeSection
-                key={theme.id}
-                theme={theme}
-                shortlist={shortlist}
-                onLike={handleLike}
-                onDismiss={handleDismiss}
-                onSelect={setSelected}
-                defaultOpen={i < 2}
-              />
-            ))}
+          <div className="p-4 space-y-6">
+            {/* Itinerary section at top */}
+            {tripDates?.startDate && (
+              <div>
+                <div className="flex items-center justify-between mb-3">
+                  <h2 className="text-sm font-semibold text-stone-900">Your Itinerary</h2>
+                  {itinerary && (
+                    <button
+                      onClick={handleReplan}
+                      disabled={planLoading}
+                      className={`text-xs px-3 py-1.5 rounded-lg font-medium transition-colors disabled:opacity-40 ${
+                        hasPendingChanges
+                          ? 'bg-stone-900 text-white hover:bg-stone-700'
+                          : 'border border-stone-300 text-stone-600 hover:border-stone-500'
+                      }`}
+                    >
+                      {planLoading ? 'Replanning…' : hasPendingChanges ? 'Replan with changes →' : 'Regenerate'}
+                    </button>
+                  )}
+                </div>
+                <ItineraryView
+                  itinerary={itinerary}
+                  loading={planLoading && !itinerary}
+                />
+              </div>
+            )}
+
+            {/* Divider */}
+            {tripDates?.startDate && itinerary && (
+              <div className="border-t border-stone-200" />
+            )}
+
+            {/* Board — all themes with include/skip status */}
+            <div className="space-y-1.5">
+              {board.themes.map((theme, i) => (
+                <ThemeSection
+                  key={theme.id}
+                  theme={theme}
+                  includedIds={includedIds}
+                  forcedIds={forcedIds}
+                  skippedIds={skippedIds}
+                  onSkip={handleSkip}
+                  onForceInclude={handleForceInclude}
+                  onReset={handleReset}
+                  onSelect={setSelected}
+                  defaultOpen={i < 2}
+                  showItineraryStatus={!!tripDates?.startDate}
+                />
+              ))}
+            </div>
           </div>
         )}
 
@@ -235,10 +348,7 @@ export default function Home() {
             <MapErrorBoundary>
               <MapView
                 themes={board.themes}
-                shortlist={shortlist}
                 onSelect={setSelected}
-                onLike={handleLike}
-                onDismiss={handleDismiss}
               />
             </MapErrorBoundary>
           </div>
@@ -248,9 +358,6 @@ export default function Home() {
       {/* Experience detail drawer */}
       <ExperienceDetail
         experience={selected}
-        status={selected ? shortlist[selected.id] : undefined}
-        onLike={() => selected && handleLike(selected.id)}
-        onDismiss={() => selected && handleDismiss(selected.id)}
         onClose={() => setSelected(null)}
       />
     </div>

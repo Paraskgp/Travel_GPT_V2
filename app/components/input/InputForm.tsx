@@ -8,18 +8,24 @@ const DIETARY   = ['Vegetarian', 'Vegan', 'Halal']
 const PARTY     = [{ label: 'Solo', value: 'solo' }, { label: 'Couple', value: 'couple' }, { label: 'Family', value: 'family_young' }, { label: 'Group', value: 'group' }]
 
 interface Props {
-  onSubmit: (destination: string, month: string, prefs: Preferences) => void
+  onSubmit: (destination: string, startDate: string, endDate: string, arrivalTime: string, departureTime: string, prefs: Preferences) => void
   loading: boolean
-  compact?: boolean  // true once board is showing
+  compact?: boolean
 }
+
+const inputCls = "border border-stone-300 rounded-lg px-3 py-2.5 text-sm text-stone-900 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-400 bg-white"
+const inputSmCls = "border border-stone-300 rounded px-2.5 py-1.5 text-sm text-stone-900 placeholder:text-stone-400 focus:outline-none focus:ring-1 focus:ring-stone-400 bg-white"
 
 export default function InputForm({ onSubmit, loading, compact = false }: Props) {
   const [destination, setDestination] = useState('')
-  const [month, setMonth] = useState('')
-  const [interests, setInterests] = useState<string[]>([])
-  const [dietary, setDietary] = useState<string[]>([])
-  const [partyType, setPartyType] = useState('')
-  const [expanded, setExpanded] = useState(false)
+  const [startDate, setStartDate]     = useState('')
+  const [endDate, setEndDate]         = useState('')
+  const [arrivalTime, setArrivalTime]       = useState('')
+  const [departureTime, setDepartureTime]   = useState('')
+  const [interests, setInterests]           = useState<string[]>([])
+  const [dietary, setDietary]         = useState<string[]>([])
+  const [partyType, setPartyType]     = useState('')
+  const [expanded, setExpanded]       = useState(false)
 
   function toggleArr<T>(arr: T[], val: T): T[] {
     return arr.includes(val) ? arr.filter(v => v !== val) : [...arr, val]
@@ -33,7 +39,7 @@ export default function InputForm({ onSubmit, loading, compact = false }: Props)
       ...(dietary.length   && { dietary: dietary.map(d => d.toLowerCase()) }),
       ...(partyType        && { party_type: partyType }),
     }
-    onSubmit(destination.trim(), month.trim(), prefs)
+    onSubmit(destination.trim(), startDate, endDate, arrivalTime, departureTime, prefs)
   }
 
   if (compact) {
@@ -43,20 +49,26 @@ export default function InputForm({ onSubmit, loading, compact = false }: Props)
           value={destination}
           onChange={e => setDestination(e.target.value)}
           placeholder="Destination"
-          className="border border-stone-300 rounded px-2.5 py-1.5 text-sm w-44 focus:outline-none focus:ring-1 focus:ring-stone-400"
+          className={`${inputSmCls} w-40`}
         />
         <input
-          value={month}
-          onChange={e => setMonth(e.target.value)}
-          placeholder="Month (optional)"
-          className="border border-stone-300 rounded px-2.5 py-1.5 text-sm w-36 focus:outline-none focus:ring-1 focus:ring-stone-400"
+          type="date"
+          value={startDate}
+          onChange={e => setStartDate(e.target.value)}
+          className={`${inputSmCls} w-36`}
+        />
+        <input
+          type="date"
+          value={endDate}
+          onChange={e => setEndDate(e.target.value)}
+          className={`${inputSmCls} w-36`}
         />
         <button
           type="submit"
           disabled={loading || !destination.trim()}
           className="bg-stone-900 text-white px-3 py-1.5 rounded text-sm font-medium disabled:opacity-40 hover:bg-stone-800 transition-colors"
         >
-          {loading ? 'Generating…' : 'New search'}
+          {loading ? 'Generating…' : 'Search'}
         </button>
       </form>
     )
@@ -65,25 +77,67 @@ export default function InputForm({ onSubmit, loading, compact = false }: Props)
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-stone-50 px-4">
       <form onSubmit={handleSubmit} className="max-w-md w-full space-y-4">
-        <div>
-          <h2 className="text-xl font-semibold text-stone-900 mb-4">Where are you going?</h2>
-        </div>
+        <h2 className="text-xl font-semibold text-stone-900">Where are you going?</h2>
 
         <div className="space-y-3">
+          {/* Destination */}
           <input
             value={destination}
             onChange={e => setDestination(e.target.value)}
             placeholder="City, region, island, national park…"
             required
             autoFocus
-            className="w-full border border-stone-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-stone-400"
+            className={`w-full ${inputCls}`}
           />
-          <input
-            value={month}
-            onChange={e => setMonth(e.target.value)}
-            placeholder="Travel month (e.g. April, March 2025)"
-            className="w-full border border-stone-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-stone-400"
-          />
+
+          {/* Date range */}
+          <div className="grid grid-cols-2 gap-2">
+            <div>
+              <label className="block text-xs text-stone-500 mb-1 font-medium">Start date</label>
+              <input
+                type="date"
+                value={startDate}
+                onChange={e => setStartDate(e.target.value)}
+                className={`w-full ${inputCls}`}
+              />
+            </div>
+            <div>
+              <label className="block text-xs text-stone-500 mb-1 font-medium">End date</label>
+              <input
+                type="date"
+                value={endDate}
+                onChange={e => setEndDate(e.target.value)}
+                min={startDate || undefined}
+                className={`w-full ${inputCls}`}
+              />
+            </div>
+          </div>
+
+          {/* Arrival + Departure time */}
+          <div className="grid grid-cols-2 gap-2">
+            <div>
+              <label className="block text-xs text-stone-500 mb-1 font-medium">
+                Arrival time <span className="text-stone-400 font-normal">(optional)</span>
+              </label>
+              <input
+                type="time"
+                value={arrivalTime}
+                onChange={e => setArrivalTime(e.target.value)}
+                className={`w-full ${inputCls}`}
+              />
+            </div>
+            <div>
+              <label className="block text-xs text-stone-500 mb-1 font-medium">
+                Departure time <span className="text-stone-400 font-normal">(optional)</span>
+              </label>
+              <input
+                type="time"
+                value={departureTime}
+                onChange={e => setDepartureTime(e.target.value)}
+                className={`w-full ${inputCls}`}
+              />
+            </div>
+          </div>
         </div>
 
         {/* Preferences — collapsed by default */}

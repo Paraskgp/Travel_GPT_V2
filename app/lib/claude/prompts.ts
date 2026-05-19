@@ -1,6 +1,6 @@
 import fs from "fs"
 import path from "path"
-import { Preferences, DestinationContext, WeatherContext } from "../types"
+import { Preferences, DestinationContext, WeatherContext, Board, Experience } from "../types"
 
 const PROMPTS_DIR = path.join(process.cwd(), "prompts")
 
@@ -90,6 +90,103 @@ ${weatherContext.travel_implications.map(i => `- ${i}`).join("\n")}`)
   // ── Theme task ─────────────────────────────────────────────────────────────
   const themeGuide = loadTheme(themeId)
   parts.push(`## Your Task\n\nGenerate experiences for the **${themeId}** theme at ${destination}.\n\n${themeGuide}\n\nReturn only valid JSON matching the output format in the system prompt.`)
+
+  return parts.join("\n\n")
+}
+
+// ─── Node 4: Tip Enhancement ──────────────────────────────────────────────────
+
+export function tipEnhancementSystemPrompt(): string {
+  return `You are a hyper-specific travel tip writer. Your only job is to write one local_tip for a specific named travel experience.
+
+Rules — non-negotiable:
+- The tip must be impossible to detach from this exact named place. It cannot appear verbatim in a generic travel guide.
+- BANNED phrases (do not write any of these): "arrive early", "bring binoculars", "book in advance", "book early", "wear comfortable shoes", "check the weather", "visit in the morning", "secure a good spot", "pack a picnic", "can get crowded", "during peak season", "small group sizes"
+- DO write: a specific named pullout or viewpoint, what you'll see from a particular angle, the thing only repeat visitors know, a non-obvious access point, a specific feature within the larger area, best positioning intel
+- HALLUCINATION GUARD — only cite specific times if they follow a real, verifiable pattern (geyser eruption schedules, sunrise/sunset, tidal patterns, scheduled ferry departures, ranger program times). Do NOT invent precise clock times like "10:47 AM" or "3:23 PM" — fabricated times actively mislead travelers. If timing matters, describe it in terms of conditions ("when the steam rises vertically in cool morning air", "at low tide", "after the crowds thin in late afternoon") rather than invented clock times.
+- One or two sentences max. Concrete. Actionable. Tied to this exact place.
+- Return ONLY the tip text. No JSON. No "Sure!" No explanation.`
+}
+
+export function tipEnhancementUserPrompt(
+  name: string,
+  locationHint: string,
+  destination: string,
+  theme: string,
+  currentTip: string
+): string {
+  return `Write the best possible local_tip for this experience.
+
+Experience: ${name}
+Location: ${locationHint}
+Destination: ${destination}
+Theme: ${theme}
+Current tip (likely too generic — do better): "${currentTip}"`
+}
+
+// ─── Itinerary Planning ───────────────────────────────────────────────────────
+
+export function itinerarySystemPrompt(): string {
+  return load("itinerary.md")
+}
+
+export function itineraryUserPrompt(
+  board: Board,
+  startDate: string,
+  endDate: string,
+  arrivalTime?: string,
+  departureTime?: string,
+  forcedIds: string[] = [],
+  skippedIds: string[] = []
+): string {
+  const skippedSet = new Set(skippedIds)
+  const forcedSet = new Set(forcedIds)
+
+  const allExps: Array<Experience & { theme_name: string }> = []
+  const foodDrinkExps: Array<Experience & { theme_name: string }> = []
+
+  for (const theme of board.themes) {
+    for (const exp of theme.experiences) {
+      if (skippedSet.has(exp.id)) continue
+      const tagged = { ...exp, theme_name: theme.name }
+      allExps.push(tagged)
+      if (theme.id === "food_drink" || theme.id === "food_crawls") foodDrinkExps.push(tagged)
+    }
+  }
+
+  const days = Math.round(
+    (new Date(endDate).getTime() - new Date(startDate).getTime()) / (1000 * 60 * 60 * 24)
+  ) + 1
+
+  const expList = allExps.map(e => {
+    const forced = forcedSet.has(e.id) ? " [MUST INCLUDE]" : ""
+    return `- id: ${e.id}${forced}\n  name: ${e.name}\n  theme: ${e.theme_name}\n  location: ${e.location_hint}\n  duration: ${e.duration}\n  best_time: ${e.best_time}\n  local_tip: ${e.local_tip}`
+  }).join("\n\n")
+
+  const foodList = foodDrinkExps.length > 0
+    ? foodDrinkExps.map(e =>
+        `- id: ${e.id}\n  name: ${e.name}\n  location: ${e.location_hint}\n  tip: ${e.local_tip}`
+      ).join("\n\n")
+    : "None on board — use your knowledge of well-known local options."
+
+  const parts: string[] = []
+
+  parts.push(`## Trip Details
+
+Destination: ${board.destination}
+Start date: ${startDate} — arrival time: ${arrivalTime ?? "09:00"}
+End date: ${endDate} — departure time: ${departureTime ?? "12:00"}
+Total days: ${days}`)
+
+  parts.push(`## Destination Context\n\n${board.destination_context.soul}\n\nDefining pillars: ${board.destination_context.defining_pillars.join(" · ")}`)
+
+  parts.push(`## All Available Experiences (${allExps.length} — select the best fit for ${days} days)\n\nExperiences marked [MUST INCLUDE] must appear in the itinerary.\n\n${expList}`)
+
+  parts.push(`## Food & Drink Options (for meal slots)\n\n${foodList}`)
+
+  parts.push(`## Your Task
+
+Build the complete ${days}-day itinerary. Select the experiences that best use the traveler's time — geography, diversity, and significance. Any experience marked [MUST INCLUDE] must be scheduled. Fill all meal slots with real named places. Add travel rows between every activity pair.`)
 
   return parts.join("\n\n")
 }

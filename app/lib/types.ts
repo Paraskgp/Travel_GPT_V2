@@ -12,8 +12,12 @@ export interface Preferences {
 
 export interface GenerateRequest {
   destination: string
-  month?: string          // e.g. "March" or "March 2025" — used for weather context
-  dates?: string          // e.g. "March 15–22, 2025" — more specific, overrides month if both provided
+  month?: string          // legacy — kept for backwards compat with compact header form
+  dates?: string          // legacy — kept for backwards compat
+  start_date?: string     // ISO date e.g. "2025-03-15"
+  end_date?: string       // ISO date e.g. "2025-03-22"
+  arrival_time?: string   // e.g. "09:00" — when first activity starts on day 1
+  departure_time?: string // e.g. "14:00" — hard cutoff on last day
   preferences?: Preferences
 }
 
@@ -116,6 +120,47 @@ export interface Board {
   weather_context: WeatherContext
   themes: Theme[]
   generated_at: string
+}
+
+// ─── Itinerary Planning ───────────────────────────────────────────────────────
+
+export interface ItineraryRow {
+  type: "activity" | "travel" | "meal"
+  start_time: string          // e.g. "09:00"
+  end_time: string            // e.g. "11:30"
+  title: string               // activity/restaurant name or "Walk to X" / "Drive to X"
+  notes: string               // local tip, context, or travel instruction
+  maps_url: string | null     // Google Maps link — null for travel rows with no fixed destination
+  experience_id: string | null // links back to the board experience; null for meals/travel
+}
+
+export interface ItineraryDay {
+  date: string                // ISO date e.g. "2025-03-15"
+  day_number: number          // 1-indexed
+  day_title: string           // e.g. "Geyser Country"
+  rows: ItineraryRow[]
+}
+
+export interface Itinerary {
+  destination: string
+  start_date: string
+  end_date: string
+  days: ItineraryDay[]
+  generated_at: string
+}
+
+export interface PlanRequest {
+  board: Board
+  start_date: string
+  end_date: string
+  arrival_time?: string       // e.g. "09:00"
+  departure_time?: string     // e.g. "14:00"
+  forced_ids?: string[]       // user said "must include these"
+  skipped_ids?: string[]      // user said "skip these"
+}
+
+export interface PlanResponse {
+  itinerary: Itinerary
 }
 
 // ─── API Responses ────────────────────────────────────────────────────────────

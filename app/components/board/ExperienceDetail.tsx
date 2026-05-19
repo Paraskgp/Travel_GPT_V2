@@ -1,25 +1,19 @@
 'use client'
 
 import { Experience } from '@/lib/types'
-import { ShortlistStatus } from '@/lib/shortlist'
 import { useEffect } from 'react'
 
 interface Props {
   experience: Experience | null
-  status: ShortlistStatus | undefined
-  onLike: () => void
-  onDismiss: () => void
   onClose: () => void
 }
 
-const EFFORT_COLOR = { easy: 'text-green-600', moderate: 'text-amber-600', strenuous: 'text-red-600' }
-const EFFORT_BG    = { easy: 'bg-green-50', moderate: 'bg-amber-50', strenuous: 'bg-red-50' }
-const COST_LABEL   = { free: 'Free', budget: '$', mid: '$$', premium: '$$$' }
+const EFFORT_COLOR  = { easy: 'text-green-600', moderate: 'text-amber-600', strenuous: 'text-red-600' }
+const EFFORT_BG     = { easy: 'bg-green-50', moderate: 'bg-amber-50', strenuous: 'bg-red-50' }
+const COST_LABEL    = { free: 'Free', budget: '$', mid: '$$', premium: '$$$' }
 const BOOKING_LABEL = { walk_in: 'Walk-in', reserve_ahead: 'Reserve ahead', hard_to_get: 'Hard to get' }
 
-export default function ExperienceDetail({ experience: exp, status, onLike, onDismiss, onClose }: Props) {
-  const isLiked = status === 'liked'
-  const isDismissed = status === 'dismissed'
+export default function ExperienceDetail({ experience: exp, onClose }: Props) {
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) { if (e.key === 'Escape') onClose() }
@@ -151,29 +145,6 @@ export default function ExperienceDetail({ experience: exp, status, onLike, onDi
               )}
             </div>
 
-            {/* Action bar */}
-            <div className="flex-shrink-0 border-t border-stone-100 p-4 flex gap-3">
-              <button
-                onClick={onDismiss}
-                className={`flex-1 py-2 rounded-lg text-sm font-medium border transition-colors ${
-                  isDismissed
-                    ? 'bg-stone-200 border-stone-300 text-stone-600'
-                    : 'border-stone-300 text-stone-500 hover:bg-stone-50'
-                }`}
-              >
-                {isDismissed ? 'Skipped' : 'Skip'}
-              </button>
-              <button
-                onClick={onLike}
-                className={`flex-1 py-2 rounded-lg text-sm font-medium border transition-colors ${
-                  isLiked
-                    ? 'bg-rose-500 border-rose-500 text-white'
-                    : 'border-rose-300 text-rose-500 hover:bg-rose-50'
-                }`}
-              >
-                {isLiked ? '♥ Saved' : '♥ Save'}
-              </button>
-            </div>
           </>
         )}
       </div>

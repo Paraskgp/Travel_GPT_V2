@@ -7,6 +7,8 @@ import {
   weatherContextUserPrompt,
   themeSystemPrompt,
   themeUserPrompt,
+  tipEnhancementSystemPrompt,
+  tipEnhancementUserPrompt,
 } from "@/lib/claude/prompts"
 import {
   Board,
@@ -58,14 +60,26 @@ export async function POST(
     return NextResponse.json({ error: "Invalid JSON body" }, { status: 400 })
   }
 
-  const { destination, month, dates, preferences, provider = "openai" } = body
+  const { destination, month, dates, start_date, end_date, arrival_time, preferences, provider = "openai" } = body
 
   if (!destination?.trim()) {
     return NextResponse.json({ error: "destination is required" }, { status: 400 })
   }
 
   const dest = destination.trim()
-  const travelMonth = dates ?? month ?? null
+
+  // Derive travel month from start_date if provided, fall back to legacy fields
+  const travelMonth = start_date
+    ? new Date(start_date + "T00:00:00").toLocaleString("en-US", { month: "long", year: "numeric" })
+    : (dates ?? month ?? null)
+
+  // Derive trip length from date range — inject into preferences so themes can calibrate depth
+  let enrichedPrefs = preferences ?? {}
+  if (start_date && end_date) {
+    const msPerDay = 1000 * 60 * 60 * 24
+    const days = Math.round((new Date(end_date).getTime() - new Date(start_date).getTime()) / msPerDay) + 1
+    if (days > 0) enrichedPrefs = { ...enrichedPrefs, duration_days: days }
+  }
 
   // ── Node 1 + 2: Run destination context and weather context in parallel ────
   const contextCalls: [Promise<string>, Promise<string>] = [
@@ -103,7 +117,7 @@ export async function POST(
     try {
       const raw = await callLLM(
         sysPrompt,
-        themeUserPrompt("signature", dest, destContext, weatherContext, preferences),
+        themeUserPrompt("signature", dest, destContext, weatherContext, enrichedPrefs),
         provider
       )
       signatureTheme = parseJSON<Theme>(raw)
@@ -124,7 +138,7 @@ export async function POST(
     remainingThemes.map(themeId =>
       callLLM(
         sysPrompt,
-        themeUserPrompt(themeId, dest, destContext, weatherContext, preferences, usedExperiences),
+        themeUserPrompt(themeId, dest, destContext, weatherContext, enrichedPrefs, usedExperiences),
         provider
       ).then(raw => parseJSON<Theme>(raw))
     )
@@ -160,11 +174,40 @@ export async function POST(
     }
   })
 
+  // ── Node 4: Tip enhancement pass — rewrite local_tip for every experience ──
+  // Runs in parallel across all experiences. Falls back to original tip on error.
+  const tipSysPrompt = tipEnhancementSystemPrompt()
+  const enhancedThemes: Theme[] = await Promise.all(
+    themes.map(async theme => {
+      const enhancedExperiences = await Promise.all(
+        theme.experiences.map(async exp => {
+          try {
+            const enhanced = await callLLM(
+              tipSysPrompt,
+              tipEnhancementUserPrompt(
+                exp.name,
+                exp.location_hint ?? dest,
+                dest,
+                theme.name,
+                exp.local_tip
+              ),
+              provider
+            )
+            return { ...exp, local_tip: enhanced.trim() || exp.local_tip }
+          } catch {
+            return exp
+          }
+        })
+      )
+      return { ...theme, experiences: enhancedExperiences }
+    })
+  )
+
   const board: Board = {
     destination: dest,
     destination_context: destContext,
     weather_context: weatherContext,
-    themes,
+    themes: enhancedThemes,
     generated_at: new Date().toISOString(),
   }
 

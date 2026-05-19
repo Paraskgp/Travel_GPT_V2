@@ -1,44 +1,60 @@
 'use client'
 
 import { Experience } from '@/lib/types'
-import { ShortlistStatus } from '@/lib/shortlist'
 
 interface Props {
   experience: Experience
-  status: ShortlistStatus | undefined
-  onLike: () => void
-  onDismiss: () => void
   onSelect: () => void
+  // Itinerary status
+  showItineraryStatus?: boolean
+  isIncluded?: boolean
+  isForced?: boolean
+  isSkipped?: boolean
+  onSkip?: () => void
+  onForceInclude?: () => void
+  onReset?: () => void
 }
 
 const EFFORT_COLOR = { easy: 'text-green-600', moderate: 'text-amber-600', strenuous: 'text-red-600' }
 const COST_LABEL   = { free: 'Free', budget: '$', mid: '$$', premium: '$$$' }
 
-export default function ExperienceCard({ experience: exp, status, onLike, onDismiss, onSelect }: Props) {
-  const photo = exp.places_enrichment?.photo_url
+export default function ExperienceCard({
+  experience: exp, onSelect,
+  showItineraryStatus = false,
+  isIncluded = false, isForced = false, isSkipped = false,
+  onSkip, onForceInclude, onReset,
+}: Props) {
+  const photo  = exp.places_enrichment?.photo_url
   const rating = exp.places_enrichment?.rating
-  const isDismissed = status === 'dismissed'
-  const isLiked = status === 'liked'
 
   return (
-    <div className={`relative flex flex-col border rounded-lg overflow-hidden bg-white transition-opacity ${isDismissed ? 'opacity-30' : 'opacity-100'}`}
-         style={{ width: 210, flexShrink: 0 }}>
-
+    <div
+      className={`relative flex flex-col border rounded-lg overflow-hidden bg-white transition-opacity ${isSkipped ? 'opacity-40' : 'opacity-100'}`}
+      style={{ width: 210, flexShrink: 0 }}
+    >
       {/* Photo */}
       <div className="relative bg-stone-100" style={{ height: 120 }}>
         {photo
           ? <img src={photo} alt={exp.name} className="w-full h-full object-cover" />
           : <div className="w-full h-full flex items-center justify-center text-stone-300 text-xs">No photo</div>
         }
-        {/* Rating badge */}
         {rating && (
           <span className="absolute bottom-1.5 left-1.5 bg-black/60 text-white text-xs px-1.5 py-0.5 rounded">
             ★ {rating}
           </span>
         )}
-        {/* Liked badge */}
-        {isLiked && (
-          <span className="absolute top-1.5 right-1.5 bg-rose-500 text-white text-xs px-1.5 py-0.5 rounded-full">♥</span>
+
+        {/* Itinerary status badge */}
+        {showItineraryStatus && (
+          <span className={`absolute top-1.5 right-1.5 text-xs px-1.5 py-0.5 rounded-full font-medium ${
+            isIncluded
+              ? 'bg-emerald-500 text-white'
+              : isSkipped
+              ? 'bg-stone-400 text-white'
+              : 'bg-white/80 text-stone-500 border border-stone-200'
+          }`}>
+            {isIncluded ? '✓ In plan' : isSkipped ? '✕ Skipped' : 'Not in plan'}
+          </span>
         )}
       </div>
 
@@ -47,7 +63,6 @@ export default function ExperienceCard({ experience: exp, status, onLike, onDism
         <p className="text-xs font-semibold text-stone-900 leading-tight line-clamp-2">{exp.name}</p>
         <p className="text-xs text-stone-500 leading-snug line-clamp-2">{exp.short_description}</p>
 
-        {/* Meta row */}
         <div className="flex items-center gap-2 text-xs text-stone-400 mt-auto pt-1">
           <span className={EFFORT_COLOR[exp.effort] ?? 'text-stone-400'}>{exp.effort}</span>
           <span>·</span>
@@ -56,12 +71,10 @@ export default function ExperienceCard({ experience: exp, status, onLike, onDism
           <span>{exp.duration}</span>
         </div>
 
-        {/* Local tip */}
         {exp.local_tip && (
           <p className="text-xs text-stone-400 italic leading-snug line-clamp-2">💡 {exp.local_tip}</p>
         )}
 
-        {/* Personalization flag */}
         {exp.personalization_note && (
           <p className="text-xs text-amber-600 leading-snug line-clamp-1">⚠ {exp.personalization_note}</p>
         )}
@@ -74,22 +87,36 @@ export default function ExperienceCard({ experience: exp, status, onLike, onDism
           >
             Learn more
           </button>
-          <div className="flex gap-1.5">
-            <button
-              onClick={onDismiss}
-              title="Skip"
-              className={`w-7 h-7 rounded-full border flex items-center justify-center text-sm transition-colors ${
-                isDismissed ? 'bg-stone-200 border-stone-300 text-stone-500' : 'border-stone-300 text-stone-400 hover:bg-stone-100'
-              }`}
-            >✕</button>
-            <button
-              onClick={onLike}
-              title="Save"
-              className={`w-7 h-7 rounded-full border flex items-center justify-center text-sm transition-colors ${
-                isLiked ? 'bg-rose-500 border-rose-500 text-white' : 'border-stone-300 text-stone-400 hover:bg-rose-50 hover:border-rose-300'
-              }`}
-            >♥</button>
-          </div>
+
+          {showItineraryStatus ? (
+            <div className="flex gap-1">
+              {isSkipped ? (
+                <button
+                  onClick={onReset}
+                  title="Add back"
+                  className="text-xs px-2 py-1 rounded border border-stone-300 text-stone-500 hover:border-stone-500 transition-colors"
+                >
+                  Add back
+                </button>
+              ) : isIncluded ? (
+                <button
+                  onClick={onSkip}
+                  title="Skip this"
+                  className="text-xs px-2 py-1 rounded border border-stone-300 text-stone-500 hover:border-red-300 hover:text-red-600 transition-colors"
+                >
+                  Skip
+                </button>
+              ) : (
+                <button
+                  onClick={onForceInclude}
+                  title="Add to plan"
+                  className="text-xs px-2 py-1 rounded border border-emerald-300 text-emerald-700 hover:bg-emerald-50 transition-colors"
+                >
+                  + Add
+                </button>
+              )}
+            </div>
+          ) : null}
         </div>
       </div>
     </div>

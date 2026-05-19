@@ -3,7 +3,6 @@
 import { APIProvider, Map, Marker, InfoWindow } from '@vis.gl/react-google-maps'
 import { useState, useMemo, useEffect } from 'react'
 import { Experience, Theme } from '@/lib/types'
-import { Shortlist, ShortlistStatus } from '@/lib/shortlist'
 
 const GOOGLE_MAPS_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY ?? ''
 
@@ -35,17 +34,14 @@ function pinSvg(fill: string, stroke: string, scale = 1) {
 
 interface Props {
   themes: Theme[]
-  shortlist: Shortlist
   onSelect: (exp: Experience) => void
-  onLike: (id: string) => void
-  onDismiss: (id: string) => void
 }
 
 interface MappableExp extends Experience {
   themeName: string
 }
 
-export default function MapView({ themes, shortlist, onSelect, onLike, onDismiss }: Props) {
+export default function MapView({ themes, onSelect }: Props) {
   const [activeId, setActiveId] = useState<string | null>(null)
   const [mapError, setMapError] = useState<string | null>(null)
 
@@ -112,7 +108,6 @@ export default function MapView({ themes, shortlist, onSelect, onLike, onDismiss
       >
         {pins.map(exp => {
           const coords = exp.places_enrichment!.coordinates!
-          const isLiked = shortlist[exp.id] === 'liked'
           const isActive = exp.id === activeId
 
           return (
@@ -121,8 +116,8 @@ export default function MapView({ themes, shortlist, onSelect, onLike, onDismiss
               position={coords}
               onClick={() => setActiveId(isActive ? null : exp.id)}
               icon={pinSvg(
-                isLiked ? '#f43f5e' : isActive ? '#1c1917' : '#ffffff',
-                isLiked ? '#e11d48' : isActive ? '#1c1917' : '#78716c',
+                isActive ? '#1c1917' : '#ffffff',
+                isActive ? '#1c1917' : '#78716c',
                 isActive ? 1.4 : 1,
               )}
             />
@@ -137,10 +132,7 @@ export default function MapView({ themes, shortlist, onSelect, onLike, onDismiss
           >
             <InfoCard
               exp={activePin}
-              status={shortlist[activePin.id] as ShortlistStatus | undefined}
               onSelect={() => { setActiveId(null); onSelect(activePin) }}
-              onLike={() => onLike(activePin.id)}
-              onDismiss={() => onDismiss(activePin.id)}
             />
           </InfoWindow>
         )}
@@ -149,15 +141,7 @@ export default function MapView({ themes, shortlist, onSelect, onLike, onDismiss
   )
 }
 
-function InfoCard({ exp, status, onSelect, onLike, onDismiss }: {
-  exp: MappableExp
-  status: ShortlistStatus | undefined
-  onSelect: () => void
-  onLike: () => void
-  onDismiss: () => void
-}) {
-  const isLiked = status === 'liked'
-  const isDismissed = status === 'dismissed'
+function InfoCard({ exp, onSelect }: { exp: MappableExp; onSelect: () => void }) {
   const photo = exp.places_enrichment?.photo_url
 
   return (
@@ -170,25 +154,9 @@ function InfoCard({ exp, status, onSelect, onLike, onDismiss }: {
       <p className="font-semibold text-stone-900 leading-tight mb-0.5">{exp.name}</p>
       <p className="text-stone-500 leading-snug line-clamp-2 mb-2">{exp.short_description}</p>
       <p className="text-stone-400 mb-2">{exp.themeName} · {exp.duration}</p>
-      <div className="flex items-center justify-between">
-        <button onClick={onSelect} className="text-stone-400 hover:text-stone-700 underline underline-offset-2">
-          Learn more
-        </button>
-        <div className="flex gap-1">
-          <button
-            onClick={onDismiss}
-            className={`w-6 h-6 rounded-full border flex items-center justify-center transition-colors ${
-              isDismissed ? 'bg-stone-200 border-stone-300 text-stone-500' : 'border-stone-300 text-stone-400 hover:bg-stone-100'
-            }`}
-          >✕</button>
-          <button
-            onClick={onLike}
-            className={`w-6 h-6 rounded-full border flex items-center justify-center transition-colors ${
-              isLiked ? 'bg-rose-500 border-rose-500 text-white' : 'border-stone-300 text-stone-400 hover:bg-rose-50 hover:border-rose-300'
-            }`}
-          >♥</button>
-        </div>
-      </div>
+      <button onClick={onSelect} className="text-stone-400 hover:text-stone-700 underline underline-offset-2">
+        Learn more
+      </button>
     </div>
   )
 }
