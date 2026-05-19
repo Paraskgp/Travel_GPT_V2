@@ -11,6 +11,7 @@ import WeatherTable from '@/components/board/WeatherTable'
 import MapView from '@/components/map/MapView'
 import MapErrorBoundary from '@/components/map/MapErrorBoundary'
 import ItineraryView from '@/components/itinerary/ItineraryView'
+import AssumptionsBar from '@/components/itinerary/AssumptionsBar'
 
 type Stage = 'welcome' | 'input' | 'loading' | 'board'
 type Tab = 'spirit' | 'weather' | 'experiences' | 'map'
@@ -27,8 +28,10 @@ export default function Home() {
   const [selected, setSelected] = useState<Experience | null>(null)
 
   // User itinerary signals — accumulated between replans
-  const [forcedIds, setForcedIds]   = useState<Set<string>>(new Set())
-  const [skippedIds, setSkippedIds] = useState<Set<string>>(new Set())
+  const [forcedIds, setForcedIds]     = useState<Set<string>>(new Set())
+  const [skippedIds, setSkippedIds]   = useState<Set<string>>(new Set())
+  const [stayArea, setStayArea]       = useState<string>('')
+  const [stayAreaChanged, setStayAreaChanged] = useState(false)
 
   // Derive which experience IDs are currently in the itinerary
   const includedIds = useMemo<Set<string>>(() => {
@@ -46,7 +49,8 @@ export default function Home() {
     currentBoard: Board,
     dates: { startDate: string; endDate: string; arrivalTime: string; departureTime: string },
     forced: string[],
-    skipped: string[]
+    skipped: string[],
+    area?: string
   ): Promise<Itinerary | null> {
     const res = await fetch('/api/plan', {
       method: 'POST',
@@ -57,6 +61,7 @@ export default function Home() {
         end_date: dates.endDate,
         arrival_time: dates.arrivalTime || undefined,
         departure_time: dates.departureTime || undefined,
+        stay_area: area || undefined,
         forced_ids: forced,
         skipped_ids: skipped,
       }),
@@ -116,12 +121,15 @@ export default function Home() {
         })).filter(t => t.experiences.length > 0),
       }
       setBoard(generatedBoard)
+      const defaultStayArea = generatedBoard.destination_context.recommended_stay_area ?? ''
+      setStayArea(defaultStayArea)
+      setStayAreaChanged(false)
 
       // Step 2: auto-plan if dates provided
       if (dates) {
         setPlanLoading(true)
         try {
-          const plan = await callPlan(generatedBoard, dates, [], [])
+          const plan = await callPlan(generatedBoard, dates, [], [], defaultStayArea)
           setItinerary(plan)
         } catch (planErr) {
           console.warn('Auto-plan failed:', planErr)
@@ -191,14 +199,21 @@ export default function Home() {
         board,
         tripDates,
         Array.from(forcedIds),
-        Array.from(skippedIds)
+        Array.from(skippedIds),
+        stayArea
       )
       setItinerary(plan)
+      setStayAreaChanged(false)
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to replan')
     } finally {
       setPlanLoading(false)
     }
+  }
+
+  function handleStayAreaChange(newArea: string) {
+    setStayArea(newArea)
+    setStayAreaChanged(true)
   }
 
   function handleSkip(id: string) {
@@ -216,7 +231,7 @@ export default function Home() {
     setSkippedIds(prev => { const n = new Set(prev); n.delete(id); return n })
   }
 
-  const hasPendingChanges = forcedIds.size > 0 || skippedIds.size > 0
+  const hasPendingChanges = forcedIds.size > 0 || skippedIds.size > 0 || stayAreaChanged
 
   if (stage === 'welcome') {
     return <WelcomeScreen onStart={() => setStage('input')} />
@@ -294,6 +309,18 @@ export default function Home() {
             {/* Itinerary section at top */}
             {tripDates?.startDate && (
               <div>
+                {/* Assumptions bar */}
+                {stayArea && (
+                  <div className="mb-4">
+                    <AssumptionsBar
+                      stayArea={stayArea}
+                      stayReason={board.destination_context.recommended_stay_reason ?? ''}
+                      onStayAreaChange={handleStayAreaChange}
+                      hasChanges={stayAreaChanged}
+                    />
+                  </div>
+                )}
+
                 <div className="flex items-center justify-between mb-3">
                   <h2 className="text-sm font-semibold text-stone-900">Your Itinerary</h2>
                   {itinerary && (

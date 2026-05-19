@@ -35,6 +35,12 @@ Examples: "Volcanic landscape you can walk on", "Coffee grown at 2,000 feet", "G
 - "The Big Island is huge — a 2-hour drive between coasts is normal; plan your accommodation location carefully"
 - "Paris in August means many locals are away; the city is quieter but some of the best neighborhood restaurants close"
 
+### recommended_stay_area
+The single best area, neighborhood, lodge zone, or base town for a first-time visitor planning a multi-day trip. Be specific — "Old Faithful Inn area" not "Yellowstone"; "Le Marais" not "Paris"; "Hanalei" not "Kauai." One short phrase, no explanation here (explanation goes in recommended_stay_reason).
+
+### recommended_stay_reason
+One sentence. Why is this the best base? Focus on geographic centrality, access to the destination's defining experiences, and practical logistics. Example: "Central to the geyser basins and within 90 minutes of both Lamar Valley and the Grand Canyon of the Yellowstone."
+
 ### applicable_themes
 List of theme IDs from this approved set that genuinely apply to this destination based on **what the destination has to offer** — not based on any traveler's preferences.
 
@@ -59,6 +65,8 @@ Return only valid JSON — no markdown, no commentary:
   "defining_pillars": string[],
   "best_for": string[],
   "honest_notes": string[],
-  "applicable_themes": string[]
+  "applicable_themes": string[],
+  "recommended_stay_area": string,
+  "recommended_stay_reason": string
 }
 ```
