@@ -85,39 +85,78 @@ export async function POST(
     return NextResponse.json({ error: "Failed to generate destination context" }, { status: 500 })
   }
 
-  // ── Node 3+: Fan out to theme calls in parallel ───────────────────────────
-  const applicableThemes = destContext.applicable_themes.filter(id => THEME_NAMES[id])
+  // ── Node 3+: Two-wave theme generation ───────────────────────────────────
+  // Wave 1: Signature runs first — it owns the iconic, must-do experiences.
+  // Wave 2: All other themes run in parallel, with Signature's experiences
+  //         passed as a blocklist so they can't repeat the same locations.
 
-  const themeResults = await Promise.allSettled(
-    applicableThemes.map(themeId =>
+  // "signature" is always applicable — force it in if the LLM omitted it
+  const rawApplicable = destContext.applicable_themes.filter(id => THEME_NAMES[id])
+  const applicableThemes = rawApplicable.includes("signature")
+    ? rawApplicable
+    : ["signature", ...rawApplicable]
+  const sysPrompt = themeSystemPrompt()
+
+  // Wave 1 — Signature
+  let signatureTheme: Theme | null = null
+  if (applicableThemes.includes("signature")) {
+    try {
+      const raw = await callLLM(
+        sysPrompt,
+        themeUserPrompt("signature", dest, destContext, weatherContext, preferences),
+        provider
+      )
+      signatureTheme = parseJSON<Theme>(raw)
+    } catch (err) {
+      console.warn("[/api/generate] signature theme failed:", err)
+    }
+  }
+
+  const usedExperiences = signatureTheme?.experiences.map(e => ({
+    name: e.name,
+    location_hint: e.location_hint,
+  })) ?? []
+
+  // Wave 2 — all other themes in parallel, with Signature's blocklist
+  const remainingThemes = applicableThemes.filter(id => id !== "signature")
+
+  const wave2Results = await Promise.allSettled(
+    remainingThemes.map(themeId =>
       callLLM(
-        themeSystemPrompt(),
-        themeUserPrompt(themeId, dest, destContext, weatherContext, preferences),
+        sysPrompt,
+        themeUserPrompt(themeId, dest, destContext, weatherContext, preferences, usedExperiences),
         provider
       ).then(raw => parseJSON<Theme>(raw))
     )
   )
 
+  // Merge: Signature first, then Wave 2 results
+  const rawThemes: Array<{ theme: Theme; themeId: string }> = []
+  if (signatureTheme) rawThemes.push({ theme: signatureTheme, themeId: "signature" })
+  wave2Results.forEach((result, i) => {
+    if (result.status === "fulfilled") {
+      rawThemes.push({ theme: result.value, themeId: remainingThemes[i] })
+    } else {
+      console.warn(`[/api/generate] theme "${remainingThemes[i]}" failed:`, result.reason)
+    }
+  })
+
+  // Server-side dedup: exact name match — last line of defense against LLM repeats
   const seenIds = new Set<string>()
   const seenNames = new Set<string>()
 
   const themes: Theme[] = []
-  themeResults.forEach((result, i) => {
-    if (result.status === "fulfilled") {
-      const theme = result.value
-      const deduped = theme.experiences.filter(e => {
-        const normId = e.id.trim().toLowerCase()
-        const normName = e.name.trim().toLowerCase()
-        if (seenIds.has(normId) || seenNames.has(normName)) return false
-        seenIds.add(normId)
-        seenNames.add(normName)
-        return true
-      })
-      if (deduped.length > 0) {
-        themes.push({ ...theme, experiences: deduped })
-      }
-    } else {
-      console.warn(`[/api/generate] theme "${applicableThemes[i]}" failed:`, result.reason)
+  rawThemes.forEach(({ theme }) => {
+    const deduped = theme.experiences.filter(e => {
+      const normId = e.id.trim().toLowerCase()
+      const normName = e.name.trim().toLowerCase()
+      if (seenIds.has(normId) || seenNames.has(normName)) return false
+      seenIds.add(normId)
+      seenNames.add(normName)
+      return true
+    })
+    if (deduped.length > 0) {
+      themes.push({ ...theme, experiences: deduped })
     }
   })
 

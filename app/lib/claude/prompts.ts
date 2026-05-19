@@ -45,7 +45,8 @@ export function themeUserPrompt(
   destination: string,
   destContext: DestinationContext,
   weatherContext: WeatherContext | null,
-  preferences?: Preferences
+  preferences?: Preferences,
+  usedExperiences?: Array<{ name: string; location_hint?: string | null }>
 ): string {
   const parts: string[] = []
 
@@ -53,7 +54,6 @@ export function themeUserPrompt(
   parts.push(`## Destination Context\n\n**Destination:** ${destination}\n\n**Soul:**\n${destContext.soul}\n\n**Defining pillars:** ${destContext.defining_pillars.join(" · ")}\n\n**Best for:** ${destContext.best_for.join(", ")}\n\n**Honest notes:**\n${destContext.honest_notes.map(n => `- ${n}`).join("\n")}`)
 
   // ── Weather context block ──────────────────────────────────────────────────
-  // Pass only the travel month's conditions — theme prompts don't need the full 12-month table
   if (weatherContext) {
     const travelMonth = weatherContext.travel_month
     const w = travelMonth ? weatherContext.months[travelMonth] : null
@@ -70,7 +70,6 @@ export function themeUserPrompt(
 **What this means for planning:**
 ${weatherContext.travel_implications.map(i => `- ${i}`).join("\n")}`)
     } else {
-      // No travel month specified — pass just the annual climate summary
       parts.push(`## Climate Overview\n\n${weatherContext.annual_summary}`)
     }
   }
@@ -78,6 +77,14 @@ ${weatherContext.travel_implications.map(i => `- ${i}`).join("\n")}`)
   // ── Preferences ────────────────────────────────────────────────────────────
   if (preferences && Object.keys(preferences).length > 0) {
     parts.push(`## Traveler Preferences\n${formatPreferences(preferences)}`)
+  }
+
+  // ── Already-used experiences (from Wave 1 signature call) ──────────────────
+  if (usedExperiences && usedExperiences.length > 0) {
+    const lines = usedExperiences.map(e =>
+      e.location_hint ? `- ${e.name} (at: ${e.location_hint})` : `- ${e.name}`
+    )
+    parts.push(`## ⛔ Already Assigned — Do Not Repeat\n\nThe following experiences have already been assigned to the Signature theme. Do NOT generate a card for any of these, and do NOT create a card anchored to the same named place (even under a different activity name):\n\n${lines.join("\n")}\n\nIf a location here is genuinely the best place to do something in your theme, skip it entirely — it is covered.`)
   }
 
   // ── Theme task ─────────────────────────────────────────────────────────────

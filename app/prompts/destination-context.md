@@ -38,6 +38,8 @@ Examples: "Volcanic landscape you can walk on", "Coffee grown at 2,000 feet", "G
 ### applicable_themes
 List of theme IDs from this approved set that genuinely apply to this destination based on **what the destination has to offer** — not based on any traveler's preferences.
 
+**`signature` is always required.** Every real destination has signature experiences. Do not omit it.
+
 A destination with a nightlife scene gets `nightlife` even if the traveler is not a party person. A food-rich city gets `food_drink` and `food_crawls` regardless of dietary preferences. Preferences affect how experiences are ranked within a theme — they never determine whether a theme appears at all.
 
 Only exclude a theme if the destination genuinely has nothing meaningful to offer in that category. Do not force-fit.
