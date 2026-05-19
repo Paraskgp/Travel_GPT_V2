@@ -1,0 +1,3303 @@
+{
+  "board": {
+    "destination": "Big Island, Hawaii",
+    "destination_context": {
+      "destination": "Big Island, Hawaii",
+      "soul": "The Big Island of Hawaii embodies the raw, untamed majesty of nature in its most primal form. It is a land perpetually in the process of creation, with molten lava from Kilauea cascading into the Pacific Ocean, expanding its shores day by day. This geological youth gives the island a palpable sense of dynamism and transformation. The diversity of landscapes is awe-inspiring, from the volcanic deserts and lush rainforests to the snow-capped peaks and black sand beaches. The island pulses with mana, a life force that the locals believe permeates the land, sea, and sky. Here, ancient Hawaiian traditions are cherished and practiced, whether in the rhythms of the hula, the ceremonious picking of taro, or the collecting of salt from the sea, offering a deep connection to the past in a setting that is ever-changing and full of contradictions.",
+      "defining_pillars": [
+        "Volcanic landscape you can walk on",
+        "Coffee grown at 2,000 feet",
+        "Stargazing atop Mauna Kea",
+        "Diverse climates from desert to rainforest",
+        "Rich Hawaiian cultural practices",
+        "Pristine snorkeling and diving spots"
+      ],
+      "best_for": [
+        "Adventure seekers drawn to active volcanoes",
+        "Nature lovers captivated by biodiversity",
+        "Cultural enthusiasts eager for authentic Hawaiian experiences",
+        "Astronomy aficionados seeking a celestial view",
+        "Coffee addicts exploring world-class Kona plantations"
+      ],
+      "honest_notes": [
+        "The island is vast; exploring it fully requires long drives",
+        "Weather varies drastically; plan for multiple climates in a day",
+        "Volcanic activity can alter plans with little warning",
+        "Some remote areas have limited amenities and services",
+        "Tourist hotspots can be crowded, but solitude is ample in less traveled areas"
+      ],
+      "applicable_themes": [
+        "signature",
+        "unique_local",
+        "adventure",
+        "nature",
+        "hiking",
+        "culture",
+        "romantic",
+        "day_trips",
+        "seasonal"
+      ]
+    },
+    "weather_context": {
+      "destination": "Big Island, Hawaii",
+      "month": "March",
+      "season_type": "shoulder_season",
+      "season_notes": "Shoulder season — spring begins with manageable crowds and relatively stable prices, making it an excellent time for exploration.",
+      "summary": "In March, the Big Island of Hawaii experiences warm and pleasant weather, with temperatures ranging from comfortable lows in the mid-60s°F (about 18°C) at night to highs reaching the lower 80s°F (around 27°C) during the day. Mornings are often clear and bright, perfect for hiking or exploring the volcanic landscapes, while afternoons can bring sporadic showers, particularly on the windward side. The leeward side is generally drier, and any rain usually passes quickly. You’ll find plenty of daylight to enjoy the island's natural beauty, with approximately 12 hours of daylight. Pack light and breathable clothing, a rain jacket for brief showers, and sun protection, as the UV index can be high.",
+      "weather": {
+        "avg_high_f": 82,
+        "avg_low_f": 65,
+        "avg_high_c": 28,
+        "avg_low_c": 18,
+        "avg_rainfall_inches": 2.2,
+        "rainy_days_estimate": 8,
+        "avg_wind_mph": 14,
+        "humidity_pct": 70,
+        "uv_index": "High",
+        "sunrise": "6:30 AM",
+        "sunset": "6:30 PM",
+        "daylight_hours": 12
+      },
+      "travel_implications": [
+        "Morning activities are recommended, as they tend to be sunnier and less humid.",
+        "Consider rain gear if venturing to the Hilo side, where showers are more frequent.",
+        "Take advantage of the longer days by scheduling hikes and excursions when lighting is optimal.",
+        "Plan beach trips and open-air activities on the leeward side of the island to minimize the chance of rain.",
+        "Expect less crowded attractions, but it's still wise to book accommodation early for preferred locations."
+      ]
+    },
+    "themes": [
+      {
+        "id": "signature",
+        "name": "Signature Experiences",
+        "description": "Discover the essence of the Big Island through its defining experiences, from volcanic wonders to cultural practices.",
+        "experiences": [
+          {
+            "id": "kilauea-volcano-park",
+            "name": "Kilauea Volcano at Hawaii Volcanoes National Park",
+            "short_description": "Witness the power of an active volcano at Kilauea, where lava shapes the land.",
+            "long_description": "Hawaii Volcanoes National Park is home to Kilauea, one of the world's most active volcanoes. Visitors can explore the varying terrains formed by past and recent eruptions, walk through lava tubes, and observe steam vents. The park offers a unique opportunity to learn about the island’s geological activity, viewing firsthand the interaction between fire and water that continues to shape the island. Hiking trails of varying difficulty allow for exploration of the crater rim and ohia tree forests.",
+            "tags": [
+              "outdoor",
+              "geological",
+              "day",
+              "adventurous"
+            ],
+            "why_worth_it": "Kilauea Volcano defines the Big Island's dynamic nature, offering a rare view into the earth's fiery processes.",
+            "duration": "Half day to full day",
+            "effort": "moderate",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "Morning for clear weather",
+            "local_tip": "Attend the park's evening program for excellent stargazing and to witness the lava glow after dark.",
+            "who_for": [
+              "nature lovers",
+              "adventurers",
+              "first-timers"
+            ],
+            "what_to_bring": [
+              "hiking boots",
+              "rain jacket",
+              "water",
+              "sun protection"
+            ],
+            "watch_out_for": "Volcanic smog (vog) can sometimes limit visibility — check air quality reports.",
+            "nearby_pairings": [
+              "Thurston Lava Tube",
+              "Jaggar Museum"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "group_friendly",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Avoid when vog levels are high for better visibility.",
+            "personalization_note": null
+          },
+          {
+            "id": "mauna-kea-observatory",
+            "name": "Stargazing at Mauna Kea",
+            "short_description": "Gaze at the universe from one of the world's premier stargazing locations, Mauna Kea.",
+            "long_description": "Mauna Kea is renowned for its astronomical observatories and pristine stargazing conditions due to its high altitude and clear skies. Visitors can drive up to the Mauna Kea Visitor Information Station at 9,200 feet, where free stargazing programs are offered. For those specifically interested, guided tours can take you to the summit, where the views of the night sky are unparalleled. This is an experience that connects visitors with the universe like no other place on Earth.",
+            "tags": [
+              "astronomy",
+              "night",
+              "educational"
+            ],
+            "why_worth_it": "Mauna Kea's altitude and minimal light pollution make it one of the best stargazing locations globally.",
+            "duration": "Half day to full day",
+            "effort": "moderate",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead for summit tours",
+            "best_time": "Clear nights",
+            "local_tip": "Acclimate to the altitude at the Visitor Center before proceeding further up.",
+            "who_for": [
+              "astronomy enthusiasts",
+              "nature lovers",
+              "couples"
+            ],
+            "what_to_bring": [
+              "warm clothing",
+              "binoculars",
+              "snacks"
+            ],
+            "watch_out_for": "Altitude sickness is a real risk; take it slow and hydrate well.",
+            "nearby_pairings": [
+              "Keck Observatory",
+              "Onizuka Center"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Optimal on clear nights.",
+            "personalization_note": null
+          },
+          {
+            "id": "kona-coffee-farm-tour",
+            "name": "Kona Coffee Farm Tour",
+            "short_description": "Experience the cultivation and taste the flavors of world-famous Kona coffee.",
+            "long_description": "The Big Island's Kona district is renowned for its unique coffee, thanks to its rich volcanic soil and ideal climate. Visiting a coffee farm offers a deep dive into the processes of growing, harvesting, and roasting coffee. Guided tours typically include tastings and the opportunity to purchase freshly roasted beans. This is an educational and sensory experience that immerses you in the traditions and innovative techniques of Kona coffee cultivation, connecting you with local farmers and their enduring legacies.",
+            "tags": [
+              "food",
+              "educational",
+              "day"
+            ],
+            "why_worth_it": "Kona coffee is globally revered, and tasting it at its source is a must for any coffee lover.",
+            "duration": "2-3 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Morning for fresh brews",
+            "local_tip": "Visit multiple farms to taste the subtle differences between their unique brews.",
+            "who_for": [
+              "food lovers",
+              "coffee enthusiasts",
+              "couples"
+            ],
+            "what_to_bring": [
+              "notebook",
+              "camera"
+            ],
+            "watch_out_for": "Some tours can be quite commercialized; seek smaller, family-owned operations for a more personal touch.",
+            "nearby_pairings": [
+              "Kealakekua Bay",
+              "Parker Ranch"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly"
+            ],
+            "suitability_tags": [
+              "group_friendly",
+              "accessible"
+            ],
+            "weather_sensitivity": null,
+            "personalization_note": null
+          },
+          {
+            "id": "snorkeling-kahaluu-beach",
+            "name": "Snorkeling at Kahalu'u Beach Park",
+            "short_description": "Dive into vibrant marine life off Kahalu'u, a snorkeler's paradise.",
+            "long_description": "Kahalu'u Beach Park offers some of the best snorkeling on the Big Island, suitable for beginners and seasoned snorkelers alike. With calm waters protected by a breakwater, the area is teeming with colorful fish and the occasional sea turtle. Educational resources such as signage and guides help visitors appreciate the delicate marine ecosystem, encouraging respectful interaction with this underwater world. This accessible adventure grants an authentic glimpse of the natural beauty flourishing just beneath the island’s waves.",
+            "tags": [
+              "underwater",
+              "wildlife",
+              "day"
+            ],
+            "why_worth_it": "Kahalu'u boasts accessible snorkeling with abundant marine life, perfect for all skill levels.",
+            "duration": "1-2 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Morning for calm waters",
+            "local_tip": "Bring reef-safe sunscreen to protect the marine ecosystem.",
+            "who_for": [
+              "nature lovers",
+              "families",
+              "first-timers"
+            ],
+            "what_to_bring": [
+              "snorkel gear",
+              "towel",
+              "water"
+            ],
+            "watch_out_for": "Can get crowded; arrive early to secure a spot and avoid peak sun.",
+            "nearby_pairings": [
+              "Keauhou Bay",
+              "Magic Sands Beach"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible"
+            ],
+            "weather_sensitivity": "Best in calm weather to ensure water clarity.",
+            "personalization_note": null
+          },
+          {
+            "id": "puuhonua-o-honaunau",
+            "name": "Pu'uhonua o Honaunau National Historical Park",
+            "short_description": "Step back into ancient Hawaii at this sacred site of refuge and tranquility.",
+            "long_description": "Pu'uhonua o Honaunau is a window into the spiritual and cultural heart of traditional Hawaii. This National Historical Park preserves the site where those who broke ancient laws could seek refuge and absolution. Visitors can explore reconstructed thatched hale (houses), royal fishponds, and temple platforms. Walking through this sacred place offers an insight into Hawaiian society, tradition, and the sovereign people who maintained these lands long ago. It's a serene place to reflect on the island's deep-rooted cultural identity.",
+            "tags": [
+              "cultural",
+              "historic",
+              "day"
+            ],
+            "why_worth_it": "This historic park provides profound insights into Hawaiian culture and spirituality unlike any other site.",
+            "duration": "2-3 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "Morning or late afternoon to avoid the midday heat",
+            "local_tip": "Join a ranger-led tour for deeper insights into the site's history and significance.",
+            "who_for": [
+              "cultural enthusiasts",
+              "history buffs",
+              "couples"
+            ],
+            "what_to_bring": [
+              "sun hat",
+              "comfortable shoes"
+            ],
+            "watch_out_for": "Respect the site's cultural sensitivity; no photography near the heiau (sacred temples).",
+            "nearby_pairings": [
+              "Kealakekua Bay",
+              "Two Step Beach"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": null,
+            "personalization_note": null
+          },
+          {
+            "id": "hawaiian-culture-hula-workshop",
+            "name": "Hawaiian Culture and Hula Workshop",
+            "short_description": "Immerse yourself in Hawaiian traditions through the dance and music of hula.",
+            "long_description": "Engage deeply with Hawaiian culture by participating in a hula workshop, where you will learn traditional dance movements and the stories behind them. Often held by local cultural centers or resorts, these workshops provide an educational and entertaining insight into the island's heritage. Dance is a vital expression of history and mythology in Hawaiian culture, and partaking in such an experience enriches your understanding of Hawaiian values and artistry.",
+            "tags": [
+              "cultural",
+              "educational",
+              "day"
+            ],
+            "why_worth_it": "Hula is the heartbeat of Hawaiian culture, offering profound personal connection to the island's traditions.",
+            "duration": "1-2 hours",
+            "effort": "moderate",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Afternoon for engaging workshop sessions",
+            "local_tip": "Wear comfortable clothing and be open to trying new movements.",
+            "who_for": [
+              "cultural enthusiasts",
+              "couples",
+              "first-timers"
+            ],
+            "what_to_bring": [
+              "water bottle",
+              "notebook"
+            ],
+            "watch_out_for": "Tourist-heavy locations may offer less authentic experiences; seek small local groups.",
+            "nearby_pairings": [
+              "Imiloa Astronomy Center",
+              "Lyman Museum"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "group_friendly",
+              "romantic"
+            ],
+            "weather_sensitivity": null,
+            "personalization_note": null
+          },
+          {
+            "id": "waipio-valley-tour",
+            "name": "Waipi'o Valley Adventure",
+            "short_description": "Explore the legendary 'Valley of the Kings' with its breathtaking vistas and rich history.",
+            "long_description": "Waipi'o Valley, with its lush landscapes and towering cliffs, is steeped in mythology and considered one of Hawaii's most beautiful places. Accessible by guided 4x4 tours or a challenging hike, the valley offers immense waterfalls, taro fields, and black sand beaches. Insight into local legends and cultural history make this more than just a scenic tour. Whether you explore by foot or with a local guide, the experience reveals the island's profound natural beauty and historical depth.",
+            "tags": [
+              "scenic",
+              "cultural",
+              "day"
+            ],
+            "why_worth_it": "The valley's unmatched beauty and cultural stories are essential to understanding Hawaii's rich heritage.",
+            "duration": "Half day to full day",
+            "effort": "strenuous",
+            "cost_band": "premium",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Morning to catch the best light and weather",
+            "local_tip": "Bring cash for local guides who can offer personal stories and insights.",
+            "who_for": [
+              "adventurers",
+              "nature lovers",
+              "couples"
+            ],
+            "what_to_bring": [
+              "sturdy hiking shoes",
+              "bug spray",
+              "snacks"
+            ],
+            "watch_out_for": "The hiking trail is steep and can be slippery; appropriate footwear is essential.",
+            "nearby_pairings": [
+              "Pololu Valley Lookout",
+              "Honokaa Town"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "adventurous"
+            ],
+            "weather_sensitivity": "Avoid during heavy rain due to slippery trails.",
+            "personalization_note": null
+          },
+          {
+            "id": "night-manta-ray-snorkel",
+            "name": "Night Manta Ray Snorkel",
+            "short_description": "Witness manta rays dancing in the ocean's depths on an enchanting night snorkel.",
+            "long_description": "The night manta ray snorkel is one of the most enchanting marine experiences on the Big Island, where divers and snorkelers gather at night to see these gentle giants feeding on plankton attracted by underwater lights. Tours often begin at dusk to set the atmosphere, allowing you to float in the water and watch as mantas perform acrobatics in the illuminated plankton-rich waters around you. This thrilling yet serene encounter is truly unique to the waters off the Kona Coast.",
+            "tags": [
+              "underwater",
+              "night",
+              "adventurous"
+            ],
+            "why_worth_it": "This rare, peaceful opportunity to glide with manta rays is uniquely offered on the Kona Coast.",
+            "duration": "2-3 hours",
+            "effort": "moderate",
+            "cost_band": "premium",
+            "booking_difficulty": "hard_to_get",
+            "best_time": "Evening after sunset",
+            "local_tip": "Book well in advance, as slots for this popular tour fill up quickly.",
+            "who_for": [
+              "adventurers",
+              "marine enthusiasts",
+              "couples"
+            ],
+            "what_to_bring": [
+              "swimsuit",
+              "towel",
+              "underwater camera"
+            ],
+            "watch_out_for": "Night snorkeling can be intimidating if you're not confident in the water.",
+            "nearby_pairings": [
+              "Kona Brewing Co.",
+              "Magic Sands Beach"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Best during calm seas and clear nights.",
+            "personalization_note": null
+          },
+          {
+            "id": "hilo-farmers-market",
+            "name": "Hilo Farmers Market",
+            "short_description": "Explore a bustling market highlighting the island’s freshest produce and artisan crafts.",
+            "long_description": "Hilo Farmers Market is a must-visit for anyone interested in the local flavor and craftsmanship of the Big Island. Open every Wednesday and Saturday, this vibrant market is located in downtown Hilo and features a wide array of local produce, handmade crafts, tropical flowers, and more. It's an excellent opportunity to taste Hawaiian delicacies like fresh papaya and macadamia nuts while interacting with the community. The market is a feast for the senses and offers a genuine slice of local life on the island.",
+            "tags": [
+              "food",
+              "shopping",
+              "cultural"
+            ],
+            "why_worth_it": "The market encapsulates the Big Island's culinary bounty and community spirit in one lively spot.",
+            "duration": "1-2 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "Morning for the freshest produce",
+            "local_tip": "Bring your own reusable bag and some cash, as some vendors may not accept cards.",
+            "who_for": [
+              "food lovers",
+              "shoppers",
+              "couples"
+            ],
+            "what_to_bring": [
+              "reusable bag",
+              "cash"
+            ],
+            "watch_out_for": "Rain can be frequent in Hilo; bring a poncho just in case.",
+            "nearby_pairings": [
+              "Liliuokalani Park",
+              "Pacific Tsunami Museum"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly",
+              "vegan_friendly"
+            ],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible"
+            ],
+            "weather_sensitivity": "Prepare for rain, as Hilo is one of the wetter areas of the island.",
+            "personalization_note": null
+          }
+        ]
+      },
+      {
+        "id": "unique_local",
+        "name": "Unique & Local",
+        "description": "Discover the hidden and authentic experiences that reveal the true essence of the Big Island, known mostly to locals but rarely to tourists.",
+        "experiences": [
+          {
+            "id": "puna_coast_hidden_hot_springs",
+            "name": "Puna Coast Hidden Hot Springs",
+            "short_description": "Slip into a secluded natural hot spring on the lesser-visited Puna Coast, a true Hawaiian bathing experience miles away from tourist throngs.",
+            "long_description": "On the rugged and remote Puna Coast, hidden hot springs offer a serene and magical experience known mainly to locals. These geothermal pools, nestled amidst lush tropical foliage, are warmed by volcanic activity, creating a unique bathing experience. Unlike mainstream tourist spots, these hot springs blend seamlessly with nature, providing a tranquil environment that’s perfect for unwinding. Access typically requires inside knowledge of the best times and conditions, as tides and ocean conditions can affect accessibility.",
+            "tags": [
+              "relaxation",
+              "natural",
+              "secluded"
+            ],
+            "why_worth_it": "Immerse yourself in nature's spa, away from crowds, in a truly local Hawaiian setting.",
+            "duration": "1–2 hours",
+            "effort": "moderate",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Late morning — after the tide has receded",
+            "local_tip": "Check tide charts beforehand and aim to visit during low tide for optimal safety and enjoyment.",
+            "who_for": [
+              "nature lovers",
+              "couples",
+              "adventure seekers"
+            ],
+            "what_to_bring": [
+              "swimsuit",
+              "towel",
+              "footwear"
+            ],
+            "watch_out_for": "Watch the tide; it can change quickly, making some pools unsafe.",
+            "nearby_pairings": [
+              "Kapoho Tide Pools",
+              "Lava Tree State Monument"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Avoid during heavy rain; rough seas can make pools unsafe.",
+            "personalization_note": null
+          },
+          {
+            "id": "ho_omau_ranch_community_program",
+            "name": "Ho'omau Ranch Community Program",
+            "short_description": "Engage with locals and participate in regenerative agriculture practices at Ho'omau Ranch, a sustainable Hawaiian community enterprise.",
+            "long_description": "Ho'omau Ranch offers a rare opportunity to participate in sustainable farming and community activities on the verdant slopes of Mauna Loa. This is more than just a tour; it's a dive into the ethos of mālama 'āina (caring for the land). Visitors can join in on daily ranch activities, learn about indigenous farming techniques, and contribute to conservation efforts. This ranch is a testament to community-driven initiatives thriving beneath the radar, focusing on regenerative agriculture and native plant restoration.",
+            "tags": [
+              "sustainable",
+              "community",
+              "agriculture"
+            ],
+            "why_worth_it": "Experience genuine Hawaiian community spirit and contribute to meaningful conservation work.",
+            "duration": "Half day",
+            "effort": "moderate",
+            "cost_band": "budget",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Morning — activities start around 8am",
+            "local_tip": "Bring your own reusable water bottle and gardening gloves; sustainability is a core principle here.",
+            "who_for": [
+              "nature lovers",
+              "cultural enthusiasts",
+              "environmentalists"
+            ],
+            "what_to_bring": [
+              "reusable water bottle",
+              "sunscreen",
+              "gardening gloves"
+            ],
+            "watch_out_for": "Some activities might be physically demanding; be prepared for hands-on farming work.",
+            "nearby_pairings": [
+              "South Point Cliffs",
+              "Ka Lae Green Sand Beach"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly",
+              "vegan_friendly"
+            ],
+            "suitability_tags": [
+              "sustainable",
+              "eco-conscious"
+            ],
+            "weather_sensitivity": null,
+            "personalization_note": null
+          },
+          {
+            "id": "hawaiian_salt_pond_harvesting",
+            "name": "Hawaiian Salt Pond Harvesting",
+            "short_description": "Learn the traditional ways of harvesting sea salt in hidden salt ponds, a cultural practice rooted deeply in Hawaiian traditions.",
+            "long_description": "Hidden along specific coves of the Big Island are salt ponds where locals practice the ancient art of pa'akai (salt) harvesting. Visitors who stumble upon these secluded spots can witness and even assist in the gathering and drying of sea salt crystals, learning how this mineral was historically significant in preserving food and as a trade commodity. It's a unique opportunity to understand a dwindling cultural practice that is often unadvertised and known mostly to those with community ties.",
+            "tags": [
+              "cultural",
+              "manual",
+              "traditional"
+            ],
+            "why_worth_it": "Engage hands-on with a disappearing cultural craft that offers depth and historical context to Hawaiian life.",
+            "duration": "2–3 hours",
+            "effort": "moderate",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Afternoon — when the sun aids the salt crystallization process",
+            "local_tip": "Contact local cultural centers for opportunities; these are often community-led and not commercial.",
+            "who_for": [
+              "cultural enthusiasts",
+              "food lovers"
+            ],
+            "what_to_bring": [
+              "sunscreen",
+              "hat",
+              "camera"
+            ],
+            "watch_out_for": "Ensure you respect the local community’s space and cultural traditions.",
+            "nearby_pairings": [
+              "Pu'uhonua o Honaunau National Historical Park",
+              "Kealakekua Bay"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "heritage",
+              "educational"
+            ],
+            "weather_sensitivity": "Better in dry weather to aid salt crystallization.",
+            "personalization_note": null
+          },
+          {
+            "id": "mauka_market_at_keauhou",
+            "name": "Mauka Market at Keauhou",
+            "short_description": "Experience a true local farmers market at Mauka Market, featuring organic produce and handcrafted goods from the island.",
+            "long_description": "Held every Saturday morning, the Mauka Market at Keauhou is a celebration of local agriculture and artisanship, offering visitors a taste of the Big Island's bounty far beyond the ordinary tourist finds. From fresh organic vegetables and rare tropical fruits to local honey, jams, and handwoven crafts, the market is a vibrant gathering place for residents. Chat with friendly stallholders and discover unique produce like ice cream bananas and dragon fruit while enjoying informal Hawaiian music performances.",
+            "tags": [
+              "market",
+              "local food",
+              "community"
+            ],
+            "why_worth_it": "Sample fresh, locally grown produce and engage with the island's community spirit away from commercialized centers.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "Saturday morning — opens at 8am",
+            "local_tip": "Arrive early to snag the freshest produce and avoid the late-morning rush.",
+            "who_for": [
+              "food lovers",
+              "vegetarian_friendly",
+              "couples"
+            ],
+            "what_to_bring": [
+              "reusable bags",
+              "cash"
+            ],
+            "watch_out_for": "Parking can be tricky; consider carpooling or public transport.",
+            "nearby_pairings": [
+              "Kamakahonu Beach",
+              "Kona Coffee Living History Farm"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly",
+              "vegan_friendly"
+            ],
+            "suitability_tags": [
+              "family_friendly",
+              "sustainable"
+            ],
+            "weather_sensitivity": null,
+            "personalization_note": null
+          },
+          {
+            "id": "konawaena_coffee_farm_tour",
+            "name": "Konawaena Coffee Farm Tour",
+            "short_description": "Visit family-owned Konawaena Coffee Farm, an intimate experience with organic Kona coffee production and tasting.",
+            "long_description": "Tucked away in the lush coffee belt of Kona, the Konawaena Coffee Farm offers an intimate, less-commercialized tour of their organic coffee production. Run by a local family, this farm emphasizes sustainable practices. Visitors can see the entire process from bean to cup and enjoy freshly brewed Kona coffee while learning about cultivation techniques that respect the land's heritage. This hands-on tour provides a deeper understanding of what makes Kona coffee world-renowned, offering an educational experience not found at larger operations.",
+            "tags": [
+              "coffee",
+              "sustainable",
+              "family-run"
+            ],
+            "why_worth_it": "Experience authentic Kona coffee culture in an intimate setting, with insights from local family farmers.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Morning — when the tour is conducted and coffee is freshly brewed",
+            "local_tip": "Book ahead, as tours are small and fill up quickly due to the farm's popular coffee.",
+            "who_for": [
+              "coffee enthusiasts",
+              "couples",
+              "food lovers"
+            ],
+            "what_to_bring": [
+              "comfortable footwear",
+              "camera"
+            ],
+            "watch_out_for": "Tours might be canceled in bad weather; check ahead.",
+            "nearby_pairings": [
+              "Hulihe‘e Palace",
+              "Ahu‘ena Heiau"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly",
+              "vegan_friendly",
+              "alcohol_centered"
+            ],
+            "suitability_tags": [
+              "couple_friendly",
+              "educational"
+            ],
+            "weather_sensitivity": "Light rain usually doesn't affect tours, but heavy rain might.",
+            "personalization_note": null
+          },
+          {
+            "id": "ancient_hawaiian_fishing_village_walk",
+            "name": "Ancient Hawaiian Fishing Village Walk",
+            "short_description": "Take a guided walk through the remains of an ancient Hawaiian fishing village to understand traditional Hawaiian marine practices and life.",
+            "long_description": "This lesser-known walk takes you through the remnants of a historical Hawaiian fishing village. Guided by a local historian, the tour reveals aspects of traditional Hawaiian fishing practices, the role of community, and the integration of aquaculture with daily life. Learn unique fishing methods and hear stories passed down through generations that you won't find in textbooks. This educational journey opens a window into the socio-cultural fabric that sustained Hawaiian coastal societies.",
+            "tags": [
+              "historical",
+              "cultural",
+              "educational"
+            ],
+            "why_worth_it": "Connect with the island's coastal heritage through stories and remnants that are little-publicized yet rich in history.",
+            "duration": "1 hour",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Morning — cooler and more conducive to walking tours",
+            "local_tip": "Wear sturdy shoes, as paths can be uneven and rocky.",
+            "who_for": [
+              "history buffs",
+              "cultural enthusiasts",
+              "families"
+            ],
+            "what_to_bring": [
+              "water",
+              "sturdy shoes",
+              "sun protection"
+            ],
+            "watch_out_for": "Some sections might be uneven; not suitable for those with mobility issues.",
+            "nearby_pairings": [
+              "Lapakahi State Historical Park",
+              "Kamehameha Beach"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "accessible",
+              "educational"
+            ],
+            "weather_sensitivity": "Tours are better during dry spells; path can become slippery when wet.",
+            "personalization_note": null
+          },
+          {
+            "id": "kumu_preparation_workshop",
+            "name": "Kumukahi Hawaiian Cultural Center Workshop",
+            "short_description": "Participate in a hands-on Hawaiian cultural workshop at the Kumukahi Center, learning traditional crafts often overlooked by visitors.",
+            "long_description": "The Kumukahi Hawaiian Cultural Center offers workshops where visitors can learn a diverse array of traditional Hawaiian crafts that are often side-stepped by larger tourist hubs. Under the guidance of cultural practitioners, participants can engage in activities such as lei making, kapa cloth creation, or traditional Hawaiian music classes. These sessions not only highlight local crafts but also provide insights into their cultural significance. This is a perfect setting for those interested in understanding the deeper meanings behind these artistic expressions.",
+            "tags": [
+              "craft",
+              "cultural",
+              "hands-on"
+            ],
+            "why_worth_it": "Gain practical skills and intimate knowledge of Hawaiian cultural arts in a welcoming community setting.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Afternoon — workshops typically start after lunch",
+            "local_tip": "Try multiple workshops for a holistic cultural immersion experience.",
+            "who_for": [
+              "cultural enthusiasts",
+              "couples",
+              "craft lovers"
+            ],
+            "what_to_bring": [
+              "notebook",
+              "camera"
+            ],
+            "watch_out_for": "Workshops fill up fast; book early to secure your spot.",
+            "nearby_pairings": [
+              "Hawai‘i Volcanoes National Park",
+              "Panaʻewa Rainforest Zoo"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "romantic"
+            ],
+            "weather_sensitivity": null,
+            "personalization_note": null
+          },
+          {
+            "id": "kapapala_ranch_paniolo_visit",
+            "name": "Kapapala Ranch Paniolo Visit",
+            "short_description": "Explore the life of Hawaiian cowboys at Kapapala Ranch, where you can witness paniolo traditions in action not far from Volcanoes National Park.",
+            "long_description": "Kapapala Ranch offers a chance to step into the boots of the Hawaiian cowboys, known locally as paniolos, and experience the lifestyle and traditions that are unique to Hawaii. Visitors are taken behind the scenes of ranch life, offering insights into cattle herding, saddle making, and the rich cultural history of ranching in Hawaii. This immersive experience allows you to see a different side of island life, one that combines Polynesian and Western influences in a captivating blend.",
+            "tags": [
+              "ranch",
+              "cultural",
+              "western"
+            ],
+            "why_worth_it": "Witness a unique cultural fusion in Hawaii's ranching history and paniolo lifestyle.",
+            "duration": "Half day",
+            "effort": "moderate",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Morning — start at 9am for the full ranch experience",
+            "local_tip": "Wear jeans and closed-toed shoes suitable for ranch activities.",
+            "who_for": [
+              "cultural enthusiasts",
+              "history buffs",
+              "couples"
+            ],
+            "what_to_bring": [
+              "jeans",
+              "closed-toe shoes",
+              "hat"
+            ],
+            "watch_out_for": "Some activities can be dusty and require physical activity.",
+            "nearby_pairings": [
+              "Hawai‘i Volcanoes National Park",
+              "Volcano Winery"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "group_friendly",
+              "romantic",
+              "educational"
+            ],
+            "weather_sensitivity": "Not suitable during heavy rain; activities are primarily outdoors.",
+            "personalization_note": null
+          },
+          {
+            "id": "pohaku_hula_experience",
+            "name": "Pohaku Hawaiian Hula Experience",
+            "short_description": "Join a private hula session by the sea, learning to express the stories of Hawaii through dance with local kumu hula guidance.",
+            "long_description": "The Pohaku Hawaiian Hula Experience offers a unique insight into hula, the traditional dance of Hawaii that conveys stories, history, and emotion through movement. Conducted by a knowledgeable kumu hula (hula teacher), this session brings you to a quiet oceanfront setting where the rhythms of the waves accompany your learning. The experience is intimate, fostering a connection to the land and its stories often missed in larger, commercial shows.",
+            "tags": [
+              "dance",
+              "cultural",
+              "authentic"
+            ],
+            "why_worth_it": "Learn hula directly from a local expert in a serene and intimate setting by the sea.",
+            "duration": "2 hours",
+            "effort": "moderate",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Evening — when the ocean breeze adds to the atmosphere",
+            "local_tip": "Wear comfortable clothing that allows movement and flow.",
+            "who_for": [
+              "culture enthusiasts",
+              "romantic",
+              "music lovers"
+            ],
+            "what_to_bring": [
+              "comfortable clothing",
+              "water"
+            ],
+            "watch_out_for": "Follow the lead of the kumu hula to respect the cultural practice appropriately.",
+            "nearby_pairings": [
+              "Hapuna Beach",
+              "Puako Petroglyph Park"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "individual"
+            ],
+            "weather_sensitivity": "Best in calm weather; wind can affect the dancer's experience.",
+            "personalization_note": null
+          }
+        ]
+      },
+      {
+        "id": "adventure",
+        "name": "Adventure",
+        "description": "The Big Island offers a variety of adrenaline-pumping adventures, from lava hikes to scuba diving, catering to thrill-seekers and outdoor enthusiasts.",
+        "experiences": [
+          {
+            "id": "manta-ray-night-dive",
+            "name": "Manta Ray Night Dive",
+            "short_description": "Experience the mesmerizing dance of manta rays as they glide under the night sky.",
+            "long_description": "The Manta Ray Night Dive on the Big Island is world-renowned, offering a unique opportunity to witness these majestic creatures up close. The experience involves a short boat ride to the viewing site, where you will dive or snorkel in the company of mantas as they feed on plankton attracted to the lights. This magical underwater ballet is unlike any other marine encounter, providing a thrilling and surreal adventure.",
+            "tags": [
+              "water",
+              "night",
+              "wildlife"
+            ],
+            "why_worth_it": "Encountering manta rays at night offers a surreal and intimate marine wildlife experience.",
+            "duration": "2–3 hours",
+            "effort": "moderate",
+            "cost_band": "premium",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Evening after sunset — between 8pm and 10pm",
+            "local_tip": "Check lunar calendars; mantas are more active around the full moon.",
+            "who_for": [
+              "wildlife lovers",
+              "adrenaline seekers",
+              "couples"
+            ],
+            "what_to_bring": [
+              "towel",
+              "change of clothes",
+              "underwater camera"
+            ],
+            "watch_out_for": "Strong currents can occur; ensure you're comfortable with night conditions.",
+            "nearby_pairings": [
+              "Kealakekua Bay Snorkeling",
+              "Hawaiian BBQ Dinner"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Avoid during heavy surf conditions.",
+            "personalization_note": null
+          },
+          {
+            "id": "lava-tube-exploration",
+            "name": "Lava Tube Exploration",
+            "short_description": "Explore beneath the island's surface in naturally formed lava tubes.",
+            "long_description": "Lava tubes are tunnels created by flowing lava that has since solidified, offering adventurers an otherworldly experience. On the Big Island, these tubes vary in size and complexity. Guided tours often provide helmets and lamps as you navigate through these dark and mysterious passages. An experienced guide will highlight the geological history and peculiar formations within, leaving travelers with a sense of wonder at the island's volcanic origins.",
+            "tags": [
+              "underground",
+              "geology",
+              "day"
+            ],
+            "why_worth_it": "Journeying through lava tubes unveils the island's volcanic past and hidden beauty.",
+            "duration": "Half day",
+            "effort": "moderate",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Late morning to early afternoon for optimal visibility",
+            "local_tip": "Wear sturdy shoes with good grip for navigating uneven lava surfaces.",
+            "who_for": [
+              "adventure seekers",
+              "nature lovers",
+              "curious minds"
+            ],
+            "what_to_bring": [
+              "sturdy hiking boots",
+              "headlamp",
+              "gloves"
+            ],
+            "watch_out_for": "Wet areas can be slippery; maintain caution at all times.",
+            "nearby_pairings": [
+              "Volcanoes National Park Hiking",
+              "Mauna Loa Observatory"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "group_friendly",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": null,
+            "personalization_note": null
+          },
+          {
+            "id": "mauna-kea-summit-adventure",
+            "name": "Mauna Kea Summit Adventure",
+            "short_description": "Conquer the elements with a trek to the highest point in Hawaii.",
+            "long_description": "Standing at 13,803 feet, Mauna Kea provides one of the most challenging yet rewarding adventures on the Big Island. The ascent to the summit is a feat for ambitious hikers, offering striking views of the island and beyond. The adventure requires proper acclimatization and preparation due to its high altitude and thin air. Many choose guided tours that provide transport to the Visitor Information Station and then begin their trek to the summit, often witnessing unparalleled sunset or stargazing views.",
+            "tags": [
+              "mountain",
+              "hiking",
+              "astronomy"
+            ],
+            "why_worth_it": "The summit offers breathtaking views and celestial stargazing unmatched anywhere on Earth.",
+            "duration": "Full day",
+            "effort": "strenuous",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Afternoon for sunset views or evening for stargazing",
+            "local_tip": "Acclimate at the Visitor Information Station for at least 30 minutes before the final ascent.",
+            "who_for": [
+              "serious hikers",
+              "adventure seekers",
+              "star gazers"
+            ],
+            "what_to_bring": [
+              "warm clothing",
+              "high-energy snacks",
+              "water"
+            ],
+            "watch_out_for": "Altitude sickness can be a risk; consult with guides for safety measures.",
+            "nearby_pairings": [
+              "Mauna Kea Observatories",
+              "Waimea Town Visit"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Avoid in adverse weather — conditions can change rapidly.",
+            "personalization_note": "High physical exertion — may not be suitable for all travelers."
+          },
+          {
+            "id": "atv-kohala",
+            "name": "ATV Adventure in Kohala",
+            "short_description": "Ride through the lush forests and rugged landscapes of Kohala on an ATV.",
+            "long_description": "This ATV tour takes you through the stunning landscapes of the North Kohala region, known for its verdant forests and dramatic clifftops. As you navigate through trails that wind past waterfalls and overlook the ocean, you'll experience the thrill of off-road riding combined with the natural beauty of the island. Expert guides provide insights into local history and ecology, ensuring a safe yet exhilarating adventure suitable for both beginners and experienced riders.",
+            "tags": [
+              "offroad",
+              "nature",
+              "day"
+            ],
+            "why_worth_it": "Combining speed with scenery, this adventure explores some of the island's most untouched landscapes.",
+            "duration": "3 hours",
+            "effort": "moderate",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Morning for cooler temperatures and fewer crowds",
+            "local_tip": "Wear clothes you don't mind getting muddy and bring sunglasses to protect against dust.",
+            "who_for": [
+              "adventure enthusiasts",
+              "nature lovers",
+              "thrill seekers"
+            ],
+            "what_to_bring": [
+              "sunglasses",
+              "long pants",
+              "closed-toe shoes"
+            ],
+            "watch_out_for": "Be cautious of muddy areas and maintain reasonable speeds.",
+            "nearby_pairings": [
+              "Hawi Town Exploration",
+              "Pololu Valley Lookout"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "group_friendly",
+              "family_friendly"
+            ],
+            "weather_sensitivity": "Avoid after heavy rains; trails can be slick.",
+            "personalization_note": null
+          },
+          {
+            "id": "zodiac-rafting-kona",
+            "name": "Zodiac Rafting Adventure in Kona",
+            "short_description": "A fast-paced rafting journey along the rugged Kona coastline.",
+            "long_description": "Embark on a heart-pumping Zodiac raft adventure along the scenic Kona coast. These nimble vessels provide an exhilarating ride as you explore sea caves, archways, and pristine snorkeling locations that are otherwise inaccessible. The rafts allow for close-up experiences with marine life and incredible coral gardens. Guided by marine experts, this tour combines sheer adrenaline with insightful marine biology education, making it a captivating experience for adventure lovers.",
+            "tags": [
+              "water",
+              "marine",
+              "sightseeing"
+            ],
+            "why_worth_it": "The thrill of high-speed exploration with intimate encounters with marine life creates unforgettable memories.",
+            "duration": "Half day",
+            "effort": "moderate",
+            "cost_band": "premium",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Morning to avoid afternoon trade winds",
+            "local_tip": "Look for companies that cap group sizes for a more personalized experience.",
+            "who_for": [
+              "adrenaline seekers",
+              "marine enthusiasts",
+              "couples"
+            ],
+            "what_to_bring": [
+              "sunscreen",
+              "snorkel gear",
+              "waterproof camera"
+            ],
+            "watch_out_for": "Bumpy rides can be physically demanding; suited for those with good mobility.",
+            "nearby_pairings": [
+              "Captain Cook Monument Snorkeling",
+              "Coffee Farm Tour"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "group_friendly",
+              "romantic"
+            ],
+            "weather_sensitivity": "Not recommended in rough sea conditions.",
+            "personalization_note": "Moderate physical demands — ensure comfort with the activity level."
+          },
+          {
+            "id": "hilo-waterfall-rapelling",
+            "name": "Waterfall Rappelling in Hilo",
+            "short_description": "Descend a waterfall in a thrilling rappel amidst stunning tropical scenery.",
+            "long_description": "Experience a waterfall like never before by rappelling its sheer drop amidst the lush rainforest of Hilo. This guided adventure allows participants to descend the waterfall face using ropes and harnesses, offering breathtaking views and an adrenaline rush. Safety is prioritized with expert instruction and equipment provided. Perfect for those seeking a combination of extreme sports and nature immersion, the experience provides stunning perspectives that few will ever witness first-hand.",
+            "tags": [
+              "waterfall",
+              "extreme",
+              "nature"
+            ],
+            "why_worth_it": "Rappelling a waterfall blends adventure with the sheer beauty of the island's rainforest environment.",
+            "duration": "2–3 hours",
+            "effort": "strenuous",
+            "cost_band": "premium",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Late morning for best lighting and reduced slipperiness",
+            "local_tip": "Wear clothes that dry quickly and bring a sense of adventure — you'll get wet!",
+            "who_for": [
+              "thrill seekers",
+              "nature enthusiasts"
+            ],
+            "what_to_bring": [
+              "sturdy footwear",
+              "swimsuit",
+              "quick-dry clothes"
+            ],
+            "watch_out_for": "Ensure you're comfortable with heights; the experience is not for the faint-hearted.",
+            "nearby_pairings": [
+              "Liliuokalani Gardens Visit",
+              "Akaka Falls State Park"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "solo_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Avoid during heavy rain — it can make rappelling unsafe.",
+            "personalization_note": "High physical exertion and exposure to heights."
+          },
+          {
+            "id": "kayaking-puna-coast",
+            "name": "Kayaking Adventure along the Puna Coast",
+            "short_description": "Paddle your way along the scenic and rugged paradise of Puna's coastline.",
+            "long_description": "The Puna Coast offers a pristine and wild kayaking adventure. Paddlers traverse along dramatic cliffs, explore hidden sea caves, and can even spot playful spinner dolphins and other marine life. This self-propelled journey offers an intimate interaction with the island's coastal landscapes, encouraging an appreciation for the power and beauty of the Pacific. While guides generally offer navigational expertise and safety briefings, the thrill of exploring some of Hawaii's most striking marine environments is unmatched.",
+            "tags": [
+              "ocean",
+              "paddling",
+              "wildlife"
+            ],
+            "why_worth_it": "The expedition offers an unrivaled mix of adventure and natural beauty in one of Hawaii's most untouched areas.",
+            "duration": "Half day",
+            "effort": "moderate",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Morning for calmer seas and better light",
+            "local_tip": "Choose a tour that includes snorkeling for a full-day sea adventure.",
+            "who_for": [
+              "adventure lovers",
+              "couples",
+              "marine life enthusiasts"
+            ],
+            "what_to_bring": [
+              "hat",
+              "sunscreen",
+              "dry bag"
+            ],
+            "watch_out_for": "Currents can be strong; ensure basic swimming ability and comfort in deep waters.",
+            "nearby_pairings": [
+              "Kilauea Iki Crater Hike",
+              "Pahoa Town for a foodie break"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Postpone during high winds or choppy seas.",
+            "personalization_note": null
+          },
+          {
+            "id": "volcano-atv-tour",
+            "name": "Volcano ATV Tour",
+            "short_description": "Race across the unique volcanic landscapes in an exciting ATV tour.",
+            "long_description": "Experience the thrill of navigating the Big Island’s volcanic terrain on an ATV. This adventure takes you on rugged paths formed by ancient lava flows, offering insight into the island’s volcanic activity and geology. The tour typically covers several terrains from black sand dunes to dense forests. Led by knowledgeable guides, participants learn about the historical eruptions and the island’s ecological diversity, all while enjoying exhilarating off-road experiences.",
+            "tags": [
+              "volcano",
+              "offroad",
+              "geology"
+            ],
+            "why_worth_it": "Captivating landscapes and the adrenaline rush make this a quintessential Big Island adventure.",
+            "duration": "2 hours",
+            "effort": "moderate",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Morning for cooler weather and quieter trails",
+            "local_tip": "Check tire conditions and choose an operator that includes safety briefings and helmets.",
+            "who_for": [
+              "adventure enthusiasts",
+              "geology lovers",
+              "off-road fans"
+            ],
+            "what_to_bring": [
+              "sunglasses",
+              "bandana for dust",
+              "closed-toe shoes"
+            ],
+            "watch_out_for": "Unpredictable volcanic conditions could alter paths; follow guide instructions closely.",
+            "nearby_pairings": [
+              "Puna Coast Exploration",
+              "Lava Viewing Areas"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "group_friendly",
+              "accessible"
+            ],
+            "weather_sensitivity": "Can get muddy and difficult to navigate after heavy rains.",
+            "personalization_note": null
+          },
+          {
+            "id": "shark-diving-experience",
+            "name": "Shark Diving Experience",
+            "short_description": "Dive into the deep blue to encounter sharks safely and up close.",
+            "long_description": "For the daring, a shark diving adventure off the coast of the Big Island offers a heart-pounding experience. Under the supervision of expert guides, participants venture into the ocean, either within a protective cage or, for the more intrepid, in an open sea opportunity. These encounters prioritize safety while offering thrilling proximity to various species of sharks. The activity serves as both an adrenaline rush and a vital opportunity for educating adventurers about these often-misunderstood creatures.",
+            "tags": [
+              "dive",
+              "marine",
+              "wildlife"
+            ],
+            "why_worth_it": "This experience presents an unparalleled thrill while fostering appreciation and understanding of marine ecosystems.",
+            "duration": "3–4 hours",
+            "effort": "moderate",
+            "cost_band": "premium",
+            "booking_difficulty": "hard_to_get",
+            "best_time": "Morning for the calmest seas and best visibility",
+            "local_tip": "Ensure operators have a Shark Aware rating for conservation-focused practices.",
+            "who_for": [
+              "adrenaline junkies",
+              "adventure seekers",
+              "wildlife aficionados"
+            ],
+            "what_to_bring": [
+              "underwater camera",
+              "wet suit",
+              "towel"
+            ],
+            "watch_out_for": "Those with limited diving experience should consider cage options for added confidence.",
+            "nearby_pairings": [
+              "Kealakekua Bay Snorkeling",
+              "Kona Coffee Farm Visits"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "group_friendly",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Avoid during rough sea conditions.",
+            "personalization_note": null
+          }
+        ]
+      },
+      {
+        "id": "nature_and_scenic",
+        "name": "Nature & Scenic",
+        "description": "Experience the Big Island's stunning nature without the need for extensive hiking.",
+        "experiences": [
+          {
+            "id": "hawaii_volcanoes_national_park",
+            "name": "Hawai'i Volcanoes National Park",
+            "short_description": "Explore the awe-inspiring landscapes of Kīlauea and Mauna Loa without the need for strenuous hiking.",
+            "long_description": "Hawai'i Volcanoes National Park offers an incredible opportunity to witness one of the most dynamic environments on earth. Drive along Crater Rim Drive and Chain of Craters Road for breathtaking views of volcanic landscapes, ancient petroglyphs, and the vast Pacific Ocean. Key attractions include the Thurston Lava Tube, a short walk through an ancient lava cave, and the steam vents that provide a glimpse of the geothermal activity below your feet.",
+            "tags": [
+              "volcanic",
+              "landscape",
+              "drive"
+            ],
+            "why_worth_it": "Witnessing the power and beauty of active volcanoes makes this a must-visit for anyone on the Big Island.",
+            "duration": "Half day",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "walk_in",
+            "best_time": "Morning for clear skies and cooler temperatures",
+            "local_tip": "Visit the Jaggar Museum Overlook at dusk to see the glow of the lava crater.",
+            "who_for": [
+              "couples",
+              "nature lovers",
+              "first-timers"
+            ],
+            "what_to_bring": [
+              "sunscreen",
+              "water",
+              "light jacket"
+            ],
+            "watch_out_for": "Volcanic fumes can be potent; those with respiratory concerns should exercise caution.",
+            "nearby_pairings": [
+              "Mauna Kea Observatories",
+              "Punalu'u Black Sand Beach"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "romantic",
+              "accessible"
+            ],
+            "weather_sensitivity": "Avoid during heavy rain as road conditions can be challenging.",
+            "personalization_note": null
+          },
+          {
+            "id": "akaka_falls",
+            "name": "Akaka Falls State Park",
+            "short_description": "An easy walk rewards you with stunning views of a 442-foot waterfall cascading through lush tropical vegetation.",
+            "long_description": "Located on the Hilo side of the island, Akaka Falls State Park offers a short, scenic loop trail that provides stunning views of Akaka Falls, one of Hawaii's most famous waterfalls. The park's verdant surroundings showcase the lush biodiversity typical of the island's rainforest, making it a perfect spot for a leisurely stroll in nature.",
+            "tags": [
+              "waterfall",
+              "scenic",
+              "rainforest"
+            ],
+            "why_worth_it": "Akaka Falls' dramatic drop into a gorge full of tropical flora is breathtaking and easily accessible.",
+            "duration": "1 hour",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "Late morning when the sun illuminates the falls",
+            "local_tip": "Visit early to avoid larger tour groups and enjoy the serenity.",
+            "who_for": [
+              "couples",
+              "nature lovers",
+              "photographers"
+            ],
+            "what_to_bring": [
+              "camera",
+              "sunhat",
+              "rain jacket"
+            ],
+            "watch_out_for": "Paths can be slippery after rain; wear appropriate footwear.",
+            "nearby_pairings": [
+              "Hilo Farmer's Market",
+              "Hawaii Tropical Botanical Garden"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "romantic",
+              "accessible"
+            ],
+            "weather_sensitivity": "Rain enhances the waterfall flow, so a light drizzle is a bonus.",
+            "personalization_note": null
+          },
+          {
+            "id": "punalu_black_sand_beach",
+            "name": "Punalu'u Black Sand Beach",
+            "short_description": "Famous for its jet-black sand and frequent sea turtle visitors, this is a must-see Hawaiian beach.",
+            "long_description": "Punalu'u Black Sand Beach is one of the most picturesque and famous beaches on the Big Island, known for its striking black sand created by volcanic activity. The beach is a natural resting spot for Hawaiian green sea turtles, which can often be seen basking on the sand. It’s a great place for a picnic or a casual stroll, and its unique landscape offers fantastic photo opportunities.",
+            "tags": [
+              "beach",
+              "wildlife",
+              "unique"
+            ],
+            "why_worth_it": "The contrast of black sand and turquoise waters, plus the chance to see sea turtles up close, is unforgettable.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Late afternoon for cooler temperatures and better turtle viewing",
+            "local_tip": "Bring snorkeling gear to explore the underwater world just off the shoreline.",
+            "who_for": [
+              "couples",
+              "wildlife enthusiasts",
+              "photographers"
+            ],
+            "what_to_bring": [
+              "snorkeling gear",
+              "sun protection",
+              "picnic blanket"
+            ],
+            "watch_out_for": "Strong currents can make swimming unsafe; observe warning signs.",
+            "nearby_pairings": [
+              "Kilauea Visitor Center",
+              "South Point Park"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "romantic"
+            ],
+            "weather_sensitivity": "Beach may be less enjoyable in overcast or rainy conditions.",
+            "personalization_note": null
+          },
+          {
+            "id": "mauna_kea_summit_viewing",
+            "name": "Mauna Kea Summit Tour",
+            "short_description": "Experience one of the clearest night skies on Earth at the summit of Mauna Kea.",
+            "long_description": "The summit of Mauna Kea offers one of the best stargazing locations in the world thanks to its high altitude and remote location. While the summit itself is best accessed by specialized tours that provide transportation and guidance, the visitor's center halfway up the mountain provides excellent and accessible opportunities for stargazing with organized programs and amateur telescopes available for use.",
+            "tags": [
+              "astronomy",
+              "scenic",
+              "night"
+            ],
+            "why_worth_it": "Mauna Kea is unparalleled for stargazing, with views that captivate astronomers and amateur star-gazers alike.",
+            "duration": "Half day",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Dusk for sunset and night sky viewing",
+            "local_tip": "Acclimate at the visitor center before heading further up to avoid altitude sickness.",
+            "who_for": [
+              "couples",
+              "astronomy enthusiasts",
+              "nature lovers"
+            ],
+            "what_to_bring": [
+              "warm layers",
+              "camera",
+              "binoculars"
+            ],
+            "watch_out_for": "Altitude sickness; ensure you're adequately acclimatized.",
+            "nearby_pairings": [
+              "Saddle Road Scenic Drive"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [],
+            "weather_sensitivity": "Clear nights provide the best stargazing conditions.",
+            "personalization_note": null
+          },
+          {
+            "id": "hawaii_tropical_botanical_garden",
+            "name": "Hawaii Tropical Botanical Garden",
+            "short_description": "Stroll through a flourishing tropical paradise with incredible biodiversity and scenic ocean views.",
+            "long_description": "Located on the Onomea Bay Shoreline, the Hawaii Tropical Botanical Garden is a lush valley showcasing over 2,000 species of exotic plants. Trails wind through a tropical rainforest, beside cascading streams and past beautiful orchids. This accessible garden is perfect for anyone wanting to experience the island’s vast plant diversity without trekking through the jungle.",
+            "tags": [
+              "botanical",
+              "ocean view",
+              "flora"
+            ],
+            "why_worth_it": "The garden's serene and vibrant landscapes allow visitors to experience Hawaii's biodiversity up close.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "Early morning for a peaceful experience before the crowds",
+            "local_tip": "Chat with the staff for insights on the most unusual or blooming plants during your visit.",
+            "who_for": [
+              "couples",
+              "nature lovers",
+              "photographers"
+            ],
+            "what_to_bring": [
+              "comfortable shoes",
+              "water",
+              "sunhat"
+            ],
+            "watch_out_for": "Mosquitoes; bring repellent to ensure comfort during your visit.",
+            "nearby_pairings": [
+              "Onomea Bay Hike",
+              "Akaka Falls"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "romantic",
+              "accessible"
+            ],
+            "weather_sensitivity": null,
+            "personalization_note": null
+          },
+          {
+            "id": "kealakekua_bay",
+            "name": "Kealakekua Bay",
+            "short_description": "Discover the beauty below the surface at this premier snorkeling location known for crystal-clear waters and vibrant marine life.",
+            "long_description": "Kealakekua Bay is recognized as one of Hawaii's most unique marine preserves, offering clear waters perfect for snorkeling and spotting diverse tropical fish as well as the spinner dolphins that frequent the bay. It's a spectacular place to enjoy the ocean’s tranquillity, with lava formations visible both above and underwater.",
+            "tags": [
+              "snorkeling",
+              "marine",
+              "protected"
+            ],
+            "why_worth_it": "The bay's pristine waters provide some of the best snorkeling on the Big Island, renowned for its coral reefs and sea life.",
+            "duration": "Full day",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "Morning when waters are calm and visibility is at its best",
+            "local_tip": "Access the bay via kayak or small boat for an even more immersive experience.",
+            "who_for": [
+              "couples",
+              "marine life enthusiasts",
+              "adventurous readers"
+            ],
+            "what_to_bring": [
+              "snorkeling gear",
+              "sun protection",
+              "towels"
+            ],
+            "watch_out_for": "Limited access due to conservation efforts; check for restrictions.",
+            "nearby_pairings": [
+              "Captain Cook Monument",
+              "Manini Beach Park"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic"
+            ],
+            "weather_sensitivity": "Windy afternoons can affect water conditions.",
+            "personalization_note": null
+          },
+          {
+            "id": "punalu_sea_turtles",
+            "name": "Sea Turtle Watching at Punalu’u",
+            "short_description": "Get up close and personal with the majestic Hawaiian sea turtles basking on the black sands of Punalu’u.",
+            "long_description": "Punalu’u Black Sand Beach is renowned for its scenic beauty and as a natural habitat for the Hawaiian green sea turtles. These fascinating creatures can be seen resting on the beach, providing an excellent opportunity for wildlife enthusiasts and photographers alike. The contrast of the black volcanic sand and the emerald waters creates a striking backdrop for observing these gentle giants.",
+            "tags": [
+              "wildlife",
+              "unique",
+              "beach"
+            ],
+            "why_worth_it": "The chance to observe sea turtles in their natural habitat is a rare and enchanting experience.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Late afternoon as the turtles come ashore to bask",
+            "local_tip": "Respect the turtles by observing a safe distance and avoiding flash photography.",
+            "who_for": [
+              "wildlife enthusiasts",
+              "photographers",
+              "nature lovers"
+            ],
+            "what_to_bring": [
+              "camera",
+              "binoculars"
+            ],
+            "watch_out_for": "Give turtles their space; stay at least 10 feet away.",
+            "nearby_pairings": [
+              "Punalu'u Black Sand Beach",
+              "South Point"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "romantic"
+            ],
+            "weather_sensitivity": "Turtle activity can vary, but they are usually visible daily.",
+            "personalization_note": null
+          },
+          {
+            "id": "saddle_road_scenic_drive",
+            "name": "Saddle Road Scenic Drive",
+            "short_description": "The scenic drive between Hilo and Kona offers dramatic vistas and access to varied ecosystems.",
+            "long_description": "Driving Saddle Road, now officially known as Daniel K. Inouye Highway, is one of the most scenic and dramatic routes across the Big Island. The road traverses between the massive volcanoes of Mauna Kea and Mauna Loa, with diverse ecosystems ranging from pastureland to volcanic fields and lush forests. It's a favorite with photographers and those who appreciate a scenic drive with ever-changing landscapes.",
+            "tags": [
+              "scenic drive",
+              "landscape",
+              "diverse"
+            ],
+            "why_worth_it": "This drive showcases the Big Island's dramatic shift from lush forests to stark volcanic landscapes.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Early morning for optimal lighting and less traffic",
+            "local_tip": "Keep an eye out for nēnē, Hawaii's native goose, crossing the road.",
+            "who_for": [
+              "couples",
+              "photographers",
+              "first-timers"
+            ],
+            "what_to_bring": [
+              "camera",
+              "snacks",
+              "water"
+            ],
+            "watch_out_for": "Variable weather conditions; be prepared for sudden changes.",
+            "nearby_pairings": [
+              "Mauna Kea Observatories",
+              "Wai'anae Waterfall"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Weather conditions can change rapidly, especially near peaks.",
+            "personalization_note": null
+          },
+          {
+            "id": "pololu_valley_lookout",
+            "name": "Pololū Valley Lookout",
+            "short_description": "Admire breathtaking views of a steep, lush valley and towering sea cliffs descending into the Pacific Ocean.",
+            "long_description": "The Pololū Valley Lookout on the Kohala Coast offers a jaw-dropping panorama of Hawaii's rugged northern coastline. This easily accessible viewpoint provides sweeping vistas over the valley and its black sand beach below. For those that seek stunning scenery without a lengthy hike, the lookout itself offers plenty of wow factor, though a short trek down to the beach provides further exploration possibilities.",
+            "tags": [
+              "viewpoint",
+              "coastline",
+              "picturesque"
+            ],
+            "why_worth_it": "The vistas at Pololū Valley provide a sense of Hawaii's raw beauty and isolation.",
+            "duration": "30 minutes",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Mid-morning for clear views and favorable light for photography",
+            "local_tip": "Extend your visit with a light picnic while soaking in the scenery.",
+            "who_for": [
+              "couples",
+              "photographers",
+              "nature lovers"
+            ],
+            "what_to_bring": [
+              "camera",
+              "binoculars",
+              "light snacks"
+            ],
+            "watch_out_for": "Parking can be limited; arrive early to secure a spot.",
+            "nearby_pairings": [
+              "Kapaau Village",
+              "Keokea Beach Park"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "romantic"
+            ],
+            "weather_sensitivity": "Weather-dependent; visibility can be poor in rain.",
+            "personalization_note": null
+          },
+          {
+            "id": "green_sand_beach_papakolea",
+            "name": "Papakōlea Green Sand Beach",
+            "short_description": "Venture to one of only four green sand beaches in the world, a hidden gem of the Big Island.",
+            "long_description": "Papakōlea Beach, located near South Point, is famed for its rare green sand, rich in olivine crystals from the surrounding volcanic rock. The trek to this beach involves a 2.5-mile walk (or an adventurous off-road drive), offering unique views and an untouched wilderness experience. Though adventurous access is required, the vibrant hue and serenity of the beach make it truly worth the effort.",
+            "tags": [
+              "beach",
+              "unique",
+              "remote"
+            ],
+            "why_worth_it": "The chance to walk on this rare and vibrant green-sand beach is a rare geological experience.",
+            "duration": "Half day",
+            "effort": "moderate",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Morning or late afternoon for cooler temperatures on the walk",
+            "local_tip": "Start the walk early to avoid the midday sun and crowds.",
+            "who_for": [
+              "nature lovers",
+              "adventure seekers",
+              "photographers"
+            ],
+            "what_to_bring": [
+              "hiking shoes",
+              "sun protection",
+              "water"
+            ],
+            "watch_out_for": "Path can be rough; not suitable for all wheelchairs or strollers.",
+            "nearby_pairings": [
+              "South Point Cliffs"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "adventure"
+            ],
+            "weather_sensitivity": "Avoid when winds are high as they can make the beach uncomfortable.",
+            "personalization_note": "The walk can be a bit rigorous and requires preparation for the return trip in the sun."
+          }
+        ]
+      },
+      {
+        "id": "hiking_outdoors",
+        "name": "Hiking & Outdoors",
+        "description": "Explore the Big Island's diverse landscapes through its stunning hiking trails, from lush rainforests to volcanic craters.",
+        "experiences": [
+          {
+            "id": "hawaii-volcanoes-national-park",
+            "name": "Hiking in Hawaii Volcanoes National Park",
+            "short_description": "Trek through a volcanic landscape at Hawaii Volcanoes National Park, where you can see the active Kilauea and Mauna Loa volcanoes up close.",
+            "long_description": "The park offers a variety of hikes, from the easy Kilauea Iki Trail (about 4 miles round trip with 400 feet elevation gain) where you walk through a forest and into a crater, to the challenging Mauna Loa Trail (about 13 miles one-way with a 6,000 feet elevation gain), which takes you to the summit of the world's largest volcano. This area is a geologist's dream, offering incredible insights into volcanic activity and lush native flora at lower elevations.",
+            "tags": [
+              "outdoor",
+              "volcano",
+              "adventure"
+            ],
+            "why_worth_it": "Experience the raw power of Earth's geothermal forces and the constant change of the landscape.",
+            "duration": "2–8 hours depending on trail choice",
+            "effort": "moderate",
+            "cost_band": "mid",
+            "booking_difficulty": "walk_in",
+            "best_time": "Early morning for cooler temperatures and fewer crowds",
+            "local_tip": "Start with the Kilauea Iki Trail for a moderate hike and volcano view and visit the visitor center for the latest lava activity updates.",
+            "who_for": [
+              "adventure seekers",
+              "nature lovers",
+              "science enthusiasts"
+            ],
+            "what_to_bring": [
+              "sturdy shoes",
+              "plenty of water",
+              "sun protection",
+              "rain gear"
+            ],
+            "watch_out_for": "Sudden weather changes and volcanic gases; check ranger alerts for safety.",
+            "nearby_pairings": [
+              "Thurston Lava Tube",
+              "Jaggar Museum"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Check conditions, as rain can make trails slippery.",
+            "personalization_note": null
+          },
+          {
+            "id": "pololu-valley-lookout",
+            "name": "Pololū Valley Lookout and Trail",
+            "short_description": "Descend into the stunning Pololū Valley for a rewarding hike with ocean views and a black sand beach.",
+            "long_description": "The Pololū Valley Trail is a beautiful but challenging 2.5-mile round trip (with 420 feet elevation loss/gain) hike located on the northern tip of the island. Starting at the lookout, the trail descends steeply into the valley, where you are greeted by a stunning black sand beach and lush surroundings. It's a picturesque spot to relax, take photos, and enjoy the untouched nature.",
+            "tags": [
+              "outdoor",
+              "scenic",
+              "beach"
+            ],
+            "why_worth_it": "Immerse yourself in one of Hawaii's most scenic and untouched landscapes.",
+            "duration": "1.5–2 hours",
+            "effort": "moderate",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Morning to beat the heat and potential crowds",
+            "local_tip": "Parking is limited at the lookout, so arrive early to secure a spot.",
+            "who_for": [
+              "photographers",
+              "nature lovers",
+              "couples"
+            ],
+            "what_to_bring": [
+              "hiking boots",
+              "water",
+              "camera"
+            ],
+            "watch_out_for": "Slippery and muddy conditions after rain; be prepared for steep sections.",
+            "nearby_pairings": [
+              "Waipio Valley Overlook",
+              "Hawi town"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Trail can become muddy after rain, increasing difficulty.",
+            "personalization_note": null
+          },
+          {
+            "id": "akaka-falls-trail",
+            "name": "Akaka Falls State Park Trail",
+            "short_description": "Take an easy walk through lush rainforest to view the spectacular 442-foot Akaka Falls.",
+            "long_description": "This short loop trail (0.4 miles) offers a leisurely walk through rich tropical flora to reach a viewing point for Akaka Falls. Located near Hilo on the windward side, this is the perfect spot for those looking to enjoy the majesty of Hawaiian waterfalls without a strenuous hike. The trail also leads to the less dramatic but equally beautiful Kahuna Falls.",
+            "tags": [
+              "waterfall",
+              "easy",
+              "family friendly"
+            ],
+            "why_worth_it": "Marvel at one of Hawaii's most iconic waterfalls in a lush rainforest setting.",
+            "duration": "30–45 minutes",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "Early morning for clear view and cooler air",
+            "local_tip": "Bring cash for the parking fee and check facilities for restrooms.",
+            "who_for": [
+              "families",
+              "nature lovers",
+              "first-timers"
+            ],
+            "what_to_bring": [
+              "camera",
+              "waterproof jacket"
+            ],
+            "watch_out_for": "Trail can be slick in places; bright light early can minimize glare over the falls.",
+            "nearby_pairings": [
+              "Hilo Farmers Market",
+              "Rainbow Falls"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible"
+            ],
+            "weather_sensitivity": "Best enjoyed in dry conditions to avoid slippery paths.",
+            "personalization_note": null
+          },
+          {
+            "id": "mauna-kea-summit",
+            "name": "Mauna Kea Summit Hike",
+            "short_description": "Conquer Hawaii's highest peak with a challenging but rewarding trek to Mauna Kea Summit.",
+            "long_description": "The Mauna Kea Summit trail offers an unparalleled experience for avid hikers and those who dream of touching the sky. This challenging 12-mile round trip hike involves a significant elevation gain of nearly 4,500 feet and takes place at high altitudes, starting near the Visitor Information Station. Hikers are rewarded with views of the stars, exploring the summit of one of the tallest mountains in the world from base to peak. Due to extreme conditions and high altitude, hikers need to be properly acclimatized.",
+            "tags": [
+              "adventure",
+              "summit",
+              "challenging"
+            ],
+            "why_worth_it": "Stand atop the highest point in Hawaii and witness a breathtaking stargaze.",
+            "duration": "Full day",
+            "effort": "strenuous",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Consider the afternoon for optimal stargazing post-hike",
+            "local_tip": "Acclimatize at the Visitor Center before attempting the summit; road conditions can be challenging.",
+            "who_for": [
+              "adventurers",
+              "stargazers",
+              "experienced hikers"
+            ],
+            "what_to_bring": [
+              "warm clothing",
+              "plenty of water",
+              "sunscreen"
+            ],
+            "watch_out_for": "Altitude sickness can affect those not acclimatized; weather can quickly change.",
+            "nearby_pairings": [
+              "Mauna Kea Visitor Center",
+              "Onizuka Center for International Astronomy"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Clear skies desired for visibility; windy conditions possible.",
+            "personalization_note": "This hike requires good physical condition and may be challenging for some."
+          },
+          {
+            "id": "waipio-valley-trail",
+            "name": "Hike Down Waipio Valley",
+            "short_description": "Venture into a sacred and stunning valley with a steep, memorable descent followed by lush, scenic wonders.",
+            "long_description": "The hike into Waipio Valley is a steep, paved 1-mile road that descends 800 feet to a beautiful black sand beach and river views flanked by towering cliffs. While the trail itself is short, the return uphill is taxing. The valley floor offers lush views, taro fields, and waterfalls visible with further exploration. Due to its cultural significance, respect the land and local residents by adhering to designated paths.",
+            "tags": [
+              "scenic",
+              "beach",
+              "cultural"
+            ],
+            "why_worth_it": "Explore one of Hawaii's most sacred and picturesque locales, rich with history and beauty.",
+            "duration": "3–4 hours",
+            "effort": "moderate",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Morning for cooler temperatures",
+            "local_tip": "Parking is extremely limited; arrive early and consider hiking before it gets too warm.",
+            "who_for": [
+              "history buffs",
+              "nature lovers",
+              "cultural enthusiasts"
+            ],
+            "what_to_bring": [
+              "hiking poles",
+              "sunhat",
+              "sunscreen"
+            ],
+            "watch_out_for": "Steep incline and potential road hazards; heavy rain can cause stream flooding.",
+            "nearby_pairings": [
+              "Pololu Valley Lookout",
+              "Kukuihaele Park"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "solo_friendly",
+              "romantic"
+            ],
+            "weather_sensitivity": "Rain can make descents treacherous; check forecasts.",
+            "personalization_note": "The steep ascent on the return may not be suited for everyone."
+          },
+          {
+            "id": "puuhonua-o-honaunau-national-historical-park",
+            "name": "Coastal Hike at Pu'uhonua o Honaunau",
+            "short_description": "Discover the historical and spiritual heart of old Hawaii with an easy coastal hike in South Kona.",
+            "long_description": "The Pu'uhonua o Honaunau National Historical Park offers a fascinating 1-mile loop around royal grounds and a significant pu‘uhonua, or place of refuge. Walking the shoreline offers coastal views, with the opportunity to observe ancient Hawaiian structures and cultural artifacts. It is a unique way to blend hiking with Hawaiian history and cultural immersion at a serene seaside location.",
+            "tags": [
+              "history",
+              "coastal",
+              "easy"
+            ],
+            "why_worth_it": "Walk through history and nature in a peaceful coastal park rich with island heritage.",
+            "duration": "1 hour",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "Afternoon for pleasant coastal breezes",
+            "local_tip": "Visit the nearby snorkeling site to see the underwater beauty right by the exit of your hike.",
+            "who_for": [
+              "history enthusiasts",
+              "families",
+              "nature lovers"
+            ],
+            "what_to_bring": [
+              "sandals",
+              "camera",
+              "hat"
+            ],
+            "watch_out_for": "Hot sun exposure in open areas; sunscreen is a must.",
+            "nearby_pairings": [
+              "Two Step Beach",
+              "Honaunau Bay"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible"
+            ],
+            "weather_sensitivity": "Best during dry weather; avoid midday heat.",
+            "personalization_note": null
+          },
+          {
+            "id": "mau-umae-trail-in-kailua-kona",
+            "name": "Mau'umae Trail in Kailua-Kona",
+            "short_description": "Enjoy sweeping views and a manageable hike near Kailua-Kona on the Mau’umae Trail.",
+            "long_description": "Located in the Makā’iwa Bay area, the Mau’umae Trail stretches 2.5 miles offering breathtaking coastal and volcanic mountain views. This moderate trail winds through a mix of lava fields and grasslands, known for its wildflowers and panoramic views. Ideal for those seeking a less crowded hiking experience while enjoying Hawaii's natural beauty.",
+            "tags": [
+              "coastal",
+              "views",
+              "moderate"
+            ],
+            "why_worth_it": "Delight in one of Kona's quieter trails offering peace and stunning views across diverse terrains.",
+            "duration": "2–3 hours",
+            "effort": "moderate",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Early morning to catch the sunrise",
+            "local_tip": "Pick a clear day for the best kind of views; binoculars can enhance distant scenery.",
+            "who_for": [
+              "couples",
+              "photographers",
+              "nature lovers"
+            ],
+            "what_to_bring": [
+              "comfortable walking shoes",
+              "binoculars",
+              "water"
+            ],
+            "watch_out_for": "Limited shade; use sun protection to avoid overexposure.",
+            "nearby_pairings": [
+              "Kailua-Kona town",
+              "Kekaha Kai State Park"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Clear weather enhances visibility and experience.",
+            "personalization_note": null
+          },
+          {
+            "id": "kapoho-tide-pools-hike",
+            "name": "Explore the Kapoho Tide Pools",
+            "short_description": "Snorkeling-friendly tide pools offer gentle hiking and marine exploration near Puna.",
+            "long_description": "The Kapoho Tide Pools, located near the eastern tip of the island, offer a unique experience of exploration among fascinating natural formations. While mostly accessed for snorkeling, the area allows for light hiking and walking between large interconnected pools that house vibrant coral and marine life. Past recent volcanic activity has covered parts of this area, so check current access conditions.",
+            "tags": [
+              "snorkeling",
+              "marine",
+              "easy"
+            ],
+            "why_worth_it": "Combine a gentle exploration with an opportunity to witness stunning underwater worlds in shallow, calm waters.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Late morning when sunlight illuminates the pools",
+            "local_tip": "Tide charts can enhance planning for optimal viewing times.",
+            "who_for": [
+              "marine enthusiasts",
+              "families",
+              "photographers"
+            ],
+            "what_to_bring": [
+              "mask and snorkel",
+              "water shoes",
+              "towel"
+            ],
+            "watch_out_for": "Slippery rocks and varying water levels around tidal shifts.",
+            "nearby_pairings": [
+              "Pahoa Village",
+              "Ahalanui Warm Pond"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly"
+            ],
+            "weather_sensitivity": "Poor visibility during rain, but generally mild weather effects.",
+            "personalization_note": null
+          }
+        ]
+      },
+      {
+        "id": "culture_history",
+        "name": "Culture & History",
+        "description": "The Big Island offers a deep dive into Hawaiian culture and history, with experiences ranging from ancient temples to living traditions and vibrant communities.",
+        "experiences": [
+          {
+            "id": "hawaii_volcanoes_national_park",
+            "name": "Hawai'i Volcanoes National Park",
+            "short_description": "Explore the dynamic landscape shaped by centuries of volcanic activity and delve into Hawaiian mythology and natural wonders.",
+            "long_description": "Hawai'i Volcanoes National Park is a UNESCO World Heritage Site that showcases the island's volcanic activity and rich natural history. Visitors can see the active Kilauea and Mauna Loa volcanoes, hike through lush rainforests and deserts, and experience lava tubes and steam vents. The park is also a vital cultural site, with ancient petroglyphs and sacred sites that offer a glimpse into Hawaiian mythology and practices. A visitor center provides educational exhibits and ranger-led tours that enhance the understanding of both the geological marvels and the rich cultural tapestry woven by the native Hawaiian peoples.",
+            "tags": [
+              "outdoor",
+              "educational",
+              "nature"
+            ],
+            "why_worth_it": "Witness the power of nature and understand its significance in Hawaiian culture.",
+            "duration": "Full day",
+            "effort": "moderate",
+            "cost_band": "mid",
+            "booking_difficulty": "walk_in",
+            "best_time": "Morning, when the park is less crowded and temperatures are cooler",
+            "local_tip": "Start early in the Volcanoes Observatory area to catch dramatic morning views and avoid peak crowds.",
+            "who_for": [
+              "nature lovers",
+              "history buffs",
+              "adventure seekers"
+            ],
+            "what_to_bring": [
+              "hiking boots",
+              "water",
+              "rain jacket"
+            ],
+            "watch_out_for": "Some trails can be steep and slippery; keep an eye on signs indicating current lava flows and closures.",
+            "nearby_pairings": [
+              "Thurston Lava Tube",
+              "Chain of Craters Road"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "educational",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Avoid during heavy rains; trails may become hazardous.",
+            "personalization_note": null
+          },
+          {
+            "id": "puuhonua_o_honaunau_national_historical_park",
+            "name": "Pu'uhonua o Hōnaunau National Historical Park",
+            "short_description": "Step into a sacred place of refuge and history of ancient Hawaiian law and society.",
+            "long_description": "Pu'uhonua o Hōnaunau National Historical Park, located on the Kona Coast, is a sacred site that tells the story of ancient Hawaiian traditions and laws. Historically, it was a place of refuge for those who broke kapu, the sacred laws, providing a chance for absolution. The park features royal grounds, heiau (temples), and reconstructed traditional Hawaiian structures. Interpretive signs, guides, and occasional reenactments provide insights into the spiritual and social governance of pre-contact Hawaiian society. It's a serene and powerful place to connect with the spiritual roots of Hawaii.",
+            "tags": [
+              "historic",
+              "educational",
+              "cultural"
+            ],
+            "why_worth_it": "Gain profound insights into ancient Hawaiian spiritual and social practices.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "Morning or late afternoon for cooler temperatures and smaller crowds",
+            "local_tip": "Visit during weekday afternoons to avoid weekend crowds and enjoy peaceful reflection in the park.",
+            "who_for": [
+              "culture enthusiasts",
+              "history lovers",
+              "spiritual seekers"
+            ],
+            "what_to_bring": [
+              "comfortable shoes",
+              "water",
+              "sun protection"
+            ],
+            "watch_out_for": "Limited shade; sunscreen and hats are necessary.",
+            "nearby_pairings": [
+              "Kealakekua Bay",
+              "Kona Coffee Living History Farm"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible"
+            ],
+            "weather_sensitivity": null,
+            "personalization_note": null
+          },
+          {
+            "id": "imiloa_astronomy_center",
+            "name": "'Imiloa Astronomy Center",
+            "short_description": "Explore the intersecting worlds of Hawaiian culture and astronomy on the slopes of Mauna Kea.",
+            "long_description": "The 'Imiloa Astronomy Center offers an innovative exploration of the universe and Hawaiian culture, uniquely blending the two perspectives. Situated on the University of Hawaii at Hilo campus, the center features interactive exhibits, planetarium shows, and gardens highlighting native Hawaiian plants. The center educates visitors on the significance of Mauna Kea to both astronomers and native Hawaiians, presenting a narrative where traditional navigation and modern science meet. A visit here illuminates the natives’ star navigation techniques and their connection to the cosmos, broadening understanding of Hawaii’s cultural and scientific legacy.",
+            "tags": [
+              "interactive",
+              "educational",
+              "science"
+            ],
+            "why_worth_it": "Offers a rich, integrated understanding of Hawaiian cultural heritage and astronomy.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Mid-morning, when interactive exhibits and planetarium shows are scheduled frequently",
+            "local_tip": "Check the schedule for planetarium shows and book tickets in advance, as they can sell out.",
+            "who_for": [
+              "families",
+              "science enthusiasts",
+              "culture lovers"
+            ],
+            "what_to_bring": [
+              "curiosity",
+              "camera"
+            ],
+            "watch_out_for": "Pre-booking planetarium shows is strongly recommended to secure a seat.",
+            "nearby_pairings": [
+              "Mauna Kea Summit",
+              "Hilo Farmer's Market"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "educational"
+            ],
+            "weather_sensitivity": null,
+            "personalization_note": null
+          },
+          {
+            "id": "ava_ceremony_experience",
+            "name": "'Awa Ceremony Experience",
+            "short_description": "Participate in a traditional Hawaiian 'awa ceremony and learn about its cultural significance.",
+            "long_description": "'Awa, also known as kava, has been used in Hawaiian ceremonies for centuries. Participating in an 'awa ceremony offers a unique opportunity to experience a traditional Hawaiian practice centered around community and spiritual connection. Expert facilitators guide the experience, explaining the history, purpose, and cultural significance of 'awa drinking. Participants learn about its role in Hawaiian customs and have a chance to taste the drink, often described as having a calming effect. These ceremonies provide a respectful, immersive entrée into deep cultural traditions of Hawaii.",
+            "tags": [
+              "cultural",
+              "engaging",
+              "spiritual"
+            ],
+            "why_worth_it": "Experience a genuine Hawaiian tradition that fosters community and reflection.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Evenings, when ceremonies are commonly held",
+            "local_tip": "Book in advance, as small group sizes mean these ceremonies fill up quickly.",
+            "who_for": [
+              "culture enthusiasts",
+              "spiritual seekers",
+              "curious minds"
+            ],
+            "what_to_bring": [
+              "open mind",
+              "comfortable attire"
+            ],
+            "watch_out_for": "Pace yourself if new to 'awa, as its effects are relaxing but can be potent.",
+            "nearby_pairings": [
+              "Hilo Farmers Market",
+              "Lyman Museum"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly"
+            ],
+            "suitability_tags": [
+              "group_friendly",
+              "romantic"
+            ],
+            "weather_sensitivity": null,
+            "personalization_note": null
+          },
+          {
+            "id": "holualoa_village",
+            "name": "Holualoa Village",
+            "short_description": "Discover an artists’ haven where coffee farms meet galleries amid the historic Kona Coffee Belt.",
+            "long_description": "Holualoa Village is nestled in the cool, misty uplands along the Kona Coffee Belt. Known for its array of art galleries and studios, this charming village is a creative hub where visitors can explore the works of local painters, sculptors, and potters. The community regularly hosts 'First Friday' art strolls, where galleries and cafés open their doors for an evening of art, music, and community spirit. Visitors can also learn about the region's coffee history at small farms and taste fresh brews made from locally grown beans — offering a rich blend of cultural and sensory experiences.",
+            "tags": [
+              "art",
+              "rural",
+              "coffee"
+            ],
+            "why_worth_it": "Engage with local art and the historical coffee culture in a beautiful setting.",
+            "duration": "Half day",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "First Friday evenings for a lively community atmosphere",
+            "local_tip": "Join the First Friday art walk for a vibrant introduction to the village’s creative and cultural life.",
+            "who_for": [
+              "art lovers",
+              "coffee enthusiasts",
+              "couples"
+            ],
+            "what_to_bring": [
+              "camera",
+              "notepad"
+            ],
+            "watch_out_for": "On event nights, parking can be limited; arrive early to secure a spot.",
+            "nearby_pairings": [
+              "Kona Coffee Living History Farm",
+              "Kona Historical Society"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly"
+            ],
+            "suitability_tags": [
+              "romantic",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Some activities are weather dependent; rain may affect outdoor events.",
+            "personalization_note": null
+          },
+          {
+            "id": "kohala_historical_sites_state_monument",
+            "name": "Kohala Historical Sites State Monument",
+            "short_description": "Walk the land where some of Hawaii's most significant historical events took place.",
+            "long_description": "Kohala Historical Sites State Monument is a treasure trove of early Hawaiian history, mainly known for the Mo'okini Heiau, one of the oldest and most sacred temples in Hawaii. Built in the 13th century, this site was a place of worship and is connected to the legendary figure, Kamehameha I, who was born in the area. The monument offers a quiet, reverent experience, allowing visitors to connect with the Hawaiian past amid striking scenery. With little commercialization, it provides an authentic glimpse into the island's spiritual history, further enriched by guided tours explaining the significance and stories of these powerful sites.",
+            "tags": [
+              "historic",
+              "sacred",
+              "educational"
+            ],
+            "why_worth_it": "Visit one of Hawaii's oldest sacred sites and learn about its legendary past.",
+            "duration": "1–2 hours",
+            "effort": "moderate",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Morning, for solitude and cooler weather",
+            "local_tip": "Hire a local guide to fully appreciate the historical and cultural significance of the site.",
+            "who_for": [
+              "history buffs",
+              "culture enthusiasts",
+              "spiritual seekers"
+            ],
+            "what_to_bring": [
+              "walking shoes",
+              "water",
+              "sun protection"
+            ],
+            "watch_out_for": "Uneven paths and exposed fields; be prepared for a rustic experience.",
+            "nearby_pairings": [
+              "Pololū Valley Lookout",
+              "Lapakahi State Historical Park"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Best on a clear day for visible views of the coastline.",
+            "personalization_note": null
+          },
+          {
+            "id": "lyman_museum",
+            "name": "Lyman Museum and Mission House",
+            "short_description": "Explore Hawaii's natural and cultural history within Hilo's historic mission grounds.",
+            "long_description": "Founded in 1839, the Lyman Museum presents a fascinating collection that traces Hawaii's natural and cultural transformations. Originally the house of missionaries David and Sarah Lyman, it provides a poignant look at early settler life and the island’s development through exhibits of Hawaiian artifacts, minerals, and interactive dioramas. The adjoining mission house, preserved in its original state, offers guided tours detailing the lives of the Lymans and their influence on 19th-century Hilo. The museum captivates with its blend of Hawaiian and Western histories, revealing how these narratives have shaped the island.",
+            "tags": [
+              "museum",
+              "historic",
+              "educational"
+            ],
+            "why_worth_it": "Gain insights into the convergence of Hawaiian and Western cultures over two centuries.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Mid-morning to maximize time for exploring exhibits and enjoy guided tours",
+            "local_tip": "Check for special exhibits or lectures held at the museum during your visit.",
+            "who_for": [
+              "history buffs",
+              "families",
+              "culture enthusiasts"
+            ],
+            "what_to_bring": [
+              "camera",
+              "notepad"
+            ],
+            "watch_out_for": "Limited wheelchair access in the historic mission house.",
+            "nearby_pairings": [
+              "Rainbow Falls",
+              "Pacific Tsunami Museum"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "educational"
+            ],
+            "weather_sensitivity": null,
+            "personalization_note": null
+          }
+        ]
+      },
+      {
+        "id": "romantic",
+        "name": "Romantic & Special Occasion",
+        "description": "Celebrate love and special moments on the Big Island with intimate settings and memorable experiences.",
+        "experiences": [
+          {
+            "id": "sunset_cocktail_at_hapuna_beach",
+            "name": "Sunset Cocktails at Hapuna Beach",
+            "short_description": "Toast to a perfect evening with cocktails in hand as the sun dips below the horizon on Hapuna Beach.",
+            "long_description": "Hapuna Beach, known for its broad stretches of white sand, becomes particularly magical at sunset. As the sky bursts into hues of orange and pink, couples can enjoy a leisurely cocktail from the nearby beach bar. It's the perfect setting to unwind together, listening to the gentle sound of the waves and watching the horizon paint itself in glorious colors. Given the beach's westward-facing location, sunsets here are nothing short of spectacular.",
+            "tags": [
+              "beach",
+              "evening",
+              "bar"
+            ],
+            "why_worth_it": "The westward-facing beach provides a front-row seat to breathtaking sunsets, perfect for a romantic toast.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "walk_in",
+            "best_time": "Arrive by 5:30 PM for the 6:30 PM sunset",
+            "local_tip": "Bring a light jacket as the breeze can pick up after sunset.",
+            "who_for": [
+              "couples",
+              "solo travelers",
+              "first-timers"
+            ],
+            "what_to_bring": [
+              "light jacket"
+            ],
+            "watch_out_for": "Can get crowded on weekends; weekdays are more tranquil.",
+            "nearby_pairings": [
+              "Romantic Dinner at Meridia",
+              "Waimea Farmers Market"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly"
+            ],
+            "suitability_tags": [
+              "romantic",
+              "group_friendly"
+            ],
+            "weather_sensitivity": null,
+            "personalization_note": null
+          },
+          {
+            "id": "private_stargazing_mauna_kea",
+            "name": "Private Stargazing on Mauna Kea",
+            "short_description": "Experience the cosmos under one of the world's clearest skies with a private stargazing tour on Mauna Kea.",
+            "long_description": "Mauna Kea's summit is one of the best locations on earth for stargazing, thanks to its high altitude and minimal light pollution. A private tour offers an intimate experience as a knowledgeable guide points out constellations, planets, and other celestial wonders. It's an awe-inspiring way to connect with your partner while witnessing the universe unfold above you, with only the rustle of the wind as your soundtrack.",
+            "tags": [
+              "adventure",
+              "night",
+              "educational"
+            ],
+            "why_worth_it": "Private stargazing provides an intimate setting under one of the clearest skies, perfect for sharing wonder with a loved one.",
+            "duration": "Half day",
+            "effort": "moderate",
+            "cost_band": "premium",
+            "booking_difficulty": "hard_to_get",
+            "best_time": "After 8 PM on clear nights",
+            "local_tip": "Dress warmly; temperatures at the summit can drop below freezing.",
+            "who_for": [
+              "couples",
+              "astronomy fans"
+            ],
+            "what_to_bring": [
+              "warm clothing",
+              "camera"
+            ],
+            "watch_out_for": "High altitude may cause discomfort; acclimate properly.",
+            "nearby_pairings": [
+              "Visit to Mauna Kea Observatory",
+              "Waimea Coffee Farm Tour"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "accessible"
+            ],
+            "weather_sensitivity": "Avoid during cloudy nights for optimal stargazing",
+            "personalization_note": null
+          },
+          {
+            "id": "helicopter_tour_over_kilauea",
+            "name": "Helicopter Tour over Kilauea",
+            "short_description": "Feel the thrill together as you soar above the active Kilauea volcano, experiencing its raw power from above.",
+            "long_description": "A helicopter tour over Kilauea offers unmatched views of one of the world's most active volcanoes. As you and your partner fly above the craters and flows, you'll witness the breathtaking landscape shaped by ongoing volcanic activity. This adventure is not only thrilling but deeply personal, as seeing this earth-shaping force from above reminds you how small and connected we are to nature's grandeur.",
+            "tags": [
+              "adventure",
+              "jaw-dropping views",
+              "aerial"
+            ],
+            "why_worth_it": "See the awe-inspiring power of Kilauea from the air, a once-in-a-lifetime shared experience.",
+            "duration": "1 hour",
+            "effort": "easy",
+            "cost_band": "premium",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Morning for clearer skies",
+            "local_tip": "Opt for a morning flight for the clearest views.",
+            "who_for": [
+              "couples",
+              "adventurous travelers",
+              "first-timers"
+            ],
+            "watch_out_for": "Weather conditions can cancel flights; always check ahead.",
+            "nearby_pairings": [
+              "Volcanoes National Park Visit",
+              "Nani Mau Gardens Stroll"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "adventure_seeking"
+            ],
+            "weather_sensitivity": "Weather can affect visibility and flight schedules",
+            "personalization_note": null
+          },
+          {
+            "id": "moonlit_volcano_hike",
+            "name": "Moonlit Hike in Volcanoes National Park",
+            "short_description": "Immerse in the mystical landscape of Hawaii's Volcanoes National Park by moonlight.",
+            "long_description": "Explore the surreal landscapes of Volcanoes National Park under the silvery glow of the moon. Guided by a local, this hike will lead you through eerie lava fields and lush rainforests. This unique night adventure provides an ethereal feeling, contrasting the rugged beauty of the black lava against the softer moonlight. It's a quiet, contemplative experience perfect for couples seeking something different and memorable.",
+            "tags": [
+              "adventure",
+              "outdoor",
+              "night"
+            ],
+            "why_worth_it": "The moonlight hike offers a different perspective of the volcanic landscape while providing a serene experience away from crowds.",
+            "duration": "2–3 hours",
+            "effort": "moderate",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Full moon nights for best visibility",
+            "local_tip": "Start after sunset to catch the twilight transition into night.",
+            "who_for": [
+              "couples",
+              "outdoor enthusiasts"
+            ],
+            "what_to_bring": [
+              "sturdy hiking shoes",
+              "water",
+              "flashlight"
+            ],
+            "watch_out_for": "Trail can be uneven; be cautious.",
+            "nearby_pairings": [
+              "Kilauea Iki Trail",
+              "Hawaii Volcanoes Winery Tour"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "adventure_seeking"
+            ],
+            "weather_sensitivity": "Avoid during rain as trails become slippery",
+            "personalization_note": null
+          },
+          {
+            "id": "romantic_dinner_at_meridia",
+            "name": "Romantic Dinner at Meridia",
+            "short_description": "Savor Mediterranean-inspired cuisine in an intimate setting overlooking the Pacific Ocean.",
+            "long_description": "Located in the Westin Hapuna Beach Resort, Meridia offers a sophisticated dining experience where couples can enjoy expertly crafted Mediterranean dishes. The open-air terrace provides stunning ocean views, creating a perfect backdrop for a romantic meal. Their menu is seasonally inspired, highlighting local ingredients crafted into delightful dishes that cater to a variety of dietary preferences. The setting, service, and culinary mastery guarantee a memorable dining experience.",
+            "tags": [
+              "dining",
+              "seafood",
+              "evening"
+            ],
+            "why_worth_it": "The combination of exquisite cuisine and ocean views makes it an unforgettable romantic dining experience.",
+            "duration": "2 hours",
+            "effort": "easy",
+            "cost_band": "premium",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "At sunset for the spectacular view",
+            "local_tip": "Request a table on the terrace for the best views.",
+            "who_for": [
+              "couples",
+              "gourmet fans",
+              "first-timers"
+            ],
+            "watch_out_for": "High demand means reservations are essential.",
+            "nearby_pairings": [
+              "Sunset Walk on Hapuna Beach",
+              "Kohala Spa Treatment"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly"
+            ],
+            "suitability_tags": [
+              "romantic",
+              "gourmet"
+            ],
+            "weather_sensitivity": null,
+            "personalization_note": null
+          },
+          {
+            "id": "waipio_valley_horseback_ride",
+            "name": "Horseback Ride Through Waipiʻo Valley",
+            "short_description": "Journey through the stunning and secluded Waipiʻo Valley on horseback, surrounded by waterfalls and lush forests.",
+            "long_description": "The Waipiʻo Valley is a place of unrivaled beauty and tranquillity. A guided horseback ride allows couples to experience this sacred and remote area traditionally used as fertile taro fields and home to cascading waterfalls and dense rainforest. It's an intimate way to explore natural wonders on the Big Island, offering both adventure and serenity as you ride along trails less traveled, taking in the breathtaking views that few get to see.",
+            "tags": [
+              "nature",
+              "adventure",
+              "scenic"
+            ],
+            "why_worth_it": "The secluded beauty and gentle pace offer an unmatched romantic adventure into one of Hawaii’s most cherished landscapes.",
+            "duration": "3–4 hours",
+            "effort": "moderate",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Morning to mid-afternoon",
+            "local_tip": "Photograph the valley's panoramic views at the halfway point.",
+            "who_for": [
+              "couples",
+              "nature lovers",
+              "adventurous travelers"
+            ],
+            "what_to_bring": [
+              "comfortable clothing",
+              "camera",
+              "water"
+            ],
+            "watch_out_for": "Uneven terrain can make the ride bumpy.",
+            "nearby_pairings": [
+              "Hike to Hiʻilawe Falls",
+              "Waipio Valley Shuttle Tour"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "adventure_seeking"
+            ],
+            "weather_sensitivity": "Better on dry days to avoid muddy trails",
+            "personalization_note": null
+          },
+          {
+            "id": "kona_coffee_farm_tour_and_tasting",
+            "name": "Kona Coffee Farm Tour & Tasting",
+            "short_description": "Discover the art of Kona coffee with a private tour and tasting at a local farm.",
+            "long_description": "Experience the flavors of the Big Island with a personal tour of a Kona coffee farm. This intimate experience allows you and your partner to learn about the cultivation and processing of world-renowned coffee. You'll wander through the coffee trees, sample fresh brews, and perhaps even savor locally grown chocolates. This serene setting among the hills provides a delightful afternoon filled with rich aromas and flavors, an idyllic setting for coffee lovers to bond over a shared passion.",
+            "tags": [
+              "food",
+              "educational",
+              "daytime"
+            ],
+            "why_worth_it": "A private coffee tour offers a chance to connect over shared tastes while enjoying the island's stunning landscape.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Late morning for the freshest brews",
+            "local_tip": "Purchase some fresh beans to relive the memory at home.",
+            "who_for": [
+              "couples",
+              "coffee enthusiasts",
+              "food lovers"
+            ],
+            "watch_out_for": "Tours can fill up; book in advance.",
+            "nearby_pairings": [
+              "Lunch at The Coffee Shack",
+              "Snorkeling at Kealakekua Bay"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly"
+            ],
+            "suitability_tags": [
+              "romantic",
+              "gourmet"
+            ],
+            "weather_sensitivity": "Heavy rain can make the farm muddy",
+            "personalization_note": null
+          },
+          {
+            "id": "bamboo_spa_treatment",
+            "name": "Couples Bamboo Spa Treatment",
+            "short_description": "Indulge in relaxation together with a bamboo massage in a serene Hawaiian spa.",
+            "long_description": "For the ultimate in relaxation, a bamboo massage at a local Hawaiian spa provides both you and your partner with the opportunity to relax and rejuvenate together. Using warmed bamboo sticks, this unique massage technique eases muscle tension and improves circulation, heightening the sense of togetherness in a calming, tranquil setting. After the treatment, unwind further in serene surroundings with tropical drinks to savor the complete relaxation experience.",
+            "tags": [
+              "spa",
+              "relaxation",
+              "wellness"
+            ],
+            "why_worth_it": "A bamboo spa treatment offers unique rejuvenation and intimate relaxation as a couple.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "premium",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Early afternoon for maximum relaxation",
+            "local_tip": "Wear loose clothing to ease into relaxation post-massage.",
+            "who_for": [
+              "couples",
+              "wellness seekers"
+            ],
+            "watch_out_for": "Availability may be limited; book early.",
+            "nearby_pairings": [
+              "Lunch at Napua Restaurant",
+              "Sunset Beach Walk"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "relaxing"
+            ],
+            "weather_sensitivity": null,
+            "personalization_note": null
+          },
+          {
+            "id": "black_sand_beach_picnic",
+            "name": "Picnic at Punaluʻu Black Sand Beach",
+            "short_description": "Share an intimate open-air picnic with stunning views of the unique Punaluʻu Black Sand Beach.",
+            "long_description": "Punaluʻu Black Sand Beach offers a striking backdrop for a laid-back but memorable picnic. With waves crashing in the background, couples can enjoy a spread of local delicacies surrounded by lush coconut trees and the possibility of spotting sea turtles basking in the sun. It's a unique and tranquil setting that lets you appreciate the island's dramatic landscape while enjoying good food and company.",
+            "tags": [
+              "beach",
+              "picnic",
+              "scenic"
+            ],
+            "why_worth_it": "The rare black sand beach provides a stunning and unique romantic setting for a picnic.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "Late morning to early afternoon",
+            "local_tip": "Bring a beach mat to sit on the warm sand comfortably.",
+            "who_for": [
+              "couples",
+              "nature lovers",
+              "picnic enthusiasts"
+            ],
+            "what_to_bring": [
+              "picnic basket",
+              "beach mat",
+              "sunscreen"
+            ],
+            "watch_out_for": "Rough surf can make swimming dangerous; stick to sunbathing.",
+            "nearby_pairings": [
+              "Visit to Papakōlea Green Sand Beach",
+              "Hike in Hawaiʻi Volcanoes National Park"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly"
+            ],
+            "suitability_tags": [
+              "romantic",
+              "budget_friendly"
+            ],
+            "weather_sensitivity": "Best on clear days",
+            "personalization_note": null
+          },
+          {
+            "id": "waterfall_couple_photo_session",
+            "name": "Waterfall Couple Photo Session",
+            "short_description": "Capture your romance in breathtaking settings with a professional photo session at a scenic waterfall.",
+            "long_description": "Hawaii's dramatic waterfalls offer the ideal backdrop for a once-in-a-lifetime photo session. A professional local photographer will lead you to stunning cascades, where you'll be photographed together amid the lush greenery and tumbling waters. This session not only creates beautiful mementos of your journey but also becomes an intimate adventure exploring hidden gems of the island with your partner.",
+            "tags": [
+              "photography",
+              "nature",
+              "waterfall"
+            ],
+            "why_worth_it": "Professional photos in a magical setting provide cherished memories of your time together on the island.",
+            "duration": "2 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Morning for softer lighting",
+            "local_tip": "Choose clothing colors that pop against the lush green backdrop.",
+            "who_for": [
+              "couples",
+              "photography lovers"
+            ],
+            "what_to_bring": [
+              "change of clothes",
+              "walking shoes"
+            ],
+            "watch_out_for": "Rain can affect the scenic quality; reschedule if necessary.",
+            "nearby_pairings": [
+              "Lunch at a Local Eatery",
+              "Beach Walk"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "activity_focused"
+            ],
+            "weather_sensitivity": "Avoid in rainy weather",
+            "personalization_note": null
+          }
+        ]
+      },
+      {
+        "id": "day_trips",
+        "name": "Day Trips",
+        "description": "Explore beyond the main attractions of the Big Island with these day trips that are worth venturing out for.",
+        "experiences": [
+          {
+            "id": "hawaii_volcanoes_national_park",
+            "name": "Hawaii Volcanoes National Park",
+            "short_description": "Delve into the heart of Hawaii's volcanic activities with a visit to this ever-changing landscape.",
+            "long_description": "Located about 45 minutes from Hilo and around 2 hours from Kona, Hawaii Volcanoes National Park is a must-visit for those fascinated by geology and natural wonders. This park is the home of two of the world’s most active volcanoes: Kilauea and Mauna Loa. Spend your day exploring the Thurston Lava Tube, hiking the Kilauea Iki Trail, and witnessing the rugged beauty of the Volcanoes. It's ideal to depart early in the morning to maximize your time exploring the park's vast landscapes and unique volcanic features.",
+            "tags": [
+              "outdoor",
+              "hiking",
+              "nature"
+            ],
+            "why_worth_it": "Witness the jaw-dropping raw power of nature at one of the world's most active volcanic sites.",
+            "duration": "Full day",
+            "effort": "moderate",
+            "cost_band": "mid",
+            "booking_difficulty": "walk_in",
+            "best_time": "Leave by 7:00 AM to beat the midday heat",
+            "local_tip": "Bring a lunch and plenty of water. The park is vast and has limited eating options.",
+            "who_for": [
+              "nature lovers",
+              "adventure seekers",
+              "first-timers"
+            ],
+            "what_to_bring": [
+              "water bottle",
+              "hiking boots",
+              "rain jacket",
+              "snacks"
+            ],
+            "watch_out_for": "Volcanic haze and rapid weather changes; check conditions before visiting.",
+            "nearby_pairings": [
+              "Hilo Town",
+              "Punalu'u Black Sand Beach"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly"
+            ],
+            "suitability_tags": [
+              "family_friendly",
+              "group_friendly",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Be prepared for both sun and rain, as conditions can change rapidly.",
+            "personalization_note": null
+          },
+          {
+            "id": "coffee_country_kona",
+            "name": "Exploring Kona Coffee Country",
+            "short_description": "Taste exquisite Kona coffee and explore the lush plantations in the heart of the Big Island.",
+            "long_description": "Head south from Kailua-Kona, a trip that takes about half an hour, to reach the world-renowned Kona coffee belt. Spend the day visiting coffee farms like Greenwell Farms or Mountain Thunder. Tours typically last about an hour, allowing you to walk through the plantations and learn about the journey from seed to cup. Sample fresh brews and consider buying some to take home. It's an educational yet relaxing day examining the intricacies of one of Hawaii’s most famous exports.",
+            "tags": [
+              "food",
+              "culture",
+              "scenic"
+            ],
+            "why_worth_it": "Immerse yourself in the unique agricultural heritage and flavors of the Big Island.",
+            "duration": "Half day",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Morning tours around 9:00 AM offer the best weather and crowd conditions",
+            "local_tip": "Reserve your coffee tour in advance, as slots can fill up quickly.",
+            "who_for": [
+              "food lovers",
+              "couples",
+              "cultural enthusiasts"
+            ],
+            "what_to_bring": [
+              "sunscreen",
+              "camera"
+            ],
+            "watch_out_for": "Some farms have limited tour spots; booking ahead is essential.",
+            "nearby_pairings": [
+              "Holualoa Arts Village",
+              "Kailua-Kona"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly"
+            ],
+            "suitability_tags": [
+              "romantic",
+              "couple_friendly"
+            ],
+            "weather_sensitivity": null,
+            "personalization_note": null
+          },
+          {
+            "id": "mauna_kea_stargazing",
+            "name": "Stargazing on Mauna Kea",
+            "short_description": "Experience the magical night sky from one of the best observatory sites on the planet.",
+            "long_description": "Ascend Mauna Kea for an unmatched stargazing experience. The drive from Hilo or Kona takes about two hours. Arrive by late afternoon to acclimate to the altitude and catch a breathtaking sunset before the night unfolds in a blaze of stars. Mauna Kea's observatories welcome visitors with telescopes available for public use, offering a spectacular celestial display rarely seen elsewhere. Given the height and cold conditions, bring warm clothing and be prepared for a physically demanding experience due to high altitude.",
+            "tags": [
+              "nature",
+              "night",
+              "science"
+            ],
+            "why_worth_it": "The combination of altitude and isolation makes for some of the clearest night skies on Earth.",
+            "duration": "Full day",
+            "effort": "strenuous",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Arrive by 5:00 PM for sunset, stargazing around 7:00 PM",
+            "local_tip": "Dress warmly; temperatures frequently drop to near or below freezing.",
+            "who_for": [
+              "astronomy enthusiasts",
+              "adventurous couples",
+              "nature lovers"
+            ],
+            "what_to_bring": [
+              "winter clothing",
+              "binoculars",
+              "snacks"
+            ],
+            "watch_out_for": "Altitude sickness can affect some visitors; take it slow and hydrate.",
+            "nearby_pairings": [
+              "Hawaiian Culture on Mauna Kea"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "adventure",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Clear skies offer the best stargazing — avoid cloudy nights.",
+            "personalization_note": "High physical exertion and altitude — be prepared."
+          },
+          {
+            "id": "snorkeling_kahaluu_beach_park",
+            "name": "Snorkeling at Kahalu'u Beach Park",
+            "short_description": "Discover vibrant marine life just beneath the surface at one of the Big Island's most popular snorkeling spots.",
+            "long_description": "Located on the Kona side, just a short 15-minute drive from Kailua-Kona, Kahalu'u Beach Park is an accessible and rewarding day trip for marine enthusiasts. Known for its calm waters and stunning coral reefs, this spot offers visitors the chance to see schools of tangs, butterflyfish, and even the occasional green sea turtle. Snorkel gear is available for rent nearby, and instructional classes are available for beginners. Arriving in the morning ensures you beat the crowds and provides the calmest water conditions.",
+            "tags": [
+              "water",
+              "outdoor",
+              "family"
+            ],
+            "why_worth_it": "The easy access and abundant sea life make it an ideal spot for snorkelers of all levels.",
+            "duration": "Half day",
+            "effort": "moderate",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "Morning around 8:00 AM for clear waters and fewer crowds",
+            "local_tip": "Check tide charts to visit during low tide for optimal visibility.",
+            "who_for": [
+              "families",
+              "couples",
+              "first-timers"
+            ],
+            "what_to_bring": [
+              "towel",
+              "sunscreen",
+              "underwater camera"
+            ],
+            "watch_out_for": "Sharp coral and occasional strong currents; heed local safety advice.",
+            "nearby_pairings": [
+              "Magic Sands Beach",
+              "Kona Brewery"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Water visibility drops during heavy rain — plan accordingly.",
+            "personalization_note": null
+          },
+          {
+            "id": "punalu_black_sand_beach",
+            "name": "Punaluu Black Sand Beach",
+            "short_description": "Witness the striking contrast of black sand against the azure sea at this iconic beach.",
+            "long_description": "Located between Hawaii Volcanoes National Park and Naalehu, Punaluu Black Sand Beach is a 90-minute drive from Kona. The beach’s unusual beauty makes it a must-see on the Big Island. Look for green sea turtles basking on the shore and listen to the palm trees swaying in the wind. It’s a peaceful spot for a stroll, a picnic, or simply soaking in the sun. Combine this trip with a visit to the nearby Sea Mountain Resort or capture sunset from the scenic viewpoints.",
+            "tags": [
+              "scenic",
+              "beach",
+              "nature"
+            ],
+            "why_worth_it": "The rare black sand provides a stunning and unforgettable coastal experience.",
+            "duration": "Full day",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Arrive by mid-morning to enjoy the scenery and spot turtles",
+            "local_tip": "Bring a blanket and make it a picnic day; amenities are limited.",
+            "who_for": [
+              "couples",
+              "nature photographers",
+              "relaxation seekers"
+            ],
+            "what_to_bring": [
+              "sunscreen",
+              "hat",
+              "picnic supplies"
+            ],
+            "watch_out_for": "The sand can be hot, and facilities are minimal; plan accordingly.",
+            "nearby_pairings": [
+              "Hawaii Volcanoes National Park",
+              "Green Sand Beach"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly"
+            ],
+            "suitability_tags": [
+              "romantic",
+              "relaxing"
+            ],
+            "weather_sensitivity": "Strong sun exposure — ideal in cooler weather.",
+            "personalization_note": null
+          },
+          {
+            "id": "waipio_valley",
+            "name": "Exploring Waipio Valley",
+            "short_description": "Hike or tour one of Hawaii's most sacred and picturesque areas with stunning views and lush valleys.",
+            "long_description": "A journey to Waipio Valley from Hilo takes about 1.5 hours, or 2 hours from Kona. This lush valley is renowned for its high sea cliffs and cascading waterfalls. Adventure seekers can hike down the steep mile-long road or take a guided 4WD tour into the valley. Once inside, visit Hiilawe Falls, one of Hawaii's tallest waterfalls, and enjoy the natural beauty and serenity. This trek requires a full day and some physical readiness, but it's a rewarding experience for those who make the effort.",
+            "tags": [
+              "hiking",
+              "scenic",
+              "adventure"
+            ],
+            "why_worth_it": "The valley's beauty and tranquility provide a deeply immersive Hawaiian experience.",
+            "duration": "Full day",
+            "effort": "strenuous",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Early morning for cooler temperatures and fewer crowds",
+            "local_tip": "A 4WD vehicle is required for valley access unless part of a guided tour.",
+            "who_for": [
+              "adventurous couples",
+              "nature lovers",
+              "fit travelers"
+            ],
+            "what_to_bring": [
+              "hiking boots",
+              "water",
+              "snacks"
+            ],
+            "watch_out_for": "Very steep and rugged terrain; access is limited to 4WD vehicles.",
+            "nearby_pairings": [
+              "Hamakua Coast",
+              "Waimea Town"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly"
+            ],
+            "suitability_tags": [
+              "adventurous",
+              "couple_friendly"
+            ],
+            "weather_sensitivity": "Avoid after heavy rains; valley floor can become muddy.",
+            "personalization_note": null
+          },
+          {
+            "id": "akaka_falls",
+            "name": "Akaka Falls State Park",
+            "short_description": "Encounter the beauty of the Big Island's famous waterfalls surrounded by a lush rainforest environment.",
+            "long_description": "Drive about 20 minutes from Hilo to reach Akaka Falls State Park, home to the mesmerizing Akaka and Kahuna Falls. A well-paved trail loop, approximately 0.4 miles long, takes you through the tropical rainforest, allowing you to experience the sights and sounds of the island's native flora. Spend the morning exploring and enjoying the soothing ambiance of cascading water. This trip is particularly scenic and recommended for nature enthusiasts and photographers alike.",
+            "tags": [
+              "nature",
+              "waterfall",
+              "photography"
+            ],
+            "why_worth_it": "The iconic view of Akaka Falls is one of the most photogenic sites on the island.",
+            "duration": "Half day",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "Morning for cooler temperatures and optimal photography lighting",
+            "local_tip": "The trail is easy but can be slippery after rain; wear appropriate footwear.",
+            "who_for": [
+              "photographers",
+              "nature lovers",
+              "families"
+            ],
+            "what_to_bring": [
+              "camera",
+              "hat",
+              "water"
+            ],
+            "watch_out_for": "Slippery paths after rain — proceed with care.",
+            "nearby_pairings": [
+              "Botanical World Adventures",
+              "Laupahoehoe Beach"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible"
+            ],
+            "weather_sensitivity": "Rain enhances the waterfall flow but be cautious of slippery paths.",
+            "personalization_note": null
+          },
+          {
+            "id": "puuhonua_o_honaunau_national_historical_park",
+            "name": "Pu'uhonua o Honaunau National Historical Park",
+            "short_description": "Step back in time and explore one of Hawaii's most significant cultural landmarks.",
+            "long_description": "Located 45 minutes south of Kona, this cultural treasure offers a glimpse into ancient Hawaiian life. This 420-acre national historical park contains sacred sites and reconstructed villages, reflecting traditional Hawaiian customs and beliefs. Spend a few hours walking through the Royal Grounds and snorkeling in the adjacent Honaunau Bay, often referred to as the 'City of Refuge'. The park provides a serene atmosphere to learn about Hawaii’s history and culture, coupled with beautiful natural surroundings.",
+            "tags": [
+              "culture",
+              "history",
+              "beach"
+            ],
+            "why_worth_it": "It offers both a cultural and natural Hawaiian experience within a single visit.",
+            "duration": "Half day",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "Late morning to avoid tour group surge",
+            "local_tip": "Attend a ranger talk for deeper insights into Hawaiian culture.",
+            "who_for": [
+              "history buffs",
+              "families",
+              "cultural enthusiasts"
+            ],
+            "what_to_bring": [
+              "sun protection",
+              "snorkel gear",
+              "walking shoes"
+            ],
+            "watch_out_for": "Historic sites require respect; refrain from touching or climbing on structures.",
+            "nearby_pairings": [
+              "Two Step Beach",
+              "Kona Coffee Farms"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible"
+            ],
+            "weather_sensitivity": null,
+            "personalization_note": null
+          },
+          {
+            "id": "green_sand_beach",
+            "name": "Papakolea Green Sand Beach",
+            "short_description": "Visit one of the world's few green sand beaches for a unique Hawaii experience.",
+            "long_description": "A trip to Papakolea takes you to South Point, about a 2-hour drive from Kona. From the parking area, you'll need to hike approximately 2.5 miles to reach this secluded green sand beach. The trek can take about an hour each way, so plan accordingly. Once there, the distinct green sands offer a striking contrast against the blue ocean. This off-the-beaten-path experience is ideal for adventurous travelers seeking something unique. Be sure to pace your visit, enjoy the swim, and soak in the views before retreating back along the trail.",
+            "tags": [
+              "adventure",
+              "hiking",
+              "beach"
+            ],
+            "why_worth_it": "It's one of only four green sand beaches in the world, offering a rare visual wonder.",
+            "duration": "Full day",
+            "effort": "strenuous",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Mid-morning to ensure ample time for hiking and beach time",
+            "local_tip": "Consider hiring a local for a 4WD ride to save time and effort.",
+            "who_for": [
+              "adventurous couples",
+              "hiking enthusiasts",
+              "off-the-beaten-path explorers"
+            ],
+            "what_to_bring": [
+              "water",
+              "hat",
+              "swimsuit"
+            ],
+            "watch_out_for": "The hike can be hot and strenuous; bring plenty of water.",
+            "nearby_pairings": [
+              "South Point Cliff Diving",
+              "Punalu'u Black Sand Beach"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "adventurous",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Avoid visiting during windy or rainy days.",
+            "personalization_note": null
+          },
+          {
+            "id": "hapuna_beach",
+            "name": "Hapuna Beach State Recreation Area",
+            "short_description": "Enjoy a classic beach day at one of Hawaii’s largest and most beautiful white sand beaches.",
+            "long_description": "Just a 40-minute drive north of Kailua-Kona lies Hapuna Beach State Recreation Area, a favorite spot for sunbathers and swimmers. The beach is over half a mile long, offering plenty of space for relaxation and water activities. It’s ideal for swimming, bodyboarding, or simply lounging under the sun. Lifeguards are on duty, facilities are good, and food vendors offer local treats. It’s best visited during the early hours to avoid the midday sun and the slight afternoon winds that can pick up.",
+            "tags": [
+              "beach",
+              "relaxation",
+              "water"
+            ],
+            "why_worth_it": "This stunning white sand beach with crystal-clear waters promises a perfect Hawaiian beach day.",
+            "duration": "Half day",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Morning, around 9:00 AM to noon for the calmest waters",
+            "local_tip": "Bring your own beach umbrella for shade or arrive early to snag a spot under the trees.",
+            "who_for": [
+              "couples",
+              "families",
+              "relaxation seekers"
+            ],
+            "what_to_bring": [
+              "beach towel",
+              "sunscreen",
+              "snorkel gear"
+            ],
+            "watch_out_for": "Afternoon winds can make the water choppy; mornings are best for water activities.",
+            "nearby_pairings": [
+              "Spencer Beach Park",
+              "Kona Village"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly"
+            ],
+            "suitability_tags": [
+              "family_friendly",
+              "romantic"
+            ],
+            "weather_sensitivity": null,
+            "personalization_note": null
+          }
+        ]
+      },
+      {
+        "id": "seasonal",
+        "name": "Seasonal",
+        "description": "Explore experiences unique to the Big Island in March, where diverse climates and dynamic landscapes offer varied adventures.",
+        "experiences": [
+          {
+            "id": "whale-watching-safari",
+            "name": "Whale Watching Safari",
+            "short_description": "Witness the majestic humpback whales as they migrate through the Hawaiian waters during the peak whale watching season.",
+            "long_description": "March is one of the best months to experience the awe-inspiring sight of humpback whales near the Big Island. These gentle giants migrate from Alaska to Hawaii to breed and give birth, providing spectators with unforgettable displays of breaching, tail slaps, and more. Several outfitters offer boat tours from the west coast of the island, giving you a chance to see these magnificent creatures up close. While many tours are available, it's essential to pick a guided tour with knowledgeable marine biologists onboard who can offer deeper insights into whale behaviors.",
+            "tags": [
+              "outdoor",
+              "morning",
+              "wildlife"
+            ],
+            "why_worth_it": "March's peak whale-watching season promises close encounters with humpback whales—an unmatched natural spectacle.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Morning — less wind and smoother seas",
+            "local_tip": "Choose a tour departing from the Kona side for calmer seas and higher visibility.",
+            "who_for": [
+              "wildlife enthusiasts",
+              "nature lovers",
+              "couples"
+            ],
+            "watch_out_for": "Seasickness can be an issue; consider taking precautions if you're prone to motion sickness.",
+            "nearby_pairings": [
+              "Kona Coffee Plantation Tour"
+            ],
+            "dietary_flags": [
+              "kid_friendly"
+            ],
+            "suitability_tags": [
+              "family_friendly",
+              "romantic",
+              "accessible"
+            ],
+            "weather_sensitivity": "Check forecasts as choppy seas can impact tours.",
+            "personalization_note": null
+          },
+          {
+            "id": "volcanic-park-exploration",
+            "name": "Hawai'i Volcanoes National Park Exploration",
+            "short_description": "Experience the raw power of Earth's geologic forces with March's cool and clear conditions ideal for exploration.",
+            "long_description": "Hawai'i Volcanoes National Park is a diverse and dynamic landscape where visitors can witness the ongoing battle between lava and life. March offers cooler and less humid conditions, perfect for hiking and exploring the park's rugged terrains. Start with the Kilauea Iki Trail, a moderate hike through lush rainforest descending into a solidified lava lake. Don’t miss the Thurston Lava Tube, where you can walk through a subterranean lava tube. At night, drive to the Kilauea Overlook for possible views of glowing lava from ongoing volcanic activity.",
+            "tags": [
+              "outdoor",
+              "adventure",
+              "educational"
+            ],
+            "why_worth_it": "The park showcases the island's geological transformations in an awe-inspiring setting.",
+            "duration": "Full day",
+            "effort": "moderate",
+            "cost_band": "mid",
+            "booking_difficulty": "walk_in",
+            "best_time": "Morning — before afternoon showers",
+            "local_tip": "Bring a flashlight and extra batteries for exploring the Thurston Lava Tube, as parts of it are not lit.",
+            "who_for": [
+              "adventure seekers",
+              "geology enthusiasts",
+              "nature lovers"
+            ],
+            "what_to_bring": [
+              "sturdy shoes",
+              "rain jacket",
+              "flashlight"
+            ],
+            "watch_out_for": "Volcanic gases can be hazardous; check alerts before your visit.",
+            "nearby_pairings": [
+              "Punalu'u Black Sand Beach"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "solo_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Rain can make trails muddy; plan for early visits to avoid afternoon showers.",
+            "personalization_note": null
+          },
+          {
+            "id": "coffee-plantation-tour",
+            "name": "Kona Coffee Plantation Tour",
+            "short_description": "Discover the rich flavors and history of Kona coffee with a tour of a working plantation during the harvest season.",
+            "long_description": "March is an excellent month to visit the renowned coffee plantations of the Kona district. With the harvest season in full swing, visitors can experience the coffee production process first-hand. Tours typically include a walk through coffee trees, insight into the harvesting and roasting processes, and, of course, tasting sessions where you can sample various Kona coffee blends. These tours offer a remarkable insight into the unique growing conditions of high-altitude volcanic slopes, which impart the distinctive flavors of Kona coffee.",
+            "tags": [
+              "food",
+              "morning",
+              "local"
+            ],
+            "why_worth_it": "Kona’s coffee is globally revered; tasting it at the source adds depth to any coffee lover’s pilgrimage.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "Morning — avoid the heat and enjoy fresh brews",
+            "local_tip": "Visit the gift shop for unique Kona coffee gifts that aren't widely available.",
+            "who_for": [
+              "food lovers",
+              "coffee enthusiasts",
+              "couples"
+            ],
+            "watch_out_for": "Tours can be short and basic; opt for ones with detailed processing insights.",
+            "nearby_pairings": [
+              "Whale Watching Safari"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly"
+            ],
+            "suitability_tags": [
+              "family_friendly",
+              "romantic"
+            ],
+            "weather_sensitivity": "N/A",
+            "personalization_note": null
+          },
+          {
+            "id": "stargazing-atop-mauna-kea",
+            "name": "Stargazing Atop Mauna Kea",
+            "short_description": "Gaze upon the stars from one of Earth's premier astronomical sites, offering an unparalleled celestial experience.",
+            "long_description": "March provides relatively clear skies for stargazing atop Mauna Kea, one of the best astronomy locations on the planet due to its high elevation and lack of light pollution. Guided tours typically include transport to the summit, warm clothing, and powerful telescopes for a closer look at planets, galaxies, and star clusters. Though access to the summit's observatories is restricted, the Visitor Information Station offers nightly stargazing programs, presenting a stunning view of the heavens above.",
+            "tags": [
+              "night",
+              "romantic",
+              "educational"
+            ],
+            "why_worth_it": "Mauna Kea's vantage point offers unrivaled star gazing opportunities—ideal for enthusiasts and casual observers alike.",
+            "duration": "4–6 hours",
+            "effort": "moderate",
+            "cost_band": "premium",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Evening — clear skies after sunset",
+            "local_tip": "Acclimate at the Visitor Center for at least 30 minutes to avoid altitude sickness.",
+            "who_for": [
+              "astronomy buffs",
+              "romantic couples",
+              "nature lovers"
+            ],
+            "what_to_bring": [
+              "warm clothing",
+              "binoculars"
+            ],
+            "watch_out_for": "Altitude sickness is a risk; those with respiratory conditions should consult with a doctor.",
+            "nearby_pairings": [
+              "Hiking Pu'u Huluhulu Trail"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Cloud cover can obstruct views; check weather conditions before heading up.",
+            "personalization_note": null
+          },
+          {
+            "id": "hana-hou-film-festival",
+            "name": "Hana Hou Film Festival",
+            "short_description": "Enjoy a curated selection of films highlighting Hawaiian culture and global cinema at this springtime festival.",
+            "long_description": "The Hana Hou Film Festival brings a unique cultural and artistic experience to the Big Island each March. Held primarily in Hilo, this event celebrates both Hawaiian filmmakers and international stories that resonate with local audiences. Attendees can look forward to screenings, filmmaker discussions, and community events. It provides a unique opportunity to dive into the cultural narratives that define Hawaii and its place in the world cinema landscape.",
+            "tags": [
+              "cultural",
+              "art",
+              "indoor"
+            ],
+            "why_worth_it": "This festival enriches understanding of Hawaiian culture through cinematic storytelling.",
+            "duration": "Varies — typically evening screenings",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Evening — festival screenings primarily occur at night",
+            "local_tip": "Book tickets for popular films in advance as they can sell out quickly.",
+            "who_for": [
+              "cultural enthusiasts",
+              "film buffs",
+              "couples"
+            ],
+            "watch_out_for": "Popular screenings fill fast; early booking is recommended.",
+            "nearby_pairings": [
+              "Hilo Farmers Market"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "group_friendly",
+              "casual"
+            ],
+            "weather_sensitivity": null,
+            "personalization_note": null
+          },
+          {
+            "id": "cherry-blossom-festival",
+            "name": "Waimea Cherry Blossom Heritage Festival",
+            "short_description": "Celebrate the brief bloom of cherry blossoms in Waimea with cultural performances and local crafts.",
+            "long_description": "Held annually in early March, this festival in Waimea celebrates the blooming of cherry blossoms, brought to Hawaii by Japanese immigrants. The event features traditional Japanese activities like tea ceremonies and bonsai showcases, as well as local food vendors and craft stalls. It's a delightful window into the cultural tapestry of the Big Island, offering visitors a chance to appreciate the island's multicultural heritage amidst stunning pink blooms.",
+            "tags": [
+              "cultural",
+              "outdoor",
+              "seasonal"
+            ],
+            "why_worth_it": "The festival provides a rare opportunity to see cherry blossoms bloom amidst tropical surroundings.",
+            "duration": "Half day",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Morning — for cooler weather and fewer crowds",
+            "local_tip": "Arrive early to enjoy the blossoms at their most vibrant before the crowds gather.",
+            "who_for": [
+              "cultural enthusiasts",
+              "nature lovers",
+              "couples"
+            ],
+            "watch_out_for": "Limited parking; consider parking further out and walking in.",
+            "nearby_pairings": [
+              "Waimea Farmers Market"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly"
+            ],
+            "suitability_tags": [
+              "family_friendly",
+              "romantic"
+            ],
+            "weather_sensitivity": "Heavy rain can affect bloom conditions.",
+            "personalization_note": null
+          },
+          {
+            "id": "kapoho-kine-adventures",
+            "name": "Kapoho Kine Adventures Helicopter Tour",
+            "short_description": "Fly over Kilauea for breathtaking views of lava flows and the island's diverse landscapes, a springtime spectacle.",
+            "long_description": "March is an excellent time for a helicopter tour of the Big Island as skies are generally clearer, offering unobstructed views of the island's most iconic sites. Kapoho Kine Adventures offers an immersive aerial tour over Hawai'i Volcanoes National Park, allowing you to see the dynamic volcanic activity from above, along with lush rainforests and ocean vistas. This tour provides a panoramic view of Kilauea's eruption sites and Mauna Loa's expanse—an ideal way to appreciate the island's geological diversity and seasonal spring landscapes.",
+            "tags": [
+              "adventure",
+              "scenic",
+              "luxury"
+            ],
+            "why_worth_it": "A helicopter tour offers unparalleled aerial views of Kilauea’s volcanic wonders and the island's unique ecology.",
+            "duration": "2 hours",
+            "effort": "easy",
+            "cost_band": "premium",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Afternoon — for optimal lighting across landscapes",
+            "local_tip": "Check for current deals as operators sometimes offer discounts during the shoulder season.",
+            "who_for": [
+              "adventure seekers",
+              "first-timers",
+              "photography enthusiasts"
+            ],
+            "watch_out_for": "Cancellations due to weather; check flexible booking policies.",
+            "nearby_pairings": [
+              "Hilo Downtown Exploration"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Clearer days improve visibility, but tours run rain or shine.",
+            "personalization_note": null
+          },
+          {
+            "id": "paniolo-paniolo-hawaii",
+            "name": "Paniolo (Hawaiian Cowboy) Experience",
+            "short_description": "Experience the life and culture of the Hawaiian cowboy, with horse rides, ranch activities, and traditional music in the uplands of Waimea.",
+            "long_description": "In March, the cool, breezy uplands of Waimea provide the perfect backdrop for a dive into the paniolo (Hawaiian cowboy) culture. Waimea's green pastures are home to historic ranches where visitors can try horseback riding, attend rodeo events, or simply soak up the vibrant history of cattle ranching in Hawaii. Guided tours and experiences often conclude with a traditional Hawaiian barbecue, accompanied by live music that celebrates Waimea’s ranching heritage.",
+            "tags": [
+              "cultural",
+              "outdoor",
+              "adventure"
+            ],
+            "why_worth_it": "This hands-on experience brings the lesser-known cowboy culture of Hawaii to life.",
+            "duration": "Half day",
+            "effort": "moderate",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Morning — optimal temperatures for outdoor activities",
+            "local_tip": "Capture the ranch style by wearing clothing appropriate for horseback riding.",
+            "who_for": [
+              "cultural enthusiasts",
+              "adventure seekers",
+              "nature lovers"
+            ],
+            "what_to_bring": [
+              "sturdy shoes",
+              "sunscreen"
+            ],
+            "watch_out_for": "Ranch activities can be physically demanding.",
+            "nearby_pairings": [
+              "Waimea Cherry Blossom Heritage Festival"
+            ],
+            "dietary_flags": [
+              "meat_heavy"
+            ],
+            "suitability_tags": [
+              "family_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Rides may be canceled or altered due to rain.",
+            "personalization_note": "This experience is meat-heavy and may not suit a vegetarian diet."
+          }
+        ]
+      }
+    ],
+    "generated_at": "2026-05-18T21:14:44.840Z"
+  }
+}

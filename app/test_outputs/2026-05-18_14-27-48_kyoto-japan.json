@@ -1,0 +1,1430 @@
+{
+  "board": {
+    "destination": "Kyoto, Japan",
+    "destination_context": {
+      "destination": "Kyoto, Japan",
+      "soul": "Kyoto is a city where the past and present harmoniously coexist. It is a place where the elegance of a thousand-year-old tea ceremony unfolds with the same precision and grace every day, yet remains deeply rooted in tradition. The city captivates with its ability to seamlessly blend its storied history with contemporary life. Here, the winding streets are adorned with wooden machiya townhouses, and it's not uncommon to find a Zen garden nestled beside a modern art gallery. Kyoto embodies the refined spirit of Japan, where every corner tells a story in whispers through its bamboo groves, temple bells, and the gentle flutter of a Geisha's kimono. This city is a canvas painted with layers of natural beauty and human craftsmanship, where the ephemeral nature of cherry blossoms in spring echoes the essence of a fleeting moment captured perfectly.",
+      "defining_pillars": [
+        "Historic temples and shrines",
+        "Traditional tea ceremonies",
+        "Geisha and maiko sightings in Gion",
+        "Seasonal beauty from cherry blossoms to autumn leaves",
+        "Authentic kaiseki cuisine"
+      ],
+      "best_for": [
+        "Cultural enthusiasts seeking deep historical roots",
+        "Travelers appreciating the delicate art of tea",
+        "Those yearning for a tranquil escape from urban chaos",
+        "Photographers in search of quintessential Japanese landscapes",
+        "Food obsessives eager to experience traditional kaiseki dining"
+      ],
+      "honest_notes": [
+        "Many popular temples and sites can be extremely crowded, especially during peak seasons",
+        "Modern conveniences can sometimes blend awkwardly with ancient surroundings",
+        "Geisha sightings are rare and require respectful distance",
+        "English signage and speakers can be limited outside tourist areas"
+      ],
+      "applicable_themes": [
+        "signature",
+        "unique_local",
+        "food_drink",
+        "culture",
+        "arts",
+        "day_trips"
+      ]
+    },
+    "weather_context": {
+      "destination": "Kyoto, Japan",
+      "month": "April",
+      "season_type": "peak_season",
+      "season_notes": "Peak season — high crowds, premium pricing, but the weather is ideal for outdoor activities and cherry blossoms are in full bloom.",
+      "summary": "April in Kyoto is characterized by mild and pleasant weather, making it an ideal time to explore the city's beautiful temples and gardens. The temperature ranges from cool mornings to comfortably warm afternoons, with highs around 66°F (19°C) and lows near 50°F (10°C). The golden light of spring highlights the landscapes, especially the cherry blossoms, contributing to the idyllic scenery Kyoto is famous for. Rainfall is moderate, with brief showers possible, so packing a light raincoat is advisable. Overall, this is the perfect time for strolling and sightseeing, with manageable humidity and gentle breezes.",
+      "weather": {
+        "avg_high_f": 66,
+        "avg_low_f": 50,
+        "avg_high_c": 19,
+        "avg_low_c": 10,
+        "avg_rainfall_inches": 5.1,
+        "rainy_days_estimate": 12,
+        "avg_wind_mph": 5,
+        "humidity_pct": 63,
+        "uv_index": "Moderate",
+        "sunrise": "5:30 AM",
+        "sunset": "6:20 PM",
+        "daylight_hours": 12.8
+      },
+      "travel_implications": [
+        "Cherry blossoms typically reach their peak bloom in the first half of April, so book accommodation and tours well in advance to secure availability.",
+        "The weather is ideal for outdoor activities like hiking and temple tours — consider scheduling these activities for early in the day to avoid crowds.",
+        "Evenings can be cool, especially near bodies of water, so pack a light jacket or sweater for comfort."
+      ]
+    },
+    "themes": [
+      {
+        "id": "signature",
+        "name": "Signature Experiences",
+        "description": "Kyoto offers a confluence of traditional and modern experiences that are quintessentially Japanese.",
+        "experiences": [
+          {
+            "id": "kyoto-temple-tour",
+            "name": "Explore Kyoto's Temples and Shrines",
+            "short_description": "Discover Kyoto's spiritual heart by visiting its iconic temples and shrines.",
+            "long_description": "Kyoto is home to over 1,600 Buddhist temples and 400 Shinto shrines, each offering a unique glimpse into Japanese spirituality and architecture. Start your journey at Fushimi Inari-taisha with its famous torii gate path, then move to Kinkaku-ji, the Golden Pavilion, shimmering with gold leaf. Experience Zen serenity at Ryoan-ji with its renowned rock garden. Amidst cherry blossom season, these sites are imbued with an added ethereal beauty, especially under the delicate pink blooms.",
+            "tags": [
+              "cultural",
+              "historic",
+              "religious"
+            ],
+            "why_worth_it": "These sites are the bedrock of Kyoto's identity, offering insights into its spiritual backbone.",
+            "duration": "Half day to full day",
+            "effort": "moderate",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "Early morning or late afternoon to avoid crowds",
+            "local_tip": "Visit Ryoan-ji in the evening for fewer crowds and a more peaceful experience.",
+            "who_for": [
+              "cultural enthusiasts",
+              "first-timers",
+              "history buffs"
+            ],
+            "what_to_bring": [
+              "comfortable shoes",
+              "camera",
+              "guidebook"
+            ],
+            "watch_out_for": "Peak times can be crowded, especially mid-morning. Aim to go early or later in the day for a quieter experience.",
+            "nearby_pairings": [
+              "Arashiyama Bamboo Grove",
+              "Philosopher's Path"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "romantic",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Avoid in heavy rain as pathways can be slippery.",
+            "is_mappable": false,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "gion-district",
+            "name": "Stroll Through Gion District",
+            "short_description": "Wander through Kyoto's historic Geisha district, Gion.",
+            "long_description": "The Gion District is Kyoto's famous geisha area, where historic streets and traditional tea houses transport you to another era. As you explore the charming streets of Hanami-koji and Shijo Avenue, you might glimpse a geisha or maiko on their way to an appointment. This area beautifully embodies the elegance and mystery of Kyoto's cultural heritage.",
+            "tags": [
+              "cultural",
+              "historic",
+              "evening"
+            ],
+            "why_worth_it": "Encountering geisha culture in Gion is a quintessential Kyoto experience, steeped in history and tradition.",
+            "duration": "1-2 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Late afternoon to early evening for the best chance of spotting geisha and maiko",
+            "local_tip": "For a more intimate glimpse, head towards the quieter backstreets off the main Shijo Avenue.",
+            "who_for": [
+              "couples",
+              "cultural enthusiasts",
+              "photographers"
+            ],
+            "what_to_bring": [
+              "camera",
+              "comfortable shoes"
+            ],
+            "watch_out_for": "Be respectful and do not photograph geisha without permission.",
+            "nearby_pairings": [
+              "Yasaka Shrine",
+              "Pontocho Alley"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": null,
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "arashiyama-bamboo-grove",
+            "name": "Walk Through Arashiyama Bamboo Grove",
+            "short_description": "Wander through the enchanting forest of towering bamboo stalks in Arashiyama.",
+            "long_description": "Arashiyama, located on the outskirts of Kyoto, is home to the mesmerizing Bamboo Grove. Walking the paths amidst these soaring bamboos feels almost otherworldly. The grove is a visual treat, providing a serene environment that calm one's senses. The sound of the wind rustling through the bamboo is a profound experience in itself. April turns Arashiyama even more beautiful with the cherry blossoms adding color to the scene.",
+            "tags": [
+              "outdoors",
+              "nature",
+              "photography"
+            ],
+            "why_worth_it": "Walking among the bamboo is iconic to Kyoto, capturing the city's harmony with nature.",
+            "duration": "1 hour",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Early morning to avoid crowds and enjoy the quiet",
+            "local_tip": "Visit the nearby Tenryu-ji Temple before entering the grove for a combination of architectural beauty and natural wonder.",
+            "who_for": [
+              "nature lovers",
+              "couples",
+              "photographers"
+            ],
+            "what_to_bring": [
+              "camera",
+              "comfortable shoes"
+            ],
+            "watch_out_for": "The path can become crowded by mid-morning.",
+            "nearby_pairings": [
+              "Tenryu-ji Temple",
+              "Okochi Sanso Villa"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "romantic"
+            ],
+            "weather_sensitivity": null,
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "tea-ceremony-experience",
+            "name": "Participate in a Japanese Tea Ceremony",
+            "short_description": "Engage in the tranquil art of a traditional Japanese tea ceremony.",
+            "long_description": "The Japanese tea ceremony, or 'chanoyu', is a cultural activity involving the ceremonial preparation and presentation of matcha, powdered green tea. Deeply rooted in Zen Buddhism, the ritual highlights harmony, respect, purity, and tranquility. In Kyoto, you can attend a tea ceremony in traditional establishments, where each movement and gesture is performed with elegance and mindfulness.",
+            "tags": [
+              "cultural",
+              "interactive",
+              "relaxing"
+            ],
+            "why_worth_it": "Partaking in this ritual provides insight into one of Japan's most revered traditions, deepening your appreciation of its cultural philosophy.",
+            "duration": "1-2 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Mid-morning after a light breakfast",
+            "local_tip": "Choose a tea house with a garden view to enhance your experience with the tranquility of nature.",
+            "who_for": [
+              "cultural enthusiasts",
+              "couples",
+              "first-timers"
+            ],
+            "what_to_bring": [],
+            "watch_out_for": "Sessions can book up quickly; reserve prior to arrival.",
+            "nearby_pairings": [
+              "Kiyomizu-dera",
+              "Nijo Castle"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly"
+            ],
+            "suitability_tags": [
+              "romantic",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": null,
+            "is_mappable": false,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "philosophers-path",
+            "name": "Stroll Down the Philosopher's Path",
+            "short_description": "Wander the picturesque walk along the Philosopher's Path lined with cherry trees.",
+            "long_description": "The Philosopher's Path, or 'Tetsugaku no Michi', is a scenic stone path through the northern part of Kyoto's Higashiyama district. Named for the philosopher Nishida Kitaro, who used the path daily in meditation, it runs alongside a cherry-tree-lined canal and features numerous temples and shrines. In April, the path becomes one of Kyoto's most celebrated hanami (cherry blossom viewing) spots, with blossoms forming a colorful tunnel overhead.",
+            "tags": [
+              "nature",
+              "scenic",
+              "romantic"
+            ],
+            "why_worth_it": "Walking the Philosopher's Path offers a serene blend of nature and introspection amidst cherry blossoms and historical landmarks.",
+            "duration": "1-2 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Early morning for tranquility or late afternoon for less crowd",
+            "local_tip": "Start your walk at Nanzen-ji Temple for a perfect blend of nature and history.",
+            "who_for": [
+              "couples",
+              "nature lovers",
+              "photographers"
+            ],
+            "what_to_bring": [
+              "camera"
+            ],
+            "watch_out_for": "The path can be congested during peak cherry blossom season.",
+            "nearby_pairings": [
+              "Nanzen-ji Temple",
+              "Ginkaku-ji Temple"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "romantic"
+            ],
+            "weather_sensitivity": "Pleasant in mild weather, less enjoyable in heavy rain.",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "kyoto-kimono-rental",
+            "name": "Experience Kyoto in a Kimono",
+            "short_description": "Rent a kimono and explore Kyoto in traditional attire, blending into its historical scenery.",
+            "long_description": "One of the unique experiences in Kyoto is to rent a kimono and meander through its historic streets, visiting temples and gardens dressed in this traditional garment. Kimono rentals often include hairstyling and are available from numerous shops across the city, offering an authentic Japanese experience while enhancing your connection to the cultural landscape. This is especially picturesque in April when walking among the cherry blossoms.",
+            "tags": [
+              "cultural",
+              "interactive",
+              "photography"
+            ],
+            "why_worth_it": "Dressing in a kimono brings a deeper appreciation for Kyoto's rich tradition and makes for stunning photos amidst cherry blossoms.",
+            "duration": "2-3 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Morning for optimal lighting and to enjoy the day in your attire",
+            "local_tip": "Opt for a rental that includes a personal photoshoot for lasting memories.",
+            "who_for": [
+              "couples",
+              "photographers",
+              "cultural enthusiasts"
+            ],
+            "what_to_bring": [],
+            "watch_out_for": "Can be uncomfortable for long periods if not used to wearing traditional clothing.",
+            "nearby_pairings": [
+              "Fushimi Inari-taisha",
+              "Kiyomizu-dera"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic"
+            ],
+            "weather_sensitivity": "Avoid rain to keep the kimono in pristine condition.",
+            "is_mappable": false,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "nishiki-market",
+            "name": "Discover Nishiki Market",
+            "short_description": "Delve into Kyoto's culinary heart at Nishiki Market, bustling with flavors and aromas.",
+            "long_description": "Nishiki Market, known as 'Kyoto's Kitchen', is a five-block shopping street lined with over a hundred shops and restaurants. Here you can find exquisite Kyoto delicacies, local produce, and traditional crafts. Sampling street food such as fresh sushi, matcha treats, and tsukemono (Japanese pickles) offers a delectable journey through Kyoto's culinary traditions.",
+            "tags": [
+              "food",
+              "market",
+              "cultural"
+            ],
+            "why_worth_it": "This vibrant market is a microcosm of Kyoto's food culture, offering insights into local flavors and culinary arts.",
+            "duration": "1-2 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "Morning when vendors are fully stocked and to avoid lunchtime crowds",
+            "local_tip": "Try limited-time seasonal foods that reflect Kyoto’s rich culinary heritage.",
+            "who_for": [
+              "food lovers",
+              "shoppers",
+              "cultural enthusiasts"
+            ],
+            "what_to_bring": [],
+            "watch_out_for": "Can get very crowded, especially during meal times.",
+            "nearby_pairings": [
+              "Pontocho Alley",
+              "Kawaramachi Shopping Street"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly"
+            ],
+            "suitability_tags": [
+              "family_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": null,
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "sakura-viewing",
+            "name": "Participate in Hanami at Maruyama Park",
+            "short_description": "Join locals in admiring cherry blossoms during hanami at Maruyama Park.",
+            "long_description": "Maruyama Park, located near Yasaka Shrine, is a popular spot for hanami, the Japanese custom of enjoying the transient beauty of flowers, particularly cherry blossoms. The park's weeping cherry tree is its iconic centerpiece, drawing both locals and tourists alike. During the cherry blossom peak, the park transforms into a lively hub with evening illumination adding a magical element to the blossoms.",
+            "tags": [
+              "nature",
+              "cultural",
+              "seasonal"
+            ],
+            "why_worth_it": "Hanami is a quintessential Japanese tradition, and experiencing it in Kyoto under the cherry blossoms is an unforgettable cultural moment.",
+            "duration": "2-3 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Evening during blossom peak for illuminated views",
+            "local_tip": "Bring a picnic blanket and some local snacks or bento for a true hanami experience.",
+            "who_for": [
+              "nature lovers",
+              "couples",
+              "cultural enthusiasts"
+            ],
+            "what_to_bring": [
+              "picnic blanket"
+            ],
+            "watch_out_for": "Extremely crowded during peak bloom; arrive early to secure a good spot.",
+            "nearby_pairings": [
+              "Yasaka Shrine",
+              "Chion-in Temple"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "romantic"
+            ],
+            "weather_sensitivity": "Cherry blossoms are weather-dependent; rapid warming or strong winds can shorten viewing periods.",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          }
+        ]
+      },
+      {
+        "id": "unique_local",
+        "name": "Unique & Local",
+        "description": "Uncover Kyoto's hidden gems that locals cherish but travelers often miss.",
+        "experiences": [
+          {
+            "id": "kadobayashi-sake-cellar",
+            "name": "Visit Kadobayashi Sake Cellar",
+            "short_description": "Discover an intimate sake cellar respected among Kyoto locals. It's a journey through subtle flavors crafted with care and tradition.",
+            "long_description": "Kadobayashi Sake Cellar is a hidden gem that offers an authentic insight into Kyoto's sake culture. Nestled in a quiet district, this family-owned cellar focuses on small-batch production using traditional methods passed down through generations. Unlike the larger sake breweries open to tourists, Kadobayashi offers an intimate experience. Visitors can taste various sake directly with the brewmaster, who shares stories of craftsmanship. The cellar focuses on local rice and authentic brewing techniques that ensure a high-quality experience reflecting Kyoto's dedication to tradition.",
+            "tags": [
+              "culture",
+              "food",
+              "beverage"
+            ],
+            "why_worth_it": "Experience Kyoto's sake tradition away from commercial venues with personal stories and authentic flavors.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Afternoons",
+            "local_tip": "Call ahead to check their opening hours, as the cellar is not always open to the public.",
+            "who_for": [
+              "couples",
+              "food lovers",
+              "culture enthusiasts"
+            ],
+            "what_to_bring": [
+              "comfortable shoes"
+            ],
+            "watch_out_for": "Limited English is spoken here, so knowing a few sake-related Japanese phrases can enhance the experience.",
+            "nearby_pairings": [
+              "Kenkun Shrine",
+              "Kitano Tenmangu Market"
+            ],
+            "dietary_flags": [
+              "alcohol_centered"
+            ],
+            "suitability_tags": [
+              "couple_friendly",
+              "adult_groups"
+            ],
+            "weather_sensitivity": null,
+            "is_mappable": true,
+            "personalization_note": "Alcohol is central to this experience.",
+            "places_enrichment": null
+          },
+          {
+            "id": "origami-masters-workshop",
+            "name": "Origami Masters Workshop",
+            "short_description": "Participate in an exclusive origami workshop led by a Kyoto master, offering a unique cultural dive that tourists often overlook.",
+            "long_description": "Kyoto’s Origami Masters Workshop invites you into a world where paper transforms into delicate art. This workshop is an intimate session hosted by a Kyoto origami master, offering insight into the subtle art of paper folding. Held in a quiet studio away from tourist-heavy paths, this workshop is tailored for small groups, allowing personalized guidance and storytelling. While origami is often casually practiced, here you'll learn its deeper history and significance while crafting your own masterpiece. Participants leave with both skills and creations, adding a personal connection to Kyoto’s artistic traditions.",
+            "tags": [
+              "craft",
+              "culture",
+              "hands-on"
+            ],
+            "why_worth_it": "Learn and create under the guidance of a true master in an intimate and educational setting.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Late mornings, when natural light is best",
+            "local_tip": "Check if special themes or techniques are being taught during your visit.",
+            "who_for": [
+              "couples",
+              "culture enthusiasts",
+              "creative souls"
+            ],
+            "what_to_bring": [
+              "notebook"
+            ],
+            "watch_out_for": "Workshops are typically in Japanese but with basic English instructions.",
+            "nearby_pairings": [
+              "Kawaramachi Shopping Street"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "creative_minds",
+              "hands_on"
+            ],
+            "weather_sensitivity": null,
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "moss-garden-retreat",
+            "name": "Meditate in a Hidden Moss Garden",
+            "short_description": "Find tranquility in one of Kyoto's secret moss gardens, a serene escape known only to locals and a few adventurous travelers.",
+            "long_description": "Escape the hustle of popular sites by visiting one of Kyoto’s secret moss gardens, a peaceful enclave where the art of Japanese gardening and meditation meet. Unlike the famous Saiho-ji Temple, this less-known location offers a quiet, reflective space with limited entry, allowing you to connect deeply with nature. Guided meditations, often conducted by the garden’s keeper, enhance the serene atmosphere. As you look upon the lush carpets of moss, you’ll learn about their symbolic significance and cultivation techniques, experiencing a piece of Kyoto that remains hidden to most visitors.",
+            "tags": [
+              "meditation",
+              "nature",
+              "relaxation"
+            ],
+            "why_worth_it": "Find a quiet sanctuary away from crowds, perfect for reflection and appreciation of nature's simplicity.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "hard_to_get",
+            "best_time": "Mid-morning, when light enhances the garden's textures",
+            "local_tip": "Accessible only through local community recommendation; ask your host or a local friend.",
+            "who_for": [
+              "couples",
+              "spiritual seekers",
+              "nature lovers"
+            ],
+            "what_to_bring": [
+              "cushion",
+              "light jacket"
+            ],
+            "watch_out_for": "Respect the tranquility; silence is appreciated here.",
+            "nearby_pairings": [
+              "Daitoku-ji Temple"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "peaceful",
+              "nature_sensitive"
+            ],
+            "weather_sensitivity": "Avoid during rain as the garden can become slippery and less accessible.",
+            "is_mappable": false,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "kamishichiken-geisha-event",
+            "name": "Attend a Kamishichiken Geisha Event",
+            "short_description": "Experience a rare public Geisha performance at Kamishichiken, offering a fascinating glimpse into Kyoto’s Geisha culture.",
+            "long_description": "In the historic Kamishichiken district, the local Geisha community occasionally holds public events showcasing traditional music and dance, offering an authentic opportunity to witness this refined art form. Less famous than Gion, Kamishichiken allows for a more genuine experience, often frequented by locals. These events, set in small, intimate venues, offer performances followed by light conversation, providing insight into the life and skills of Geishas and Maikos. This is a chance to experience firsthand the beauty and discipline that comes with Kyoto's traditional arts.",
+            "tags": [
+              "performance",
+              "tradition",
+              "culture"
+            ],
+            "why_worth_it": "A unique window into the mysterious world of Geishas, away from tourist-dense areas.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "hard_to_get",
+            "best_time": "Evenings, check local listings for specific dates",
+            "local_tip": "Engage with locals who attend, as they may share lesser-known facets of the culture.",
+            "who_for": [
+              "couples",
+              "culture enthusiasts"
+            ],
+            "what_to_bring": [
+              "camera",
+              "formal attire"
+            ],
+            "watch_out_for": "Photography may be restricted during performances.",
+            "nearby_pairings": [
+              "Seimei Shrine"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "cultural_experiences"
+            ],
+            "weather_sensitivity": null,
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "morning-market-nishiki",
+            "name": "Experience the Pre-Dawn Nishiki Market",
+            "short_description": "Explore Kyoto's culinary heart before the crowds, during the bustling setup of Nishiki Market.",
+            "long_description": "Visit Nishiki Market in the early hours, when most visitors still dream, to experience the setting up of one of Kyoto's most famous food markets. This is when you can mingle with vendors, watch them prepare their stalls, and see the vibrant market unfold. This behind-the-scenes glimpse offers insights into how local ingredients and delicacies make their way onto Kyoto's tables. It's a chance to interact with vendors without the noise of tourist traffic, gaining recommendations and tasting selections often missed by the usual market-goer.",
+            "tags": [
+              "food",
+              "market",
+              "early morning"
+            ],
+            "why_worth_it": "Witness the vibrant soul of Kyoto's culinary scene in a way few tourists do.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "Before 7 AM to avoid crowds",
+            "local_tip": "Pick up fresh seasonal snacks directly from vendors while they're still stocking up.",
+            "who_for": [
+              "food lovers",
+              "early risers",
+              "couples"
+            ],
+            "what_to_bring": [
+              "camera",
+              "cash for small buys"
+            ],
+            "watch_out_for": "Limited access to English-speaking vendors.",
+            "nearby_pairings": [
+              "Kyoto Imperial Palace"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly",
+              "vegan_friendly",
+              "meat_heavy"
+            ],
+            "suitability_tags": [
+              "adventure_seekers",
+              "culinary_explorers"
+            ],
+            "weather_sensitivity": null,
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          }
+        ]
+      },
+      {
+        "id": "food_drink",
+        "name": "Food & Drink",
+        "description": "Discover Kyoto's culinary heritage through its traditional dishes, drinks, and unique dining experiences.",
+        "experiences": [
+          {
+            "id": "kaiseki-dining",
+            "name": "Kaiseki Dining",
+            "short_description": "Experience the pinnacle of Japanese cuisine with a Kaiseki meal, a multi-course dining journey that reflects Kyoto’s seasonal beauty and refined palate.",
+            "long_description": "Kaiseki is often regarded as the most refined form of Japanese dining, known for its meticulous preparation and exquisite presentation. Originating from the Kyoto region, Kaiseki meals are a culinary journey, offering multiple small courses that highlight the freshest seasonal ingredients. Each dish is a work of art, showcasing harmony in taste and aesthetics. Dining in a traditional tea house or restaurant that specializes in Kaiseki is a unique opportunity to see the connection between food, nature, and art that defines Kyoto's culinary scene. The experience often includes seasonal vegetables, fresh seafood, and Kyoto specialties like Yuba (tofu skin).",
+            "tags": [
+              "traditional",
+              "dinner",
+              "seasonal"
+            ],
+            "why_worth_it": "Kaiseki dining is a culinary art form that beautifully encapsulates Kyoto’s reverence for seasonality and tradition.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "premium",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Dinner — 6pm onwards",
+            "local_tip": "Book a private tatami room for an intimate dining experience and let the chef know your dietary preferences in advance.",
+            "who_for": [
+              "couples",
+              "food lovers",
+              "culture enthusiasts"
+            ],
+            "watch_out_for": "Reservations can be difficult to secure during peak travel seasons. Plan well in advance.",
+            "nearby_pairings": [
+              "Tea Ceremony Experience",
+              "Gion Stroll"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly"
+            ],
+            "suitability_tags": [
+              "romantic",
+              "group_friendly"
+            ],
+            "weather_sensitivity": null,
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "nishiki-market-exploration",
+            "name": "Nishiki Market Exploration",
+            "short_description": "Dive into Kyoto's culinary heart at Nishiki Market, a vibrant marketplace offering a wide array of traditional foods and local specialties.",
+            "long_description": "Known as 'Kyoto's Kitchen', Nishiki Market is a bustling hub of culinary delights. Stretching five blocks and housing over 100 shops and restaurants, it's the perfect place to discover both traditional Kyoto ingredients and innovative street food. From fresh produce and preserved goods to artisanal crafts, each stall offers a taste of the local culture. Visitors can sample favorites such as Yudofu, seasonal tsukemono (pickles), and fresh seafood skewers. Some stalls also feature unique items like KitKat flavored with regional ingredients.",
+            "tags": [
+              "market",
+              "street food",
+              "cultural"
+            ],
+            "why_worth_it": "Nishiki Market provides an authentic glimpse into the flavors and ingredients that form the backbone of Kyoto cuisine.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "Late morning — 10am to 12pm",
+            "local_tip": "Visit early to avoid the crowds and be sure to try a freshly made dashimaki (Japanese omelette).",
+            "who_for": [
+              "food lovers",
+              "first-timers",
+              "couples"
+            ],
+            "watch_out_for": "Can be crowded in the afternoons, especially during weekends and holidays.",
+            "nearby_pairings": [
+              "Kawaramachi Shopping",
+              "Fushimi Inari Shrine"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly"
+            ],
+            "suitability_tags": [
+              "family_friendly",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": null,
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "uji-green-tea-experience",
+            "name": "Uji Green Tea Experience",
+            "short_description": "Discover the rich flavors and traditions of Japanese green tea in Uji, the historic tea-producing region southwest of Kyoto.",
+            "long_description": "Uji, known for producing some of Japan's finest green tea, offers visitors the chance to dive deep into tea culture. Whether participating in a tea plucking experience or attending a guided tea tasting, visitors to Uji can learn about the (Matcha) green tea production process from leaf to cup. Many tea houses in Uji offer educational programs where you can learn to prepare Matcha, as well as the opportunity to sample different grades and varieties of Uji's premium teas. A visit to the town combines a scenic riverside setting with profound insights into one of Japan's enduring traditions.",
+            "tags": [
+              "cultural",
+              "beverages",
+              "educational"
+            ],
+            "why_worth_it": "Uji provides an unparalleled opportunity to connect with the heritage and flavors of Japanese tea, right at the source.",
+            "duration": "Half day",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Morning — coincide with harvest activities",
+            "local_tip": "Visit the nearby Byodo-in Temple after your tea experience for a serene reflection on the history of this area.",
+            "who_for": [
+              "couples",
+              "culture enthusiasts",
+              "first-timers"
+            ],
+            "what_to_bring": [
+              "comfortable shoes"
+            ],
+            "watch_out_for": "English explanations can be limited; consider booking an English-guided tour.",
+            "nearby_pairings": [
+              "Byodo-in Temple",
+              "Fushimi Sake District"
+            ],
+            "dietary_flags": [
+              "vegan_friendly",
+              "vegetarian_friendly"
+            ],
+            "suitability_tags": [
+              "romantic",
+              "accessible"
+            ],
+            "weather_sensitivity": "Better in cooler months to avoid excessive heat during tea picking.",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "kyoto-sake-tasting",
+            "name": "Kyoto Sake Tasting",
+            "short_description": "Sample and learn about Japan’s national beverage at Kyoto's traditional sake breweries and specialty shops.",
+            "long_description": "Kyoto, with its pure water and rich history, is an ideal place to explore Japan’s rich sake culture. Many breweries, particularly in the Fushimi area, offer guided tours and tastings. Visitors can gain insights into the brewing process, experience the tasting notes of various sake styles, and learn how to pair sake with food. Some tours also delve into the history of sake production in Kyoto, explaining its role in traditional festivals and daily life. Whether at a dedicated sake museum or tasting event, this experience is perfect for anyone looking to deepen their appreciation of this iconic Japanese beverage.",
+            "tags": [
+              "beverages",
+              "tasting",
+              "cultural"
+            ],
+            "why_worth_it": "Kyoto's sake culture combines centuries-old brewing techniques with local flavors, offering a distinctive taste of Japan.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Afternoon — when most breweries are open for tours",
+            "local_tip": "Visit Gekkeikan Okura Sake Museum in Fushimi to start your sake journey.",
+            "who_for": [
+              "couples",
+              "culture enthusiasts",
+              "food lovers"
+            ],
+            "watch_out_for": "Some popular tours may require reservations weeks in advance. Check specific brewery policies.",
+            "nearby_pairings": [
+              "Fushimi Inari Shrine",
+              "Tea Ceremony Experience"
+            ],
+            "dietary_flags": [
+              "alcohol_centered"
+            ],
+            "suitability_tags": [
+              "romantic",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": null,
+            "is_mappable": false,
+            "personalization_note": "Alcohol is central to this experience.",
+            "places_enrichment": null
+          },
+          {
+            "id": "yudofu-meal-in-arashiyama",
+            "name": "Yudofu Meal in Arashiyama",
+            "short_description": "Enjoy Yudofu, a simple yet elegant tofu hot pot, in the serene setting of Kyoto's Arashiyama area.",
+            "long_description": "Yudofu, a hot pot dish featuring tofu, is not only a staple of Buddhist vegetarian cuisine but also a beloved Kyoto specialty, especially during the cooler months. Arashiyama, with its tranquil bamboo groves and historical temples, offers an ideal setting to enjoy this nourishing meal. The tofu is simmered in hot water infused with kombu (kelp) and accompanied by a variety of dipping sauces and sides, often featuring seasonal vegetables. Many traditional restaurants in the area, such as Shoraian, provide a serene dining experience overlooking the picturesque Oi River and Togetsukyo Bridge.",
+            "tags": [
+              "traditional",
+              "vegetarian",
+              "lunch"
+            ],
+            "why_worth_it": "Arashiyama provides a peaceful backdrop for enjoying authentic Yudofu, connecting food with the area's tranquil natural beauty.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "walk_in",
+            "best_time": "Lunch — 11:30am to 1:30pm",
+            "local_tip": "Call ahead to reserve a window seat at a riverside restaurant for the best views.",
+            "who_for": [
+              "couples",
+              "vegans",
+              "culture enthusiasts"
+            ],
+            "watch_out_for": "Some venues may have limited opening hours, especially on weekdays.",
+            "nearby_pairings": [
+              "Arashiyama Bamboo Grove",
+              "Tenryu-ji Temple"
+            ],
+            "dietary_flags": [
+              "vegan_friendly",
+              "vegetarian_friendly"
+            ],
+            "suitability_tags": [
+              "romantic",
+              "couple_friendly"
+            ],
+            "weather_sensitivity": null,
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          }
+        ]
+      },
+      {
+        "id": "culture_history",
+        "name": "Culture & History",
+        "description": "Explore the deep historical and cultural roots of Kyoto through its temples, traditional neighborhoods, and living cultural practices.",
+        "experiences": [
+          {
+            "id": "kinkaku-ji-golden-pavilion",
+            "name": "Kinkaku-ji (Golden Pavilion)",
+            "short_description": "Marvel at the stunning gold-leaf covered pavilion reflected in the tranquil mirror pond.",
+            "long_description": "Kinkaku-ji, or the Golden Pavilion, is one of Kyoto's most iconic landmarks. This Zen Buddhist temple is famed for its gold leaf-adorned exterior, shining brilliantly in both sunlight and the pond it overlooks. Originally built as a retirement villa for shogun Ashikaga Yoshimitsu in the late 14th century, it was later converted into a temple. Visitors can explore the surrounding gardens, designed to showcase the changing seasons. The site holds profound historical importance as it symbolizes the blending of aristocratic culture and Zen Buddhist influences.",
+            "tags": [
+              "historical",
+              "architecture",
+              "outdoor"
+            ],
+            "why_worth_it": "Kinkaku-ji is an epitome of Japanese esthetics and cultural fusion, historically significant for its blend of Zen culture and aristocratic architecture.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "walk_in",
+            "best_time": "Early morning to avoid crowds",
+            "local_tip": "Visit in the early morning for the best light and fewer tourists. The temple's reflection in the pond is most magnificent around sunrise.",
+            "who_for": [
+              "culture lovers",
+              "photographers",
+              "first-timers"
+            ],
+            "what_to_bring": [],
+            "watch_out_for": "Can become crowded by mid-morning, reducing the serene atmosphere.",
+            "nearby_pairings": [
+              "Ryoan-ji Temple"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "family_friendly",
+              "accessible"
+            ],
+            "weather_sensitivity": "Better enjoyed under clear weather for optimal reflections.",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "gion-district",
+            "name": "Gion District",
+            "short_description": "Stroll through the historic streets where geisha culture thrives amidst preserved wooden teahouses.",
+            "long_description": "Gion District is Kyoto's most famous geisha district. Its historic streets are home to traditional wooden machiya houses and ochayas (tea houses) where geisha and maiko (apprentice geisha) entertain. Gion embodies the living culture of Kyoto, where one can catch a glimpse of maiko heading to appointments in the evenings. The district offers an immersive experience into Japan's rich cultural heritage, with narrow alleyways, shrines, and shops selling artisanal crafts and sweets.",
+            "tags": [
+              "historical",
+              "neighborhood",
+              "walking"
+            ],
+            "why_worth_it": "Gion is the heart of Kyoto's cultural heritage, offering a rare window into traditional Japanese entertainment culture.",
+            "duration": "2–3 hours",
+            "effort": "moderate",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Evening for geisha sightings",
+            "local_tip": "Respect the privacy of geisha and maiko by keeping a respectful distance and not photographing them without permission.",
+            "who_for": [
+              "culture lovers",
+              "history buffs",
+              "couples"
+            ],
+            "what_to_bring": [],
+            "watch_out_for": "Tourist behavior can sometimes disrupt the traditional atmosphere.",
+            "nearby_pairings": [
+              "Yasaka Shrine"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "solo_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": null,
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "fushimi-inari-taisha",
+            "name": "Fushimi Inari-taisha",
+            "short_description": "Experience the iconic vermilion torii gates leading to the sacred Mount Inari.",
+            "long_description": "Fushimi Inari-taisha is an important Shinto shrine known for its thousands of vibrant orange torii gates that create a stunning path up the sacred Mount Inari. The shrine, dedicated to Inari, the Shinto god of rice, dates back to 711 A.D. and is one of Kyoto's earliest shrines. Walking through the seemingly endless torii gates is a spiritual journey, each gate donated by individuals or businesses as an offering for prosperity. Visitors can hike the mountain trails, visiting smaller shrines along the way, which offer panoramic views of Kyoto.",
+            "tags": [
+              "spiritual",
+              "hiking",
+              "landmark"
+            ],
+            "why_worth_it": "The striking procession of torii gates offers a profound spiritual and visual journey unique to Kyoto.",
+            "duration": "2–4 hours",
+            "effort": "strenuous",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Early morning or late afternoon to avoid crowds",
+            "local_tip": "Plan to start your hike early as the trails become very busy by mid-morning. The higher you go, the less crowded it becomes.",
+            "who_for": [
+              "adventurers",
+              "spiritual seekers",
+              "photographers"
+            ],
+            "what_to_bring": [
+              "comfortable shoes",
+              "water",
+              "camera"
+            ],
+            "watch_out_for": "The full hike to the summit can be strenuous and takes several hours.",
+            "nearby_pairings": [
+              "Tofuku-ji Temple"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "romantic",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Avoid in rain — trail can become slippery",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "kyo-yuzen-workshop",
+            "name": "Kyo-Yuzen Silk Painting Workshop",
+            "short_description": "Learn the ancient technique of Kyo-Yuzen silk dyeing in an interactive workshop.",
+            "long_description": "Kyo-Yuzen is a traditional Japanese silk dyeing technique that originated in Kyoto during the Edo period. This workshop offers visitors the chance to learn and practice this intricate craft, which often depicts colorful and complex patterns that reflect nature and seasonal changes. Participants can create their own silk handkerchief or scarf, guided by experienced artisans. This hands-on experience provides deeper insight into the delicate artistry that defines Kyoto's textile industry, connecting travelers with Kyoto's rich cultural and artistic heritage.",
+            "tags": [
+              "craft",
+              "interactive",
+              "tradition"
+            ],
+            "why_worth_it": "Engaging with the Kyo-Yuzen technique offers a hands-on connection to Kyoto's rich artistic traditions.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Afternoon when light enhances the colors",
+            "local_tip": "Book in advance as spots are limited and fill up quickly, especially during peak tourist months.",
+            "who_for": [
+              "art enthusiasts",
+              "craft lovers",
+              "couples"
+            ],
+            "what_to_bring": [],
+            "watch_out_for": "Workshops fill up fast, especially in peak season; booking ahead is essential.",
+            "nearby_pairings": [
+              "Nijo Castle"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "family_friendly",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": null,
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "kyoto-imperial-palace",
+            "name": "Kyoto Imperial Palace",
+            "short_description": "Explore the historical seat of the Japanese emperors, a symbol of the nation's imperial past.",
+            "long_description": "The Kyoto Imperial Palace was the former ruling palace of the Emperor of Japan until the capital moved to Tokyo. Nestled within Kyoto Gyoen National Garden, it offers insights into Japan's imperial history through its well-preserved architecture and tranquil surroundings. Visitors can tour the elegant palace grounds to see gates, gardens, and ceremonial rooms that reflect the splendor of traditional Japanese courtly life. Although the interiors are typically not open to the public, guided tours provide comprehensive historical context about the site.",
+            "tags": [
+              "history",
+              "architecture",
+              "garden"
+            ],
+            "why_worth_it": "The Kyoto Imperial Palace offers a window into Japan's imperial heritage, highlighting the nation's traditional architectural elegance.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Morning for guided tours",
+            "local_tip": "Reserve a spot on an English-guided tour for richer insights into the palace's history.",
+            "who_for": [
+              "history buffs",
+              "cultural enthusiasts",
+              "couples"
+            ],
+            "what_to_bring": [],
+            "watch_out_for": "The guided tour is essential for understanding the site's significance, but spots are limited.",
+            "nearby_pairings": [
+              "Kyoto National Museum"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Pleasant in spring with cherry blossoms in full bloom.",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          }
+        ]
+      },
+      {
+        "id": "arts",
+        "name": "Arts & Culture",
+        "description": "In Kyoto, the arts theme is deeply intertwined with its cultural heritage, offering an array of experiences that highlight traditional Japanese art forms and contemporary expressions.",
+        "experiences": [
+          {
+            "id": "visit-kyoto-national-museum",
+            "name": "Kyoto National Museum",
+            "short_description": "Discover a vast collection of Japanese art and historical artifacts at one of Japan’s major art institutions.",
+            "long_description": "The Kyoto National Museum is an essential destination for art lovers, housing an impressive collection that spans thousands of years of Japanese history. The museum focuses on preserving Kyoto's cultural heritage and frequently hosts special exhibitions. Visitors can explore galleries dedicated to calligraphy, paintings, sculptures, and ceramics that underscore the city’s rich artistic tradition. Its Meiji-style architecture is an attraction in itself, standing proudly in the historical Higashiyama district.",
+            "tags": [
+              "museum",
+              "history",
+              "art"
+            ],
+            "why_worth_it": "It's a comprehensive introduction to the depth and beauty of Japanese art and culture.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "walk_in",
+            "best_time": "Morning to early afternoon",
+            "local_tip": "Check the museum schedule for rotating special exhibitions, which can offer rare glimpses into unique aspects of Japanese art.",
+            "who_for": [
+              "couples",
+              "culture enthusiasts",
+              "history buffs"
+            ],
+            "watch_out_for": "Closed on certain Mondays — check ahead for opening days.",
+            "nearby_pairings": [
+              "Higashi Hongan-ji Temple",
+              "Sanjusangendo Temple"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "accessible",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Ideal on rainy days — perfect indoor activity.",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "explore-nishijin-textile-center",
+            "name": "Nishijin Textile Center",
+            "short_description": "Delve into Kyoto's textile heritage with live demonstrations and exquisite fabric displays.",
+            "long_description": "The Nishijin Textile Center offers a fascinating look at Kyoto's renowned silk weaving industry. Visitors can watch live demonstrations of traditional weaving techniques that have been passed down for generations. The center showcases a diverse collection of kimono fabrics and historical garments. For a more interactive experience, visitors can participate in a kimono fashion show or try on a kimono themselves, offering a unique insight into this iconic aspect of Japanese culture.",
+            "tags": [
+              "crafts",
+              "history",
+              "tradition"
+            ],
+            "why_worth_it": "It provides an intimate view of Kyoto's significant contribution to the craft of silk weaving.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "Midday, when demonstrations are often available",
+            "local_tip": "Consider purchasing a small silk item as a unique souvenir to remember your visit.",
+            "who_for": [
+              "couples",
+              "craft enthusiasts",
+              "cultural explorers"
+            ],
+            "what_to_bring": [
+              "Camera for photos"
+            ],
+            "watch_out_for": "Check the schedule for live demonstrations.",
+            "nearby_pairings": [
+              "Kitano Tenmangu Shrine"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "accessible",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Indoor activity suited for all weather conditions.",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "participate-in-a-traditional-tea-ceremony",
+            "name": "Traditional Tea Ceremony Experience",
+            "short_description": "Immerse yourself in the serene ritual of a Japanese tea ceremony in the historic Gion district.",
+            "long_description": "Participating in a traditional Japanese tea ceremony is a quintessential Kyoto experience. These ceremonies encapsulate the elegance and simplicity of Japanese culture. Often held in a tranquil tatami mat room, the ceremony teaches the values of harmony, respect, purity, and tranquility. It's an opportunity to witness the meticulous preparation of matcha tea and engage in this meditative practice that has been refined over centuries.",
+            "tags": [
+              "traditional",
+              "culture",
+              "meditative"
+            ],
+            "why_worth_it": "The ceremony is a reflective and authentic cultural experience unique to Japan.",
+            "duration": "1 hour",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Early evening for a peaceful ambiance",
+            "local_tip": "Look for tea houses in Gion for an authentic setting.",
+            "who_for": [
+              "couples",
+              "culture devotees"
+            ],
+            "watch_out_for": "Some tea houses may require advanced reservations — check availability.",
+            "nearby_pairings": [
+              "Gion walking tour",
+              "Yasaka Shrine"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly"
+            ],
+            "suitability_tags": [
+              "romantic",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Weather-independent indoor experience.",
+            "is_mappable": false,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "visit-kiyomizu-dera-temple",
+            "name": "Kiyomizu-dera Temple Art and Architecture Tour",
+            "short_description": "Witness outstanding examples of ancient Japanese architecture and breathtaking views over Kyoto.",
+            "long_description": "Kiyomizu-dera, a UNESCO World Heritage Site, offers a profound blend of natural beauty and cultural heritage. The temple, dating back to 778 AD, is famed for its classical wooden stage jutting out from the hillside, providing a panoramic view of cherry blossoms or maple leaves depending on the season. The intricate architectural details and the array of Buddhist art and statues throughout the temple grounds reveal the artistic mastery and spiritual history of the area.",
+            "tags": [
+              "temple",
+              "architecture",
+              "view"
+            ],
+            "why_worth_it": "Kiyomizu-dera offers one of the best vantage points in Kyoto — architecturally and visually.",
+            "duration": "2 hours",
+            "effort": "moderate",
+            "cost_band": "mid",
+            "booking_difficulty": "walk_in",
+            "best_time": "Late afternoon to sunset",
+            "local_tip": "Visit the Otowa Waterfall, where you can drink from the streams, which are said to grant health, longevity, and success.",
+            "who_for": [
+              "photographers",
+              "history enthusiasts",
+              "couples"
+            ],
+            "what_to_bring": [
+              "Comfortable shoes"
+            ],
+            "watch_out_for": "The approach can be steep and crowded — be prepared for some uphill walking.",
+            "nearby_pairings": [
+              "Higashiyama district stroll"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Even more stunning on a clear day.",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "attend-a-kabuki-theatre-performance",
+            "name": "Kabuki Theatre Performance",
+            "short_description": "Experience the captivating world of kabuki, a traditional Japanese theatrical art form, at Minami-za Theatre.",
+            "long_description": "Kabuki is a classical Japanese dance-drama known for its stylized performance, elaborate costumes, and grandeur. The Minami-za Theatre in Kyoto is one of the most historical venues for kabuki. Witnessing a live performance offers a unique glimpse into Japan’s rich theatrical heritage, with storylines ranging from historical events to contemporary life. It's an art form that combines drama, dance, and music, creating a mesmerizing spectacle.",
+            "tags": [
+              "performance",
+              "cultural event"
+            ],
+            "why_worth_it": "Kabuki provides an authentic experience of Japan’s theatrical elegance and cultural depth.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "premium",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Evenings for performances",
+            "local_tip": "English earphone guides are often available for non-Japanese speakers.",
+            "who_for": [
+              "culture lovers",
+              "performing arts devotees"
+            ],
+            "watch_out_for": "Shows can sell out quickly, particularly during peak tourist seasons.",
+            "nearby_pairings": [
+              "Pontocho alley dining experience"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "solo_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Weather-independent indoor experience.",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          }
+        ]
+      },
+      {
+        "id": "day_trips",
+        "name": "Day Trips",
+        "description": "Kyoto offers several captivating day trips to nearby historical towns, natural wonders, and cultural landmarks that enhance any visit by revealing a broader palette of the region's beauty and traditions.",
+        "experiences": [
+          {
+            "id": "arashiyama_bamboo_grove",
+            "name": "Arashiyama Bamboo Grove",
+            "short_description": "Walk through the surreal beauty of towering bamboo stalks in the iconic Arashiyama grove.",
+            "long_description": "Just a short 20-minute train ride from Kyoto Station, Arashiyama offers a serene retreat into nature. The Bamboo Grove is a visual and sensory delight, promising an immersive experience amidst tall bamboo shoots that sway gently in the wind. It's best explored in the early morning to fully appreciate the tranquility before the main crowds arrive. While in Arashiyama, also visit the iconic Togetsukyo Bridge and experience the scenic boat rides along the Hozu River.",
+            "tags": [
+              "outdoor",
+              "nature",
+              "half-day"
+            ],
+            "why_worth_it": "The ethereal beauty of the bamboo grove offers a signature Kyoto experience.",
+            "duration": "Half day",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Early morning before 9am for tranquility",
+            "local_tip": "Take the JR Saga-Arashiyama Line from Kyoto Station for a direct trip.",
+            "who_for": [
+              "couples",
+              "nature lovers",
+              "photographers"
+            ],
+            "what_to_bring": [
+              "camera",
+              "comfortable walking shoes"
+            ],
+            "watch_out_for": "Can be extremely crowded post-9am; plan to arrive early.",
+            "nearby_pairings": [
+              "Togetsukyo Bridge",
+              "Hozu River Boat Ride"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly"
+            ],
+            "suitability_tags": [
+              "romantic",
+              "family_friendly"
+            ],
+            "weather_sensitivity": "Avoid on windy days — can disrupt the serene ambiance.",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "nara_city",
+            "name": "Nara City",
+            "short_description": "Discover the ancient wonders of Nara, a city rich in history and famed for its free-roaming deer.",
+            "long_description": "Approximately 45 minutes from Kyoto via the JR Nara Line, Nara offers a glimpse into Japan's early history. The city's prime attraction is Nara Park, home to friendly deer and towering pagodas. Visit the Todai-ji Temple, housing a giant bronze statue of Buddha, and Kasuga-Taisha Shrine, famous for its bronze lanterns. Allocate a full day to explore the city's temples, traditional streets, and serene parks.",
+            "tags": [
+              "history",
+              "wildlife",
+              "family"
+            ],
+            "why_worth_it": "Nara's historical significance and unique cultural sights are unmatched.",
+            "duration": "Full day",
+            "effort": "moderate",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "Morning, arriving by 10am to cover more sites",
+            "local_tip": "Purchase a day pass for the Nara City Loop Bus for convenient access to major attractions.",
+            "who_for": [
+              "history buffs",
+              "cultural explorers",
+              "animal lovers"
+            ],
+            "what_to_bring": [
+              "snacks",
+              "map of Nara Park"
+            ],
+            "watch_out_for": "Deer can bite or nudge if they think you have food.",
+            "nearby_pairings": [
+              "Todai-ji Temple",
+              "Kasuga-Taisha Shrine"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly"
+            ],
+            "suitability_tags": [
+              "family_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": null,
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "uiji_tea_ceremony",
+            "name": "Uji Tea Ceremony and Byodo-in Temple",
+            "short_description": "Visit the birthplace of matcha tea and explore one of Japan's UNESCO World Heritage Sites.",
+            "long_description": "Located about 30 minutes from Kyoto by JR Nara Line, Uji is famed for its high-quality green tea. Attend a tea ceremony to delve into the refined art of tea-making and tasting. Afterwards, wander through Byodo-in Temple, a stunning 10th-century complex noted for its Phoenix Hall and beautiful gardens. A visit to the tea houses and shopping streets of Uji complements this culturally enriching trip.",
+            "tags": [
+              "culture",
+              "tea",
+              "heritage"
+            ],
+            "why_worth_it": "Uji offers an authentic insight into Japan's tea culture and religious architecture.",
+            "duration": "Half day",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Early afternoon after the morning temple tours",
+            "local_tip": "Reserve a spot for the tea ceremony at Taihoan Tea House to ensure availability.",
+            "who_for": [
+              "food lovers",
+              "cultural connoisseurs",
+              "history aficionados"
+            ],
+            "what_to_bring": [
+              "notepad for notes",
+              "jacket (for cooler temple interiors)"
+            ],
+            "watch_out_for": "Some tea ceremonies might not offer English explanations.",
+            "nearby_pairings": [
+              "Uji Bridge",
+              "Ujikami Shrine"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly"
+            ],
+            "suitability_tags": [
+              "romantic",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Avoid during heavy rain — walking paths can flood.",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "ohara_village",
+            "name": "Ohara Village and Sanzen-in Temple",
+            "short_description": "Explore the tranquil mountain village of Ohara and visit its serene temples.",
+            "long_description": "Approximately an hour north of Kyoto by bus, Ohara is a rural village nestled in the mountains, offering a peaceful retreat from city life. The main attraction here is Sanzen-in Temple, known for its beautiful moss gardens and Buddhist statues. Spend time exploring the village markets, enjoying local produce, and taking in the natural scenery. Hiking in the surrounding hills is also a rewarding option.",
+            "tags": [
+              "nature",
+              "rural",
+              "temple"
+            ],
+            "why_worth_it": "Ohara is a peaceful escape, offering lush landscapes and spiritual insights.",
+            "duration": "Full day",
+            "effort": "moderate",
+            "cost_band": "mid",
+            "booking_difficulty": "walk_in",
+            "best_time": "Arrive by late morning for a leisurely exploration",
+            "local_tip": "Take bus #17 from Kyoto Station to Ohara, which runs approximately every 30 minutes.",
+            "who_for": [
+              "nature enthusiasts",
+              "spiritual seekers",
+              "photographers"
+            ],
+            "what_to_bring": [
+              "hiking boots",
+              "packed lunch"
+            ],
+            "watch_out_for": "Limited English signage; knowing basic Japanese phrases is helpful.",
+            "nearby_pairings": [
+              "Shorin-in Temple",
+              "Otonashi Waterfall"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly"
+            ],
+            "suitability_tags": [
+              "romantic",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Better on dry days as paths can become slippery.",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "hikone_castle",
+            "name": "Hikone Castle",
+            "short_description": "Step into Japan's feudal past at one of the best-preserved castles in the country.",
+            "long_description": "About 90 minutes from Kyoto by JR Biwako Line, Hikone Castle offers a glimpse into Japan's Edo period. This well-preserved original castle is set against the scenic backdrop of Lake Biwa and is surrounded by beautiful gardens. Explore the castle keep, museum, and surrounding grounds at your own pace. The nearby Yume Kyobashi Castle Road is perfect for enjoying local snacks and souvenirs before heading back to Kyoto.",
+            "tags": [
+              "history",
+              "architecture",
+              "full-day"
+            ],
+            "why_worth_it": "Hikone Castle represents a crucial part of Japan's historical defense architecture.",
+            "duration": "Full day",
+            "effort": "moderate",
+            "cost_band": "mid",
+            "booking_difficulty": "walk_in",
+            "best_time": "Morning to enjoy the cooler temperature during your exploration",
+            "local_tip": "Pick up a combination ticket for access to both the castle and garden.",
+            "who_for": [
+              "history buffs",
+              "architecture lovers",
+              "couples"
+            ],
+            "what_to_bring": [
+              "camera",
+              "sunhat"
+            ],
+            "watch_out_for": "Steep stairs within the castle keep might be challenging for some.",
+            "nearby_pairings": [
+              "Genkyuen Garden",
+              "Yume Kyobashi Castle Road"
+            ],
+            "dietary_flags": [
+              "kid_friendly"
+            ],
+            "suitability_tags": [
+              "family_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Best in mild weather — avoid during rain if possible.",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          }
+        ]
+      }
+    ],
+    "generated_at": "2026-05-18T21:28:34.705Z"
+  }
+}

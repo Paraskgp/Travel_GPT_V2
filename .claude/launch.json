@@ -1,0 +1,13 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "travelgpt",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "cwd": "/Users/paras/Documents/Projects/Travel_GPT_V2/app",
+      "port": 3000,
+      "autoPort": true
+    }
+  ]
+}
