@@ -22,6 +22,8 @@ export default function Home() {
   const [tripDates, setTripDates] = useState<{ startDate: string; endDate: string; arrivalTime: string; departureTime: string } | null>(null)
   const [itinerary, setItinerary] = useState<Itinerary | null>(null)
   const [planLoading, setPlanLoading] = useState(false)
+  const [planError, setPlanError]     = useState<string | null>(null)
+  const [loadingPhase, setLoadingPhase] = useState<'board' | 'plan'>('board')
   const [loading, setLoading]   = useState(false)
   const [error, setError]       = useState<string | null>(null)
   const [selected, setSelected] = useState<Experience | null>(null)
@@ -79,8 +81,10 @@ export default function Home() {
     setStage('loading')
     setBoard(null)
     setItinerary(null)
+    setPlanError(null)
     setForcedIds(new Set())
     setSkippedIds(new Set())
+    setLoadingPhase('board')
 
     const dates = startDate ? { startDate, endDate, arrivalTime, departureTime } : null
     setTripDates(dates)
@@ -119,13 +123,14 @@ export default function Home() {
 
       // Step 2: auto-plan if dates provided
       if (dates) {
+        setLoadingPhase('plan')
         setPlanLoading(true)
         try {
           const plan = await callPlan(generatedBoard, dates, [], [])
           setItinerary(plan)
         } catch (planErr) {
-          console.warn('Auto-plan failed:', planErr)
-          // Non-fatal — board still shows, user can replan
+          console.error('Auto-plan failed:', planErr)
+          setPlanError(planErr instanceof Error ? planErr.message : 'Failed to build itinerary')
         } finally {
           setPlanLoading(false)
         }
@@ -185,6 +190,7 @@ export default function Home() {
   async function handleReplan() {
     if (!board || !tripDates) return
     setPlanLoading(true)
+    setPlanError(null)
     setError(null)
     try {
       const plan = await callPlan(
@@ -195,7 +201,7 @@ export default function Home() {
       )
       setItinerary(plan)
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to replan')
+      setPlanError(err instanceof Error ? err.message : 'Failed to replan')
     } finally {
       setPlanLoading(false)
     }
@@ -239,7 +245,12 @@ export default function Home() {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center bg-stone-50 gap-4">
         <div className="w-8 h-8 border-2 border-stone-300 border-t-stone-700 rounded-full animate-spin" />
-        <p className="text-sm text-stone-400">Building your board…</p>
+        <p className="text-sm text-stone-400">
+          {loadingPhase === 'plan' ? 'Planning your itinerary…' : 'Building your board…'}
+        </p>
+        {loadingPhase === 'plan' && (
+          <p className="text-xs text-stone-300">Board ready · scheduling days now</p>
+        )}
       </div>
     )
   }
@@ -310,6 +321,18 @@ export default function Home() {
                     </button>
                   )}
                 </div>
+                {planError && !itinerary && (
+                  <div className="rounded-lg border border-red-200 bg-red-50 px-4 py-3 flex items-center justify-between gap-4">
+                    <p className="text-xs text-red-600">{planError}</p>
+                    <button
+                      onClick={handleReplan}
+                      disabled={planLoading}
+                      className="text-xs px-3 py-1.5 bg-red-600 text-white rounded hover:bg-red-700 transition-colors disabled:opacity-40 shrink-0"
+                    >
+                      {planLoading ? 'Retrying…' : 'Try again'}
+                    </button>
+                  </div>
+                )}
                 <ItineraryView
                   itinerary={itinerary}
                   loading={planLoading && !itinerary}
@@ -336,7 +359,7 @@ export default function Home() {
                   onReset={handleReset}
                   onSelect={setSelected}
                   defaultOpen={i < 2}
-                  showItineraryStatus={!!tripDates?.startDate}
+                  showItineraryStatus={!!itinerary}
                 />
               ))}
             </div>

@@ -17,11 +17,11 @@ const inputCls = "border border-stone-300 rounded-lg px-3 py-2.5 text-sm text-st
 const inputSmCls = "border border-stone-300 rounded px-2.5 py-1.5 text-sm text-stone-900 placeholder:text-stone-400 focus:outline-none focus:ring-1 focus:ring-stone-400 bg-white"
 
 export default function InputForm({ onSubmit, loading, compact = false }: Props) {
-  const [destination, setDestination] = useState('')
-  const [startDate, setStartDate]     = useState('')
-  const [endDate, setEndDate]         = useState('')
-  const [arrivalTime, setArrivalTime]       = useState('')
-  const [departureTime, setDepartureTime]   = useState('')
+  const [destination, setDestination] = useState('Yellowstone National Park')
+  const [startDate, setStartDate]     = useState('2026-05-20')
+  const [endDate, setEndDate]         = useState('2026-05-26')
+  const [arrivalTime, setArrivalTime]       = useState('16:00')
+  const [departureTime, setDepartureTime]   = useState('11:00')
   const [interests, setInterests]           = useState<string[]>([])
   const [dietary, setDietary]         = useState<string[]>([])
   const [partyType, setPartyType]     = useState('')
