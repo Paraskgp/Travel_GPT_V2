@@ -1,0 +1,282 @@
+{
+  "meta": {
+    "destination": "Yellowstone National Park",
+    "source": "Human-planned itinerary (PDF)",
+    "created_by": "human",
+    "trip_dates": { "start": "2026-05-20", "end": "2026-05-25" },
+    "arrival": { "airport": "Bozeman (BZN)", "time": "11:03", "rental_car": true },
+    "departure": { "airport": "Bozeman (BZN)", "time": "13:57" },
+    "base_camp": "Canyon Lodge, Canyon Village",
+    "lodging_moves": 0,
+    "notes": "Single base camp throughout. All days are loops from Canyon Lodge."
+  },
+
+  "locations_visited": [
+    { "name": "Bozeman Yellowstone International Airport", "role": "gateway", "day": 0 },
+    { "name": "Mammoth Hot Springs", "role": "drive-by", "day": 0, "note": "Optional 20-30 min stop only — NOT a main activity" },
+    { "name": "Canyon Lodge", "role": "base_camp", "day": "0-5" },
+    { "name": "Lamar Valley", "role": "headline", "day": 1, "note": "Core wildlife viewing — 3 hrs unbroken, 6:30 AM departure required" },
+    { "name": "Tower Fall", "role": "secondary", "day": 1, "note": "Quick stop on the way back, ~20 min detour" },
+    { "name": "Grand Canyon of the Yellowstone", "role": "headline", "day": 2, "note": "Artist Point + Lower Falls — morning start, avoid midday crowds" },
+    { "name": "Hayden Valley", "role": "headline", "day": 2, "note": "Evening ONLY — 6:00-8:00 PM for golden-hour wildlife. High ROI." },
+    { "name": "Old Faithful", "role": "headline", "day": 3, "note": "Arrive 8:30 AM to beat crowds. Check eruption timing in advance." },
+    { "name": "Grand Prismatic Spring (overlook)", "role": "headline", "day": 3, "note": "Do the overlook trail — not just the boardwalk below" },
+    { "name": "Biscuit Basin / Fountain Paint Pot", "role": "optional", "day": 3, "note": "Only if energy allows — do not force it" },
+    { "name": "Norris Geyser Basin", "role": "headline", "day": 4, "note": "Unique geology. World's largest active geyser field. Not a quick stop." },
+    { "name": "Yellowstone Lake", "role": "secondary", "day": 4, "note": "Afternoon wind-down. Low effort, high value. 4:15-5:30 PM." }
+  ],
+
+  "locations_notably_excluded": [
+    { "name": "Mud Volcano", "reason": "Close to Canyon but skipped — fatigue management" },
+    { "name": "West Thumb Geyser Basin", "reason": "Too far south given base camp logistics" },
+    { "name": "Artist Paint Pots", "reason": "Near Norris but not included — keeping Day 4 light" },
+    { "name": "Beartooth Highway", "reason": "Out of scope for this route" }
+  ],
+
+  "days": [
+    {
+      "day_number": 0,
+      "date": "2026-05-20",
+      "title": "Arrival — Bozeman to Canyon",
+      "theme": "Travel day. Do not plan sightseeing.",
+      "start_time": "11:03",
+      "rows": [
+        { "time": "11:03", "activity": "Land in Bozeman", "drive_time": null, "notes": "Get rental car fast" },
+        { "time": "11:45", "activity": "Depart airport", "drive_time": null, "notes": "Grab snacks before leaving" },
+        { "time": "11:45-15:00", "activity": "Drive to Canyon via North Entrance", "drive_time": "3-3.5 hrs", "notes": "Includes buffers and traffic" },
+        { "time": "13:30", "activity": "Pass Mammoth Hot Springs", "drive_time": null, "notes": "Optional 20-30 min stop — do not commit to more" },
+        { "time": "15:00-16:00", "activity": "Arrive Canyon Lodge — check in", "drive_time": null, "notes": null },
+        { "time": "Evening", "activity": "Light walk / rest", "drive_time": null, "notes": "Do not push. Recovery begins now." }
+      ],
+      "day_principles": [
+        "Arrival day is a travel day. One optional stop maximum.",
+        "Afternoon fatigue from travel is real. Plan nothing demanding.",
+        "Evening must be free."
+      ]
+    },
+    {
+      "day_number": 1,
+      "date": "2026-05-21",
+      "title": "Lamar Valley — Wildlife Focus",
+      "theme": "Northeast corridor. Early start mandatory. Afternoon rest non-negotiable.",
+      "start_time": "06:30",
+      "rows": [
+        { "time": "06:30", "activity": "Depart Canyon", "drive_time": null, "notes": "Earlier = better wildlife sightings" },
+        { "time": "06:30-07:45", "activity": "Drive to Lamar Valley", "drive_time": "~1 hr 15 min", "notes": "Scenic drive — watch for pullouts" },
+        { "time": "07:45-10:30", "activity": "Wildlife viewing — Lamar Valley", "drive_time": null, "notes": "Core experience. Do not rush this. Bison, wolves, bears possible." },
+        { "time": "10:30-11:15", "activity": "Tower Fall", "drive_time": "~20 min detour", "notes": "Quick stop on return — do not over-extend" },
+        { "time": "11:15-12:30", "activity": "Drive back to Canyon", "drive_time": "~1-1.25 hrs", "notes": null },
+        { "time": "Afternoon", "activity": "Rest / nap / free time", "drive_time": null, "notes": "CRITICAL RECOVERY — do not schedule anything here" },
+        { "time": "17:30-19:00", "activity": "Optional short outing nearby", "drive_time": "~20-30 min", "notes": "Keep it light. Canyon rim walk acceptable." }
+      ],
+      "day_principles": [
+        "Wildlife is only worth seeing in the first 3 hours of daylight. Do not schedule wildlife for midday.",
+        "Lamar Valley requires 2-3 hours minimum to be worthwhile. A 30-min slot is useless.",
+        "Mandatory afternoon rest after a 6:30 AM start. This is not optional.",
+        "Tower Fall is secondary — include only on the way back, never as a destination."
+      ]
+    },
+    {
+      "day_number": 2,
+      "date": "2026-05-22",
+      "title": "Grand Canyon of the Yellowstone + Hayden Sunset",
+      "theme": "Canyon in the morning, rest midday, Hayden Valley at golden hour.",
+      "start_time": "08:00",
+      "rows": [
+        { "time": "08:00", "activity": "Start — easy day", "drive_time": null, "notes": null },
+        { "time": "08:15-10:30", "activity": "Grand Canyon of the Yellowstone", "drive_time": "~15 min", "notes": "Artist Point + Lower Falls. Both viewpoints required." },
+        { "time": "10:30-12:00", "activity": "Short trail / explore canyon rim", "drive_time": null, "notes": "Add immersion — North Rim trail or Uncle Tom's Trail" },
+        { "time": "12:00-14:00", "activity": "Lunch + rest at lodge", "drive_time": null, "notes": "Avoid peak midday crowds. Deliberate recovery window." },
+        { "time": "17:30", "activity": "Depart for Hayden Valley", "drive_time": null, "notes": "Golden hour timing — do not leave later" },
+        { "time": "17:30-18:00", "activity": "Drive to Hayden Valley", "drive_time": "~30 min", "notes": null },
+        { "time": "18:00-20:00", "activity": "Wildlife viewing + sunset — Hayden Valley", "drive_time": null, "notes": "HIGH ROI. Bison herds, possible grizzly, golden light. This is why you stay at Canyon." },
+        { "time": "20:00-20:30", "activity": "Return to Canyon", "drive_time": "~30 min", "notes": null }
+      ],
+      "day_principles": [
+        "Hayden Valley MUST be visited at golden hour (6-8 PM). Midday Hayden is flat and crowded — not worth it.",
+        "Grand Canyon of the Yellowstone requires BOTH Artist Point and Lower Falls to be complete.",
+        "Midday is for rest, not activities. Crowds are heaviest 11 AM - 3 PM.",
+        "Day 2 is the easiest day — the human intentionally chose this for recovery."
+      ]
+    },
+    {
+      "day_number": 3,
+      "date": "2026-05-23",
+      "title": "Geyser Loop — Old Faithful + Grand Prismatic",
+      "theme": "Full-day southwest commitment. 3-hr round trip drive. Beat the crowds.",
+      "start_time": "07:00",
+      "rows": [
+        { "time": "07:00", "activity": "Depart Canyon", "drive_time": null, "notes": "Beat crowds — Old Faithful fills up fast" },
+        { "time": "07:00-08:30", "activity": "Drive south to Upper Geyser Basin", "drive_time": "~1.5 hrs", "notes": null },
+        { "time": "08:30-10:00", "activity": "Old Faithful", "drive_time": null, "notes": "Check eruption timing before arriving. Aim to arrive 20 min before scheduled eruption." },
+        { "time": "10:15-11:30", "activity": "Grand Prismatic Spring overlook", "drive_time": "~20 min", "notes": "Take the overlook trail — the elevated view is 10x better than the boardwalk" },
+        { "time": "11:30-12:30", "activity": "Optional: Biscuit Basin or Fountain Paint Pot", "drive_time": null, "notes": "Only if energy allows — do not force it" },
+        { "time": "12:30-14:00", "activity": "Lunch / break", "drive_time": null, "notes": "Old Faithful Inn dining room or pack lunch" },
+        { "time": "14:00-15:30", "activity": "Return drive to Canyon", "drive_time": "~1.5 hrs", "notes": null },
+        { "time": "Evening", "activity": "Rest", "drive_time": null, "notes": "Needed — this is the highest-drive day" }
+      ],
+      "day_principles": [
+        "Old Faithful area is 1.5 hrs from Canyon each way — this is a full-day commitment, not a morning trip.",
+        "Grand Prismatic overlook trail is non-negotiable — the boardwalk view is obstructed. Always include the overlook.",
+        "Biscuit/Fountain are optional buffers — do not schedule them as required stops.",
+        "Evening must be free — driving + geysers is exhausting."
+      ]
+    },
+    {
+      "day_number": 4,
+      "date": "2026-05-24",
+      "title": "Norris Geyser Basin + Yellowstone Lake — Balanced Day",
+      "theme": "Two short loops. Deliberately light. Pack evening.",
+      "start_time": "08:30",
+      "rows": [
+        { "time": "08:30", "activity": "Depart Canyon", "drive_time": null, "notes": "Slightly relaxed start — earned it" },
+        { "time": "08:30-09:15", "activity": "Drive to Norris Geyser Basin", "drive_time": "~45 min", "notes": null },
+        { "time": "09:15-11:00", "activity": "Explore Norris Geyser Basin", "drive_time": null, "notes": "Unique geology — world's hottest and most dynamic geyser basin. Not a quick stop." },
+        { "time": "11:00-12:00", "activity": "Return toward Canyon", "drive_time": "~45 min", "notes": null },
+        { "time": "12:00-14:00", "activity": "Rest / lunch", "drive_time": null, "notes": null },
+        { "time": "15:30-16:15", "activity": "Drive to Yellowstone Lake", "drive_time": "~45 min", "notes": null },
+        { "time": "16:15-17:30", "activity": "Relax by Yellowstone Lake", "drive_time": null, "notes": "Low effort, high value. No hiking required. Just be there." },
+        { "time": "Evening", "activity": "Pack / chill", "drive_time": null, "notes": "Last night — departure tomorrow morning" }
+      ],
+      "day_principles": [
+        "Day 4 is intentionally light — the human is managing cumulative fatigue.",
+        "Norris requires 1.5-2 hrs minimum to explore properly.",
+        "Yellowstone Lake is a wind-down activity, not a hiking destination.",
+        "Last evening must include time to pack — do not schedule dinner far from lodge."
+      ]
+    },
+    {
+      "day_number": 5,
+      "date": "2026-05-25",
+      "title": "Exit — Canyon to Bozeman",
+      "theme": "Pure travel day. No activities.",
+      "start_time": "08:30",
+      "rows": [
+        { "time": "08:30", "activity": "Depart Canyon Lodge", "drive_time": null, "notes": "Do not cut it close — buffer is critical" },
+        { "time": "08:30-11:00", "activity": "Drive to Bozeman", "drive_time": "~2-2.5 hrs with buffer", "notes": "Wildlife on roads, construction possible, no rushing" },
+        { "time": "11:00", "activity": "Return rental car", "drive_time": null, "notes": null },
+        { "time": "13:57", "activity": "Flight departure", "drive_time": null, "notes": "Safe margin maintained" }
+      ],
+      "day_principles": [
+        "Departure day is NOT a half-day sightseeing opportunity. Do not suggest 'one last stop'.",
+        "Yellowstone roads can delay 30+ minutes unpredictably (bison jams, construction). Buffer is essential.",
+        "Departure must be timed at minimum 2.5 hrs before flight when driving from Canyon."
+      ]
+    }
+  ],
+
+  "claude_analysis": {
+    "overall_grade": "A — Exceptional real-world planning",
+    "key_principles_the_human_applied": [
+      {
+        "principle": "Single base camp",
+        "impact": "CRITICAL",
+        "description": "Canyon Lodge for all 5 nights. Never moves. Every day is a loop. This eliminates packing stress, lost time, and reservation chaos. Our AI planner has no concept of base camp logistics — it may suggest moving lodging, which would be wrong for Yellowstone.",
+        "ai_gap": "Our planner does not ask about or optimize for lodging strategy. This should be a key input."
+      },
+      {
+        "principle": "Recovery time as first-class activity",
+        "impact": "HIGH",
+        "description": "Every single day (except Day 5) has an explicit rest/nap block. Day 1 labels it 'Critical recovery.' The human understands that a 6:30 AM wildlife start + 3 hrs outdoor activity means you are done by noon. Our AI schedules activities all day.",
+        "ai_gap": "Our itinerary prompt says 'max 4-5 experiences per day' but does not require rest blocks. We should explicitly build in a 1.5-2 hr afternoon rest on any day that starts before 8 AM."
+      },
+      {
+        "principle": "Wildlife has golden hours",
+        "impact": "HIGH",
+        "description": "Lamar Valley is a 6:30 AM departure. Hayden Valley is specifically saved for 6-8 PM sunset. Neither was scheduled at 10 AM or 2 PM. The human knows that wildlife activity and crowd density are time-dependent in ways the AI doesn't model.",
+        "ai_gap": "Our prompt says nothing about time-of-day optimization for wildlife. We should add guidance: wildlife experiences should be scheduled at dawn or dusk, never midday."
+      },
+      {
+        "principle": "Drive time honesty",
+        "impact": "HIGH",
+        "description": "Canyon to Old Faithful is listed as 1.5 hrs. Canyon to Lamar Valley is 1hr15min. Canyon to Bozeman is 2-2.5 hrs with buffer. Every drive estimate includes traffic and wildlife stop buffers. Yellowstone has a 45 mph speed limit and frequent bison jams.",
+        "ai_gap": "Our travel rows likely underestimate Yellowstone drive times significantly. Google Maps times are misleading in the park. Our prompt should note that Yellowstone internal drives should add 25-50% buffer over map estimates."
+      },
+      {
+        "principle": "Selective exclusion",
+        "impact": "MEDIUM",
+        "description": "Mammoth Hot Springs — one of Yellowstone's most famous features — is a drive-by. No Mud Volcano (0.5 miles from Canyon Lodge). No West Thumb. The human had clear prioritization and said no to famous things in service of the overall arc.",
+        "ai_gap": "Our AI likely includes everything it knows about Yellowstone. The eval agent should check whether we are over-scheduling famous attractions at the cost of pacing."
+      },
+      {
+        "principle": "Departure day = zero activities",
+        "impact": "MEDIUM",
+        "description": "Day 5 is drive + car return + flight. Nothing else. The human did not try to squeeze in a 'last morning at Norris.' Our planner will almost certainly suggest activities on departure morning.",
+        "ai_gap": "Our prompt says 'last day must wrap 2 hours before departure_time.' But we should enforce zero sightseeing on departure days with early flights."
+      },
+      {
+        "principle": "Grand Prismatic overlook vs boardwalk",
+        "impact": "MEDIUM",
+        "description": "The human specifically notes 'Do overlook trail' for Grand Prismatic. The standard boardwalk is at ground level and you cannot see the colors. The overlook trail (0.8 miles) is the only way to see the spring properly. This is expert-level local knowledge.",
+        "ai_gap": "Our tip for Grand Prismatic may not distinguish between boardwalk and overlook. This is exactly the kind of local tip our tip-enhancement pass should produce."
+      }
+    ],
+
+    "rubric_for_eval_agent": {
+      "coverage_check": {
+        "must_include_on_board": [
+          "Lamar Valley",
+          "Tower Fall",
+          "Grand Canyon of the Yellowstone",
+          "Artist Point",
+          "Hayden Valley",
+          "Old Faithful",
+          "Grand Prismatic Spring",
+          "Norris Geyser Basin",
+          "Yellowstone Lake"
+        ],
+        "should_include_on_board": [
+          "Biscuit Basin",
+          "Fountain Paint Pot",
+          "Canyon Village",
+          "Mammoth Hot Springs"
+        ],
+        "scoring": "If any 'must_include' location is absent from the board, that is a board generation failure."
+      },
+      "itinerary_scoring_dimensions": [
+        {
+          "dimension": "Wildlife timing",
+          "weight": 0.20,
+          "pass_criteria": "Lamar Valley scheduled before 8 AM. Hayden Valley scheduled after 5 PM. No wildlife activity scheduled 10 AM - 4 PM.",
+          "fail_signal": "Wildlife viewing scheduled at 10 AM or later on Day 1."
+        },
+        {
+          "dimension": "Recovery time",
+          "weight": 0.20,
+          "pass_criteria": "At least one rest/free block per day on days with 4+ activities or early starts.",
+          "fail_signal": "Activities scheduled continuously from 7 AM to 7 PM with no break."
+        },
+        {
+          "dimension": "Drive time realism",
+          "weight": 0.15,
+          "pass_criteria": "Canyon to Old Faithful allows 1.5 hrs. Canyon to Lamar allows 1.25 hrs. Departure day allows 2.5 hrs to Bozeman.",
+          "fail_signal": "30-minute drive times for routes that are 45+ minutes in the park."
+        },
+        {
+          "dimension": "Geographic coherence",
+          "weight": 0.20,
+          "pass_criteria": "Each day stays in one geographic zone. Northeast, Southwest, and Canyon-area days are separate.",
+          "fail_signal": "Lamar Valley and Old Faithful on the same day (opposite ends of the park, 3+ hrs apart)."
+        },
+        {
+          "dimension": "Experience density",
+          "weight": 0.15,
+          "pass_criteria": "2-3 headline experiences per day max. Arrival and departure days have 0-1.",
+          "fail_signal": "5+ experiences on Day 1 or any day with a 6 AM start."
+        },
+        {
+          "dimension": "Grand Prismatic tip quality",
+          "weight": 0.05,
+          "pass_criteria": "Tip mentions overlook trail, not just boardwalk.",
+          "fail_signal": "Tip only mentions boardwalk or misses the viewing angle issue."
+        },
+        {
+          "dimension": "Departure day discipline",
+          "weight": 0.05,
+          "pass_criteria": "Last day contains only drive and airport logistics.",
+          "fail_signal": "Any sightseeing activity scheduled on departure morning."
+        }
+      ]
+    }
+  }
+}

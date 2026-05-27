@@ -3,7 +3,7 @@ import { callLLM, Provider } from "@/lib/llm/client"
 import { itinerarySystemPrompt, itineraryUserPrompt } from "@/lib/claude/prompts"
 import { PlanRequest, PlanResponse, Itinerary, ErrorResponse } from "@/lib/types"
 
-export const maxDuration = 120
+export const maxDuration = 180
 
 function parseJSON<T>(raw: string): T {
   const stripped = raw

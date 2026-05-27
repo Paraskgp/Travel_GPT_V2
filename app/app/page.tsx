@@ -63,7 +63,15 @@ export default function Home() {
         skipped_ids: skipped,
       }),
     })
-    if (!res.ok) throw new Error(await res.text())
+    if (!res.ok) {
+      const text = await res.text()
+      let message = text
+      try {
+        const parsed = JSON.parse(text)
+        if (parsed.error) message = parsed.error
+      } catch { /* not JSON, use raw text */ }
+      throw new Error(message)
+    }
     const { itinerary: plan } = await res.json()
     return plan
   }
@@ -103,7 +111,12 @@ export default function Home() {
           preferences: prefs,
         }),
       })
-      if (!genRes.ok) throw new Error(await genRes.text())
+      if (!genRes.ok) {
+        const text = await genRes.text()
+        let message = text
+        try { const p = JSON.parse(text); if (p.error) message = p.error } catch { /* raw */ }
+        throw new Error(message)
+      }
       const { board: raw }: { board: Board } = await genRes.json()
 
       // Client-side ID dedup (safety net)
