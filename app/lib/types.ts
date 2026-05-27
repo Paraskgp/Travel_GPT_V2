@@ -30,6 +30,8 @@ export interface DestinationContext {
   best_for: string[]                // Types of travelers it suits most
   honest_notes: string[]           // Honest caveats — not a negative list, just what to know going in
   applicable_themes: string[]       // Theme IDs from the approved list that genuinely apply here
+  recommended_stay_area: string     // Best area/lodge/neighborhood to base yourself — used as itinerary anchor
+  recommended_stay_reason: string   // One sentence explaining why
 }
 
 export type SeasonType = "off_season" | "shoulder_season" | "peak_season"
@@ -155,6 +157,7 @@ export interface PlanRequest {
   end_date: string
   arrival_time?: string       // e.g. "09:00"
   departure_time?: string     // e.g. "14:00"
+  stay_area?: string          // where they're sleeping — anchor for all day routing
   forced_ids?: string[]       // user said "must include these"
   skipped_ids?: string[]      // user said "skip these"
 }

@@ -1,0 +1,2073 @@
+{
+  "board": {
+    "destination": "Yellowstone National Park",
+    "destination_context": {
+      "destination": "Yellowstone National Park",
+      "soul": "Yellowstone National Park is a living testament to the primordial forces that shape our Earth. It's a place where the ground literally breathes with geothermal energy, and visitors are reminded of the incredible power of nature. The park's spirit is defined by its wild, untamed landscape, featuring geysers like Old Faithful that erupt with clockwork precision and paint pots bubbling with vibrant, otherworldly colors. While the park is a sanctuary for diverse wildlife such as grizzly bears, wolves, and bison, it is also a refuge for those seeking to commune with the natural world. The essence of Yellowstone is one of reverence for the raw, unfiltered beauty of nature—a place where the air carries the scent of pine and sage, and the sky stretches endlessly over steaming geyser basins and vast canyons.",
+      "defining_pillars": [
+        "Geysers and geothermal features",
+        "Bison and wildlife spotting",
+        "Dramatic canyon landscapes",
+        "An example of natural preservation",
+        "The historic Yellowstone River"
+      ],
+      "best_for": [
+        "Nature enthusiasts craving raw beauty",
+        "Wildlife photographers on the hunt for iconic shots",
+        "Families eager to explore natural wonders",
+        "Adventure seekers looking to hike geothermal terrains",
+        "Geology buffs fascinated by earth's primordial forces"
+      ],
+      "honest_notes": [
+        "Some areas can be overcrowded during peak season; plan to visit off-peak hours for a more tranquil experience",
+        "Weather can change rapidly; visitors should be prepared for different conditions",
+        "Wildlife is unpredictable; maintain a safe distance for safety",
+        "Many sites require driving long distances; plan your route ahead of time",
+        "Cell service is limited in many parts of the park; navigation may be challenging"
+      ],
+      "applicable_themes": [
+        "signature",
+        "unique_local",
+        "adventure",
+        "nature",
+        "hiking",
+        "family",
+        "day_trips",
+        "seasonal"
+      ]
+    },
+    "weather_context": {
+      "destination": "Yellowstone National Park",
+      "travel_month": null,
+      "annual_summary": "Yellowstone National Park experiences a wide range of seasonal weather conditions typical of high-altitude alpine environments. Winters are severe with heavy snowfall and frigid temperatures, while summers are mild, providing the best conditions for outdoor exploration. Spring and fall can be unpredictable, with rapidly changing weather and limited park services. The best time to visit is during the summer months when most amenities are open, and hiking trails are accessible. Visitors should be prepared for varying conditions throughout the year, including potential summer thunderstorms and early snowfalls in autumn.",
+      "months": {
+        "January": {
+          "avg_high_f": 29,
+          "avg_low_f": 1,
+          "avg_high_c": -2,
+          "avg_low_c": -17,
+          "avg_rainfall_inches": 1.5,
+          "rainy_days_estimate": 14,
+          "avg_wind_mph": 6,
+          "humidity_pct": 85,
+          "uv_index": "Low",
+          "sunrise": "8:00 AM",
+          "sunset": "5:00 PM",
+          "daylight_hours": 9,
+          "season_type": "off_season",
+          "season_notes": "Park access is limited, and most facilities are closed due to heavy snow."
+        },
+        "February": {
+          "avg_high_f": 34,
+          "avg_low_f": 5,
+          "avg_high_c": 1,
+          "avg_low_c": -15,
+          "avg_rainfall_inches": 1.2,
+          "rainy_days_estimate": 12,
+          "avg_wind_mph": 6,
+          "humidity_pct": 80,
+          "uv_index": "Low",
+          "sunrise": "7:30 AM",
+          "sunset": "5:40 PM",
+          "daylight_hours": 10.2,
+          "season_type": "off_season",
+          "season_notes": "Winter activities like snowmobiling and snowshoeing are possible."
+        },
+        "March": {
+          "avg_high_f": 40,
+          "avg_low_f": 11,
+          "avg_high_c": 4,
+          "avg_low_c": -12,
+          "avg_rainfall_inches": 1.5,
+          "rainy_days_estimate": 13,
+          "avg_wind_mph": 7,
+          "humidity_pct": 75,
+          "uv_index": "Moderate",
+          "sunrise": "7:00 AM",
+          "sunset": "7:15 PM",
+          "daylight_hours": 11.5,
+          "season_type": "off_season",
+          "season_notes": "Winter conditions persist, with gradual thawing towards the end of the month."
+        },
+        "April": {
+          "avg_high_f": 49,
+          "avg_low_f": 21,
+          "avg_high_c": 9,
+          "avg_low_c": -6,
+          "avg_rainfall_inches": 1.3,
+          "rainy_days_estimate": 12,
+          "avg_wind_mph": 8,
+          "humidity_pct": 70,
+          "uv_index": "Moderate",
+          "sunrise": "6:20 AM",
+          "sunset": "8:00 PM",
+          "daylight_hours": 13.4,
+          "season_type": "shoulder_season",
+          "season_notes": "Unpredictable weather; some park roads and trails begin to open."
+        },
+        "May": {
+          "avg_high_f": 59,
+          "avg_low_f": 29,
+          "avg_high_c": 15,
+          "avg_low_c": -2,
+          "avg_rainfall_inches": 2,
+          "rainy_days_estimate": 13,
+          "avg_wind_mph": 8,
+          "humidity_pct": 65,
+          "uv_index": "Moderate",
+          "sunrise": "5:40 AM",
+          "sunset": "8:40 PM",
+          "daylight_hours": 15,
+          "season_type": "shoulder_season",
+          "season_notes": "Wildlife viewing is excellent as animals emerge, but some snow may still hinder access."
+        },
+        "June": {
+          "avg_high_f": 70,
+          "avg_low_f": 36,
+          "avg_high_c": 21,
+          "avg_low_c": 2,
+          "avg_rainfall_inches": 1.8,
+          "rainy_days_estimate": 11,
+          "avg_wind_mph": 7,
+          "humidity_pct": 60,
+          "uv_index": "High",
+          "sunrise": "5:20 AM",
+          "sunset": "9:10 PM",
+          "daylight_hours": 15.8,
+          "season_type": "peak_season",
+          "season_notes": "Pleasant weather with most park facilities and roads open."
+        },
+        "July": {
+          "avg_high_f": 79,
+          "avg_low_f": 41,
+          "avg_high_c": 26,
+          "avg_low_c": 5,
+          "avg_rainfall_inches": 1.6,
+          "rainy_days_estimate": 9,
+          "avg_wind_mph": 6,
+          "humidity_pct": 55,
+          "uv_index": "High",
+          "sunrise": "5:30 AM",
+          "sunset": "9:00 PM",
+          "daylight_hours": 15.5,
+          "season_type": "peak_season",
+          "season_notes": "Warmest month with a chance of afternoon thunderstorms; very popular with tourists."
+        },
+        "August": {
+          "avg_high_f": 78,
+          "avg_low_f": 39,
+          "avg_high_c": 25,
+          "avg_low_c": 4,
+          "avg_rainfall_inches": 1.6,
+          "rainy_days_estimate": 8,
+          "avg_wind_mph": 7,
+          "humidity_pct": 55,
+          "uv_index": "High",
+          "sunrise": "6:00 AM",
+          "sunset": "8:30 PM",
+          "daylight_hours": 14.5,
+          "season_type": "peak_season",
+          "season_notes": "Ideal conditions for outdoor activities; still crowded; book accommodations early."
+        },
+        "September": {
+          "avg_high_f": 68,
+          "avg_low_f": 31,
+          "avg_high_c": 20,
+          "avg_low_c": -1,
+          "avg_rainfall_inches": 1.5,
+          "rainy_days_estimate": 9,
+          "avg_wind_mph": 7,
+          "humidity_pct": 55,
+          "uv_index": "Moderate",
+          "sunrise": "6:30 AM",
+          "sunset": "7:30 PM",
+          "daylight_hours": 13,
+          "season_type": "shoulder_season",
+          "season_notes": "Beautiful fall colors begin; cooler weather; more solitude in the park."
+        },
+        "October": {
+          "avg_high_f": 56,
+          "avg_low_f": 24,
+          "avg_high_c": 13,
+          "avg_low_c": -4,
+          "avg_rainfall_inches": 1.2,
+          "rainy_days_estimate": 10,
+          "avg_wind_mph": 7,
+          "humidity_pct": 65,
+          "uv_index": "Moderate",
+          "sunrise": "7:10 AM",
+          "sunset": "6:30 PM",
+          "daylight_hours": 11.3,
+          "season_type": "shoulder_season",
+          "season_notes": "Many facilities and roads close by mid-month; unpredictable weather."
+        },
+        "November": {
+          "avg_high_f": 40,
+          "avg_low_f": 14,
+          "avg_high_c": 4,
+          "avg_low_c": -10,
+          "avg_rainfall_inches": 1.5,
+          "rainy_days_estimate": 12,
+          "avg_wind_mph": 8,
+          "humidity_pct": 75,
+          "uv_index": "Low",
+          "sunrise": "7:40 AM",
+          "sunset": "5:00 PM",
+          "daylight_hours": 9.5,
+          "season_type": "off_season",
+          "season_notes": "Winter conditions return; limited access and services."
+        },
+        "December": {
+          "avg_high_f": 30,
+          "avg_low_f": 5,
+          "avg_high_c": -1,
+          "avg_low_c": -15,
+          "avg_rainfall_inches": 1.6,
+          "rainy_days_estimate": 14,
+          "avg_wind_mph": 7,
+          "humidity_pct": 80,
+          "uv_index": "Low",
+          "sunrise": "8:00 AM",
+          "sunset": "4:40 PM",
+          "daylight_hours": 8.7,
+          "season_type": "off_season",
+          "season_notes": "Heavy snow blanketing the park makes most areas inaccessible."
+        }
+      },
+      "travel_implications": [
+        "The best time to visit Yellowstone is during June to August when the weather is warm, and all tourist services are operational.",
+        "Winter months, while offering unique scenery, severely limit access due to heavy snowfall and most facilities are closed.",
+        "Spring (April-May) and fall (September-October) are ideal for avoiding crowds, though weather can be unpredictable with some services unavailable.",
+        "Summer reservations should be booked well in advance due to high demand.",
+        "Pack essentials for rapid weather changes, especially outside of summer months."
+      ]
+    },
+    "themes": [
+      {
+        "id": "signature",
+        "name": "Signature Experiences",
+        "description": "Explore experiences that define Yellowstone National Park — from its iconic geysers to its sprawling wildlife habitats.",
+        "experiences": [
+          {
+            "id": "old-faithful-geyser",
+            "name": "Old Faithful Geyser",
+            "short_description": "Witness the legendary eruptions of Old Faithful, a natural marvel that captivates visitors with its predictability and grandeur.",
+            "long_description": "Old Faithful is perhaps the most famous geyser in the world, and certainly a hallmark of Yellowstone. Erupting approximately every 90 minutes, it sends steam and boiling water skyward with impressive force. This spectacle draws visitors from all over the globe and is a must-see for anyone visiting the park. The nearby visitor center provides informative exhibits, offering insights into the geological forces powering this geyser and others in the area.",
+            "tags": [
+              "geothermal",
+              "iconic",
+              "morning",
+              "afternoon"
+            ],
+            "why_worth_it": "Old Faithful epitomizes Yellowstone's geothermal wonders and is a globally recognized symbol of nature's awe-inspiring power.",
+            "duration": "1 hour",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Early morning or late afternoon for smaller crowds",
+            "local_tip": "Eruptions occur roughly every 90 minutes — check the predicted next eruption time at the visitor center upon arrival.",
+            "who_for": [
+              "families",
+              "first-timers",
+              "nature enthusiasts"
+            ],
+            "what_to_bring": [],
+            "watch_out_for": "It can get very crowded, especially in summer. Plan to arrive 30 minutes early to secure a good viewing spot.",
+            "nearby_pairings": [
+              "Upper Geyser Basin",
+              "Old Faithful Inn"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible",
+              "group_friendly"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Old Faithful, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "grand-prismatic-spring",
+            "name": "Grand Prismatic Spring",
+            "short_description": "Marvel at the vibrant colors of Grand Prismatic Spring, the largest hot spring in the United States.",
+            "long_description": "The Grand Prismatic Spring is Yellowstone's largest hot spring and a photographer's dream. The spring is known for its striking colors, including oranges, greens, and blues, which are caused by microbial mats around the edge of the mineral-rich water. It exemplifies the unique geothermal activity of Yellowstone, and viewing platforms offer various perspectives. For a truly spectacular view, take the Fairy Falls trail to the overlook for a bird's-eye perspective.",
+            "tags": [
+              "iconic",
+              "photography",
+              "geothermal"
+            ],
+            "why_worth_it": "Its kaleidoscope of colors and colossal size make it a one-of-a-kind natural feature, iconic to Yellowstone.",
+            "duration": "1–2 hours",
+            "effort": "moderate",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Morning or late afternoon for the best light and visibility",
+            "local_tip": "For a unique view, hike the Fairy Falls trail to the overlook (1.6 miles in, take the left spur).",
+            "who_for": [
+              "photographers",
+              "geology buffs",
+              "nature enthusiasts"
+            ],
+            "what_to_bring": [
+              "binoculars",
+              "camera"
+            ],
+            "watch_out_for": "The walkway can be crowded, and early morning steam sometimes obscures the colors.",
+            "nearby_pairings": [
+              "Midway Geyser Basin",
+              "Firehole Lake Drive"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "romantic",
+              "group_friendly"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Grand Prismatic Spring, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "yellowstone-canyon-overlook",
+            "name": "Yellowstone Canyon Overlook",
+            "short_description": "Gaze into the grandeur of Yellowstone River Canyon and its stunning waterfalls.",
+            "long_description": "The Yellowstone River Canyon, often referred to as the Grand Canyon of the Yellowstone, offers breathtaking views of the sculpted landscapes. The canyon stretches over 20 miles and can be seen beautifully from various overlook points, including Artist Point. This area is noteworthy not only for its grand vistas but also for its hiking trails that provide different vantage points of the canyon's vibrant rock formations and the thundering Lower Falls.",
+            "tags": [
+              "scenic",
+              "hiking",
+              "photography"
+            ],
+            "why_worth_it": "The dramatic scenery of the canyon and waterfall exemplifies the power and beauty of nature’s forces.",
+            "duration": "2–3 hours",
+            "effort": "moderate",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Midday for the best light angles revealing the canyon's colors",
+            "local_tip": "Artist Point, located on the South Rim, is the most famous viewpoint and provides the classic postcard view of the canyon.",
+            "who_for": [
+              "hikers",
+              "photographers",
+              "nature lovers"
+            ],
+            "what_to_bring": [
+              "camera",
+              "water",
+              "sunscreen"
+            ],
+            "watch_out_for": "Rim trails can become busy, particularly near Artist Point, so patience is key for unhurried photos.",
+            "nearby_pairings": [
+              "Uncle Tom's Trail",
+              "Inspiration Point"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "group_friendly",
+              "adventurous"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Artist Point, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "lamar-valley-safari",
+            "name": "Lamar Valley Safari",
+            "short_description": "Embark on a wildlife safari in Lamar Valley, one of the best spots for observing Yellowstone's diverse fauna.",
+            "long_description": "Often dubbed America's Serengeti, Lamar Valley is a prime wildlife watching destination in Yellowstone National Park. Home to herds of bison, elusive wolves, and grizzly bears, this area offers a raw and authentic viewing experience. Early mornings and late afternoons are ideal times to spot animals. Guided tours are available, but a self-guided drive through the valley can be equally rewarding. Rangers often offer spotting scopes at key locations to help visitors spot distant wildlife.",
+            "tags": [
+              "wildlife",
+              "safari",
+              "outdoor"
+            ],
+            "why_worth_it": "Close encounters with Yellowstone’s iconic wildlife in Lamar Valley's open expanse offer an unforgettable experience.",
+            "duration": "Half day",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Sunrise or sunset for optimal wildlife activity",
+            "local_tip": "Rangers often gather at the Yellowstone Picnic Area pullout by 6:30 am, where you might spot the Junction Butte wolf pack.",
+            "who_for": [
+              "wildlife photographers",
+              "families",
+              "adventure seekers"
+            ],
+            "what_to_bring": [
+              "binoculars",
+              "camera",
+              "snacks"
+            ],
+            "watch_out_for": "Certain areas can be crowded during peak times, impacting the solitude of the experience.",
+            "nearby_pairings": [
+              "Yellowstone Picnic Area",
+              "Slough Creek"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "adventurous",
+              "accessible"
+            ],
+            "weather_sensitivity": "Better in cooler months for animal activity",
+            "location_hint": "Lamar Valley, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "mammoth-hot-springs-terraces",
+            "name": "Mammoth Hot Springs Terraces",
+            "short_description": "Explore the unique limestone terraces formed by hot springs at Mammoth, a geological wonder.",
+            "long_description": "Mammoth Hot Springs presents a stunning natural sculpture made up of travertine terraces. These terraces form from calcium carbonate deposits and boast a variety of intricate shapes and colors. The area's boardwalks provide easy access to several terraces, each with their own distinct characteristics, such as the graceful Palette Spring and the creamy-white terraces of Minerva. This site not only showcases Yellowstone’s geothermal activity but also offers insights into the earth’s processes.",
+            "tags": [
+              "geothermal",
+              "walking",
+              "photography"
+            ],
+            "why_worth_it": "The terraces' unique beauty and geological significance offer a glimpse into the ever-changing landscape of Yellowstone.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Morning for fewer visitors and cooler temperatures",
+            "local_tip": "Start at the Upper Terrace Drive for a panoramic view and then explore the boardwalks below.",
+            "who_for": [
+              "geology buffs",
+              "photographers",
+              "families"
+            ],
+            "what_to_bring": [
+              "camera",
+              "walking shoes"
+            ],
+            "watch_out_for": "Some sections of the terraces may be closed due to geothermal activity changes, so check route updates.",
+            "nearby_pairings": [
+              "Boiling River",
+              "Fort Yellowstone"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Avoid in rain — boardwalks can be slippery",
+            "location_hint": "Mammoth Hot Springs, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "firehole-lake-drive",
+            "name": "Firehole Lake Drive",
+            "short_description": "Take a scenic drive through one of Yellowstone's most active geothermal areas.",
+            "long_description": "Firehole Lake Drive offers a chance to see some of Yellowstone's most dynamic geothermal features from the comfort of your vehicle. This short one-way loop passes close to several geysers, hot springs, and thermal pools, such as Firehole Spring and Great Fountain Geyser. It is particularly well-known for its accessible geothermal vistas and the chance to see geysers erupting without the crowds of more popular areas. The drive is relatively short but packed with fascinating features.",
+            "tags": [
+              "scenic drive",
+              "geothermal",
+              "leisure"
+            ],
+            "why_worth_it": "It offers a relaxed yet immersive way to explore Yellowstone’s geothermal wonders up close, with minimal walking.",
+            "duration": "1 hour",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Morning to avoid heavy traffic",
+            "local_tip": "The drive is best completed early in the day to miss the crowds, and stopping for Great Fountain Geyser’s eruption is often timed right with morning or midday excursions.",
+            "who_for": [
+              "families",
+              "first-timers",
+              "nature lovers"
+            ],
+            "what_to_bring": [],
+            "watch_out_for": "Limited parking at stops can lead to congestion; be patient and plan extra time into your schedule.",
+            "nearby_pairings": [
+              "Midway Geyser Basin",
+              "Biscuit Basin"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Better in cooler months to enjoy geothermal steam displays",
+            "location_hint": "Firehole Lake Drive, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          }
+        ]
+      },
+      {
+        "id": "unique_local",
+        "name": "Unique & Local",
+        "description": "Discover experiences in Yellowstone that are local secrets, often overlooked by the typical tourist.",
+        "experiences": [
+          {
+            "id": "boiling-river-hot-spring",
+            "name": "Boiling River Hot Spring Soak",
+            "short_description": "Experience one of Yellowstone's few natural hot springs where you can legally swim—a hidden gem often missed by visitors.",
+            "long_description": "The Boiling River in Yellowstone National Park offers a unique opportunity to soak in a natural hot spring where the geothermal features meet the Gardner River. This area is not widely advertised and is one of the few places in the park where you can legally soak in the warm waters, heated by the Mammoth Hot Springs' runoff. The contrast of the cold river water and the hot spring makes for a refreshing and invigorating experience.",
+            "tags": [
+              "relaxation",
+              "geothermal",
+              "nature"
+            ],
+            "why_worth_it": "It's a rare chance to enjoy a natural hot spring soak in the wilds of Yellowstone.",
+            "duration": "1–2 hours",
+            "effort": "moderate",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Morning — less crowded near sunrise",
+            "local_tip": "The best soaking spot is about a five-minute walk from the parking area; bring water shoes for traction on the slippery rocks.",
+            "who_for": [
+              "adventure seekers",
+              "couples"
+            ],
+            "what_to_bring": [
+              "towel",
+              "water shoes",
+              "bathing suit"
+            ],
+            "watch_out_for": "Be cautious of temperature differences—some spots are extremely hot.",
+            "nearby_pairings": [
+              "Mammoth Hot Springs Terraces"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Avoid during winter; access can be dangerous.",
+            "location_hint": "Boiling River Parking Area, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "soda-butte-valley-wildlife",
+            "name": "Soda Butte Valley Wildlife Spotting",
+            "short_description": "A lesser-known location offering prime wildlife viewing opportunities, especially for bison and pronghorn.",
+            "long_description": "The Soda Butte Valley is a tranquil location on the northeastern side of Yellowstone, often bypassed by those heading directly to Lamar Valley. However, this serene place offers excellent chances to spot wildlife without the crowds. With expansive meadows, the valley provides a habitat for bison, elk, and the occasional grizzly bear. Early mornings and late evenings are particularly magical here, offering stunning light for photography and serene moments with nature.",
+            "tags": [
+              "wildlife",
+              "photography",
+              "outdoor"
+            ],
+            "why_worth_it": "It's a peaceful alternative to Lamar Valley with similar wildlife viewing without the busloads of tourists.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Early morning — from sunrise",
+            "local_tip": "For the best wildlife encounters, park at the Soda Butte picnic area and quietly stroll along the valley trails.",
+            "who_for": [
+              "wildlife photographers",
+              "nature lovers"
+            ],
+            "what_to_bring": [
+              "binoculars",
+              "camera",
+              "snacks"
+            ],
+            "watch_out_for": "Wildlife can be unpredictable; always maintain a safe distance.",
+            "nearby_pairings": [
+              "Lamar Valley Safari"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible"
+            ],
+            "weather_sensitivity": "Dress in layers; mornings can be chilly even in summer.",
+            "location_hint": "Soda Butte Creek, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "yellowstone-river-hiking-trail",
+            "name": "Hiking the Yellowstone River Trail",
+            "short_description": "A secluded hike following the contours of the Yellowstone River, offering solitude and scenic beauty.",
+            "long_description": "The Yellowstone River Trail is an off-the-beaten-path gem starting near Tower Junction. This moderately challenging hike takes you through meadows, forests, and along the river, providing panoramic views of the park's diverse landscapes. Unlike more popular trails, this one offers the chance for solitude and encounters with less-visited flora and fauna. The gentle sound of the river and the untouched natural setting make for an experience that feels like your own private realm.",
+            "tags": [
+              "hiking",
+              "scenic",
+              "nature"
+            ],
+            "why_worth_it": "This trail provides a mix of solitude and spectacular views that are hard to find elsewhere in the park.",
+            "duration": "Half day",
+            "effort": "moderate",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Afternoon — warmest part of the day",
+            "local_tip": "Look for a small trailhead marker just east of Tower Junction; it's easy to miss.",
+            "who_for": [
+              "hikers",
+              "adventure seekers"
+            ],
+            "what_to_bring": [
+              "hiking boots",
+              "water",
+              "snacks"
+            ],
+            "watch_out_for": "The trail can be muddy after rain; be prepared for changing conditions.",
+            "nearby_pairings": [
+              "Lamar Valley Safari"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "solo_friendly",
+              "romantic"
+            ],
+            "weather_sensitivity": "Avoid after heavy rain; parts of the trail can become impassable.",
+            "location_hint": "Tower Junction, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "roosevelt-lodge-traditional-cookout",
+            "name": "Roosevelt Lodge Traditional Cookout",
+            "short_description": "Enjoy an authentic Western cookout experience, complete with cowboy coffee and songs around the campfire.",
+            "long_description": "The Roosevelt Lodge Cookout offers a unique dining experience in Yellowstone, where guests ride horseback or take a covered wagon to a picturesque outdoor setting. Upon arrival, you are treated to a traditional Western meal of steak or trout, while park rangers share stories of Yellowstone's history and nature. The atmosphere, surrounded by pine forests and under the vast western sky, adds to the authenticity and charm of this uniquely local experience.",
+            "tags": [
+              "food",
+              "cultural",
+              "outdoor"
+            ],
+            "why_worth_it": "This experience captures the spirit of the American West in a stunning national park setting.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Dinnertime — enjoy sunset views",
+            "local_tip": "The horseback option fills up quickly; reserve weeks in advance during peak season.",
+            "who_for": [
+              "food lovers",
+              "families"
+            ],
+            "what_to_bring": [
+              "jacket",
+              "camera"
+            ],
+            "watch_out_for": "Weather can be unpredictable; it can get cold in the evenings.",
+            "nearby_pairings": [
+              "Mammoth Hot Springs Terraces"
+            ],
+            "dietary_flags": [
+              "meat_heavy",
+              "kid_friendly"
+            ],
+            "suitability_tags": [
+              "family_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Possible rain can shift the experience indoors.",
+            "location_hint": "Roosevelt Lodge, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "wildlife-ecology-and-conservation",
+            "name": "Wildlife Ecology and Conservation Talks",
+            "short_description": "Join informative talks led by park rangers to learn about local wildlife and conservation efforts—insights not found in guidebooks.",
+            "long_description": "Held at various visitor centers throughout the park, these ranger-led talks provide in-depth information about Yellowstone's diverse ecosystems, wildlife habits, and ongoing conservation efforts. Covering topics like wolf reintroduction and bison management, these sessions are valuable for anyone interested in the behind-the-scenes science that supports the park's health and sustainability. Unlike guided tours, these talks are informal and open a window into the scientific efforts preserving Yellowstone.",
+            "tags": [
+              "educational",
+              "wildlife",
+              "conservation"
+            ],
+            "why_worth_it": "These talks offer a deeper understanding of Yellowstone's ecosystem and the dedicated efforts to conserve it.",
+            "duration": "1 hour",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Varies — check visitor centers for daily schedules",
+            "local_tip": "Combine a talk at the Albright Visitor Center with a visit to Mammoth Hot Springs for a full day of learning and exploration.",
+            "who_for": [
+              "families",
+              "nature lovers"
+            ],
+            "what_to_bring": [],
+            "watch_out_for": "Schedules can change; confirm times at visitor centers.",
+            "nearby_pairings": [
+              "Mammoth Hot Springs Terraces"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Albright Visitor Center, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          }
+        ]
+      },
+      {
+        "id": "adventure",
+        "name": "Adventure",
+        "description": "Embark on exhilarating activities that showcase the rugged and wild terrain of Yellowstone National Park.",
+        "experiences": [
+          {
+            "id": "whitewater-rafting-yellowstone-river",
+            "name": "Whitewater Rafting on the Yellowstone River",
+            "short_description": "Navigate thrilling rapids on the Yellowstone River with breathtaking scenery.",
+            "long_description": "Experience the rush of whitewater rafting on the Yellowstone River as you navigate class II and III rapids. This adventure takes you through stunning canyon landscapes, offering both adrenaline and unforgettable views. Guided tours ensure safety while providing a deep dive into the park's natural history and geology. Suitable for novices and experienced rafters, this is an excellent way to engage with Yellowstone's powerful waterways.",
+            "tags": [
+              "water",
+              "outdoor",
+              "summer"
+            ],
+            "why_worth_it": "Feel the thrill of tackling rapids amid Yellowstone's iconic landscapes.",
+            "duration": "Half day",
+            "effort": "moderate",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Mid-morning in summer when water levels are ideal",
+            "local_tip": "Opt for trips that provide neoprene suits as river temperatures can be chilly, even in summer.",
+            "who_for": [
+              "adventure seekers",
+              "thrill lovers",
+              "nature lovers"
+            ],
+            "what_to_bring": [
+              "waterproof gear",
+              "change of clothes"
+            ],
+            "watch_out_for": "Check water flow conditions as levels can fluctuate with weather changes.",
+            "nearby_pairings": [
+              "Yellowstone Canyon Overlook",
+              "Grand Prismatic Spring"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "group_friendly",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Avoid in early spring due to high, unpredictable flows.",
+            "location_hint": "Gardiner, MT",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "backcountry-hiking-tour",
+            "name": "Backcountry Hiking Tour",
+            "short_description": "Venture into Yellowstone's untamed wilderness on a guided hiking expedition.",
+            "long_description": "Explore Yellowstone's raw beauty away from the beaten path with a backcountry hiking tour. These excursions are designed to offer a rugged and immersive experience in the park's secluded areas, providing opportunities for wildlife sightings and geological exploration. Ideal for fit and adventurous travelers, the tours vary from day trips to multi-day backpacking adventures.",
+            "tags": [
+              "hiking",
+              "outdoor",
+              "wilderness"
+            ],
+            "why_worth_it": "Discover the untouched wilderness of Yellowstone far from the crowded boardwalks.",
+            "duration": "Full day or multi-day",
+            "effort": "strenuous",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Early morning to maximize daylight",
+            "local_tip": "Choose a guide service known for small group sizes to enhance the experience and maintain safety.",
+            "who_for": [
+              "adventure seekers",
+              "nature enthusiasts"
+            ],
+            "what_to_bring": [
+              "hiking boots",
+              "layered clothing",
+              "portable water filter"
+            ],
+            "watch_out_for": "Bear activity is common; make sure your guide carries bear spray.",
+            "nearby_pairings": [
+              "Lamar Valley Safari"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [],
+            "weather_sensitivity": "Best in late spring through early fall",
+            "location_hint": "Bechler Ranger Station, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": "High physical exertion — may not be suitable for older travelers.",
+            "places_enrichment": null
+          },
+          {
+            "id": "yellowstone-lake-kayaking",
+            "name": "Kayaking on Yellowstone Lake",
+            "short_description": "Paddle across North America's largest high-elevation lake surrounded by stunning mountain landscapes.",
+            "long_description": "Kayaking on Yellowstone Lake offers a unique perspective of the park's breathtaking scenery. Paddlers can explore the calm waters of the West Thumb and Grant Village areas while enjoying the serene environment. While on the lake, you may also indulge in birdwatching and spot geothermal features from the water's surface. Tours are available for beginners and experienced kayakers.",
+            "tags": [
+              "water",
+              "scenic",
+              "nature"
+            ],
+            "why_worth_it": "Engage intimately with Yellowstone's natural landscape through a tranquil kayaking experience.",
+            "duration": "2–3 hours",
+            "effort": "moderate",
+            "cost_band": "budget",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Late afternoon for calm waters and golden lighting",
+            "local_tip": "Opt for morning tours when the lake is often calmest, avoiding afternoon wind.",
+            "who_for": [
+              "nature lovers",
+              "adventure seekers",
+              "families"
+            ],
+            "what_to_bring": [
+              "sunscreen",
+              "hat",
+              "waterproof camera"
+            ],
+            "watch_out_for": "Hypothermic risks due to cold water temperatures; always wear a life jacket.",
+            "nearby_pairings": [
+              "West Thumb Geyser Basin"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Avoid during storms or high winds.",
+            "location_hint": "Grant Village Marina, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "mountain-biking-mountain-pass-loop",
+            "name": "Mountain Biking at Mountain Pass Loop",
+            "short_description": "Conquer challenging trails with spectacular views of Yellowstone's rugged terrain.",
+            "long_description": "The Mountain Pass Loop in Yellowstone offers a thrilling mountain biking experience through varying elevations and terrains. This adventure takes you through forested areas and open meadows, with the chance to spot deer and other wildlife. Suitable for experienced bikers, the loop provides a challenging ride with rewarding views, demanding physical endurance and technical skill.",
+            "tags": [
+              "outdoor",
+              "cycling",
+              "thrill"
+            ],
+            "why_worth_it": "Ride the thrilling trails with stunning vistas of Yellowstone's diverse landscapes.",
+            "duration": "Half day",
+            "effort": "strenuous",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Mid-morning to avoid heat and crowds",
+            "local_tip": "Ensure your bike is equipped with robust tires due to uneven terrain and occasional rocks.",
+            "who_for": [
+              "adrenaline junkies",
+              "experienced cyclists"
+            ],
+            "what_to_bring": [
+              "hydration pack",
+              "repair kit",
+              "snacks"
+            ],
+            "watch_out_for": "Steep, rocky descents require caution; helmets are essential.",
+            "nearby_pairings": [
+              "Yellowstone Canyon Overlook"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "solo_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Avoid after rainfall — trails become slippery and hazardous.",
+            "location_hint": "Blacktail Plateau Drive, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": "High physical exertion — may not be suitable for travelers averse to physically demanding activities.",
+            "places_enrichment": null
+          },
+          {
+            "id": "winter-snowmobiling-adventure",
+            "name": "Winter Snowmobiling Adventure",
+            "short_description": "Discover Yellowstone's winter wonderland through an exhilarating snowmobiling experience.",
+            "long_description": "Snowmobiling in Yellowstone during the winter offers a thrilling way to explore snow-covered landscapes. This adventure takes you through wide trails, offering an unobstructed view of the park's stunning scenery blanketed in snow. Accompanied by trained guides, snowmobile tours boast insights into the park's winter ecology and frequent wildlife sightings. It's an unparalleled way to enjoy the quieter, more serene side of Yellowstone.",
+            "tags": [
+              "winter",
+              "thrilling",
+              "outdoor"
+            ],
+            "why_worth_it": "Experience the snowy trails of Yellowstone at high speed for an adrenaline-pumping adventure.",
+            "duration": "Full day",
+            "effort": "moderate",
+            "cost_band": "premium",
+            "booking_difficulty": "hard_to_get",
+            "best_time": "Early morning for crisp snow conditions and less traffic",
+            "local_tip": "Book well in advance and look for operators offering small group tours with experienced guides.",
+            "who_for": [
+              "adventure seekers",
+              "winter sports enthusiasts"
+            ],
+            "what_to_bring": [
+              "warm clothing",
+              "goggles",
+              "camera"
+            ],
+            "watch_out_for": "Harsh weather conditions can lead to cancellations; check forecasts regularly.",
+            "nearby_pairings": [
+              "Mammoth Hot Springs Terraces"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Only available with sufficient snowfall and appropriate weather conditions.",
+            "location_hint": "West Yellowstone, MT",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          }
+        ]
+      },
+      {
+        "id": "nature_scenic",
+        "name": "Nature & Scenic",
+        "description": "Yellowstone's landscapes, geothermal marvels, and scenic overlooks captivate visitors with their raw, primal beauty.",
+        "experiences": [
+          {
+            "id": "hayden-valley-wildlife-watch",
+            "name": "Hayden Valley Wildlife Watch",
+            "short_description": "Experience Yellowstone's wild heart in Hayden Valley, a prime spot for bison, elk, and grizzly sightings.",
+            "long_description": "Hayden Valley is a paradise for wildlife watchers, offering expansive views of open fields dotted with bison herds and wading birds. This area provides a classic Yellowstone wildlife experience without the need for strenuous hikes. Drive along the Grand Loop Road and pause at various pullouts to admire the diverse fauna and capture iconic Yellowstone memories.",
+            "tags": [
+              "wildlife",
+              "scenic drive",
+              "morning"
+            ],
+            "why_worth_it": "Witnessing Yellowstone's majestic wildlife amidst its vast landscapes is an unforgettable experience.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Early morning or late evening for wildlife activity",
+            "local_tip": "Park at the turnout south of Alum Creek for a panoramic view and potential grizzly sightings.",
+            "who_for": [
+              "wildlife enthusiasts",
+              "families",
+              "photographers"
+            ],
+            "what_to_bring": [
+              "binoculars",
+              "telephoto lens"
+            ],
+            "watch_out_for": "Wildlife can often be near the road; maintain safe distances.",
+            "nearby_pairings": [
+              "Mud Volcano Area",
+              "Yellowstone Lake Overlook"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Better in cooler weather; avoid mid-afternoon heat",
+            "location_hint": "Hayden Valley, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "norris-geyser-basin-explore",
+            "name": "Norris Geyser Basin Exploration",
+            "short_description": "Wander through the most active geothermal area in Yellowstone, filled with hissing fumaroles and colorful pools.",
+            "long_description": "Norris Geyser Basin, characterized by acidic hot springs, geysers, and fumaroles, is the hottest geothermal area in Yellowstone. The basin is divided into two sections: the Back Basin and the Porcelain Basin, offering several short trails to explore these dynamic landscapes. Witness the unpredictable Steamboat Geyser or walk along the boardwalks to see the remarkable hues of Porcelain Springs.",
+            "tags": [
+              "geothermal",
+              "short walk",
+              "colorful"
+            ],
+            "why_worth_it": "The sheer diversity and intensity of geothermal activity here are unparalleled within the park.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Mid-morning for quiet exploration before crowds increase",
+            "local_tip": "Start at the Porcelain Basin overlook for a sweeping introduction before heading to Back Basin.",
+            "who_for": [
+              "geology buffs",
+              "nature lovers",
+              "photographers"
+            ],
+            "what_to_bring": [],
+            "watch_out_for": "Stay on boardwalks; the ground is unstable and dangerous.",
+            "nearby_pairings": [
+              "Roaring Mountain",
+              "Museum of the National Park Ranger"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Norris Geyser Basin, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "yellowstone-lake-shore-walk",
+            "name": "Yellowstone Lake Shore Walk",
+            "short_description": "Stroll along the shores of North America's largest high-altitude lake and enjoy serene landscapes and aquatic life.",
+            "long_description": "Yellowstone Lake is a stunning natural feature that offers opportunities for tranquil lakeside walks. The Lake Butte Overlook provides breathtaking panoramic views of the expansive water and its surrounding mountains. Wander around the shoreline near West Thumb Geyser Basin, where geothermal features meet the lake, to enjoy both steam and scenery.",
+            "tags": [
+              "lake",
+              "scenic walk",
+              "relaxing"
+            ],
+            "why_worth_it": "This walk combines the calming presence of the lake with the unique geothermal features at its edge.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Afternoon for calm waters and softer light",
+            "local_tip": "Visit the fishing bridge area for historical context and opportunities to see cutthroat trout.",
+            "who_for": [
+              "nature lovers",
+              "families",
+              "low-exertion travelers"
+            ],
+            "what_to_bring": [
+              "sunscreen",
+              "water bottle"
+            ],
+            "watch_out_for": "Be cautious near thermal areas; the ground can be unstable.",
+            "nearby_pairings": [
+              "West Thumb Geyser Basin",
+              "Fishing Bridge"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "romantic",
+              "accessible"
+            ],
+            "weather_sensitivity": "Avoid if windy; lake breeze can make the area chilly",
+            "location_hint": "Yellowstone Lake Overlook, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "tower-fall-viewpoint",
+            "name": "Tower Fall Viewpoint",
+            "short_description": "Admire the scenic Tower Fall framed by dramatic rock formations, a picturesque setting in Yellowstone.",
+            "long_description": "Tower Fall, named for the towering rock pinnacles that frame it, plunges 132 feet into the canyon below. The viewpoint is accessible with a short, easy walk from the parking area, offering spectacular views of the falls and the surrounding landscape. While the trail leading to the base of the falls is currently closed, the overlook provides clear views for photography and admiration.",
+            "tags": [
+              "waterfall",
+              "viewpoint",
+              "short walk"
+            ],
+            "why_worth_it": "The striking combination of waterfall and unique geology make this viewpoint a must-see for nature lovers.",
+            "duration": "30 minutes",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Early morning for solitude and best light on the falls",
+            "local_tip": "Visit the general store nearby for refreshments and more information on the area.",
+            "who_for": [
+              "photographers",
+              "first-timers",
+              "families"
+            ],
+            "what_to_bring": [
+              "camera"
+            ],
+            "watch_out_for": "Limited parking can mean waits during peak times; visit early or late in the day.",
+            "nearby_pairings": [
+              "Dunraven Pass",
+              "Calcite Springs"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "romantic",
+              "accessible"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Tower Fall, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "fountain-paint-pot-geyser-basin",
+            "name": "Fountain Paint Pot Geyser Basin",
+            "short_description": "Explore geothermal wonders featuring mud pots, geysers, and vibrant algae pools in this accessible loop.",
+            "long_description": "Fountain Paint Pot Geyser Basin offers a boardwalk loop through one of Yellowstone's most dynamic thermal areas. Visitors can observe various geothermal features like bubbling mud pots, erupting geysers, steaming fumaroles, and colorful hot springs. The area is particularly famous for its changing displays of color depending on the season and the microbial life within the pools.",
+            "tags": [
+              "geothermal",
+              "boardwalk",
+              "colorful"
+            ],
+            "why_worth_it": "This basin offers a concentrated variety of geothermal wonders that showcase Yellowstone's geothermal diversity in a compact area.",
+            "duration": "30–45 minutes",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Early afternoon for ideal light on the colorful pools",
+            "local_tip": "Look for the Fountain Geyser, known for its impressive height and unpredictable eruptions.",
+            "who_for": [
+              "families",
+              "nature enthusiasts",
+              "photographers"
+            ],
+            "what_to_bring": [
+              "sunscreen"
+            ],
+            "watch_out_for": "Boardwalk can be slick when wet; walk carefully.",
+            "nearby_pairings": [
+              "Firehole Lake Drive"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "solo_friendly",
+              "accessible"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Fountain Paint Pot, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "biscuit-basin-loop",
+            "name": "Biscuit Basin Loop",
+            "short_description": "Delve into Biscuit Basin's geothermal wonders and striking pools on a short, scenic boardwalk loop.",
+            "long_description": "Biscuit Basin, part of the Upper Geyser Basin, is home to several beautiful and unique geothermal features. The boardwalk loop takes you past Sapphire Pool, Black Opal Pool, and Jewel Geyser. The vibrant colors and unusual formations here make it a favorite among photographers. The area is named for the biscuit-like sinter deposits that were displaced in a 1959 earthquake.",
+            "tags": [
+              "geothermal",
+              "scenic walk",
+              "colorful"
+            ],
+            "why_worth_it": "Its accessible trails make experiencing Yellowstone's geothermal beauty easy and rewarding.",
+            "duration": "30–45 minutes",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Morning to capture the pools under soft light",
+            "local_tip": "Visit in cooler weather to see more steam rising from the pools.",
+            "who_for": [
+              "photographers",
+              "families",
+              "geology enthusiasts"
+            ],
+            "what_to_bring": [
+              "camera"
+            ],
+            "watch_out_for": "The boardwalks can get crowded; visit early to avoid crowds.",
+            "nearby_pairings": [
+              "Old Faithful",
+              "Midway Geyser Basin"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Biscuit Basin, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          }
+        ]
+      },
+      {
+        "id": "hiking_outdoors",
+        "name": "Hiking & Outdoors",
+        "description": "Yellowstone offers a diverse range of trails that allow hikers to explore its geothermal wonders, lush forests, and expansive wilderness.",
+        "experiences": [
+          {
+            "id": "uncle-toms-trail",
+            "name": "Uncle Tom's Trail",
+            "short_description": "Descend into the Grand Canyon of the Yellowstone with this steep hike. A unique way to experience the thundering Lower Falls.",
+            "long_description": "Uncle Tom's Trail offers a thrilling descent into the heart of the Grand Canyon of the Yellowstone. This trail was originally constructed in the late 19th century and includes over 300 steel stairs and a steep drop of 500 feet (150 m). Hikers are rewarded with stunning views of the 308-foot (94 m) Lower Falls, one of the most iconic sights in Yellowstone. The trail is relatively short at 0.6 miles (1 km) round trip, but the steepness and stair climb make it a moderate challenge.",
+            "tags": [
+              "outdoor",
+              "morning",
+              "adventure"
+            ],
+            "why_worth_it": "Experience the power and majesty of the Lower Falls up close from a unique vantage point.",
+            "duration": "1 hour",
+            "effort": "moderate",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Early morning in summer",
+            "local_tip": "Start early to avoid the mid-morning crowds and to catch the morning light on the waterfall.",
+            "who_for": [
+              "adventurers",
+              "nature enthusiasts"
+            ],
+            "what_to_bring": [
+              "sturdy shoes",
+              "water",
+              "snack",
+              "camera"
+            ],
+            "watch_out_for": "Steep and slippery stairs; can be physically demanding for some.",
+            "nearby_pairings": [
+              "Yellowstone Canyon Overlook"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "accessible",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Avoid during wet conditions as the steps can be slippery.",
+            "location_hint": "Uncle Tom's Trailhead, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "boiling-river-trail",
+            "name": "Boiling River Trail",
+            "short_description": "A short and scenic hike leading to a natural hot spring where you can soak in geothermal waters.",
+            "long_description": "The Boiling River Trail is a unique hike that leads to one of the few legal hot spring soaking areas in Yellowstone National Park. This easy 1.25-mile (2 km) round-trip trail meanders along the Gardner River, offering a scenic landscape as you walk. The star of the attraction is where the cold river water mixes with the hot spring water to create a natural 'hot tub.' This is one of Yellowstone's hidden gems, providing a relaxing and scenic natural experience.",
+            "tags": [
+              "outdoor",
+              "family",
+              "evening"
+            ],
+            "why_worth_it": "Relax in a naturally heated river while surrounded by Yellowstone's serene landscape.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Late afternoon in spring and summer",
+            "local_tip": "Bring a swimwear and towel for the soak, and avoid the peak hours of 11am-4pm when it gets crowded.",
+            "who_for": [
+              "families",
+              "relaxation seekers"
+            ],
+            "what_to_bring": [
+              "swimwear",
+              "towel",
+              "water"
+            ],
+            "watch_out_for": "Watch for slippery rocks around the hot spring area.",
+            "nearby_pairings": [
+              "Mammoth Hot Springs Terraces"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "romantic"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Boiling River Trailhead, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": "Parts of the trail may not be suitable for those with mobility issues.",
+            "places_enrichment": null
+          },
+          {
+            "id": "specimen-ridge-trail",
+            "name": "Specimen Ridge Trail",
+            "short_description": "Traverse an unforgettable path through open meadows, forests, and fossil-rich ridges.",
+            "long_description": "The Specimen Ridge Trail is a 19-mile (30.5 km) backcountry trek that showcases vast landscapes and rich fossils, offering an intriguing glimpse into Yellowstone's natural history. This strenuous hike isn't just about endurance; it rewards hikers with sweeping views of the Lamar Valley and abundant wildlife sightings, including bison and elk. Additionally, the trail navigates through fossilized forests that date back millions of years, providing a serene yet intellectually stimulating journey for dedicated hikers.",
+            "tags": [
+              "outdoor",
+              "adventure",
+              "geology"
+            ],
+            "why_worth_it": "Immerse yourself in Yellowstone's distant past with fossils amidst pristine wilderness.",
+            "duration": "Full day",
+            "effort": "strenuous",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Summer months for clear paths",
+            "local_tip": "Start at Dawn to give yourself plenty of daylight; pack extra water and bear spray.",
+            "who_for": [
+              "geology buffs",
+              "adventure seekers"
+            ],
+            "what_to_bring": [
+              "bear spray",
+              "water",
+              "snacks",
+              "trail map"
+            ],
+            "watch_out_for": "The trail can become difficult to navigate in parts; prepare for varied terrain and watch for wildlife.",
+            "nearby_pairings": [
+              "Lamar Valley"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "solo_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Better in dry conditions; spring runoff can make some areas muddy.",
+            "location_hint": "Specimen Ridge Trailhead, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "fairy-falls-trail",
+            "name": "Fairy Falls Trail",
+            "short_description": "A gentle hike leading to one of the tallest waterfalls in Yellowstone, passing close to geothermal features.",
+            "long_description": "The Fairy Falls Trail is a delightful 5-mile (8 km) round-trip hike that takes you through a variety of landscapes, including lush forests and scenic geyser basins. The journey begins near the renowned Midway Geyser Basin and ends at the picturesque Fairy Falls, a 200-foot (61 m) cascade that offers a refreshing splash and a serene oasis. Along the way, hikers can take a spur trail for an aerial view of the vibrant Grand Prismatic Spring, offering excellent photographic opportunities.",
+            "tags": [
+              "outdoor",
+              "waterfall",
+              "photography"
+            ],
+            "why_worth_it": "Witness the serene beauty of Fairy Falls and capture unique vistas of geothermal wonders.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Mid-morning for good light on the falls",
+            "local_tip": "Arrive early to secure a parking spot at the Midway Geyser Basin trailhead.",
+            "who_for": [
+              "families",
+              "photographers"
+            ],
+            "what_to_bring": [
+              "camera",
+              "water",
+              "hiking boots"
+            ],
+            "watch_out_for": "Parts of the trail can be muddy after rain; stay on designated paths.",
+            "nearby_pairings": [
+              "Grand Prismatic Spring"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible"
+            ],
+            "weather_sensitivity": "Avoid after heavy rains as trail can get muddy.",
+            "location_hint": "Fairy Falls Trailhead, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "mount-washburn-trail",
+            "name": "Mount Washburn Trail",
+            "short_description": "Ascend to one of the park's highest peaks, offering panoramic views that stretch for miles.",
+            "long_description": "Climbing Mount Washburn is a favored activity for many visitors, providing unmatched views from its 10,243-foot (3,122 m) summit. The trail is a 6-mile (9.7 km) round-trip hike with a moderate incline, suitable for most fit hikers. You'll walk along an old fire road through forests and open meadows, often accompanied by wildflowers and the occasional bighorn sheep. A fire lookout at the summit serves as a perch with interpretive displays, allowing you to spot landmarks across vast distances.",
+            "tags": [
+              "outdoor",
+              "summit",
+              "wildlife"
+            ],
+            "why_worth_it": "Experience breathtaking 360-degree views and spot elusive wildlife in a high-altitude environment.",
+            "duration": "4–5 hours",
+            "effort": "moderate",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Early morning to avoid afternoon thunderstorms",
+            "local_tip": "Bring binoculars for spotting distant wildlife and mountains.",
+            "who_for": [
+              "nature enthusiasts",
+              "photographers"
+            ],
+            "what_to_bring": [
+              "binoculars",
+              "snacks",
+              "layers"
+            ],
+            "watch_out_for": "Fast-changing weather conditions at high altitude; afternoon storms are common.",
+            "nearby_pairings": [
+              "Dunraven Pass"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "adventure_seeker",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Avoid during thunderstorms or heavy cloud cover.",
+            "location_hint": "Mount Washburn Trailhead, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          }
+        ]
+      },
+      {
+        "id": "family_friendly",
+        "name": "Family-Friendly",
+        "description": "Discover activities in Yellowstone that will delight both kids and adults alike, with experiences tailored for families traveling with children.",
+        "experiences": [
+          {
+            "id": "yellowstone-lake-cruise",
+            "name": "Yellowstone Lake Scenic Cruise",
+            "short_description": "Explore Yellowstone Lake with a family-friendly boat tour, offering stunning views and a chance for kids to learn about the park's aquatic life.",
+            "long_description": "A guided cruise on Yellowstone Lake is an excellent way for families to experience the park from a different perspective. These cruises are designed to be informative and entertaining, with knowledgeable guides sharing stories about the park's history, geology, and wildlife. The calm waters and beautiful vistas create a relaxed environment for families to enjoy without too much exertion.",
+            "tags": [
+              "outdoor",
+              "afternoon",
+              "water"
+            ],
+            "why_worth_it": "Kids and adults alike can enjoy an educational and scenic outing without the need for extensive hiking.",
+            "duration": "1 hour",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Early afternoon for the best lighting and calmer waters",
+            "local_tip": "Morning cruises are usually less crowded, offering a more personal experience and better chances for wildlife sightings.",
+            "who_for": [
+              "families",
+              "kids 4+"
+            ],
+            "what_to_bring": [
+              "light jacket",
+              "sunglasses",
+              "hat"
+            ],
+            "watch_out_for": "Weather conditions can change rapidly on the water; be prepared with layers.",
+            "nearby_pairings": [
+              "Fishing Bridge",
+              "West Thumb Geyser Basin"
+            ],
+            "dietary_flags": [
+              "kid_friendly"
+            ],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible"
+            ],
+            "weather_sensitivity": "Avoid during stormy weather",
+            "location_hint": "Yellowstone Lake Marina, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "rafting-yellowstone-river",
+            "name": "Scenic Rafting on the Yellowstone River",
+            "short_description": "Enjoy a gentle float trip on the Yellowstone River, perfect for families with children, offering scenic views and wildlife spotting.",
+            "long_description": "A family-friendly rafting trip on the Yellowstone River is ideal for those with young children. This relaxing float offers a safe but thrilling way to see the park's landscapes from the water. Guides ensure the safety of all passengers and share insights into the river's ecosystem, making it an educational experience as well.",
+            "tags": [
+              "outdoor",
+              "water",
+              "scenic"
+            ],
+            "why_worth_it": "Provides a unique perspective of Yellowstone's landscapes with minimal physical demand.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Morning for calmest water conditions and cooler temperatures",
+            "local_tip": "Opt for the shorter routes ideal for children ages 3 and up; they're more comfortable and easier to manage.",
+            "who_for": [
+              "families",
+              "kids 3+"
+            ],
+            "what_to_bring": [
+              "sunscreen",
+              "water shoes",
+              "waterproof camera"
+            ],
+            "watch_out_for": "Rapid sections are generally avoided on these family-focused tours.",
+            "nearby_pairings": [
+              "Gardiner",
+              "North Entrance Road"
+            ],
+            "dietary_flags": [
+              "kid_friendly"
+            ],
+            "suitability_tags": [
+              "family_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Should be avoided in rainy weather due to slippery conditions",
+            "location_hint": "Gardiner, Montana",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "mud-volcano-trail",
+            "name": "Mud Volcano Trail Exploration",
+            "short_description": "Walk the Mud Volcano Trail with its bubbling mud pots and hissing steam vents, an intriguing venture for curious little explorers.",
+            "long_description": "The Mud Volcano Trail offers an engaging and easy walk perfect for families with young children. The trail is a loop less than a mile long, featuring unique geothermal features like mud pots and steam vents. Kids will be fascinated by the unusual sights and sounds while learning about the geology behind these geothermal wonders.",
+            "tags": [
+              "outdoor",
+              "geothermal",
+              "easy hike"
+            ],
+            "why_worth_it": "It's a short, engaging trail with unique features that capture kids' imaginations.",
+            "duration": "30 minutes – 1 hour",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Afternoon when the steam creates a magical atmosphere",
+            "local_tip": "Visit in early afternoon to avoid crowds and to capture the best photos of the geothermal activity.",
+            "who_for": [
+              "families",
+              "kids 3+"
+            ],
+            "what_to_bring": [
+              "sturdy shoes",
+              "water bottle"
+            ],
+            "watch_out_for": "Stay on the boardwalks and trails to avoid dangerous ground conditions.",
+            "nearby_pairings": [
+              "Sulphur Caldron",
+              "Hayden Valley"
+            ],
+            "dietary_flags": [
+              "kid_friendly"
+            ],
+            "suitability_tags": [
+              "family_friendly",
+              "educational"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Mud Volcano, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "norris-geyser-basin",
+            "name": "Norris Geyser Basin Adventure",
+            "short_description": "Explore the Norris Geyser Basin, the hottest and most dynamic geothermal area in Yellowstone, ideal for inquisitive young minds.",
+            "long_description": "Visit the Norris Geyser Basin for an exciting adventure with a variety of geothermal features including geysers, hot springs, and fumaroles. This location often has less congestion than other sections of the park, providing a more relaxed experience. Trails are short and well-marked, offering educational signage to engage kids in learning about geology and nature.",
+            "tags": [
+              "geothermal",
+              "family",
+              "educational"
+            ],
+            "why_worth_it": "This basin provides a concentrated showcase of Yellowstone’s geothermal activity within a manageable walking area for kids.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Late morning when temperatures are moderate and steam is visible.",
+            "local_tip": "Arrive early in the day to secure parking and beat the noon crowds, and use the clear morning light for better photography.",
+            "who_for": [
+              "families",
+              "kids 5+"
+            ],
+            "what_to_bring": [
+              "comfortable shoes",
+              "hats",
+              "lots of water"
+            ],
+            "watch_out_for": "Boiling water and hot steam along the trails; always stay on designated paths.",
+            "nearby_pairings": [
+              "Museum of the National Park Ranger",
+              "Obsidian Cliff"
+            ],
+            "dietary_flags": [
+              "kid_friendly"
+            ],
+            "suitability_tags": [
+              "family_friendly",
+              "educational"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Norris Geyser Basin, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "canyon-village",
+            "name": "Canyon Village Visitor Center",
+            "short_description": "Discover interactive exhibits about Yellowstone's volcanic formation and wildlife, perfect for young and inquisitive minds.",
+            "long_description": "The Canyon Village Visitor Center features engaging displays on the geology and ecology of Yellowstone National Park. Families can take a break from outdoor activities and still experience the park's wonders through multimedia presentations and hands-on exhibits. Children particularly enjoy the interactive displays, which make learning about Yellowstone's supervolcano both fun and accessible.",
+            "tags": [
+              "educational",
+              "indoor",
+              "interactive"
+            ],
+            "why_worth_it": "It's an educational stop where children can play while learning about the natural world.",
+            "duration": "1 hour",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Midday to avoid outdoor heat and enjoy a cool, informative break.",
+            "local_tip": "Combine your visit with a picnic at the nearby tables for a relaxing family lunch.",
+            "who_for": [
+              "families",
+              "kids 3+"
+            ],
+            "what_to_bring": [
+              "snacks",
+              "camera"
+            ],
+            "watch_out_for": "Can become crowded during peak afternoons; morning visits are calmer.",
+            "nearby_pairings": [
+              "Yellowstone Canyon Overlook",
+              "Canyon Campground"
+            ],
+            "dietary_flags": [
+              "kid_friendly"
+            ],
+            "suitability_tags": [
+              "family_friendly",
+              "educational",
+              "accessible"
+            ],
+            "weather_sensitivity": "Excellent option for rainy or extreme heat days",
+            "location_hint": "Canyon Village, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          }
+        ]
+      },
+      {
+        "id": "day_trips",
+        "name": "Day Trips",
+        "description": "Explore fascinating nearby destinations that are perfect for a full or half-day excursion from Yellowstone.",
+        "experiences": [
+          {
+            "id": "grand-teton-national-park-day-trip",
+            "name": "Grand Teton National Park Day Trip",
+            "short_description": "Discover the majestic Grand Teton National Park with its towering peaks and pristine lakes, just a short drive from Yellowstone.",
+            "long_description": "Located roughly 80 miles south of Yellowstone's South Entrance, Grand Teton National Park offers some of North America's most stunning mountain scenery. Start your day early to maximize your time — the drive to the park takes about two hours. Once there, explore the Jenny Lake area for a scenic boat shuttle, or take the hiking trails for breathtaking views. For culture enthusiasts, the Chapel of the Transfiguration provides a unique spiritual and architectural highlight. Wildlife is abundant, with sightings of moose, bears, and bald eagles being common. Plan for a leisurely picnic at String Lake and consider a stop in the charming town of Jackson before heading back.",
+            "tags": [
+              "nature",
+              "scenic",
+              "wildlife"
+            ],
+            "why_worth_it": "The Tetons' dramatic landscapes offer an unparalleled day of exploration and natural beauty.",
+            "duration": "Full day",
+            "effort": "moderate",
+            "cost_band": "mid",
+            "booking_difficulty": "walk_in",
+            "best_time": "Leave by 7am for a full day of exploration",
+            "local_tip": "Rent a car for flexibility, and use the Moose Entrance for quicker access to main attractions.",
+            "who_for": [
+              "nature enthusiasts",
+              "photographers",
+              "families"
+            ],
+            "what_to_bring": [
+              "water bottle",
+              "hiking shoes",
+              "binoculars"
+            ],
+            "watch_out_for": "Heavy summer traffic near popular sights; plan your stops accordingly.",
+            "nearby_pairings": [
+              "Jackson Hole Town Square",
+              "Jenny Lake Boat Tour"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly",
+              "kid_friendly"
+            ],
+            "suitability_tags": [
+              "family_friendly",
+              "romantic",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Grand Teton National Park, Wyoming",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "boiling-river-hot-springs",
+            "name": "Boiling River Hot Springs",
+            "short_description": "Soak in the rare and delightful Boiling River Hot Springs, where hot geothermal waters mix with the cold Gardner River.",
+            "long_description": "Just five miles north of Mammoth Hot Springs, the Boiling River is one of the few places in Yellowstone where you can legally enjoy a thermal soak. The unique experience occurs where the steamy runoff of the Boiling River meets the icy Gardner River, creating naturally warm pools ideal for bathing. Plan for a morning or late afternoon visit to avoid crowds, especially in summer. To reach the springs, park at the signed parking area near the Montana state line and walk half a mile along the dirt path. Make sure to wear water shoes as the rocky bottom can be slippery. An invigorating soak here offers a peaceful escape.",
+            "tags": [
+              "relaxation",
+              "geothermal",
+              "outdoor"
+            ],
+            "why_worth_it": "Rare opportunity to soak in a natural hot spring within Yellowstone.",
+            "duration": "Half day",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Early morning or late afternoon to avoid crowds",
+            "local_tip": "Visit during weekdays and avoid holidays to minimize the wait for a good spot.",
+            "who_for": [
+              "couples",
+              "relaxation seekers",
+              "adventure lovers"
+            ],
+            "what_to_bring": [
+              "swimsuit",
+              "towel",
+              "water shoes"
+            ],
+            "watch_out_for": "Occasional closures due to high water levels or bear activity.",
+            "nearby_pairings": [
+              "Mammoth Hot Springs Terraces"
+            ],
+            "dietary_flags": [
+              "kid_friendly"
+            ],
+            "suitability_tags": [
+              "romantic",
+              "solo_friendly",
+              "accessible"
+            ],
+            "weather_sensitivity": "Avoid during spring when the river may be closed due to snowmelt.",
+            "location_hint": "Boiling River Hot Springs, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "cody-wyoming-day-trip",
+            "name": "Cody, Wyoming Day Trip",
+            "short_description": "Step back in time to the Old West in Cody, Wyoming, where history and rodeo culture come alive.",
+            "long_description": "About 52 miles east of Yellowstone's East Entrance, Cody offers a unique blend of historical attractions and vibrant Western culture. The drive takes about an hour and a half. Visit the Buffalo Bill Center of the West to dive into the world of Buffalo Bill and the history of the American West through comprehensive exhibits. During the summer months, the Cody Nite Rodeo offers an authentic rodeo experience every night. Stroll through the picturesque downtown, where local shops and eateries abound. Consider a scenic drive back through the Shoshone National Forest to complete your day.",
+            "tags": [
+              "cultural",
+              "historical",
+              "road trip"
+            ],
+            "why_worth_it": "Immerse yourself in the rich cultural heritage and vibrant cowboy spirit of the American West.",
+            "duration": "Full day",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "walk_in",
+            "best_time": "Depart at 8am to enjoy a full day and catch the rodeo at night.",
+            "local_tip": "Purchase rodeo tickets in advance during peak summer months.",
+            "who_for": [
+              "history buffs",
+              "families",
+              "culture seekers"
+            ],
+            "what_to_bring": [
+              "camera",
+              "comfortable shoes"
+            ],
+            "watch_out_for": "Summer tourist crowds; consider mid-week visits for less congestion.",
+            "nearby_pairings": [
+              "Old Trail Town",
+              "Buffalo Bill Reservoir"
+            ],
+            "dietary_flags": [
+              "meat_heavy",
+              "kid_friendly"
+            ],
+            "suitability_tags": [
+              "family_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Cody, Wyoming",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "red-lodge-montana-drive",
+            "name": "Red Lodge, Montana Drive",
+            "short_description": "Experience one of America's most scenic drives along the Beartooth Highway to the charming town of Red Lodge.",
+            "long_description": "Make your way to Red Lodge, Montana, via the breathtaking Beartooth Highway, one of the most scenic drives in the U.S. Starting from the Northeast Entrance of Yellowstone, this drive takes about two hours and offers unrivaled views of alpine peaks and deep valleys. In Red Lodge, explore the downtown area with its historic buildings and local artistry. Don't miss the chance to hike in the nearby Custer Gallatin National Forest, with trails suitable for various skill levels. Allocate time to stop at the many scenic overlooks on the drive back to enjoy mountainous vistas and wildlife views.",
+            "tags": [
+              "scenic drive",
+              "landscape",
+              "hiking"
+            ],
+            "why_worth_it": "A drive through mountain grandeur with small-town charm, making for an unforgettable day.",
+            "duration": "Full day",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Depart mid-morning to enjoy the scenic overlooks along the highway.",
+            "local_tip": "Check road conditions for snow closures before embarking, especially in early summer or late fall.",
+            "who_for": [
+              "scenic lovers",
+              "road trip enthusiasts",
+              "nature photographers"
+            ],
+            "what_to_bring": [
+              "sunglasses",
+              "hiking gear",
+              "snacks"
+            ],
+            "watch_out_for": "Altitude sickness on high stretches; acclimate to heights before departure.",
+            "nearby_pairings": [
+              "Beartooth Plateau",
+              "Custer Gallatin National Forest"
+            ],
+            "dietary_flags": [
+              "kid_friendly"
+            ],
+            "suitability_tags": [
+              "solo_friendly",
+              "romantic",
+              "accessible"
+            ],
+            "weather_sensitivity": "Check ahead for snow or road closures",
+            "location_hint": "Beartooth Highway, Montana",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "big-sky-montana-excursion",
+            "name": "Big Sky, Montana Excursion",
+            "short_description": "Venture to Big Sky, Montana for adventure sports, scenic beauty, and a taste of mountain luxury.",
+            "long_description": "Approximately a two-hour drive from Yellowstone's West Entrance, Big Sky offers year-round outdoor recreation and resort-style comfort. In summer, enjoy activities such as mountain biking, zip-lining, and fly fishing. Winter brings world-class skiing and snowboarding. Big Sky also hosts myriad events such as farmer's markets and local festivals. Take a gondola ride for panoramic mountain views or relax at a spa. The photo opportunities are endless, whether on a mountaintop or in one of the cozy mountain lodges.",
+            "tags": [
+              "adventure",
+              "scenic",
+              "luxury"
+            ],
+            "why_worth_it": "Combines thrilling outdoor activities with the comfort of resort amenities in a stunning alpine setting.",
+            "duration": "Full day",
+            "effort": "strenuous",
+            "cost_band": "premium",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "All-day adventure; start early to maximise daylight activities.",
+            "local_tip": "Book activities and accommodations in advance during ski season and summer festivals.",
+            "who_for": [
+              "adventure seekers",
+              "luxury travelers",
+              "couples"
+            ],
+            "what_to_bring": [
+              "sports gear",
+              "sunglasses",
+              "camera"
+            ],
+            "watch_out_for": "High demand in peak seasons; plan activities beforehand",
+            "nearby_pairings": [
+              "Big Sky Resort",
+              "Gallatin River"
+            ],
+            "dietary_flags": [
+              "alcohol_centered",
+              "meat_heavy"
+            ],
+            "suitability_tags": [
+              "romantic",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Snowfall affects driving conditions, plan accordingly.",
+            "location_hint": "Big Sky, Montana",
+            "is_mappable": true,
+            "personalization_note": "High physical exertion — may not suit travellers seeking lower-intensity activities.",
+            "places_enrichment": null
+          }
+        ]
+      },
+      {
+        "id": "seasonal",
+        "name": "Seasonal Highlights",
+        "description": "Explore Yellowstone's unique offerings that shine during specific seasons, from vibrant wildflower displays to prime wildlife viewing.",
+        "experiences": [
+          {
+            "id": "winter-snow-coach-tour",
+            "name": "Winter Snow Coach Tour",
+            "short_description": "Experience the magic of Yellowstone blanketed in snow aboard a heated snow coach.",
+            "long_description": "During winter, Yellowstone transforms into a serene, snow-covered wonderland, accessible primarily via snow coach tours. These guided tours offer a unique chance to see iconic locations like the Old Faithful and the Grand Canyon of Yellowstone in their quieter, off-peak beauty. Tour highlights often include encounters with bison huddled against the cold and serene landscapes covered in frost.",
+            "tags": [
+              "winter",
+              "scenic",
+              "wildlife"
+            ],
+            "why_worth_it": "Gain exclusive access to Yellowstone's winter beauty, otherwise inaccessible by regular vehicles.",
+            "duration": "Full day",
+            "effort": "easy",
+            "cost_band": "premium",
+            "booking_difficulty": "hard_to_get",
+            "best_time": "December to February",
+            "local_tip": "Book your snow coach tour months in advance as slots fill quickly due to limited winter access.",
+            "who_for": [
+              "families",
+              "nature enthusiasts",
+              "photographers"
+            ],
+            "what_to_bring": [
+              "warm clothing",
+              "camera",
+              "binoculars"
+            ],
+            "watch_out_for": "Cold temperatures can be extreme; dress in layers for warmth.",
+            "nearby_pairings": [],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Avoid during heavy snowstorms as tours may be canceled.",
+            "location_hint": "Old Faithful, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "summer-yellowstone-lake-kayaking",
+            "name": "Summer Kayaking on Yellowstone Lake",
+            "short_description": "Paddle through the clear, cold waters of the largest high-altitude lake in North America.",
+            "long_description": "Yellowstone Lake offers an unparalleled kayaking experience during the summer months. Enjoy the tranquility of paddling amidst pristine wilderness, with spectacular views of the Absaroka Mountains in the distance. This activity offers intimate encounters with the park's aquatic landscape and opportunities for fishing or birdwatching.",
+            "tags": [
+              "summer",
+              "water",
+              "adventure"
+            ],
+            "why_worth_it": "Experience Yellowstone's breathtaking waterscapes up close, guided by the majestic views around Yellowstone Lake.",
+            "duration": "Half day",
+            "effort": "moderate",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "July to September",
+            "local_tip": "Opt for a sunrise tour for calm waters and a higher chance of spotting wildlife.",
+            "who_for": [
+              "adventurers",
+              "water lovers",
+              "nature enthusiasts"
+            ],
+            "what_to_bring": [
+              "dry bag",
+              "sunscreen",
+              "hat"
+            ],
+            "watch_out_for": "Sudden thunderstorms are common; stay close to the shore in case you need to land quickly.",
+            "nearby_pairings": [],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "solo_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Best enjoyed under clear skies for safety.",
+            "location_hint": "Yellowstone Lake, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "spring-wildflower-hike",
+            "name": "Spring Wildflower Hike",
+            "short_description": "Witness the park burst into color with wildflower displays during springtime hikes.",
+            "long_description": "As the snow melts and spring arrives, Yellowstone's meadows and valleys become adorned with colorful wildflowers. This is a perfect time to embark on hiking trails like Mount Washburn or Cascade Lake Trail, where you can witness species such as yellow bells, lupines, and Indian paintbrush blooming in abundance.",
+            "tags": [
+              "spring",
+              "hiking",
+              "nature"
+            ],
+            "why_worth_it": "See Yellowstone's landscapes come alive with vibrant colors and new life in spring.",
+            "duration": "2–3 hours",
+            "effort": "moderate",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Late May to early July",
+            "local_tip": "Head out early to catch dew-kissed blooms and less crowded trails.",
+            "who_for": [
+              "hikers",
+              "nature lovers",
+              "photographers"
+            ],
+            "what_to_bring": [
+              "hiking boots",
+              "water bottle",
+              "field guide"
+            ],
+            "watch_out_for": "Trails can be muddy and slippery as snow melts.",
+            "nearby_pairings": [],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Check forecasts as spring weather can be unpredictable.",
+            "location_hint": "Mount Washburn, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "early-autumn-wolf-watching",
+            "name": "Early Autumn Wolf Watching",
+            "short_description": "Autumn is one of the best times to spot wolves in Yellowstone's Lamar Valley.",
+            "long_description": "As fall approaches, wolf activity increases, and they become more visible as the first snowfalls contrast their dark coats against the landscape. Guided wolf-watching expeditions provide insights into their behaviors and are best in the early morning or at dusk. With expert guides, observe one of the park's most elusive creatures in its natural habitat.",
+            "tags": [
+              "autumn",
+              "wildlife",
+              "safari"
+            ],
+            "why_worth_it": "Capture the rare opportunity to observe wolves against Yellowstone's breathtaking autumn backdrop.",
+            "duration": "3–4 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "September to mid-October",
+            "local_tip": "Bring binoculars for better sightings and a thermos with a hot drink for chilly mornings.",
+            "who_for": [
+              "wildlife enthusiasts",
+              "photographers",
+              "nature lovers"
+            ],
+            "what_to_bring": [
+              "binoculars",
+              "warm clothing",
+              "camera"
+            ],
+            "watch_out_for": "Pack in layers as temperatures fluctuate during the day.",
+            "nearby_pairings": [],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Better in dry conditions; roads may close with early snow.",
+            "location_hint": "Lamar Valley, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "late-spring-bison-calf-viewing",
+            "name": "Late Spring Bison Calf Viewing",
+            "short_description": "Observe bison calves exploring the world for the first time amid Yellowstone's springtime splendor.",
+            "long_description": "Late spring is the time when herds of bison gather in Yellowstone's grasslands, and the adorable 'red dog' calves can be seen galloping awkwardly beside their mothers. Locations like Hayden Valley and Blacktail Plateau Drive offer prime viewpoints for observing these playful calves and the dynamics within the herd.",
+            "tags": [
+              "spring",
+              "wildlife",
+              "scenic"
+            ],
+            "why_worth_it": "Experience the joys of new life in the park's iconic bison herds during spring.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "May to June",
+            "local_tip": "For the best experience, visit early in the morning when the herds are most active.",
+            "who_for": [
+              "families",
+              "photographers",
+              "nature lovers"
+            ],
+            "what_to_bring": [
+              "binoculars",
+              "camera"
+            ],
+            "watch_out_for": "Always keep a safe distance; bison are unpredictable and can be dangerous.",
+            "nearby_pairings": [
+              "Yellowstone River Fishing"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Hayden Valley, Yellowstone National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          }
+        ]
+      }
+    ],
+    "generated_at": "2026-05-19T18:49:57.663Z"
+  }
+}

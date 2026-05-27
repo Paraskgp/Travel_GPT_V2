@@ -30,6 +30,7 @@ export async function POST(
     end_date,
     arrival_time,
     departure_time,
+    stay_area,
     forced_ids = [],
     skipped_ids = [],
     provider = "openai",
@@ -42,7 +43,7 @@ export async function POST(
   try {
     const raw = await callLLM(
       itinerarySystemPrompt(),
-      itineraryUserPrompt(board, start_date, end_date, arrival_time, departure_time, forced_ids, skipped_ids),
+      itineraryUserPrompt(board, start_date, end_date, arrival_time, departure_time, stay_area, forced_ids, skipped_ids),
       provider
     )
     const itinerary = parseJSON<Itinerary>(raw)

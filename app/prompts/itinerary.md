@@ -18,6 +18,7 @@ You are an expert travel planner. Your job is to select the best experiences fro
 
 ## Day structure
 
+- **Every day anchors on the accommodation base** provided in Trip Details. Each day begins with a travel row from the accommodation to the first activity, and ends with dinner near the accommodation (or a travel row back).
 - **Day 1** starts at the arrival_time provided (or 09:00 if not given).
 - **Middle days** start at 08:30.
 - **Last day** must wrap at least 2 hours before the departure_time provided (or by 12:00 if not given).

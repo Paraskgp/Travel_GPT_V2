@@ -136,6 +136,7 @@ export function itineraryUserPrompt(
   endDate: string,
   arrivalTime?: string,
   departureTime?: string,
+  stayArea?: string,
   forcedIds: string[] = [],
   skippedIds: string[] = []
 ): string {
@@ -174,9 +175,12 @@ export function itineraryUserPrompt(
   parts.push(`## Trip Details
 
 Destination: ${board.destination}
+Accommodation base: ${stayArea ?? board.destination_context.recommended_stay_area ?? board.destination}
 Start date: ${startDate} — arrival time: ${arrivalTime ?? "09:00"}
 End date: ${endDate} — departure time: ${departureTime ?? "12:00"}
-Total days: ${days}`)
+Total days: ${days}
+
+Every day starts and ends at the accommodation base above. The first travel row of each day should route from the accommodation to the first activity. The last activity of each day should end near the accommodation (or dinner nearby).`)
 
   parts.push(`## Destination Context\n\n${board.destination_context.soul}\n\nDefining pillars: ${board.destination_context.defining_pillars.join(" · ")}`)
 
