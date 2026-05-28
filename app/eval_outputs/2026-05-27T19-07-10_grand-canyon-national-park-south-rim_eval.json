@@ -1,0 +1,206 @@
+{
+  "overall_score": 62,
+  "overall_grade": "C",
+  "summary": "The AI itinerary over-schedules activities in the Grand Canyon region, neglecting significant regional attractions like Horseshoe Bend and Antelope Canyon. It treats guided tours as optional activities rather than scheduling anchors and mismanages transit days by including substantial activities. Improvements in regional itinerary balance and understanding guided tour logistics are needed.",
+  "coverage": {
+    "must_have_found": [
+      "Grand Canyon South Rim viewpoints",
+      "Bright Angel Trail",
+      "Desert View Watchtower",
+      "Hermit Road"
+    ],
+    "must_have_missing": [
+      "Horseshoe Bend",
+      "Antelope Canyon",
+      "Lake Powell — Rainbow Bridge National Monument"
+    ],
+    "coverage_score": 40
+  },
+  "dimension_scores": [
+    {
+      "dimension": "South Rim density — not over-scheduling",
+      "weight": 0.25,
+      "score": 50,
+      "weighted_score": 12.5,
+      "pass": false,
+      "finding": "The AI itinerary allocates all days to South Rim activities, missing the regional context completely.",
+      "example": "Day 3 includes both a visit to Yavapai Geological Museum and a trip to Hopi Point for sunset, both at the South Rim."
+    },
+    {
+      "dimension": "Guided tour recognition",
+      "weight": 0.2,
+      "score": 30,
+      "weighted_score": 6,
+      "pass": false,
+      "finding": "AI failed to recognize the necessity of pre-booking for Antelope Canyon as it's not included and similar tours are treated as standard activities.",
+      "example": "Antelope Canyon is missing, and the AI treats the Hualapai Tribal Tour as a drop-in experience."
+    },
+    {
+      "dimension": "Hermit Road coverage",
+      "weight": 0.15,
+      "score": 65,
+      "weighted_score": 9.75,
+      "pass": true,
+      "finding": "AI provides a reasonable plan for Hermit Road but does not cover all must-see viewpoints.",
+      "example": "Vistas at Hopi Point scheduled but misses multi-hour engagement with all Hermit Road points."
+    },
+    {
+      "dimension": "Transit day discipline",
+      "weight": 0.15,
+      "score": 40,
+      "weighted_score": 6,
+      "pass": false,
+      "finding": "Transit days include packed schedules. Day 4 has Bright Angel Trail and a helicopter tour despite being a drive day.",
+      "example": "Day 4 schedules Bright Angel Trail hike followed by a helicopter tour on a drive day to the Grand Canyon."
+    },
+    {
+      "dimension": "Departure discipline",
+      "weight": 0.1,
+      "score": 80,
+      "weighted_score": 8,
+      "pass": true,
+      "finding": "Departure day is handled well with relaxed activities, ensuring ample travel time.",
+      "example": "Day 6 focuses solely on packing and check-out without intense activities."
+    },
+    {
+      "dimension": "Famous exclusions respected",
+      "weight": 0.1,
+      "score": 90,
+      "weighted_score": 9,
+      "pass": true,
+      "finding": "AI correctly avoids adding the West Rim Skywalk or similar external famous attractions.",
+      "example": "Skywalk and Hoover Dam are not included."
+    },
+    {
+      "dimension": "Regional context awareness",
+      "weight": 0.05,
+      "score": 20,
+      "weighted_score": 1,
+      "pass": false,
+      "finding": "No mention of regional attractions such as Page or Horseshoe Bend, indicating a lack of regional awareness.",
+      "example": "Itinerary lacks any reference to Page, AZ, or its attractions."
+    }
+  ],
+  "day_analysis": [
+    {
+      "day_number": 1,
+      "date": "2026-05-20",
+      "ai_title": "Arrival and Relaxation",
+      "golden_title": "Fly Phoenix → Drive to Page",
+      "score": 60,
+      "hits": [
+        "Includes time for rest upon arrival."
+      ],
+      "misses": [
+        "Focuses solely on Grand Canyon activities, missing regional circuit."
+      ],
+      "worst_mistake": "Starting the itinerary directly at Grand Canyon, missing regional key sites like Page."
+    },
+    {
+      "day_number": 2,
+      "date": "2026-05-21",
+      "ai_title": "Sunrise and Iconic Trails",
+      "golden_title": "Page Orientation — Glen Canyon Dam",
+      "score": 50,
+      "hits": [
+        "Schedules early morning wildlife observation and hiking at the South Rim."
+      ],
+      "misses": [
+        "Fails to include Glen Canyon Dam or any Page activities."
+      ],
+      "worst_mistake": "Overlooking regional locations and focusing entirely on South Rim without diversity."
+    },
+    {
+      "day_number": 3,
+      "date": "2026-05-22",
+      "ai_title": "Exploring Cultural and Scenic Highlights",
+      "golden_title": "Horseshoe Bend + Antelope Canyon",
+      "score": 40,
+      "hits": [
+        "Includes Yavapai Geological Museum."
+      ],
+      "misses": [
+        "No mention of Horseshoe Bend or Antelope Canyon."
+      ],
+      "worst_mistake": "Completely ignores Antelope Canyon, a critical scheduled location."
+    },
+    {
+      "day_number": 4,
+      "date": "2026-05-23",
+      "ai_title": "Hiking and Adventure Day",
+      "golden_title": "Lake Powell — Rainbow Bridge",
+      "score": 30,
+      "hits": [
+        "Includes Bright Angel Trail hike."
+      ],
+      "misses": [
+        "Schedules intense hiking and a helicopter tour in the middle of transit, ignoring the need for downtime."
+      ],
+      "worst_mistake": "Overloaded activities on a transit day with no reference to Lake Powell."
+    },
+    {
+      "day_number": 5,
+      "date": "2026-05-24",
+      "ai_title": "Local Culture and Scenic Exploration",
+      "golden_title": "Grand Canyon South Rim — Hermit Road",
+      "score": 70,
+      "hits": [
+        "Includes cultural activities at Tusayan Ruin and the Hualapai Tribal Tour."
+      ],
+      "misses": [
+        "Does not adequately cover all Hermit Road viewpoints."
+      ],
+      "worst_mistake": "Insufficient coverage of Hermit Road viewpoints."
+    },
+    {
+      "day_number": 6,
+      "date": "2026-05-25",
+      "ai_title": "Departure Day",
+      "golden_title": "Rim Trail Morning + Drive to Phoenix",
+      "score": 80,
+      "hits": [
+        "Handles departure day well with minimal activities."
+      ],
+      "misses": [
+        "Could have included a brief morning Rim Trail walk similar to the human plan."
+      ],
+      "worst_mistake": "Minor neglect of easy-going activities like a Rim Trail walk post-breakfast."
+    }
+  ],
+  "top_failures": [
+    {
+      "failure": "Regional omission",
+      "severity": "critical",
+      "description": "The itinerary excludes crucial regional locations such as Horseshoe Bend and Antelope Canyon, neglecting the broader trip context.",
+      "prompt_fix": "Ensure itineraries include regional highlights such as Page, AZ, and must-see attractions like Horseshoe Bend and Antelope Canyon."
+    },
+    {
+      "failure": "Guided tour mismanagement",
+      "severity": "major",
+      "description": "Fails to manage guided tours like Antelope Canyon correctly, which require pre-booking and define day structure.",
+      "prompt_fix": "Identify and emphasize pre-booking and structured time slots for crucial guided tours like Antelope Canyon."
+    },
+    {
+      "failure": "Activity clustering",
+      "severity": "major",
+      "description": "Transit days and periods are packed with activities, ignoring the necessary transition and rest periods.",
+      "prompt_fix": "Limit activities on transit days to minimal essential engagements and prioritize rest."
+    }
+  ],
+  "what_ai_got_right": [
+    "Includes a mix of activities that are well-informed about Grand Canyon viewpoints and trails.",
+    "Correctly identified and excluded the West Rim and unnecessary famous attractions.",
+    "Handled departure day with relative efficiency, allowing for sufficient travel time."
+  ],
+  "prompt_improvement_plan": {
+    "itinerary_prompt_changes": [
+      "Incorporate regional hubs and attractions for itineraries involving national parks to avoid over-focus.",
+      "Explicitly address the necessity of guided tours and pre-booking for certain attractions.",
+      "Define transit days with minimal scheduled events and emphasize relaxation."
+    ],
+    "board_generation_changes": [
+      "Ensure the board includes mention of major nearby attractions in the region.",
+      "Highlight logistics and scheduling requirements for distinctive guided activities like Antelope Canyon."
+    ]
+  }
+}

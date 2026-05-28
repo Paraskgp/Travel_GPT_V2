@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# destination cache (generated data — commit .gitkeep only)
+/cache/destinations/*/
+/cache/_index.json

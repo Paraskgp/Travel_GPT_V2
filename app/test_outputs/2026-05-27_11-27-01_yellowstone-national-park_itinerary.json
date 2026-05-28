@@ -1,0 +1,358 @@
+{
+  "itinerary": {
+    "destination": "Yellowstone National Park",
+    "start_date": "2026-05-20",
+    "end_date": "2026-05-25",
+    "days": [
+      {
+        "date": "2026-05-20",
+        "day_number": 1,
+        "day_title": "Arrival and Relaxation",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "19:00",
+            "end_time": "20:30",
+            "title": "Dinner at Canyon Lodge Dining Room",
+            "notes": "Relax with a hearty meal at the park's own lodge restaurant.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Canyon+Lodge+Dining+Room+Yellowstone",
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-05-21",
+        "day_number": 2,
+        "day_title": "Geysers and Falls Exploration",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "08:00",
+            "end_time": "08:30",
+            "title": "Breakfast at Canyon Lodge Dining Room",
+            "notes": "Enjoy a quick breakfast to fuel the day.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Canyon+Lodge+Dining+Room+Yellowstone",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "08:30",
+            "end_time": "09:15",
+            "title": "Travel to Grand Canyon of the Yellowstone",
+            "notes": "Drive to the Grand Canyon of the Yellowstone for stunning morning views.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "09:15",
+            "end_time": "12:15",
+            "title": "Grand Canyon of the Yellowstone",
+            "notes": "View the Lower Falls from Artist Point for the best morning light.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Grand+Canyon+of+the+Yellowstone+Yellowstone",
+            "experience_id": "grand-canyon-of-yellowstone"
+          },
+          {
+            "type": "meal",
+            "start_time": "12:30",
+            "end_time": "14:00",
+            "title": "Lunch at Picnic Area near Grand Canyon",
+            "notes": "Pack a picnic lunch from Canyon Village before heading out.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "14:00",
+            "end_time": "14:45",
+            "title": "Travel to Norris Geyser Basin",
+            "notes": "Drive to Norris Geyser Basin for more geothermal wonders.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "14:45",
+            "end_time": "17:15",
+            "title": "Norris Geyser Basin Visit",
+            "notes": "Explore the steaming landscapes of Norris.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Norris+Geyser+Basin+Yellowstone",
+            "experience_id": "norris-geyser-basin"
+          },
+          {
+            "type": "travel",
+            "start_time": "17:15",
+            "end_time": "18:00",
+            "title": "Return to Canyon Village",
+            "notes": "Head back to Canyon Village for dinner.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "meal",
+            "start_time": "18:30",
+            "end_time": "20:00",
+            "title": "Dinner at Canyon Lodge Dining Room",
+            "notes": "Enjoy dinner near your base.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Canyon+Lodge+Dining+Room+Yellowstone",
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-05-22",
+        "day_number": 3,
+        "day_title": "Geysers and Springs",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "07:30",
+            "end_time": "08:00",
+            "title": "Breakfast at Canyon Lodge Dining Room",
+            "notes": "Get an early start for a busy day.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Canyon+Lodge+Dining+Room+Yellowstone",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "08:00",
+            "end_time": "09:00",
+            "title": "Travel to Old Faithful",
+            "notes": "Drive to Old Faithful to beat the crowds.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "09:00",
+            "end_time": "12:00",
+            "title": "Old Faithful and Upper Geyser Basin",
+            "notes": "Catch an early eruption of Old Faithful.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Old+Faithful+Yellowstone",
+            "experience_id": "old-faithful-and-upper-geyser-basin"
+          },
+          {
+            "type": "meal",
+            "start_time": "12:15",
+            "end_time": "13:45",
+            "title": "Lunch at Old Faithful Snow Lodge",
+            "notes": "Take a break and enjoy lunch at the lodge.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Old+Faithful+Snow+Lodge+Yellowstone",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "13:45",
+            "end_time": "14:30",
+            "title": "Travel to Grand Prismatic Spring",
+            "notes": "Short drive to visit the colorful Grand Prismatic Spring.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "14:30",
+            "end_time": "16:30",
+            "title": "Grand Prismatic Spring Viewing",
+            "notes": "Enjoy the vibrant colors in the afternoon light at the overlook.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Grand+Prismatic+Spring+Yellowstone",
+            "experience_id": "grand-prismatic-spring-viewing"
+          },
+          {
+            "type": "travel",
+            "start_time": "16:30",
+            "end_time": "17:15",
+            "title": "Return to Canyon Village",
+            "notes": "Head back to Canyon Village for a relaxing evening.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "meal",
+            "start_time": "18:00",
+            "end_time": "19:30",
+            "title": "Dinner at Canyon Village",
+            "notes": "Dinner at the base lodge to end the day.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Canyon+Lodge+Dining+Room+Yellowstone",
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-05-23",
+        "day_number": 4,
+        "day_title": "Wildlife Wonders",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "05:00",
+            "end_time": "05:30",
+            "title": "Quick Breakfast at Canyon Lodge Cafeteria",
+            "notes": "Start the day early to maximize wildlife viewing opportunities.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Canyon+Lodge+Dining+Room+Yellowstone",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "05:30",
+            "end_time": "07:00",
+            "title": "Travel to Lamar Valley",
+            "notes": "Early drive to Lamar Valley for prime wildlife spotting.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "07:00",
+            "end_time": "11:00",
+            "title": "Wildlife Spotting in Lamar Valley",
+            "notes": "Observe bison and more in the serene Lamar Valley at dawn.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Lamar+Valley+Yellowstone",
+            "experience_id": "wildlife-spotting-lamar-valley"
+          },
+          {
+            "type": "meal",
+            "start_time": "11:15",
+            "end_time": "12:45",
+            "title": "Lunch at Roosevelt Lodge Cabins",
+            "notes": "A rustic lodge offering hearty meals.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Roosevelt+Lodge+Cabins+Yellowstone",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "12:45",
+            "end_time": "13:45",
+            "title": "Travel to Mammoth Hot Springs",
+            "notes": "Drive to explore the iconic terraces.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "13:45",
+            "end_time": "15:15",
+            "title": "Mammoth Hot Springs Terraces",
+            "notes": "Visit the unique terrace formations in the heat of the day.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Mammoth+Hot+Springs+Yellowstone",
+            "experience_id": "mammoth-hot-springs-terraces"
+          },
+          {
+            "type": "travel",
+            "start_time": "15:15",
+            "end_time": "17:00",
+            "title": "Return to Canyon Village",
+            "notes": "Drive back to base after a full day of wildlife and scenic views.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "meal",
+            "start_time": "18:30",
+            "end_time": "20:00",
+            "title": "Dinner at Canyon Lodge Dining Room",
+            "notes": "Dinner to conclude the day's adventures.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Canyon+Lodge+Dining+Room+Yellowstone",
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-05-24",
+        "day_number": 5,
+        "day_title": "Trails and Peaks",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "07:00",
+            "end_time": "07:30",
+            "title": "Breakfast at Canyon Lodge Dining Room",
+            "notes": "Fuel up before an adventurous day.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Canyon+Lodge+Dining+Room+Yellowstone",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "07:30",
+            "end_time": "08:30",
+            "title": "Travel to Mount Washburn Trailhead",
+            "notes": "Start early to summit Mount Washburn before heat.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "08:30",
+            "end_time": "13:00",
+            "title": "Summiting Mount Washburn",
+            "notes": "Enjoy panoramic views from the summit.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Mount+Washburn+Yellowstone",
+            "experience_id": "mount-washburn-hike"
+          },
+          {
+            "type": "meal",
+            "start_time": "13:30",
+            "end_time": "15:00",
+            "title": "Rest / lunch / free time",
+            "notes": "Early start — recovery time before the afternoon.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "15:00",
+            "end_time": "15:30",
+            "title": "Travel to Canyon Visitor Education Center",
+            "notes": "Learn about the park's geology and history.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "15:30",
+            "end_time": "17:00",
+            "title": "Yellowstone Canyon Visitor Education Center",
+            "notes": "Discover exhibits related to Yellowstone's natural history.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Yellowstone+Canyon+Visitor+Education+Center",
+            "experience_id": "canyon-village-education-center"
+          },
+          {
+            "type": "meal",
+            "start_time": "18:00",
+            "end_time": "19:30",
+            "title": "Dinner at Canyon Lodge Dining Room",
+            "notes": "End the day with dinner at the lodge.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Canyon+Lodge+Dining+Room+Yellowstone",
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-05-25",
+        "day_number": 6,
+        "day_title": "Departure",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "08:00",
+            "end_time": "08:30",
+            "title": "Breakfast at Canyon Lodge Dining Room",
+            "notes": "Last breakfast before checking out.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Canyon+Lodge+Dining+Room+Yellowstone",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "09:00",
+            "end_time": "11:00",
+            "title": "Check out and depart Yellowstone",
+            "notes": "Allow plenty of time for travel from Canyon Village to the departure point.",
+            "maps_url": null,
+            "experience_id": null
+          }
+        ]
+      }
+    ],
+    "generated_at": "2024-10-12T12:00:00Z"
+  }
+}

@@ -1,0 +1,264 @@
+{
+  "meta": {
+    "destination": "Kyoto, Japan",
+    "source": "Expert reference itinerary (LLM-authored from knowledge — treat as informed human, not verified personal trip)",
+    "created_by": "claude_from_knowledge",
+    "confidence": "high — core timing and neighborhood logic is well-established; specific restaurant recommendations are lower confidence",
+    "trip_dates": { "start": "2026-04-15", "end": "2026-04-20" },
+    "arrival": { "station": "Kyoto Station (Shinkansen)", "time": "15:00" },
+    "departure": { "station": "Kyoto Station", "time": "11:00" },
+    "base_camp": "Higashiyama / Gion area — ideally within walking distance of Hanamikoji Street",
+    "lodging_moves": 0,
+    "notes": "Single base in Higashiyama. All major sites within 30 min by bus or 45 min by bike. Arashiyama requires a dedicated day trip (~45 min each way by train)."
+  },
+
+  "locations_visited": [
+    { "name": "Fushimi Inari Taisha", "role": "headline", "day": 1, "note": "Arrive before 07:00 — the thousands of torii gates are empty at dawn, wall-to-wall tourists by 10 AM. Hike at least to the first summit (Yotsutsuji intersection) for the city view." },
+    { "name": "Kiyomizudera Temple", "role": "headline", "day": 1, "note": "Go at opening (06:00 in spring) or late afternoon. The wooden stage view is the defining image of Kyoto." },
+    { "name": "Ninenzaka and Sannenzaka lanes", "role": "secondary", "day": 1, "note": "The preserved stone-paved lanes below Kiyomizudera. Morning only — by 10 AM packed with tour groups." },
+    { "name": "Hanamikoji Street, Gion", "role": "headline", "day": 1, "note": "Visit at dusk (17:00–19:00). Highest probability of spotting geiko or maiko leaving ochaya. Do not block alleys or chase them — this is their workplace." },
+    { "name": "Arashiyama Bamboo Grove", "role": "headline", "day": 2, "note": "06:00–07:30 ONLY. By 09:00 it is a tourist conveyor belt. This is non-negotiable — there is no other time." },
+    { "name": "Tenryu-ji Temple and Garden", "role": "headline", "day": 2, "note": "Open 08:30. The Sogenchi garden is one of Japan's finest. Go right at opening before tour buses." },
+    { "name": "Togetsukyo Bridge, Arashiyama", "role": "secondary", "day": 2, "note": "Morning mist over the bridge and Arashiyama mountain behind. 30 min is enough." },
+    { "name": "Jojakko-ji Temple", "role": "secondary", "day": 2, "note": "The hidden pagoda above Arashiyama — most tourists miss it. 15-min walk up from Bamboo Grove, almost always quiet." },
+    { "name": "Kinkaku-ji (Golden Pavilion)", "role": "headline", "day": 3, "note": "Opens 09:00. Arrive at 09:00 sharp — the site fills fast. The reflection in the Kyoko-chi pond is the shot. 45 min is enough." },
+    { "name": "Ryoan-ji Temple (rock garden)", "role": "headline", "day": 3, "note": "Best experienced in silence, which requires arriving before 09:30. The 15 stones are arranged so you can never see all 15 at once from any angle — the garden is a puzzle, not a decoration." },
+    { "name": "Nijo Castle", "role": "secondary", "day": 3, "note": "The nightingale floors (uguisubari) that chirp underfoot to detect intruders are the main draw. Allow 1.5 hrs." },
+    { "name": "Philosopher's Path (Tetsugaku-no-Michi)", "role": "headline", "day": 4, "note": "The 2km canal walk lined with cherry trees. In April, peak blossom. Best in the morning before crowds arrive at 10 AM." },
+    { "name": "Nishiki Market", "role": "headline", "day": 4, "note": "Kyoto's kitchen — 400-year-old covered market. Best 10:00–13:00 on weekdays. Eat as you walk: pickles, skewered tofu, tamagoyaki." },
+    { "name": "Pontocho Alley", "role": "headline", "day": 4, "note": "Narrow lantern-lit alley running parallel to Kamogawa. Dinner here at 19:00–21:00 is the quintessential Kyoto evening. Reserve ahead — the best restaurants fill quickly." }
+  ],
+
+  "locations_notably_excluded": [
+    { "name": "Kinkakuji afternoon visit", "reason": "Crowds are unmanageable after 10 AM — only worth visiting at opening" },
+    { "name": "Bamboo Grove after 9 AM", "reason": "Literally not the same experience — tourist volume destroys the atmosphere" },
+    { "name": "Arashiyama + Higashiyama same day", "reason": "Opposite ends of the city, ~1 hr apart. Doing both means rushing both." },
+    { "name": "Fushimi Inari midday", "reason": "30°C+ heat and solid tourist traffic make the hike miserable — dawn only" }
+  ],
+
+  "days": [
+    {
+      "day_number": 0,
+      "date": "2026-04-15",
+      "title": "Arrival in Kyoto",
+      "theme": "Travel and orientation. One gentle evening activity maximum.",
+      "rows": [
+        { "time": "15:00", "activity": "Arrive Kyoto Station (Shinkansen)", "notes": "Take subway or taxi to accommodation in Higashiyama" },
+        { "time": "16:00", "activity": "Check in, freshen up", "notes": null },
+        { "time": "17:30–19:00", "activity": "Evening stroll — Hanamikoji Street and Gion", "notes": "Gentle introduction to the neighborhood. Dusk is the best time anyway — geiko hour." },
+        { "time": "19:00", "activity": "Dinner near accommodation", "notes": "Stay local — don't travel far on arrival night" }
+      ],
+      "day_principles": [
+        "Arrival evening should be geographically local and low-effort.",
+        "Hanamikoji at dusk is high-value and requires no energy — perfect for tired travelers.",
+        "Do not plan an ambitious arrival evening — travel fatigue is real."
+      ]
+    },
+    {
+      "day_number": 1,
+      "date": "2026-04-16",
+      "title": "Eastern Kyoto — Fushimi + Higashiyama",
+      "theme": "Pre-dawn start for Fushimi Inari, then Higashiyama temples, Gion at dusk.",
+      "start_time": "05:30",
+      "rows": [
+        { "time": "05:30", "activity": "Depart for Fushimi Inari", "notes": "Train from Tofukuji or Inari Station — 20 min from Higashiyama" },
+        { "time": "06:00–08:30", "activity": "Fushimi Inari Taisha — hike to Yotsutsuji", "notes": "Dawn light, empty tunnels. Hike to first summit for city view. Return before crowds." },
+        { "time": "09:00", "activity": "Return to Higashiyama", "notes": null },
+        { "time": "09:30", "activity": "Breakfast near accommodation", "notes": "Rest and eat before the next wave" },
+        { "time": "11:00–12:30", "activity": "Kiyomizudera Temple", "notes": "Worth seeing even mid-morning. Ninenzaka and Sannenzaka lanes below." },
+        { "time": "12:30–14:00", "activity": "Lunch in Higashiyama", "notes": "Yudofu (tofu hot pot) at a local restaurant near the lanes" },
+        { "time": "14:00–15:30", "activity": "Rest / free time at accommodation", "notes": "Critical recovery — 05:30 start is exhausting" },
+        { "time": "17:00–19:00", "activity": "Hanamikoji Street, Gion", "notes": "Golden hour walk. Best geiko/maiko sighting window." },
+        { "time": "19:30", "activity": "Dinner — Pontocho or Gion", "notes": null }
+      ],
+      "day_principles": [
+        "Fushimi Inari requires a pre-dawn start. This is the entire day's anchor.",
+        "After a 05:30 start and a hike, afternoon rest is not optional.",
+        "Gion dusk is a second anchor for the same day — low effort, high reward, geographically adjacent to base."
+      ]
+    },
+    {
+      "day_number": 2,
+      "date": "2026-04-17",
+      "title": "Arashiyama — Full Day",
+      "theme": "Bamboo at dawn, then Arashiyama all day. Do not mix with other districts.",
+      "start_time": "05:45",
+      "rows": [
+        { "time": "05:45", "activity": "Depart for Arashiyama", "notes": "Sagano/San-in Line from Kyoto Station or Saga-Arashiyama Station — 30 min" },
+        { "time": "06:15–07:30", "activity": "Arashiyama Bamboo Grove", "notes": "Empty. Walk slowly. This is the only window." },
+        { "time": "07:30–08:00", "activity": "Togetsukyo Bridge", "notes": "Morning mist, mountain reflection — 30 min is enough" },
+        { "time": "08:30–10:30", "activity": "Tenryu-ji Temple and garden", "notes": "Opens at 08:30. The Sogenchi stroll garden." },
+        { "time": "10:30–11:30", "activity": "Jojakko-ji Temple", "notes": "15-min walk uphill — most visitors miss it. Moss-covered pagoda, peaceful." },
+        { "time": "12:00–13:30", "activity": "Lunch in Arashiyama", "notes": "Tofu cuisine or soba near Togetsukyo. Shigetsu at Tenryu-ji if budget allows." },
+        { "time": "13:30–15:00", "activity": "Rest / free time in Arashiyama", "notes": "Sit by the river. Do not rush back. This is a full-day destination." },
+        { "time": "15:00–16:30", "activity": "Boat ride on Oi River (optional)", "notes": "30-min traditional boat through Hozu Gorge. Low effort, high mood." },
+        { "time": "17:00", "activity": "Return to Kyoto", "notes": "~45 min back" },
+        { "time": "19:00", "activity": "Dinner near accommodation", "notes": null }
+      ],
+      "day_principles": [
+        "Arashiyama is a full-day destination — do not combine with Higashiyama or Northern Kyoto.",
+        "Bamboo Grove at 06:15 is the non-negotiable anchor. The rest of the day follows from it.",
+        "Afternoon rest in Arashiyama (by the river) is how you avoid the 5 PM rush on trains back.",
+        "Jojakko-ji is the hidden gem — include it or you've done the tourist version."
+      ]
+    },
+    {
+      "day_number": 3,
+      "date": "2026-04-18",
+      "title": "Northern Kyoto — Temples and Castle",
+      "theme": "Kinkakuji at opening, Ryoanji, Nijo Castle. Mid-morning start, balanced day.",
+      "start_time": "08:30",
+      "rows": [
+        { "time": "08:30", "activity": "Breakfast near accommodation", "notes": null },
+        { "time": "09:00–09:45", "activity": "Kinkaku-ji (Golden Pavilion)", "notes": "Arrive at opening. Reflection in Kyoko-chi pond. 45 min is plenty — don't linger." },
+        { "time": "09:45–11:00", "activity": "Ryoan-ji Temple", "notes": "10 min walk from Kinkakuji. Arrive before 10 AM for quiet. Sit in front of the rock garden for 15 minutes — let the arrangement reveal itself." },
+        { "time": "11:00–12:30", "activity": "Walk and explore Kinugasa neighborhood", "notes": "Small temples, local shops — unhurried" },
+        { "time": "12:30–14:00", "activity": "Lunch — Kinkakuji area", "notes": "Many good options near the sites" },
+        { "time": "14:30–16:30", "activity": "Nijo Castle", "notes": "Nightingale floors, Ninomaru Palace. Allow 1.5–2 hrs." },
+        { "time": "17:00", "activity": "Return to Higashiyama", "notes": null },
+        { "time": "19:00", "activity": "Dinner — Gion or Pontocho", "notes": null }
+      ],
+      "day_principles": [
+        "Kinkakuji and Ryoanji are a natural pairing — 10 min apart, both benefit from early arrival.",
+        "This is the easiest day — no dawn start, no long hike. Use it for recovery.",
+        "Nijo Castle is an afternoon activity — doesn't require prime early timing."
+      ]
+    },
+    {
+      "day_number": 4,
+      "date": "2026-04-19",
+      "title": "Philosopher's Path + Central Kyoto",
+      "theme": "Morning canal walk, market at midday, Pontocho farewell dinner.",
+      "start_time": "08:00",
+      "rows": [
+        { "time": "08:00–09:30", "activity": "Philosopher's Path (Tetsugaku-no-Michi)", "notes": "Walk north to south. In April, cherry blossoms line the canal. Before 10 AM — peaceful." },
+        { "time": "09:30–11:00", "activity": "Nanzen-ji Temple", "notes": "At the south end of Philosopher's Path. The brick aqueduct inside the grounds surprises everyone." },
+        { "time": "11:00–13:00", "activity": "Nishiki Market", "notes": "Eat as you walk — pickled vegetables, dashimaki tamago, warabi mochi. Go hungry." },
+        { "time": "13:00–15:00", "activity": "Rest / shopping / free time", "notes": "Last afternoon — unscheduled is fine" },
+        { "time": "19:00–21:00", "activity": "Farewell dinner — Pontocho Alley", "notes": "Reserve in advance. Kaiseki or creative Japanese. The setting is worth the splurge." }
+      ],
+      "day_principles": [
+        "Philosopher's Path is most beautiful in morning light with fewer people.",
+        "Nishiki Market is a walking lunch — don't sit down for a separate meal beforehand.",
+        "Pontocho farewell dinner is the evening anchor — reserve ahead, it's the trip's high note."
+      ]
+    },
+    {
+      "day_number": 5,
+      "date": "2026-04-20",
+      "title": "Departure",
+      "theme": "Pure logistics. No sightseeing.",
+      "rows": [
+        { "time": "07:00", "activity": "Breakfast at accommodation or Kyoto Station", "notes": null },
+        { "time": "08:00", "activity": "Checkout and travel to Kyoto Station", "notes": "20 min by subway or taxi from Higashiyama" },
+        { "time": "11:00", "activity": "Departure — Shinkansen", "notes": "Allow full 3 hours from checkout to departure for luggage storage, station navigation, and platform time" }
+      ],
+      "day_principles": [
+        "Kyoto Station is large and complex. Allow more time than you think.",
+        "Departure day is not a morning to squeeze in Nishiki Market or one more temple.",
+        "Luggage forwarding (takuhaibin) should be arranged the day before if needed."
+      ]
+    }
+  ],
+
+  "claude_analysis": {
+    "overall_grade": "Reference — expert-authored from knowledge",
+    "key_principles_the_human_applied": [
+      {
+        "principle": "Dawn is the only viable window for iconic overcrowded sites",
+        "impact": "CRITICAL",
+        "description": "Arashiyama Bamboo Grove, Fushimi Inari, and Kiyomizudera are utterly different experiences at 06:00 vs 10:00. The crowds don't just reduce quality — they eliminate the experience entirely. These sites require pre-dawn starts as non-negotiable anchors.",
+        "ai_gap": "AI planners tend to schedule these at 09:00–10:00 because that's a 'morning' start. The difference between 06:00 and 09:00 at Arashiyama is the difference between a spiritual experience and a theme park queue."
+      },
+      {
+        "principle": "Kyoto's districts are full-day zones — never mix two districts",
+        "impact": "HIGH",
+        "description": "Arashiyama, Higashiyama, and Northern Kyoto (Kinkakuji area) are each 30–45 minutes apart. Combining any two means 1.5 hrs minimum of dead transit time, plus both feel rushed. Each deserves its own day.",
+        "ai_gap": "AI planners often mix Arashiyama + Higashiyama or Kinkakuji + Fushimi Inari on the same day, which destroys both."
+      },
+      {
+        "principle": "Recovery time after dawn starts",
+        "impact": "HIGH",
+        "description": "A 05:30 departure after a late travel arrival the day before accumulates fatigue fast. The afternoon block (14:00–15:30) on Day 1 is essential. A tired Kyoto traveler stops appreciating the subtlety of what they're seeing.",
+        "ai_gap": "Same as Yellowstone — AI packs the afternoon after an early morning start."
+      },
+      {
+        "principle": "Dusk anchors are as important as dawn anchors",
+        "impact": "HIGH",
+        "description": "Hanamikoji Street (Gion) at 17:00–19:00 and Pontocho at 19:00 are evening anchors that define the trip as much as the temples. Both require being in the right place at the right time — not squeezed in after a full afternoon.",
+        "ai_gap": "AI planners fill evenings with more sightseeing rather than treating evening anchors as first-class scheduling constraints."
+      },
+      {
+        "principle": "The hidden layer beats the famous layer",
+        "impact": "MEDIUM",
+        "description": "Jojakko-ji above Arashiyama, Nanzen-ji's brick aqueduct, the Yotsutsuji viewpoint at Fushimi — these are what separate a Kyoto trip from a Kyoto checklist. They are close to the famous sites but require knowing to look.",
+        "ai_gap": "AI boards include famous sites but may miss the adjacent hidden gem that locals know. The local_tip field should always answer: 'what do visitors who didn't do their research miss here?'"
+      }
+    ],
+
+    "rubric_for_eval_agent": {
+      "coverage_check": {
+        "must_include_on_board": [
+          "Fushimi Inari Taisha",
+          "Arashiyama Bamboo Grove",
+          "Kinkaku-ji",
+          "Kiyomizudera Temple",
+          "Ryoan-ji",
+          "Philosopher's Path",
+          "Nishiki Market",
+          "Gion / Hanamikoji"
+        ],
+        "should_include_on_board": [
+          "Tenryu-ji",
+          "Nijo Castle",
+          "Pontocho",
+          "Ninenzaka / Sannenzaka"
+        ]
+      },
+      "itinerary_scoring_dimensions": [
+        {
+          "dimension": "Dawn timing for iconic sites",
+          "weight": 0.25,
+          "pass_criteria": "Arashiyama Bamboo Grove scheduled before 07:30. Fushimi Inari scheduled before 07:00. Any iconic site with heavy crowds scheduled at opening or before.",
+          "fail_signal": "Arashiyama Bamboo Grove or Fushimi Inari scheduled after 09:00."
+        },
+        {
+          "dimension": "District-per-day coherence",
+          "weight": 0.20,
+          "pass_criteria": "Each day stays within one geographic district. Arashiyama and Higashiyama on separate days. Northern Kyoto (Kinkakuji) on its own day.",
+          "fail_signal": "Arashiyama + any Higashiyama site on the same day. Kinkakuji + Fushimi Inari on same day."
+        },
+        {
+          "dimension": "Evening anchors",
+          "weight": 0.15,
+          "pass_criteria": "Gion/Hanamikoji scheduled at 17:00–19:00 at least once. Pontocho or evening alley dining scheduled at 19:00+.",
+          "fail_signal": "Gion scheduled at 14:00 or Pontocho completely absent."
+        },
+        {
+          "dimension": "Recovery time",
+          "weight": 0.15,
+          "pass_criteria": "At least one unscheduled afternoon block on days starting before 07:00.",
+          "fail_signal": "Activities scheduled back-to-back on days with 05:30–06:00 starts."
+        },
+        {
+          "dimension": "Hidden gems / local knowledge",
+          "weight": 0.10,
+          "pass_criteria": "At least one non-obvious experience included (Jojakko-ji, Nanzen-ji aqueduct, Yotsutsuji viewpoint, specific street in Gion, etc.).",
+          "fail_signal": "Only the famous top-10 sites, nothing that shows destination depth."
+        },
+        {
+          "dimension": "Departure day discipline",
+          "weight": 0.10,
+          "pass_criteria": "No sightseeing on departure morning. Checkout + station navigation only.",
+          "fail_signal": "Temple or market visit scheduled on departure morning."
+        },
+        {
+          "dimension": "Meal quality",
+          "weight": 0.05,
+          "pass_criteria": "At least one Kyoto-specific meal experience named (kaiseki, yudofu, Nishiki Market food walk, soba near temples).",
+          "fail_signal": "Generic 'Japanese restaurant' or no Kyoto food identity in any meal row."
+        }
+      ]
+    }
+  }
+}

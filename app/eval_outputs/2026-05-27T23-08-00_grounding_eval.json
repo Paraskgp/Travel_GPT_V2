@@ -1,0 +1,60 @@
+{
+  "stage": "grounding",
+  "destination": "Zion National Park",
+  "file": "cache/destinations/zion-national-park/experiences.json",
+  "total_experiences": 8,
+  "required_found": [
+    "Pa'rus Trail",
+    "Angels Landing",
+    "Emerald Pools Trail",
+    "Canyon Overlook Trail",
+    "Riverside Walk"
+  ],
+  "required_missing": [],
+  "forbidden_found": [],
+  "category_coverage": {
+    "trail": 8
+  },
+  "required_categories_found": [
+    "trail"
+  ],
+  "required_categories_missing": [
+    "restaurant"
+  ],
+  "total_count": 8,
+  "min_count_met": true,
+  "score": 93,
+  "checks": [
+    {
+      "check": "Required experiences found (5/5)",
+      "passed": true,
+      "detail": "All found"
+    },
+    {
+      "check": "No hallucinated experiences (3 checked)",
+      "passed": true,
+      "detail": "Clean"
+    },
+    {
+      "check": "Required categories covered (1/2)",
+      "passed": false,
+      "detail": "Missing categories: restaurant"
+    },
+    {
+      "check": "Minimum experience count (8 >= 8)",
+      "passed": true,
+      "detail": "OK — 8 experiences"
+    }
+  ],
+  "quality_score": 84,
+  "quality_findings": [
+    "Overall, the experiences provide a mix of factual details and specific location information, but some could benefit from more precise data.",
+    "West Rim Trail: Lacks specific distance and difficulty details, but mentions seasonal accessibility.",
+    "Pa'rus Trail: Includes specific distance and accessibility info, making it a clear and verifiable experience.",
+    "Angels Landing Trail: Provides precise distance, difficulty, safety information, and location specifics for verification.",
+    "The Narrows via Riverside Walk: Includes specific distance, permits required, and clear starting point, though 'walking through water' is vague.",
+    "Emerald Pools Trail: Details regarding distance and trail features are helpful, but lacks exact pool specifics or trail conditions."
+  ],
+  "overall_score": 90,
+  "generated_at": "2026-05-27T23:08:00.414Z"
+}

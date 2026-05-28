@@ -3,7 +3,7 @@
 import { WeatherContext } from '@/lib/types'
 
 interface Props {
-  weather: WeatherContext
+  weather: WeatherContext | null
 }
 
 const MONTH_ORDER = ['January','February','March','April','May','June','July','August','September','October','November','December']
@@ -21,6 +21,7 @@ const SEASON_LABEL: Record<string, string> = {
 }
 
 export default function WeatherTable({ weather }: Props) {
+  if (!weather) return null
   const travelMonth = weather.travel_month
 
   return (

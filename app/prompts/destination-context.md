@@ -36,10 +36,12 @@ Examples: "Volcanic landscape you can walk on", "Coffee grown at 2,000 feet", "G
 - "Paris in August means many locals are away; the city is quieter but some of the best neighborhood restaurants close"
 
 ### recommended_stay_area
-The single best area, neighborhood, lodge zone, or base town for a first-time visitor planning a multi-day trip. Be specific — "Old Faithful Inn area" not "Yellowstone"; "Le Marais" not "Paris"; "Hanalei" not "Kauai." One short phrase, no explanation here (explanation goes in recommended_stay_reason).
+The single best area, neighborhood, lodge zone, or base town for a first-time visitor planning a multi-day trip. Be specific — "Canyon Village" not "Yellowstone"; "Le Marais" not "Paris"; "Hanalei" not "Kauai." One short phrase, no explanation here (explanation goes in recommended_stay_reason).
+
+**Definition of "best":** The location that minimizes total travel time across ALL days of the trip combined — not the location closest to the single most famous attraction. Think hub-and-spoke: which base gives the most central access to the full spread of the destination's experiences? A base that is slightly farther from the #1 attraction but significantly closer to everything else is the better base.
 
 ### recommended_stay_reason
-One sentence. Why is this the best base? Focus on geographic centrality, access to the destination's defining experiences, and practical logistics. Example: "Central to the geyser basins and within 90 minutes of both Lamar Valley and the Grand Canyon of the Yellowstone."
+One sentence. Why is this the best base? Focus on geographic centrality across the full experience spread, not just proximity to one landmark. Example: "Central to the park's most visited areas — equidistant from the wildlife corridors to the northeast, the geyser basins to the southwest, and the canyon to the east."
 
 ### applicable_themes
 List of theme IDs from this approved set that genuinely apply to this destination based on **what the destination has to offer** — not based on any traveler's preferences.

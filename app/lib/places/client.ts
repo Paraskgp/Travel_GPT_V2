@@ -1,7 +1,6 @@
 import { PlacesEnrichment } from "../types"
 
-// Hardcoded for now — move to env later
-const PLACES_API_KEY = process.env.GOOGLE_PLACES_API_KEY ?? "AIzaSyA0C610pee1KhdCBUAt90qvjuXdhte2qBg"
+const PLACES_API_KEY = process.env.GOOGLE_PLACES_API_KEY ?? ""
 
 const BASE = "https://maps.googleapis.com/maps/api/place"
 

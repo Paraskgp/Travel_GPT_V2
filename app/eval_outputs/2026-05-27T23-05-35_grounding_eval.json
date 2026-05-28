@@ -1,0 +1,61 @@
+{
+  "stage": "grounding",
+  "destination": "Zion National Park",
+  "file": "cache/destinations/zion-national-park/experiences.json",
+  "total_experiences": 8,
+  "required_found": [
+    "Pa'rus Trail",
+    "Angels Landing",
+    "Emerald Pools Trail",
+    "Canyon Overlook Trail"
+  ],
+  "required_missing": [
+    "Riverside Walk"
+  ],
+  "forbidden_found": [],
+  "category_coverage": {
+    "trail": 8
+  },
+  "required_categories_found": [
+    "trail"
+  ],
+  "required_categories_missing": [
+    "restaurant"
+  ],
+  "total_count": 8,
+  "min_count_met": true,
+  "score": 83,
+  "checks": [
+    {
+      "check": "Required experiences found (4/5)",
+      "passed": false,
+      "detail": "Missing: Riverside Walk"
+    },
+    {
+      "check": "No hallucinated experiences (3 checked)",
+      "passed": true,
+      "detail": "Clean"
+    },
+    {
+      "check": "Required categories covered (1/2)",
+      "passed": false,
+      "detail": "Missing categories: restaurant"
+    },
+    {
+      "check": "Minimum experience count (8 >= 8)",
+      "passed": true,
+      "detail": "OK — 8 experiences"
+    }
+  ],
+  "quality_score": 66,
+  "quality_findings": [
+    "Overall, experiences vary widely in quality, with some well-documented and others lacking critical information.",
+    "Angels Landing: While it provides some specific details, the elevation gain is missing and key aspects could be more precise.",
+    "The Narrows: Descriptions are vague and lack essential metrics like distance and elevation gain.",
+    "Emerald Pools Trail: Provides some useful information but lacks critical specifics such as distance and elevation.",
+    "Pa’rus Trail: Excellent details including distance, accessibility, and elevation gain make it highly useful.",
+    "Watchman Trail: While giving a good overview, it also lacks key specifics related to distance and elevation gain."
+  ],
+  "overall_score": 78,
+  "generated_at": "2026-05-27T23:05:35.625Z"
+}

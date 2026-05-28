@@ -1,0 +1,404 @@
+{
+  "meta": {
+    "destination": "Zion National Park",
+    "source": "Human-planned itinerary (PDF)",
+    "created_by": "human",
+    "trip_dates": {
+      "start": "2026-11-01",
+      "end": "2026-11-05"
+    },
+    "arrival": "Friday \u2014 travel in",
+    "departure": "Wednesday \u2014 fly home",
+    "base_camp": "Springdale, UT (gateway town outside park entrance)",
+    "lodging_moves": 0,
+    "party_type": "family_young \u2014 explicit toddler-friendly constraint",
+    "critical_context": "EVERY activity decision is filtered through toddler capability. The most iconic Zion experience (The Narrows) is explicitly crossed out. Angels Landing is not even mentioned \u2014 correctly excluded. This is NOT a typical Zion itinerary. The AI must be tested with family_young preference to be comparable."
+  },
+  "locations_visited": [
+    {
+      "name": "Zion Visitor Center",
+      "role": "secondary",
+      "day": 1,
+      "note": "First stop on arrival day. Get park maps, shuttle info, ranger recommendations for toddler-friendly trails."
+    },
+    {
+      "name": "Pa'rus Trail",
+      "role": "headline",
+      "day": 1,
+      "note": "1.7 miles one way, fully paved, stroller-friendly. Along the Virgin River with canyon views. Perfect arrival day walk."
+    },
+    {
+      "name": "Canyon Scenic Drive (shuttle)",
+      "role": "headline",
+      "day": 2,
+      "note": "Ride the free shuttle end-to-end (seasonal). Multiple stops. Let the toddler see the canyon from the shuttle \u2014 no hiking required."
+    },
+    {
+      "name": "Weeping Rock Trail",
+      "role": "secondary",
+      "day": 2,
+      "note": "0.4 miles round trip. Short and shaded. Dripping hanging garden alcove. Easy with toddler."
+    },
+    {
+      "name": "Emerald Pools Trail (Lower Pool only)",
+      "role": "headline",
+      "day": 2,
+      "note": "1.2 miles round trip. Waterfall and pool. Shaded. Lower pool only \u2014 upper pools are too strenuous. Toddler favorite."
+    },
+    {
+      "name": "Grotto Picnic Area",
+      "role": "secondary",
+      "day": 2,
+      "note": "Pack a picnic lunch here near the Virgin River. Flat, shaded, peaceful."
+    },
+    {
+      "name": "Checkerboard Mesa",
+      "role": "secondary",
+      "day": 2,
+      "note": "Drive-by on the Zion-Mt. Carmel Highway. Cool geological crosshatch pattern. Stop for a photo \u2014 15 min."
+    },
+    {
+      "name": "Kolob Canyons (Option A)",
+      "role": "optional",
+      "day": 3,
+      "note": "45-min drive from Springdale. Less crowded. Timber Creek Overlook Trail (1 mile). A genuine alternative to another day in the main canyon."
+    },
+    {
+      "name": "Grotto Trail",
+      "role": "optional",
+      "day": 3,
+      "note": "1 mile round trip. Flat. Good for wildlife spotting with kids."
+    },
+    {
+      "name": "Zion Human History Museum",
+      "role": "optional",
+      "day": 3,
+      "note": "Indoor. Good on hot afternoon or if toddler needs shade and AC break."
+    },
+    {
+      "name": "Virgin River wading",
+      "role": "secondary",
+      "day": 3,
+      "note": "Let toddler splash in the shallow sections near the Grotto. Flat, safe, endlessly entertaining for small children."
+    },
+    {
+      "name": "Zion-Mt. Carmel Tunnel drive",
+      "role": "secondary",
+      "day": 4,
+      "note": "On the way out. Stunning tunnel through the rock. Pull-offs for photos. Zero effort \u2014 just drive it."
+    },
+    {
+      "name": "Canyon Overlook Trail",
+      "role": "secondary",
+      "day": 4,
+      "note": "1 mile round trip. At the east end of the tunnel. Views of lower Zion. Manageable with an older toddler but has some exposed sections."
+    }
+  ],
+  "locations_notably_excluded": [
+    {
+      "name": "The Narrows",
+      "reason": "CROSSED OUT \u2014 requires wading in cold water, not safe or practical with a toddler"
+    },
+    {
+      "name": "Angels Landing",
+      "reason": "Not mentioned \u2014 correctly excluded. Chains section is dangerous even without a toddler."
+    },
+    {
+      "name": "Observation Point",
+      "reason": "Not included \u2014 strenuous 8-mile round trip, not toddler-compatible"
+    },
+    {
+      "name": "Subway",
+      "reason": "Permit required, technical, toddler-incompatible"
+    }
+  ],
+  "days": [
+    {
+      "day_number": 0,
+      "date": "2026-10-31",
+      "title": "Travel in",
+      "theme": "Pure travel. Nothing scheduled at destination.",
+      "rows": [
+        {
+          "time": "All day",
+          "activity": "Travel to Springdale/Zion area",
+          "notes": "Fly into Las Vegas (~2.5 hrs drive to Springdale) or Salt Lake City (~4.5 hrs)"
+        }
+      ]
+    },
+    {
+      "day_number": 1,
+      "date": "2026-11-01",
+      "title": "Arrival & Scenic Exploration",
+      "theme": "Easy arrival day. Visitor Center + Pa'rus Trail. No rushing.",
+      "rows": [
+        {
+          "time": "Morning",
+          "activity": "Check in, settle",
+          "notes": null
+        },
+        {
+          "time": "Mid-morning",
+          "activity": "Zion Visitor Center",
+          "notes": "Maps, shuttle schedule, ranger toddler tips. 30 min."
+        },
+        {
+          "time": "Late morning",
+          "activity": "Pa'rus Trail",
+          "notes": "Paved, stroller-friendly, 1.7 miles along Virgin River. The right energy for an arrival day."
+        },
+        {
+          "time": "Afternoon",
+          "activity": "Rest / pool / free time",
+          "notes": "Toddler nap. Do not over-schedule arrival afternoon."
+        },
+        {
+          "time": "Evening",
+          "activity": "Dinner in Springdale",
+          "notes": null
+        }
+      ]
+    },
+    {
+      "day_number": 2,
+      "date": "2026-11-02",
+      "title": "Lower Canyon & Easy Hikes",
+      "theme": "Canyon shuttle + Emerald Pools + Weeping Rock. Picnic lunch.",
+      "rows": [
+        {
+          "time": "08:30",
+          "activity": "Canyon Scenic Drive via shuttle",
+          "notes": "Ride all the way to Temple of Sinawava and back, stopping at key points. Let toddler enjoy from the shuttle."
+        },
+        {
+          "time": "10:30",
+          "activity": "Weeping Rock Trail",
+          "notes": "0.4 miles. Short, shaded, rewarding. Perfect for toddler energy level."
+        },
+        {
+          "time": "11:30",
+          "activity": "Emerald Pools Trail \u2014 Lower Pool only",
+          "notes": "1.2 miles. Waterfall and turquoise pool. Toddler favorite. Do NOT attempt Upper Pools."
+        },
+        {
+          "time": "13:00",
+          "activity": "Picnic lunch at Grotto Picnic Area",
+          "notes": "Pack from Springdale. Flat, shaded, right on the river."
+        },
+        {
+          "time": "14:30",
+          "activity": "Rest / Virgin River wading (optional)",
+          "notes": "If toddler has energy \u2014 let them splash. If not, head back to accommodation."
+        },
+        {
+          "time": "17:00",
+          "activity": "Drive Checkerboard Mesa on Zion-Mt. Carmel Hwy",
+          "notes": "15-min detour on the way back if heading east. Photo stop."
+        }
+      ]
+    },
+    {
+      "day_number": 3,
+      "date": "2026-11-03",
+      "title": "Kolob Canyons or More Zion",
+      "theme": "Built-in flexibility. Two distinct options \u2014 choose based on toddler energy.",
+      "rows": [
+        {
+          "time": "Option A \u2014 Kolob Canyons",
+          "activity": "45-min drive to Kolob Canyons. Timber Creek Overlook Trail (1 mile). Drive back.",
+          "notes": "Less crowded than main Zion. Good if toddler needs a change of scenery."
+        },
+        {
+          "time": "Option B \u2014 More Zion main canyon",
+          "activity": "Grotto Trail + Virgin River wading + Human History Museum",
+          "notes": "If toddler was tired yesterday and needs another easy day in the familiar main canyon area."
+        }
+      ],
+      "day_principles": [
+        "The human built in explicit flexibility \u2014 this is smart family travel. Don't force a plan, have two options ready.",
+        "The Human History Museum is the indoor backup for hot, tired, or overtired toddlers.",
+        "Do not add strenuous activities to this day even if the toddler seems energetic \u2014 cumulative fatigue hits on Day 3."
+      ]
+    },
+    {
+      "day_number": 4,
+      "date": "2026-11-04",
+      "title": "Relaxed Departure Day",
+      "theme": "Gentle exit. Tunnel drive + Canyon Overlook (optional). Head to airport.",
+      "rows": [
+        {
+          "time": "Morning",
+          "activity": "Checkout and depart Springdale eastward",
+          "notes": null
+        },
+        {
+          "time": "09:00",
+          "activity": "Zion-Mt. Carmel Tunnel drive",
+          "notes": "On the way out. Pull-offs for photos. Zero effort."
+        },
+        {
+          "time": "09:30",
+          "activity": "Canyon Overlook Trail (optional)",
+          "notes": "1 mile. Do this only if toddler is in good shape and you have time."
+        },
+        {
+          "time": "Later",
+          "activity": "Drive to airport",
+          "notes": "Las Vegas or SLC depending on flights"
+        }
+      ]
+    },
+    {
+      "day_number": 5,
+      "date": "2026-11-05",
+      "title": "Fly home",
+      "theme": "Travel day only.",
+      "rows": [
+        {
+          "time": "All day",
+          "activity": "Fly back home",
+          "notes": null
+        }
+      ]
+    }
+  ],
+  "claude_analysis": {
+    "overall_grade": "A \u2014 Excellent family-context filtering and pacing",
+    "key_principles_the_human_applied": [
+      {
+        "principle": "Party type filters everything \u2014 not just activity selection",
+        "impact": "CRITICAL",
+        "description": "With a toddler, the human excluded Angels Landing, The Narrows, Observation Point \u2014 Zion's three most iconic experiences. The entire trip architecture changed. The AI must understand that family_young is not a tag that adds 'kid-friendly' notes \u2014 it fundamentally changes which experiences are viable.",
+        "ai_gap": "An AI given family_young preference might still include Angels Landing with a 'challenging for kids' note. The human's answer is not 'include with a warning' \u2014 it's 'don't include.'"
+      },
+      {
+        "principle": "Built-in flexibility is good planning",
+        "impact": "HIGH",
+        "description": "Day 3 has two explicit options \u2014 Kolob Canyons OR more Zion. The human acknowledged uncertainty about toddler energy on Day 3 and planned for both scenarios. A rigid AI itinerary with a fixed schedule will fail for family travel.",
+        "ai_gap": "AI itineraries are deterministic. Family travel requires branching options. At minimum, the planner should flag 'if energy allows' alternatives rather than committing a full strenuous day."
+      },
+      {
+        "principle": "Shuttle system awareness",
+        "impact": "MEDIUM",
+        "description": "The human specifically planned around Zion's mandatory shuttle system \u2014 not driving into the main canyon. This is a practical reality that changes how you experience the park.",
+        "ai_gap": "AI planners may suggest driving to specific canyon trailheads that are shuttle-only during peak season."
+      },
+      {
+        "principle": "Under-scheduling is correct for family travel",
+        "impact": "HIGH",
+        "description": "The entire trip is deliberately light. 2-3 activities per day max. Long rest periods. The human didn't try to maximize. An AI that packs in 5 activities per day for a family with a toddler has fundamentally misunderstood the context.",
+        "ai_gap": "This is the clearest test of whether the AI's density limits (max 3-4 experiences/day) hold under pressure, and whether it applies appropriate context from party_type."
+      }
+    ],
+    "rubric_for_eval_agent": {
+      "coverage_check": {
+        "must_include_on_board": [
+          "Pa'rus Trail",
+          "Emerald Pools Trail",
+          "Angels Landing",
+          "The Narrows",
+          "Canyon Scenic Drive / shuttle",
+          "Weeping Rock"
+        ],
+        "note": "Angels Landing and The Narrows MUST be on the board (they're Zion's most iconic experiences) \u2014 but they should NOT appear in the itinerary given the family_young party type. Board coverage and itinerary inclusion are separate questions here."
+      },
+      "itinerary_scoring_dimensions": [
+        {
+          "dimension": "Toddler-appropriate filtering",
+          "weight": 0.3,
+          "pass_criteria": "Angels Landing absent from itinerary. The Narrows absent or flagged as not recommended for toddlers. All scheduled activities are paved, short (<2 miles), or explicitly toddler-friendly.",
+          "fail_signal": "Angels Landing or The Narrows scheduled in the itinerary for a family with young children."
+        },
+        {
+          "dimension": "Activity density appropriate to family",
+          "weight": 0.2,
+          "pass_criteria": "Max 2-3 activities per day. Afternoon rest included at least once. No 6 AM starts for a toddler family.",
+          "fail_signal": "4+ activities scheduled on any day, or dawn start times for a family trip."
+        },
+        {
+          "dimension": "Shuttle system referenced",
+          "weight": 0.15,
+          "pass_criteria": "Canyon Scenic Drive mentions the shuttle as the mode, not private car (seasonal restriction).",
+          "fail_signal": "Itinerary tells family to 'drive to Zion Lodge' or 'drive to Weeping Rock' \u2014 not possible during shuttle season."
+        },
+        {
+          "dimension": "Flexibility built in",
+          "weight": 0.15,
+          "pass_criteria": "At least one day has a lighter/alternative option noted. Mid-trip pacing acknowledged.",
+          "fail_signal": "Fully rigid schedule with no flexibility notes on any day."
+        },
+        {
+          "dimension": "Departure discipline",
+          "weight": 0.1,
+          "pass_criteria": "Departure day is light \u2014 scenic drive on the way out, nothing demanding.",
+          "fail_signal": "Strenuous hike scheduled on departure morning."
+        },
+        {
+          "dimension": "Regional gateway awareness",
+          "weight": 0.1,
+          "pass_criteria": "Springdale mentioned as base. Kolob Canyons mentioned as a less-crowded alternative.",
+          "fail_signal": "No mention of Kolob Canyons alternative. Treats Zion as only the main canyon."
+        }
+      ]
+    }
+  },
+  "specs": {
+    "grounding": {
+      "required": [
+        "Pa'rus Trail",
+        "Angels Landing",
+        "Emerald Pools Trail",
+        "Canyon Overlook Trail",
+        "Riverside Walk"
+      ],
+      "forbidden": [
+        "Cerulean Forest Reflection Pool",
+        "Crystal River Trail",
+        "Emerald Springs"
+      ],
+      "min_count": 8,
+      "required_categories": [
+        "trail",
+        "restaurant"
+      ]
+    },
+    "board": {
+      "required": [
+        "Pa'rus Trail",
+        "Angels Landing",
+        "Emerald Pools Trail",
+        "Canyon Overlook Trail"
+      ],
+      "forbidden": [
+        "Cerulean Forest Reflection Pool"
+      ],
+      "required_effort_levels": {
+        "hiking_outdoors": [
+          "easy",
+          "moderate",
+          "strenuous"
+        ]
+      }
+    },
+    "itinerary": {
+      "party_type": "family_young",
+      "max_activities_per_day": 2,
+      "required": [
+        "Pa'rus Trail"
+      ],
+      "forbidden": [
+        "Angels Landing",
+        "The Narrows",
+        "Observation Point",
+        "Subway",
+        "West Rim Trail"
+      ],
+      "shuttle_required": true,
+      "no_activities_after_time": "17:30",
+      "no_activities_before_time": "08:00",
+      "departure_time": "15:00",
+      "arrival_time": "09:00",
+      "max_departure_day_activities": 0
+    }
+  }
+}

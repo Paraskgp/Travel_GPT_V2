@@ -1,0 +1,260 @@
+{
+  "itinerary": {
+    "destination": "Zion National Park",
+    "start_date": "2026-11-15",
+    "end_date": "2026-11-19",
+    "days": [
+      {
+        "date": "2026-11-15",
+        "day_number": 1,
+        "day_title": "Arrival and Zion Museum",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "11:00",
+            "end_time": "12:30",
+            "title": "Zion Human History Museum",
+            "notes": "Step to the south-facing patio to capture stunning views of the Towers of the Virgin canyon walls as they glow with the evening light.",
+            "planning_note": "Starting with this indoor activity because you'll arrive at 09:00. The museum offers both a relaxing introduction to Zion's history and iconic views without physical exertion.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Zion+Human+History+Museum+Springdale",
+            "experience_id": "zion-human-history-museum"
+          },
+          {
+            "type": "meal",
+            "start_time": "12:30",
+            "end_time": "13:30",
+            "title": "Lunch at Oscar's Café",
+            "notes": "Known for its hearty burgers and local craft beers.",
+            "planning_note": "Enjoy a casual lunch in Springdale at Oscar's Café, known for hearty meals that set a strong foundation for the day.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Oscar's+Cafe+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "14:00",
+            "end_time": "15:30",
+            "title": "Pa'rus Trail",
+            "notes": "Look towards the Watchman bathed in evening light for a perfect view.",
+            "planning_note": "Choose this paved, stroller-friendly trail as your first outdoor connection with Zion. It's a short walk that showcases iconic vistas while accommodating the family's reduced energy after travel.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Pa'rus+Trail+Zion+National+Park",
+            "experience_id": "pa-rus-trail"
+          },
+          {
+            "type": "meal",
+            "start_time": "17:00",
+            "end_time": "18:00",
+            "title": "Dinner at Spotted Dog Café",
+            "notes": "Refined dishes made from local ingredients with lovely views of the canyon.",
+            "planning_note": "Suitable for a comforting evening meal with a relaxing atmosphere to unwind on your first day.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Spotted+Dog+Cafe+Springdale",
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-11-16",
+        "day_number": 2,
+        "day_title": "Big Bend and Rest Day",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "17:30",
+            "end_time": "18:00",
+            "title": "Big Bend Viewpoint",
+            "notes": "Position yourself across from Angel's Landing to spot California condors.",
+            "planning_note": "A short, relaxing conclusion to a long day — enjoy soft evening light before heading back to Springdale.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Big+Bend+Viewpoint+Zion+National+Park",
+            "experience_id": "big-bend"
+          },
+          {
+            "type": "meal",
+            "start_time": "19:00",
+            "end_time": "20:00",
+            "title": "Dinner at King's Landing Bistro",
+            "notes": "Indulge in dishes that are a fusion of classic and modern flavors using locally sourced ingredients.",
+            "planning_note": "End the day with a satisfying meal that reflects both the adventurous spirit of Zion and the comforts of American cuisine.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=King's+Landing+Bistro+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "14:00",
+            "end_time": "15:30",
+            "title": "Rest / free time at accommodation",
+            "notes": "Unwind and recharge with some downtime in a comfortable setting.",
+            "planning_note": "Inserted to ensure adequate rest and flexibility during the afternoon.",
+            "maps_url": null,
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-11-17",
+        "day_number": 3,
+        "day_title": "Emerald Pools and Museum",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "09:00",
+            "end_time": "11:30",
+            "title": "Emerald Pools Trail",
+            "notes": "Spot hanging gardens at the junction near Lower Emerald Pool.",
+            "planning_note": "Scheduling it in the cool morning hours ensures a pleasant hike and allows for intimate encounters with Zion's lush pockets and waterfalls.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Emerald+Pools+Trail+Zion+National+Park",
+            "experience_id": "emerald-pools-trail"
+          },
+          {
+            "type": "meal",
+            "start_time": "12:00",
+            "end_time": "13:00",
+            "title": "Lunch at Cafe Soleil",
+            "notes": "A charming café known for fresh salads, sandwiches, and coffee.",
+            "planning_note": "A casual and kid-friendly spot perfect for recharging after your morning hike.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Cafe+Soleil+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "14:00",
+            "end_time": "16:00",
+            "title": "Zion Canyon Scenic Drive",
+            "notes": "Experience quieter stops with strategic views while using the park shuttle.",
+            "planning_note": "An afternoon scenic drive offers rest while still immersing you in Zion's grandeur, and using the shuttle system minimizes effort for the family.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Zion+National+Park+Visitor+Center",
+            "experience_id": "zion-scenic-drive"
+          },
+          {
+            "type": "meal",
+            "start_time": "18:00",
+            "end_time": "19:00",
+            "title": "Dinner at Bit & Spur Restaurant & Saloon",
+            "notes": "Southwestern-inspired dishes and a laid-back atmosphere.",
+            "planning_note": "Close to your accommodations, making it a convenient choice to conclude a relaxed and enjoyable day.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Bit+%26+Spur+Restaurant+%26+Saloon+Springdale",
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-11-18",
+        "day_number": 4,
+        "day_title": "Kolob Canyons and Checkerboard Mesa",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "08:00",
+            "end_time": "09:30",
+            "title": "Timber Creek Overlook Trail",
+            "notes": "Catch a stunning view of Zion's peaks after rain.",
+            "planning_note": "Shifting the start time to 08:00 to allow a less strenuous morning while still providing soft lighting for photos.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Timber+Creek+Overlook+Trail+Kolob+Canyons",
+            "experience_id": "timber-creek-overlook"
+          },
+          {
+            "type": "travel",
+            "start_time": "09:30",
+            "end_time": "11:30",
+            "title": "Travel from Kolob Canyons to Checkerboard Mesa",
+            "notes": null,
+            "planning_note": null,
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "11:30",
+            "end_time": "12:30",
+            "title": "Checkerboard Mesa",
+            "notes": "For the best views, take the short trail to the viewpoint.",
+            "planning_note": "An hour allows ample time to explore the mesa's unique patterns before midday heat.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Checkerboard+Mesa+Zion+National+Park",
+            "experience_id": "checkerboard-mesa"
+          },
+          {
+            "type": "meal",
+            "start_time": "13:00",
+            "end_time": "14:00",
+            "title": "Lunch at Zion Pizza & Noodle Company",
+            "notes": "Great for families with a diverse menu offering pizzas, pastas, and local brews.",
+            "planning_note": "Refuel with diverse options that please different palates in a cozy setting.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Zion+Pizza+%26+Noodle+Company+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "15:30",
+            "end_time": "17:00",
+            "title": "Watch the Sunset at Smithsonian Butte",
+            "notes": "Position halfway up the trail for stunning sunset views.",
+            "planning_note": "Conclude the day with a spectacular sunset, perfect for reflecting on the day's adventures and ideal lighting for photography.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Smithsonian+Butte+Scenic+View+Utah",
+            "experience_id": "watch-sunset-at-smithsonian-butte"
+          },
+          {
+            "type": "meal",
+            "start_time": "19:00",
+            "end_time": "20:00",
+            "title": "Dinner at Whiptail Grill",
+            "notes": "Known for creative Southwestern dishes and outdoor seating with views.",
+            "planning_note": "A relaxed choice with vibrant flavors to end the day around Springdale.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Whiptail+Grill+Springdale",
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-11-19",
+        "day_number": 5,
+        "day_title": "Departure Day",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "08:00",
+            "end_time": "09:00",
+            "title": "Breakfast at MeMe's Café",
+            "notes": "Famous for hearty breakfasts with fresh ingredients.",
+            "planning_note": "Start your last day with a satisfying breakfast that will keep everyone full during your travels.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=MeMe's+Cafe+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "09:30",
+            "end_time": "11:00",
+            "title": "Visit Springdale Farmers Market",
+            "notes": "Discover local ceramics by Tom Burr, a hidden gem.",
+            "planning_note": "Explore the market for souvenirs and engaging interactions with local artisans, a perfect cultural touch before departure.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Springdale+Farmers+Market+Springdale",
+            "experience_id": "visit-springdale-farmers-market"
+          },
+          {
+            "type": "meal",
+            "start_time": "12:00",
+            "end_time": "13:00",
+            "title": "Lunch at Zion Canyon Brew Pub",
+            "notes": "Relax with classic American fare and locally brewed beers.",
+            "planning_note": "A good spot for a final meal in Zion, combining family-friendly environment with satisfying food.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Zion+Canyon+Brew+Pub+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "13:30",
+            "end_time": "15:00",
+            "title": "Drive to Departure Point",
+            "notes": null,
+            "planning_note": null,
+            "maps_url": null,
+            "experience_id": null
+          }
+        ]
+      }
+    ],
+    "change_log": [
+      "Day 2: Removed The Narrows activity due to effort level not suitable for family_young.",
+      "Day 2: Added rest/free time at accommodation for a relaxing afternoon.",
+      "Day 4: Shifted Timber Creek Overlook Trail from 07:00 to 08:00 to avoid early start conflict."
+    ],
+    "generated_at": "2023-11-01T12:00:00Z"
+  }
+}

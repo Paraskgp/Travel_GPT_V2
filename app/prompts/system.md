@@ -84,8 +84,8 @@ You must return valid JSON matching this exact schema. No markdown fences, no co
           "effort": "easy" | "moderate" | "strenuous",
           "cost_band": "free" | "budget" | "mid" | "premium",
           "booking_difficulty": "walk_in" | "reserve_ahead" | "hard_to_get",
-          "best_time": string,         // Specific. e.g. "Sunrise — before 6:30am" not just "morning"
-          "local_tip": string,         // One specific, actionable tip. Never generic.
+          "best_time": string,         // When to go for the best version of this experience. Must be clock-specific for anything time-sensitive: wildlife, light-dependent views, markets, popular attractions, religious ceremonies, sunset spots. Write "06:00–08:00 — first light, wildlife most active" not "morning". If the experience genuinely has two distinct optimal windows (e.g. dawn AND golden hour), list both: "06:00–08:00 or 17:00–20:00 — dawn for activity, dusk for golden light". This field is used directly by the itinerary planner to schedule the row — vague values cause wrong placement.
+          "local_tip": string,         // The single insight that most visitors miss and that changes how they experience this activity. It must answer: what do people who didn't do their research get wrong about this place? This could be a specific physical location within the attraction (a trail branch, a viewpoint, a pullout), a timing nuance, or a crowd trick. Crucially: explain the WHY — don't just say where to go, say why that spot or time is categorically better than the default. This tip appears directly in the traveler's itinerary next to the activity.
           "who_for": string[],         // e.g. ["couples", "first-timers", "food lovers"]
           "what_to_bring": string[],   // Practical gear/prep. Omit if nothing notable.
           "watch_out_for": string,     // Real friction or common mistake. Be honest.

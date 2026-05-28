@@ -1,0 +1,179 @@
+{
+  "overall_score": 56,
+  "overall_grade": "C",
+  "summary": "The AI itinerary for Zion National Park demonstrates moderate coverage of the required sites but fails significantly in adapting the itinerary for a family with young children. It lacks crucial considerations for shuttle restrictions and flexibility, and over-schedules daily activities. Necessary improvements require better alignment with family travel needs and constraints.",
+  "coverage": {
+    "must_have_found": [
+      "Emerald Pools Trail",
+      "Weeping Rock"
+    ],
+    "must_have_missing": [
+      "Pa'rus Trail",
+      "Canyon Scenic Drive (shuttle)"
+    ],
+    "coverage_score": 50
+  },
+  "dimension_scores": [
+    {
+      "dimension": "Toddler-appropriate filtering",
+      "weight": 0.3,
+      "score": 50,
+      "weighted_score": 15,
+      "pass": false,
+      "finding": "The itinerary includes activities appropriate for families but does not explicitly avoid strenous or highly challenging hikes.",
+      "example": "[ACTIVITY] 12:00-13:00 Cedar Breaks National Monument Day Trip | Venture out to see the painted cliffs and bristlecone pines."
+    },
+    {
+      "dimension": "Activity density appropriate to family",
+      "weight": 0.2,
+      "score": 40,
+      "weighted_score": 8,
+      "pass": false,
+      "finding": "Days are packed with activities with no afternoon rest or downtime, unsuitable for families with toddlers.",
+      "example": "Day 2 schedules four activities without any midday rest break."
+    },
+    {
+      "dimension": "Shuttle system referenced",
+      "weight": 0.15,
+      "score": 20,
+      "weighted_score": 3,
+      "pass": false,
+      "finding": "The itinerary does not mention mandatory shuttle use for accessing certain points in the park.",
+      "example": "[ACTIVITY] 12:30-14:30 Zion Canyon Scenic Drive | Spot bighorn sheep near the Great White Throne."
+    },
+    {
+      "dimension": "Flexibility built in",
+      "weight": 0.15,
+      "score": 40,
+      "weighted_score": 6,
+      "pass": false,
+      "finding": "No flexibility is built into any day; there's no allowance for optional activities based on energy levels.",
+      "example": "No alternate plans offered throughout the itinerary."
+    },
+    {
+      "dimension": "Departure discipline",
+      "weight": 0.1,
+      "score": 70,
+      "weighted_score": 7,
+      "pass": true,
+      "finding": "The departure day is lightly scheduled, adhering to relaxed departures.",
+      "example": "[TRAVEL] 08:00-09:00 Drive to departure point."
+    },
+    {
+      "dimension": "Regional gateway awareness",
+      "weight": 0.1,
+      "score": 75,
+      "weighted_score": 7.5,
+      "pass": true,
+      "finding": "Kolob Canyons is included as a regional highlight, showing broader awareness.",
+      "example": "[ACTIVITY] 08:00-10:30 Kolob Canyons | Visit after rain for cascading waterfalls and possible rainbows."
+    }
+  ],
+  "day_analysis": [
+    {
+      "day_number": 1,
+      "date": "2026-11-01",
+      "ai_title": "Arrival and Relaxation",
+      "golden_title": "Arrival & Scenic Exploration",
+      "score": 60,
+      "hits": [
+        "Arrival in Springdale is noted and a local dinner is included."
+      ],
+      "misses": [
+        "Missing visit to Zion Visitor Center and neglect of Pa'rus Trail."
+      ],
+      "worst_mistake": "Failure to include an initial visit to the Visitor Center for orientation."
+    },
+    {
+      "day_number": 2,
+      "date": "2026-11-02",
+      "ai_title": "Adventures in Zion Canyon",
+      "golden_title": "Lower Canyon & Easy Hikes",
+      "score": 45,
+      "hits": [
+        "Inclusion of Lower Emerald Pools Trail and Weeping Rock."
+      ],
+      "misses": [
+        "No mention of shuttle use; day is overscheduled without downtime."
+      ],
+      "worst_mistake": "Scheduling too many activities and omitting shuttle details."
+    },
+    {
+      "day_number": 3,
+      "date": "2026-11-03",
+      "ai_title": "Exploring Checkerboard Mesa and Surrounds",
+      "golden_title": "Kolob Canyons or More Zion",
+      "score": 50,
+      "hits": [
+        "Checkerboard Mesa is covered, offering a unique landscape experience."
+      ],
+      "misses": [
+        "No explicit choice or flexibility for the day's activities."
+      ],
+      "worst_mistake": "No flexibility offered despite potential travel fatigue."
+    },
+    {
+      "day_number": 4,
+      "date": "2026-11-04",
+      "ai_title": "Kolob Canyons and Scenic Drive",
+      "golden_title": "Relaxed Departure Day",
+      "score": 55,
+      "hits": [
+        "Canyon Junction Scenic Drive at Dusk provides a scenic highlight."
+      ],
+      "misses": [
+        "Excess activities planned on a day that should be relaxed."
+      ],
+      "worst_mistake": "Excessive activities scheduled, overlooking relaxation before departure."
+    },
+    {
+      "day_number": 5,
+      "date": "2026-11-05",
+      "ai_title": "Departure",
+      "golden_title": "Fly home",
+      "score": 70,
+      "hits": [
+        "Focused on departure with minimal morning activities, appropriate for the last day."
+      ],
+      "misses": [
+        "Departure point not clearly aligned with where car return or flight logistics might be planned."
+      ],
+      "worst_mistake": "Lack of clarity on travel logistics."
+    }
+  ],
+  "top_failures": [
+    {
+      "failure": "Inadequate toddler-appropriate filtering",
+      "severity": "critical",
+      "description": "Failing to explicitly design the itinerary for families by potentially including strenuous trips unsuitable for toddlers.",
+      "prompt_fix": "When family_young: Exclude all strenuous hikes (e.g., Angels Landing, The Narrows) and focus on paved, short, and toddler-friendly activities."
+    },
+    {
+      "failure": "Inflexible day planning",
+      "severity": "major",
+      "description": "The itinerary lacks flexibility with no options based on energy levels, especially on days prone to fatigue.",
+      "prompt_fix": "Introduce 'if energy allows' alternative activities or options for midday rest."
+    },
+    {
+      "failure": "Shuttle system oversight",
+      "severity": "major",
+      "description": "The AI itinerary neglected the reality of necessary shuttle use in park areas, misleadingly suggesting driving to non-accessible areas.",
+      "prompt_fix": "Explicitly state shuttle-only areas during peak season and provide shuttle schedules in the information."
+    }
+  ],
+  "what_ai_got_right": [
+    "Inclusion of local dining options",
+    "Consideration of iconic yet moderate trails such as Weeping Rock"
+  ],
+  "prompt_improvement_plan": {
+    "itinerary_prompt_changes": [
+      "When designing itineraries for families with young children, ensure activities are limited to short, flat, or paved trails. Include midday rest periods.",
+      "Always mention shuttle system requirements when accessing different parts of the park.",
+      "Provide at least two flexible options for families on potential fatigue days."
+    ],
+    "board_generation_changes": [
+      "Ensure family-oriented considerations are applied automatically to all proposed activities, not just when labeled as 'kid-friendly.'",
+      "Highlight flexible family options such as easy adjustments or alternatives on energy fluctuating days more prominently."
+    ]
+  }
+}

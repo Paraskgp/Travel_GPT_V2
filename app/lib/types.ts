@@ -21,6 +21,22 @@ export interface GenerateRequest {
   preferences?: Preferences
 }
 
+// ─── Search Grounding ─────────────────────────────────────────────────────────
+
+/**
+ * A verified real-world experience extracted from search results.
+ * Produced by Stage 0.7 (experience extractor) and injected into board generation
+ * as the "Known verified experiences" block. This prevents hallucination by
+ * constraining the LLM to real, named places.
+ */
+export interface GroundedExperience {
+  name: string            // The real, verifiable name of the place or experience
+  location: string        // Named location (trail name, neighborhood, restaurant name, etc.)
+  category: string        // e.g. "trail", "viewpoint", "restaurant", "museum", "tour"
+  key_facts: string[]     // 2–4 factual bullets: distance, elevation, hours, price, etc.
+  source_url: string      // The search result URL that verified this experience
+}
+
 // ─── Pipeline Nodes ───────────────────────────────────────────────────────────
 
 export interface DestinationContext {
@@ -119,9 +135,34 @@ export interface Theme {
 export interface Board {
   destination: string
   destination_context: DestinationContext
-  weather_context: WeatherContext
+  weather_context: WeatherContext | null
   themes: Theme[]
+  preferences?: Preferences
   generated_at: string
+}
+
+// ─── Clustering ──────────────────────────────────────────────────────────────
+
+export interface TravelPair {
+  from_id: string             // experience id
+  to_id: string               // experience id
+  walk_min: number            // estimated walking minutes (999 if not walkable)
+  drive_min: number           // estimated driving minutes
+  mode: "walk" | "car"        // recommended mode for a typical traveler
+}
+
+export interface ExperienceCluster {
+  id: string                  // e.g. "cluster-old-faithful-basin"
+  name: string                // display name e.g. "Old Faithful Basin"
+  anchor_id: string           // the experience that defines the cluster's location
+  experience_ids: string[]    // all experiences in this cluster
+  zone: string                // named geographic zone e.g. "Geyser Country"
+  cluster_note: string | null // caveats — elevation, family suitability, logistics
+}
+
+export interface ClusterResult {
+  pairs: TravelPair[]
+  clusters: ExperienceCluster[]
 }
 
 // ─── Itinerary Planning ───────────────────────────────────────────────────────
@@ -132,6 +173,7 @@ export interface ItineraryRow {
   end_time: string            // e.g. "11:30"
   title: string               // activity/restaurant name or "Walk to X" / "Drive to X"
   notes: string               // local tip, context, or travel instruction
+  planning_note: string | null // user-facing reasoning: why this is scheduled here, what to expect
   maps_url: string | null     // Google Maps link — null for travel rows with no fixed destination
   experience_id: string | null // links back to the board experience; null for meals/travel
 }
@@ -148,6 +190,7 @@ export interface Itinerary {
   start_date: string
   end_date: string
   days: ItineraryDay[]
+  change_log: string[]        // Pass 2 reviewer notes — what was adjusted and why (internal)
   generated_at: string
 }
 
@@ -158,12 +201,14 @@ export interface PlanRequest {
   arrival_time?: string       // e.g. "09:00"
   departure_time?: string     // e.g. "14:00"
   stay_area?: string          // where they're sleeping — anchor for all day routing
+  preferences?: Preferences   // traveler preferences — used for party-type filtering etc.
   forced_ids?: string[]       // user said "must include these"
   skipped_ids?: string[]      // user said "skip these"
 }
 
 export interface PlanResponse {
   itinerary: Itinerary
+  clusters?: ClusterResult  // included for debugging / UI map use
 }
 
 // ─── API Responses ────────────────────────────────────────────────────────────

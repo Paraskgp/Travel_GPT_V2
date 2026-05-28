@@ -25,3 +25,26 @@ Ask yourself: what are the 2–3 images that define this destination's global id
 - `watch_out_for` should be honest — if something is crowded, overpriced, or requires careful timing, say so plainly
 - Rank by: most essential and broadly relevant first, more conditional or niche later
 - Aim for 6–10 cards. For destinations with rich depth (major national parks, world-class cities), go to 10.
+
+## Party type lens — apply BEFORE selecting experiences
+
+If `party_type` is specified in Traveler Preferences, generate Signature through that lens from the start — not by filtering a generic list afterward.
+
+**family_young**: The iconic experiences of this destination still belong on the board so the traveler knows what the destination is famous for. But for each iconic experience that is strenuous or inaccessible, also include its accessible equivalent in the same card or as a companion card. The traveler with a toddler needs to know: "Here is what this destination is known for, and here is the version of it that actually works for your family."
+
+Required coverage for `family_young` — your Signature cards MUST include at least:
+1. One accessible/paved short walk or boardwalk that gives a real sense of the destination (not just a "nice stroll" — the specific trail or path that is the best low-effort window into this place)
+2. One drive-to or drive-through experience (scenic road, tunnel, overlook) that requires no walking
+3. One indoor/visitor center experience for rest and context
+
+These are in addition to the iconic experiences. Do not replace the iconic experiences with only easy ones — surface both.
+
+**older_parents**: Same approach as family_young for the accessibility companion experiences.
+
+**solo / couple / family_teens**: No change — standard Signature generation.
+
+## Self-check before returning
+
+Before returning your response, ask two questions:
+1. What are the 3–5 experiences that define this destination's global identity — the ones that would appear on the cover of a travel magazine or documentary about this place? Every single one of them must appear somewhere on the board. If any are missing from your response, add them now.
+2. If `party_type` is `family_young` or `older_parents`: is there at least one paved/accessible walk, one drive-to experience, and one indoor experience in this Signature list? If not, add them.

@@ -1,36 +1,78 @@
 import OpenAI from "openai"
 import Anthropic from "@anthropic-ai/sdk"
 
-export type Provider = "openai" | "anthropic"
+export type Provider = "openai" | "anthropic" | "gemini"
 
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY ?? ""
+// Stage-level routing: some stages need quality (board gen), others just need speed + cost.
+// Pass a stage hint to callLLM to get the right model automatically.
+export type Stage =
+  | "query_generator"     // generates search queries — cheap
+  | "experience_extractor" // extracts facts from scraped HTML — cheap, benefits from long context
+  | "tip_enhancement"     // rewrites a single local tip — cheap
+  | "board_generation"    // generates experience cards — quality matters, keep strong model
+  | "destination_context" // destination metadata — moderate quality needed
+  | "weather_context"     // weather summary — cheap
+  | "default"
+
+const OPENAI_API_KEY    = process.env.OPENAI_API_KEY    ?? ""
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY ?? ""
+const GOOGLE_AI_API_KEY = process.env.GOOGLE_AI_API_KEY ?? ""
+
+// ── Model registry ─────────────────────────────────────────────────────────────
 
 const MODELS: Record<Provider, string> = {
-  openai: "gpt-4o",
-  anthropic: "claude-sonnet-4-6",
+  openai:    "gpt-4o",
+  anthropic: "claude-sonnet-4-5",
+  gemini:    "gemini-2.5-flash",
 }
+
+// ── Stage → provider routing ───────────────────────────────────────────────────
+//
+// Cheap stages (query gen, extractor, tips) → Gemini 2.0 Flash
+//   - $0.10/1M input vs $2.50/1M for GPT-4o (25× cheaper)
+//   - 1M context window — ideal for experience extractor with many scraped pages
+//   - No quality difference visible in the product for these stages
+//
+// Board generation → GPT-4o (default) or Claude
+//   - This is what users see. DeepSeek V3 / Gemini 2.0 Flash Pro are candidates
+//     once validated via eval-board.ts head-to-head. See PRODUCT_SPEC.md open items.
+//
+// Falls back to the explicitly passed provider if no stage routing applies.
+//
+function resolveProvider(provider: Provider, stage?: Stage): Provider {
+  if (!stage || stage === "default") return provider
+
+  // Cheap stages: use Gemini if key is available, otherwise fall back to passed provider
+  const cheapStages: Stage[] = ["query_generator", "experience_extractor", "tip_enhancement", "weather_context", "destination_context"]
+  if (cheapStages.includes(stage) && GOOGLE_AI_API_KEY) return "gemini"
+
+  return provider
+}
+
+// ── Helpers ───────────────────────────────────────────────────────────────────
 
 const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms))
 
-// Extract retry-after seconds from OpenAI 429 error message
-// e.g. "Please try again in 3.835s."
 function parseRetryAfter(message: string): number {
   const match = message.match(/try again in ([\d.]+)s/i)
   if (match) return Math.ceil(parseFloat(match[1])) * 1000
-  return 10_000 // default 10s
+  return 10_000
 }
+
+// ── callLLM ──────────────────────────────────────────────────────────────────
 
 export async function callLLM(
   systemPrompt: string,
   userPrompt: string,
-  provider: Provider = "openai"
+  provider: Provider = "openai",
+  stage?: Stage
 ): Promise<string> {
-  const model = MODELS[provider]
+  const resolvedProvider = resolveProvider(provider, stage)
+  const model = MODELS[resolvedProvider]
 
-  if (provider === "openai") {
+  // ── OpenAI ──────────────────────────────────────────────────────────────────
+  if (resolvedProvider === "openai") {
     const client = new OpenAI({ apiKey: OPENAI_API_KEY })
-
     const MAX_RETRIES = 4
     let lastError: unknown
 
@@ -38,10 +80,10 @@ export async function callLLM(
       try {
         const response = await client.chat.completions.create({
           model,
-          max_tokens: 16384, // gpt-4o max output
+          max_tokens: 16384,
           messages: [
             { role: "system", content: systemPrompt },
-            { role: "user", content: userPrompt },
+            { role: "user",   content: userPrompt },
           ],
         })
         const choice = response.choices[0]
@@ -51,24 +93,57 @@ export async function callLLM(
         return choice?.message?.content ?? ""
       } catch (err: unknown) {
         lastError = err
-        const isRateLimit =
-          err instanceof OpenAI.APIError && err.status === 429
+        const isRateLimit = err instanceof OpenAI.APIError && err.status === 429
         if (!isRateLimit || attempt === MAX_RETRIES - 1) throw err
-
-        const waitMs = parseRetryAfter(
-          err instanceof OpenAI.APIError ? (err.message ?? "") : ""
-        )
-        console.warn(
-          `[callLLM] OpenAI 429 rate limit — waiting ${waitMs}ms before retry ${attempt + 1}/${MAX_RETRIES - 1}`
-        )
+        const waitMs = parseRetryAfter(err instanceof OpenAI.APIError ? (err.message ?? "") : "")
+        console.warn(`[callLLM] OpenAI 429 rate limit — waiting ${waitMs}ms before retry ${attempt + 1}/${MAX_RETRIES - 1}`)
         await sleep(waitMs)
       }
     }
-
     throw lastError
   }
 
-  if (provider === "anthropic") {
+  // ── Gemini (via OpenAI-compatible endpoint) ───────────────────────────────
+  // Google exposes a /v1beta/openai/ endpoint that accepts OpenAI SDK calls.
+  // No new SDK dependency needed.
+  if (resolvedProvider === "gemini") {
+    const client = new OpenAI({
+      apiKey: GOOGLE_AI_API_KEY,
+      baseURL: "https://generativelanguage.googleapis.com/v1beta/openai/",
+    })
+    const MAX_RETRIES = 3
+    let lastError: unknown
+
+    for (let attempt = 0; attempt < MAX_RETRIES; attempt++) {
+      try {
+        const response = await client.chat.completions.create({
+          model,
+          max_tokens: 8192,
+          messages: [
+            { role: "system", content: systemPrompt },
+            { role: "user",   content: userPrompt },
+          ],
+        })
+        const choice = response.choices[0]
+        if (choice.finish_reason === "length") {
+          console.warn("[callLLM] Gemini response cut off by max_tokens limit")
+        }
+        return choice?.message?.content ?? ""
+      } catch (err: unknown) {
+        lastError = err
+        // Gemini 429s look like OpenAI 429s through the compat layer
+        const isRateLimit = err instanceof OpenAI.APIError && err.status === 429
+        if (!isRateLimit || attempt === MAX_RETRIES - 1) throw err
+        const waitMs = parseRetryAfter(err instanceof OpenAI.APIError ? (err.message ?? "") : "")
+        console.warn(`[callLLM] Gemini 429 rate limit — waiting ${waitMs}ms before retry ${attempt + 1}/${MAX_RETRIES - 1}`)
+        await sleep(waitMs)
+      }
+    }
+    throw lastError
+  }
+
+  // ── Anthropic ─────────────────────────────────────────────────────────────
+  if (resolvedProvider === "anthropic") {
     const client = new Anthropic({ apiKey: ANTHROPIC_API_KEY })
     const response = await client.messages.create({
       model,
@@ -82,5 +157,5 @@ export async function callLLM(
       .join("")
   }
 
-  throw new Error(`Unknown provider: ${provider}`)
+  throw new Error(`Unknown provider: ${resolvedProvider}`)
 }

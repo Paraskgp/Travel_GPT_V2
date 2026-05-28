@@ -1,0 +1,376 @@
+{
+  "itinerary": {
+    "destination": "Zion National Park",
+    "start_date": "2026-05-20",
+    "end_date": "2026-05-25",
+    "days": [
+      {
+        "date": "2026-05-20",
+        "day_number": 1,
+        "day_title": "Arrival in Zion",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "16:00",
+            "end_time": "16:30",
+            "title": "Check-in at Springdale",
+            "notes": "Arrive and settle into your accommodation.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Springdale+Zion+National+Park",
+            "experience_id": null
+          },
+          {
+            "type": "meal",
+            "start_time": "18:00",
+            "end_time": "19:00",
+            "title": "Dinner at Oscars Cafe",
+            "notes": "Enjoy some classic American fare.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Oscars+Cafe+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "19:30",
+            "end_time": "20:30",
+            "title": "Evening Leisure Stroll in Springdale",
+            "notes": "Walk around Springdale to get a feel for the town.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Springdale+Zion+National+Park",
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-05-21",
+        "day_number": 2,
+        "day_title": "Discovering Zion",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "07:30",
+            "end_time": "08:30",
+            "title": "Breakfast at Zion Lodge",
+            "notes": "Start your day with a hearty breakfast at the lodge.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Zion+Lodge+Zion+National+Park",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "08:30",
+            "end_time": "09:00",
+            "title": "Shuttle to Temple of Sinawava",
+            "notes": "Get the park shuttle from the visitor center to the trailhead.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Temple+of+Sinawava+Zion+National+Park",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "09:00",
+            "end_time": "11:00",
+            "title": "Riverside Walk",
+            "notes": "Stop at the bend where the river makes a sharp right at high noon; the reflected light will illuminate the water.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Temple+of+Sinawava+Zion+National+Park",
+            "experience_id": "riverside-walk"
+          },
+          {
+            "type": "travel",
+            "start_time": "11:00",
+            "end_time": "11:30",
+            "title": "Return to Springdale",
+            "notes": "Head back to Springdale for lunch.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Springdale+Zion+National+Park",
+            "experience_id": null
+          },
+          {
+            "type": "meal",
+            "start_time": "12:00",
+            "end_time": "13:00",
+            "title": "Lunch at Cafe Soleil",
+            "notes": "Relax with a casual lunch of sandwiches and salads.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Cafe+Soleil+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "14:00",
+            "end_time": "15:30",
+            "title": "Check out the Springdale Visitor Center",
+            "notes": "Learn about the park's history and get some maps.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Springdale+Visitor+Center+Zion+National+Park",
+            "experience_id": null
+          },
+          {
+            "type": "meal",
+            "start_time": "18:00",
+            "end_time": "19:00",
+            "title": "Dinner at Bit & Spur",
+            "notes": "Enjoy a Southwestern dinner.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Bit+%26+Spur+Springdale",
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-05-22",
+        "day_number": 3,
+        "day_title": "Zion Canyon Highlights",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "07:30",
+            "end_time": "08:30",
+            "title": "Breakfast at MeMe's Cafe",
+            "notes": "Get a good start with delicious waffles or breakfast burritos.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=MeMe%27s+Cafe+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "08:30",
+            "end_time": "09:00",
+            "title": "Travel to Emerald Pools Trailhead",
+            "notes": "Drive to the trailhead for your morning hike.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Emerald+Pools+Trailhead+Zion+National+Park",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "09:00",
+            "end_time": "11:00",
+            "title": "Emerald Pools Trail",
+            "notes": "Stop at the footbridge halfway to enjoy reflections of the red cliffs in the Middle Pool.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Emerald+Pools+Trail+Zion+National+Park",
+            "experience_id": "emerald-pools-trail"
+          },
+          {
+            "type": "travel",
+            "start_time": "11:00",
+            "end_time": "11:30",
+            "title": "Return to Springdale for Lunch",
+            "notes": "Head back downtown for a meal.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Springdale+Zion+National+Park",
+            "experience_id": null
+          },
+          {
+            "type": "meal",
+            "start_time": "12:00",
+            "end_time": "13:00",
+            "title": "Lunch at Spotted Dog Cafe",
+            "notes": "Enjoy a hearty lunch at this local favorite.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Spotted+Dog+Cafe+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "15:00",
+            "end_time": "17:00",
+            "title": "Zion Canyon Scenic Drive",
+            "notes": "Capture sunset reflections of the Watchman from Canyon Junction Bridge.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Zion+Canyon+Scenic+Drive+Zion+National+Park",
+            "experience_id": "zion-canyon-scenic-drive"
+          },
+          {
+            "type": "travel",
+            "start_time": "17:00",
+            "end_time": "17:30",
+            "title": "Return to Springdale",
+            "notes": "Head back to town for dinner.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Springdale+Zion+National+Park",
+            "experience_id": null
+          },
+          {
+            "type": "meal",
+            "start_time": "18:00",
+            "end_time": "19:00",
+            "title": "Dinner at King's Landing Bistro",
+            "notes": "A relaxed dinner with views of the park.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=King%27s+Landing+Bistro+Springdale",
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-05-23",
+        "day_number": 4,
+        "day_title": "Explore More of Zion",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "07:30",
+            "end_time": "08:30",
+            "title": "Breakfast at Deep Creek Coffee",
+            "notes": "Start with artisan coffee and breakfast dishes.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Deep+Creek+Coffee+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "08:30",
+            "end_time": "09:00",
+            "title": "Travel to Weeping Rock",
+            "notes": "Drive to the Weeping Rock trailhead for a short hike.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Weeping+Rock+Zion+National+Park",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "09:00",
+            "end_time": "09:30",
+            "title": "Weeping Rock Viewpoint",
+            "notes": "Stand at the far end of the viewing area to watch the drips align perfectly with the sunrise glow.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Weeping+Rock+Zion+National+Park",
+            "experience_id": "weeping-rock-viewpoint"
+          },
+          {
+            "type": "travel",
+            "start_time": "09:30",
+            "end_time": "10:00",
+            "title": "Travel to Canyon Overlook Trail",
+            "notes": "Drive to the Canyon Overlook trailhead located near the east entrance.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Canyon+Overlook+Trail+Zion+National+Park",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "10:00",
+            "end_time": "11:00",
+            "title": "Canyon Overlook Trail",
+            "notes": "Look for the rock ledge at the end for a stunning view of sandstone formations.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Canyon+Overlook+Trail+Zion+National+Park",
+            "experience_id": "canyon-overlook-trail"
+          },
+          {
+            "type": "travel",
+            "start_time": "11:00",
+            "end_time": "11:30",
+            "title": "Return to Springdale",
+            "notes": "Head back to town for lunch.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Springdale+Zion+National+Park",
+            "experience_id": null
+          },
+          {
+            "type": "meal",
+            "start_time": "12:00",
+            "end_time": "13:00",
+            "title": "Lunch at Wildcat Willies",
+            "notes": "Dive into Western-themed dishes to refuel.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Wildcat+Willies+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "15:00",
+            "end_time": "17:00",
+            "title": "Watchman Trail Viewpoint",
+            "notes": "For the best panorama, stand by the large boulder to contrast the Virgin River against the Watchman peak.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Watchman+Trailhead+Zion+National+Park",
+            "experience_id": "watchman-trail-viewpoint"
+          },
+          {
+            "type": "meal",
+            "start_time": "18:00",
+            "end_time": "19:00",
+            "title": "Dinner at Whiptail Grill",
+            "notes": "Enjoy delicious Mexican cuisine with a twist.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Whiptail+Grill+Springdale",
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-05-24",
+        "day_number": 5,
+        "day_title": "Signature Zion Experience",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "07:30",
+            "end_time": "08:30",
+            "title": "Breakfast at Bumbleberry Inn",
+            "notes": "Savor their famous bumbleberry pie with breakfast.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Bumbleberry+Inn+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "08:30",
+            "end_time": "09:00",
+            "title": "Travel to The Narrows Trailhead",
+            "notes": "Shuttle to the trailhead to start the Narrows hike.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=The+Narrows+Zion+National+Park",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "09:00",
+            "end_time": "13:00",
+            "title": "The Narrows Hike",
+            "notes": "Venture into Orderville Canyon for spectacular lighting effects.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=The+Narrows+Zion+National+Park",
+            "experience_id": "the-narrows-hike"
+          },
+          {
+            "type": "travel",
+            "start_time": "13:00",
+            "end_time": "13:30",
+            "title": "Return to Springdale for Lunch",
+            "notes": "Head back downtown for a meal.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Springdale+Zion+National+Park",
+            "experience_id": null
+          },
+          {
+            "type": "meal",
+            "start_time": "13:30",
+            "end_time": "14:30",
+            "title": "Lunch at Switchback Grille",
+            "notes": "Refuel with fine dining and great views.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Switchback+Grille+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "15:30",
+            "end_time": "17:00",
+            "title": "Petroglyph Placards Exploration",
+            "notes": "Explore ancient petroglyphs near Northgate Peaks Trail.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Northgate+Peaks+Trail+Zion+National+Park",
+            "experience_id": "petroglyph_placards"
+          },
+          {
+            "type": "meal",
+            "start_time": "18:00",
+            "end_time": "19:00",
+            "title": "Dinner at Jack's Sports Grill",
+            "notes": "Wind down with a casual dinner.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Jack%27s+Sports+Grill+Springdale",
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-05-25",
+        "day_number": 6,
+        "day_title": "Departure",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "08:00",
+            "end_time": "09:00",
+            "title": "Breakfast at Perks Coffee Co",
+            "notes": "Enjoy your last breakfast before departure.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Perks+Coffee+Co+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "09:30",
+            "end_time": "10:00",
+            "title": "Check-out",
+            "notes": "Prepare for departure.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Springdale+Zion+National+Park",
+            "experience_id": null
+          }
+        ]
+      }
+    ],
+    "generated_at": "2023-11-02T12:00:00Z"
+  }
+}

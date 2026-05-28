@@ -1,0 +1,61 @@
+{
+  "stage": "grounding",
+  "destination": "Zion National Park",
+  "file": "cache/destinations/zion-national-park/experiences.json",
+  "total_experiences": 10,
+  "required_found": [
+    "Pa'rus Trail",
+    "Angels Landing",
+    "Emerald Pools Trail",
+    "Canyon Overlook Trail",
+    "Riverside Walk"
+  ],
+  "required_missing": [],
+  "forbidden_found": [],
+  "category_coverage": {
+    "trail": 7,
+    "scenic drive": 1,
+    "restaurant": 2
+  },
+  "required_categories_found": [
+    "trail",
+    "restaurant"
+  ],
+  "required_categories_missing": [],
+  "total_count": 10,
+  "min_count_met": true,
+  "score": 100,
+  "checks": [
+    {
+      "check": "Required experiences found (5/5)",
+      "passed": true,
+      "detail": "All found"
+    },
+    {
+      "check": "No hallucinated experiences (3 checked)",
+      "passed": true,
+      "detail": "Clean"
+    },
+    {
+      "check": "Required categories covered (2/2)",
+      "passed": true,
+      "detail": "Found: trail, scenic drive, restaurant"
+    },
+    {
+      "check": "Minimum experience count (10 >= 8)",
+      "passed": true,
+      "detail": "OK — 10 experiences"
+    }
+  ],
+  "quality_score": 47,
+  "quality_findings": [
+    "All experiences have concrete factual information but vary slightly in the level of detail provided.",
+    "Pa'rus Trail: All facts are specific, factual, and provide a clear understanding of the trail's features.",
+    "Angels Landing: The information is accurate, factual, and includes specific details about the trail's demands and requirements.",
+    "Watchman Trail: The facts are mostly factual and informative, but could enhance realism by specifying views or key landmarks.",
+    "Canyon Overlook Trail: The details are precise and factual, effectively conveying the trail characteristics.",
+    "Zion Narrows Riverside Walk: While the facts are generally clear, the description could benefit from additional specifics about distance and accessibility specifics."
+  ],
+  "overall_score": 84,
+  "generated_at": "2026-05-27T22:03:02.082Z"
+}

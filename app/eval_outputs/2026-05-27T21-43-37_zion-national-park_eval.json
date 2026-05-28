@@ -1,0 +1,185 @@
+{
+  "overall_score": 48,
+  "overall_grade": "D",
+  "summary": "The AI-generated itinerary exhibits several crucial issues, notably in overlooking party-specific needs such as toddler accommodations, failing to implement flexibility, and over-scheduling. While it correctly identifies some scenic activities, it misses critical information concerning shuttle requirements and gateway options.",
+  "coverage": {
+    "must_have_found": [
+      "Pa'rus Trail",
+      "Emerald Pools Trail"
+    ],
+    "must_have_missing": [
+      "Canyon Scenic Drive / shuttle",
+      "Weeping Rock"
+    ],
+    "coverage_score": 67
+  },
+  "dimension_scores": [
+    {
+      "dimension": "Toddler-appropriate filtering",
+      "weight": 0.3,
+      "score": 60,
+      "weighted_score": 18,
+      "pass": false,
+      "finding": "The itinerary includes a hike without specifying its appropriateness for toddlers and fails to completely exclude challenging hikes like Angel's Landing.",
+      "example": "Includes Timber Creek Overlook Trail, which may not be suitable for toddlers."
+    },
+    {
+      "dimension": "Activity density appropriate to family",
+      "weight": 0.2,
+      "score": 30,
+      "weighted_score": 6,
+      "pass": false,
+      "finding": "Several days exceed the recommended number of activities and lack necessary downtime for a family with a toddler.",
+      "example": "Day 2 has four activities planned without rest periods."
+    },
+    {
+      "dimension": "Shuttle system referenced",
+      "weight": 0.15,
+      "score": 75,
+      "weighted_score": 11.25,
+      "pass": true,
+      "finding": "While the itinerary references the shuttle system, it does not emphasize its necessity correctly.",
+      "example": "Mentions Zion Canyon Shuttle but fails to guide users on its mandatory nature."
+    },
+    {
+      "dimension": "Flexibility built in",
+      "weight": 0.15,
+      "score": 40,
+      "weighted_score": 6,
+      "pass": false,
+      "finding": "The itinerary lacks flexibility, providing no alternative activities based on family energy levels.",
+      "example": "No alternative plans offered for energy fluctuations on Day 3."
+    },
+    {
+      "dimension": "Departure discipline",
+      "weight": 0.1,
+      "score": 60,
+      "weighted_score": 6,
+      "pass": false,
+      "finding": "Departure day includes extensive travel time without any light activities considerations.",
+      "example": "Departure time indicates lengthy travel without scenic, low-stress activities."
+    },
+    {
+      "dimension": "Regional gateway awareness",
+      "weight": 0.1,
+      "score": 50,
+      "weighted_score": 5,
+      "pass": false,
+      "finding": "Kolob Canyons is included, yet not explored as an alternative to main Zion for less crowded experiences.",
+      "example": "Features Kolob Canyons but lacks detailed consideration for this as a core part of itinerary flexibility."
+    }
+  ],
+  "day_analysis": [
+    {
+      "day_number": 1,
+      "date": "2026-11-15",
+      "ai_title": "Arrival and Orientation",
+      "golden_title": "Arrival & Scenic Exploration",
+      "score": 50,
+      "hits": [
+        "Includes Pa'rus Trail",
+        "Lunch at a scenic spot"
+      ],
+      "misses": [
+        "Over-scheduled for an arrival day",
+        "Includes Zion Human History Museum instead of downtime"
+      ],
+      "worst_mistake": "Lacks necessary rest after arrival."
+    },
+    {
+      "day_number": 2,
+      "date": "2026-11-16",
+      "ai_title": "Zion Main Canyon Exploration",
+      "golden_title": "Lower Canyon & Easy Hikes",
+      "score": 40,
+      "hits": [
+        "Proper use of shuttle system"
+      ],
+      "misses": [
+        "Over-scheduled with four activities",
+        "No rest periods for toddler"
+      ],
+      "worst_mistake": "Dense schedule without consideration for toddler capacity."
+    },
+    {
+      "day_number": 3,
+      "date": "2026-11-17",
+      "ai_title": "Explorations in Kolob Canyons",
+      "golden_title": "Kolob Canyons or More Zion",
+      "score": 50,
+      "hits": [
+        "Inclusion of Kolob Canyons"
+      ],
+      "misses": [
+        "Lack of flexible options",
+        "Checkerboard Mesa stop might not be appropriate for toddlers"
+      ],
+      "worst_mistake": "No acknowledgment of energy variation and rest needs."
+    },
+    {
+      "day_number": 4,
+      "date": "2026-11-18",
+      "ai_title": "Unique and Seasonal Experiences",
+      "golden_title": "Relaxed Departure Day",
+      "score": 40,
+      "hits": [
+        "Seasonal hikes included"
+      ],
+      "misses": [
+        "Rigid schedule",
+        "Rockville Ghost Town not suitable for families with young kids"
+      ],
+      "worst_mistake": "Failure to prioritize family-friendly timing and activities."
+    },
+    {
+      "day_number": 5,
+      "date": "2026-11-19",
+      "ai_title": "Departure Day",
+      "golden_title": "Relaxed Departure Day",
+      "score": 40,
+      "hits": [
+        "Includes one proper meal"
+      ],
+      "misses": [
+        "Heavy focus on travel without light activities",
+        "Lack of scenic departure options"
+      ],
+      "worst_mistake": "Misses scenic or relaxing options on departure."
+    }
+  ],
+  "top_failures": [
+    {
+      "failure": "Over-scheduling and lack of downtime",
+      "severity": "critical",
+      "description": "The itinerary consistently over-schedules activities, particularly on arrival and Day 2, not taking into account the need for rest and relaxation.",
+      "prompt_fix": "Incorporate mandatory rest periods after major travel events and limit activities to 2-3 per day for family itineraries."
+    },
+    {
+      "failure": "Inadequate flexibility for family travel",
+      "severity": "major",
+      "description": "The itinerary lacks alternative options for varying energy levels, crucial for families with toddlers.",
+      "prompt_fix": "Introduce alternate paths for mid-day activities to accommodate changing energy levels in family contexts."
+    },
+    {
+      "failure": "Incorrect shuttle system adherence",
+      "severity": "major",
+      "description": "While the shuttle system is mentioned, its criticality and exclusivity during peak seasons is not sufficiently emphasized.",
+      "prompt_fix": "Ensure that itineraries stress the necessity and restrictions of shuttle use in national parks during peak periods."
+    }
+  ],
+  "what_ai_got_right": [
+    "Inclusion of Pa'rus Trail, a recommended family-friendly hike.",
+    "Mindful mention of shuttle transport within the park.",
+    "Recognized the value of including meals at scenic or local venues."
+  ],
+  "prompt_improvement_plan": {
+    "itinerary_prompt_changes": [
+      "Emphasize the imperative of resting periods in family itineraries, ensuring no more than 3 activities are scheduled.",
+      "Add guidelines for determining suitable toddler-friendly activities based on distance and terrain."
+    ],
+    "board_generation_changes": [
+      "Ensure the inclusion of major park features like the Canyon Scenic Drive also includes an emphasis on corresponding logistic needs like shuttles during peak dates.",
+      "Explicitly exclude inherently challenging hikes like Angel's Landing for family_with_toddler profiles even from suggested board content."
+    ]
+  }
+}

@@ -1,0 +1,466 @@
+{
+  "itinerary": {
+    "destination": "Yellowstone National Park",
+    "start_date": "2026-05-20",
+    "end_date": "2026-05-25",
+    "days": [
+      {
+        "date": "2026-05-20",
+        "day_number": 1,
+        "day_title": "Arriving at Old Faithful",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "16:00",
+            "end_time": "17:00",
+            "title": "Dinner at Old Faithful Inn",
+            "notes": "Enjoy a welcoming dinner at the historic Old Faithful Inn.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Old+Faithful+Inn+Yellowstone",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "17:15",
+            "end_time": "18:15",
+            "title": "Old Faithful Geyser",
+            "notes": "Stand on the raised boardwalk just west of the cone for a perfect view.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Old+Faithful+Yellowstone+National+Park",
+            "experience_id": "old-faithful-geyser"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-21",
+        "day_number": 2,
+        "day_title": "Geothermal Highlights",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "08:30",
+            "end_time": "09:30",
+            "title": "Breakfast at Bear Pit Lounge",
+            "notes": "Start your day with breakfast selections in the Old Faithful Inn.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Old+Faithful+Inn+Yellowstone",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "09:30",
+            "end_time": "09:45",
+            "title": "Travel to Grand Prismatic Spring",
+            "notes": "Take a scenic drive to Grand Prismatic Spring.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "09:45",
+            "end_time": "11:15",
+            "title": "Grand Prismatic Spring",
+            "notes": "Walk the Fairy Falls Trail for a unique view from the overlook.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Grand+Prismatic+Spring+Yellowstone",
+            "experience_id": "grand-prismatic-spring"
+          },
+          {
+            "type": "travel",
+            "start_time": "11:15",
+            "end_time": "11:30",
+            "title": "Travel to Norris Geyser Basin",
+            "notes": "Drive to the Norris Geyser Basin for more geothermal wonders.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "11:30",
+            "end_time": "13:00",
+            "title": "Norris Geyser Basin",
+            "notes": "Explore the Back Basin trail and pause at Echinus Geyser.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Norris+Geyser+Basin+Yellowstone",
+            "experience_id": "norris-geyser-basin"
+          },
+          {
+            "type": "meal",
+            "start_time": "13:15",
+            "end_time": "14:15",
+            "title": "Lunch at Canyon Lodge Eatery",
+            "notes": "Enjoy lunch at the Canyon Lodge Eatery near your next destination.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Canyon+Lodge+Eatery+Yellowstone",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "14:15",
+            "end_time": "14:30",
+            "title": "Travel to Artist Paintpots",
+            "notes": "Short drive to the vibrant geothermal area of Artist Paintpots.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "14:30",
+            "end_time": "15:30",
+            "title": "Artist Paintpots",
+            "notes": "Enjoy vibrant colors as you approach the boardwalk clockwise.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Artist+Paintpots+Yellowstone",
+            "experience_id": "artist-paintpots"
+          },
+          {
+            "type": "meal",
+            "start_time": "15:45",
+            "end_time": "16:15",
+            "title": "Coffee Break at Terrace Grill",
+            "notes": "Relax with coffee and light snacks at Terrace Grill in Mammoth.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Terrace+Grill+Mammoth+Yellowstone",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "16:30",
+            "end_time": "18:00",
+            "title": "Mammoth Hot Springs",
+            "notes": "Explore the terraced hot springs in the soft evening light.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Mammoth+Hot+Springs+Yellowstone",
+            "experience_id": "mammoth-hot-springs"
+          },
+          {
+            "type": "travel",
+            "start_time": "18:00",
+            "end_time": "19:00",
+            "title": "Travel back to Old Faithful",
+            "notes": "Drive back to your accommodation at Old Faithful Inn.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "meal",
+            "start_time": "19:15",
+            "end_time": "20:30",
+            "title": "Dinner at Old Faithful Snow Lodge",
+            "notes": "Conclude your day with dinner at the Obsidian Dining Room.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Old+Faithful+Snow+Lodge+Yellowstone",
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-05-22",
+        "day_number": 3,
+        "day_title": "Adventures in the Yellowstone River",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "08:30",
+            "end_time": "09:30",
+            "title": "Breakfast at Old Faithful Inn",
+            "notes": "Begin with breakfast at your base.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Old+Faithful+Inn+Yellowstone",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "09:30",
+            "end_time": "10:30",
+            "title": "Travel to Yellowstone River",
+            "notes": "Drive to Yellowstone River near Hayden Valley.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "10:30",
+            "end_time": "14:00",
+            "title": "Kayaking on the Yellowstone River",
+            "notes": "Launch from LeHardys Rapids for a scenic kayak trip.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Yellowstone+River+Yellowstone",
+            "experience_id": "yellowstone-grand-canyon"
+          },
+          {
+            "type": "meal",
+            "start_time": "14:15",
+            "end_time": "15:15",
+            "title": "Lunch at Lake Hotel Dining Room",
+            "notes": "Enjoy a lakeside lunch with beautiful views.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Lake+Hotel+Dining+Room+Yellowstone",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "15:15",
+            "end_time": "16:00",
+            "title": "Travel to Hayden Valley",
+            "notes": "Drive to Hayden Valley for wildlife viewing.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "16:00",
+            "end_time": "17:30",
+            "title": "Wildlife Viewing in Hayden Valley",
+            "notes": "Look for bison and possibly wolves near Grizzly Overlook.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Hayden+Valley+Yellowstone",
+            "experience_id": "hayden-valley-wildlife-viewing"
+          },
+          {
+            "type": "meal",
+            "start_time": "17:45",
+            "end_time": "18:15",
+            "title": "Coffee Break at Lake Lodge Cafeteria",
+            "notes": "Quick coffee break overlooking Yellowstone Lake.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Lake+Lodge+Cafeteria+Yellowstone",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "18:15",
+            "end_time": "19:15",
+            "title": "Travel back to Old Faithful",
+            "notes": "Return to Old Faithful for the evening.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "meal",
+            "start_time": "19:30",
+            "end_time": "20:30",
+            "title": "Dinner at Geyser Grill",
+            "notes": "Wrap up the day at Geyser Grill near your accommodation.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Geyser+Grill+Yellowstone",
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-05-23",
+        "day_number": 4,
+        "day_title": "Canyons and Valleys",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "08:30",
+            "end_time": "09:30",
+            "title": "Breakfast at Old Faithful Inn",
+            "notes": "Fuel up for a day of exploration.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Old+Faithful+Inn+Yellowstone",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "09:30",
+            "end_time": "10:30",
+            "title": "Travel to Grand Canyon of the Yellowstone",
+            "notes": "Drive to Artist Point for stunning canyon views.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "10:30",
+            "end_time": "12:30",
+            "title": "Grand Canyon of the Yellowstone",
+            "notes": "View Lower Falls and look for a rainbow in the mist.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Grand+Canyon+of+the+Yellowstone",
+            "experience_id": "yellowstone-grand-canyon"
+          },
+          {
+            "type": "meal",
+            "start_time": "12:45",
+            "end_time": "13:45",
+            "title": "Lunch at Canyon Village Cafeteria",
+            "notes": "Enjoy a casual lunch at Canyon Village.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Canyon+Village+Cafeteria+Yellowstone",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "13:45",
+            "end_time": "14:45",
+            "title": "Travel to Lamar Valley",
+            "notes": "Head to Lamar Valley for wildlife watching.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "14:45",
+            "end_time": "17:45",
+            "title": "Wildlife Watching in Lamar Valley",
+            "notes": "Best time to spot wildlife like bison and wolves.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Lamar+Valley+Yellowstone",
+            "experience_id": "wildlife-watching-lamar-valley"
+          },
+          {
+            "type": "meal",
+            "start_time": "18:00",
+            "end_time": "19:00",
+            "title": "Dinner at Roosevelt Lodge Dining Room",
+            "notes": "Finish your day with a rustic dinner at Roosevelt Lodge.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Roosevelt+Lodge+Dining+Room+Yellowstone",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "19:00",
+            "end_time": "20:30",
+            "title": "Travel back to Old Faithful",
+            "notes": "Return to your base for the night.",
+            "maps_url": null,
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-05-24",
+        "day_number": 5,
+        "day_title": "Lake and Falls",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "08:30",
+            "end_time": "09:30",
+            "title": "Breakfast at Old Faithful Inn",
+            "notes": "Prepare for a relaxing day around water landscapes.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Old+Faithful+Inn+Yellowstone",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "09:30",
+            "end_time": "10:30",
+            "title": "Travel to Yellowstone Lake",
+            "notes": "Drive to the majestic Yellowstone Lake.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "10:30",
+            "end_time": "12:30",
+            "title": "Yellowstone Lake",
+            "notes": "Walk along the shore and enjoy the stunning views.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Yellowstone+Lake+Yellowstone",
+            "experience_id": "yellowstone-lake"
+          },
+          {
+            "type": "meal",
+            "start_time": "12:30",
+            "end_time": "13:30",
+            "title": "Lunch at Lake Yellowstone Hotel",
+            "notes": "Dine with a view over the lake.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Lake+Yellowstone+Hotel+Yellowstone",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "13:30",
+            "end_time": "14:00",
+            "title": "Travel to Fishing Bridge",
+            "notes": "Drive to Fishing Bridge for a family-friendly walk.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "14:00",
+            "end_time": "15:30",
+            "title": "Fishing Bridge and Trailhead",
+            "notes": "Watch for pelicans and enjoy the riverside scenery.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Fishing+Bridge+Yellowstone",
+            "experience_id": "fishing-bridge"
+          },
+          {
+            "type": "meal",
+            "start_time": "15:45",
+            "end_time": "16:15",
+            "title": "Coffee Break at Lake Lodge Cafeteria",
+            "notes": "Relax with coffee near the lake.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Lake+Lodge+Cafeteria+Yellowstone",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "16:15",
+            "end_time": "17:00",
+            "title": "Travel to Tower Fall Viewpoint",
+            "notes": "Drive to the iconic Tower Fall.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "17:00",
+            "end_time": "17:30",
+            "title": "Tower Fall Viewpoint",
+            "notes": "Catch the unique view framed by towering pines.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Tower+Fall+Yellowstone",
+            "experience_id": "tower-fall-viewpoint"
+          },
+          {
+            "type": "travel",
+            "start_time": "17:30",
+            "end_time": "18:45",
+            "title": "Travel back to Old Faithful",
+            "notes": "Drive back to Old Faithful Inn for dinner.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "meal",
+            "start_time": "19:00",
+            "end_time": "20:15",
+            "title": "Dinner at Old Faithful Inn",
+            "notes": "Enjoy your final dinner at the comfortable Old Faithful Inn.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Old+Faithful+Inn+Yellowstone",
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-05-25",
+        "day_number": 6,
+        "day_title": "Farewell to Yellowstone",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "08:00",
+            "end_time": "09:00",
+            "title": "Breakfast at Old Faithful Inn",
+            "notes": "Enjoy your final breakfast in the park before departure.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Old+Faithful+Inn+Yellowstone",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "09:00",
+            "end_time": "09:45",
+            "title": "Travel to Firehole Lake Drive",
+            "notes": "Drive to enjoy the scenic geothermal area.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "09:45",
+            "end_time": "10:45",
+            "title": "Firehole Lake Drive",
+            "notes": "Experience the geysers and scenic views on this short drive.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Firehole+Lake+Drive+Yellowstone",
+            "experience_id": "firehole-lake-drive"
+          },
+          {
+            "type": "travel",
+            "start_time": "10:45",
+            "end_time": "11:30",
+            "title": "Return to Old Faithful Inn",
+            "notes": "Head back to the Old Faithful area for wrap-up.",
+            "maps_url": null,
+            "experience_id": null
+          }
+        ]
+      }
+    ],
+    "generated_at": "2023-11-02T12:00:00Z"
+  }
+}

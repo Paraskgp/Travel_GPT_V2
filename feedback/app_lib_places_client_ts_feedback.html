@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>app/lib/places/client.ts Feedback</title>
+  <style>
+    :root { color-scheme: light; --ink:#1f2933; --muted:#697386; --line:#d8dee8; --soft:#f6f8fb; --p0:#b42318; --p1:#b54708; --p2:#175cd3; --p3:#475467; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--ink); background: #fbfcfe; }
+    main { max-width: 920px; margin: 0 auto; padding: 32px 20px 56px; }
+    nav { margin-bottom: 24px; }
+    nav a { color: #175cd3; text-decoration: none; font-weight: 600; }
+    h1 { margin: 0 0 16px; font-size: 28px; line-height: 1.15; letter-spacing: 0; }
+    h2 { margin: 32px 0 10px; padding-top: 10px; border-top: 1px solid var(--line); font-size: 18px; }
+    h3 { margin: 24px 0 8px; font-size: 15px; }
+    p { margin: 10px 0; }
+    code { padding: 1px 5px; border-radius: 5px; background: #edf2f7; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.92em; }
+    pre { overflow: auto; padding: 14px; border: 1px solid var(--line); border-radius: 8px; background: #101828; color: #f8fafc; }
+    pre code { padding: 0; background: transparent; color: inherit; }
+    ul, ol { padding-left: 22px; }
+    li { margin: 8px 0; }
+    .task { position: relative; display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: start; margin: 10px 0; padding: 12px; border: 1px solid var(--line); border-left-width: 5px; border-radius: 8px; background: #fff; list-style: none; }
+    .task.p0 { border-left-color: var(--p0); }
+    .task.p1 { border-left-color: var(--p1); }
+    .task.p2 { border-left-color: var(--p2); }
+    .task.p3 { border-left-color: var(--p3); }
+    .task-line { display: flex; gap: 10px; align-items: flex-start; cursor: pointer; }
+    .task input { margin-top: 4px; width: 16px; height: 16px; }
+    .task input:checked + .task-text { text-decoration: line-through; opacity: 0.55; }
+    .task-text { display: block; }
+    .priority { border: 1px solid var(--line); border-radius: 6px; padding: 4px 8px; background: var(--soft); color: var(--ink); font: inherit; font-size: 12px; }
+    .toolbar { display: flex; gap: 10px; flex-wrap: wrap; margin: 18px 0 24px; padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--soft); color: var(--muted); }
+    .toolbar button { border: 1px solid var(--line); border-radius: 6px; background: #fff; padding: 6px 10px; color: var(--ink); cursor: pointer; }
+    .note { color: var(--muted); font-size: 13px; }
+
+    .principal-guidance { margin-top: 34px; padding: 18px; border: 1px solid #b9c6d8; border-radius: 8px; background: #f8fbff; }
+    .principal-guidance h2 { margin-top: 0; padding-top: 0; border-top: 0; }
+    .guidance-summary { color: #344054; font-weight: 600; }
+    .implementation-list { padding-left: 0; }
+    .acceptance-list, .decision-list { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 10px 16px 10px 28px; }
+    .decision-list { border-left: 5px solid #7a5af8; }
+  </style>
+</head>
+<body>
+<main>
+  <nav><a href="index.html">Feedback index</a></nav>
+  <div class="toolbar">
+    <span class="note">Checkboxes and priority changes are saved in this browser. To make progress durable for another agent, edit the HTML source by adding <code>checked</code>, changing the selected priority option, or moving items.</span>
+    <button type="button" id="clear-state">Clear local state</button>
+  </div>
+<h1>app/lib/places/client.ts Feedback</h1>
+<p><strong>Target file:</strong> <code>app/lib/places/client.ts</code> <strong>Feedback type:</strong> Places verification and enrichment architecture</p>
+<h2>Elephant In The Room</h2>
+<p>Places is currently used as a presentation enrichment layer after board generation. It should also be part of the trust layer that decides whether a card is safe to map and schedule.</p>
+<h2>Major Feedback</h2>
+<ul>
+<li class="task p0" data-task-id="app_lib_places_client_ts_feedback_0">
+  <label class="task-line"><input type="checkbox" data-task-id="app_lib_places_client_ts_feedback_0"><span class="task-text"><strong>P0: Remove the hardcoded API key fallback.</strong> <code>GOOGLE_PLACES_API_KEY</code> has a literal fallback key in code. This is a security issue and also makes environment failures harder to notice. Missing key should disable Places or fail the relevant stage explicitly.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0" selected>P0</option><option value="P1">P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+</ul>
+<ul>
+<li class="task p0" data-task-id="app_lib_places_client_ts_feedback_1">
+  <label class="task-line"><input type="checkbox" data-task-id="app_lib_places_client_ts_feedback_1"><span class="task-text"><strong>P0: Add match confidence checks.</strong> The code takes the first Text Search result and trusts it. Compare result name, address/geography, destination, and maybe distance from destination center before accepting a match.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0" selected>P0</option><option value="P1">P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+</ul>
+<ul>
+<li class="task p0" data-task-id="app_lib_places_client_ts_feedback_2">
+  <label class="task-line"><input type="checkbox" data-task-id="app_lib_places_client_ts_feedback_2"><span class="task-text"><strong>P0: Feed coordinates back into planning.</strong> Coordinates should not arrive only after the board is already rendered. If an experience cannot be geocoded confidently, it should be flagged before itinerary planning.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0" selected>P0</option><option value="P1">P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+</ul>
+<ul>
+<li class="task p1" data-task-id="app_lib_places_client_ts_feedback_3">
+  <label class="task-line"><input type="checkbox" data-task-id="app_lib_places_client_ts_feedback_3"><span class="task-text"><strong>P1: Separate "photo enrichment" from "place verification".</strong> A place can be verified without a photo, and a photo match can be wrong. Return verification metadata separately from display assets.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0">P0</option><option value="P1" selected>P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+</ul>
+<ul>
+<li class="task p1" data-task-id="app_lib_places_client_ts_feedback_4">
+  <label class="task-line"><input type="checkbox" data-task-id="app_lib_places_client_ts_feedback_4"><span class="task-text"><strong>P1: Use Places data as a canonical identity source.</strong> Store <code>place_id</code> on the experience where possible and use it for deduplication, clustering, maps, and itinerary rows.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0">P0</option><option value="P1" selected>P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+</ul>
+<h2>Suggested Implementation Direction</h2>
+<ul>
+<li>Change <code>enrichExperience</code> to return <code>{ enrichment, verification }</code>.</li>
+<li>Add normalized-name matching and destination-bounds checks.</li>
+<li>Persist accepted <code>place_id</code> and coordinates back onto the board or candidate inventory.</li>
+<li>Reject or warn on low-confidence matches instead of silently returning the first result.</li>
+</ul>
+<section class="principal-guidance">
+  <h2>Principal Engineer Implementation Notes</h2>
+  <p class="guidance-summary">Places should become a verifier as well as a photo provider. Start with security and match confidence.</p>
+  <h3>Implementation-Ready Checklist</h3>
+  <ul class="implementation-list">
+<li class="task p0" data-task-id="app_lib_places_client_ts_feedback_impl_0">
+  <label class="task-line"><input type="checkbox" data-task-id="app_lib_places_client_ts_feedback_impl_0"><span class="task-text"><strong>P0:</strong> Remove the hardcoded Google Places API key fallback. Return null or throw a controlled error when <code>GOOGLE_PLACES_API_KEY</code> is absent.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0" selected>P0</option><option value="P1">P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+<li class="task p0" data-task-id="app_lib_places_client_ts_feedback_impl_1">
+  <label class="task-line"><input type="checkbox" data-task-id="app_lib_places_client_ts_feedback_impl_1"><span class="task-text"><strong>P0:</strong> Return match metadata from Text Search: query, matched name, formatted address, candidate index, and a computed confidence score.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0" selected>P0</option><option value="P1">P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+<li class="task p0" data-task-id="app_lib_places_client_ts_feedback_impl_2">
+  <label class="task-line"><input type="checkbox" data-task-id="app_lib_places_client_ts_feedback_impl_2"><span class="task-text"><strong>P0:</strong> Reject low-confidence matches by comparing normalized <code>name</code>, <code>locationHint</code>, destination text, and result address.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0" selected>P0</option><option value="P1">P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+<li class="task p1" data-task-id="app_lib_places_client_ts_feedback_impl_3">
+  <label class="task-line"><input type="checkbox" data-task-id="app_lib_places_client_ts_feedback_impl_3"><span class="task-text"><strong>P1:</strong> Persist accepted <code>place_id</code> and coordinates onto the candidate/experience so planning can use them.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0">P0</option><option value="P1" selected>P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+<li class="task p1" data-task-id="app_lib_places_client_ts_feedback_impl_4">
+  <label class="task-line"><input type="checkbox" data-task-id="app_lib_places_client_ts_feedback_impl_4"><span class="task-text"><strong>P1:</strong> Split <code>verifyPlace</code> from <code>getPlacePresentationAssets</code> so maps/photos are not confused with truth.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0">P0</option><option value="P1" selected>P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+  </ul>
+  <h3>Acceptance Criteria</h3>
+  <ul class="acceptance-list">
+<li>No secret key is present in source code.</li>
+<li>The first Places result is not accepted blindly.</li>
+<li>A low-confidence map match does not silently become an itinerary anchor.</li>
+<li>Planning can access coordinates before or during route generation.</li>
+  </ul>
+  <h3>Needs Product Decision</h3>
+  <ul class="decision-list">
+<li>Decide whether low-confidence Places matches should hide the card from the map, block scheduling, or both. Recommendation: hide map pin and block automatic scheduling until verified.</li>
+  </ul>
+</section>
+</main>
+<script>
+(function () {
+  const key = 'feedback-state:' + location.pathname.split('/').pop();
+  const state = JSON.parse(localStorage.getItem(key) || '{}');
+  document.querySelectorAll('.task').forEach(task => {
+    const id = task.dataset.taskId;
+    const box = task.querySelector('input[type="checkbox"]');
+    const select = task.querySelector('select.priority');
+    if (state[id]) {
+      box.checked = !!state[id].done;
+      if (state[id].priority) select.value = state[id].priority;
+    }
+    function save() {
+      const next = JSON.parse(localStorage.getItem(key) || '{}');
+      next[id] = { done: box.checked, priority: select.value };
+      localStorage.setItem(key, JSON.stringify(next));
+      task.classList.remove('p0','p1','p2','p3');
+      task.classList.add(select.value.toLowerCase());
+    }
+    box.addEventListener('change', save);
+    select.addEventListener('change', save);
+    task.classList.remove('p0','p1','p2','p3');
+    task.classList.add(select.value.toLowerCase());
+  });
+  document.getElementById('clear-state').addEventListener('click', () => {
+    localStorage.removeItem(key);
+    location.reload();
+  });
+})();
+</script>
+</body>
+</html>

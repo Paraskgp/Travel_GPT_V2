@@ -1,0 +1,665 @@
+{
+  "itinerary": {
+    "destination": "Zion National Park",
+    "start_date": "2026-11-01",
+    "end_date": "2026-11-05",
+    "days": [
+      {
+        "date": "2026-11-01",
+        "day_number": 1,
+        "day_title": "Arrival and Introduction",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "15:30",
+            "end_time": "17:00",
+            "title": "Zion Human History Museum",
+            "notes": "Head to the museum after 4 PM for the Zion Formation film without the crowds.",
+            "planning_note": "Scheduled after a 14:00 arrival to give a gentle introduction to the region without physical exertion. The museum is nearby, making it a perfect fit for the day.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Zion+Human+History+Museum+Zion+National+Park",
+            "experience_id": "zion-human-history-museum"
+          },
+          {
+            "type": "meal",
+            "start_time": "18:00",
+            "end_time": "19:00",
+            "title": "Dinner at Bit and Spur Restaurant & Saloon",
+            "notes": "Known for Southwestern flavors and a laid-back atmosphere.",
+            "planning_note": "Chose this local favourite for its proximity to the museum and reputation for combining good food with views of the sunset over Zion’s peaks.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Bit+and+Spur+Restaurant+Springdale",
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-11-02",
+        "day_number": 2,
+        "day_title": "Checkerboard Mesa Exploration",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "08:00",
+            "end_time": "09:00",
+            "title": "Breakfast at Oscar's Cafe",
+            "notes": "Order the hearty breakfast burrito to fuel your day exploring the Mesa.",
+            "planning_note": "Starting the day with a substantial meal before heading into the park for early morning activities.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Oscar%27s+Cafe+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "09:00",
+            "end_time": "09:30",
+            "title": "Travel to Checkerboard Mesa",
+            "notes": null,
+            "planning_note": null,
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "09:30",
+            "end_time": "10:30",
+            "title": "Sunrise at Checkerboard Mesa",
+            "notes": "Drive to the small parking pullout on UT Route 9 for the best view.",
+            "planning_note": "Starting here brings a unique start to the day with one of Zion's famous sunrise spots.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Checkerboard+Mesa+Zion+National+Park",
+            "experience_id": "checkerboard-mesa-sunrise"
+          },
+          {
+            "type": "activity",
+            "start_time": "10:30",
+            "end_time": "11:00",
+            "title": "Checkerboard Mesa Viewpoint",
+            "notes": "Stand at the southwest corner of the viewpoint for the best shadows.",
+            "planning_note": "Complements the sunrise view by showcasing the mesa’s patterns in full daylight.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Checkerboard+Mesa+Zion+National+Park",
+            "experience_id": "checkerboard-mesa"
+          },
+          {
+            "type": "activity",
+            "start_time": "11:00",
+            "end_time": "11:30",
+            "title": "Checkerboard Mesa Sightseeing",
+            "notes": "Capture the mesa with a warm glow from the setting sun.",
+            "planning_note": "Easy walk around allows for a relaxed exploration after sunrise.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Checkerboard+Mesa+Zion+National+Park",
+            "experience_id": "checkerboard-mesa-sightseeing"
+          },
+          {
+            "type": "meal",
+            "start_time": "12:00",
+            "end_time": "13:00",
+            "title": "Lunch at Café Soleil",
+            "notes": "Famed for its local and organic food options, ideal for lunch after a busy morning.",
+            "planning_note": "Perfect lunch spot close to several trails and viewpoints.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Cafe+Soleil+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "14:00",
+            "end_time": "15:30",
+            "title": "Riverside Walk",
+            "notes": "Pause at the second sharp bend after the trailhead to spot the elusive hanging garden.",
+            "planning_note": "A straightforward afternoon trail to allow a gentle walk along the Virgin River, perfect for small children.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Riverside+Walk+Zion+National+Park",
+            "experience_id": "riverside-walk"
+          },
+          {
+            "type": "meal",
+            "start_time": "17:30",
+            "end_time": "18:30",
+            "title": "Dinner at Spotted Dog Café",
+            "notes": "Enjoy Southwestern cuisine on the outdoor patio with mountain views.",
+            "planning_note": "Ending the day with a relaxing dinner back in Springdale.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Spotted+Dog+Cafe+Springdale",
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-11-03",
+        "day_number": 3,
+        "day_title": "Wildcat Canyon Adventure",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "08:00",
+            "end_time": "09:00",
+            "title": "Breakfast at Deep Creek Coffee Co.",
+            "notes": "Known for excellent coffee and house-made grab-and-go pastries.",
+            "planning_note": "A strategic choice to fuel up early before driving to the remote trailhead.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Deep+Creek+Coffee+Co+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "09:00",
+            "end_time": "09:45",
+            "title": "Travel to Wildcat Canyon Trail",
+            "notes": null,
+            "planning_note": null,
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "09:45",
+            "end_time": "15:00",
+            "title": "Hiking the Wildcat Canyon Trail",
+            "notes": "Detour to the rocky outcrop for stunning mesa views.",
+            "planning_note": "Planning this moderate hike for a day on its own given the duration and energy required, allowing for a fulfilling day without any over-exertion post-2pm for the little ones. Allow extra time — pace accordingly.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Wildcat+Canyon+Trailhead+Zion+National+Park",
+            "experience_id": "hiking-the-wildcat-trail"
+          },
+          {
+            "type": "meal",
+            "start_time": "16:30",
+            "end_time": "17:30",
+            "title": "Sunset Dinner at King's Landing Bistro",
+            "notes": "Specializes in upscale dining with views of the sunset over the Virgin River.",
+            "planning_note": "A perfect closer after the day's exertions, this bistro provides a restful but memorable culinary conclusion to a day of exploration.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=King%27s+Landing+Bistro+Springdale",
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-11-04",
+        "day_number": 4,
+        "day_title": "Relaxed Exploration Day",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "08:00",
+            "end_time": "09:00",
+            "title": "Breakfast at MeMe's Café",
+            "notes": "Famous for its crepes and delightful breakfast pancakes.",
+            "planning_note": "A delicious breakfast to start a relaxed day, giving everyone just the right amount of energy without rushing.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=MeMe%27s+Cafe+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "09:00",
+            "end_time": "09:35",
+            "title": "Travel to Canyon Overlook Trail",
+            "notes": null,
+            "planning_note": null,
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "09:35",
+            "end_time": "10:35",
+            "title": "Canyon Overlook Trail",
+            "notes": "Look for the hidden rock platform at the trail end for the photo-perfect Pine Creek Canyon view.",
+            "planning_note": "Scheduled for early morning to avoid late-day shadows and provide a perfect leisurely start with great views.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Canyon+Overlook+Trail+Zion+National+Park",
+            "experience_id": "canyon-overlook-trail"
+          },
+          {
+            "type": "activity",
+            "start_time": "11:30",
+            "end_time": "12:30",
+            "title": "Lower Emerald Pools Trail",
+            "notes": "Take the short side path just before the main viewing platform for a serene perspective.",
+            "planning_note": "Chosen for mid-day as it’s an easy trail to explore while the kids expend some energy in a structured way.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Lower+Emerald+Pool+Trailhead+Zion+National+Park",
+            "experience_id": "emerald-pools-trail"
+          },
+          {
+            "type": "meal",
+            "start_time": "13:00",
+            "end_time": "14:00",
+            "title": "Lunch at Zion Pizza & Noodle Co.",
+            "notes": "A local staple for pizza and refreshments, perfect after a morning on the trails.",
+            "planning_note": "Returning to Springdale for a popular dining spot known to energize families post-hike.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Zion+Pizza+%26+Noodle+Co+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "14:00",
+            "end_time": "17:30",
+            "title": "Free time & rest",
+            "notes": null,
+            "planning_note": "Time deliberately left free recognizing the cumulative fatigue point, leaving time for the group to rest, do quiet local exploration, or prepare for the canyon's evening charm.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "18:00",
+            "end_time": "19:30",
+            "title": "Canyon Junction Scenic Drive at Dusk",
+            "notes": "Head to the bridge to catch The Watchman reflecting in the Virgin River under pastel skies.",
+            "planning_note": "Scheduled as a relaxed evening activity, perfect for wrapping up the visit with soft lighting to reflect on the trip.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Canyon+Junction+Zion+National+Park",
+            "experience_id": "canyon-junction-scenic-drive-at-dusk"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-05",
+        "day_number": 5,
+        "day_title": "Departure",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "07:00",
+            "end_time": "08:00",
+            "title": "Early Breakfast at Muddy Bees Bakery",
+            "notes": "Opt for freshly baked pastries to take on your journey back.",
+            "planning_note": "An early breakfast to fit travel times and ensure a good start for the trip home.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Muddy+Bees+Bakery+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "08:00",
+            "end_time": "09:00",
+            "title": "Checkout & Travel to Transportation Hub",
+            "notes": "Ensure to leave accommodation with enough buffer time to catch transportation.",
+            "planning_note": "Leaving with 2× the estimated transit time to ensure no rush and accommodate any unexpected delays.",
+            "maps_url": null,
+            "experience_id": null
+          }
+        ]
+      }
+    ],
+    "change_log": [
+      "Day 2: Breakfast at Oscar's Cafe moved to start at 08:00 due to family_young constraints.",
+      "Day 3: Added 'Allow extra time — pace accordingly' to Wildcat Canyon Trail planning note due to moderate effort.",
+      "Day 4: Ensured rest window with existing free time slot, no additional changes needed."
+    ],
+    "generated_at": "2023-11-24"
+  },
+  "clusters": {
+    "pairs": [
+      {
+        "from_id": "checkerboard-mesa-sunrise",
+        "to_id": "hiking-the-wildcat-trail",
+        "walk_min": 999,
+        "drive_min": 45,
+        "mode": "car"
+      },
+      {
+        "from_id": "checkerboard-mesa-sunrise",
+        "to_id": "canyon-junction-scenic-drive-at-dusk",
+        "walk_min": 999,
+        "drive_min": 25,
+        "mode": "car"
+      },
+      {
+        "from_id": "checkerboard-mesa-sunrise",
+        "to_id": "cerulean-forest-reflection-pool",
+        "walk_min": 999,
+        "drive_min": 50,
+        "mode": "car"
+      },
+      {
+        "from_id": "checkerboard-mesa-sunrise",
+        "to_id": "canyoneering-the-narrows",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "car"
+      },
+      {
+        "from_id": "checkerboard-mesa-sunrise",
+        "to_id": "angels-landing-via-ferrous",
+        "walk_min": 999,
+        "drive_min": 35,
+        "mode": "car"
+      },
+      {
+        "from_id": "checkerboard-mesa-sunrise",
+        "to_id": "rock-climbing-cosmic-walls",
+        "walk_min": 999,
+        "drive_min": 55,
+        "mode": "car"
+      },
+      {
+        "from_id": "checkerboard-mesa-sunrise",
+        "to_id": "mountain-biking-jem-trail",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "car"
+      },
+      {
+        "from_id": "checkerboard-mesa-sunrise",
+        "to_id": "atv-adventure-coal-pits-wash",
+        "walk_min": 999,
+        "drive_min": 50,
+        "mode": "car"
+      },
+      {
+        "from_id": "checkerboard-mesa-sunrise",
+        "to_id": "zion-canyon-scenic-drive",
+        "walk_min": 999,
+        "drive_min": 25,
+        "mode": "car"
+      },
+      {
+        "from_id": "checkerboard-mesa-sunrise",
+        "to_id": "checkerboard-mesa",
+        "walk_min": 5,
+        "drive_min": 2,
+        "mode": "walk"
+      },
+      {
+        "from_id": "checkerboard-mesa-sunrise",
+        "to_id": "riverside-walk",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "car"
+      },
+      {
+        "from_id": "checkerboard-mesa-sunrise",
+        "to_id": "emerald-pools-trail",
+        "walk_min": 999,
+        "drive_min": 35,
+        "mode": "car"
+      },
+      {
+        "from_id": "checkerboard-mesa-sunrise",
+        "to_id": "canyon-overlook-trail",
+        "walk_min": 999,
+        "drive_min": 15,
+        "mode": "car"
+      },
+      {
+        "from_id": "checkerboard-mesa-sunrise",
+        "to_id": "kolob-canyons",
+        "walk_min": 999,
+        "drive_min": 65,
+        "mode": "car"
+      },
+      {
+        "from_id": "checkerboard-mesa-sunrise",
+        "to_id": "angels-landing-trail",
+        "walk_min": 999,
+        "drive_min": 35,
+        "mode": "car"
+      },
+      {
+        "from_id": "checkerboard-mesa-sunrise",
+        "to_id": "the-narrows-hike",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "car"
+      },
+      {
+        "from_id": "checkerboard-mesa-sunrise",
+        "to_id": "observation-point-trail",
+        "walk_min": 999,
+        "drive_min": 40,
+        "mode": "car"
+      },
+      {
+        "from_id": "checkerboard-mesa-sunrise",
+        "to_id": "checkerboard-mesa-sightseeing",
+        "walk_min": 3,
+        "drive_min": 1,
+        "mode": "walk"
+      },
+      {
+        "from_id": "checkerboard-mesa-sunrise",
+        "to_id": "weeping-rock",
+        "walk_min": 999,
+        "drive_min": 40,
+        "mode": "car"
+      },
+      {
+        "from_id": "checkerboard-mesa-sunrise",
+        "to_id": "lower-emerald-pool-trail",
+        "walk_min": 999,
+        "drive_min": 35,
+        "mode": "car"
+      },
+      {
+        "from_id": "checkerboard-mesa-sunrise",
+        "to_id": "zion-human-history-museum",
+        "walk_min": 999,
+        "drive_min": 35,
+        "mode": "car"
+      },
+      {
+        "from_id": "checkerboard-mesa-sunrise",
+        "to_id": "bryce-canyon-national-park-day-trip",
+        "walk_min": 999,
+        "drive_min": 90,
+        "mode": "car"
+      },
+      {
+        "from_id": "checkerboard-mesa-sunrise",
+        "to_id": "cedar-breaks-national-monument-day-trip",
+        "walk_min": 999,
+        "drive_min": 95,
+        "mode": "car"
+      },
+      {
+        "from_id": "checkerboard-mesa-sunrise",
+        "to_id": "st-george-city-day-trip",
+        "walk_min": 999,
+        "drive_min": 65,
+        "mode": "car"
+      },
+      {
+        "from_id": "checkerboard-mesa-sunrise",
+        "to_id": "red-cliff-desert-reserve-hike",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "car"
+      },
+      {
+        "from_id": "checkerboard-mesa-sunrise",
+        "to_id": "coral-pink-sand-dunes-state-park",
+        "walk_min": 999,
+        "drive_min": 45,
+        "mode": "car"
+      },
+      {
+        "from_id": "hiking-the-wildcat-trail",
+        "to_id": "canyon-junction-scenic-drive-at-dusk",
+        "walk_min": 999,
+        "drive_min": 40,
+        "mode": "car"
+      },
+      {
+        "from_id": "hiking-the-wildcat-trail",
+        "to_id": "cerulean-forest-reflection-pool",
+        "walk_min": 999,
+        "drive_min": 10,
+        "mode": "car"
+      },
+      {
+        "from_id": "hiking-the-wildcat-trail",
+        "to_id": "canyoneering-the-narrows",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "car"
+      },
+      {
+        "from_id": "hiking-the-wildcat-trail",
+        "to_id": "angels-landing-via-ferrous",
+        "walk_min": 999,
+        "drive_min": 65,
+        "mode": "car"
+      },
+      {
+        "from_id": "hiking-the-wildcat-trail",
+        "to_id": "rock-climbing-cosmic-walls",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "car"
+      },
+      {
+        "from_id": "hiking-the-wildcat-trail",
+        "to_id": "mountain-biking-jem-trail",
+        "walk_min": 999,
+        "drive_min": 90,
+        "mode": "car"
+      },
+      {
+        "from_id": "hiking-the-wildcat-trail",
+        "to_id": "atv-adventure-coal-pits-wash",
+        "walk_min": 999,
+        "drive_min": 70,
+        "mode": "car"
+      },
+      {
+        "from_id": "hiking-the-wildcat-trail",
+        "to_id": "zion-canyon-scenic-drive",
+        "walk_min": 999,
+        "drive_min": 40,
+        "mode": "car"
+      },
+      {
+        "from_id": "hiking-the-wildcat-trail",
+        "to_id": "checkerboard-mesa",
+        "walk_min": 999,
+        "drive_min": 45,
+        "mode": "car"
+      },
+      {
+        "from_id": "hiking-the-wildcat-trail",
+        "to_id": "riverside-walk",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "car"
+      },
+      {
+        "from_id": "hiking-the-wildcat-trail",
+        "to_id": "emerald-pools-trail",
+        "walk_min": 999,
+        "drive_min": 65,
+        "mode": "car"
+      },
+      {
+        "from_id": "hiking-the-wildcat-trail",
+        "to_id": "canyon-overlook-trail",
+        "walk_min": 999,
+        "drive_min": 45,
+        "mode": "car"
+      },
+      {
+        "from_id": "hiking-the-wildcat-trail",
+        "to_id": "kolob-canyons",
+        "walk_min": 999,
+        "drive_min": 25,
+        "mode": "car"
+      },
+      {
+        "from_id": "hiking-the-wildcat-trail",
+        "to_id": "angels-landing-trail",
+        "walk_min": 999,
+        "drive_min": 65,
+        "mode": "car"
+      },
+      {
+        "from_id": "hiking-the-wildcat-trail",
+        "to_id": "the-narrows-hike",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "car"
+      },
+      {
+        "from_id": "hiking-the-wildcat-trail",
+        "to_id": "observation-point-trail",
+        "walk_min": 999,
+        "drive_min": 70,
+        "mode": "car"
+      },
+      {
+        "from_id": "hiking-the-wildcat-trail",
+        "to_id": "checkerboard-mesa-sightseeing",
+        "walk_min": 999,
+        "drive_min": 45,
+        "mode": "car"
+      },
+      {
+        "from_id": "hiking-the-wildcat-trail",
+        "to_id": "weeping-rock",
+        "walk_min": 999,
+        "drive_min": 70,
+        "mode": "car"
+      },
+      {
+        "from_id": "hiking-the-wildcat-trail",
+        "to_id": "lower-emerald-pool-trail",
+        "walk_min": 999,
+        "drive_min": 65,
+        "mode": "car"
+      },
+      {
+        "from_id": "hiking-the-wildcat-trail",
+        "to_id": "zion-human-history-museum",
+        "walk_min": 999,
+        "drive_min": 65,
+        "mode": "car"
+      },
+      {
+        "from_id": "hiking-the-wildcat-trail",
+        "to_id": "bryce-canyon-national-park-day-trip",
+        "walk_min": 999,
+        "drive_min": 110,
+        "mode": "car"
+      },
+      {
+        "from_id": "hiking-the-wildcat-trail",
+        "to_id": "cedar-breaks-national-monument-day-trip",
+        "walk_min": 999,
+        "drive_min": 50,
+        "mode": "car"
+      },
+      {
+        "from_id": "hiking-the-wildcat-trail",
+        "to_id": "st-george-city-day-trip",
+        "walk_min": 999,
+        "drive_min": 85,
+        "mode": "car"
+      },
+      {
+        "from_id": "hiking-the-wildcat-trail",
+        "to_id": "red-cliff-desert-reserve-hike",
+        "walk_min": 999,
+        "drive_min": 80,
+        "mode": "car"
+      },
+      {
+        "from_id": "hiking-the-wildcat-trail",
+        "to_id": "coral-pink-sand-dunes-state-park",
+        "walk_min": 999,
+        "drive_min": 70,
+        "mode": "car"
+      }
+    ],
+    "clusters": [
+      {
+        "id": "cluster-checkerboard-mesa",
+        "name": "Checkerboard Mesa",
+        "anchor_id": "checkerboard-mesa-sunrise",
+        "experience_ids": [
+          "checkerboard-mesa-sunrise",
+          "checkerboard-mesa",
+          "checkerboard-mesa-sightseeing"
+        ],
+        "zone": "East Zion",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-wildcat-canyon",
+        "name": "Wildcat Canyon",
+        "anchor_id": "hiking-the-wildcat-trail",
+        "experience_ids": [
+          "hiking-the-wildcat-trail"
+        ],
+        "zone": "Kolob Terrace",
+        "cluster_note": "Remote location, less crowded."
+      }
+    ]
+  }
+}

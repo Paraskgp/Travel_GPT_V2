@@ -1,0 +1,63 @@
+{
+  "stage": "grounding",
+  "destination": "Zion National Park",
+  "file": "cache/destinations/zion-national-park/experiences.json",
+  "total_experiences": 10,
+  "required_found": [
+    "Pa'rus Trail",
+    "Angels Landing",
+    "Emerald Pools Trail",
+    "Canyon Overlook Trail",
+    "Riverside Walk"
+  ],
+  "required_missing": [
+    "The Narrows"
+  ],
+  "forbidden_found": [],
+  "category_coverage": {
+    "trail": 7,
+    "scenic drive": 1,
+    "restaurant": 2
+  },
+  "required_categories_found": [
+    "trail",
+    "restaurant"
+  ],
+  "required_categories_missing": [],
+  "total_count": 10,
+  "min_count_met": true,
+  "score": 92,
+  "checks": [
+    {
+      "check": "Required experiences found (5/6)",
+      "passed": false,
+      "detail": "Missing: The Narrows"
+    },
+    {
+      "check": "No hallucinated experiences (3 checked)",
+      "passed": true,
+      "detail": "Clean"
+    },
+    {
+      "check": "Required categories covered (2/2)",
+      "passed": true,
+      "detail": "Found: trail, scenic drive, restaurant"
+    },
+    {
+      "check": "Minimum experience count (10 >= 8)",
+      "passed": true,
+      "detail": "OK — 10 experiences"
+    }
+  ],
+  "quality_score": 58,
+  "quality_findings": [
+    "All experiences generally provide factual information, but one lacks sufficient detail.",
+    "Pa'rus Trail: All key facts are factual and specific, making it a credible and verifiable experience.",
+    "Angels Landing: Key facts provide clear and specific information, making it a well-defined and verifiable location.",
+    "Watchman Trail: The factual details are clear and specific, ensuring this is a legitimate and useful trail experience.",
+    "Canyon Overlook Trail: Provides specific distances and time estimates, making it a verifiable and credible location.",
+    "Zion Narrows Riverside Walk: While it has helpful information, the description lacks specific details such as distance and time."
+  ],
+  "overall_score": 82,
+  "generated_at": "2026-05-27T22:02:39.506Z"
+}

@@ -1,0 +1,208 @@
+{
+  "overall_score": 61,
+  "overall_grade": "C",
+  "summary": "The AI itinerary covers several key Yellowstone attractions and maintains a coherent day structure but fails significantly in wildlife timing and recovery time, both critical for client satisfaction. Improvements are essential in adhering to realistic drive times and geographic coherence.",
+  "coverage": {
+    "must_have_found": [
+      "Lamar Valley",
+      "Grand Canyon of the Yellowstone",
+      "Old Faithful",
+      "Norris Geyser Basin"
+    ],
+    "must_have_missing": [
+      "Hayden Valley",
+      "Artist Point",
+      "Grand Prismatic Spring (overlook)",
+      "Yellowstone Lake"
+    ],
+    "coverage_score": 50
+  },
+  "dimension_scores": [
+    {
+      "dimension": "Wildlife timing",
+      "weight": 0.2,
+      "score": 40,
+      "weighted_score": 8,
+      "pass": false,
+      "finding": "Wildlife viewing is scheduled from 15:00 to 19:00, missing optimal dawn and dusk windows.",
+      "example": "15:00-19:00 Wildlife Watching in Lamar Valley"
+    },
+    {
+      "dimension": "Recovery time",
+      "weight": 0.2,
+      "score": 30,
+      "weighted_score": 6,
+      "pass": false,
+      "finding": "No explicit rest periods scheduled after early morning starts.",
+      "example": "Continuous activities from 7:00 to 21:30 on Day 2"
+    },
+    {
+      "dimension": "Drive time realism",
+      "weight": 0.15,
+      "score": 50,
+      "weighted_score": 7.5,
+      "pass": false,
+      "finding": "Several drive times are underestimated, impacting schedule feasibility.",
+      "example": "Travel to Old Faithful Geyser: 08:00-08:30"
+    },
+    {
+      "dimension": "Geographic coherence",
+      "weight": 0.2,
+      "score": 70,
+      "weighted_score": 14,
+      "pass": true,
+      "finding": "Days are generally kept within reasonable geographic zones.",
+      "example": "Day 4 focuses entirely on Grand Canyon of the Yellowstone and Yellowstone Lake."
+    },
+    {
+      "dimension": "Experience density",
+      "weight": 0.15,
+      "score": 60,
+      "weighted_score": 9,
+      "pass": true,
+      "finding": "Generally adheres to 2-3 headline experiences per day but misses on rest days and starts.",
+      "example": "Day 1 includes three headline experiences with no rest periods."
+    },
+    {
+      "dimension": "Grand Prismatic tip quality",
+      "weight": 0.05,
+      "score": 0,
+      "weighted_score": 0,
+      "pass": false,
+      "finding": "Fails to mention the overlook trail for Grand Prismatic Spring.",
+      "example": "10:00-12:00 Grand Prismatic Spring | Early afternoon light intensifies colors on Fairy Falls Trail."
+    },
+    {
+      "dimension": "Departure day discipline",
+      "weight": 0.05,
+      "score": 100,
+      "weighted_score": 5,
+      "pass": true,
+      "finding": "Departure day is correctly kept to just checkout and travel activities.",
+      "example": "08:00-08:30 Check out of Canyon Lodge"
+    }
+  ],
+  "day_analysis": [
+    {
+      "day_number": 1,
+      "date": "2026-05-20",
+      "ai_title": "Arrival and Orientation",
+      "golden_title": "Arrival — Bozeman to Canyon",
+      "score": 60,
+      "hits": [
+        "Orientation session scheduled soon after arrival",
+        "Dinner at Canyon Lodge"
+      ],
+      "misses": [
+        "Evening stroll scheduled which contradicts no demanding evening activities"
+      ],
+      "worst_mistake": "Schedules evening wildlife spotting which is demanding after travel."
+    },
+    {
+      "day_number": 2,
+      "date": "2026-05-21",
+      "ai_title": "Geothermal Wonders and Wildlife",
+      "golden_title": "Lamar Valley — Wildlife Focus",
+      "score": 40,
+      "hits": [
+        "Includes Old Faithful and Grand Prismatic which are key experiences"
+      ],
+      "misses": [
+        "Wildlife viewing in Lamar Valley scheduled after optimal times",
+        "No rest in afternoon despite early start"
+      ],
+      "worst_mistake": "Schedules wildlife watching at inappropriate times for optimal sightings."
+    },
+    {
+      "day_number": 3,
+      "date": "2026-05-22",
+      "ai_title": "Geysers and Hiking",
+      "golden_title": "Grand Canyon of the Yellowstone + Hayden Sunset",
+      "score": 50,
+      "hits": [
+        "Includes Norris Geyser Basin and Mount Washburn"
+      ],
+      "misses": [
+        "No afternoon rest period despite early start and long hike",
+        "Norris late afternoon viewing is mentioned oddly in the morning"
+      ],
+      "worst_mistake": "No rest period after a demanding morning schedule."
+    },
+    {
+      "day_number": 4,
+      "date": "2026-05-23",
+      "ai_title": "Canyon and Lake Scenes",
+      "golden_title": "Geyser Loop — Old Faithful + Grand Prismatic",
+      "score": 70,
+      "hits": [
+        "Correctly schedules a visit to Yellowstone Lake and Grand Canyon"
+      ],
+      "misses": [
+        "Activities in the Grand Canyon missed colloquial reference to both Artist Point and Lower Falls"
+      ],
+      "worst_mistake": "Fails to ensure both Artist Point and Lower Falls are highlighted."
+    },
+    {
+      "day_number": 5,
+      "date": "2026-05-24",
+      "ai_title": "Northern Yellowstone Day",
+      "golden_title": "Norris Geyser Basin + Yellowstone Lake — Balanced Day",
+      "score": 45,
+      "hits": [
+        "Includes Mammoth Hot Springs and Boiling River"
+      ],
+      "misses": [
+        "Travel time overestimated between distances,"
+      ],
+      "worst_mistake": "Includes too many activities without appropriate rest and realistic travel estimates."
+    },
+    {
+      "day_number": 6,
+      "date": "2026-05-25",
+      "ai_title": "Departure from Yellowstone",
+      "golden_title": "Exit — Canyon to Bozeman",
+      "score": 80,
+      "hits": [
+        "Departure logistics are appropriately scheduled"
+      ],
+      "misses": [
+        "Early start time might not be necessary"
+      ],
+      "worst_mistake": "Departure day is generally well-planned."
+    }
+  ],
+  "top_failures": [
+    {
+      "failure": "Wildlife timing",
+      "severity": "major",
+      "description": "Failed to schedule wildlife viewing at appropriate dawn or dusk times, limiting potential sightings.",
+      "prompt_fix": "Incorporate 'Include wildlife viewing at dawn or dusk only' in nature activity scheduling."
+    },
+    {
+      "failure": "Recovery time omission",
+      "severity": "major",
+      "description": "Misses critical rest periods especially given early start days, impacting visitor energy levels.",
+      "prompt_fix": "Mandate 1.5-hour rest block after any early morning or vigorous activity."
+    },
+    {
+      "failure": "Grand Prismatic viewing advice",
+      "severity": "minor",
+      "description": "Misses expert advice to use the overlook trail for best Grand Prismatic Spring viewing.",
+      "prompt_fix": "Add 'always include Grand Prismatic Spring Overlook' to tips section."
+    }
+  ],
+  "what_ai_got_right": [
+    "Maintained a single base camp strategy at Canyon Lodge.",
+    "Did not schedule activities on departure day ensuring logistic focus."
+  ],
+  "prompt_improvement_plan": {
+    "itinerary_prompt_changes": [
+      "Require explicit rest periods in itineraries that include early morning starts or extended activities.",
+      "Include specific guidance to schedule wildlife activities only during dawn or dusk times."
+    ],
+    "board_generation_changes": [
+      "Ensure all 'must include' attractions like Artist Point and Hayden Valley appear in the suggestions.",
+      "Incorporate guidance on best viewing advice for attractions like Grand Prismatic Spring."
+    ]
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "stage": "itinerary",
+  "destination": "Zion National Park",
+  "file": "test_outputs/2026-05-27_14-41-30_zion-national-park_itinerary.json",
+  "facts": {
+    "destination": "Zion National Park",
+    "total_days": 5,
+    "total_activities": 8,
+    "activities_per_day": [
+      2,
+      2,
+      2,
+      2,
+      0
+    ],
+    "max_activities_per_day": 2,
+    "days_exceeding_limit": [],
+    "strenuous_activities_scheduled": [],
+    "activities_before_0800": [],
+    "activities_ending_after_1730": [],
+    "departure_day_activities": [],
+    "arrival_day_activities": [
+      "Pa'rus Trail",
+      "Zion Human History Museum"
+    ],
+    "shuttle_rows": [
+      "Day 2: Zion Canyon Shuttle to Temple of Sinawava",
+      "Day 4: Zion Canyon Shuttle to Court of the Patriarchs"
+    ],
+    "shuttle_count": 2,
+    "flexibility_note_count": 1,
+    "flexibility_note_examples": [
+      "Day 2 [Emerald Pools Trail]: Scheduled after a relaxing lunch to take advantage of afternoon light. Flexibili"
+    ],
+    "planning_notes_null": 0,
+    "planning_notes_short": 0,
+    "planning_notes_total": 17,
+    "required_experiences_found": [
+      "Pa'rus Trail"
+    ],
+    "required_experiences_missing": [],
+    "forbidden_experiences_found": [],
+    "change_log": [
+      "Day 1: Removed evening activities; rearranged schedule to allow only indoor museum and light trail walk for young kids.",
+      "Day 2: Removed third activity to comply with family_young schedule cap.",
+      "Added planning notes regarding flexibility for all afternoon activities, important for family_young parties.",
+      "Day 3: Added rest slot after drive from Kolob to Springdale for recharging.",
+      "Day 4: Adjusted travel and activity planning to ensure family_young compatibility with free afternoon.",
+      "Adjusted activities and meals on restricted days to ensure compliance with family_young party type."
+    ],
+    "checks": [
+      {
+        "check": "Required experiences scheduled (1/1)",
+        "passed": true,
+        "points": 25,
+        "max_points": 25,
+        "detail": "All required experiences scheduled"
+      },
+      {
+        "check": "Forbidden experiences excluded (5 checked)",
+        "passed": true,
+        "points": 25,
+        "max_points": 25,
+        "detail": "No forbidden experiences in itinerary"
+      },
+      {
+        "check": "Activity density (max 2/day)",
+        "passed": true,
+        "points": 15,
+        "max_points": 15,
+        "detail": "All days ≤ 2 activities"
+      },
+      {
+        "check": "Departure day has no activities (0 found)",
+        "passed": true,
+        "points": 15,
+        "max_points": 15,
+        "detail": "Departure day clean"
+      },
+      {
+        "check": "Shuttle transport rows present (2 rows)",
+        "passed": true,
+        "points": 10,
+        "max_points": 10,
+        "detail": "Day 2: Zion Canyon Shuttle to Temple of Sinawava, Day 4: Zion Canyon Shuttle to Court of the Patriarchs"
+      },
+      {
+        "check": "Timing rules (no activities before 08:00, after 17:30)",
+        "passed": true,
+        "points": 10,
+        "max_points": 10,
+        "detail": "All activities within time windows"
+      }
+    ],
+    "deterministic_score": 100
+  },
+  "judgment": {
+    "score": 69,
+    "dimension_scores": [
+      {
+        "dimension": "Planning note quality",
+        "score": 90,
+        "finding": "The itinerary provides well-detailed planning notes across 17 activity/meal rows, ensuring clear scheduling reasoning and traveler guidance."
+      },
+      {
+        "dimension": "Flexibility built in",
+        "score": 60,
+        "finding": "With only one activity including a flexibility note, the itinerary may not fully accommodate the varying needs of a family with young children."
+      },
+      {
+        "dimension": "Day flow narrative",
+        "score": 85,
+        "finding": "The trip's schedule starts with an easy first day and maintains a moderate pace with two activities per day, all while ending with a free day before departure."
+      },
+      {
+        "dimension": "Regional awareness",
+        "score": 40,
+        "finding": "The itinerary primarily focuses on Zion National Park, with limited indication of consideration for the wider regional attractions and experiences."
+      }
+    ],
+    "summary": "The itinerary offers strong planning notes and a coherent day flow, but flexibility and regional exploration could be improved. While thoughtfully designed for a family with young children, expanding adaptive options and regional inclusiveness would enhance its quality."
+  },
+  "deterministic_score": 100,
+  "quality_score": 69,
+  "overall_score": 89,
+  "generated_at": "2026-05-27T21:52:56.712Z"
+}

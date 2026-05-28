@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>app/lib/types.ts Feedback</title>
+  <style>
+    :root { color-scheme: light; --ink:#1f2933; --muted:#697386; --line:#d8dee8; --soft:#f6f8fb; --p0:#b42318; --p1:#b54708; --p2:#175cd3; --p3:#475467; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--ink); background: #fbfcfe; }
+    main { max-width: 920px; margin: 0 auto; padding: 32px 20px 56px; }
+    nav { margin-bottom: 24px; }
+    nav a { color: #175cd3; text-decoration: none; font-weight: 600; }
+    h1 { margin: 0 0 16px; font-size: 28px; line-height: 1.15; letter-spacing: 0; }
+    h2 { margin: 32px 0 10px; padding-top: 10px; border-top: 1px solid var(--line); font-size: 18px; }
+    h3 { margin: 24px 0 8px; font-size: 15px; }
+    p { margin: 10px 0; }
+    code { padding: 1px 5px; border-radius: 5px; background: #edf2f7; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.92em; }
+    pre { overflow: auto; padding: 14px; border: 1px solid var(--line); border-radius: 8px; background: #101828; color: #f8fafc; }
+    pre code { padding: 0; background: transparent; color: inherit; }
+    ul, ol { padding-left: 22px; }
+    li { margin: 8px 0; }
+    .task { position: relative; display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: start; margin: 10px 0; padding: 12px; border: 1px solid var(--line); border-left-width: 5px; border-radius: 8px; background: #fff; list-style: none; }
+    .task.p0 { border-left-color: var(--p0); }
+    .task.p1 { border-left-color: var(--p1); }
+    .task.p2 { border-left-color: var(--p2); }
+    .task.p3 { border-left-color: var(--p3); }
+    .task-line { display: flex; gap: 10px; align-items: flex-start; cursor: pointer; }
+    .task input { margin-top: 4px; width: 16px; height: 16px; }
+    .task input:checked + .task-text { text-decoration: line-through; opacity: 0.55; }
+    .task-text { display: block; }
+    .priority { border: 1px solid var(--line); border-radius: 6px; padding: 4px 8px; background: var(--soft); color: var(--ink); font: inherit; font-size: 12px; }
+    .toolbar { display: flex; gap: 10px; flex-wrap: wrap; margin: 18px 0 24px; padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--soft); color: var(--muted); }
+    .toolbar button { border: 1px solid var(--line); border-radius: 6px; background: #fff; padding: 6px 10px; color: var(--ink); cursor: pointer; }
+    .note { color: var(--muted); font-size: 13px; }
+
+    .principal-guidance { margin-top: 34px; padding: 18px; border: 1px solid #b9c6d8; border-radius: 8px; background: #f8fbff; }
+    .principal-guidance h2 { margin-top: 0; padding-top: 0; border-top: 0; }
+    .guidance-summary { color: #344054; font-weight: 600; }
+    .implementation-list { padding-left: 0; }
+    .acceptance-list, .decision-list { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 10px 16px 10px 28px; }
+    .decision-list { border-left: 5px solid #7a5af8; }
+  </style>
+</head>
+<body>
+<main>
+  <nav><a href="index.html">Feedback index</a></nav>
+  <div class="toolbar">
+    <span class="note">Checkboxes and priority changes are saved in this browser. To make progress durable for another agent, edit the HTML source by adding <code>checked</code>, changing the selected priority option, or moving items.</span>
+    <button type="button" id="clear-state">Clear local state</button>
+  </div>
+<h1>app/lib/types.ts Feedback</h1>
+<p><strong>Target file:</strong> <code>app/lib/types.ts</code> <strong>Feedback type:</strong> Data model architecture</p>
+<h2>Elephant In The Room</h2>
+<p>The schema is too presentation-shaped for the quality target. It has enough fields to render nice cards, but not enough structure to enforce truth, logistics, or itinerary constraints.</p>
+<h2>Major Feedback</h2>
+<ul>
+<li class="task p0" data-task-id="app_lib_types_ts_feedback_0">
+  <label class="task-line"><input type="checkbox" data-task-id="app_lib_types_ts_feedback_0"><span class="task-text"><strong>P0: Add source and verification fields.</strong> <code>GroundedExperience</code> has one <code>source_url</code>, but <code>Experience</code> does not retain source references or verification confidence. Every board experience should carry source refs and a verification status.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0" selected>P0</option><option value="P1">P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+</ul>
+<ul>
+<li class="task p0" data-task-id="app_lib_types_ts_feedback_1">
+  <label class="task-line"><input type="checkbox" data-task-id="app_lib_types_ts_feedback_1"><span class="task-text"><strong>P0: Replace important strings with structured constraints.</strong> Fields like <code>duration</code>, <code>best_time</code>, <code>watch_out_for</code>, and <code>local_tip</code> are useful to read but hard to enforce. Add structured fields for duration minutes, time windows, access restrictions, transport mode, permit required, reservation required, seasonal availability, and opening hours.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0" selected>P0</option><option value="P1">P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+</ul>
+<ul>
+<li class="task p0" data-task-id="app_lib_types_ts_feedback_2">
+  <label class="task-line"><input type="checkbox" data-task-id="app_lib_types_ts_feedback_2"><span class="task-text"><strong>P0: Add explicit compatibility fields.</strong> <code>suitability_tags</code> is too loose for party-type enforcement. Use structured booleans/enums such as <code>stroller_friendly</code>, <code>wheelchair_accessible</code>, <code>min_age</code>, <code>effort_minutes</code>, <code>elevation_gain_ft</code>, <code>water_crossing_required</code>, and <code>avoid_for_party_types</code>.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0" selected>P0</option><option value="P1">P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+</ul>
+<ul>
+<li class="task p1" data-task-id="app_lib_types_ts_feedback_3">
+  <label class="task-line"><input type="checkbox" data-task-id="app_lib_types_ts_feedback_3"><span class="task-text"><strong>P1: Add canonical identity fields.</strong> Dedup and Places matching need stable IDs beyond generated kebab-case IDs. Add <code>canonical_name</code>, <code>canonical_place_id</code>, <code>source_candidate_id</code>, and maybe <code>aliases</code>.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0">P0</option><option value="P1" selected>P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+</ul>
+<ul>
+<li class="task p1" data-task-id="app_lib_types_ts_feedback_4">
+  <label class="task-line"><input type="checkbox" data-task-id="app_lib_types_ts_feedback_4"><span class="task-text"><strong>P1: Add itinerary validation outputs.</strong> <code>PlanResponse</code> should include <code>validation_warnings</code>, <code>unscheduled_experiences</code>, and maybe <code>assumptions_used</code>, not only the final itinerary and optional clusters.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0">P0</option><option value="P1" selected>P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+</ul>
+<ul>
+<li class="task p1" data-task-id="app_lib_types_ts_feedback_5">
+  <label class="task-line"><input type="checkbox" data-task-id="app_lib_types_ts_feedback_5"><span class="task-text"><strong>P1: Model meals separately.</strong> Meals are currently itinerary rows with no verified source contract. Food is first-class in the product, so meal candidates need the same source, dietary, hours, and location discipline as activities.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0">P0</option><option value="P1" selected>P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+</ul>
+<h2>Suggested Types To Add</h2>
+<pre data-language="ts"><code>interface SourceRef {
+  url: string
+  title?: string
+  publisher?: string
+  retrieved_at: string
+  supports: string[]
+}
+
+interface AccessConstraint {
+  access_mode: "walk" | "drive" | "shuttle" | "ferry" | "transit" | "tour_only"
+  note: string
+  seasonal?: boolean
+  hard_constraint: boolean
+}
+
+interface ScheduleConstraint {
+  preferred_windows: Array&lt;{ start: string; end: string; reason: string }&gt;
+  forbidden_windows?: Array&lt;{ start: string; end: string; reason: string }&gt;
+  duration_min: number
+  duration_max?: number
+}</code></pre>
+<p>These do not replace good copy. They give the copy and planner something reliable to stand on.</p>
+<section class="principal-guidance">
+  <h2>Principal Engineer Implementation Notes</h2>
+  <p class="guidance-summary">The quickest high-leverage code fix starts here. Add just enough structure to enforce trust without boiling the ocean.</p>
+  <h3>Implementation-Ready Checklist</h3>
+  <ul class="implementation-list">
+<li class="task p0" data-task-id="app_lib_types_ts_feedback_impl_0">
+  <label class="task-line"><input type="checkbox" data-task-id="app_lib_types_ts_feedback_impl_0"><span class="task-text"><strong>P0:</strong> Add <code>SourceRef</code>, <code>VerificationStatus</code>, <code>ExperienceFact</code>, <code>AccessConstraint</code>, and <code>ScheduleConstraint</code> types. Keep fields optional on <code>Experience</code> for backward compatibility.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0" selected>P0</option><option value="P1">P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+<li class="task p0" data-task-id="app_lib_types_ts_feedback_impl_1">
+  <label class="task-line"><input type="checkbox" data-task-id="app_lib_types_ts_feedback_impl_1"><span class="task-text"><strong>P0:</strong> Add <code>source_refs?: SourceRef[]</code>, <code>verification_status?: VerificationStatus</code>, <code>candidate_id?: string</code>, and <code>canonical_place_id?: string</code> to <code>Experience</code>.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0" selected>P0</option><option value="P1">P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+<li class="task p0" data-task-id="app_lib_types_ts_feedback_impl_2">
+  <label class="task-line"><input type="checkbox" data-task-id="app_lib_types_ts_feedback_impl_2"><span class="task-text"><strong>P0:</strong> Add structured schedule/access fields: <code>duration_minutes?: { min: number; max?: number }</code>, <code>schedule_constraints?: ScheduleConstraint[]</code>, and <code>access_constraints?: AccessConstraint[]</code>.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0" selected>P0</option><option value="P1">P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+<li class="task p1" data-task-id="app_lib_types_ts_feedback_impl_3">
+  <label class="task-line"><input type="checkbox" data-task-id="app_lib_types_ts_feedback_impl_3"><span class="task-text"><strong>P1:</strong> Add <code>validation_warnings?: ValidationWarning[]</code>, <code>unscheduled_experiences?: UnscheduledExperience[]</code>, and <code>assumptions_used?: string[]</code> to <code>PlanResponse</code>.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0">P0</option><option value="P1" selected>P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+<li class="task p1" data-task-id="app_lib_types_ts_feedback_impl_4">
+  <label class="task-line"><input type="checkbox" data-task-id="app_lib_types_ts_feedback_impl_4"><span class="task-text"><strong>P1:</strong> Model food candidates with source, dietary, hours, and location fields instead of treating meals as unsourced text rows.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0">P0</option><option value="P1" selected>P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+  </ul>
+  <h3>Acceptance Criteria</h3>
+  <ul class="acceptance-list">
+<li>Existing generated boards still type-check while new fields can be populated incrementally.</li>
+<li>The planner and eval scripts can read structured constraints without parsing prose.</li>
+<li>Every future high-risk rule has a type-level home.</li>
+  </ul>
+  <h3>Needs Product Decision</h3>
+  <ul class="decision-list">
+<li>Decide how strict TypeScript should be in the first migration. Recommendation: optional fields now, required fields after validators and cache migration land.</li>
+  </ul>
+</section>
+</main>
+<script>
+(function () {
+  const key = 'feedback-state:' + location.pathname.split('/').pop();
+  const state = JSON.parse(localStorage.getItem(key) || '{}');
+  document.querySelectorAll('.task').forEach(task => {
+    const id = task.dataset.taskId;
+    const box = task.querySelector('input[type="checkbox"]');
+    const select = task.querySelector('select.priority');
+    if (state[id]) {
+      box.checked = !!state[id].done;
+      if (state[id].priority) select.value = state[id].priority;
+    }
+    function save() {
+      const next = JSON.parse(localStorage.getItem(key) || '{}');
+      next[id] = { done: box.checked, priority: select.value };
+      localStorage.setItem(key, JSON.stringify(next));
+      task.classList.remove('p0','p1','p2','p3');
+      task.classList.add(select.value.toLowerCase());
+    }
+    box.addEventListener('change', save);
+    select.addEventListener('change', save);
+    task.classList.remove('p0','p1','p2','p3');
+    task.classList.add(select.value.toLowerCase());
+  });
+  document.getElementById('clear-state').addEventListener('click', () => {
+    localStorage.removeItem(key);
+    location.reload();
+  });
+})();
+</script>
+</body>
+</html>

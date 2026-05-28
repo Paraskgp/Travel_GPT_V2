@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>app/app/page.tsx Feedback</title>
+  <style>
+    :root { color-scheme: light; --ink:#1f2933; --muted:#697386; --line:#d8dee8; --soft:#f6f8fb; --p0:#b42318; --p1:#b54708; --p2:#175cd3; --p3:#475467; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--ink); background: #fbfcfe; }
+    main { max-width: 920px; margin: 0 auto; padding: 32px 20px 56px; }
+    nav { margin-bottom: 24px; }
+    nav a { color: #175cd3; text-decoration: none; font-weight: 600; }
+    h1 { margin: 0 0 16px; font-size: 28px; line-height: 1.15; letter-spacing: 0; }
+    h2 { margin: 32px 0 10px; padding-top: 10px; border-top: 1px solid var(--line); font-size: 18px; }
+    h3 { margin: 24px 0 8px; font-size: 15px; }
+    p { margin: 10px 0; }
+    code { padding: 1px 5px; border-radius: 5px; background: #edf2f7; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.92em; }
+    pre { overflow: auto; padding: 14px; border: 1px solid var(--line); border-radius: 8px; background: #101828; color: #f8fafc; }
+    pre code { padding: 0; background: transparent; color: inherit; }
+    ul, ol { padding-left: 22px; }
+    li { margin: 8px 0; }
+    .task { position: relative; display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: start; margin: 10px 0; padding: 12px; border: 1px solid var(--line); border-left-width: 5px; border-radius: 8px; background: #fff; list-style: none; }
+    .task.p0 { border-left-color: var(--p0); }
+    .task.p1 { border-left-color: var(--p1); }
+    .task.p2 { border-left-color: var(--p2); }
+    .task.p3 { border-left-color: var(--p3); }
+    .task-line { display: flex; gap: 10px; align-items: flex-start; cursor: pointer; }
+    .task input { margin-top: 4px; width: 16px; height: 16px; }
+    .task input:checked + .task-text { text-decoration: line-through; opacity: 0.55; }
+    .task-text { display: block; }
+    .priority { border: 1px solid var(--line); border-radius: 6px; padding: 4px 8px; background: var(--soft); color: var(--ink); font: inherit; font-size: 12px; }
+    .toolbar { display: flex; gap: 10px; flex-wrap: wrap; margin: 18px 0 24px; padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--soft); color: var(--muted); }
+    .toolbar button { border: 1px solid var(--line); border-radius: 6px; background: #fff; padding: 6px 10px; color: var(--ink); cursor: pointer; }
+    .note { color: var(--muted); font-size: 13px; }
+
+    .principal-guidance { margin-top: 34px; padding: 18px; border: 1px solid #b9c6d8; border-radius: 8px; background: #f8fbff; }
+    .principal-guidance h2 { margin-top: 0; padding-top: 0; border-top: 0; }
+    .guidance-summary { color: #344054; font-weight: 600; }
+    .implementation-list { padding-left: 0; }
+    .acceptance-list, .decision-list { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 10px 16px 10px 28px; }
+    .decision-list { border-left: 5px solid #7a5af8; }
+  </style>
+</head>
+<body>
+<main>
+  <nav><a href="index.html">Feedback index</a></nav>
+  <div class="toolbar">
+    <span class="note">Checkboxes and priority changes are saved in this browser. To make progress durable for another agent, edit the HTML source by adding <code>checked</code>, changing the selected priority option, or moving items.</span>
+    <button type="button" id="clear-state">Clear local state</button>
+  </div>
+<h1>app/app/page.tsx Feedback</h1>
+<p><strong>Target file:</strong> <code>app/app/page.tsx</code> <strong>Feedback type:</strong> Product flow and quality feedback loop</p>
+<h2>Elephant In The Room</h2>
+<p>The UI flow hides too much uncertainty. It presents board generation and itinerary planning as a smooth linear process even when upstream grounding, enrichment, or planning assumptions may be weak.</p>
+<h2>Major Feedback</h2>
+<ul>
+<li class="task p0" data-task-id="app_app_page_tsx_feedback_0">
+  <label class="task-line"><input type="checkbox" data-task-id="app_app_page_tsx_feedback_0"><span class="task-text"><strong>P0: Surface confidence and assumptions.</strong> Users and evaluators need to see when a board is grounded, partially grounded, or unverified. The UI should not silently treat all generated cards as equally trustworthy.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0" selected>P0</option><option value="P1">P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+</ul>
+<ul>
+<li class="task p1" data-task-id="app_app_page_tsx_feedback_1">
+  <label class="task-line"><input type="checkbox" data-task-id="app_app_page_tsx_feedback_1"><span class="task-text"><strong>P1: Clarify whether itinerary planning uses the whole board or user-selected experiences.</strong> The product docs describe planning from liked experiences, but this page auto-plans from the generated board. That mismatch affects both UX and evaluation.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0">P0</option><option value="P1" selected>P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+</ul>
+<ul>
+<li class="task p1" data-task-id="app_app_page_tsx_feedback_2">
+  <label class="task-line"><input type="checkbox" data-task-id="app_app_page_tsx_feedback_2"><span class="task-text"><strong>P1: Show unscheduled and rejected items.</strong> When the planner excludes an experience, the UI should expose why: too far, too strenuous, skipped by user, low confidence, not enough time, wrong season, or missing verification.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0">P0</option><option value="P1" selected>P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+</ul>
+<ul>
+<li class="task p1" data-task-id="app_app_page_tsx_feedback_3">
+  <label class="task-line"><input type="checkbox" data-task-id="app_app_page_tsx_feedback_3"><span class="task-text"><strong>P1: Enrichment happens after auto-planning.</strong> Planning can run before Places coordinates/photos are merged into the board. If coordinates become important for quality, planning should wait for verification or use server-side enrichment before planning.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0">P0</option><option value="P1" selected>P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+</ul>
+<h2>Suggested Implementation Direction</h2>
+<ul>
+<li>Add a board quality/verification banner.</li>
+<li>Add an itinerary assumptions panel that includes stay area, source confidence, unscheduled items, and validation warnings.</li>
+<li>Decide and enforce one planning mode: "auto-plan from best board options" or "plan from user shortlist."</li>
+</ul>
+<section class="principal-guidance">
+  <h2>Principal Engineer Implementation Notes</h2>
+  <p class="guidance-summary">The UI should make flexibility and uncertainty visible. That keeps trust high without forcing the itinerary to be rigid.</p>
+  <h3>Implementation-Ready Checklist</h3>
+  <ul class="implementation-list">
+<li class="task p0" data-task-id="app_app_page_tsx_feedback_impl_0">
+  <label class="task-line"><input type="checkbox" data-task-id="app_app_page_tsx_feedback_impl_0"><span class="task-text"><strong>P0:</strong> Add display support for <code>validation_warnings</code>, <code>assumptions_used</code>, and <code>unscheduled_experiences</code> returned by <code>/api/plan</code>.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0" selected>P0</option><option value="P1">P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+<li class="task p0" data-task-id="app_app_page_tsx_feedback_impl_1">
+  <label class="task-line"><input type="checkbox" data-task-id="app_app_page_tsx_feedback_impl_1"><span class="task-text"><strong>P0:</strong> Block or label auto-planning when the board validation status is failed or unknown.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0" selected>P0</option><option value="P1">P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+<li class="task p1" data-task-id="app_app_page_tsx_feedback_impl_2">
+  <label class="task-line"><input type="checkbox" data-task-id="app_app_page_tsx_feedback_impl_2"><span class="task-text"><strong>P1:</strong> Clarify the UX copy for planning mode: "planned from best board options" vs "planned from saved items".</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0">P0</option><option value="P1" selected>P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+<li class="task p1" data-task-id="app_app_page_tsx_feedback_impl_3">
+  <label class="task-line"><input type="checkbox" data-task-id="app_app_page_tsx_feedback_impl_3"><span class="task-text"><strong>P1:</strong> Show why skipped items were omitted and let the user force/include them with a replan.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0">P0</option><option value="P1" selected>P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+<li class="task p2" data-task-id="app_app_page_tsx_feedback_impl_4">
+  <label class="task-line"><input type="checkbox" data-task-id="app_app_page_tsx_feedback_impl_4"><span class="task-text"><strong>P2:</strong> Add confidence chips to cards once verification metadata exists.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0">P0</option><option value="P1">P1</option><option value="P2" selected>P2</option><option value="P3">P3</option>
+  </select>
+</li>
+  </ul>
+  <h3>Acceptance Criteria</h3>
+  <ul class="acceptance-list">
+<li>Users can see the assumptions behind the itinerary and change them.</li>
+<li>The UI no longer presents low-confidence output as equally trustworthy.</li>
+<li>The user can preserve flexibility by pinning, skipping, or asking for a lighter/heavier replan.</li>
+  </ul>
+  <h3>Needs Product Decision</h3>
+  <ul class="decision-list">
+<li>Decide whether the first itinerary should be generated automatically or only after the user reviews the board. Recommendation: keep auto-plan if dates are supplied, but show assumptions and unscheduled rationale immediately.</li>
+  </ul>
+</section>
+</main>
+<script>
+(function () {
+  const key = 'feedback-state:' + location.pathname.split('/').pop();
+  const state = JSON.parse(localStorage.getItem(key) || '{}');
+  document.querySelectorAll('.task').forEach(task => {
+    const id = task.dataset.taskId;
+    const box = task.querySelector('input[type="checkbox"]');
+    const select = task.querySelector('select.priority');
+    if (state[id]) {
+      box.checked = !!state[id].done;
+      if (state[id].priority) select.value = state[id].priority;
+    }
+    function save() {
+      const next = JSON.parse(localStorage.getItem(key) || '{}');
+      next[id] = { done: box.checked, priority: select.value };
+      localStorage.setItem(key, JSON.stringify(next));
+      task.classList.remove('p0','p1','p2','p3');
+      task.classList.add(select.value.toLowerCase());
+    }
+    box.addEventListener('change', save);
+    select.addEventListener('change', save);
+    task.classList.remove('p0','p1','p2','p3');
+    task.classList.add(select.value.toLowerCase());
+  });
+  document.getElementById('clear-state').addEventListener('click', () => {
+    localStorage.removeItem(key);
+    location.reload();
+  });
+})();
+</script>
+</body>
+</html>

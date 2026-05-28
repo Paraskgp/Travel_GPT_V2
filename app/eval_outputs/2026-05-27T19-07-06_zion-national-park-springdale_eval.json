@@ -1,0 +1,190 @@
+{
+  "overall_score": 48,
+  "overall_grade": "F",
+  "summary": "The AI itinerary failed to accommodate family travel needs, including overly strenuous activities and lacking flexibility. However, it did correctly include regional highlights such as Kolob Canyons as an alternative experience, showcasing some contextual understanding.",
+  "coverage": {
+    "must_have_found": [
+      "Pa'rus Trail",
+      "Angels Landing",
+      "The Narrows"
+    ],
+    "must_have_missing": [
+      "Canyon Scenic Drive / shuttle",
+      "Emerald Pools Trail",
+      "Weeping Rock"
+    ],
+    "coverage_score": 50
+  },
+  "dimension_scores": [
+    {
+      "dimension": "Toddler-appropriate filtering",
+      "weight": 0.3,
+      "score": 0,
+      "weighted_score": 0,
+      "pass": false,
+      "finding": "The itinerary schedules Angels Landing and The Narrows for a family with young children, both unsuitable for toddlers.",
+      "example": "8:15-12:15 Angels Landing Hike | Look down at the rock's eastern face after the 'Tooth' for condor perching streaks."
+    },
+    {
+      "dimension": "Activity density appropriate to family",
+      "weight": 0.2,
+      "score": 40,
+      "weighted_score": 8,
+      "pass": false,
+      "finding": "The itinerary often exceeds 3 activities per day with no planned rest periods.",
+      "example": "Day 2 schedules a hike, lunch, another hike, and dinner without a substantial break."
+    },
+    {
+      "dimension": "Shuttle system referenced",
+      "weight": 0.15,
+      "score": 100,
+      "weighted_score": 15,
+      "pass": true,
+      "finding": "The itinerary appropriately references using the shuttle system for travel within the park.",
+      "example": "08:00-08:15 Travel to Angels Landing | Shuttle to the Grotto Trailhead."
+    },
+    {
+      "dimension": "Flexibility built in",
+      "weight": 0.15,
+      "score": 0,
+      "weighted_score": 0,
+      "pass": false,
+      "finding": "The itinerary lacks any mention of alternative options or built-in flexibility.",
+      "example": "Day 3 has a rigid schedule from early morning to evening without alternatives."
+    },
+    {
+      "dimension": "Departure discipline",
+      "weight": 0.1,
+      "score": 100,
+      "weighted_score": 10,
+      "pass": true,
+      "finding": "Departure day is managed well, focusing on a scenic drive and light activities.",
+      "example": "09:00-10:00 Packing and Checkout | Prepare for your journey home."
+    },
+    {
+      "dimension": "Regional gateway awareness",
+      "weight": 0.1,
+      "score": 100,
+      "weighted_score": 10,
+      "pass": true,
+      "finding": "There is awareness of Kolob Canyons as part of the plan, showcasing an alternative to Zion's main canyon.",
+      "example": "09:00-13:00 Kolob Canyons Exploration | Look back towards Timber Creek Overlook for vibrant colors after rain."
+    }
+  ],
+  "day_analysis": [
+    {
+      "day_number": 1,
+      "date": "2026-05-20",
+      "ai_title": "Arrival and Relaxation",
+      "golden_title": "Arrival & Scenic Exploration",
+      "score": 75,
+      "hits": [
+        "Check-in and settling planned correctly.",
+        "Dinner scheduled in Springdale."
+      ],
+      "misses": [
+        "No morning activity option like Pa'rus Trail or visitor center visit."
+      ],
+      "worst_mistake": "Lack of mid-morning or cultural activity to orient new arrivals."
+    },
+    {
+      "day_number": 2,
+      "date": "2026-05-21",
+      "ai_title": "Exploring Signature Trails",
+      "golden_title": "Lower Canyon & Easy Hikes",
+      "score": 30,
+      "hits": [
+        "Shuttle usage correctly noted."
+      ],
+      "misses": [
+        "Angel's Landing is not suitable for a toddler.",
+        "Too many activities with no rest period."
+      ],
+      "worst_mistake": "Scheduling of Angels Landing for a family with a toddler."
+    },
+    {
+      "day_number": 3,
+      "date": "2026-05-22",
+      "ai_title": "River Walks and Scenic Views",
+      "golden_title": "Kolob Canyons or More Zion",
+      "score": 20,
+      "hits": [
+        "Includes Narrows, a notable location."
+      ],
+      "misses": [
+        "The Narrows is unsuitable for toddlers."
+      ],
+      "worst_mistake": "Planning The Narrows Walk, which is hazardous for young children."
+    },
+    {
+      "day_number": 4,
+      "date": "2026-05-23",
+      "ai_title": "Hiking and Local Taste",
+      "golden_title": "Kolob Canyons or More Zion",
+      "score": 40,
+      "hits": [
+        "Inclusion of Observation Point Trail for variety."
+      ],
+      "misses": [
+        "Rigid schedule with no alternative options for fatigue."
+      ],
+      "worst_mistake": "No built-in flexibility or rest time."
+    },
+    {
+      "day_number": 5,
+      "date": "2026-05-24",
+      "ai_title": "Unique Canyons and Scenic Drives",
+      "golden_title": "Relaxed Departure Day",
+      "score": 60,
+      "hits": [
+        "Kolob Canyons inclusion."
+      ],
+      "misses": [
+        "Potentially exhausting Kolob exploration scheduled without flexibility."
+      ],
+      "worst_mistake": "Lack of flexibility and rest periods involved in the day's plan."
+    },
+    {
+      "day_number": 6,
+      "date": "2026-05-25",
+      "ai_title": "Departure Day",
+      "golden_title": "Fly home",
+      "score": 90,
+      "hits": [
+        "Light departure day with focus on packing and travel."
+      ],
+      "misses": [
+        "Departure logistics could also have included note on nearby attractions if time permitted."
+      ],
+      "worst_mistake": "No suggestion of any final light activity or scenic stops prior to flight."
+    }
+  ],
+  "top_failures": [
+    {
+      "failure": "Inclusion of strenuous activities",
+      "severity": "critical",
+      "description": "Angels Landing and The Narrows are extremely strenuous and risky for families with young children.",
+      "prompt_fix": "Exclude Angels Landing and The Narrows from itineraries when party_type includes young children. Focus on gentle, paved paths."
+    },
+    {
+      "failure": "Lack of itinerary flexibility",
+      "severity": "major",
+      "description": "No days have lighter/alternative options, leading to rigid scheduling for a family environment.",
+      "prompt_fix": "Incorporate at least one day with 'if energy allows' options for a more adaptable itinerary."
+    }
+  ],
+  "what_ai_got_right": [
+    "Accurately included mentions of shuttle system.",
+    "Kolob Canyons appropriately noted as an alternative experience."
+  ],
+  "prompt_improvement_plan": {
+    "itinerary_prompt_changes": [
+      "Explicitly categorize Angels Landing, The Narrows, and similar hikes as not suitable for young children.",
+      "Incorporate prompts to ask for alternative, less strenuous options in the itinerary for families."
+    ],
+    "board_generation_changes": [
+      "Emphasize the importance of identifying family-appropriate activities and alternate options in board entries.",
+      "Stress the exclusion of difficult hikes from boards when family_young is a criterion."
+    ]
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "destination": "Grand Canyon National Park, South Rim",
+    "source": "Human-planned itinerary (PDF spreadsheet)",
+    "created_by": "human",
+    "trip_dates": { "start": "2026-10-16", "end": "2026-10-22" },
+    "arrival": { "airport": "Phoenix Sky Harbor", "time": "10:00", "drive_to_base": "~4 hrs to Page, AZ first; ~3.5 hrs Page to Tusayan" },
+    "departure": { "airport": "Phoenix Sky Harbor", "time": "16:00" },
+    "base_camp_1": "Page, AZ (Days 0–3) — gateway to canyon country: Horseshoe Bend, Antelope Canyon, Lake Powell",
+    "base_camp_2": "Tusayan, AZ (Days 4–6) — gateway to Grand Canyon South Rim",
+    "lodging_moves": 1,
+    "critical_context": "This is a REGIONAL canyon country trip, not purely a Grand Canyon trip. The human spent more time in Page/canyon country than at Grand Canyon itself. An AI testing only 'Grand Canyon' will miss this entirely — that is expected and informative.",
+    "notes": "Antelope Canyon requires a guided Navajo tour — walk-up not allowed. Rainbow Bridge requires a full-day boat tour from Lake Powell Marina. Helicopter ride was planned but not executed."
+  },
+
+  "locations_visited": [
+    { "name": "Glen Canyon Dam", "role": "secondary", "day": 1, "note": "Half-day. The dam and Horseshoe Canyon viewpoint. Can be combined with other Page activities." },
+    { "name": "Horseshoe Bend", "role": "headline", "day": 2, "note": "8 AM guided tour. Mile Marker 545, Highway 89. Short walk from parking — 20-30 min at the overlook. Early morning for best light and fewer crowds." },
+    { "name": "Antelope Canyon (Lower or Upper)", "role": "headline", "day": 2, "note": "2:20 PM Navajo guided tour — MUST be booked in advance (navajoantelopecanyon.com). Upper for shafts of light, Lower for sculpted waves. Both require guides." },
+    { "name": "Lake Powell — Rainbow Bridge National Monument", "role": "headline", "day": 3, "note": "7 AM or earlier departure. Full-day boat tour. Rainbow Bridge is the world's largest natural bridge. This is NOT a half-day activity." },
+    { "name": "Grand Canyon South Rim — Hermit Road viewpoints", "role": "headline", "day": 5, "note": "9 AM start. Drive Hermit Road end-to-end, stop at all viewpoints: Trailview, Maricopa, Powell, Hopi, Mohave, Pima, Hermits Rest. This is the definitive South Rim experience." },
+    { "name": "Grand Canyon Rim Trail", "role": "secondary", "day": 6, "note": "9 AM departure morning. Easy paved trail along the rim. 2-3 hours. Last activity before driving to Phoenix." }
+  ],
+
+  "locations_notably_excluded": [
+    { "name": "Grand Canyon West Rim / Skywalk", "reason": "Crossed out — too commercialized, 2-3 hrs detour, not worth it vs. South Rim" },
+    { "name": "Hoover Dam", "reason": "Crossed out — not worth the detour given time constraints" },
+    { "name": "Grand Canyon North Rim", "reason": "Crossed out — requires a full separate day trip, too far from South Rim base" },
+    { "name": "Bright Angel Trail (full)", "reason": "Crossed out — likely too strenuous given the schedule. Rim Trail is the substitute." },
+    { "name": "Helicopter ride", "reason": "Was planned for Day 4 transit day but marked 'Not Started' — not executed" }
+  ],
+
+  "days": [
+    {
+      "day_number": 0,
+      "date": "2026-10-16",
+      "title": "Fly Phoenix → Drive to Page",
+      "theme": "Travel day. Land, pick up car, drive to Page. Grocery stop en route.",
+      "rows": [
+        { "time": "10:00", "activity": "Land at Phoenix Sky Harbor", "notes": "Pick up rental car fast" },
+        { "time": "11:00-11:30", "activity": "Grocery shopping near airport", "notes": "Stock up — Page has limited options" },
+        { "time": "11:30-15:30", "activity": "Drive Page, AZ via Highway 89", "drive_time": "~4 hrs", "notes": "Scenic through Navajo Nation" },
+        { "time": "16:00", "activity": "Check into Airbnb in Page", "notes": null },
+        { "time": "Evening", "activity": "Rest / light dinner", "notes": null }
+      ]
+    },
+    {
+      "day_number": 1,
+      "date": "2026-10-17",
+      "title": "Page Orientation — Glen Canyon Dam",
+      "theme": "Easy day near Page. Glen Canyon Dam + lake views.",
+      "rows": [
+        { "time": "Morning", "activity": "Glen Canyon Dam visitor center + views", "notes": "Carl Hayden Visitor Center. Guided dam tours available. Good intro to the Colorado River system." },
+        { "time": "Afternoon", "activity": "Explore Page town / rest", "notes": null }
+      ]
+    },
+    {
+      "day_number": 2,
+      "date": "2026-10-18",
+      "title": "Horseshoe Bend + Antelope Canyon",
+      "theme": "The two Page icons. Morning light for Horseshoe Bend, afternoon tour for Antelope.",
+      "start_time": "08:00",
+      "rows": [
+        { "time": "08:00-09:30", "activity": "Horseshoe Bend guided tour", "notes": "Mile Marker 545, Highway 89. 20-min walk to overlook. Morning light best." },
+        { "time": "10:00-12:00", "activity": "Lunch + rest in Page", "notes": null },
+        { "time": "14:20", "activity": "Antelope Canyon Navajo guided tour", "notes": "Pre-booked. Lower Antelope is less crowded than Upper. Allow 1 hr for the tour." }
+      ],
+      "day_principles": [
+        "Antelope Canyon MUST be pre-booked — no walk-ups allowed.",
+        "Morning light is best for Horseshoe Bend. Do it first.",
+        "Don't cram more into this day — Antelope Canyon ends late afternoon."
+      ]
+    },
+    {
+      "day_number": 3,
+      "date": "2026-10-19",
+      "title": "Lake Powell — Rainbow Bridge",
+      "theme": "Full-day boat tour. Depart before 7 AM.",
+      "start_time": "07:00",
+      "rows": [
+        { "time": "07:00 or earlier", "activity": "Depart for Lake Powell Marina", "notes": "Check boat tour schedule — some depart as early as 07:00" },
+        { "time": "All day", "activity": "Rainbow Bridge National Monument boat tour", "notes": "Full day on the water. The bridge is 290 ft tall — largest natural bridge in the world. Pack food and sunscreen." },
+        { "time": "Evening", "activity": "Return, dinner in Page, pack for Tusayan move tomorrow", "notes": null }
+      ],
+      "day_principles": [
+        "This is a full-day commitment — do not try to add other activities.",
+        "Book the boat tour in advance. Antelope Point Marina or Wahweap Marina."
+      ]
+    },
+    {
+      "day_number": 4,
+      "date": "2026-10-20",
+      "title": "Transit Day — Page to Tusayan",
+      "theme": "Drive day. Arrive Tusayan, check in, rest.",
+      "start_time": "06:00",
+      "rows": [
+        { "time": "06:00", "activity": "Checkout and depart Page", "notes": "3.5 hr drive to Tusayan. No rushing." },
+        { "time": "09:30-10:00", "activity": "Arrive Tusayan — check in", "notes": null },
+        { "time": "Afternoon", "activity": "Rest / brief Grand Canyon rim preview (optional)", "notes": "Light afternoon walk if energy allows" },
+        { "time": "Evening", "activity": "Early dinner, sleep — big day tomorrow", "notes": null }
+      ],
+      "day_principles": [
+        "Transit days require rest. Do not schedule major activities on drive days.",
+        "Helicopter ride was considered but not executed — too disruptive to schedule."
+      ]
+    },
+    {
+      "day_number": 5,
+      "date": "2026-10-21",
+      "title": "Grand Canyon South Rim — Hermit Road",
+      "theme": "The definitive South Rim day. Hermit Road all viewpoints.",
+      "start_time": "09:00",
+      "rows": [
+        { "time": "09:00", "activity": "Grand Canyon Village — orientation", "notes": "Visitor center, park map, shuttle plan" },
+        { "time": "09:30-15:00", "activity": "Hermit Road viewpoints — all stops", "notes": "Trailview → Maricopa → Powell → Hopi → Mohave → Pima → Hermits Rest. Take the free park shuttle westbound, walk back eastbound sections. Best light in late afternoon at Hopi and Mohave points." },
+        { "time": "15:00-17:00", "activity": "Rest / Bright Angel area / rim walk", "notes": null },
+        { "time": "Evening", "activity": "Dinner in Tusayan or El Tovar", "notes": "El Tovar requires reservations but is the iconic Grand Canyon dining experience" }
+      ],
+      "day_principles": [
+        "Hermit Road is the definitive South Rim experience — cover all viewpoints, not just the famous ones.",
+        "Late afternoon light at Hopi Point is the best photography window.",
+        "The free park shuttle is the right way to do Hermit Road — driving is slower."
+      ]
+    },
+    {
+      "day_number": 6,
+      "date": "2026-10-22",
+      "title": "Rim Trail Morning + Drive to Phoenix",
+      "theme": "Short morning activity, then long drive to Phoenix airport.",
+      "start_time": "07:00",
+      "rows": [
+        { "time": "07:00", "activity": "Checkout from Tusayan hotel", "notes": "Don't cut it close" },
+        { "time": "09:00-11:00", "activity": "South Rim — Rim Trail walk", "notes": "Easy paved trail. Sunrise views. Stay east of Mather Point for fewer crowds." },
+        { "time": "11:00-15:30", "activity": "Drive Tusayan → Phoenix Sky Harbor", "drive_time": "~3.5-4 hrs", "notes": "No stops — straight shot to airport" },
+        { "time": "16:00", "activity": "Flight departure", "notes": null }
+      ],
+      "day_principles": [
+        "Rim Trail is perfect for departure morning — easy, no time pressure, near the exit.",
+        "Tusayan to Phoenix is 3.5 hrs minimum. Depart by 11 AM for a 4 PM flight.",
+        "Do NOT try to add Bright Angel Trail or a canyon descent on departure day."
+      ]
+    }
+  ],
+
+  "claude_analysis": {
+    "overall_grade": "A — Pragmatic regional trip with excellent curation",
+    "key_principles_the_human_applied": [
+      {
+        "principle": "Regional circuit over single-destination myopia",
+        "impact": "CRITICAL",
+        "description": "The human treated this as a canyon country circuit: Page (Horseshoe Bend, Antelope Canyon, Lake Powell) then Grand Canyon. They spent MORE time in Page than at Grand Canyon. An AI generating 'Grand Canyon' itinerary will likely over-stuff the South Rim instead of seeing the regional context.",
+        "ai_gap": "AI will probably try to fill all 7 days with Grand Canyon content, leading to over-scheduling at the South Rim. The human's wisdom is that 1.5 days at the rim is enough — what makes the trip special is the Page area."
+      },
+      {
+        "principle": "Guided tours are non-negotiable logistics, not preferences",
+        "impact": "HIGH",
+        "description": "Antelope Canyon requires a Navajo guided tour — no walk-ups. Rainbow Bridge requires a full-day boat tour. These are not 'things to do' — they are logistical commitments that define the day's structure.",
+        "ai_gap": "AI planners treat guided tours as activities. They are actually scheduling anchors: Antelope Canyon defines the entire afternoon of Day 2, Rainbow Bridge defines the entire Day 3."
+      },
+      {
+        "principle": "Deliberate exclusion of famous but low-value experiences",
+        "impact": "HIGH",
+        "description": "West Rim Skywalk, Hoover Dam, North Rim, full Bright Angel Trail — all explicitly crossed out. The human made hard calls to exclude famous things that didn't fit the trip arc.",
+        "ai_gap": "AI boards include everything. The human knew that adding the West Rim Skywalk would consume a full day for an experience they deemed not worth it."
+      },
+      {
+        "principle": "Transit days get no activities",
+        "impact": "MEDIUM",
+        "description": "Day 4 (Page to Tusayan drive) has check-in and sleep. That's it. Even though the helicopter ride was considered, it didn't happen.",
+        "ai_gap": "AI planners add activities to transit days. The human understood that a 3.5-hr drive + settling into a new base is a full day."
+      }
+    ],
+    "rubric_for_eval_agent": {
+      "coverage_check": {
+        "must_include_on_board": [
+          "Horseshoe Bend",
+          "Antelope Canyon",
+          "Grand Canyon South Rim viewpoints",
+          "Bright Angel Trail or Rim Trail",
+          "Hermit Road"
+        ],
+        "should_include_on_board": [
+          "Lake Powell",
+          "Glen Canyon Dam",
+          "Desert View Watchtower",
+          "Mather Point"
+        ],
+        "ai_will_likely_miss": ["Lake Powell / Rainbow Bridge boat tour", "Page, AZ regional circuit"]
+      },
+      "itinerary_scoring_dimensions": [
+        {
+          "dimension": "South Rim density — not over-scheduling",
+          "weight": 0.25,
+          "pass_criteria": "South Rim content limited to 1.5–2 days. Not filling 4+ days purely at the rim.",
+          "fail_signal": "4+ days of South Rim activities with no regional canyon country content."
+        },
+        {
+          "dimension": "Guided tour recognition",
+          "weight": 0.20,
+          "pass_criteria": "Antelope Canyon noted as guided tour (pre-booking required). Any slot for Antelope Canyon has a realistic afternoon timing and a booking note.",
+          "fail_signal": "Antelope Canyon listed as a walk-up activity with a 30-min slot."
+        },
+        {
+          "dimension": "Hermit Road coverage",
+          "weight": 0.15,
+          "pass_criteria": "Hermit Road scheduled as a multi-hour activity covering multiple viewpoints, not a single 30-min stop.",
+          "fail_signal": "Hermit Road listed as a 30-min stop or combined with 3 other South Rim activities in the same morning."
+        },
+        {
+          "dimension": "Transit day discipline",
+          "weight": 0.15,
+          "pass_criteria": "Arrival day and any transit/drive day has minimal activities.",
+          "fail_signal": "Drive day from Page to Tusayan includes major sightseeing."
+        },
+        {
+          "dimension": "Departure discipline",
+          "weight": 0.10,
+          "pass_criteria": "Departure day allows 3.5–4 hrs drive to Phoenix. No demanding activities.",
+          "fail_signal": "Full canyon hike scheduled on departure morning."
+        },
+        {
+          "dimension": "Famous exclusions respected",
+          "weight": 0.10,
+          "pass_criteria": "West Rim Skywalk not forced into itinerary. North Rim not included (correct — different access road).",
+          "fail_signal": "West Rim Skywalk, Hoover Dam, and North Rim all scheduled on the same trip."
+        },
+        {
+          "dimension": "Regional context awareness",
+          "weight": 0.05,
+          "pass_criteria": "At least a mention of Horseshoe Bend or Antelope Canyon as day-trip options from Page area.",
+          "fail_signal": "Zero mention of Page/canyon country — purely South Rim content."
+        }
+      ]
+    }
+  }
+}

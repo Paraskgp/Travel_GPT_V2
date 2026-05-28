@@ -1,0 +1,62 @@
+{
+  "stage": "grounding",
+  "destination": "Zion National Park",
+  "file": "cache/destinations/zion-national-park/experiences.json",
+  "total_experiences": 9,
+  "required_found": [
+    "Pa'rus Trail",
+    "Angels Landing",
+    "Emerald Pools Trail",
+    "Canyon Overlook Trail",
+    "The Narrows"
+  ],
+  "required_missing": [
+    "Riverside Walk"
+  ],
+  "forbidden_found": [],
+  "category_coverage": {
+    "trail": 5,
+    "restaurant": 4
+  },
+  "required_categories_found": [
+    "trail",
+    "restaurant"
+  ],
+  "required_categories_missing": [],
+  "total_count": 9,
+  "min_count_met": true,
+  "score": 92,
+  "checks": [
+    {
+      "check": "Required experiences found (5/6)",
+      "passed": false,
+      "detail": "Missing: Riverside Walk"
+    },
+    {
+      "check": "No hallucinated experiences (3 checked)",
+      "passed": true,
+      "detail": "Clean"
+    },
+    {
+      "check": "Required categories covered (2/2)",
+      "passed": true,
+      "detail": "Found: trail, restaurant"
+    },
+    {
+      "check": "Minimum experience count (9 >= 8)",
+      "passed": true,
+      "detail": "OK — 9 experiences"
+    }
+  ],
+  "quality_score": 30,
+  "quality_findings": [
+    "Most experiences provide high-level descriptors with varying degrees of factual detail, but many lack specific, verifiable information.",
+    "Pa'rus Trail: Provides factual information on accessibility, distance, and pet policy.",
+    "Emerald Pools Trail: Contains vague descriptors like 'popular' and lacks specific distances or accessibility details.",
+    "The Narrows: Mentions permits and features but lacks specific logistical details and distances.",
+    "Angel’s Landing: Mentions permits and iconic status but lacks distance and accessibility information.",
+    "Canyon Overlook Trail: Describes views and experience without providing factual details like distance or trail specifics."
+  ],
+  "overall_score": 73,
+  "generated_at": "2026-05-27T21:52:27.482Z"
+}

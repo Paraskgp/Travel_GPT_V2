@@ -1,0 +1,213 @@
+{
+  "overall_score": 62,
+  "overall_grade": "C",
+  "summary": "The AI itinerary for Kyoto lacks coherence and fails to follow critical timing rules for iconic sites, significantly impacting its effectiveness. While it covers several key locations, it neglects essential hidden gems and over-schedules days, reducing overall experience quality.",
+  "coverage": {
+    "must_have_found": [
+      "Fushimi Inari Taisha",
+      "Arashiyama Bamboo Grove",
+      "Kinkaku-ji",
+      "Kiyomizudera Temple",
+      "Nishiki Market",
+      "Gion District Stroll"
+    ],
+    "must_have_missing": [
+      "Ryoan-ji",
+      "Tenryu-ji Temple and Garden",
+      "Pontocho",
+      "Ninenzaka / Sannenzaka"
+    ],
+    "coverage_score": 70
+  },
+  "dimension_scores": [
+    {
+      "dimension": "Dawn timing for iconic sites",
+      "weight": 0.25,
+      "score": 50,
+      "weighted_score": 12.5,
+      "pass": false,
+      "finding": "Arashiyama Bamboo Grove is scheduled at 08:00 and Fushimi Inari Taisha at 06:00 but lacks strategic dawn timing for maximum effect.",
+      "example": "Day 3: [TRAVEL] 07:30-08:00 Travel to Arashiyama Bamboo Grove"
+    },
+    {
+      "dimension": "District-per-day coherence",
+      "weight": 0.2,
+      "score": 55,
+      "weighted_score": 11,
+      "pass": false,
+      "finding": "The itinerary combines different districts in a single day, such as Arashiyama and travel to Sanjusangendo Temple on the same day.",
+      "example": "Day 3: [TRAVEL] 09:30-10:00 Travel to Kinkaku-ji ... [TRAVEL] 14:00-15:00 Travel to Sanjusangendo Temple"
+    },
+    {
+      "dimension": "Evening anchors",
+      "weight": 0.15,
+      "score": 70,
+      "weighted_score": 10.5,
+      "pass": true,
+      "finding": "The itinerary includes Gion District Stroll in the evening but lacks other essential evening anchor points like Pontocho.",
+      "example": "Day 1: [ACTIVITY] 16:30-17:30 Gion District Stroll"
+    },
+    {
+      "dimension": "Recovery time",
+      "weight": 0.15,
+      "score": 40,
+      "weighted_score": 6,
+      "pass": false,
+      "finding": "Activities are scheduled back-to-back with insufficient time for rest on days with early starts.",
+      "example": "Day 1: [ACTIVITY] 06:00-08:30 Fushimi Inari Taisha ... [ACTIVITY] 09:00-11:00 Kiyomizu-dera Temple"
+    },
+    {
+      "dimension": "Hidden gems / local knowledge",
+      "weight": 0.1,
+      "score": 30,
+      "weighted_score": 3,
+      "pass": false,
+      "finding": "The itinerary lacks inclusion of hidden gems such as Jojakko-ji or Nanzen-ji aqueduct.",
+      "example": "No reference to Jojakko-ji or similar non-obvious sites."
+    },
+    {
+      "dimension": "Departure day discipline",
+      "weight": 0.1,
+      "score": 90,
+      "weighted_score": 9,
+      "pass": true,
+      "finding": "The AI itinerary respects departure day discipline, ensuring travel to the departure point without sightseeing.",
+      "example": "Day 6: [TRAVEL] 10:00-11:00 Travel to Departure Point"
+    },
+    {
+      "dimension": "Meal quality",
+      "weight": 0.05,
+      "score": 80,
+      "weighted_score": 4,
+      "pass": true,
+      "finding": "Several Kyoto-specific meal experiences are named, including kaiseki and yudofu.",
+      "example": "Day 1: [MEAL] 18:00-19:30 Dinner at Kaiseki Ryori Experience"
+    }
+  ],
+  "day_analysis": [
+    {
+      "day_number": 1,
+      "date": "2026-05-20",
+      "ai_title": "Arrival in Kyoto",
+      "golden_title": "Arrival in Kyoto",
+      "score": 75,
+      "hits": [
+        "Gion District Stroll",
+        "Kaiseki Ryori Experience"
+      ],
+      "misses": [
+        "The evening is slightly over-scheduled given typical travel fatigue."
+      ],
+      "worst_mistake": "Dinner is scheduled too early considering a typical arrival and check-in time."
+    },
+    {
+      "day_number": 2,
+      "date": "2026-05-21",
+      "ai_title": "Signature Kyoto Morning",
+      "golden_title": "Eastern Kyoto — Fushimi + Higashiyama",
+      "score": 50,
+      "hits": [
+        "Fushimi Inari Taisha scheduled early",
+        "Included Kiyomizudera Temple visit"
+      ],
+      "misses": [
+        "Back-to-back activities without rest following early starts."
+      ],
+      "worst_mistake": "No scheduled rest time after early Fushimi Inari visit."
+    },
+    {
+      "day_number": 3,
+      "date": "2026-05-22",
+      "ai_title": "Natural Beauties and Historic Insights",
+      "golden_title": "Arashiyama — Full Day",
+      "score": 40,
+      "hits": [
+        "Visit to Kinkaku-ji"
+      ],
+      "misses": [
+        "Combines Arashiyama travel with Sanjusangendo Temple, affecting district coherence.",
+        "Lacks inclusion of Tenryu-ji Temple."
+      ],
+      "worst_mistake": "Combining Arashiyama with other districts in a single day."
+    },
+    {
+      "day_number": 4,
+      "date": "2026-05-23",
+      "ai_title": "Cultural Immersion Day",
+      "golden_title": "Northern Kyoto — Temples and Castle",
+      "score": 60,
+      "hits": [
+        "Includes visit to Nijo Castle",
+        "Meals with cultural experiences"
+      ],
+      "misses": [
+        "Misses a morning start with Ryoan-ji Temple.",
+        "Heavy scheduling with little downtime."
+      ],
+      "worst_mistake": "Starts the day without Ryoan-ji Temple, a common pair with Kinkaku-ji."
+    },
+    {
+      "day_number": 5,
+      "date": "2026-05-24",
+      "ai_title": "Day Trip Exploration",
+      "golden_title": "Philosopher's Path + Central Kyoto",
+      "score": 70,
+      "hits": [
+        "Day trip exploration of Nara"
+      ],
+      "misses": [
+        "Misses evening Pontocho walk and meal anchor."
+      ],
+      "worst_mistake": "Lack of Pontocho visit as an evening anchor point."
+    },
+    {
+      "day_number": 6,
+      "date": "2026-05-25",
+      "ai_title": "Departure from Kyoto",
+      "golden_title": "Departure",
+      "score": 90,
+      "hits": [
+        "Respectful departure day discipline",
+        "No sightseeing planned"
+      ],
+      "misses": [],
+      "worst_mistake": "None, well-executed departure plan."
+    }
+  ],
+  "top_failures": [
+    {
+      "failure": "District-mixing scheduling",
+      "severity": "critical",
+      "description": "The itinerary mixes multiple district activities in one day, leading to inefficient use of time and decreased experience quality.",
+      "prompt_fix": "Ensure each day's activities are confined to a single district to minimize travel time and maximize immersion."
+    },
+    {
+      "failure": "Poor dawn timing for iconic sites",
+      "severity": "major",
+      "description": "Crucial sites are not visited at dawn, missing the opportunity for quieter and more serene experiences.",
+      "prompt_fix": "Schedule key crowded sites like Arashiyama and Fushimi Inari for dawn missions to avoid crowds."
+    },
+    {
+      "failure": "Lack of rest time",
+      "severity": "major",
+      "description": "The schedule does not allow for adequate recovery time after early starts, causing potential traveler fatigue.",
+      "prompt_fix": "Include at least one unscheduled afternoon period on days starting before 07:00 to allow for resting."
+    }
+  ],
+  "what_ai_got_right": [
+    "Included Fushimi Inari Taisha and Arashiyama Bamboo Grove",
+    "Respected departure day discipline",
+    "Scheduled traditional Kyoto meals like kaiseki"
+  ],
+  "prompt_improvement_plan": {
+    "itinerary_prompt_changes": [
+      "Clearly define separate district days to avoid combining distant sites.",
+      "Emphasize dawn-only scheduling for high-profile attractions to avoid overcrowding.",
+      "Include rest periods in afternoons for days starting before 07:00."
+    ],
+    "board_generation_changes": [
+      "Integrate local hidden gems suggestions like Jojakko-ji or Nanzen-ji's aqueduct for deeper experiences.",
+      "Highlight the necessity of including iconic evening locations like Pontocho for a complete Kyoto experience."
+    ]
+  }
+}

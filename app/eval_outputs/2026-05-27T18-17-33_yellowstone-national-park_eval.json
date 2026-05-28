@@ -1,0 +1,210 @@
+{
+  "overall_score": 55,
+  "overall_grade": "C",
+  "summary": "The AI itinerary lacks adherence to critical wildlife activity timing and does not allow sufficient rest periods. It fails in geographic coherence with overly ambitious daily routes, leading to a scattered experience without the necessary focus on must-see attractions.",
+  "coverage": {
+    "must_have_found": [
+      "Lamar Valley",
+      "Grand Canyon of the Yellowstone",
+      "Hayden Valley",
+      "Old Faithful",
+      "Norris Geyser Basin",
+      "Yellowstone Lake"
+    ],
+    "must_have_missing": [
+      "Tower Fall",
+      "Grand Prismatic Spring"
+    ],
+    "coverage_score": 70
+  },
+  "dimension_scores": [
+    {
+      "dimension": "Wildlife timing",
+      "weight": 0.2,
+      "score": 20,
+      "weighted_score": 4,
+      "pass": false,
+      "finding": "Wildlife activities are scheduled outside optimal times.",
+      "example": "[ACTIVITY] 16:00-17:30 Wildlife Viewing in Hayden Valley"
+    },
+    {
+      "dimension": "Recovery time",
+      "weight": 0.2,
+      "score": 0,
+      "weighted_score": 0,
+      "pass": false,
+      "finding": "No dedicated rest periods; activities run continuously.",
+      "example": "Activities scheduled from 08:30-20:30 on Day 2"
+    },
+    {
+      "dimension": "Drive time realism",
+      "weight": 0.15,
+      "score": 30,
+      "weighted_score": 4.5,
+      "pass": false,
+      "finding": "Drive times are underestimated with no traffic buffer.",
+      "example": "[TRAVEL] 09:30-09:45 Travel to Grand Prismatic Spring"
+    },
+    {
+      "dimension": "Geographic coherence",
+      "weight": 0.2,
+      "score": 40,
+      "weighted_score": 8,
+      "pass": false,
+      "finding": "Daily itineraries lack geographic focus, leading to inefficient travel.",
+      "example": "Day 2 includes locations far apart within park."
+    },
+    {
+      "dimension": "Experience density",
+      "weight": 0.15,
+      "score": 60,
+      "weighted_score": 9,
+      "pass": true,
+      "finding": "Most days have reasonable activity density, but lacking in rest breaks.",
+      "example": "Day 3: Kayaking and wildlife in distinct locations."
+    },
+    {
+      "dimension": "Grand Prismatic tip quality",
+      "weight": 0.05,
+      "score": 0,
+      "weighted_score": 0,
+      "pass": false,
+      "finding": "Overlook trail not specified, overlooking optimal viewing advice.",
+      "example": "[ACTIVITY] 09:45-11:15 Grand Prismatic Spring"
+    },
+    {
+      "dimension": "Departure day discipline",
+      "weight": 0.05,
+      "score": 50,
+      "weighted_score": 2.5,
+      "pass": false,
+      "finding": "Departure day includes activities that risk flight timing.",
+      "example": "[ACTIVITY] 09:45-10:45 Firehole Lake Drive"
+    }
+  ],
+  "day_analysis": [
+    {
+      "day_number": 1,
+      "date": "2026-05-20",
+      "ai_title": "Arriving at Old Faithful",
+      "golden_title": "Arrival — Bozeman to Canyon",
+      "score": 60,
+      "hits": [
+        "Includes arrival meal at Old Faithful."
+      ],
+      "misses": [
+        "Late arrival activities after long travel."
+      ],
+      "worst_mistake": "Scheduling evening viewing event right after arrival."
+    },
+    {
+      "day_number": 2,
+      "date": "2026-05-21",
+      "ai_title": "Geothermal Highlights",
+      "golden_title": "Lamar Valley — Wildlife Focus",
+      "score": 40,
+      "hits": [
+        "Covers major geothermal attractions."
+      ],
+      "misses": [
+        "Drive time underestimated.",
+        "No focus on early or late wildlife viewing."
+      ],
+      "worst_mistake": "Activities span from early morning until late evening without rest."
+    },
+    {
+      "day_number": 3,
+      "date": "2026-05-22",
+      "ai_title": "Adventures in the Yellowstone River",
+      "golden_title": "Grand Canyon of the Yellowstone + Hayden Sunset",
+      "score": 50,
+      "hits": [
+        "Includes kayaking as a diverse experience."
+      ],
+      "misses": [
+        "Wildlife at a non-optimal time.",
+        "No planned rest period."
+      ],
+      "worst_mistake": "Lack of focus on golden hour for Hayden Valley viewing."
+    },
+    {
+      "day_number": 4,
+      "date": "2026-05-23",
+      "ai_title": "Canyons and Valleys",
+      "golden_title": "Geyser Loop — Old Faithful + Grand Prismatic",
+      "score": 50,
+      "hits": [
+        "Visits to key canyon areas."
+      ],
+      "misses": [
+        "No rest period after early extensive activity."
+      ],
+      "worst_mistake": "Full activity load without accounting for fatigue."
+    },
+    {
+      "day_number": 5,
+      "date": "2026-05-24",
+      "ai_title": "Lake and Falls",
+      "golden_title": "Norris Geyser Basin + Yellowstone Lake — Balanced Day",
+      "score": 55,
+      "hits": [
+        "Includes Yellowstone Lake for scenic downtime."
+      ],
+      "misses": [
+        "Tower Fall viewpoint scheduled at non-ideal time."
+      ],
+      "worst_mistake": "Tasking high-value scenic areas without sufficient time."
+    },
+    {
+      "day_number": 6,
+      "date": "2026-05-25",
+      "ai_title": "Farewell to Yellowstone",
+      "golden_title": "Exit — Canyon to Bozeman",
+      "score": 45,
+      "hits": [
+        "Focus on departure logistical timing."
+      ],
+      "misses": [
+        "Unnecessary sightseeing risking departure timing.",
+        "Firehole Lake Drive unrelated to departure focus."
+      ],
+      "worst_mistake": "Excessive activities scheduled on departure day."
+    }
+  ],
+  "top_failures": [
+    {
+      "failure": "Inconvenient wildlife timing",
+      "severity": "critical",
+      "description": "Wildlife activities are scheduled outside optimal viewing times, missing prime wildlife sightings.",
+      "prompt_fix": "Incorporate guidance to schedule wildlife viewing activities only during early morning and late afternoon/evening hours."
+    },
+    {
+      "failure": "Lack of rest periods",
+      "severity": "major",
+      "description": "The itinerary schedules activities back-to-back with no breaks, leading to an exhausting experience.",
+      "prompt_fix": "Include mandatory 1.5-2 hour rest periods in itineraries with 4+ activities or early start times."
+    },
+    {
+      "failure": "Underestimated drive times",
+      "severity": "major",
+      "description": "Drive times in the park are underestimated without accounting for potential wildlife jams or traffic.",
+      "prompt_fix": "Adjust drive time estimates by adding a 25-50% buffer over standard map times for all intra-park travel."
+    }
+  ],
+  "what_ai_got_right": [
+    "Included a nice variety of geothermal and scenic locations.",
+    "Offered some unique experiences like kayaking.",
+    "Provided multiple dining options throughout the stay."
+  ],
+  "prompt_improvement_plan": {
+    "itinerary_prompt_changes": [
+      "Enforce time-of-day guidance for wildlife viewing to ensure activities are scheduled during optimal hours.",
+      "Mandate inclusion of rest/free periods with a 1.5-2 hr minimum, particularly on days starting before 8 AM.",
+      "Add a buffer of 25-50% to all intra-park drive time estimates to account for variable conditions."
+    ],
+    "board_generation_changes": [
+      "Ensure all must-have locations from the human's golden reference are included in AI-generated boards.",
+      "Improve AI understanding of sight sequencing, prioritizing activities that reflect local knowledge (e.g., Grand Prismatic overlook)."
+    ]
+  }
+}

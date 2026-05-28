@@ -1,0 +1,190 @@
+{
+  "overall_score": 42,
+  "overall_grade": "C-",
+  "summary": "The AI itinerary failed to adequately account for traveling with a young family and included several activities unsuited to toddlers. It lacked flexibility and did not schedule the shuttle system properly, which is essential during peak seasons. Departure day was under-designed, lacking discipline and appropriate lightness for comfort.",
+  "coverage": {
+    "must_have_found": [
+      "Pa'rus Trail",
+      "Emerald Pools Trail",
+      "Canyon Scenic Drive"
+    ],
+    "must_have_missing": [
+      "Weeping Rock"
+    ],
+    "coverage_score": 67
+  },
+  "dimension_scores": [
+    {
+      "dimension": "Toddler-appropriate filtering",
+      "weight": 0.3,
+      "score": 50,
+      "weighted_score": 15,
+      "pass": false,
+      "finding": "The AI scheduled Big Bend Viewpoint and Smithsonian Butte, neither of which are toddler-friendly.",
+      "example": "[ACTIVITY] 17:30-18:00 Big Bend Viewpoint | Position yourself across from Angel's Landing to spot California condors."
+    },
+    {
+      "dimension": "Activity density appropriate to family",
+      "weight": 0.2,
+      "score": 40,
+      "weighted_score": 8,
+      "pass": false,
+      "finding": "Multiple days contained 4 activities, leading to potential fatigue for a family with a toddler.",
+      "example": "[ACTIVITY] 09:30-11:30 Travel from Kolob Canyons to Checkerboard Mesa"
+    },
+    {
+      "dimension": "Shuttle system referenced",
+      "weight": 0.15,
+      "score": 20,
+      "weighted_score": 3,
+      "pass": false,
+      "finding": "The AI failed to emphasize shuttle use over private cars for the Zion Canyon Scenic Drive.",
+      "example": "[ACTIVITY] 14:00-16:00 Zion Canyon Scenic Drive | Experience quieter stops with strategic views while using the park shuttle."
+    },
+    {
+      "dimension": "Flexibility built in",
+      "weight": 0.15,
+      "score": 10,
+      "weighted_score": 1.5,
+      "pass": false,
+      "finding": "The AI provided a rigid itinerary without alternative less strenuous options for families with toddlers.",
+      "example": "No alternatives provided throughout the itinerary."
+    },
+    {
+      "dimension": "Departure discipline",
+      "weight": 0.1,
+      "score": 30,
+      "weighted_score": 3,
+      "pass": false,
+      "finding": "Departure day included several non-essential activities leading to potential stress.",
+      "example": "[ACTIVITY] 09:30-11:00 Visit Springdale Farmers Market"
+    },
+    {
+      "dimension": "Regional gateway awareness",
+      "weight": 0.1,
+      "score": 60,
+      "weighted_score": 6,
+      "pass": true,
+      "finding": "Kolob Canyons were considered, offering less crowded alternatives.",
+      "example": "[ACTIVITY] 08:00-09:30 Timber Creek Overlook Trail"
+    }
+  ],
+  "day_analysis": [
+    {
+      "day_number": 1,
+      "date": "2026-11-15",
+      "ai_title": "Arrival and Zion Museum",
+      "golden_title": "Arrival & Scenic Exploration",
+      "score": 60,
+      "hits": [
+        "Visited Zion Human History Museum.",
+        "Included Pa'rus Trail which is toddler-friendly."
+      ],
+      "misses": [
+        "Over-scheduled activities after arrival, lacking necessary rest.",
+        "Dinner plan did not accommodate early toddler bedtime."
+      ],
+      "worst_mistake": "Over-scheduling upon arrival, providing little rest for young children."
+    },
+    {
+      "day_number": 2,
+      "date": "2026-11-16",
+      "ai_title": "Big Bend and Rest Day",
+      "golden_title": "Lower Canyon & Easy Hikes",
+      "score": 30,
+      "hits": [
+        "Included strategic rest period."
+      ],
+      "misses": [
+        "Planned Big Bend Viewpoint inappropriate for toddlers.",
+        "Scheduled activities late into evening without early meals."
+      ],
+      "worst_mistake": "Poorly chosen hike at Big Bend Viewpoint unsuitable for toddlers."
+    },
+    {
+      "day_number": 3,
+      "date": "2026-11-17",
+      "ai_title": "Emerald Pools and Museum",
+      "golden_title": "Kolob Canyons or More Zion",
+      "score": 40,
+      "hits": [
+        "Included Emerald Pools Trail which is partially toddler-friendly."
+      ],
+      "misses": [
+        "Lack of alternative options if children tire.",
+        "Conducted lengthy drives without rest breaks."
+      ],
+      "worst_mistake": "High number of scheduled activities without considering toddler energy levels."
+    },
+    {
+      "day_number": 4,
+      "date": "2026-11-18",
+      "ai_title": "Kolob Canyons and Checkerboard Mesa",
+      "golden_title": "Relaxed Departure Day",
+      "score": 50,
+      "hits": [
+        "Visited Kolob Canyons, providing a quieter experience."
+      ],
+      "misses": [
+        "Lengthy travel and additional activities increased fatigue potential.",
+        "Scheduled sunset watching is unsuitable for young families."
+      ],
+      "worst_mistake": "Over-scheduling causing potential fatigue and stress."
+    },
+    {
+      "day_number": 5,
+      "date": "2026-11-19",
+      "ai_title": "Departure Day",
+      "golden_title": "Fly home",
+      "score": 30,
+      "hits": [
+        "Light breakfast suited for mix travel day."
+      ],
+      "misses": [
+        "Included morning farmer's market before travel.",
+        "Excessive planning on departure day could induce stress."
+      ],
+      "worst_mistake": "Unnecessarily extended departure day schedule."
+    }
+  ],
+  "top_failures": [
+    {
+      "failure": "Inappropriate activities for toddlers",
+      "severity": "critical",
+      "description": "Activities are not filtered for toddler appropriateness, including unsuitable hikes and viewpoints.",
+      "prompt_fix": "Ensure activities are short, paved, and suitable for toddlers when party_type includes young children."
+    },
+    {
+      "failure": "Rigid itinerary without flexibility",
+      "severity": "major",
+      "description": "The itinerary is deterministically planned with no adaptations for changing energy levels in young children.",
+      "prompt_fix": "Include notes for alternative, lighter activity options based on family energy levels."
+    },
+    {
+      "failure": "Failure to leverage shuttle system",
+      "severity": "major",
+      "description": "There is no clear integration of the Zion shuttle system which is essential during peak season for a seamless experience.",
+      "prompt_fix": "Mention using the Zion Park shuttle for all related activities and do not imply private driving during peak season."
+    },
+    {
+      "failure": "Over-scheduling on departure day",
+      "severity": "minor",
+      "description": "Too many activities planned on the departure day, which could cause unnecessary stress.",
+      "prompt_fix": "Ensure the departure day includes a light schedule with only essential travel-related activities."
+    }
+  ],
+  "what_ai_got_right": [
+    "Included some must-have locations such as Pa'rus Trail and Emerald Pools Trail.",
+    "Offered a quieter alternative by including Kolob Canyons."
+  ],
+  "prompt_improvement_plan": {
+    "itinerary_prompt_changes": [
+      "Filter for toddler-appropriate activities by limiting to short, paved trails and suitable viewpoints.",
+      "Build in flexibility by suggesting alternative less strenuous options or rest periods considering toddler energy levels."
+    ],
+    "board_generation_changes": [
+      "Emphasize the use of Zion Canyon's shuttle system to avoid conflicts with park regulations.",
+      "Prioritize mention of nearby alternatives like Kolob Canyons for a less crowded experience."
+    ]
+  }
+}

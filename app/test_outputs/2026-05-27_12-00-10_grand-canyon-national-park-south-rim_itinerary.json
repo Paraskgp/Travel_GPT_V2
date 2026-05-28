@@ -1,0 +1,439 @@
+{
+  "itinerary": {
+    "destination": "Grand Canyon National Park, South Rim",
+    "start_date": "2026-05-20",
+    "end_date": "2026-05-25",
+    "days": [
+      {
+        "date": "2026-05-20",
+        "day_number": 1,
+        "day_title": "Arrival and Relaxation",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "16:30",
+            "end_time": "18:00",
+            "title": "Rest and Explore Grand Canyon Village",
+            "notes": "After checking in, take a leisurely walk around Grand Canyon Village to get a feel for the area. Visit the Visitor Center for maps and tips.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Grand+Canyon+Village+Grand+Canyon+National+Park",
+            "experience_id": null
+          },
+          {
+            "type": "meal",
+            "start_time": "18:30",
+            "end_time": "20:00",
+            "title": "Dinner at the El Tovar Dining Room",
+            "notes": "Enjoy a meal at the historic El Tovar Dining Room, known for its classic cuisine with a scenic view.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=El+Tovar+Dining+Room+Grand+Canyon+National+Park",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "20:30",
+            "end_time": "22:00",
+            "title": "Stargazing at Yavapai Point",
+            "notes": "Watch the stars over the canyon. Find a spot slightly below the main overlook for less light pollution and a quieter experience.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Yavapai+Point+Grand+Canyon+National+Park",
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-05-21",
+        "day_number": 2,
+        "day_title": "Sunrise and Iconic Trails",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "05:30",
+            "end_time": "07:00",
+            "title": "Sunrise at Mather Point",
+            "notes": "Position yourself on the eastern side of Mather Point for a uniquely framed view of the first light illuminating O'Neill Butte.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Mather+Point+Grand+Canyon+National+Park",
+            "experience_id": "mather-point-sunrise"
+          },
+          {
+            "type": "meal",
+            "start_time": "07:30",
+            "end_time": "08:30",
+            "title": "Breakfast at Bright Angel Lodge Restaurant",
+            "notes": "Enjoy a hearty breakfast with canyon views.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Bright+Angel+Lodge+Restaurant+Grand+Canyon+National+Park",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "08:45",
+            "end_time": "09:00",
+            "title": "Travel to South Kaibab Trailhead",
+            "notes": "Short shuttle ride to the South Kaibab Trailhead.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "09:00",
+            "end_time": "13:00",
+            "title": "Venture Down the South Kaibab Trail",
+            "notes": "Pause at the outcrop halfway to Cedar Ridge to glimpse O'Neill Butte silhouetted against the Painted Desert.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=South+Kaibab+Trailhead+Grand+Canyon+National+Park",
+            "experience_id": "south-kaibab-trail"
+          },
+          {
+            "type": "travel",
+            "start_time": "13:00",
+            "end_time": "13:30",
+            "title": "Return to Grand Canyon Village",
+            "notes": "Take the shuttle back to the village for lunch.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "meal",
+            "start_time": "13:30",
+            "end_time": "14:30",
+            "title": "Lunch at Maswik Food Court",
+            "notes": "Enjoy a quick meal at the food court with various options.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Maswik+Food+Court+Grand+Canyon+National+Park",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "15:00",
+            "end_time": "17:00",
+            "title": "Leisurely Walk on the Rim Trail",
+            "notes": "Begin at Maricopa Point and enjoy the vibrant rock formations in the afternoon sun.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Rim+Trail+Grand+Canyon+National+Park",
+            "experience_id": "rim-trail-walk"
+          },
+          {
+            "type": "meal",
+            "start_time": "17:30",
+            "end_time": "19:00",
+            "title": "Dinner at Arizona Steakhouse",
+            "notes": "Taste southwestern cuisine with a beautiful view of the canyon.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Arizona+Steakhouse+Grand+Canyon+National+Park",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "19:30",
+            "end_time": "21:00",
+            "title": "Sunset at Yavapai Point",
+            "notes": "Position yourself below the main overlook on the unpaved path for a sweeping view of color shifts.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Yavapai+Point+Grand+Canyon+National+Park",
+            "experience_id": "sunset_at_yavapai_point"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-22",
+        "day_number": 3,
+        "day_title": "Exploring Cultural and Scenic Highlights",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "05:30",
+            "end_time": "07:00",
+            "title": "Wildlife Observation near Yaki Point",
+            "notes": "Watch for condors on the southeast part by the juniper tree. Best seen in the early morning.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Yaki+Point+Grand+Canyon+National+Park",
+            "experience_id": "wildlife_at_yaki_point"
+          },
+          {
+            "type": "meal",
+            "start_time": "08:00",
+            "end_time": "09:00",
+            "title": "Breakfast at Canyon Coffee House",
+            "notes": "Relax and enjoy breakfast before heading out for more exploration.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Canyon+Coffee+House+Grand+Canyon+National+Park",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "09:15",
+            "end_time": "09:45",
+            "title": "Travel to Desert View Watchtower",
+            "notes": "Drive to the east and explore this iconic viewpoint.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "10:00",
+            "end_time": "12:00",
+            "title": "Desert View Watchtower",
+            "notes": "Stand at the base of the west side as sunlight casts shadows, offering beautiful canyon details.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Desert+View+Watchtower+Grand+Canyon+National+Park",
+            "experience_id": "desert-view-watchtower"
+          },
+          {
+            "type": "meal",
+            "start_time": "12:30",
+            "end_time": "13:30",
+            "title": "Lunch at Yavapai Lodge Restaurant",
+            "notes": "Enjoy casual dining with a view after visiting the watchtower.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Yavapai+Lodge+Restaurant+Grand+Canyon+National+Park",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "13:45",
+            "end_time": "14:00",
+            "title": "Travel to Yavapai Geological Museum",
+            "notes": "Short drive back towards the village to explore the museum.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "14:00",
+            "end_time": "16:00",
+            "title": "Yavapai Geological Museum",
+            "notes": "Position yourself at the north-facing windows during early afternoon for vibrant rock hues.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Yavapai+Geology+Museum+Grand+Canyon+National+Park",
+            "experience_id": "yavapai-geological-museum"
+          },
+          {
+            "type": "meal",
+            "start_time": "17:00",
+            "end_time": "18:30",
+            "title": "Dinner at the Canyon Village Market & Deli",
+            "notes": "Casual dining with a wide range of options located centrally in the village.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Canyon+Village+Market+%26+Deli+Grand+Canyon+National+Park",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "19:00",
+            "end_time": "19:30",
+            "title": "Travel to Hopi Point",
+            "notes": "Short shuttle ride to Hopi Point for sunset viewing.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "19:30",
+            "end_time": "21:00",
+            "title": "Vistas at Hopi Point",
+            "notes": "Position yourself near the West Rim Trail sign for the perfect sunset shot over the North Rim.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Hopi+Point+Grand+Canyon+National+Park",
+            "experience_id": "hopi_point"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-23",
+        "day_number": 4,
+        "day_title": "Hiking and Adventure Day",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "07:00",
+            "end_time": "08:00",
+            "title": "Breakfast at the Bright Angel Lodge Restaurant",
+            "notes": "Fuel up for the day's adventures with a hearty breakfast.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Bright+Angel+Lodge+Restaurant+Grand+Canyon+National+Park",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "08:15",
+            "end_time": "08:30",
+            "title": "Travel to Bright Angel Trailhead",
+            "notes": "Walk from the lodge to the trailhead.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "08:30",
+            "end_time": "12:30",
+            "title": "Hiking the Bright Angel Trail",
+            "notes": "Look out for the side trail past Mile-and-a-Half Resthouse for an unobstructed panorama of Indian Garden.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Bright+Angel+Trailhead+Grand+Canyon+National+Park",
+            "experience_id": "hiking-bright-angel-trail"
+          },
+          {
+            "type": "meal",
+            "start_time": "13:00",
+            "end_time": "14:00",
+            "title": "Lunch at Harvey House Café",
+            "notes": "Enjoy lunch back at the rim after a morning hike.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Harvey+House+Café+Grand+Canyon+National+Park",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "14:15",
+            "end_time": "14:30",
+            "title": "Travel to Grand Canyon Airport",
+            "notes": "Drive to the airport for the helicopter tour.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "15:00",
+            "end_time": "16:00",
+            "title": "Helicopter Tour Over the Grand Canyon",
+            "notes": "Request the flight path to view the confluence of the Little Colorado and Colorado Rivers.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Grand+Canyon+Airport+Grand+Canyon+National+Park",
+            "experience_id": "grand-canyon-helicopter-tour"
+          },
+          {
+            "type": "travel",
+            "start_time": "16:15",
+            "end_time": "16:45",
+            "title": "Return to Grand Canyon Village",
+            "notes": "Drive back to the village post-tour.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "17:00",
+            "end_time": "18:30",
+            "title": "Rest and Relax in Grand Canyon Village",
+            "notes": "Take some leisure time to rest and explore at your own pace.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Grand+Canyon+Village+Grand+Canyon+National+Park",
+            "experience_id": null
+          },
+          {
+            "type": "meal",
+            "start_time": "19:00",
+            "end_time": "20:30",
+            "title": "Dinner at El Tovar Dining Room",
+            "notes": "Cap off the day with fine dining and a beautiful sunset view.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=El+Tovar+Dining+Room+Grand+Canyon+National+Park",
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-05-24",
+        "day_number": 5,
+        "day_title": "Local Culture and Scenic Exploration",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "08:00",
+            "end_time": "09:00",
+            "title": "Breakfast at Maswik Lodge Cafeteria",
+            "notes": "Start your day with a simple breakfast before heading out.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Maswik+Lodge+Cafeteria+Grand+Canyon+National+Park",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "09:15",
+            "end_time": "09:45",
+            "title": "Travel to Tusayan Ruin and Museum",
+            "notes": "Drive to the museum to explore local history.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "10:00",
+            "end_time": "11:00",
+            "title": "Tusayan Ruin and Museum",
+            "notes": "Listen for the distinctive echo in the sandstone room block when you clap your hands softly.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Tusayan+Ruin+and+Museum+Grand+Canyon+National+Park",
+            "experience_id": "tusayan-ruin-and-museum"
+          },
+          {
+            "type": "meal",
+            "start_time": "12:00",
+            "end_time": "13:00",
+            "title": "Lunch at Arizona Steakhouse",
+            "notes": "Enjoy a meal with a picturesque view before the afternoon activities.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Arizona+Steakhouse+Grand+Canyon+National+Park",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "13:15",
+            "end_time": "13:30",
+            "title": "Travel to Grandview Point Overlook",
+            "notes": "Short drive to Grandview Point for scenic vistas.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "13:30",
+            "end_time": "14:30",
+            "title": "Grandview Point Overlook",
+            "notes": "Follow the left path past the main viewpoint to find the rock bench for an unobstructed panorama shot.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Grandview+Point+Grand+Canyon+National+Park",
+            "experience_id": "grandview_point"
+          },
+          {
+            "type": "travel",
+            "start_time": "14:45",
+            "end_time": "15:00",
+            "title": "Return to Visitor Center",
+            "notes": "Drive back to the visitor center for the afternoon events.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "15:30",
+            "end_time": "17:00",
+            "title": "Hualapai Tribal Tour",
+            "notes": "Look southwest at the Hilltop for the shaman's rock silhouette. Enjoy the cultural tour with local guides.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Hualapai+Hilltop+Grand+Canyon+National+Park",
+            "experience_id": "hualapai-tribal-tour"
+          },
+          {
+            "type": "meal",
+            "start_time": "18:00",
+            "end_time": "19:30",
+            "title": "Dinner at Bright Angel Lodge",
+            "notes": "End the day with a cozy meal at the Lodge.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Bright+Angel+Lodge+Grand+Canyon+National+Park",
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-05-25",
+        "day_number": 6,
+        "day_title": "Departure Day",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "08:00",
+            "end_time": "09:00",
+            "title": "Breakfast at Maswik Lodge Cafeteria",
+            "notes": "A final breakfast before packing for departure.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Maswik+Lodge+Cafeteria+Grand+Canyon+National+Park",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "09:00",
+            "end_time": "10:00",
+            "title": "Packing and Relaxation Time",
+            "notes": "Ensure everything is packed and take a final moment to relax and reflect on the journey.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "10:00",
+            "end_time": "10:30",
+            "title": "Check-out and Travel to Departure Point",
+            "notes": "Check out from accommodation and travel to the departure point with sufficient buffer for transit time.",
+            "maps_url": null,
+            "experience_id": null
+          }
+        ]
+      }
+    ],
+    "generated_at": "2026-05-15T12:00:00Z"
+  }
+}

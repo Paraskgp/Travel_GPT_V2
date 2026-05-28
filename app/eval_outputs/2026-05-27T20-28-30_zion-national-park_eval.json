@@ -1,0 +1,176 @@
+{
+  "overall_score": 56,
+  "overall_grade": "C",
+  "summary": "The AI-generated itinerary for Zion National Park fails to effectively incorporate toddler-friendly principles, with the inclusion of inappropriate activities and a lack of flexibility for family travel. While it provides some accurate options, such as restaurant selections, it lacks the necessary adjustments for a young family.",
+  "coverage": {
+    "must_have_found": [
+      "Emerald Pools Trail"
+    ],
+    "must_have_missing": [
+      "Pa'rus Trail",
+      "Canyon Scenic Drive / shuttle",
+      "Weeping Rock"
+    ],
+    "coverage_score": 33
+  },
+  "dimension_scores": [
+    {
+      "dimension": "Toddler-appropriate filtering",
+      "weight": 0.3,
+      "score": 50,
+      "weighted_score": 15,
+      "pass": false,
+      "finding": "The AI itinerary includes Checkerboard Mesa sightseeing and Wildcat Canyon Trail, which are not toddler-friendly due to length and terrain.",
+      "example": "[ACTIVITY] 09:45-15:00 Hiking the Wildcat Canyon Trail"
+    },
+    {
+      "dimension": "Activity density appropriate to family",
+      "weight": 0.2,
+      "score": 40,
+      "weighted_score": 8,
+      "pass": false,
+      "finding": "Activities are over-scheduled, lacking the necessary rest periods for a family with a toddler.",
+      "example": "Day 2 includes six activities with no scheduled rest time."
+    },
+    {
+      "dimension": "Shuttle system referenced",
+      "weight": 0.15,
+      "score": 0,
+      "weighted_score": 0,
+      "pass": false,
+      "finding": "There is no mention of using the shuttle system for the main canyon trips.",
+      "example": "No mention of shuttle system for Canyon Scenic Drive."
+    },
+    {
+      "dimension": "Flexibility built in",
+      "weight": 0.15,
+      "score": 30,
+      "weighted_score": 4.5,
+      "pass": false,
+      "finding": "No alternative options are provided for flexibility or energy adjustments.",
+      "example": "Day 3 offers no alternatives despite being long and tiring."
+    },
+    {
+      "dimension": "Departure discipline",
+      "weight": 0.1,
+      "score": 80,
+      "weighted_score": 8,
+      "pass": true,
+      "finding": "A light departure day with no demanding activities.",
+      "example": "[TRAVEL] 08:00-09:00 Checkout & Travel to Transportation Hub"
+    },
+    {
+      "dimension": "Regional gateway awareness",
+      "weight": 0.1,
+      "score": 50,
+      "weighted_score": 5,
+      "pass": false,
+      "finding": "Kolob Canyons is not mentioned as an alternative, and the itinerary focuses only on Zion's main attractions.",
+      "example": "Exclusive focus on the main canyon activities."
+    }
+  ],
+  "day_analysis": [
+    {
+      "day_number": 1,
+      "date": "2026-11-01",
+      "ai_title": "Arrival and Introduction",
+      "golden_title": "Arrival & Scenic Exploration",
+      "score": 60,
+      "hits": [
+        "Dinner at Bit and Spur Restaurant was a good choice."
+      ],
+      "misses": [
+        "Zion Human History Museum visit is too late in the day for a first-day family activity."
+      ],
+      "worst_mistake": "Scheduled late afternoon museum visit without accounting for arrival rest."
+    },
+    {
+      "day_number": 2,
+      "date": "2026-11-02",
+      "ai_title": "Checkerboard Mesa Exploration",
+      "golden_title": "Lower Canyon & Easy Hikes",
+      "score": 40,
+      "hits": [
+        "Breakfast at Oscar's Cafe is a good start."
+      ],
+      "misses": [
+        "Includes non-family-friendly activities like Checkerboard Mesa and lacking shuttle reference."
+      ],
+      "worst_mistake": "Over-scheduled day without rest periods."
+    },
+    {
+      "day_number": 3,
+      "date": "2026-11-03",
+      "ai_title": "Wildcat Canyon Adventure",
+      "golden_title": "Kolob Canyons or More Zion",
+      "score": 30,
+      "hits": [],
+      "misses": [
+        "The day is too rigid and demanding for a family with a toddler."
+      ],
+      "worst_mistake": "Long, inflexible hike at Wildcat Canyon with no alternatives."
+    },
+    {
+      "day_number": 4,
+      "date": "2026-11-04",
+      "ai_title": "Relaxed Exploration Day",
+      "golden_title": "Relaxed Departure Day",
+      "score": 70,
+      "hits": [
+        "Includes Canyon Overlook Trail, which can be short and easy."
+      ],
+      "misses": [
+        "The day has an activity in the evening which is too late for toddler bedtime routines."
+      ],
+      "worst_mistake": "Late evening drive scheduled."
+    },
+    {
+      "day_number": 5,
+      "date": "2026-11-05",
+      "ai_title": "Departure",
+      "golden_title": "Fly home",
+      "score": 80,
+      "hits": [
+        "Departure is laid back with no demanding activities."
+      ],
+      "misses": [
+        "The schedule lacks mention of flexibility if departure needs to adjust."
+      ],
+      "worst_mistake": "No flexibility mentioned if departure timeline changes."
+    }
+  ],
+  "top_failures": [
+    {
+      "failure": "Toddler-unfriendly Activities",
+      "severity": "critical",
+      "description": "The inclusion of long hikes and locations inappropriate for toddlers shows a misunderstanding of party type requirements.",
+      "prompt_fix": "Ensure all activities are under 2 miles and avoid strenuous hikes when party includes young children."
+    },
+    {
+      "failure": "Lack of Shuttle Awareness",
+      "severity": "major",
+      "description": "The itinerary fails to mention the mandatory shuttle system for accessing main canyon areas during peak season.",
+      "prompt_fix": "Remind that Zion has a shuttle system and plans should incorporate shuttle timings and stops."
+    },
+    {
+      "failure": "Over-scheduling",
+      "severity": "major",
+      "description": "Activities are packed into each day without necessary rest periods for a toddler family.",
+      "prompt_fix": "Limit itinerary to 2-3 activities daily with built-in rest times."
+    }
+  ],
+  "what_ai_got_right": [
+    "Selected appropriate restaurants that are well-suited for family dining.",
+    "Kept the departure day light, which is suitable for families catching flights."
+  ],
+  "prompt_improvement_plan": {
+    "itinerary_prompt_changes": [
+      "Include considerations for toddler-friendly activities and ensure activities are short and not strenuous.",
+      "Incorporate Zion shuttle information for main canyon access during itineraries for certain months."
+    ],
+    "board_generation_changes": [
+      "Ensure prominent family-friendly locations are included, such as the Pa'rus Trail and specific shuttle routes.",
+      "Focus on providing alternative lighter options for family itineraries to accommodate different energy levels."
+    ]
+  }
+}

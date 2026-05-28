@@ -1,0 +1,322 @@
+{
+  "itinerary": {
+    "destination": "Zion National Park, Springdale",
+    "start_date": "2026-05-20",
+    "end_date": "2026-05-25",
+    "days": [
+      {
+        "date": "2026-05-20",
+        "day_number": 1,
+        "day_title": "Arrival and Relaxation",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "16:00",
+            "end_time": "17:00",
+            "title": "Check-in at Accommodation",
+            "notes": "Settle into your base in Springdale.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "meal",
+            "start_time": "18:00",
+            "end_time": "20:00",
+            "title": "Dinner at King's Landing Bistro",
+            "notes": "Enjoy dinner with sunset views over the red cliffs.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=King%27s+Landing+Bistro+Springdale",
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-05-21",
+        "day_number": 2,
+        "day_title": "Exploring Signature Trails",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "07:00",
+            "end_time": "08:00",
+            "title": "Breakfast at Meme's Cafe",
+            "notes": "Start your day with a hearty breakfast.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Meme%27s+Cafe+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "08:00",
+            "end_time": "08:15",
+            "title": "Travel to Angels Landing",
+            "notes": "Shuttle to the Grotto Trailhead.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=The+Grotto+Trailhead+Zion",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "08:15",
+            "end_time": "12:15",
+            "title": "Angels Landing Hike",
+            "notes": "Look down at the rock's eastern face after the 'Tooth' for condor perching streaks.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Angels+Landing+Zion+National+Park",
+            "experience_id": "angels-landing-hike"
+          },
+          {
+            "type": "travel",
+            "start_time": "12:15",
+            "end_time": "12:45",
+            "title": "Travel back to Springdale",
+            "notes": "Return via shuttle.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "meal",
+            "start_time": "13:00",
+            "end_time": "14:00",
+            "title": "Lunch at Zion Pizza & Noodle Co.",
+            "notes": "Enjoy a pizza lunch in a relaxed setting.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Zion+Pizza+%26+Noodle+Co+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "15:00",
+            "end_time": "16:00",
+            "title": "Canyon Overlook Trail",
+            "notes": "Find the side path on the left for a unique view of the Great Arch.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Canyon+Overlook+Trail+Zion",
+            "experience_id": "canyon-overlook-trail"
+          },
+          {
+            "type": "meal",
+            "start_time": "19:00",
+            "end_time": "21:00",
+            "title": "Dinner at Oscar's Cafe",
+            "notes": "Dine at a favorite local spot with famous burgers.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Oscar%27s+Cafe+Springdale",
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-05-22",
+        "day_number": 3,
+        "day_title": "River Walks and Scenic Views",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "07:00",
+            "end_time": "08:00",
+            "title": "Breakfast at Deep Creek Coffee Co.",
+            "notes": "Coffee and breakfast sandwiches before a day exploring The Narrows.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Deep+Creek+Coffee+Co+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "08:00",
+            "end_time": "08:30",
+            "title": "Travel to The Narrows",
+            "notes": "Shuttle to Temple of Sinawava.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Temple+of+Sinawava+Shuttle+Stop+Zion",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "08:30",
+            "end_time": "13:30",
+            "title": "The Narrows River Walk",
+            "notes": "Spot the hanging garden at Orderville Canyon.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=The+Narrows+Zion+National+Park",
+            "experience_id": "the-narrows-river-walk"
+          },
+          {
+            "type": "meal",
+            "start_time": "14:00",
+            "end_time": "15:00",
+            "title": "Lunch at Cafe Soleil",
+            "notes": "Fresh, healthy lunch options and a great view.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Cafe+Soleil+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "16:00",
+            "end_time": "18:30",
+            "title": "Zion Canyon Scenic Drive",
+            "notes": "Pause at Big Bend viewpoint for a magical view of the Virgin River.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Zion+Canyon+Scenic+Drive",
+            "experience_id": "zion-canyon-scenic-drive"
+          },
+          {
+            "type": "meal",
+            "start_time": "19:00",
+            "end_time": "21:00",
+            "title": "Dinner at Bit & Spur Restaurant & Saloon",
+            "notes": "Mexican cuisine in a lively atmosphere.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Bit+%26+Spur+Restaurant+%26+Saloon+Springdale",
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-05-23",
+        "day_number": 4,
+        "day_title": "Hiking and Local Taste",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "06:30",
+            "end_time": "07:30",
+            "title": "Breakfast at Zion Canyon Brew Pub",
+            "notes": "Grab breakfast before hitting the trails early.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Zion+Canyon+Brew+Pub+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "07:30",
+            "end_time": "08:00",
+            "title": "Travel to Observation Point Trailhead",
+            "notes": "Drive to the trailhead for early hiking.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Observation+Point+Trailhead+Zion",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "08:00",
+            "end_time": "12:30",
+            "title": "Observation Point Hike",
+            "notes": "Look for a side path past Echo Canyon for vibrant sandstone formations.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Observation+Point+Zion+National+Park",
+            "experience_id": "observation-point-hike"
+          },
+          {
+            "type": "meal",
+            "start_time": "13:00",
+            "end_time": "14:00",
+            "title": "Lunch at Blondie's Diner",
+            "notes": "An old-fashioned American diner experience.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Blondie%27s+Diner+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "15:00",
+            "end_time": "17:00",
+            "title": "Springdale Local Cuisine Tasting",
+            "notes": "Enjoy the back patio dinner at King's Landing Bistro.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=King%27s+Landing+Bistro+Springdale",
+            "experience_id": "springdale-local-cuisine"
+          },
+          {
+            "type": "meal",
+            "start_time": "18:30",
+            "end_time": "20:00",
+            "title": "Dinner at Zion Canyon Brew Pub",
+            "notes": "Unwind with a pint and a sunset view over The Watchman.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Zion+Canyon+Brew+Pub+Springdale",
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-05-24",
+        "day_number": 5,
+        "day_title": "Unique Canyons and Scenic Drives",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "07:00",
+            "end_time": "08:00",
+            "title": "Breakfast at Spotted Dog Cafe",
+            "notes": "Enjoy a rustic breakfast before another adventurous day.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Spotted+Dog+Cafe+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "08:00",
+            "end_time": "08:45",
+            "title": "Travel to Kolob Canyons",
+            "notes": "Drive to Kolob Canyons via route UT-9 W and UT-113 N.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Kolob+Canyons+Visitor+Center+Zion",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "09:00",
+            "end_time": "13:00",
+            "title": "Kolob Canyons Exploration",
+            "notes": "Look back towards Timber Creek Overlook for vibrant colors after rain.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Kolob+Canyons+Zion+National+Park",
+            "experience_id": "kolob-canyons"
+          },
+          {
+            "type": "meal",
+            "start_time": "13:30",
+            "end_time": "14:30",
+            "title": "Lunch at Whiptail Grill",
+            "notes": "Enjoy lunch in one of Springdale's most beloved eateries.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Whiptail+Grill+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "15:30",
+            "end_time": "17:00",
+            "title": "Kolob Canyons Scenic Drive",
+            "notes": "Pause at Taylor Creek Trailhead for reflections in the creek.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Kolob+Canyons+Scenic+Drive",
+            "experience_id": "kolob-canyons-scenic-drive"
+          },
+          {
+            "type": "meal",
+            "start_time": "19:00",
+            "end_time": "21:00",
+            "title": "Dinner at The Park House Cafe",
+            "notes": "A relaxed setting to end your day with comfort food.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=The+Park+House+Cafe+Springdale",
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-05-25",
+        "day_number": 6,
+        "day_title": "Departure Day",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "08:00",
+            "end_time": "09:00",
+            "title": "Breakfast at Deep Creek Coffee Co.",
+            "notes": "Start your departure day with a relaxing breakfast.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Deep+Creek+Coffee+Co+Springdale",
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "09:00",
+            "end_time": "10:00",
+            "title": "Packing and Checkout",
+            "notes": "Prepare for your journey home.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "10:00",
+            "end_time": "11:00",
+            "title": "Travel to St. George Airport",
+            "notes": "Drive to the airport for your departure.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=St+George+Airport",
+            "experience_id": null
+          }
+        ]
+      }
+    ],
+    "generated_at": "2023-11-01T12:00:00Z"
+  }
+}

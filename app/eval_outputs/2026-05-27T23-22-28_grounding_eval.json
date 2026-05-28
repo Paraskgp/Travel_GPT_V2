@@ -1,0 +1,61 @@
+{
+  "stage": "grounding",
+  "destination": "Zion National Park",
+  "file": "cache/destinations/zion-national-park/experiences.json",
+  "total_experiences": 10,
+  "required_found": [
+    "Pa'rus Trail",
+    "Emerald Pools Trail",
+    "Canyon Overlook Trail",
+    "Riverside Walk"
+  ],
+  "required_missing": [
+    "Angels Landing"
+  ],
+  "forbidden_found": [],
+  "category_coverage": {
+    "trail": 8,
+    "restaurant": 2
+  },
+  "required_categories_found": [
+    "trail",
+    "restaurant"
+  ],
+  "required_categories_missing": [],
+  "total_count": 10,
+  "min_count_met": true,
+  "score": 90,
+  "checks": [
+    {
+      "check": "Required experiences found (4/5)",
+      "passed": false,
+      "detail": "Missing: Angels Landing"
+    },
+    {
+      "check": "No hallucinated experiences (3 checked)",
+      "passed": true,
+      "detail": "Clean"
+    },
+    {
+      "check": "Required categories covered (2/2)",
+      "passed": true,
+      "detail": "Found: trail, restaurant"
+    },
+    {
+      "check": "Minimum experience count (10 >= 8)",
+      "passed": true,
+      "detail": "OK — 10 experiences"
+    }
+  ],
+  "quality_score": 47,
+  "quality_findings": [
+    "All experiences are generally high quality with factual and specific details, though some could benefit from clearer accessibility information.",
+    "Pa'rus Trail: All key facts are factual, specific, and verifiable.",
+    "Lower Emerald Pools Trail: Factual key facts but lacks specific accessibility info and location context.",
+    "Riverside Walk: All key facts are clear, factual, and provide useful location details.",
+    "The Watchman Trail: Factual details on distance, elevation and difficulty, enhancing usefulness.",
+    "Canyon Overlook Trail: Factual but lacks specifics about actual accessibility and gets a lower score for being vague on popular descriptions."
+  ],
+  "overall_score": 77,
+  "generated_at": "2026-05-27T23:22:28.924Z"
+}

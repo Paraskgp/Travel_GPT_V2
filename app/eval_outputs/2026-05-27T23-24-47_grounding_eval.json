@@ -1,0 +1,68 @@
+{
+  "stage": "grounding",
+  "destination": "Zion National Park",
+  "file": "cache/destinations/zion-national-park/experiences.json",
+  "total_experiences": 10,
+  "required_found": [
+    "Pa'rus Trail",
+    "Emerald Pools Trail",
+    "Canyon Overlook Trail",
+    "Riverside Walk"
+  ],
+  "required_missing": [
+    "Angels Landing"
+  ],
+  "forbidden_found": [],
+  "category_coverage": {
+    "trail": 8,
+    "restaurant": 2
+  },
+  "required_categories_found": [
+    "trail",
+    "restaurant"
+  ],
+  "required_categories_missing": [],
+  "total_count": 10,
+  "min_count_met": true,
+  "score": 90,
+  "checks": [
+    {
+      "check": "Required experiences found (4/5)",
+      "passed": false,
+      "detail": "Missing: Angels Landing"
+    },
+    {
+      "check": "No hallucinated experiences (3 checked)",
+      "passed": true,
+      "detail": "Clean"
+    },
+    {
+      "check": "Required categories covered (2/2)",
+      "passed": true,
+      "detail": "Found: trail, restaurant"
+    },
+    {
+      "check": "Minimum experience count (10 >= 8)",
+      "passed": true,
+      "detail": "OK — 10 experiences"
+    }
+  ],
+  "quality_score": 78,
+  "quality_metrics": {
+    "numeric_fact_rate": 80,
+    "vague_rate": 20,
+    "avg_real_facts": 3.8,
+    "location_specific_rate": 20,
+    "numeric_score": 32,
+    "vague_score": 24,
+    "fact_count_score": 20,
+    "location_score": 2
+  },
+  "quality_findings": [
+    "Numeric facts: 8/10 experiences have at least one measurable fact (miles, feet, hours, $)",
+    "Vague copy: 2 experiences have marketing-language facts without numbers — Canyon Overlook Trail, Oscar's Cafe",
+    "Average real facts per experience: 3.8 (4, 4, 4, 4, 4, 4, 4, 4, 3, 3)"
+  ],
+  "overall_score": 86,
+  "generated_at": "2026-05-27T23:24:47.732Z"
+}

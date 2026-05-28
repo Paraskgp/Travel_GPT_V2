@@ -1,6 +1,6 @@
 import fs from "fs"
 import path from "path"
-import { Preferences, DestinationContext, WeatherContext, Board, Experience } from "../types"
+import { Preferences, DestinationContext, WeatherContext, Board, Experience, ClusterResult, Itinerary, GroundedExperience } from "../types"
 
 const PROMPTS_DIR = path.join(process.cwd(), "prompts")
 
@@ -34,6 +34,56 @@ export function weatherContextUserPrompt(destination: string, travelMonth: strin
   return `Generate the full 12-month weather context for: **${destination}**${monthLine}`
 }
 
+// ─── Stage 0.5: Query Generator ──────────────────────────────────────────────
+
+export function queryGeneratorSystemPrompt(): string {
+  return load("query-generator.md")
+}
+
+export function queryGeneratorUserPrompt(
+  destination: string,
+  applicableThemes: string[]
+): string {
+  return [
+    `Destination: **${destination}**`,
+    "",
+    `Applicable themes (${applicableThemes.length}): ${applicableThemes.join(", ")}`,
+    "",
+    `Generate exactly 3 queries per theme (${applicableThemes.length * 3} theme queries) plus the 5 required cross-cutting queries.`,
+    "Total expected: ~" + (applicableThemes.length * 3 + 5) + " queries.",
+    "",
+    "Return ONLY the flat JSON array of query strings.",
+  ].join("\n")
+}
+
+// ─── Stage 0.7: Experience Extractor ─────────────────────────────────────────
+
+export function experienceExtractorSystemPrompt(): string {
+  return load("experience-extractor.md")
+}
+
+export function experienceExtractorUserPrompt(
+  destination: string,
+  searchResults: Array<{ query: string; title: string; url: string; content: string }>
+): string {
+  const snippets = searchResults
+    .map(
+      (r, i) =>
+        `### Result ${i + 1}\n**Query:** ${r.query}\n**Title:** ${r.title}\n**URL:** ${r.url}\n**Content:** ${r.content}`
+    )
+    .join("\n\n")
+
+  return [
+    `Extract verified real experiences for: **${destination}**`,
+    "",
+    "Below are raw search results. Extract only experiences you can verify from these snippets.",
+    "",
+    snippets,
+    "",
+    "Return ONLY the JSON array of GroundedExperience objects.",
+  ].join("\n")
+}
+
 // ─── Node 3+: Theme Experience Generation ────────────────────────────────────
 
 export function themeSystemPrompt(): string {
@@ -46,7 +96,8 @@ export function themeUserPrompt(
   destContext: DestinationContext,
   weatherContext: WeatherContext | null,
   preferences?: Preferences,
-  usedExperiences?: Array<{ name: string; location_hint?: string | null }>
+  usedExperiences?: Array<{ name: string; location_hint?: string | null }>,
+  groundedExperiences?: GroundedExperience[]
 ): string {
   const parts: string[] = []
 
@@ -77,6 +128,24 @@ ${weatherContext.travel_implications.map(i => `- ${i}`).join("\n")}`)
   // ── Preferences ────────────────────────────────────────────────────────────
   if (preferences && Object.keys(preferences).length > 0) {
     parts.push(`## Traveler Preferences\n${formatPreferences(preferences)}`)
+  }
+
+  // ── Grounded experiences (search-verified real places) ─────────────────────
+  // These come from Tavily search. Use them as the foundation — don't invent
+  // experiences that contradict or duplicate real places on this list.
+  if (groundedExperiences && groundedExperiences.length > 0) {
+    const lines = groundedExperiences.map(e => {
+      const facts = e.key_facts.map(f => `    - ${f}`).join("\n")
+      return `- **${e.name}** (${e.category})\n  Location: ${e.location}\n${facts}`
+    })
+    parts.push(`## ✅ Known Verified Experiences at ${destination}
+
+These experiences are confirmed real by web search. When generating cards for the ${themeId} theme:
+1. PREFER to build cards around these verified experiences where they fit the theme
+2. Do NOT create a card for a place that contradicts a real place on this list (e.g. don't invent "Emerald Pool Trail" if "Emerald Pools Trail" is on the list)
+3. You may add other real experiences beyond this list — but every card must be a real, verifiable place
+
+${lines.join("\n\n")}`)
   }
 
   // ── Already-used experiences (from Wave 1 signature call) ──────────────────
@@ -126,6 +195,60 @@ Current tip (likely too generic — do better): "${currentTip}"`
 
 // ─── Itinerary Planning ───────────────────────────────────────────────────────
 
+// ─── Distance + Cluster ───────────────────────────────────────────────────────
+
+export function clusterSystemPrompt(): string {
+  return load("distance-cluster.md")
+}
+
+export function clusterUserPrompt(board: Board): string {
+  const exps: Array<{ id: string; name: string; location: string }> = []
+  for (const theme of board.themes) {
+    for (const exp of theme.experiences) {
+      exps.push({ id: exp.id, name: exp.name, location: exp.location_hint ?? board.destination })
+    }
+  }
+
+  const expList = exps
+    .map(e => `- id: ${e.id}\n  name: ${e.name}\n  location: ${e.location}`)
+    .join("\n\n")
+
+  return `## Destination\n\n${board.destination}\n\n## Experiences (${exps.length} total)\n\n${expList}\n\n## Your Task\n\nGenerate the distance matrix and clusters for all ${exps.length} experiences listed above. Follow the output format in the system prompt exactly.`
+}
+
+// ─── Itinerary Review (Pass 2) ────────────────────────────────────────────────
+
+export function reviewSystemPrompt(): string {
+  return load("itinerary-review.md")
+}
+
+export function reviewUserPrompt(
+  draft: Itinerary,
+  board: Board,
+  clusters: ClusterResult,
+  preferences?: Preferences
+): string {
+  const parts: string[] = []
+
+  parts.push(`## Draft Itinerary to Review\n\n${JSON.stringify(draft, null, 2)}`)
+
+  if (preferences && Object.keys(preferences).length > 0) {
+    parts.push(`## Traveler Preferences\n\n${formatPreferences(preferences)}`)
+  }
+
+  // Summarise clusters for the reviewer
+  const clusterSummary = clusters.clusters.map(c =>
+    `- ${c.name} (${c.id}): ${c.experience_ids.join(", ")}${c.cluster_note ? ` — NOTE: ${c.cluster_note}` : ""}`
+  ).join("\n")
+  parts.push(`## Geographic Clusters\n\n${clusterSummary}`)
+
+  parts.push(`## Your Task\n\nReview the draft itinerary above against all checks in the system prompt. Fix any violations. Return the complete corrected itinerary as valid JSON.`)
+
+  return parts.join("\n\n")
+}
+
+// ─── Itinerary Planning (Pass 1) ──────────────────────────────────────────────
+
 export function itinerarySystemPrompt(): string {
   return load("itinerary.md")
 }
@@ -137,11 +260,23 @@ export function itineraryUserPrompt(
   arrivalTime?: string,
   departureTime?: string,
   stayArea?: string,
+  preferences?: Preferences,
   forcedIds: string[] = [],
-  skippedIds: string[] = []
+  skippedIds: string[] = [],
+  clusters?: ClusterResult
 ): string {
   const skippedSet = new Set(skippedIds)
   const forcedSet = new Set(forcedIds)
+
+  // Build a lookup of experience → cluster for the card list
+  const expToCluster: Record<string, string> = {}
+  if (clusters) {
+    for (const c of clusters.clusters) {
+      for (const eid of c.experience_ids) {
+        expToCluster[eid] = c.id
+      }
+    }
+  }
 
   const allExps: Array<Experience & { theme_name: string }> = []
   const foodDrinkExps: Array<Experience & { theme_name: string }> = []
@@ -161,7 +296,8 @@ export function itineraryUserPrompt(
 
   const expList = allExps.map(e => {
     const forced = forcedSet.has(e.id) ? " [MUST INCLUDE]" : ""
-    return `- id: ${e.id}${forced}\n  name: ${e.name}\n  theme: ${e.theme_name}\n  location: ${e.location_hint}\n  duration: ${e.duration}\n  best_time: ${e.best_time}\n  local_tip: ${e.local_tip}`
+    const clusterRef = expToCluster[e.id] ? `\n  cluster: ${expToCluster[e.id]}` : ""
+    return `- id: ${e.id}${forced}\n  name: ${e.name}\n  theme: ${e.theme_name}\n  effort: ${e.effort}\n  location: ${e.location_hint}\n  duration: ${e.duration}\n  best_time: ${e.best_time}\n  local_tip: ${e.local_tip}${clusterRef}`
   }).join("\n\n")
 
   const foodList = foodDrinkExps.length > 0
@@ -184,13 +320,37 @@ Every day starts and ends at the accommodation base above. The first travel row 
 
   parts.push(`## Destination Context\n\n${board.destination_context.soul}\n\nDefining pillars: ${board.destination_context.defining_pillars.join(" · ")}`)
 
-  parts.push(`## All Available Experiences (${allExps.length} — select the best fit for ${days} days)\n\nExperiences marked [MUST INCLUDE] must appear in the itinerary.\n\n${expList}`)
+  if (preferences && Object.keys(preferences).length > 0) {
+    parts.push(`## Traveler Preferences\n\n${formatPreferences(preferences)}`)
+  }
+
+  if (clusters) {
+    const clusterBlock = clusters.clusters.map(c => {
+      const noteStr = c.cluster_note ? `\n  note: ${c.cluster_note}` : ""
+      return `- cluster_id: ${c.id}\n  name: ${c.name}\n  zone: ${c.zone}\n  anchor: ${c.anchor_id}\n  experiences: [${c.experience_ids.join(", ")}]${noteStr}`
+    }).join("\n\n")
+    parts.push(`## Geographic Clusters\n\nExperiences in the same cluster are within walking distance of each other. Plan each day around 1–2 clusters to minimise travel.\n\n${clusterBlock}`)
+
+    // Include key travel pairs (only short ones are actionable for planning — long ones are just context)
+    const shortPairs = clusters.pairs
+      .filter(p => p.drive_min <= 60)
+      .sort((a, b) => a.drive_min - b.drive_min)
+      .slice(0, 40) // cap to avoid bloating the prompt
+    if (shortPairs.length > 0) {
+      const pairBlock = shortPairs.map(p =>
+        `  ${p.from_id} → ${p.to_id}: ${p.mode === "walk" ? `walk ${p.walk_min} min` : `drive ${p.drive_min} min`}`
+      ).join("\n")
+      parts.push(`## Key Travel Times (drive ≤ 60 min)\n\n${pairBlock}`)
+    }
+  }
+
+  parts.push(`## All Available Experiences (${allExps.length} — select the best fit for ${days} days)\n\nEach card includes its cluster reference. Experiences marked [MUST INCLUDE] must appear in the itinerary.\n\n${expList}`)
 
   parts.push(`## Food & Drink Options (for meal slots)\n\n${foodList}`)
 
   parts.push(`## Your Task
 
-Build the complete ${days}-day itinerary. Select the experiences that best use the traveler's time — geography, diversity, and significance. Any experience marked [MUST INCLUDE] must be scheduled. Fill all meal slots with real named places. Add travel rows between every activity pair.`)
+Build the complete ${days}-day itinerary. Use clusters to group experiences geographically — pick 1–2 clusters per day. Select experiences that best use the traveler's time. Any [MUST INCLUDE] experience must be scheduled. Fill all meal slots with real named places. Every activity row must have a specific, user-facing \`planning_note\`.`)
 
   return parts.join("\n\n")
 }

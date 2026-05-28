@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>app/scripts/eval-grounding.ts Feedback</title>
+  <style>
+    :root { color-scheme: light; --ink:#1f2933; --muted:#697386; --line:#d8dee8; --soft:#f6f8fb; --p0:#b42318; --p1:#b54708; --p2:#175cd3; --p3:#475467; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--ink); background: #fbfcfe; }
+    main { max-width: 920px; margin: 0 auto; padding: 32px 20px 56px; }
+    nav { margin-bottom: 24px; }
+    nav a { color: #175cd3; text-decoration: none; font-weight: 600; }
+    h1 { margin: 0 0 16px; font-size: 28px; line-height: 1.15; letter-spacing: 0; }
+    h2 { margin: 32px 0 10px; padding-top: 10px; border-top: 1px solid var(--line); font-size: 18px; }
+    h3 { margin: 24px 0 8px; font-size: 15px; }
+    p { margin: 10px 0; }
+    code { padding: 1px 5px; border-radius: 5px; background: #edf2f7; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.92em; }
+    pre { overflow: auto; padding: 14px; border: 1px solid var(--line); border-radius: 8px; background: #101828; color: #f8fafc; }
+    pre code { padding: 0; background: transparent; color: inherit; }
+    ul, ol { padding-left: 22px; }
+    li { margin: 8px 0; }
+    .task { position: relative; display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: start; margin: 10px 0; padding: 12px; border: 1px solid var(--line); border-left-width: 5px; border-radius: 8px; background: #fff; list-style: none; }
+    .task.p0 { border-left-color: var(--p0); }
+    .task.p1 { border-left-color: var(--p1); }
+    .task.p2 { border-left-color: var(--p2); }
+    .task.p3 { border-left-color: var(--p3); }
+    .task-line { display: flex; gap: 10px; align-items: flex-start; cursor: pointer; }
+    .task input { margin-top: 4px; width: 16px; height: 16px; }
+    .task input:checked + .task-text { text-decoration: line-through; opacity: 0.55; }
+    .task-text { display: block; }
+    .priority { border: 1px solid var(--line); border-radius: 6px; padding: 4px 8px; background: var(--soft); color: var(--ink); font: inherit; font-size: 12px; }
+    .toolbar { display: flex; gap: 10px; flex-wrap: wrap; margin: 18px 0 24px; padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--soft); color: var(--muted); }
+    .toolbar button { border: 1px solid var(--line); border-radius: 6px; background: #fff; padding: 6px 10px; color: var(--ink); cursor: pointer; }
+    .note { color: var(--muted); font-size: 13px; }
+
+    .principal-guidance { margin-top: 34px; padding: 18px; border: 1px solid #b9c6d8; border-radius: 8px; background: #f8fbff; }
+    .principal-guidance h2 { margin-top: 0; padding-top: 0; border-top: 0; }
+    .guidance-summary { color: #344054; font-weight: 600; }
+    .implementation-list { padding-left: 0; }
+    .acceptance-list, .decision-list { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 10px 16px 10px 28px; }
+    .decision-list { border-left: 5px solid #7a5af8; }
+  </style>
+</head>
+<body>
+<main>
+  <nav><a href="index.html">Feedback index</a></nav>
+  <div class="toolbar">
+    <span class="note">Checkboxes and priority changes are saved in this browser. To make progress durable for another agent, edit the HTML source by adding <code>checked</code>, changing the selected priority option, or moving items.</span>
+    <button type="button" id="clear-state">Clear local state</button>
+  </div>
+<h1>app/scripts/eval-grounding.ts Feedback</h1>
+<p><strong>Target file:</strong> <code>app/scripts/eval-grounding.ts</code> <strong>Feedback type:</strong> Grounding eval architecture</p>
+<h2>Elephant In The Room</h2>
+<p>The grounding eval checks whether expected names appear, but it does not yet measure whether the grounding layer is strong enough to become the system of record for the board and planner.</p>
+<h2>Major Feedback</h2>
+<ul>
+<li class="task p0" data-task-id="app_scripts_eval_grounding_ts_feedback_0">
+  <label class="task-line"><input type="checkbox" data-task-id="app_scripts_eval_grounding_ts_feedback_0"><span class="task-text"><strong>P0: Evaluate source support per fact, not only per experience.</strong> The system needs to know whether distance, accessibility, shuttle rules, hours, permits, and seasonality are source-supported.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0" selected>P0</option><option value="P1">P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+</ul>
+<ul>
+<li class="task p0" data-task-id="app_scripts_eval_grounding_ts_feedback_1">
+  <label class="task-line"><input type="checkbox" data-task-id="app_scripts_eval_grounding_ts_feedback_1"><span class="task-text"><strong>P0: Add confidence and citation checks.</strong> A <code>GroundedExperience</code> should not pass because it sounds real. It should pass because specific facts are tied to source URLs.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0" selected>P0</option><option value="P1">P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+</ul>
+<ul>
+<li class="task p1" data-task-id="app_scripts_eval_grounding_ts_feedback_2">
+  <label class="task-line"><input type="checkbox" data-task-id="app_scripts_eval_grounding_ts_feedback_2"><span class="task-text"><strong>P1: Measure coverage by planning-critical dimensions.</strong> Category coverage is useful, but itinerary quality depends on access, timing, duration, difficulty, geography, and dietary suitability.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0">P0</option><option value="P1" selected>P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+</ul>
+<ul>
+<li class="task p1" data-task-id="app_scripts_eval_grounding_ts_feedback_3">
+  <label class="task-line"><input type="checkbox" data-task-id="app_scripts_eval_grounding_ts_feedback_3"><span class="task-text"><strong>P1: Evaluate negative knowledge.</strong> For destinations like Zion, the grounding stage should capture "private vehicles restricted in main canyon during shuttle season", not just a list of attractions.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0">P0</option><option value="P1" selected>P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+</ul>
+<h2>Suggested Implementation Direction</h2>
+<ul>
+<li>Add checks for required fact types in golden specs.</li>
+<li>Score source-backed facts separately from name presence.</li>
+<li>Fail or warn when required logistics facts are missing even if the experience itself is found.</li>
+</ul>
+<section class="principal-guidance">
+  <h2>Principal Engineer Implementation Notes</h2>
+  <p class="guidance-summary">Make grounding eval judge whether sources can support downstream planning, not just whether names appear.</p>
+  <h3>Implementation-Ready Checklist</h3>
+  <ul class="implementation-list">
+<li class="task p0" data-task-id="app_scripts_eval_grounding_ts_feedback_impl_0">
+  <label class="task-line"><input type="checkbox" data-task-id="app_scripts_eval_grounding_ts_feedback_impl_0"><span class="task-text"><strong>P0:</strong> Extend golden specs with required fact categories: access, duration, difficulty, timing, seasonality, and source-backed logistics.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0" selected>P0</option><option value="P1">P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+<li class="task p0" data-task-id="app_scripts_eval_grounding_ts_feedback_impl_1">
+  <label class="task-line"><input type="checkbox" data-task-id="app_scripts_eval_grounding_ts_feedback_impl_1"><span class="task-text"><strong>P0:</strong> Score each extracted fact as source-backed, vague, missing, or contradicted.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0" selected>P0</option><option value="P1">P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+<li class="task p1" data-task-id="app_scripts_eval_grounding_ts_feedback_impl_2">
+  <label class="task-line"><input type="checkbox" data-task-id="app_scripts_eval_grounding_ts_feedback_impl_2"><span class="task-text"><strong>P1:</strong> Add required negative facts such as shuttle-only access or permit requirements for destinations that need them.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0">P0</option><option value="P1" selected>P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+<li class="task p1" data-task-id="app_scripts_eval_grounding_ts_feedback_impl_3">
+  <label class="task-line"><input type="checkbox" data-task-id="app_scripts_eval_grounding_ts_feedback_impl_3"><span class="task-text"><strong>P1:</strong> Output missing-fact categories in machine-readable form for the next agent.</span></label>
+  <select class="priority" aria-label="Priority">
+    <option value="P0">P0</option><option value="P1" selected>P1</option><option value="P2">P2</option><option value="P3">P3</option>
+  </select>
+</li>
+  </ul>
+  <h3>Acceptance Criteria</h3>
+  <ul class="acceptance-list">
+<li>Grounding can fail even when all required names are present if planning-critical facts are missing.</li>
+<li>The output tells generation exactly which fact categories need better sourcing.</li>
+<li>The eval distinguishes weak evidence from absent evidence.</li>
+  </ul>
+  <h3>Needs Product Decision</h3>
+  <ul class="decision-list">
+<li>Decide which fact categories are required for v1 schedule-readiness. Recommendation: duration, access mode, coordinates/place ID, family suitability, and at least one source ref.</li>
+  </ul>
+</section>
+</main>
+<script>
+(function () {
+  const key = 'feedback-state:' + location.pathname.split('/').pop();
+  const state = JSON.parse(localStorage.getItem(key) || '{}');
+  document.querySelectorAll('.task').forEach(task => {
+    const id = task.dataset.taskId;
+    const box = task.querySelector('input[type="checkbox"]');
+    const select = task.querySelector('select.priority');
+    if (state[id]) {
+      box.checked = !!state[id].done;
+      if (state[id].priority) select.value = state[id].priority;
+    }
+    function save() {
+      const next = JSON.parse(localStorage.getItem(key) || '{}');
+      next[id] = { done: box.checked, priority: select.value };
+      localStorage.setItem(key, JSON.stringify(next));
+      task.classList.remove('p0','p1','p2','p3');
+      task.classList.add(select.value.toLowerCase());
+    }
+    box.addEventListener('change', save);
+    select.addEventListener('change', save);
+    task.classList.remove('p0','p1','p2','p3');
+    task.classList.add(select.value.toLowerCase());
+  });
+  document.getElementById('clear-state').addEventListener('click', () => {
+    localStorage.removeItem(key);
+    location.reload();
+  });
+})();
+</script>
+</body>
+</html>

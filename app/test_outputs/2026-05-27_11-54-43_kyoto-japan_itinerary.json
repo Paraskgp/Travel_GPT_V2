@@ -1,0 +1,412 @@
+{
+  "itinerary": {
+    "destination": "Kyoto, Japan",
+    "start_date": "2026-05-20",
+    "end_date": "2026-05-25",
+    "days": [
+      {
+        "date": "2026-05-20",
+        "day_number": 1,
+        "day_title": "Arrival in Kyoto",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "16:30",
+            "end_time": "17:30",
+            "title": "Gion District Stroll",
+            "notes": "When exploring Gion at dusk, position yourself on Hanami-koji Street near the Minamiza Theatre and look towards Kennin-ji Temple to spot geisha in their evening rush to appointments, capturing a view that seamlessly blends history with living tradition.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Gion+District+Kyoto",
+            "experience_id": "gion-district-evening"
+          },
+          {
+            "type": "meal",
+            "start_time": "18:00",
+            "end_time": "19:30",
+            "title": "Dinner at Kaiseki Ryori Experience",
+            "notes": "To fully appreciate the harmony of flavors in your Kaiseki Ryori at Nanzenji Sando Kikusui, try to time your visit during the late afternoon when the soft light illuminates the surrounding temple grounds, enhancing the tranquil ambiance as you dine.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Nanzenji+Sando+Kikusui+Kyoto",
+            "experience_id": "kaiseki_ryori_experience"
+          },
+          {
+            "type": "activity",
+            "start_time": "20:00",
+            "end_time": "21:00",
+            "title": "Evening Tea Ceremony for Two",
+            "notes": "To fully connect with the atmosphere at Camellia Tea Ceremony, note the incense cone placed beside the tatami borders; as the soothing fragrance curls upward, it marks the perfect moment to sip your tea, infusing the ceremony with tranquility and romance.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Camellia+Tea+Ceremony+Kyoto",
+            "experience_id": "evening-tea-ceremony"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-21",
+        "day_number": 2,
+        "day_title": "Signature Kyoto Morning",
+        "rows": [
+          {
+            "type": "travel",
+            "start_time": "05:30",
+            "end_time": "06:00",
+            "title": "Travel to Fushimi Inari Taisha",
+            "notes": "Travel by train from Gion to Fushimi Inari Taisha. Estimated travel time: 30 minutes.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "06:00",
+            "end_time": "08:30",
+            "title": "Fushimi Inari Taisha",
+            "notes": "As you ascend through the torii gates, detour onto the small unmarked trail to the right after the second stage of the path; from there, you'll find an opening with a stunning, less-known view of Kyoto city framed by the vibrant red gates.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Fushimi+Inari+Taisha+Kyoto",
+            "experience_id": "fushimi-inari-taisha"
+          },
+          {
+            "type": "travel",
+            "start_time": "08:30",
+            "end_time": "09:00",
+            "title": "Travel to Kiyomizu-dera Temple",
+            "notes": "Travel by train and walk from Fushimi Inari Taisha to Kiyomizu-dera Temple. Estimated travel time: 30 minutes.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "09:00",
+            "end_time": "11:00",
+            "title": "Kiyomizu-dera Temple",
+            "notes": "Stop by the Otowa Waterfall after a temple visit to sip from the 'three streams' where you can choose luck, love, or longevity—locals say not to get greedy and only pick one!",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Kiyomizu-dera+Temple+Kyoto",
+            "experience_id": "kiyomizu-dera-visit"
+          },
+          {
+            "type": "meal",
+            "start_time": "11:30",
+            "end_time": "12:30",
+            "title": "Lunch at Yudofu at Nanzen-ji",
+            "notes": "For an unmatched view while you savor your yudofu, choose a table on the terrace where you can glimpse the iconic Sanmon Gate peeking through the lush temple gardens.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Nanzenji+Junsei+Kyoto",
+            "experience_id": "yudofu_at_nanzenji"
+          },
+          {
+            "type": "travel",
+            "start_time": "13:00",
+            "end_time": "13:30",
+            "title": "Travel to Kyoto National Museum",
+            "notes": "Travel by bus or taxi; ensure sufficient time for comfortable transport. Estimated travel time: 30 minutes.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "14:00",
+            "end_time": "16:00",
+            "title": "Kyoto National Museum",
+            "notes": "Head to the Heisei Chishinkan Wing on the second floor and stand near the southeast corner windows for a mesmerizing view of Kyoto Tower framed by the museum's modern architecture.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Kyoto+National+Museum+Kyoto",
+            "experience_id": "kyoto-national-museum"
+          },
+          {
+            "type": "travel",
+            "start_time": "16:00",
+            "end_time": "16:30",
+            "title": "Return to Gion",
+            "notes": "Travel from Kyoto National Museum back to Gion by bus or taxi. Estimated travel time: 30 minutes.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "meal",
+            "start_time": "18:00",
+            "end_time": "19:30",
+            "title": "Dinner at Nishiki Dori Yokocho",
+            "notes": "Stand at the intersection of Teramachi and Nishiki markets and look for the small blue lantern hanging just above eye level; finding this marks the beginning of the hidden alleyway where the locals flock for the freshest yakitori skewers.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Nishiki+Dori+Yokocho+Kyoto",
+            "experience_id": "nishiki-dori-yokocho"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-22",
+        "day_number": 3,
+        "day_title": "Natural Beauties and Historic Insights",
+        "rows": [
+          {
+            "type": "travel",
+            "start_time": "07:30",
+            "end_time": "08:00",
+            "title": "Travel to Arashiyama Bamboo Grove",
+            "notes": "Travel by train from Gion to Arashiyama Bamboo Grove. Estimated travel time: 30 minutes.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "08:00",
+            "end_time": "09:30",
+            "title": "Arashiyama Bamboo Grove",
+            "notes": "Stand at the intersection of the grove's main path and the tiny side path leading to Nonomiya Shrine; this lesser-traveled diversion offers a glimpse of sunlight filtering through the bamboo with far fewer visitors.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Arashiyama+Bamboo+Grove+Kyoto",
+            "experience_id": "arashiyama-bamboo-grove"
+          },
+          {
+            "type": "travel",
+            "start_time": "09:30",
+            "end_time": "10:00",
+            "title": "Travel to Kinkaku-ji (Golden Pavilion)",
+            "notes": "Travel by train and bus from Arashiyama to Kinkaku-ji. Estimated travel time: 30 minutes.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "10:00",
+            "end_time": "11:00",
+            "title": "Kinkaku-ji (Golden Pavilion)",
+            "notes": "As you exit the Pavilion area, pause just before crossing the Anmintaku Pond on the path; from here you can see the floating tea houses' reflection aligning perfectly with the Pavilion, a view often missed by those moving swiftly through.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Kinkaku-ji+Kyoto",
+            "experience_id": "kinkaku-ji-temple-visit"
+          },
+          {
+            "type": "travel",
+            "start_time": "11:00",
+            "end_time": "11:30",
+            "title": "Travel to Okochi Sanso Gardens",
+            "notes": "Travel by bus from Kinkaku-ji to Okochi Sanso Gardens. Estimated travel time: 30 minutes.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "11:30",
+            "end_time": "13:00",
+            "title": "Okochi Sanso Gardens",
+            "notes": "Stand at the small bend in the stone path just beyond the teahouse to catch the sun illuminating the bamboo grove's canopy as it filters through the trees, creating a golden-green glow unique to late afternoons.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Okochi+Sanso+Gardens+Kyoto",
+            "experience_id": "oji-gardens"
+          },
+          {
+            "type": "meal",
+            "start_time": "13:00",
+            "end_time": "14:00",
+            "title": "Lunch near Arashiyama",
+            "notes": "Find a local café in Arashiyama for a traditional Japanese lunch and relax after your morning exploration.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "14:00",
+            "end_time": "15:00",
+            "title": "Travel to Sanjusangendo Temple",
+            "notes": "Take a train and taxi for a comfortable journey back to central Kyoto. Estimated travel time: 1 hour with traffic considerations.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "15:00",
+            "end_time": "16:30",
+            "title": "Sanjusangendo Temple",
+            "notes": "To fully appreciate the mesmerizing alignment of the 1001 Kannon statues, stand at the eastern end of the hall near the 28 guardian deities, where the natural light filtering through the side windows casts dynamic shadows that highlight the intricate details of each statue.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Sanjusangendo+Temple+Kyoto",
+            "experience_id": "sanjusangendo-temple"
+          },
+          {
+            "type": "meal",
+            "start_time": "17:30",
+            "end_time": "19:00",
+            "title": "Dinner at Nishiki Market",
+            "notes": "As you reach the midpoint of Nishiki Market, look for the small alley leading to the less visible Sugi Honey Shop—try the royal jelly cream puffs for a hidden taste of Kyoto's sweeter side often missed by first-time visitors.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Nishiki+Market+Kyoto",
+            "experience_id": "street_food_at_nishiki_market"
+          },
+          {
+            "type": "activity",
+            "start_time": "19:30",
+            "end_time": "21:00",
+            "title": "Higashiyama Night Walk",
+            "notes": "Catch the dreamy, lantern-lit reflections on the glistening cobblestones by pausing at the narrow alley beside the Sannenzaka Museum, just as the faint temple bells resonate through the crisp Kyoto night air.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Ninenzaka+Slope+Kyoto",
+            "experience_id": "higashiyama-night-walk"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-23",
+        "day_number": 4,
+        "day_title": "Cultural Immersion Day",
+        "rows": [
+          {
+            "type": "travel",
+            "start_time": "07:30",
+            "end_time": "08:00",
+            "title": "Travel to Nijo Castle",
+            "notes": "Travel by subway from Gion to Nijo Castle. Estimated travel time: 30 minutes.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "08:00",
+            "end_time": "10:30",
+            "title": "Nijo Castle Visit",
+            "notes": "For an ethereal experience, stand beneath the cherry blossom trees in the southwest corner of the Ninomaru Garden during peak bloom; the reflection of the blossoms in the pond amplifies their delicate beauty, a view often missed by those rushing through.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Nijo+Castle+Kyoto",
+            "experience_id": "nijo-castle-visit"
+          },
+          {
+            "type": "travel",
+            "start_time": "10:30",
+            "end_time": "11:00",
+            "title": "Travel to Kyoto Handicraft Center",
+            "notes": "Travel by bus or taxi. Estimated travel time: 30 minutes.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "11:00",
+            "end_time": "13:00",
+            "title": "Kyoto Handicraft Center",
+            "notes": "Seek out the second-floor gallery corner where local artisans often showcase their handcrafted kimonos and ceramics; the displays change frequently, offering a unique glimpse into the diverse traditions of Kyoto.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Kyoto+Handicraft+Center+Kyoto",
+            "experience_id": "kyoto-handicraft-center"
+          },
+          {
+            "type": "meal",
+            "start_time": "13:00",
+            "end_time": "14:00",
+            "title": "Lunch in Higashiyama",
+            "notes": "Have a relaxing lunch at a local restaurant in the Higashiyama area, enjoying traditional Kyoto cuisine.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "14:30",
+            "end_time": "15:00",
+            "title": "Travel to Raku Museum",
+            "notes": "Take a local bus or taxi to Raku Museum. Estimated travel time: 30 minutes.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "15:00",
+            "end_time": "17:00",
+            "title": "Raku Tea Ceremony Experience",
+            "notes": "Position yourself near the eastern windows during the tea ceremony to catch the natural light subtly revealing the diverse textures and colors of each Raku tea bowl.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Raku+Museum+Kyoto",
+            "experience_id": "raku-tea-ceremony"
+          },
+          {
+            "type": "meal",
+            "start_time": "18:00",
+            "end_time": "19:30",
+            "title": "Dinner at Kaiseki Cuisine Dining",
+            "notes": "Request a seat at the counter near the open kitchen where you can watch the meticulous preparation of each course, enhancing your appreciation for Kikunoi's culinary artistry in real-time.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Kikunoi+Main+Restaurant+Kyoto",
+            "experience_id": "kaiseki-dining-experience"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-24",
+        "day_number": 5,
+        "day_title": "Day Trip Exploration",
+        "rows": [
+          {
+            "type": "travel",
+            "start_time": "08:00",
+            "end_time": "09:30",
+            "title": "Travel to Nara",
+            "notes": "Take a combination of train and taxi to reach Nara from Gion. Estimated travel time: 1.5 hours.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "09:30",
+            "end_time": "15:00",
+            "title": "Nara and its Iconic Deer Park",
+            "notes": "To experience the unique behavior of Nara's deer, head to the clearing near the Five-Story Pagoda when the temple bell rings, as the deer often pause to bow to visitors expecting snacks.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Nara+Park+Nara",
+            "experience_id": "nara-animal-sanctuary"
+          },
+          {
+            "type": "meal",
+            "start_time": "12:00",
+            "end_time": "13:00",
+            "title": "Lunch in Nara",
+            "notes": "Enjoy a local meal at one of Nara's traditional restaurants, sampling local delicacies unique to the area.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "15:00",
+            "end_time": "16:30",
+            "title": "Return to Gion",
+            "notes": "Take the train back to Kyoto from Nara and return to your accommodation. Estimated travel time: 1.5 hours.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "17:00",
+            "end_time": "18:30",
+            "title": "Kanze Noh Theatre Performance",
+            "notes": "For a unique perspective on stagecraft, sit on the right side of the Kanze Noh Theatre, where you can better observe the subtle facial expressions of the actors through the masks' shadows, especially during evening performances when lighting is most dramatic.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Kanze+Noh+Theatre+Kyoto",
+            "experience_id": "kanze-noh-theatre"
+          },
+          {
+            "type": "meal",
+            "start_time": "19:00",
+            "end_time": "20:30",
+            "title": "Dinner in Gion",
+            "notes": "Enjoy a delightful dinner at a local restaurant in Gion, savoring the flavors of Kyoto's traditional cuisine.",
+            "maps_url": null,
+            "experience_id": null
+          }
+        ]
+      },
+      {
+        "date": "2026-05-25",
+        "day_number": 6,
+        "day_title": "Departure from Kyoto",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "08:00",
+            "end_time": "09:00",
+            "title": "Breakfast at Accommodation",
+            "notes": "Have breakfast at the lodge dining room, enjoying a leisurely morning before checking out.",
+            "maps_url": null,
+            "experience_id": null
+          },
+          {
+            "type": "activity",
+            "start_time": "09:00",
+            "end_time": "10:00",
+            "title": "Morning Stroll through Gion",
+            "notes": "Take a final relaxed stroll through the historic streets of Gion, capturing the morning ambiance before departing.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Gion+District+Kyoto",
+            "experience_id": null
+          },
+          {
+            "type": "travel",
+            "start_time": "10:00",
+            "end_time": "11:00",
+            "title": "Travel to Departure Point",
+            "notes": "Check out and travel to the transport hub for your departure with ample time.",
+            "maps_url": null,
+            "experience_id": null
+          }
+        ]
+      }
+    ],
+    "generated_at": "2023-10-07"
+  }
+}

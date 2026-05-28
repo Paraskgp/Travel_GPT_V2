@@ -1,0 +1,1356 @@
+{
+  "board": {
+    "destination": "Zion National Park",
+    "destination_context": {
+      "destination": "Zion National Park",
+      "soul": "Zion National Park is a place of sublime intensity, where nature's palette unfolds in breathtaking hues of red, orange, and white. The towering sandstone cliffs and narrow canyons whisper tales of ancient geological processes and the inexorable passage of time. Here, the interplay between light and land transforms the landscape hourly, with golden rays piercing through the canyon to create a surreal, ethereal glow. This is a sanctuary for the soul, where each hike feels like a pilgrimage, drawing visitors into a meditative communion with the earth. Zion is a testament to the raw beauty and power of nature, a place that humbles visitors with its grandeur and inspires awe with its intricate and surprising beauty.",
+      "defining_pillars": [
+        "Red-rock canyon hikes",
+        "Angels Landing adventure",
+        "Virgin River narrows",
+        "Stunning sandstone monoliths"
+      ],
+      "best_for": [
+        "Hikers seeking dramatic landscapes",
+        "Nature photographers chasing light",
+        "Geology enthusiasts exploring formations",
+        "Adventure seekers drawn to canyoning"
+      ],
+      "honest_notes": [
+        "Trails can be crowded, especially during peak season",
+        "Weather can be extreme and unpredictable",
+        "Some hikes require permits and advance planning",
+        "Parking inside the park can be very limited"
+      ],
+      "applicable_themes": [
+        "signature",
+        "adventure",
+        "nature",
+        "hiking",
+        "unique_local",
+        "seasonal"
+      ],
+      "recommended_stay_area": "Springdale",
+      "recommended_stay_reason": "Central to Zion's main entrance, offering easy access to park shuttles, trails, and local amenities."
+    },
+    "weather_context": {
+      "destination": "Zion National Park",
+      "travel_month": "November 2026",
+      "annual_summary": "Zion National Park, located in southwestern Utah, offers a diverse climate with four distinct seasons, making it a year-round destination with unique charm in each season. Summers are warm to hot, with occasional thunderstorms, while winters can bring cold temperatures and the possibility of snow at higher elevations. Spring and fall are particularly attractive with mild temperatures and manageable crowds, making them ideal for hiking and other outdoor activities. Visitors should be aware of potential flash floods during the late summer monsoon season and should plan their activities accordingly.",
+      "months": {
+        "January": {
+          "avg_high_f": 52,
+          "avg_low_f": 30,
+          "avg_high_c": 11,
+          "avg_low_c": -1,
+          "avg_rainfall_inches": 1.6,
+          "rainy_days_estimate": 6,
+          "avg_wind_mph": 5,
+          "humidity_pct": 61,
+          "uv_index": "Low",
+          "sunrise": "7:30 AM",
+          "sunset": "5:30 PM",
+          "daylight_hours": 10,
+          "season_type": "off_season",
+          "season_notes": "Quiet month with the possibility of snow; great for solitude."
+        },
+        "February": {
+          "avg_high_f": 57,
+          "avg_low_f": 32,
+          "avg_high_c": 14,
+          "avg_low_c": 0,
+          "avg_rainfall_inches": 1.7,
+          "rainy_days_estimate": 6,
+          "avg_wind_mph": 5,
+          "humidity_pct": 58,
+          "uv_index": "Low",
+          "sunrise": "7:15 AM",
+          "sunset": "6:00 PM",
+          "daylight_hours": 10.5,
+          "season_type": "off_season",
+          "season_notes": "Cool temperatures and fewer visitors; might encounter snow."
+        },
+        "March": {
+          "avg_high_f": 63,
+          "avg_low_f": 37,
+          "avg_high_c": 17,
+          "avg_low_c": 3,
+          "avg_rainfall_inches": 1.8,
+          "rainy_days_estimate": 7,
+          "avg_wind_mph": 6,
+          "humidity_pct": 55,
+          "uv_index": "Moderate",
+          "sunrise": "6:45 AM",
+          "sunset": "6:30 PM",
+          "daylight_hours": 11,
+          "season_type": "shoulder_season",
+          "season_notes": "Warming temperatures make for pleasant hiking conditions."
+        },
+        "April": {
+          "avg_high_f": 72,
+          "avg_low_f": 44,
+          "avg_high_c": 22,
+          "avg_low_c": 7,
+          "avg_rainfall_inches": 1.3,
+          "rainy_days_estimate": 6,
+          "avg_wind_mph": 6,
+          "humidity_pct": 49,
+          "uv_index": "Moderate",
+          "sunrise": "6:00 AM",
+          "sunset": "7:00 PM",
+          "daylight_hours": 13,
+          "season_type": "shoulder_season",
+          "season_notes": "Ideal time for hiking with mild weather and wildflower blooms."
+        },
+        "May": {
+          "avg_high_f": 82,
+          "avg_low_f": 53,
+          "avg_high_c": 28,
+          "avg_low_c": 12,
+          "avg_rainfall_inches": 0.6,
+          "rainy_days_estimate": 4,
+          "avg_wind_mph": 7,
+          "humidity_pct": 41,
+          "uv_index": "High",
+          "sunrise": "5:45 AM",
+          "sunset": "7:30 PM",
+          "daylight_hours": 14,
+          "season_type": "peak_season",
+          "season_notes": "Warm and dry weather; popular for outdoor activities."
+        },
+        "June": {
+          "avg_high_f": 93,
+          "avg_low_f": 62,
+          "avg_high_c": 34,
+          "avg_low_c": 17,
+          "avg_rainfall_inches": 0.3,
+          "rainy_days_estimate": 2,
+          "avg_wind_mph": 6,
+          "humidity_pct": 29,
+          "uv_index": "Very High",
+          "sunrise": "5:35 AM",
+          "sunset": "8:00 PM",
+          "daylight_hours": 15,
+          "season_type": "peak_season",
+          "season_notes": "Hot and dry; early morning or late afternoon hiking recommended."
+        },
+        "July": {
+          "avg_high_f": 97,
+          "avg_low_f": 69,
+          "avg_high_c": 36,
+          "avg_low_c": 21,
+          "avg_rainfall_inches": 0.8,
+          "rainy_days_estimate": 6,
+          "avg_wind_mph": 5,
+          "humidity_pct": 33,
+          "uv_index": "Very High",
+          "sunrise": "5:45 AM",
+          "sunset": "8:00 PM",
+          "daylight_hours": 14.5,
+          "season_type": "peak_season",
+          "season_notes": "Very hot; potential afternoon thunderstorms."
+        },
+        "August": {
+          "avg_high_f": 95,
+          "avg_low_f": 67,
+          "avg_high_c": 35,
+          "avg_low_c": 19,
+          "avg_rainfall_inches": 1.2,
+          "rainy_days_estimate": 6,
+          "avg_wind_mph": 5,
+          "humidity_pct": 35,
+          "uv_index": "Very High",
+          "sunrise": "6:00 AM",
+          "sunset": "7:45 PM",
+          "daylight_hours": 13.5,
+          "season_type": "peak_season",
+          "season_notes": "Hot with thunderstorms; be cautious of flash floods."
+        },
+        "September": {
+          "avg_high_f": 88,
+          "avg_low_f": 59,
+          "avg_high_c": 31,
+          "avg_low_c": 15,
+          "avg_rainfall_inches": 1,
+          "rainy_days_estimate": 5,
+          "avg_wind_mph": 5,
+          "humidity_pct": 39,
+          "uv_index": "High",
+          "sunrise": "6:20 AM",
+          "sunset": "7:00 PM",
+          "daylight_hours": 12.5,
+          "season_type": "shoulder_season",
+          "season_notes": "Cooling temperatures; excellent for hiking and scenery."
+        },
+        "October": {
+          "avg_high_f": 77,
+          "avg_low_f": 48,
+          "avg_high_c": 25,
+          "avg_low_c": 9,
+          "avg_rainfall_inches": 1.3,
+          "rainy_days_estimate": 5,
+          "avg_wind_mph": 5,
+          "humidity_pct": 45,
+          "uv_index": "Moderate",
+          "sunrise": "6:45 AM",
+          "sunset": "6:15 PM",
+          "daylight_hours": 11.5,
+          "season_type": "shoulder_season",
+          "season_notes": "Mild weather ideal for outdoor exploration and fall foliage."
+        },
+        "November": {
+          "avg_high_f": 63,
+          "avg_low_f": 37,
+          "avg_high_c": 17,
+          "avg_low_c": 3,
+          "avg_rainfall_inches": 1.4,
+          "rainy_days_estimate": 5,
+          "avg_wind_mph": 5,
+          "humidity_pct": 53,
+          "uv_index": "Low",
+          "sunrise": "7:15 AM",
+          "sunset": "5:30 PM",
+          "daylight_hours": 10,
+          "season_type": "off_season",
+          "season_notes": "Cool temperatures and reduced crowds; peaceful and scenic."
+        },
+        "December": {
+          "avg_high_f": 52,
+          "avg_low_f": 30,
+          "avg_high_c": 11,
+          "avg_low_c": -1,
+          "avg_rainfall_inches": 1.7,
+          "rainy_days_estimate": 6,
+          "avg_wind_mph": 5,
+          "humidity_pct": 60,
+          "uv_index": "Low",
+          "sunrise": "7:30 AM",
+          "sunset": "5:15 PM",
+          "daylight_hours": 9.5,
+          "season_type": "off_season",
+          "season_notes": "Possible snow at higher altitudes; serene winter landscape."
+        }
+      },
+      "travel_implications": [
+        "November offers cool temperatures, making it a pleasant time for hiking without the intense summer heat.",
+        "This month sees lighter crowds, providing a more tranquil park experience and easier navigability of trails.",
+        "Visitors should prepare for shorter days with less daylight, making planning of hikes and outdoor activities important.",
+        "Although the weather is generally stable, travelers should be ready for variations and dress in layers for comfort.",
+        "With potentially rainy days, it is advisable to have waterproof clothing and equipment to enjoy the outdoors fully."
+      ]
+    },
+    "themes": [
+      {
+        "id": "signature_experiences",
+        "name": "Signature Experiences",
+        "description": "Discover the iconic and defining experiences of Zion National Park, where nature's grandeur and adventure weave into your journey.",
+        "experiences": [
+          {
+            "id": "angels-landing",
+            "name": "Angels Landing Via Scout Lookout",
+            "short_description": "Experience the dramatic climb to one of Zion's and the world's most famous viewpoints.",
+            "long_description": "Angels Landing is a legendary trail that takes you up one of the most iconic views in Zion National Park. The hike is strenuous and involves climbing up through a series of steep switchbacks known as Walters Wiggles, followed by a nerve-testing final stretch with sheer drop-offs and chains for support. The reward is a breathtaking view of Zion Canyon below. This is a must-do for those who can meet the physical demands and aren't deterred by heights.",
+            "tags": [
+              "hiking",
+              "outdoor",
+              "adventure"
+            ],
+            "why_worth_it": "The view from Angels Landing provides a sweeping, unparalleled panorama of Zion Canyon that pictures alone cannot capture.",
+            "duration": "3–5 hours",
+            "effort": "strenuous",
+            "cost_band": "free",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "06:00–10:00 — cooler and less crowded",
+            "local_tip": "At the cable section of Angels Landing, the best photo spot is just before the third set of chains—position yourself on the left side for a dramatic valley view with minimal foreground obstruction.",
+            "who_for": [
+              "adventure seekers",
+              "solo travelers",
+              "couples"
+            ],
+            "watch_out_for": "This hike is not for the faint-hearted or those with a fear of heights. The final approach involves narrow paths with steep drop-offs.",
+            "nearby_pairings": [
+              "The Narrows",
+              "Emerald Pools"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic"
+            ],
+            "weather_sensitivity": "Avoid during rain or storms — slippery and dangerous conditions.",
+            "location_hint": "Angels Landing Trailhead, Zion National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "the-narrows",
+            "name": "The Narrows Hike",
+            "short_description": "Wade through the Virgin River between towering canyon walls in this quintessential Zion experience.",
+            "long_description": "The Narrows is the narrowest section of Zion Canyon, where the Virgin River has carved its way through towering sandstone cliffs. Hiking through the riverbed, you'll experience a unique perspective on the park's geology. While it's possible to walk a section from the Temple of Sinawava, the full top-down trek requires advance planning and permits.",
+            "tags": [
+              "hiking",
+              "water",
+              "adventure"
+            ],
+            "why_worth_it": "Wading through The Narrows offers a distinctive and immersive Zion adventure, surrounded by imposing canyon walls.",
+            "duration": "4–8 hours",
+            "effort": "moderate",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "07:00–11:00 — good lighting and before afternoon crowds",
+            "local_tip": "Just past Mystery Falls, look for the large boulder on the right where the river bends sharply; climb up for a unique view of the canyon that highlights its serpentine curves and layered rock textures.",
+            "who_for": [
+              "adventure seekers",
+              "photographers"
+            ],
+            "what_to_bring": [
+              "water shoes",
+              "walking stick",
+              "dry bag"
+            ],
+            "watch_out_for": "Flash floods are a real danger here; always check weather conditions and consult rangers before setting out.",
+            "nearby_pairings": [
+              "Riverside Walk",
+              "Emerald Pools"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Avoid during rain due to flash flood risk.",
+            "location_hint": "Temple of Sinawava, Zion National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "emerald-pools-trail",
+            "name": "Emerald Pools Trail",
+            "short_description": "Explore cascading waterfalls and serene pools in the heart of Zion.",
+            "long_description": "The Emerald Pools Trail offers a series of pools and waterfalls that create a lush oasis amidst the desert landscape. The trail is comprised of the Upper, Middle, and Lower Pools, with varying levels of difficulty. The route to the Lower Pools is relatively easy and gives families and casual hikers an opportunity to experience Zion's natural tranquility.",
+            "tags": [
+              "hiking",
+              "scenic",
+              "family"
+            ],
+            "why_worth_it": "This trail provides an accessible glimpse into Zion's lush beauty, suitable for families and those seeking a gentle hike.",
+            "duration": "1–3 hours",
+            "effort": "moderate",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "08:00–12:00 — morning light enhances photography",
+            "local_tip": "For a tranquil photo opportunity, look for the stone outcrop at the base of the Lower Emerald Pool; in early afternoon, when the sun filters through the mist of the falls at just the right angle, you'll catch a dazzling rainbow reflected in the pool's surface.",
+            "who_for": [
+              "families",
+              "casual hikers"
+            ],
+            "watch_out_for": "Sections can become crowded during peak hours, especially in the afternoon.",
+            "nearby_pairings": [
+              "Zion Lodge",
+              "Kayenta Trail"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible"
+            ],
+            "weather_sensitivity": "More enjoyable in cooler weather.",
+            "location_hint": "Emerald Pools Trail, Zion National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "pa-rus-trail",
+            "name": "Pa'rus Trail",
+            "short_description": "A family-friendly stroll along the Virgin River with stunning views of the canyon.",
+            "long_description": "The Pa'rus Trail is an accessible, paved path that follows the Virgin River, offering an excellent introduction to Zion National Park's varying rock formations and plant life. Ideal for families with young children or anyone needing a leisurely walk, the trail is suitable for bikes, strollers, and wheelchairs and offers no shortage of photogenic vantage points.",
+            "tags": [
+              "hiking",
+              "easy",
+              "family"
+            ],
+            "why_worth_it": "The Pa'rus Trail provides a magnificent yet gentle introduction to Zion's breathtaking vistas.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "08:00–10:00 or 16:00–18:00 — softer light enhances views",
+            "local_tip": "Just past the first bridge from the Pa'rus Trailhead, look to the right at the spot where the Virgin River makes a gentle bend for a postcard-perfect reflection of the Watchman glowing in the golden dusk light.",
+            "who_for": [
+              "families",
+              "nature lovers",
+              "bike enthusiasts"
+            ],
+            "watch_out_for": "The trail is popular with both cyclists and walkers; be mindful and courteous to avoid collisions.",
+            "nearby_pairings": [
+              "Zion Human History Museum",
+              "South Campground"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Pa'rus Trailhead, Zion National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "zion-mt-carmel-highway",
+            "name": "Zion-Mount Carmel Highway",
+            "short_description": "Drive through Zion's dramatic tunnels and beyond, featuring expansive views and eye-catching rock formations.",
+            "long_description": "This scenic drive takes you along the Zion-Mount Carmel Highway through a landscape full of diverse, colorful rock formations. Highlighted by the engineering marvel of Zion's narrow, mile-long tunnel, the road offers multiple pull-offs for photos and leisurely observation. This route provides accessibility to some of Zion’s amazing sites without the need for strenuous hiking, making it perfect for travelers seeking less exertion but equally stunning sights.",
+            "tags": [
+              "scenic",
+              "driving",
+              "accessible"
+            ],
+            "why_worth_it": "The Zion-Mount Carmel Highway offers a magnificent drive-through window into the park's stunning rockscape, without the physical challenge.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "09:00–11:00 or 15:00–17:00 — optimal for seeing wildlife and photography",
+            "local_tip": "After passing through the Zion-Mount Carmel Tunnel heading east, pull over at the first unmarked parking area on the right, where a discreet climb leads to a lesser-known perch offering expansive vistas over Pine Creek Canyon.",
+            "who_for": [
+              "families",
+              "older travelers",
+              "photographers"
+            ],
+            "watch_out_for": "Traffic can be heavy during peak season; be prepared for delays.",
+            "nearby_pairings": [
+              "Canyon Overlook Trail",
+              "Checkerboard Mesa"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Zion-Mount Carmel Tunnel, Zion National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "zion-human-history-museum",
+            "name": "Zion Human History Museum",
+            "short_description": "Understand Zion's ecological and cultural history at this well-crafted museum.",
+            "long_description": "The Zion Human History Museum offers comprehensive exhibits on the rich tapestry of Zion's past, from the Native American tribes and pioneer settlers to the unique geology of the park itself. This engaging indoor experience is perfect for families and those wanting to enhance their visit with contextual knowledge about the park’s creation and cultural legacy.",
+            "tags": [
+              "indoor",
+              "culture",
+              "educational"
+            ],
+            "why_worth_it": "The museum provides a rich, informative background to Zion's stunning geological and cultural narrative.",
+            "duration": "1–1.5 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "11:00–14:00 — a great midday refuge from the sun",
+            "local_tip": "To catch a unique glimpse of the early morning sunlight hitting the museum's panoramic windows, creating vibrant reflections of the surrounding cliffs on the lobby floor, visit within the first hour of opening on a clear day.",
+            "who_for": [
+              "families",
+              "history buffs",
+              "educational travelers"
+            ],
+            "watch_out_for": "Check for current opening hours as they may vary seasonally.",
+            "nearby_pairings": [
+              "Pa'rus Trail",
+              "Watchman Trail"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Zion Human History Museum, Zion National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          }
+        ]
+      },
+      {
+        "id": "adventure",
+        "name": "Adventure",
+        "description": "Explore Zion's more thrilling experiences, where physical engagement and adrenaline make for unforgettable adventures.",
+        "experiences": [
+          {
+            "id": "canyoneering-keyhole-canyon",
+            "name": "Canyoneering in Keyhole Canyon",
+            "short_description": "Descend into the depths of Zion with a guided canyoneering adventure through Keyhole Canyon.",
+            "long_description": "Canyoneering in Keyhole Canyon offers a thrilling mix of rappelling, scrambling, and wading through narrow slots. Suitable for beginners, this adventure showcases Zion's stunning geology in an intimate way, as you navigate through tight canyon walls and cool pools. A permit is required, and guided tours ensure a safe and informative experience, highlighting both technique and the canyon's natural history.",
+            "tags": [
+              "outdoor",
+              "morning",
+              "thrilling"
+            ],
+            "why_worth_it": "Experience Zion's hidden slots and unique landscapes in an adrenaline-pumping way.",
+            "duration": "Half day",
+            "effort": "moderate",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "08:00–12:00 — avoid afternoon storms in summer",
+            "local_tip": "Once you reach the canyon's second rappel, pause to look upwards at the 'light gallery'—a narrow shaft where sunbeams illuminate the delicate textures of sandstone walls, creating a beautifully vibrant contrast best captured around midday.",
+            "who_for": [
+              "adventure seekers",
+              "nature photographers",
+              "couples"
+            ],
+            "what_to_bring": [
+              "sturdy footwear",
+              "waterproof backpack"
+            ],
+            "watch_out_for": "Flash floods are a risk; always check the weather forecast before heading out.",
+            "nearby_pairings": [
+              "Canyon Overlook Trail"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "solo_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Avoid during rain — flash flood risk.",
+            "location_hint": "Keyhole Canyon, Zion National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "rock-climbing-towers-of-the-virgin",
+            "name": "Rock Climbing the Towers of the Virgin",
+            "short_description": "Challenge yourself with technical climbing on Zion's iconic sandstone towers.",
+            "long_description": "Rock climbing at the Towers of the Virgin provides an advanced climbing experience, with routes ranging from multi-pitch climbs to intricate bouldering problems. The scenery from the summit is breathtaking, rewarding climbers with panoramic views of Zion's most iconic formations. This activity requires advanced climbing skills and is usually done with professional guidance or for seasoned climbers with their own gear.",
+            "tags": [
+              "outdoor",
+              "thrilling",
+              "technical"
+            ],
+            "why_worth_it": "Test your skills on some of the most revered sandstone towers, and enjoy unparalleled views of the park.",
+            "duration": "Full day",
+            "effort": "strenuous",
+            "cost_band": "premium",
+            "booking_difficulty": "hard_to_get",
+            "best_time": "06:00–10:00 — cooler mornings improve grip and endurance",
+            "local_tip": "At the base of The Watchman, start your ascent by targeting the hidden seam to the climber's right, which aligns you perfectly to catch the cooling evening breezes funneled down from the Kolob Canyons.",
+            "who_for": [
+              "experienced climbers",
+              "adventurous couples",
+              "thrill seekers"
+            ],
+            "what_to_bring": [
+              "climbing gear",
+              "chalk",
+              "hydration pack"
+            ],
+            "watch_out_for": "Summer heat can make climbing difficult. Early starts are recommended.",
+            "nearby_pairings": [
+              "Kolob Canyons"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "solo_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Climbing surfaces get dangerously slick after rain.",
+            "location_hint": "The Watchman, Zion National Park",
+            "is_mappable": true,
+            "personalization_note": "Requires prior climbing experience and physical endurance.",
+            "places_enrichment": null
+          },
+          {
+            "id": "intermediate-mountain-biking",
+            "name": "Intermediate Mountain Biking",
+            "short_description": "Ride the trails around Zion for an exhilarating mountain biking experience.",
+            "long_description": "The area surrounding Zion National Park offers a variety of intermediate mountain biking trails that weave through the stunning red rock landscapes. With diverse terrain and several challenging routes, mountain biking here is perfect for those looking to combine Zion's beauty with a heart-pumping adventure. Bike rentals and guided tours are available in nearby towns.",
+            "tags": [
+              "outdoor",
+              "thrilling",
+              "daytime"
+            ],
+            "why_worth_it": "Immerse yourself in Zion's landscapes on two wheels, enjoying the park's vistas with added speed and excitement.",
+            "duration": "Half day",
+            "effort": "moderate",
+            "cost_band": "mid",
+            "booking_difficulty": "walk_in",
+            "best_time": "07:00–11:00 — cooler temperatures make for comfortable riding",
+            "local_tip": "From the Windmill Viewpoint on Gooseberry Mesa, pause to enjoy a panoramic vista of the Virgin River Gulch, framed perfectly through the twin junipers—a stunning reward midway through the North Rim Trail.",
+            "who_for": [
+              "active couples",
+              "adventurous groups",
+              "nature lovers"
+            ],
+            "what_to_bring": [
+              "mountain bike",
+              "helmet",
+              "trail map"
+            ],
+            "watch_out_for": "Ensure you bring enough water; trails can be remote.",
+            "nearby_pairings": [
+              "Kolob Canyons",
+              "La Verkin Creek Trail"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "solo_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Avoid midday heat; trails can become tiring.",
+            "location_hint": "Gooseberry Mesa, near Zion National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "kolob-canyons-backcountry",
+            "name": "Kolob Canyons Backcountry Trek",
+            "short_description": "Embark on a remote backcountry trek through the stunning landscapes of Kolob Canyons.",
+            "long_description": "The Kolob Canyons offer a less-crowded backcountry experience in Zion, perfect for those seeking solitude and adventure. The trek involves navigating through rugged terrain with opportunities to explore natural arches and towering canyon walls. This is a challenging hike that requires good navigation skills and a wilderness permit, rewarding adventurers with breathtaking views and an immersive wilderness experience.",
+            "tags": [
+              "outdoor",
+              "adventure",
+              "hiking"
+            ],
+            "why_worth_it": "Escape the crowds and enjoy Zion's vast wilderness on a remote backcountry trek.",
+            "duration": "Full day",
+            "effort": "strenuous",
+            "cost_band": "budget",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "09:00–17:00 — full daylight for navigation and safety",
+            "local_tip": "As you navigate La Verkin Creek Trail, make sure to take the short, unmarked detour to Kolob Arch viewpoint; the arch is most breathtakingly framed by the late afternoon light filtering through the canyon, transforming its reddish hues into a vibrant tapestry.",
+            "who_for": [
+              "nature enthusiasts",
+              "experienced hikers",
+              "adventurous couples"
+            ],
+            "what_to_bring": [
+              "hiking boots",
+              "full topographic map",
+              "lots of water"
+            ],
+            "watch_out_for": "Trailheads and paths aren't always marked. A GPS device is recommended.",
+            "nearby_pairings": [
+              "La Verkin Creek Trail"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "solo_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Flash floods possible during rain; unsuitable for wet conditions.",
+            "location_hint": "Kolob Canyons, Zion National Park",
+            "is_mappable": true,
+            "personalization_note": "Requires strong navigation skills and preparedness for backcountry conditions.",
+            "places_enrichment": null
+          },
+          {
+            "id": "west-rim-trailbackpacking",
+            "name": "Backpacking the West Rim Trail",
+            "short_description": "Experience Zion from above with a multi-day backpacking journey across the West Rim.",
+            "long_description": "The West Rim Trail offers one of Zion's most stunning backpacking routes, providing diverse landscapes from expansive vistas to narrow canyons. The trek typically spans two days and includes camping along the trail, offering stunning sunset and sunrise experiences. This adventure is best for those with backpacking experience due to the physically demanding nature and permit requirements for camping.",
+            "tags": [
+              "backpacking",
+              "outdoor",
+              "adventure"
+            ],
+            "why_worth_it": "Hike along Zion's high plateaus with magnificent views and starry night skies.",
+            "duration": "2 days",
+            "effort": "strenuous",
+            "cost_band": "budget",
+            "booking_difficulty": "hard_to_get",
+            "best_time": "All day — multi-day experience requires full-day trek",
+            "local_tip": "Just past Cabin Spring, take a short detour to the left where a lesser-known outcrop offers unparalleled views of Phantom Valley rarely seen from the main trail.",
+            "who_for": [
+              "fit adventurers",
+              "backpacking couples",
+              "serious hikers"
+            ],
+            "what_to_bring": [
+              "backpacking gear",
+              "permit",
+              "food supply"
+            ],
+            "watch_out_for": "Limited water sources; plan for dry stretches and always purify natural sources.",
+            "nearby_pairings": [
+              "Angels Landing Via Scout Lookout"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "solo_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Check for storm warnings — no shelters out on the rim.",
+            "location_hint": "West Rim Trailhead, Zion National Park",
+            "is_mappable": true,
+            "personalization_note": "This requires solid physical fitness and mental preparedness for wilderness camping.",
+            "places_enrichment": null
+          }
+        ]
+      },
+      {
+        "id": "nature_and_scenic",
+        "name": "Nature & Scenic",
+        "description": "Marvel at Zion National Park's breathtaking landscapes, geological wonders, and panoramic viewpoints.",
+        "experiences": [
+          {
+            "id": "canyon-overlook-trail",
+            "name": "Canyon Overlook Trail",
+            "short_description": "An easy, yet rewarding hike offering breathtaking views of Zion Canyon.",
+            "long_description": "The Canyon Overlook Trail is a short, invigorating hike that leads to an expansive view of Zion Canyon, without requiring a full day's commitment. Situated near the Zion-Mount Carmel Tunnel, the trail features moderate terrain with handrails and moderately challenging sections. Its vantage point offers one of the park's most iconic and accessible views, making it a favorite for photographers and casual hikers alike.",
+            "tags": [
+              "geology",
+              "viewpoint",
+              "short walk"
+            ],
+            "why_worth_it": "The view provides a sweeping panorama of Zion Canyon that's both easy to reach and stunningly impressive.",
+            "duration": "1 hour",
+            "effort": "moderate",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "08:00–10:00 or 17:00–19:00 — for soft lighting over the canyon",
+            "local_tip": "Just past the main overlook on the Canyon Overlook Trail, look for a narrow path veering left to a hidden perch where bighorn sheep are often spotted grazing in the morning.",
+            "who_for": [
+              "couples",
+              "first-timers",
+              "nature photographers"
+            ],
+            "what_to_bring": [
+              "camera",
+              "water"
+            ],
+            "watch_out_for": "Limited parking, especially during peak times.",
+            "nearby_pairings": [
+              "Zion-Mount Carmel Highway"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Avoid during rain — rocks can become slippery.",
+            "location_hint": "Canyon Overlook Trail, Zion National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "kolob-canyons-scenic-drive",
+            "name": "Kolob Canyons Scenic Drive",
+            "short_description": "A picturesque drive showcasing the stunning red rock formations of Kolob Canyons.",
+            "long_description": "The Kolob Canyons Scenic Drive is a five-mile road leading through the less visited, but equally beautiful, northwest corner of Zion National Park. The drive offers multiple scenic pullouts where you can stop and admire views of 2,000-foot cliff walls, colorful arches, and the sweeping canyons unique to this part of the park. It's a serene escape from the more crowded main canyon, providing a tranquil experience with nature.",
+            "tags": [
+              "drive",
+              "geological features",
+              "scenic"
+            ],
+            "why_worth_it": "This drive showcases a quieter yet equally spectacular side of Zion without the need for extensive hiking.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "16:00–18:00 — golden hour enhances the rock's colors",
+            "local_tip": "At the Taylor Creek Overlook, wait until just after a rainstorm when the sun emerges, as the red cliffs glow vividly and the creek's water flow enhances the scene.",
+            "who_for": [
+              "families",
+              "older visitors",
+              "geology enthusiasts"
+            ],
+            "what_to_bring": [
+              "camera",
+              "binoculars"
+            ],
+            "watch_out_for": "Limited services in this park section; refuel and bring supplies.",
+            "nearby_pairings": [
+              "La Verkin Creek Trail"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "accessible",
+              "family_friendly"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Kolob Canyons Visitor Center, Zion National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "riverside-walk",
+            "name": "Riverside Walk",
+            "short_description": "Enjoy a serene walk along the Virgin River with towering canyon walls.",
+            "long_description": "Riverside Walk is a gently ascending path that leads up to the start of the Narrows, providing a peaceful journey along the Virgin River. As you walk, you'll encounter lush vegetation contrasting beautifully with the red canyon walls and see plenty of opportunities for birdwatching and photography. The trail's accessibility makes it a favorite for families and visitors looking to experience Zion's ambiance without the exertion of more strenuous hikes.",
+            "tags": [
+              "water",
+              "accessible",
+              "wildlife"
+            ],
+            "why_worth_it": "It's a beautifully accessible walk providing a meditative experience of water and canyon vistas.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "08:00–10:00 or 17:00–19:00 — to enjoy cooler temperatures",
+            "local_tip": "Just south of the Temple of Sinawava junction, look for the natural amphitheater along the Riverside Walk where a short detour takes you to a secret acoustical spot perfect for experiencing your own echo amidst the canyon walls.",
+            "who_for": [
+              "families",
+              "nature lovers",
+              "accessible adventurers"
+            ],
+            "what_to_bring": [
+              "camera",
+              "water",
+              "sunscreen"
+            ],
+            "watch_out_for": "Spotty cellphone reception can make it hard to connect for rides.",
+            "nearby_pairings": [
+              "The Narrows Hike"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "accessible",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Check weather forecasts for flash flood warnings.",
+            "location_hint": "Riverside Walk, Zion National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "la-verkin-creek-trail",
+            "name": "La Verkin Creek Trail",
+            "short_description": "A scenic hike taking you to Kolob Arch, one of the largest freestanding arches in the world.",
+            "long_description": "Starting at Lee Pass, the La Verkin Creek Trail offers hikers a remarkable journey through the stark beauty of Kolob Canyons. This trail leads to Kolob Arch, an awe-inspiring natural feature, and provides a true wilderness experience. The hike is relatively long but without steep climbs, making it manageable for those prepared for a day hike. Predominantly untouched and serene, it's an escape from the more trafficked areas of the park.",
+            "tags": [
+              "geological features",
+              "scenic",
+              "wildlife"
+            ],
+            "why_worth_it": "It offers a trek through wild landscapes leading to one of the largest arches in the world.",
+            "duration": "Full day",
+            "effort": "moderate",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "06:00–18:00 — ensure daylight and cooler temperatures",
+            "local_tip": "When you reach the Kolob Arch spur trail, take a few extra steps to the west and look back for a stunning view framing the arch through a grove of twisted junipers.",
+            "who_for": [
+              "geology enthusiasts",
+              "adventure seekers",
+              "nature photographers"
+            ],
+            "what_to_bring": [
+              "water",
+              "snacks",
+              "hat",
+              "sunscreen"
+            ],
+            "watch_out_for": "Prepare for changes in weather and possible dehydration.",
+            "nearby_pairings": [
+              "Kolob Canyons Scenic Drive"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "solo_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Heat can be an issue during hotter months; plan accordingly.",
+            "location_hint": "La Verkin Creek Trail, Zion National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "checkerboard-mesa-viewpoint",
+            "name": "Checkerboard Mesa Viewpoint",
+            "short_description": "View an impressive and unique geological feature resembling a giant checkerboard.",
+            "long_description": "Located near the east entrance of Zion National Park, Checkerboard Mesa offers a striking visual with its distinctive cross-hatching and massive domes. This natural feature’s grid patterns are formed by weathering processes, providing a fascinating glimpse into Zion’s geological history. The viewpoint is easily accessible by car and provides a fantastic roadside stop for photography and a closer look at Zion's natural art.",
+            "tags": [
+              "geological features",
+              "viewpoint",
+              "drive"
+            ],
+            "why_worth_it": "Its unique pattern provides an extraordinary glimpse into the park's geological artistry.",
+            "duration": "30 minutes",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "09:00–11:00 — when light accentuates its patterns",
+            "local_tip": "Head to the easternmost end of the Checkerboard Mesa pullout, where a small clearing offers a unique view of the mesa’s crosshatching aligned with the distant red cliffs; early evening light here casts dramatic shadows across the formations.",
+            "who_for": [
+              "families",
+              "photography enthusiasts",
+              "geology buffs"
+            ],
+            "what_to_bring": [
+              "camera"
+            ],
+            "watch_out_for": "Parking can be cramped along the roadway; be cautious of passing traffic.",
+            "nearby_pairings": [
+              "Zion-Mount Carmel Scenic Highway"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "accessible",
+              "family_friendly"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Checkerboard Mesa, Zion National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          }
+        ]
+      },
+      {
+        "id": "hiking_and_outdoors",
+        "name": "Hiking & Outdoors",
+        "description": "Explore Zion National Park's stunning trails, from accessible paths to strenuous summit climbs.",
+        "experiences": [
+          {
+            "id": "kolob-canyons-view",
+            "name": "Kolob Canyons Scenery",
+            "short_description": "Explore the serene and lesser-known Kolob Canyons section of Zion.",
+            "long_description": "Kolob Canyons offers a quieter experience compared to Zion Canyon, with several hiking options and stunning vistas. Particularly notable is the view from the Timber Creek Overlook Trail. This 1-mile round-trip trail is relatively easy and offers expansive views of the Kolob Canyons, including natural arches and vibrant cliffs. It's perfect for those seeking solitude and dramatic scenery.",
+            "tags": [
+              "scenic",
+              "outdoor",
+              "remote"
+            ],
+            "why_worth_it": "Escape the crowds and immerse yourself in the beauty of Zion’s hidden canyons.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Morning or late afternoon — to capture the best light and fewer visitors.",
+            "local_tip": "About halfway along the Timber Creek Overlook Trail, pause at a small clearing marked by a standing juniper on the left; from here, you can perfectly frame the Kolob Fingers and distant red peaks against the ever-vibrant sunset hues.",
+            "who_for": [
+              "photographers",
+              "peace seekers",
+              "nature lovers"
+            ],
+            "what_to_bring": [
+              "water",
+              "hiking boots",
+              "camera"
+            ],
+            "watch_out_for": "Can be slippery after rain; ensure sturdy footwear.",
+            "nearby_pairings": [
+              "La Verkin Creek Trail"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "solo_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Avoid during heavy rain, as roads may be difficult.",
+            "location_hint": "Timber Creek Overlook Trail, Kolob Canyons, Zion National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "west-rim-trail",
+            "name": "West Rim Trail",
+            "short_description": "Challenge yourself with one of Zion's most renowned backcountry trails offering epic views.",
+            "long_description": "Spanning approximately 14.5 miles one-way, the West Rim Trail is one of Zion’s most rewarding backcountry hikes. Starting from Lava Point or The Grotto, the trail combines sections of lush forest, exposed ridgelines, and jaw-dropping views of Zion Canyon. Hikers should prepare for significant elevation changes and ensure they have sufficient water and supplies for this challenging endeavor.",
+            "tags": [
+              "backcountry",
+              "strenuous",
+              "backpack"
+            ],
+            "why_worth_it": "The trail offers a deep dive into Zion's diverse ecosystems and some of its most breathtaking views.",
+            "duration": "Full day or overnight",
+            "effort": "strenuous",
+            "cost_band": "free",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "05:00–18:00 — start early to cover the trail in cooler temperatures and daylight",
+            "local_tip": "As you hike the West Rim Trail, take a moment at Cabin Spring to fill your water bottles; the spring is one of the best water sources on the trail, and repeat hikers know it's essential for staying hydrated during the long trek.",
+            "who_for": [
+              "adventurers",
+              "experienced hikers",
+              "backpackers"
+            ],
+            "what_to_bring": [
+              "map",
+              "water",
+              "overnight gear"
+            ],
+            "watch_out_for": "Sudden weather changes; be prepared with layers and essential supplies.",
+            "nearby_pairings": [
+              "Angels Landing Via Scout Lookout"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "adventurous",
+              "nature_intense"
+            ],
+            "weather_sensitivity": "Not advised during snow or extreme heat due to exposure.",
+            "location_hint": "West Rim Trailhead, Zion National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          }
+        ]
+      },
+      {
+        "id": "unique_local",
+        "name": "Unique & Local",
+        "description": "Surface unique experiences in Zion National Park that travelers are unlikely to find on their own, which have strong local identities and often require insider knowledge.",
+        "experiences": [
+          {
+            "id": "lava-point-stargazing",
+            "name": "Lava Point Stargazing",
+            "short_description": "Discover one of Zion's best-kept secrets for stargazing away from the crowds.",
+            "long_description": "Lava Point, at the end of the Kolob Terrace Road, offers a secluded and lesser-known spot for spectacular stargazing. Elevated and far from the light pollution of the more popular sections of the park, this spot provides an expansive view of the night sky. It's a favorite among local star enthusiasts, with clear skies offering a chance to see the Milky Way and countless constellations. Bring along a telescope or a good pair of binoculars for the best experience.",
+            "tags": [
+              "evening",
+              "outdoor",
+              "stargazing"
+            ],
+            "why_worth_it": "Experience Zion's celestial wonders in a peaceful, uncrowded setting.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "21:00–00:00 — optimal darkness for viewing stars",
+            "local_tip": "For an unobstructed view that frames the Milky Way rising over the cliffs, position yourself near the southernmost edge of the Lava Point Overlook and look eastward shortly after astronomical twilight ends.",
+            "who_for": [
+              "space enthusiasts",
+              "couples",
+              "photographers"
+            ],
+            "what_to_bring": [
+              "telescope",
+              "blanket",
+              "warm clothing"
+            ],
+            "watch_out_for": "Check weather forecasts to avoid cloudy nights.",
+            "nearby_pairings": [
+              "Kolob Canyons Scenic Drive"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "solo_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Clear skies are essential for optimal stargazing.",
+            "location_hint": "Lava Point Overlook, Zion National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "east-rim-sunrise-hike",
+            "name": "East Rim Sunrise Hike",
+            "short_description": "Experience a sunrise hike where local adventurers find tranquility and jaw-dropping views.",
+            "long_description": "The East Rim Trail offers an awe-inspiring sunrise experience that is cherished by locals who wish to avoid the crowds of the main canyon. Starting early from the East Entrance, hikers can enjoy a peaceful ascent as the first rays of sun illuminate the towering cliffs and distant valleys. The full trail is a challenging adventure, but even a short out-and-back to Cable Mountain provides a rewarding morning journey with unbeatable vistas.",
+            "tags": [
+              "morning",
+              "outdoor",
+              "hiking"
+            ],
+            "why_worth_it": "Catch the majestic play of morning light on Zion's hidden angles without the crowd.",
+            "duration": "Half day",
+            "effort": "moderate",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "05:00–09:00 — sunrise paints the landscape in a warm glow",
+            "local_tip": "At the East Rim Trailhead, follow the path to the right at the fork marked \"Observation Point,\" and after about two miles, pause at the overlook just before you reach the full viewpoint; here, you can capture the unexpected reflection of the early light on Cable Mountain's sheer wall.",
+            "who_for": [
+              "early risers",
+              "adventurers",
+              "nature lovers"
+            ],
+            "what_to_bring": [
+              "flashlight",
+              "water",
+              "snacks"
+            ],
+            "watch_out_for": "Begin hiking in the dark; be mindful of trail markings and potential wildlife.",
+            "nearby_pairings": [],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "solo_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Chilly mornings; plan to dress in layers.",
+            "location_hint": "East Rim Trailhead, Zion National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "grafton-ghost-town",
+            "name": "Grafton Ghost Town Visit",
+            "short_description": "Uncover the lingering history of a ghost town frozen in time just outside Zion.",
+            "long_description": "A short drive from Zion leads you to Grafton, one of the most photogenic ghost towns in the American Southwest. This well-preserved historic site offers a glimpse into life in the 1800s, with remnants of the Civil War era, including a few houses, a schoolhouse, and a cemetery. Though not officially part of Zion National Park, its proximity makes it a unique stop for those interested in blending history with their nature exploration.",
+            "tags": [
+              "historical",
+              "outdoor",
+              "afternoon"
+            ],
+            "why_worth_it": "Explore a piece of local history that adds depth to your Zion journey.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "10:00–16:00 — ideal daylight for exploration and photography",
+            "local_tip": "For a unique perspective, explore the cemetery at Grafton Ghost Town in the late afternoon, focusing your lens through the wooden fence posts to frame the remnants of the town against the backdrop of the towering jagged peaks of Zion National Park.",
+            "who_for": [
+              "history buffs",
+              "photographers",
+              "families"
+            ],
+            "what_to_bring": [
+              "camera",
+              "comfortable shoes"
+            ],
+            "watch_out_for": "Respect the private property signs, as not all of Grafton is open to the public.",
+            "nearby_pairings": [],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Grafton Ghost Town, Rockville",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "checkerboard-mesa-geology-walk",
+            "name": "Checkerboard Mesa Geology Walk",
+            "short_description": "Join a geology-focused walk discovering unique rock formations off the beaten path.",
+            "long_description": "Checkerboard Mesa, located near Zion's East Entrance, is a marvel of geological patterns created by ancient sand dunes and erosional forces. A short, self-guided walk around this area grants insight into the forces that shaped these lands. This trail is ideal for those interested in geology, with noticeable cross-bedding and 180 million year old Navajo sandstone formations. It's less frequented by tourists, providing a quieter atmosphere to appreciate the wonders of natural artistry.",
+            "tags": [
+              "geology",
+              "outdoor",
+              "educational"
+            ],
+            "why_worth_it": "Dive deep into the geological history of Zion with patterns and formations missed by the average visitor.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "09:00–11:00 or 15:00–17:00 — best light for observing geological features",
+            "local_tip": "At the Checkerboard Mesa Geology Walk, stop halfway and look eastward just as the sun emerges above the mesa top; the sunlight filtering through the pinion pines casts intricate lace-like patterns on the sandstone.",
+            "who_for": [
+              "geologists",
+              "families",
+              "students"
+            ],
+            "what_to_bring": [
+              "sunscreen",
+              "water",
+              "notebook"
+            ],
+            "watch_out_for": "The area is quite remote — ensure you have a reliable map or GPS.",
+            "nearby_pairings": [],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "solo_friendly",
+              "educational"
+            ],
+            "weather_sensitivity": "Avoid during icy or snowy conditions — trails can become hazardous.",
+            "location_hint": "Checkerboard Mesa, Zion National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          }
+        ]
+      },
+      {
+        "id": "seasonal",
+        "name": "Seasonal Highlights",
+        "description": "Experience the unique charm of Zion in each season with these seasonal highlights.",
+        "experiences": [
+          {
+            "id": "spring-wildflower-trail",
+            "name": "Spring Wildflower Trail Exploration",
+            "short_description": "Revel in Zion's vibrant spring wildflower bloom as the park bursts with color.",
+            "long_description": "In spring, Zion National Park comes alive with vibrant wildflowers. Trails like the Watchman Trail and portions of the Kolob Canyons offer spectacular displays of colorful blooms amidst the red rock backdrop. The contrast of delicate flowers against the rugged landscape is a photographer's dream and a fresh experience after winter's starkness.",
+            "tags": [
+              "hiking",
+              "spring",
+              "nature"
+            ],
+            "why_worth_it": "Witnessing the wildflowers in bloom against Zion's stunning rock formations is a visual delight unique to spring.",
+            "duration": "Half day",
+            "effort": "moderate",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "March–May — peak wildflower season",
+            "local_tip": "Look closely at the edges of the wash near Double Arch Alcove to spot the rare Zion Shooting Star blooming vibrantly in spring.",
+            "who_for": [
+              "nature lovers",
+              "photographers",
+              "hikers"
+            ],
+            "what_to_bring": [
+              "camera",
+              "daypack",
+              "water"
+            ],
+            "watch_out_for": "Narrow trails can get crowded; start early to find parking and keep a safe distance from delicate plants.",
+            "nearby_pairings": [
+              "Kolob Canyons"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Spring rains can make trails muddy; waterproof footwear recommended.",
+            "location_hint": "Taylor Creek Trail, Zion National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "autumn-foliage-drive",
+            "name": "Autumn Foliage Drive",
+            "short_description": "Experience the rich tapestry of fall colors journeying through Zion.",
+            "long_description": "As fall settles in, Zion's lush trees transform into warm hues of yellow, red, and orange. An autumn drive through the Zion Canyon Scenic Drive, accessible during less busy shoulder seasons, reveals this stunning transformation. Ideal for those seeking a leisurely way to soak in the park's seasonal changes.",
+            "tags": [
+              "driving",
+              "scenic",
+              "autumn"
+            ],
+            "why_worth_it": "The vibrant autumn colors provide a stunning and serene alternative to the park's typical desert palette.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "14:00–17:00 — golden hour light enhances foliage colors",
+            "local_tip": "Pull into the small turnout just before reaching the Court of the Patriarchs and walk back a short way; from this angle, the setting sun creates a stunning silhouette effect on the trio of peaks, highlighting the autumn colors below.",
+            "who_for": [
+              "photographers",
+              "leisure travelers",
+              "nature lovers"
+            ],
+            "what_to_bring": [
+              "camera",
+              "binoculars"
+            ],
+            "watch_out_for": "Parking can be limited in peak foliage periods; aim to travel on weekdays.",
+            "nearby_pairings": [
+              "Canyon Overlook Trail"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "romantic",
+              "accessible"
+            ],
+            "weather_sensitivity": "Best on clear days to enjoy the colors fully.",
+            "location_hint": "Court of the Patriarchs, Zion National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "summer-virgin-river-cooling",
+            "name": "Summer Virgin River Wading",
+            "short_description": "Cool off from Zion's summer heat by wading in the Virgin River.",
+            "long_description": "During the heat of summer, the Virgin River provides a refreshing respite. Areas along the Pa'rus Trail offer accessible spots to wade into the river's gentle current and escape the midday sun. It's a family-friendly way to enjoy the natural beauty while beating the heat, with the canyon walls providing a dramatic backdrop.",
+            "tags": [
+              "outdoor",
+              "summer",
+              "family"
+            ],
+            "why_worth_it": "Relief from the summer heat as you enjoy the river surrounded by Zion’s stunning cliffs.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "11:00–15:00 — hottest part of the day; perfect for cooling off",
+            "local_tip": "Directly under Canyon Junction Bridge, look for the large flat rock where the river splits; it's a perfect spot to dip your feet in and spot rainbow trout in the clear waters while listening to the echo of the bridge overhead.",
+            "who_for": [
+              "families",
+              "children",
+              "groups"
+            ],
+            "what_to_bring": [
+              "water shoes",
+              "swimsuit",
+              "towel"
+            ],
+            "watch_out_for": "Beware of slippery rocks and quickly changing water levels.",
+            "nearby_pairings": [
+              "Pa'rus Trail"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Better enjoyed during hot, dry weather.",
+            "location_hint": "Canyon Junction, Zion National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "winter-snowshoe-adventure",
+            "name": "Winter Snowshoe Adventure",
+            "short_description": "Explore a snowy Zion on a snowshoe trek, where red rocks meet white snow.",
+            "long_description": "When winter brings snow to Zion's upper elevations, the landscape transforms into a wonderland. Snowshoeing in the Kolob Canyons area provides a unique way to experience Zion's beauty. With fewer visitors and the contrasting colors, it's an experience that is both serene and invigorating.",
+            "tags": [
+              "winter",
+              "adventure",
+              "snow"
+            ],
+            "why_worth_it": "Discover a quieter, snow-draped Zion and see the park in a less-traveled season.",
+            "duration": "Half day",
+            "effort": "moderate",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "08:00–12:00 — morning light enhances snow's brilliance",
+            "local_tip": "For a unique perspective at Timber Creek Overlook, snowshoe to the far rim's edge just after a fresh snowfall to witness the contrast of white-draped branches against the vibrant red rock formations highlighted by the low winter sun.",
+            "who_for": [
+              "adventure seekers",
+              "nature lovers"
+            ],
+            "what_to_bring": [
+              "snowshoes",
+              "warm clothing",
+              "thermos"
+            ],
+            "watch_out_for": "Trail conditions can vary, so check weather updates for fresh snowfall or icy patches.",
+            "nearby_pairings": [
+              "La Verkin Creek Trail"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Dependent on recent snow; icy conditions may alter accessibility.",
+            "location_hint": "Timber Creek Overlook, Zion National Park",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          }
+        ]
+      }
+    ],
+    "preferences": {
+      "duration_days": 5
+    },
+    "generated_at": "2026-05-27T23:19:47.297Z"
+  },
+  "start_date": "2026-11-15",
+  "end_date": "2026-11-19",
+  "arrival_time": "09:00",
+  "departure_time": "15:00",
+  "preferences": {}
+}

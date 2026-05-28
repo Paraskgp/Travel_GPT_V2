@@ -1,0 +1,88 @@
+{
+  "stage": "board",
+  "destination": "Zion National Park",
+  "file": "test_outputs/2026-05-27_14-41-30_zion-national-park.json",
+  "required_found": [
+    "Pa'rus Trail",
+    "Angels Landing",
+    "Emerald Pools Trail",
+    "Canyon Overlook Trail"
+  ],
+  "required_missing": [],
+  "forbidden_found": [],
+  "tier_coverage": {
+    "signature": {
+      "strenuous": 1,
+      "moderate": 2,
+      "easy": 3
+    },
+    "adventure": {
+      "moderate": 1,
+      "strenuous": 2
+    },
+    "nature_scenic": {
+      "easy": 5
+    },
+    "hiking_outdoors": {
+      "moderate": 1,
+      "strenuous": 2,
+      "easy": 1
+    },
+    "unique_local": {
+      "easy": 3
+    },
+    "seasonal": {
+      "easy": 2,
+      "moderate": 1,
+      "strenuous": 1
+    }
+  },
+  "tier_missing": [
+    "hiking needs easy",
+    "hiking needs moderate",
+    "hiking needs strenuous"
+  ],
+  "duplicate_names": [],
+  "unmappable_count": 0,
+  "total_experiences": 25,
+  "theme_count": 6,
+  "checks": [
+    {
+      "check": "Required experiences on board (4/4)",
+      "passed": true,
+      "detail": "All found"
+    },
+    {
+      "check": "No hallucinated/forbidden experiences",
+      "passed": true,
+      "detail": "Clean"
+    },
+    {
+      "check": "Tier coverage (effort levels per theme)",
+      "passed": false,
+      "detail": "hiking needs easy, hiking needs moderate, hiking needs strenuous"
+    },
+    {
+      "check": "No duplicate experience names",
+      "passed": true,
+      "detail": "No duplicates"
+    },
+    {
+      "check": "Experiences are mappable (25/25)",
+      "passed": true,
+      "detail": "All mappable"
+    }
+  ],
+  "score": 75,
+  "tip_quality_score": 86,
+  "tip_quality_findings": [
+    "These tips offer insightful, location-specific advice that enhances the experience for visitors to Zion National Park.",
+    "  Hike to Angel's Landing (9/10): This tip is highly specific to a viewpoint along the hike and provides a distinctive insight that many might overlook, especially regarding the lighting conditions at sunset.",
+    "  Explore The Narrows (10/10): This tip uniquely highlights a less-traveled starting point that offers distinct views and experiences, ensuring visitors have a less crowded and more enjoyable hike.",
+    "  Winter Stargazing (8/10): The tip gives a specific location and positioning for optimal stargazing, although it could benefit from mentioning timing related to seasonal variations in visibility.",
+    "  Hidden Canyon Trail (9/10): The suggestion to explore an unmarked path for a unique photo opportunity adds an exciting element of adventure that many may miss along the well-trodden main trail.",
+    "  Riverside Walk (8/10): This tip provides a specific spot for a scenic view, capturing a moment that enhances the experience, although it could be more precise about the ideal time to witness it."
+  ],
+  "overall_score": 78,
+  "generated_at": "2026-05-27T21:52:40.124Z"
+}
