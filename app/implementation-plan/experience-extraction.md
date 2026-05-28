@@ -28,6 +28,7 @@ generateQueries → tavilyBatchSearch → [Map: extractFromPage × N in parallel
 // Map: one call per search result
 extractFromPage(
   result: TavilyResult,   // {url, query, snippet, raw_content?, score}
+  dest: string,           // destination name — used to filter off-topic extractions
   provider: Provider = "openai"
 ): Promise<RawExperience[]>
 // Returns [] on failure — non-fatal per page
@@ -86,20 +87,38 @@ interface GroundedExperience {
 
 ## Steps — `extractFromPage` (map)
 
-1. Resolve content:
-   - `raw_content` passes binary guard → use in full (no cap)
+1. Resolve content (`resolveContent(result)`):
+   - `raw_content` passes binary guard (length > 200, no binary data prefix, readable char ratio > 0.4) → use in full
    - Else if `score >= 0.7 && !raw_content` → `scrapeUrl(url)` → use scraped text if `> 200 chars`
-   - Prepend Tavily snippet (always available, captures aggregator page names)
-2. Call LLM (stage: `"experience_extractor"` → Gemini 2.5 Flash)
-3. System prompt: extract named real places from this single page, return `RawExperience[]`
-4. Parse JSON → return array (or `[]` on parse failure)
+   - Always prepend Tavily snippet (aggregator pages carry clean names in the snippet even when raw_content is absent)
+2. **Truncate content to 40k characters** — pages beyond this threshold are navigation/ads/boilerplate, not additional named experiences. Prevents extractor output overflow on 100k+ char pages.
+3. If resolved content length < 50 chars → return `[]` immediately
+4. Call LLM (stage: `"experience_extractor"` → Gemini 2.5 Flash, max_tokens: 16384)
+5. System prompt: `prompts/experience-extractor-page.md` — extract named real places from this single page for `dest`, return `RawExperience[]`
+6. Parse JSON → return array (or `[]` on parse failure — non-fatal)
 
 ## Steps — `dedupExperiences` (reduce)
 
-1. Receives flat list of `RawExperience[]` — potentially 200–400 candidates with heavy duplication
-2. LLM prompt: given these candidates from multiple sources, merge entries referring to the same real place, keep the richest facts, consolidate `source_urls`
-3. System prompt: dedup-merge.md (a focused prompt, not a combined extract+dedup)
-4. Return `GroundedExperience[]`
+1. **Step 0 — Relevance filter (deterministic):** drop candidates whose `name` and `location` contain no meaningful word from the destination name (length > 3). Removes off-destination noise extracted from comparison articles (e.g. "Yosemite National Park" extracted from an AccuWeather article about Zion weather). Logged: `N → M candidates after relevance filter`.
+
+2. **Step 1 — Pre-dedup by normalized name (deterministic, `preDedupByName`):**
+   - Normalize: lowercase, strip punctuation/apostrophes, collapse whitespace
+   - Group exact normalized matches → one canonical entry per name
+   - Per group: keep richest `location` (longest), union all `key_facts`, collect all `source_url` values
+   - Result: ~500 candidates → ~80–100 unique names before the LLM sees anything
+   - Logged: `M → K candidates after pre-dedup`
+
+3. **Step 2 — URL tracking:** build `urlsByName` map from pre-grouped list, keyed by normalized name. Source URLs are **stripped entirely from LLM input and output** — they bloat the JSON output and cause output truncation. The LLM never sees or returns URLs.
+
+4. **Step 3 — LLM semantic dedup (one call):**
+   - Input: pre-grouped candidates as `{ name, location, category, key_facts }[]` — no `source_url` field
+   - Stage: `"experience_dedup"` → Gemini 2.5 Flash, max_tokens: 65536 (Gemini 2.5 Flash uses internal thinking tokens against the max_tokens budget before producing visible output — must set to model ceiling to prevent truncation)
+   - System prompt: `prompts/experience-dedup.md` — handles true name variations ("Angel's Landing" vs "Angels Landing Hike") that the deterministic step can't catch
+   - Output: `{ name, location, category, key_facts }[]` — no `source_urls` field
+
+5. **Step 4 — URL stitch-back (deterministic):** for each LLM canonical name, look up its collected URLs from `urlsByName`. Exact normalized match first; fall back to substring match. Attach as `source_urls: string[]`.
+
+6. Return `GroundedExperience[]`
 
 **Why LLM for dedup, not fuzzy matching:**
 - "Angels Landing Trail", "Angels Landing Hike", "Angel's Landing" are the same place — trivial for LLM, hard for fuzzy string match
@@ -107,7 +126,7 @@ interface GroundedExperience {
 - "Springdale Brewing Co." and "Zion Canyon Brew Pub" — possibly the same place, possibly not — requires semantic judgment
 - Fuzzy matching would either over-merge (losing distinct experiences) or under-merge (keeping hundreds of near-duplicates)
 
-**`dedupExperiences` is clean-swappable:** if embedding-based clustering or a cheaper deterministic approach is validated against quality later, the function signature doesn't change.
+**`dedupExperiences` is clean-swappable:** the function signature is stable. Internals (LLM → embeddings → whatever) can be replaced without changing any caller.
 
 ## Caching
 
@@ -144,8 +163,9 @@ interface GroundedExperience {
 
 ## Open technical items
 
-- Map phase parallelism: 83 simultaneous Gemini calls may hit rate limits. Consider `p-limit` to cap concurrency (e.g., 20 concurrent).
-- `extractFromPage` LLM output size: each page likely yields 1–8 experiences → well within 8192 token output budget for this stage.
-- `dedupExperiences` input size: 400 RawExperience objects (names + locations + facts, no HTML) is small — fits comfortably in a single LLM call.
-- No retry if final `GroundedExperience` count < 10.
-- `getExperiences` catches errors silently — in dev/scripts, errors should surface. Consider a `strict` mode parameter.
+- **[DONE 2026-05-28]** Map phase parallelism: `runWithConcurrency(items, 20, fn)` caps parallel Gemini calls at 20. Prevents rate-limit exhaustion on free tier.
+- **[DONE 2026-05-28]** Gemini dedup truncation: Gemini 2.5 Flash uses thinking tokens against max_tokens budget. Fixed by setting dedup stage to 65536 (model ceiling) and stripping source_urls from LLM I/O.
+- **[DONE 2026-05-28]** Content truncation: extractor content capped at 40k chars. Extractor output limit raised from 8192 → 32768 (Gemini 2.5 Flash thinking tokens consume the budget before producing visible output — 16384 was still insufficient for dense pages). Verified: undercanvas.com now extracts 37 experiences (was 0), noahlangphotography.com extracts 19 (was 0).
+- **[PENDING 2026-05-28]** Category taxonomy is free-form. LLM produces inconsistent strings ("canyoneering" vs "canyoneering tour" vs "canyoneering / trail"). Add a closed enum to the extractor prompt.
+- No retry if final `GroundedExperience` count < 30. (2026-05-28)
+- `getExperiences` catches errors silently — in dev/scripts, errors should surface. Consider a `strict` mode parameter. (2026-05-28)

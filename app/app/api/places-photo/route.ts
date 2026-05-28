@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server"
 
-const PLACES_API_KEY = process.env.GOOGLE_PLACES_API_KEY ?? "AIzaSyA0C610pee1KhdCBUAt90qvjuXdhte2qBg"
+const PLACES_API_KEY = process.env.GOOGLE_PLACES_API_KEY ?? ""
 
 // Proxies Google Places photo requests so the API key never reaches the client.
 // Usage: /api/places-photo?ref=<photo_reference>&maxwidth=800

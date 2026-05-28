@@ -13,6 +13,16 @@ function loadTheme(themeId: string): string {
   return fs.existsSync(p) ? fs.readFileSync(p, "utf-8") : ""
 }
 
+// ─── Node 0: Destination Normalization ───────────────────────────────────────
+
+export function destinationNormalizationSystemPrompt(): string {
+  return load("destination-normalization.md")
+}
+
+export function destinationNormalizationUserPrompt(raw: string): string {
+  return raw
+}
+
 // ─── Node 1: Destination Context ─────────────────────────────────────────────
 
 export function destinationContextSystemPrompt(): string {

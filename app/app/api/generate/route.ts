@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server"
 import { Provider } from "@/lib/llm/client"
 import { Board, GenerateRequest, GenerateResponse, ErrorResponse, Preferences } from "@/lib/types"
+import { normalizeDestination } from "@/lib/pipeline/destination-normalization"
 import { getDestinationContext } from "@/lib/pipeline/destination-context"
 import { getWeatherContext } from "@/lib/pipeline/weather-context"
 import { getExperiences } from "@/lib/pipeline/experiences"
@@ -37,7 +38,10 @@ export async function POST(
     return NextResponse.json({ error: "destination is required" }, { status: 400 })
   }
 
-  const dest = destination.trim()
+  // Normalize raw user input to canonical destination name before anything touches the cache.
+  // "Zion" → "Zion National Park", "NYC" → "New York City", misspellings corrected.
+  // Non-fatal: falls back to raw input on LLM failure.
+  const dest = await normalizeDestination(destination.trim(), provider)
 
   // Travel month — used for weather context and cache key
   const travelMonthLabel = start_date

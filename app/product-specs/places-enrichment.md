@@ -31,6 +31,7 @@ Cards with `is_mappable: false` receive `null` enrichment.
 
 - All `is_mappable: true` cards have an enrichment attempt
 - Photo URL is proxied through `/api/places-photo` — raw Google photo reference never sent to the client
+- The photo proxy uses only `GOOGLE_PLACES_API_KEY` from the environment; if the key is missing, photo requests fail closed with a controlled service-unavailable response
 - Non-fatal: if Places lookup fails for any card, that card's `places_enrichment` remains `null` and the board is unaffected
 - `place_id` matches the correct location (not a similarly named place in a different city)
 
@@ -45,7 +46,7 @@ Cards with `is_mappable: false` receive `null` enrichment.
 - One Places lookup per card (Text Search + Details) — two API calls per mappable experience
 - First result from Text Search is accepted as the match — no disambiguation UI
 - `location_hint` is used as the primary search query when it differs from the experience name; falls back to `name + destination`
-- Enrichment runs only when `GOOGLE_PLACES_API_KEY` is set in environment — silently skipped otherwise
+- Enrichment and photo proxying run only when `GOOGLE_PLACES_API_KEY` is set in environment — enrichment is silently skipped otherwise, while direct photo proxy requests return a controlled error
 
 ## Open items
 

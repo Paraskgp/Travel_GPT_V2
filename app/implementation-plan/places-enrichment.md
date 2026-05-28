@@ -48,7 +48,7 @@ interface PlacesEnrichment {
 
 ## Photo proxy
 
-`app/api/places-photo/route.ts` — receives `?ref=` param, calls Google Photos API with server-side key, returns image bytes. The raw `photo_reference` and API key never reach the client.
+`app/api/places-photo/route.ts` — receives `?ref=` param, reads `GOOGLE_PLACES_API_KEY` from the server environment, calls Google Photos API, and returns image bytes. The raw `photo_reference` and API key never reach the client. If the environment variable is missing, the route returns HTTP 503; there is no hardcoded fallback key.
 
 ## Caching
 
@@ -64,6 +64,7 @@ Returns `null` on any error (missing key, network error, API error, no results).
 |---|---|
 | Returns `null` when `GOOGLE_PLACES_API_KEY` not set | Key-gated correctly |
 | `photo_url` uses `/api/places-photo` proxy path, not raw Google URL | Photo proxied |
+| `/api/places-photo` returns 503 when `GOOGLE_PLACES_API_KEY` is not set | Proxy fails closed without embedded secrets |
 | Returns `null` when Text Search returns no results | No match → null |
 | Returns `null` on network error (non-fatal) | Non-fatal failure |
 | `locationHint !== name` uses `locationHint` as query | Query selection logic |

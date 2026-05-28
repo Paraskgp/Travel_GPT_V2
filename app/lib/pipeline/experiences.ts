@@ -103,12 +103,19 @@ async function resolveContent(result: TavilyResult): Promise<string> {
  * Map phase: extract named experiences from a single search result page.
  * Returns [] on any failure — one bad page never aborts the map phase.
  */
+// Cap content sent to the extractor. Beyond ~40k chars the additional content is typically
+// navigation boilerplate, ads, or repeated section headers — not additional named experiences.
+// Without a cap, high-content pages (e.g. 179k-char stroller guide, 115k-char travel blog)
+// produce extractor output that overflows the 16384 token limit and returns partial JSON.
+const CONTENT_MAX_CHARS = 40_000
+
 export async function extractFromPage(
   result: TavilyResult,
   dest: string,
   provider: Provider = "openai"
 ): Promise<RawExperience[]> {
-  const content = await resolveContent(result)
+  const raw = await resolveContent(result)
+  const content = raw.length > CONTENT_MAX_CHARS ? raw.slice(0, CONTENT_MAX_CHARS) : raw
   if (content.length < 50) return []
 
   try {

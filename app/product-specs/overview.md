@@ -31,6 +31,7 @@ TravelGPT is not a booking engine or a search engine. It is the well-traveled fr
 
 | Module | What it does |
 |---|---|
+| **Destination normalization** | Resolves any raw user input ("Zion", "NYC", misspellings) to a canonical destination name before anything touches the cache |
 | **Destination context** | Generates the soul, pillars, and stay recommendation for a destination |
 | **Weather context** | Generates monthly climate data and travel implications |
 | **Query generation** | Generates targeted search queries to ground the board in real-world data |
@@ -51,6 +52,9 @@ Each module has a dedicated spec in `product-specs/[module].md` and a technical 
 
 ```
 User input (destination + dates + preferences)
+    │
+    ▼
+Destination normalization  ("Zion" → "Zion National Park")
     │
     ├─► Destination context  ──────────────────────────────────────────────────┐
     ├─► Weather context                                                          │

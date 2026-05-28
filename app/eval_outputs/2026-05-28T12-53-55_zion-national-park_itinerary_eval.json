@@ -1,0 +1,128 @@
+{
+  "stage": "itinerary",
+  "destination": "Zion National Park",
+  "file": "../../../../../../tmp/zion_fresh_plan.json",
+  "facts": {
+    "destination": "Zion National Park",
+    "total_days": 5,
+    "total_activities": 9,
+    "activities_per_day": [
+      2,
+      3,
+      2,
+      2,
+      0
+    ],
+    "max_activities_per_day": 2,
+    "days_exceeding_limit": [
+      2
+    ],
+    "strenuous_activities_scheduled": [],
+    "activities_before_0800": [],
+    "activities_ending_after_1730": [],
+    "departure_day_activities": [],
+    "arrival_day_activities": [
+      "Pa'rus Trail Walk",
+      "Zion Human History Museum"
+    ],
+    "shuttle_rows": [],
+    "shuttle_count": 0,
+    "flexibility_note_count": 3,
+    "flexibility_note_examples": [
+      "Day 2 [Lower Emerald Pools Trail]: Post-lunch, enjoy a leisurely walk to the Lower Emerald Pools, offering beautifu",
+      "Day 3 [Zion Ghost Town Exploration]: Good for a leisurely afternoon, offering exploration without strenuous activity.",
+      "Day 4 [Watchman Squirrel Scouting]: A fun and engaging activity for the whole family, focusing on observing the loca"
+    ],
+    "planning_notes_null": 0,
+    "planning_notes_short": 0,
+    "planning_notes_total": 18,
+    "required_experiences_found": [
+      "Pa'rus Trail"
+    ],
+    "required_experiences_missing": [],
+    "forbidden_experiences_found": [],
+    "change_log": [
+      "Day 1: Planning note added to all activity rows missing it.",
+      "Day 2: Adjusted breakfast to start at 08:00.",
+      "Day 2: Added flexibility note to Emerald Pools Trail.",
+      "Day 3: Added flexibility note to Zion Ghost Town Exploration.",
+      "Day 4: Added flexibility note to Watchman Squirrel Scouting.",
+      "Day 5: Added planning note for departure drive."
+    ],
+    "checks": [
+      {
+        "check": "Required experiences scheduled (1/1)",
+        "passed": true,
+        "points": 25,
+        "max_points": 25,
+        "detail": "All required experiences scheduled"
+      },
+      {
+        "check": "Forbidden experiences excluded (5 checked)",
+        "passed": true,
+        "points": 25,
+        "max_points": 25,
+        "detail": "No forbidden experiences in itinerary"
+      },
+      {
+        "check": "Activity density (max 2/day)",
+        "passed": false,
+        "points": 10,
+        "max_points": 15,
+        "detail": "Days exceeding limit: 2 (counts: 3)"
+      },
+      {
+        "check": "Departure day has no activities (0 found)",
+        "passed": true,
+        "points": 15,
+        "max_points": 15,
+        "detail": "Departure day clean"
+      },
+      {
+        "check": "Shuttle transport rows present (0 rows)",
+        "passed": false,
+        "points": 0,
+        "max_points": 10,
+        "detail": "No shuttle rows found — travelers will attempt to drive into restricted zones"
+      },
+      {
+        "check": "Timing rules (no activities before 08:00, after 17:30)",
+        "passed": true,
+        "points": 10,
+        "max_points": 10,
+        "detail": "All activities within time windows"
+      }
+    ],
+    "deterministic_score": 85
+  },
+  "judgment": {
+    "score": 75,
+    "dimension_scores": [
+      {
+        "dimension": "Planning note quality",
+        "score": 90,
+        "finding": "The itinerary provides planning notes for all activities and meals, ensuring comprehensive scheduling reasoning with no null or overly short notes."
+      },
+      {
+        "dimension": "Flexibility built in",
+        "score": 70,
+        "finding": "While there are flexibility notes for three activities, more could be included to better accommodate varied energy levels typically present with young families."
+      },
+      {
+        "dimension": "Day flow narrative",
+        "score": 80,
+        "finding": "The itinerary generally follows a logical progression from a lighter first day with only two activities, increasing in activity density before providing a rest day prior to departure."
+      },
+      {
+        "dimension": "Regional awareness",
+        "score": 60,
+        "finding": "The itinerary primarily focuses on Zion National Park without significant exploration of the wider region, limiting exposure to the broader area."
+      }
+    ],
+    "summary": "The itinerary is well-structured with insightful planning notes, but could enhance flexibility for young families. While the day flow is logical, it lacks regional exploration beyond the main park."
+  },
+  "deterministic_score": 85,
+  "quality_score": 75,
+  "overall_score": 82,
+  "generated_at": "2026-05-28T12:53:55.088Z"
+}

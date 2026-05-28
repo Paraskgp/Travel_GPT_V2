@@ -37,9 +37,10 @@ export interface CacheEntry<T> {
 }
 
 export type CacheKey =
+  | "canonical_name"         // raw input → canonical destination name
   | "destination_context"
   | `weather_${string}`      // e.g. "weather_november"
-  | "experiences"            // search-grounded experience list (future)
+  | "experiences"            // search-grounded experience list
   | `board_${string}`        // e.g. "board_abc123de" (prompt hash suffix)
 
 // ─── Slug ─────────────────────────────────────────────────────────────────────
@@ -96,6 +97,7 @@ export function boardCacheKey(): `board_${string}` {
 // ─── TTL constants (days) ─────────────────────────────────────────────────────
 
 export const TTL = {
+  CANONICAL_NAME: -1,        // canonical names never change — permanent
   DESTINATION_CONTEXT: 180,  // spirit of a place is stable
   WEATHER: -1,               // climate averages never change — permanent
   EXPERIENCES: 90,           // trails/restaurants change over months

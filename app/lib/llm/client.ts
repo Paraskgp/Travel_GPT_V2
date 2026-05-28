@@ -6,13 +6,14 @@ export type Provider = "openai" | "anthropic" | "gemini"
 // Stage-level routing: some stages need quality (board gen), others just need speed + cost.
 // Pass a stage hint to callLLM to get the right model automatically.
 export type Stage =
-  | "query_generator"      // generates search queries — cheap
-  | "experience_extractor" // extracts facts from a single page (map phase) — cheap, small output
-  | "experience_dedup"     // merges raw candidates into canonical list (reduce phase) — cheap
-  | "tip_enhancement"      // rewrites a single local tip — cheap
-  | "board_generation"     // generates experience cards — quality matters, keep strong model
-  | "destination_context"  // destination metadata — moderate quality needed
-  | "weather_context"      // weather summary — cheap
+  | "destination_normalization" // raw input → canonical name — cheap, tiny output (≤50 tokens)
+  | "query_generator"           // generates search queries — cheap
+  | "experience_extractor"      // extracts facts from a single page (map phase) — cheap, small output
+  | "experience_dedup"          // merges raw candidates into canonical list (reduce phase) — cheap
+  | "tip_enhancement"           // rewrites a single local tip — cheap
+  | "board_generation"          // generates experience cards — quality matters, keep strong model
+  | "destination_context"       // destination metadata — moderate quality needed
+  | "weather_context"           // weather summary — cheap
   | "default"
 
 const OPENAI_API_KEY    = process.env.OPENAI_API_KEY    ?? ""
@@ -44,7 +45,7 @@ function resolveProvider(provider: Provider, stage?: Stage): Provider {
   if (!stage || stage === "default") return provider
 
   // Cheap stages: use Gemini if key is available, otherwise fall back to passed provider
-  const cheapStages: Stage[] = ["query_generator", "experience_extractor", "experience_dedup", "tip_enhancement", "weather_context", "destination_context"]
+  const cheapStages: Stage[] = ["destination_normalization", "query_generator", "experience_extractor", "experience_dedup", "tip_enhancement", "weather_context", "destination_context"]
   if (cheapStages.includes(stage) && GOOGLE_AI_API_KEY) return "gemini"
 
   return provider
@@ -64,10 +65,21 @@ function resolveProvider(provider: Provider, stage?: Stage): Provider {
 //   short strings, board cards are batched per theme.
 //
 function resolveMaxTokens(resolvedProvider: Provider, stage?: Stage): number {
+  // destination_normalization: visible output is just a destination name (~10 tokens),
+  // but Gemini 2.5 Flash uses thinking tokens before producing visible output, which
+  // consumes from the max_tokens budget. 1024 gives sufficient headroom for thinking
+  // while keeping cost near-zero for this tiny output.
+  if (stage === "destination_normalization") return 1024
   // experience_dedup: Gemini 2.5 Flash uses internal thinking tokens before producing
   // output, which consumes from the max_tokens budget. Setting 65536 (the model max)
   // ensures the actual JSON output is never cut short even with heavy thinking overhead.
   if (resolvedProvider === "gemini" && stage === "experience_dedup") return 65536
+  // experience_extractor: high-value pages (e.g. tour operator booking pages) can produce
+  // 30+ experiences with detailed pricing and schedules. Gemini 2.5 Flash uses thinking tokens
+  // against the max_tokens budget before producing visible output — 16384 was still insufficient
+  // for dense pages like undercanvas.com (30 tours × pricing + dates). 32768 provides sufficient
+  // headroom. At $0.10/1M input tokens the cost increase per pipeline run is under $0.30.
+  if (resolvedProvider === "gemini" && stage === "experience_extractor") return 32768
   if (resolvedProvider === "gemini") return 8192
   if (resolvedProvider === "openai") return 16384
   return 16000  // anthropic
