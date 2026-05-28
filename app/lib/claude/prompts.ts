@@ -256,25 +256,50 @@ export function reviewUserPrompt(
     parts.push(`## Traveler Preferences\n\n${formatPreferences(preferences)}`)
   }
 
+  // ── Pre-flight violations (deterministic TypeScript checks) ──────────────────
+  // These are computed reliably in code so the LLM doesn't have to count rows.
+  // Injected as "must fix" directives — the reviewer is required to address each one.
+  const preflightLines: string[] = []
+
+  if (preferences?.party_type === "family_young") {
+    // Max 2 activities per day check
+    for (const day of draft.days) {
+      const activityRows = day.rows.filter(r => r.type === "activity")
+      if (activityRows.length > 2) {
+        const excess = activityRows.slice(2).map(r => `"${r.title}"`).join(", ")
+        preflightLines.push(`⚠️ Day ${day.day_number} (${day.date}): ${activityRows.length} activity rows — VIOLATION. Must remove ${activityRows.length - 2} activity row(s). Least essential: ${excess}`)
+      }
+    }
+  }
+
+  if (preflightLines.length > 0) {
+    parts.push(`## Pre-flight Violations (computed, must fix)\n\nThe following violations were detected by code before you received this itinerary. You MUST fix every one of them in your output. Fixing means removing or modifying the actual rows in the JSON — not just adding a note.\n\n${preflightLines.join("\n")}`)
+  }
+
   // ── Seasonal conditions (same block as Pass 1) ─────────────────────────────
   // The reviewer needs sunset time for Check 8 and cold-water month for Check 10.
   if (board.weather_context) {
     const wc = board.weather_context
     const travelMonth = wc.travel_month
     const w = travelMonth ? wc.months[travelMonth] : null
+    const hasSunset = w?.sunset && w.sunset !== "null"
+    const coldMonths = ["november", "december", "january", "february", "march", "april"]
+    const isColMonth = coldMonths.some(m => (travelMonth ?? "").toLowerCase().includes(m))
+    const coldWaterWarning = isColMonth
+      ? `\n⚠️ COLD WATER MONTH: ${travelMonth} river temperatures are 35–55°F. Any wading hike without a drysuit/wetsuit warning in its planning_note is a Check 10 violation.`
+      : ""
 
-    if (travelMonth && w) {
-      const coldMonths = ["november", "december", "january", "february", "march", "april"]
-      const isColMonth = coldMonths.some(m => travelMonth.toLowerCase().includes(m))
-      const coldWaterWarning = isColMonth
-        ? `\n⚠️ COLD WATER MONTH: ${travelMonth} river temperatures are 35–55°F. Any wading hike without a drysuit/wetsuit warning in its planning_note is a Check 10 violation.`
-        : ""
-
+    if (travelMonth && hasSunset) {
       parts.push(`## Seasonal Conditions — ${travelMonth}
 
-Sunrise: ${w.sunrise} | Sunset: ${w.sunset} (${w.daylight_hours} hrs daylight)
+Sunrise: ${w!.sunrise} | Sunset: ${w!.sunset} (${w!.daylight_hours} hrs daylight)
 
-⚠️ HARD CONSTRAINT — SUNSET: No activity may end after ${w.sunset}. Any activity ending after ${w.sunset} is a Check 8 violation → MOVE or REMOVE.${coldWaterWarning}
+⚠️ HARD CONSTRAINT — SUNSET: No activity may end after ${w!.sunset}. Any outdoor activity ending after ${w!.sunset} is a Check 8 violation → MOVE or REMOVE.${coldWaterWarning}
+
+Travel implications for ${travelMonth}:
+${wc.travel_implications.map(i => `- ${i}`).join("\n")}`)
+    } else if (travelMonth && wc.travel_implications.length > 0) {
+      parts.push(`## Seasonal Conditions — ${travelMonth}${coldWaterWarning}
 
 Travel implications for ${travelMonth}:
 ${wc.travel_implications.map(i => `- ${i}`).join("\n")}`)
@@ -377,25 +402,35 @@ Every day starts and ends at the accommodation base above. The first travel row 
   parts.push(`## Destination Context\n\n${board.destination_context.soul}\n\nDefining pillars: ${board.destination_context.defining_pillars.join(" · ")}`)
 
   // ── Seasonal conditions (from weather context) ─────────────────────────────
-  // Injected here so the planner knows sunset time, cold-water conditions, and
-  // any seasonal access restrictions BEFORE building the schedule.
+  // Injected so the planner knows sunset time, cold-water conditions, and
+  // seasonal access restrictions BEFORE building the schedule.
+  // Two tiers:
+  //   Full block  — when month data has sunset/sunrise (emit sunset hard constraint)
+  //   Partial block — when month fields are null but travel_implications exist
   if (board.weather_context) {
     const wc = board.weather_context
     const travelMonth = wc.travel_month
     const w = travelMonth ? wc.months[travelMonth] : null
+    const hasSunset = w?.sunset && w.sunset !== "null"
+    const coldMonths = ["november", "december", "january", "february", "march", "april"]
+    const isColMonth = coldMonths.some(m => (travelMonth ?? "").toLowerCase().includes(m))
+    const coldWaterWarning = isColMonth
+      ? `\n⚠️ COLD WATER MONTH: ${travelMonth} river and stream temperatures are typically 35–55°F. Any wading hike planning_note MUST specify drysuit/wetsuit requirement and day-before gear rental. This is a safety rule, not a comfort note.`
+      : ""
 
-    if (travelMonth && w) {
-      const coldMonths = ["november", "december", "january", "february", "march", "april"]
-      const isColMonth = coldMonths.some(m => travelMonth.toLowerCase().includes(m))
-      const coldWaterWarning = isColMonth
-        ? `\n⚠️ COLD WATER MONTH: ${travelMonth} river and stream temperatures are typically 35–55°F. Any wading hike planning_note MUST specify drysuit/wetsuit requirement and day-before gear rental. This is a safety rule, not a comfort note.`
-        : ""
-
+    if (travelMonth && hasSunset) {
+      // Full block — sunset constraint is enforceable
       parts.push(`## Seasonal Conditions — ${travelMonth}
 
-Sunrise: ${w.sunrise} | Sunset: ${w.sunset} (${w.daylight_hours} hrs daylight)
+Sunrise: ${w!.sunrise} | Sunset: ${w!.sunset} (${w!.daylight_hours} hrs daylight)
 
-⚠️ HARD CONSTRAINT — SUNSET: No activity may end after ${w.sunset}. Every afternoon activity must end at least 30 minutes before sunset. Do not start any hike within 2 hours of ${w.sunset}.${coldWaterWarning}
+⚠️ HARD CONSTRAINT — SUNSET: No activity may end after ${w!.sunset}. Every afternoon activity must end at least 30 minutes before sunset. Do not start any outdoor hike within 2 hours of ${w!.sunset}.${coldWaterWarning}
+
+Travel implications for ${travelMonth}:
+${wc.travel_implications.map(i => `- ${i}`).join("\n")}`)
+    } else if (travelMonth && wc.travel_implications.length > 0) {
+      // Partial block — no sunset data, but travel implications are useful
+      parts.push(`## Seasonal Conditions — ${travelMonth}${coldWaterWarning}
 
 Travel implications for ${travelMonth}:
 ${wc.travel_implications.map(i => `- ${i}`).join("\n")}`)

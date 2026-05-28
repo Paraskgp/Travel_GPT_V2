@@ -13,9 +13,9 @@ If `party_type` is in traveler preferences, run these **before any other check**
 ### family_young:
 Count every activity row. For each one, verify ALL of the following:
 - `effort` is NOT `strenuous` → if it is: REMOVE the activity
-- Activity does NOT require: wading in cold water, chains or fixed ropes, technical permits, cliff-edge exposure → REMOVE if so
+- Activity does NOT involve any of the following (regardless of effort rating): cliff jumping, jumping from heights, diving, wading or swimming in natural uncontrolled waterways, chains or fixed ropes, technical permits, cliff-edge or ledge-walking exposure, long boat tours → REMOVE if any apply. These are hard safety exclusions.
 - Activity does NOT start or end after 17:30 → REMOVE any activity that would keep the family out past 18:00
-- **Count activity rows per day. Any day with more than 2 activity rows: REMOVE the least essential one.**
+- **Count activity rows per day. Any day with more than 2 activity rows: REMOVE activities until the count is exactly 2.** Count carefully — 3 activities is a violation even if they are all easy. Removing means deleting the row from the JSON entirely — not adding a flexibility note to it and keeping it. After removing, count again to verify the day now has ≤2 activity rows.
 - No activity starts before 08:00 → shift to 08:00 if needed
 - Every afternoon activity must have a flexibility note. If missing, ADD: "If the group is flagging after the morning, skip this and rest instead."
 - At least half the days should have a rest window (60+ min gap with no activity). If not: add a "Rest / free time at accommodation" block to the most packed day.
@@ -155,13 +155,26 @@ If Angels Landing appears without a permit note: add "⚠️ Permit required —
 
 ## Check 10 — Cold water violations  `SAFETY`
 
-If the `## Seasonal Conditions` block indicates November through April AND the itinerary includes any wading hike (The Narrows, river-bottom trail, river crossing):
+If the `## Seasonal Conditions` block indicates November through April AND the itinerary includes any wading hike (river-bottom trail, river crossing, wading in a stream or canyon):
 
 For each such activity: check if the `planning_note` mentions drysuit, wetsuit, or cold water gear.
 
-If it does NOT: **ADD to the `planning_note`:** "⚠️ [Month] water temperature in the Virgin River is approximately [temp]°F — drysuit or wetsuit is required, not optional. Rent from Zion Outfitter or Zion Adventure Company the day before (closes at 5 PM). Entering in street clothes is dangerous."
+If it does NOT: **ADD to the `planning_note`:** "⚠️ [Month] water temperature in this waterway is approximately 35–55°F — drysuit or wetsuit is required, not optional. Rent gear from outfitters near the trailhead the day before (most close by 5 PM). Entering in street clothes is dangerous."
+
+Do not mention specific brand names or Zion-specific outfitter names — keep the warning generic to the destination.
 
 If the `## Seasonal Conditions` block does not indicate a cold-water month, skip this check.
+
+---
+
+## Change_log integrity — CRITICAL
+
+Every entry in `change_log` must correspond to an actual change in the JSON you are outputting. Do not log a change that is not present in the output.
+
+Before writing your final JSON:
+1. For every entry you plan to add to `change_log`: verify the corresponding row, day, or field is actually different in your output vs the input draft.
+2. If you decided NOT to make a change after considering it: do not log it. Silence is correct.
+3. A change_log with phantom entries (logged but not executed) is worse than no change_log at all — it creates false confidence that violations were fixed.
 
 ---
 

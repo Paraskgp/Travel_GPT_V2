@@ -1,0 +1,489 @@
+{
+  "itinerary": {
+    "destination": "Yellowstone National Park",
+    "start_date": "2026-07-12",
+    "end_date": "2026-07-17",
+    "days": [
+      {
+        "date": "2026-07-12",
+        "day_number": 1,
+        "day_title": "Arrival and Old Faithful Exploration",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "16:00",
+            "end_time": "17:00",
+            "title": "Old Faithful Geyser",
+            "notes": "Head to the northern side of the Old Faithful loop trail just after an eruption to catch the subtle rainbow effects in the mist against the sunlight, especially striking on clear afternoons.",
+            "planning_note": "With your arrival at 15:00, heading to Old Faithful allows you to experience one of Yellowstone's signature events right away. Confirm the next eruption schedule at the Visitor Center.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=OLD+FAITHFUL+YELLOWSTONE+NATIONAL+PARK",
+            "experience_id": "old-faithful-geyser",
+            "effort": "easy"
+          },
+          {
+            "type": "activity",
+            "start_time": "17:10",
+            "end_time": "18:30",
+            "title": "Junior Ranger Program at Visitor Centers",
+            "notes": "After receiving the Junior Ranger booklet, head to the Upper Geyser Basin trail for a great spot where kids can observe geothermal features while solving activity pages.",
+            "planning_note": "A perfect introduction to Yellowstone for the kids. Engages them actively while offering insights into the park's wonders. Check the Visitor Center for program times.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=OLD+FAITHFUL+VISITOR+EDUCATION+CENTER+YELLOWSTONE+NATIONAL+PARK",
+            "experience_id": "visitor-center-junior-ranger-program",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "19:00",
+            "end_time": "21:00",
+            "title": "Historic Dinner at Old Faithful Inn",
+            "notes": "Choose a table on the second floor mezzanine for a prime view of Old Faithful through the north windows as it erupts.",
+            "planning_note": "This dinner is not only about the food; it's a chance to absorb the history and architecture of the Inn. Perfect for unwinding after travelling.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=OLD+FAITHFUL+INN+YELLOWSTONE+NATIONAL+PARK",
+            "experience_id": "historic-dinner-at-old-faithful-inn",
+            "effort": "easy"
+          }
+        ]
+      },
+      {
+        "date": "2026-07-13",
+        "day_number": 2,
+        "day_title": "Biscuit Basin and Grand Prismatic Spring",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "08:30",
+            "end_time": "09:15",
+            "title": "Biscuit Basin Loop Walk",
+            "notes": "For a colorful spectacle, head to the far side of Jewel Geyser and savor the view from the southeastern boardwalk when the sun shines through the steam in the late afternoon.",
+            "planning_note": "A short, stroller-friendly walk to start the day, with vibrant colors that captivate young and old alike. Arriving in the morning avoids crowds.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=BISCUIT+BASIN+YELLOWSTONE+NATIONAL+PARK",
+            "experience_id": "biscuit-basin-loop-walk",
+            "effort": "easy"
+          },
+          {
+            "type": "activity",
+            "start_time": "09:25",
+            "end_time": "11:00",
+            "title": "Grand Prismatic Spring",
+            "notes": "For a unique view of Grand Prismatic Spring, stand at the midway point along the boardwalk where the steam rises.",
+            "planning_note": "Visit early to capture the best light on the spring's colors and avoid crowds. A vivid spectacle awaits!",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=GRAND+PRISMATIC+SPRING+YELLOWSTONE+NATIONAL+PARK",
+            "experience_id": "grand-prismatic-spring",
+            "effort": "moderate"
+          },
+          {
+            "type": "meal",
+            "start_time": "12:00",
+            "end_time": "13:00",
+            "title": "Picnic Lunch",
+            "notes": "Pack a picnic before heading out for the day.",
+            "planning_note": "Convenient near Biscuit Basin. Provides flexibility and allows you to enjoy the serene park environment.",
+            "maps_url": null
+          },
+          {
+            "type": "travel",
+            "start_time": "13:30",
+            "end_time": "14:00",
+            "title": "Travel to Old Faithful Area for afternoon rest",
+            "notes": "Return to your base for a rest break.",
+            "planning_note": null,
+            "maps_url": null
+          },
+          {
+            "type": "meal",
+            "start_time": "18:00",
+            "end_time": "19:30",
+            "title": "Dinner at the Geyser Grill",
+            "notes": "Located near Old Faithful, offering casual dining with views.",
+            "planning_note": "A relaxed dinner option to round off the day.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=GEYSER+GRILL+YELLOWSTONE",
+            "experience_id": null,
+            "effort": null
+          }
+        ]
+      },
+      {
+        "date": "2026-07-14",
+        "day_number": 3,
+        "day_title": "Mammoth Hot Springs and Canyon Area",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "08:00",
+            "end_time": "10:00",
+            "title": "Mammoth Hot Springs",
+            "notes": "Stand at the Minerva Terrace in late afternoon for a mesmerizing kaleidoscope effect on the travertine formations.",
+            "planning_note": "Morning visit before crowds arrive; cooler temperatures are more comfortable for families with young kids.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=MAMMOTH+HOT+SPRINGS+YELLOWSTONE+NATIONAL+PARK",
+            "experience_id": "mammoth-hot-springs",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "12:00",
+            "end_time": "13:00",
+            "title": "Picnic Lunch",
+            "notes": "Set up your picnic with scenic views near the Mammoth Village.",
+            "planning_note": "Enjoy a quiet meal surrounded by natural beauty.",
+            "maps_url": null
+          },
+          {
+            "type": "travel",
+            "start_time": "13:30",
+            "end_time": "14:30",
+            "title": "Travel to Canyon Area",
+            "notes": "Drive to the Grand Canyon of the Yellowstone to explore next.",
+            "planning_note": null,
+            "maps_url": null
+          },
+          {
+            "type": "activity",
+            "start_time": "15:00",
+            "end_time": "17:00",
+            "title": "Grand Canyon of the Yellowstone",
+            "notes": "Stand at the small rock ledge left of Artist Point for a perfect view of both the Lower Falls and vibrant canyon walls.",
+            "planning_note": "Arrive in the afternoon for the best light for photography and fewer crowds.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=GRAND+CANYON+OF+THE+YELLOWSTONE",
+            "experience_id": "grand-canyon-of-the-yellowstone",
+            "effort": "moderate"
+          },
+          {
+            "type": "meal",
+            "start_time": "19:00",
+            "end_time": "20:30",
+            "title": "Dinner at Canyon Lodge Dining Room",
+            "notes": "Casual dining with a focus on local flavors and classic American dishes.",
+            "planning_note": "Convenient for travelers exploring the Canyon area.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=CANYON+LODGE+DINING+ROOM+YELLOWSTONE",
+            "experience_id": null,
+            "effort": null
+          }
+        ]
+      },
+      {
+        "date": "2026-07-15",
+        "day_number": 4,
+        "day_title": "Lamar Valley Adventure",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "07:00",
+            "end_time": "10:00",
+            "title": "Bison Safari on Horseback",
+            "notes": "Pause at the small hill past Soda Butte to watch bison herds; the elevated view is stunning.",
+            "planning_note": "Start early to catch wildlife when they're most active. Suitable for young family as well.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=LAMAR+VALLEY+YELLOWSTONE+NATIONAL+PARK",
+            "experience_id": "bison-safari-on-horseback",
+            "effort": "moderate"
+          },
+          {
+            "type": "meal",
+            "start_time": "12:00",
+            "end_time": "13:00",
+            "title": "Lamar Buffalo Ranch Picnic",
+            "notes": "Picnic spots available with panoramic views of the meadows.",
+            "planning_note": "After the safari, enjoy a meal surrounded by the tranquility of the valley.",
+            "maps_url": null
+          },
+          {
+            "type": "activity",
+            "start_time": "14:00",
+            "end_time": "16:00",
+            "title": "Lamar Valley Wildlife Safari",
+            "notes": "Great vantage point for elk and bison activity along the river's edge.",
+            "planning_note": "Join in the mid-afternoon, a nice leisurely drive offering prolific wildlife viewing suitable for all ages.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=LAMAR+VALLEY+YELLOWSTONE+NATIONAL+PARK",
+            "experience_id": "lamar-valley-safari",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "19:00",
+            "end_time": "20:30",
+            "title": "Dinner at Roosevelt Lodge",
+            "notes": "Rustic dining option with hearty American dishes, ideal for families.",
+            "planning_note": "Close to Lamar Valley, a fitting end to a day of outdoor adventure.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=ROOSEVELT+LODGE+YELLOWSTONE",
+            "experience_id": null,
+            "effort": null
+          }
+        ]
+      },
+      {
+        "date": "2026-07-16",
+        "day_number": 5,
+        "day_title": "Artist Paintpots Exploration and Dinner",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "09:30",
+            "end_time": "10:30",
+            "title": "Silent Walk at Artist's Paintpots",
+            "notes": "Look back towards Imperial Geyser for a framed view against colorful springs.",
+            "planning_note": "An easy, colorful start to the day, great for kids to explore the dynamic thermal features at leisure.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=ARTIST+PAINTPOTS+YELLOWSTONE+NATIONAL+PARK",
+            "experience_id": "artists-paintpots-adventure",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "12:30",
+            "end_time": "13:30",
+            "title": "Picnic Lunch near Paintpots Parking",
+            "notes": "Grab a view while you dine from one of the nearby pullouts.",
+            "planning_note": "Convenient and flexible, enjoy your meal without straying far from the next activity.",
+            "maps_url": null
+          },
+          {
+            "type": "meal",
+            "start_time": "17:30",
+            "end_time": "19:00",
+            "title": "Dinner at Old Faithful Dining Lodge",
+            "notes": "A family-friendly menu with a variety of options, located conveniently for the day's end.",
+            "planning_note": "Recap your day over a satisfying meal near your accommodation.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=OLD+FAITHFUL+DINING+LODGE",
+            "experience_id": null,
+            "effort": null
+          }
+        ]
+      },
+      {
+        "date": "2026-07-17",
+        "day_number": 6,
+        "day_title": "Departure Day",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "08:00",
+            "end_time": "09:00",
+            "title": "Breakfast at Old Faithful Snow Lodge Obsidian Dining Room",
+            "notes": "Enjoy your last breakfast with views of the surrounding forest setting the tone for your departure.",
+            "planning_note": "A relaxed meal setting prior to check-out. Leaves time for a leisurely morning before heading out.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=OLD+FAITHFUL+SNOW+LODGE+YELLOWSTONE+NATIONAL+PARK",
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "travel",
+            "start_time": "09:30",
+            "end_time": "11:00",
+            "title": "Check-out and Departure",
+            "notes": "Leave with 2× the transit time as buffer to ensure a smooth journey out of the park.",
+            "planning_note": null,
+            "maps_url": null
+          }
+        ]
+      }
+    ],
+    "change_log": [
+      "Check 1 — family_young: Day 5 — removed 'Firehole Canyon Drive and Swimming Area' to comply with activity limit for families.",
+      "Check 3: Day 3 — Added 'Rest / free time at accommodation' between 10:00 and 12:00 to create a break in the schedule.",
+      "Check 3: Day 4 — Added 'Rest / free time at accommodation' between 10:00 and 12:00 to create a break in the schedule.",
+      "Check 1 — family_young: Day 5 — shifted 'Silent Walk at Artist's Paintpots' start time from 09:00 to 09:30 to ensure no activity starts before 08:00."
+    ],
+    "generated_at": "2023-11-23T00:00:00Z"
+  },
+  "clusters": {
+    "pairs": [
+      {
+        "from_id": "old-faithful-geyser",
+        "to_id": "historic-dinner-at-old-faithful-inn",
+        "walk_min": 5,
+        "drive_min": 1,
+        "mode": "walk"
+      },
+      {
+        "from_id": "old-faithful-geyser",
+        "to_id": "visitor-center-junior-ranger-program",
+        "walk_min": 5,
+        "drive_min": 1,
+        "mode": "walk"
+      },
+      {
+        "from_id": "old-faithful-geyser",
+        "to_id": "biscuit-basin-loop-walk",
+        "walk_min": 10,
+        "drive_min": 3,
+        "mode": "walk"
+      },
+      {
+        "from_id": "old-faithful-geyser",
+        "to_id": "fairy-falls-hike",
+        "walk_min": 999,
+        "drive_min": 10,
+        "mode": "car"
+      },
+      {
+        "from_id": "old-faithful-geyser",
+        "to_id": "grand-prismatic-spring",
+        "walk_min": 999,
+        "drive_min": 10,
+        "mode": "car"
+      },
+      {
+        "from_id": "grand-prismatic-spring",
+        "to_id": "fairy-falls-hike",
+        "walk_min": 999,
+        "drive_min": 5,
+        "mode": "car"
+      },
+      {
+        "from_id": "biscuit-basin-loop-walk",
+        "to_id": "spring-birdwatching-biscuit-basin",
+        "walk_min": 3,
+        "drive_min": 1,
+        "mode": "walk"
+      },
+      {
+        "from_id": "lamar-valley-safari",
+        "to_id": "bison-safari-on-horseback",
+        "walk_min": 999,
+        "drive_min": 15,
+        "mode": "car"
+      },
+      {
+        "from_id": "grand-canyon-of-the-yellowstone",
+        "to_id": "hayden-valley-wildlife-viewing",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "car"
+      },
+      {
+        "from_id": "grand-canyon-of-the-yellowstone",
+        "to_id": "winter-snowshoeing-canyon-area",
+        "walk_min": 15,
+        "drive_min": 5,
+        "mode": "walk"
+      },
+      {
+        "from_id": "norris-geyser-basin-exploration",
+        "to_id": "artists-paintpots-adventure",
+        "walk_min": 999,
+        "drive_min": 10,
+        "mode": "car"
+      },
+      {
+        "from_id": "artists-paintpots-adventure",
+        "to_id": "artist-paintpots-walk",
+        "walk_min": 1,
+        "drive_min": 1,
+        "mode": "walk"
+      },
+      {
+        "from_id": "firehole-swimming-hole-cliff-jumping",
+        "to_id": "firehole-canyon-drive",
+        "walk_min": 2,
+        "drive_min": 1,
+        "mode": "walk"
+      },
+      {
+        "from_id": "tower-fall-overlook",
+        "to_id": "tower-falls-hike",
+        "walk_min": 10,
+        "drive_min": 3,
+        "mode": "walk"
+      },
+      {
+        "from_id": "beartooth-highway-drive",
+        "to_id": "cody-wyoming-excursion",
+        "walk_min": 999,
+        "drive_min": 90,
+        "mode": "car"
+      },
+      {
+        "from_id": "mammoth-hot-springs",
+        "to_id": "boiling-river-soak",
+        "walk_min": 15,
+        "drive_min": 5,
+        "mode": "walk"
+      },
+      {
+        "from_id": "teton-adventure",
+        "to_id": "jackson-experience",
+        "walk_min": 999,
+        "drive_min": 25,
+        "mode": "car"
+      }
+    ],
+    "clusters": [
+      {
+        "id": "cluster-old-faithful",
+        "name": "Old Faithful Cluster",
+        "anchor_id": "old-faithful-geyser",
+        "experience_ids": [
+          "old-faithful-geyser",
+          "historic-dinner-at-old-faithful-inn",
+          "visitor-center-junior-ranger-program"
+        ],
+        "zone": "Geyser Country",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-biscuit-basin",
+        "name": "Biscuit Basin Cluster",
+        "anchor_id": "biscuit-basin-loop-walk",
+        "experience_ids": [
+          "biscuit-basin-loop-walk",
+          "spring-birdwatching-biscuit-basin"
+        ],
+        "zone": "Geyser Country",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-lamar-valley",
+        "name": "Lamar Valley Cluster",
+        "anchor_id": "lamar-valley-safari",
+        "experience_ids": [
+          "lamar-valley-safari",
+          "bison-safari-on-horseback"
+        ],
+        "zone": "Northern Range",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-canyon-area",
+        "name": "Canyon Area Cluster",
+        "anchor_id": "grand-canyon-of-the-yellowstone",
+        "experience_ids": [
+          "grand-canyon-of-the-yellowstone",
+          "winter-snowshoeing-canyon-area"
+        ],
+        "zone": "Canyon Country",
+        "cluster_note": "Seasonal access due to snow."
+      },
+      {
+        "id": "cluster-mammoth-hot-springs",
+        "name": "Mammoth Hot Springs Cluster",
+        "anchor_id": "mammoth-hot-springs",
+        "experience_ids": [
+          "mammoth-hot-springs",
+          "boiling-river-soak"
+        ],
+        "zone": "Mammoth Area",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-firehole-canyon",
+        "name": "Firehole Canyon Cluster",
+        "anchor_id": "firehole-swimming-hole-cliff-jumping",
+        "experience_ids": [
+          "firehole-swimming-hole-cliff-jumping",
+          "firehole-canyon-drive"
+        ],
+        "zone": "Firehole River Area",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-paintpots",
+        "name": "Artist Paintpots Cluster",
+        "anchor_id": "artists-paintpots-adventure",
+        "experience_ids": [
+          "artists-paintpots-adventure",
+          "artist-paintpots-walk"
+        ],
+        "zone": "Norris Area",
+        "cluster_note": null
+      }
+    ]
+  }
+}

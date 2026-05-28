@@ -35,12 +35,12 @@ Apply these rules **before** building the schedule. Hard filters — a filtered 
 
 **family_young** (toddlers or children under ~6):
 - Exclude any experience with `effort: strenuous`
-- Exclude any experience that requires wading, chains/fixed ropes, technical permits, or sustained cliff exposure
+- Exclude any experience that requires: wading or swimming in uncontrolled water, chains/fixed ropes, technical permits, cliff exposure of any kind (including cliff jumping, ledge walks, or high-exposure viewpoints), or extended off-trail/backcountry travel
 - Exclude any experience with a `best_time` that anchors it after 17:00
-- **Max 2 activities per day.** Meals are meals, not activities.
+- **Max 2 activities per day — count before you output each day.** Type: "activity" rows only. Meals, travel rows, and rest blocks do not count. If your count reaches 3: remove the least essential activity from that day before moving on. Do not output a day with 3+ activity rows.
 - No activity starts before 08:00
-- Prioritize paved, stroller-friendly, short flat options
-- Every afternoon activity must include a flexibility note in `planning_note`: "If the group is tired after the morning, skip this and rest at base — Zion's rhythm rewards relaxed families."
+- Prioritize paved, boardwalk, stroller-accessible, short flat options
+- Every afternoon activity must include a flexibility note in `planning_note`: "If the group is tired after the morning, skip this — rest and free play beats a forced activity every time."
 
 **family_teens** (children ~10–17):
 - Exclude strenuous activities only if the day already has one
@@ -146,8 +146,8 @@ When cutting a day: keep the strongest content, remove the day with the weakest 
 
 Add a travel row between every pair of activities that are in different clusters. Use the travel pair data for realistic times.
 
-**Shuttle-dependent destinations** (Zion main canyon, Yosemite Valley, Acadia): If the destination requires a shuttle:
-1. Add an explicit **travel row** for the shuttle. Type: "travel", title: "Zion Canyon Shuttle to [Stop Name]", notes: use the actual season shuttle frequency from `## Seasonal Conditions`, NOT peak-season language.
+**Shuttle-dependent destinations** (Zion main canyon, Yosemite Valley, Acadia, Grand Canyon South Rim): If the destination requires a shuttle:
+1. Add an explicit **travel row** for the shuttle. Type: "travel", title: "[Destination] Shuttle to [Stop Name]", notes: use the actual season shuttle frequency from `## Seasonal Conditions`, NOT generic peak-season language.
 2. Every activity in the shuttle zone must reference the shuttle in its `planning_note`.
 3. Return travel row: "Shuttle back to Visitor Center / parking."
 
@@ -183,7 +183,7 @@ It is **not** a description of the activity. The traveler already knows what the
 - "Starting here because it's the only paved, fully stroller-accessible trail in the park — and after a 14:00 arrival plus check-in, the family's energy budget for day 1 is limited. The river views are legitimately good without any exertion."
 - "07:30 start is non-negotiable — Angels Landing gets dangerously crowded on the chains by 09:00, and November permits are scarcer than peak season. Enter the lottery at recreation.gov by 3 PM the day before."
 - "Scheduled after the strenuous canyon day because consecutive hard days cause cumulative fatigue. Kolob is a scenic drive — a long rest in disguise. The Timber Creek viewpoint adds a 15-min walk and resets the mood for the next hard day."
-- "The Narrows in November: water temperature is 40–50°F. This is drysuit territory, not a wade-in-your-shoes hike. Rent from Zion Outfitter or Zion Adventure Company the evening before — they close at 5 PM."
+- "November water temperature in this river canyon is 40–50°F. This is drysuit territory, not a wade-in-your-shoes hike. Rent gear from outfitters in [nearest town] the evening before — most close by 5 PM."
 
 **For meal rows:** name the dish or say why this specific place — not just "great food."
 - **GOOD:** "Order the green chile breakfast burrito — substantial enough to fuel a 5-hour canyon hike. The patio has a direct sightline to the west wall."
