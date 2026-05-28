@@ -7,342 +7,628 @@
       {
         "date": "2026-11-15",
         "day_number": 1,
-        "day_title": "Arrival and Easy Start",
+        "day_title": "Arrival and Introduction to Zion",
         "rows": [
           {
-            "type": "meal",
-            "start_time": "12:30",
-            "end_time": "13:30",
-            "title": "Lunch at Cafe Soleil",
-            "notes": "Order the Mediterranean Chicken Wrap — satisfying and light enough for an afternoon start.",
-            "planning_note": "Café Soleil is convenient for a quick, yet delightful lunch just as you arrive and before exploring nearby.",
-            "maps_url": "https://www.google.com/maps/search/?api=1&query=Cafe+Soleil+Springdale+UT",
-            "experience_id": null
-          },
-          {
-            "type": "travel",
-            "start_time": "14:00",
-            "end_time": "14:15",
-            "title": "Travel to Zion Human History Museum",
-            "notes": null,
-            "planning_note": null,
-            "maps_url": null,
-            "experience_id": null
-          },
-          {
             "type": "activity",
-            "start_time": "14:15",
-            "end_time": "15:15",
-            "title": "Zion Human History Museum",
-            "notes": "Look left of the Virgin River to see the 'Chinaman's Hat' formation.",
-            "planning_note": "Starting with the museum introduces the park's cultural and geological background, enriching the upcoming outdoor experiences.",
-            "maps_url": "https://www.google.com/maps/search/?api=1&query=Zion+Human+History+Museum+Zion+National+Park",
-            "experience_id": "zion-human-history-museum"
-          },
-          {
-            "type": "travel",
-            "start_time": "15:30",
-            "end_time": "15:45",
-            "title": "Travel to Springdale",
-            "notes": null,
-            "planning_note": null,
-            "maps_url": null,
-            "experience_id": null
+            "start_time": "14:30",
+            "end_time": "16:30",
+            "title": "Zion Canyon Scenic Drive",
+            "notes": "As your shuttle approaches the Weeping Rock stop, specifically look for the upper alcoves to glow when the morning sun first strikes them.",
+            "planning_note": "Enjoy the scenic drive as an introduction to the park's geology and landscape. Fitting this on your arrival day offers a gentler start, allowing time to adjust after check-in.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Zion+Canyon+Scenic+Drive+Zion+National+Park",
+            "experience_id": "zion-canyon-scenic-drive",
+            "effort": "easy"
           },
           {
             "type": "meal",
-            "start_time": "18:00",
-            "end_time": "19:30",
-            "title": "Dinner at Spotted Dog Cafe",
-            "notes": "Savour the Utah trout — locally sourced and perfectly cooked.",
-            "planning_note": "Spotted Dog Cafe offers a cozy setting ideal for unwinding after travel and settling into the Zion experience.",
-            "maps_url": "https://www.google.com/maps/search/?api=1&query=Spotted+Dog+Cafe+Springdale+UT",
-            "experience_id": null
+            "start_time": "17:00",
+            "end_time": "18:30",
+            "title": "Dinner at Oscar's Cafe",
+            "notes": "Order the famous fish tacos or a hearty bison burger. The casual atmosphere and local ambiance make it a perfect start.",
+            "planning_note": "Located in Springdale, Oscar's Cafe is a local favorite for its hearty portions and relaxed vibe. It's a convenient choice right after your scenic drive.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Oscar%27s+Cafe+Springdale",
+            "experience_id": null,
+            "effort": null
           }
         ]
       },
       {
         "date": "2026-11-16",
         "day_number": 2,
-        "day_title": "Exploring Scenic Canyons",
+        "day_title": "Conquering Angels Landing",
         "rows": [
           {
-            "type": "meal",
-            "start_time": "06:30",
-            "end_time": "07:00",
-            "title": "Breakfast at Zion Lodge",
-            "notes": "Enjoy the hearty waffle breakfast — enough energy for a morning of exploration.",
-            "planning_note": "A solid breakfast gives the necessary energy for an active morning in the canyon.",
-            "maps_url": "https://www.google.com/maps/search/?api=1&query=Zion+Lodge+Springdale+UT",
-            "experience_id": null
-          },
-          {
-            "type": "travel",
-            "start_time": "07:00",
-            "end_time": "07:30",
-            "title": "Zion Canyon Shuttle to The Grotto",
-            "notes": "Board at Zion Visitor Center stop. Free, runs every 6–8 minutes in peak season. No private vehicles beyond this point.",
-            "planning_note": null,
-            "maps_url": null,
-            "experience_id": null
-          },
-          {
             "type": "activity",
-            "start_time": "07:30",
+            "start_time": "06:00",
             "end_time": "11:00",
             "title": "Angels Landing Hike",
-            "notes": "Use your feet on the sandstone; don't rely solely on the chains.",
-            "planning_note": "Start early to avoid crowds and enjoy cooler temperatures. A highlight of Zion, this strenuous hike offers breathtaking views worth the early rise.",
+            "notes": "On the bolted chain sections leading to the summit from the 'Hogsback,' focus your weight on finding purchase with your feet directly on the sandstone.",
+            "planning_note": "07:30 start is non-negotiable — Angels Landing gets dangerously crowded by late morning. ⚠️ Permit required — enter the day-before lottery at recreation.gov by 3 PM the evening before. Without a confirmed permit, you cannot legally hike the chains section.",
             "maps_url": "https://www.google.com/maps/search/?api=1&query=Angels+Landing+Zion+National+Park",
-            "experience_id": "angels-landing-hike"
-          },
-          {
-            "type": "travel",
-            "start_time": "11:00",
-            "end_time": "11:30",
-            "title": "Shuttle back to Visitor Center / parking",
-            "notes": null,
-            "planning_note": null,
-            "maps_url": null,
-            "experience_id": null
+            "experience_id": "angels-landing-hike",
+            "effort": "strenuous"
           },
           {
             "type": "meal",
-            "start_time": "12:00",
-            "end_time": "13:00",
-            "title": "Lunch at Bit & Spur Restaurant",
-            "notes": "Try the Southwestern Tacos — a local favorite.",
-            "planning_note": "A refreshing pause with local flavors after the morning hike.",
-            "maps_url": "https://www.google.com/maps/search/?api=1&query=Bit+%26+Spur+Restaurant+Springdale+UT",
-            "experience_id": null
+            "start_time": "11:15",
+            "end_time": "12:30",
+            "title": "Brunch at Cafe Soleil",
+            "notes": "Try the breakfast burrito with green chile sauce. Offers a great view of the Watchman.",
+            "planning_note": "Post-hike, refuel at Cafe Soleil which is known for its healthy options and quick service. It's close to the shuttle stop, making it convenient.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Cafe+Soleil+Springdale",
+            "experience_id": null,
+            "effort": null
           },
           {
             "type": "activity",
-            "start_time": "13:30",
+            "start_time": "13:00",
             "end_time": "15:00",
-            "title": "Weeping Rock Geological Marvel",
-            "notes": "Stand at the innermost curve for the finest mist experience from the spring-fed sandstone.",
-            "planning_note": "Ideal for easy afternoon exploration — is accessible and contrasts the strenuous morning with a peaceful atmosphere.",
-            "maps_url": "https://www.google.com/maps/search/?api=1&query=Weeping+Rock+Zion+National+Park",
-            "experience_id": "weeping-rock-geological-marvel"
+            "title": "Riverside Walk",
+            "notes": "Look for the distinct ripple patterns on the Virgin River's surface where the upstream currents meet small counter-eddies.",
+            "planning_note": "An easy walk along the river provides a calming experience after the morning's strenuous hike. Check shuttle schedule before heading back.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Riverside+Walk+Zion+National+Park",
+            "experience_id": "riverside-walk-zion",
+            "effort": "easy"
           },
           {
             "type": "meal",
-            "start_time": "18:00",
-            "end_time": "19:30",
-            "title": "Dinner at King's Landing Bistro",
-            "notes": "Enjoy the bison meatloaf — renowned for its rich flavor.",
-            "planning_note": "Dining options reflect the local spirit, capping a day of Zion's highlights with a savory meal.",
-            "maps_url": "https://www.google.com/maps/search/?api=1&query=King's+Landing+Bistro+Springdale+UT",
-            "experience_id": null
+            "start_time": "17:30",
+            "end_time": "19:00",
+            "title": "Sunset Dinner at Black Sage Restaurant",
+            "notes": "For the most vivid alpenglow on the eastward-facing cliffs, specifically request a table along the northern railing of the patio.",
+            "planning_note": "Reserve ahead to experience dining with stunning canyon views. Ideal for a post-hike romantic dinner.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Black+Sage+Restaurant+Virgin",
+            "experience_id": "sunset_dinner_black_sage_restaurant",
+            "effort": "easy"
           }
         ]
       },
       {
         "date": "2026-11-17",
         "day_number": 3,
-        "day_title": "River and Ridges",
+        "day_title": "Exploring Central Zion",
         "rows": [
           {
-            "type": "meal",
-            "start_time": "07:00",
-            "end_time": "07:30",
-            "title": "Breakfast at Oscar's Cafe",
-            "notes": "Opt for the Breakfast Burrito — it's hearty enough to fuel your day.",
-            "planning_note": "A well-rounded breakfast to prepare for a day exploring Zion's natural wonders.",
-            "maps_url": "https://www.google.com/maps/search/?api=1&query=Oscar's+Cafe+Springdale+UT",
-            "experience_id": null
-          },
-          {
-            "type": "travel",
-            "start_time": "08:00",
-            "end_time": "08:20",
-            "title": "Travel to Riverside Walk Trail",
-            "notes": null,
-            "planning_note": null,
-            "maps_url": null,
-            "experience_id": null
-          },
-          {
             "type": "activity",
-            "start_time": "08:20",
-            "end_time": "09:20",
-            "title": "Riverside Walk Trail",
-            "notes": "Ideal spots to safely access the Virgin River are about halfway along.",
-            "planning_note": "A gentle introduction to Zion’s water features, offering scenic, hassle-free walking as the day begins.",
-            "maps_url": "https://www.google.com/maps/search/?api=1&query=Riverside+Walk+Zion+National+Park",
-            "experience_id": "riverside-walk-trail"
-          },
-          {
-            "type": "activity",
-            "start_time": "09:45",
-            "end_time": "12:45",
-            "title": "The Narrows Hike",
-            "notes": "Rent canyoneering shoes and a walking stick for the best experience.",
-            "planning_note": "A unique Zion hike, this is an immersive experience into the park’s iconic river-worn canyons.",
-            "maps_url": "https://www.google.com/maps/search/?api=1&query=The+Narrows+Zion+National+Park",
-            "experience_id": "the-narrows-hike"
-          },
-          {
-            "type": "travel",
-            "start_time": "12:45",
-            "end_time": "13:15",
-            "title": "Shuttle back to Visitor Center / parking",
-            "notes": null,
-            "planning_note": null,
-            "maps_url": null,
-            "experience_id": null
+            "start_time": "07:45",
+            "end_time": "10:00",
+            "title": "Watchman Trail",
+            "notes": "From the Watchman overlook, locate the slightly elevated rock shelf beyond the paved area for an unobstructed view.",
+            "planning_note": "An early start on the Watchman Trail provides cooler conditions and excellent photo opportunities. It's a moderate hike with rewarding views.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Watchman+Trail+Zion+National+Park",
+            "experience_id": "watchman-trail",
+            "effort": "moderate"
           },
           {
             "type": "meal",
-            "start_time": "13:45",
-            "end_time": "14:45",
-            "title": "Lunch at Cafe Soleil",
-            "notes": "Try the Vegan Portabella Sandwich for a refreshing vegetarian choice.",
-            "planning_note": "Rejuvenate with a quality meal in familiar settings following active river exploration.",
-            "maps_url": "https://www.google.com/maps/search/?api=1&query=Cafe+Soleil+Springdale+UT",
-            "experience_id": null
+            "start_time": "10:30",
+            "end_time": "11:30",
+            "title": "Lunch at King's Landing Bistro",
+            "notes": "Consider the tempura-fried local trout. Known for a refined dining experience amid natural beauty.",
+            "planning_note": "Located close to the Visitor Center, King's Landing offers a great lunch menu suitable for post-morning hikes.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=King%27s+Landing+Bistro+Springdale",
+            "experience_id": null,
+            "effort": null
           },
           {
             "type": "activity",
-            "start_time": "15:30",
-            "end_time": "16:30",
-            "title": "Canyon Overlook Trail",
-            "notes": "Pause at the alcove for a unique frame of Pine Creek Canyon and the Virgin River.",
-            "planning_note": "An iconic short hike providing a high-impact view, ideal for an afternoon when the light enhances the landscape.",
-            "maps_url": "https://www.google.com/maps/search/?api=1&query=Canyon+Overlook+Trail+Zion+National+Park",
-            "experience_id": "canyon-overlook-trail"
+            "start_time": "12:00",
+            "end_time": "13:30",
+            "title": "Zion Human History Museum",
+            "notes": "From the outdoor patio, look left of the Virgin River at Bridge Mountain to discern the subtle, sombrero-like profile of the 'Chinaman's Hat' formation.",
+            "planning_note": "A visit here enriches your understanding of Zion's human and natural history. It's conveniently located near the park's entrance.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Zion+Human+History+Museum+Zion+National+Park",
+            "experience_id": "zion-human-history-museum",
+            "effort": "easy"
+          },
+          {
+            "type": "activity",
+            "start_time": "16:30",
+            "end_time": "18:00",
+            "title": "Watchman Sunset Hike",
+            "notes": "Position yourself to watch Bridge Mountain directly across the canyon; its west-facing slopes will ignite with alpenglow.",
+            "planning_note": "Scheduled for the golden hour, this hike promises one of the best sunset views in Zion. Enjoy the vibrant color changes on the canyon walls.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Watchman+Sunset+Hike+Zion+National+Park",
+            "experience_id": "watchman_sunset_hike",
+            "effort": "moderate"
           },
           {
             "type": "meal",
-            "start_time": "18:00",
-            "end_time": "19:30",
-            "title": "Dinner at Switchback Grille",
-            "notes": "Indulge in the Prime Rib — a generous portion that's locally renowned.",
-            "planning_note": "Conclude the day with a hearty meal — a local favorite that celebrates the region’s robust flavors.",
-            "maps_url": "https://www.google.com/maps/search/?api=1&query=Switchback+Grille+Springdale+UT",
-            "experience_id": null
+            "start_time": "19:00",
+            "end_time": "20:30",
+            "title": "Dinner at Bit & Spur Restaurant & Saloon",
+            "notes": "Popular for its Southwestern-inspired dishes. Try the chiles rellenos accompanied by a local microbrew.",
+            "planning_note": "After a scenic sunset hike, unwind at Bit & Spur, loved for its lively vibe and hearty meals.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Bit+%26+Spur+Restaurant+%26+Saloon+Springdale",
+            "experience_id": null,
+            "effort": null
           }
         ]
       },
       {
         "date": "2026-11-18",
         "day_number": 4,
-        "day_title": "Kolob Canyons and Scenic Diversity",
+        "day_title": "Venturing into The Narrows",
         "rows": [
           {
-            "type": "meal",
-            "start_time": "07:00",
-            "end_time": "07:30",
-            "title": "Breakfast at Deep Creek Coffee",
-            "notes": "Fuel up with the hearty Avocado Toast, packed with protein and flavor.",
-            "planning_note": "Start with a vibrant breakfast option to kick off a scenic day in Kolob.",
-            "maps_url": "https://www.google.com/maps/search/?api=1&query=Deep+Creek+Coffee+Springdale+UT",
-            "experience_id": null
-          },
-          {
-            "type": "travel",
-            "start_time": "08:00",
-            "end_time": "09:00",
-            "title": "Travel to Kolob Canyons Scenic Drive",
-            "notes": "Drive to the western section of the park, Kolob Canyons, known for its less crowded, dramatic scenic beauty.",
-            "planning_note": null,
-            "maps_url": null,
-            "experience_id": null
-          },
-          {
             "type": "activity",
-            "start_time": "09:00",
-            "end_time": "10:30",
-            "title": "Kolob Canyons Scenic Drive",
-            "notes": "Stop at Timber Creek Overlook for views not confined to the main park area.",
-            "planning_note": "Early start ensures clear views and a serene atmosphere, spotlighting the region's solitude.",
-            "maps_url": "https://www.google.com/maps/search/?api=1&query=Kolob+Canyons+Scenic+Drive+Zion+National+Park",
-            "experience_id": "kolob-canyons-scenic-drive"
-          },
-          {
-            "type": "activity",
-            "start_time": "11:00",
-            "end_time": "12:30",
-            "title": "Timber Creek Overlook Trail",
-            "notes": "For optimal observation, watch how shadows emphasize the sandstone patterns.",
-            "planning_note": "A short trail that provides a grand sense of place and remains often overlooked.",
-            "maps_url": "https://www.google.com/maps/search/?api=1&query=Timber+Creek+Overlook+Trail+Zion+National+Park",
-            "experience_id": "timber-creek-overlook-trail"
-          },
-          {
-            "type": "travel",
-            "start_time": "12:30",
-            "end_time": "13:30",
-            "title": "Return to Springdale",
-            "notes": "Return through the scenic landscape back to the comforts of Springdale.",
-            "planning_note": null,
-            "maps_url": null,
-            "experience_id": null
+            "start_time": "06:00",
+            "end_time": "13:00",
+            "title": "The Narrows Hike",
+            "notes": "Rent specialized canyoneering shoes and use a stout walking stick for safe navigation across the river.",
+            "planning_note": "⚠️ November water temperature in the Virgin River is approximately 35–55°F — a drysuit or wetsuit is required, not optional. Rent from Zion Outfitter or Zion Adventure Company the day before (closes at 5 PM).",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=The+Narrows+Zion+National+Park",
+            "experience_id": "the-narrows-hike",
+            "effort": "strenuous"
           },
           {
             "type": "meal",
-            "start_time": "13:45",
-            "end_time": "14:45",
+            "start_time": "13:30",
+            "end_time": "14:30",
             "title": "Lunch at Zion Pizza & Noodle Co.",
-            "notes": "The Mountain Man Pizza is perfect for adventurous food lovers.",
-            "planning_note": "A fulfilling meal to recharge after a morning spent in Kolob's remote beauty.",
-            "maps_url": "https://www.google.com/maps/search/?api=1&query=Zion+Pizza+%26+Noodle+Co.+Springdale+UT",
-            "experience_id": null
+            "notes": "Savor a hearty post-hike meal with the local Heaps of Maple beer or a classic margherita pizza.",
+            "planning_note": "Right in Springdale, this spot is perfect for refueling after an adventurous morning tackle.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Zion+Pizza+%26+Noodle+Co+Springdale",
+            "experience_id": null,
+            "effort": null
           },
           {
             "type": "activity",
-            "start_time": "15:30",
-            "end_time": "17:30",
-            "title": "Observation Point via East Mesa",
-            "notes": "Spot the late-autumn reds and golds from the scrub oak below the viewpoint.",
-            "planning_note": "This trail offers high reward views without the usual crowds, perfect for a day's culmination in Zion’s landscapes.",
-            "maps_url": "https://www.google.com/maps/search/?api=1&query=Observation+Point+via+East+Mesa+Zion+National+Park",
-            "experience_id": "observation-point-via-east-mesa"
+            "start_time": "15:00",
+            "end_time": "17:00",
+            "title": "Weeping Rock Trail",
+            "notes": "Position yourself at the innermost curve of the rock shelter to feel the constant, fine mist directly from the spring-fed Navajo Sandstone.",
+            "planning_note": "After morning in cold water, this short, flat trail offers a cool, shaded break before returning to comfort. Provides an easy, scenic walk in a quieter part of the valley.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Weeping+Rock+Zion+National+Park",
+            "experience_id": "weeping-rock-trail",
+            "effort": "easy"
           },
           {
             "type": "meal",
-            "start_time": "19:00",
-            "end_time": "20:30",
-            "title": "Dinner at Springdale BBQ Company",
-            "notes": "Indulge in the mixed BBQ platter for an authentic taste of local cuisine.",
-            "planning_note": "Wrap up the day with bold flavors typical of the region, offering a satisfying contrast to the day's visual feast.",
-            "maps_url": "https://www.google.com/maps/search/?api=1&query=Springdale+BBQ+Company+Springdale+UT",
-            "experience_id": null
+            "start_time": "18:00",
+            "end_time": "19:30",
+            "title": "Dinner at Thai Sapa",
+            "notes": "A perfect venue for a spicy wind-down after a cold, challenging day. The Pad Thai is highly recommended.",
+            "planning_note": "End the day with a warm, spice-filled dinner at Thai Sapa, just minutes from most accommodations in Springdale.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Thai+Sapa+Springdale",
+            "experience_id": null,
+            "effort": null
           }
         ]
       },
       {
         "date": "2026-11-19",
         "day_number": 5,
-        "day_title": "Wind Down and Departure",
+        "day_title": "Final Morning in Zion",
         "rows": [
           {
             "type": "meal",
             "start_time": "08:00",
             "end_time": "09:00",
-            "title": "Breakfast at Wildcat Willies Ranch Grill & Saloon",
-            "notes": "Enjoy the Ranchero Omelette — packed with local flavors to start your travel day.",
-            "planning_note": "A flavorful start ensuring energy for departure activities and travel.",
-            "maps_url": "https://www.google.com/maps/search/?api=1&query=Wildcat+Willies+Ranch+Grill+%26+Saloon+Springdale+UT",
-            "experience_id": null
-          },
-          {
-            "type": "travel",
-            "start_time": "09:15",
-            "end_time": "12:00",
-            "title": "Travel from Springdale to Las Vegas Airport",
-            "notes": "Depart Zion via UT-9 W and I-15 S for your journey home.",
-            "planning_note": null,
-            "maps_url": null,
-            "experience_id": null
+            "title": "Breakfast at Deep Creek Coffee Co.",
+            "notes": "Known for its robust coffee and avocado toast. An energizing start before checkout.",
+            "planning_note": "Fuel up before heading back on the road. Deep Creek Coffee Co. offers an excellent wake-up coffee.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Deep+Creek+Coffee+Co+Springdale",
+            "experience_id": null,
+            "effort": null
           }
         ]
       }
     ],
     "change_log": [
-      "No changes — itinerary passed all checks."
+      "Check 1 (couple): Day 3 had strenuous activity The Narrows adjacent to Day 2 strenuous. Moved to Day 4.",
+      "Check 9: Day 2 — added permit warning to Angels Landing planning_note.",
+      "Check 10: Day 4 — added cold water gear warning to The Narrows planning_note.",
+      "Check 5: Day 5 — removed Canyon Overlook Trail as it violates the departure day rule.",
+      "Check 7: Day 4 — rewrote Weeping Rock Trail planning_note (was generic)."
     ],
-    "generated_at": "2023-11-19T12:00:00Z"
+    "generated_at": "2023-10-19T13:00:00Z"
+  },
+  "clusters": {
+    "pairs": [
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "the-narrows-hike",
+        "walk_min": 999,
+        "drive_min": 10,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "canyon-overlook-trail",
+        "walk_min": 999,
+        "drive_min": 15,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "zion-canyon-scenic-drive",
+        "walk_min": 999,
+        "drive_min": 5,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "emerald-pools-trails",
+        "walk_min": 12,
+        "drive_min": 3,
+        "mode": "walk"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "zion-human-history-museum",
+        "walk_min": 999,
+        "drive_min": 7,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "grapevine-trail-hidden-waterfall",
+        "walk_min": 999,
+        "drive_min": 15,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "weeping-rock-geological-marvel",
+        "walk_min": 999,
+        "drive_min": 6,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "moqui-cave-exploration",
+        "walk_min": 999,
+        "drive_min": 45,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "hidden-creek-canyon-tour",
+        "walk_min": 999,
+        "drive_min": 15,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "zion-dark-sky-stargazing",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "hidden-canyon-canyoneering",
+        "walk_min": 999,
+        "drive_min": 10,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "white-caves-climbing",
+        "walk_min": 999,
+        "drive_min": 50,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "kayenta-trail-adventure-hike",
+        "walk_min": 10,
+        "drive_min": 2,
+        "mode": "walk"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "kolob-canyons-rappelling",
+        "walk_min": 999,
+        "drive_min": 50,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "wire-mesa-mountain-biking",
+        "walk_min": 999,
+        "drive_min": 25,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "checkerboard-mesa-zion-mount-carmel-highway",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "kolob-canyons-scenic-drive",
+        "walk_min": 999,
+        "drive_min": 50,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "weeping-rock-trail",
+        "walk_min": 999,
+        "drive_min": 6,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "la-verkin-creek-trail-to-kolob-arch",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "timber-creek-overlook-trail",
+        "walk_min": 999,
+        "drive_min": 55,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "riverside-walk-zion",
+        "walk_min": 14,
+        "drive_min": 4,
+        "mode": "walk"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "lower-emerald-pool-trail",
+        "walk_min": 8,
+        "drive_min": 2,
+        "mode": "walk"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "watchman-trail",
+        "walk_min": 999,
+        "drive_min": 5,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "observation-point-via-east-mesa",
+        "walk_min": 999,
+        "drive_min": 15,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "west-rim-trail-top-down",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "riverside-walk-trail",
+        "walk_min": 14,
+        "drive_min": 4,
+        "mode": "walk"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "sand-bench-trail-riding",
+        "walk_min": 999,
+        "drive_min": 10,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "pa-rus-trail-biking",
+        "walk_min": 999,
+        "drive_min": 6,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "sunset_dinner_black_sage_restaurant",
+        "walk_min": 999,
+        "drive_min": 25,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "private_stargazing_tour_lambs_knoll",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "watchman_sunset_hike",
+        "walk_min": 999,
+        "drive_min": 5,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "zion_canyon_hot_spring_relaxation",
+        "walk_min": 999,
+        "drive_min": 35,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "romantic_horseback_riding_under_canvas",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "observation-point-trail",
+        "walk_min": 999,
+        "drive_min": 15,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "zion-horseback-riding",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "car"
+      },
+      {
+        "from_id": "angels-landing-hike",
+        "to_id": "kolob-arch-trail",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "car"
+      }
+    ],
+    "clusters": [
+      {
+        "id": "cluster-angels-landing",
+        "name": "Angels Landing & Surroundings",
+        "anchor_id": "angels-landing-hike",
+        "experience_ids": [
+          "angels-landing-hike",
+          "lower-emerald-pool-trail",
+          "riverside-walk-zion",
+          "riverside-walk-trail"
+        ],
+        "zone": "Zion Canyon",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-the-narrows",
+        "name": "The Narrows",
+        "anchor_id": "the-narrows-hike",
+        "experience_ids": [
+          "the-narrows-hike"
+        ],
+        "zone": "Zion Canyon",
+        "cluster_note": "Permit required for hiking deeper sections."
+      },
+      {
+        "id": "cluster-canyon-overlook",
+        "name": "Canyon Overlook",
+        "anchor_id": "canyon-overlook-trail",
+        "experience_ids": [
+          "canyon-overlook-trail"
+        ],
+        "zone": "Zion East",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-zion-central",
+        "name": "Central Zion",
+        "anchor_id": "zion-canyon-scenic-drive",
+        "experience_ids": [
+          "zion-canyon-scenic-drive",
+          "watchman-trail",
+          "watchman_sunset_hike",
+          "zion-human-history-museum"
+        ],
+        "zone": "Zion Canyon",
+        "cluster_note": "Shuttle-only access during peak season."
+      },
+      {
+        "id": "cluster-emerald-pools",
+        "name": "Emerald Pools",
+        "anchor_id": "emerald-pools-trails",
+        "experience_ids": [
+          "emerald-pools-trails",
+          "lower-emerald-pool-trail",
+          "kayenta-trail-adventure-hike"
+        ],
+        "zone": "Zion Canyon",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-weeping-rock",
+        "name": "Weeping Rock",
+        "anchor_id": "weeping-rock-geological-marvel",
+        "experience_ids": [
+          "weeping-rock-geological-marvel",
+          "weeping-rock-trail"
+        ],
+        "zone": "Zion Canyon",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-east-mesa",
+        "name": "East Mesa",
+        "anchor_id": "observation-point-trail",
+        "experience_ids": [
+          "observation-point-trail",
+          "observation-point-via-east-mesa",
+          "hidden-canyon-canyoneering"
+        ],
+        "zone": "East Zion",
+        "cluster_note": "Steep path; not recommended for young families."
+      },
+      {
+        "id": "cluster-kolob-canyons",
+        "name": "Kolob Canyons",
+        "anchor_id": "kolob-canyons-scenic-drive",
+        "experience_ids": [
+          "kolob-canyons-scenic-drive",
+          "kolob-canyons-rappelling",
+          "kolob-arch-trail",
+          "la-verkin-creek-trail-to-kolob-arch"
+        ],
+        "zone": "Kolob Canyons",
+        "cluster_note": "Limited parking; arrive early."
+      },
+      {
+        "id": "cluster-springdale",
+        "name": "Springdale Area",
+        "anchor_id": "zion-dark-sky-stargazing",
+        "experience_ids": [
+          "zion-dark-sky-stargazing",
+          "private_stargazing_tour_lambs_knoll",
+          "sunset_dinner_black_sage_restaurant"
+        ],
+        "zone": "Springdale",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-wire-mesa",
+        "name": "Wire Mesa",
+        "anchor_id": "wire-mesa-mountain-biking",
+        "experience_ids": [
+          "wire-mesa-mountain-biking"
+        ],
+        "zone": "Wire Mesa",
+        "cluster_note": "Mountain biking only; require own equipment."
+      },
+      {
+        "id": "cluster-virgin",
+        "name": "Virgin Area",
+        "anchor_id": "romantic_horseback_riding_under_canvas",
+        "experience_ids": [
+          "romantic_horseback_riding_under_canvas",
+          "zion-horseback-riding"
+        ],
+        "zone": "Virgin",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-checkerboard-mesa",
+        "name": "Checkerboard Mesa",
+        "anchor_id": "checkerboard-mesa-zion-mount-carmel-highway",
+        "experience_ids": [
+          "checkerboard-mesa-zion-mount-carmel-highway"
+        ],
+        "zone": "East Entrance",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-kanab",
+        "name": "Kanab Exploration",
+        "anchor_id": "moqui-cave-exploration",
+        "experience_ids": [
+          "moqui-cave-exploration",
+          "white-caves-climbing"
+        ],
+        "zone": "Kanab",
+        "cluster_note": null
+      }
+    ]
   }
 }

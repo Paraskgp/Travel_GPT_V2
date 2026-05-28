@@ -9,6 +9,7 @@ This is where the board becomes personal. Party type, dietary preferences, pace,
 ## Inputs
 
 - Full board (all themes and experiences)
+- Weather context (from board — sunset/sunrise times, travel implications, seasonal conditions)
 - Start and end dates
 - Arrival time (when the traveler can start on day 1)
 - Departure time (hard cutoff on last day)
@@ -38,11 +39,17 @@ Runs 7 checks against the draft: party type violations, timing errors, activity 
 
 - Activity count per day matches pace preference (relaxed: 2–3, moderate: 3–4, packed: 4–5)
 - No activities scheduled after departure time on final day
+- No activities ending after sunset time (from weather context) — hard constraint enforced in both Pass 1 and Pass 2
 - `family_young` itineraries never include strenuous experiences without an accessible alternative on the same day
+- `couple` itineraries include at least one sunset-timed activity; no back-to-back strenuous days
+- Permit-required experiences (advance lottery, day-before booking) are flagged in `planning_note` with the booking action
+- Wading hikes in cold-water months (Nov–Apr) include explicit gear warning (drysuit/wetsuit) in `planning_note`
 - Forced experiences appear in the itinerary; skipped experiences do not
 - `planning_note` on every row explains scheduling reasoning — not a description of the activity
+- Shuttle language reflects actual travel-month conditions (not hardcoded peak-season copy)
 - Travel rows exist between geographically distant consecutive activities
 - Shuttle rows present for destinations requiring shuttle access (e.g. Zion Canyon)
+- Itinerary length matches content depth — if experiences cannot fill all days, a shorter itinerary is returned rather than thin filler
 
 ## Evaluation criteria
 
@@ -61,4 +68,6 @@ Runs 7 checks against the draft: party type violations, timing errors, activity 
 - No real routing API (Google Maps Directions, Mapbox) — travel times are LLM estimates
 - No constraint pre-pass before Pass 1 to extract time-locked anchors (P5 in PRODUCT_SPEC.md — score ceiling at ~62)
 - Multi-destination trips (Grand Canyon + Page, AZ + Sedona) not supported — single destination only
-- Recovery time between strenuous activities not modelled (identified in eval run 1)
+- Recovery time between strenuous activities not modelled — couple rule (no back-to-back strenuous) is a proxy fix (2026-05-28)
+- Water temperature is not a structured field in weather context — cold-water detection relies on month name heuristic (Nov–Apr). A `water_temp_f` field on the weather month object would be more reliable. (2026-05-28)
+- Permit detection is prompt-based (reads local_tip text) — not a structured field. False negatives possible if local_tip doesn't mention the permit. (2026-05-28)

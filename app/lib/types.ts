@@ -187,6 +187,7 @@ export interface ItineraryRow {
   planning_note: string | null // user-facing reasoning: why this is scheduled here, what to expect
   maps_url: string | null     // Google Maps link — null for travel rows with no fixed destination
   experience_id: string | null // links back to the board experience; null for meals/travel
+  effort?: "easy" | "moderate" | "strenuous" | null // copied from experience card; null for travel/meal rows
 }
 
 export interface ItineraryDay {

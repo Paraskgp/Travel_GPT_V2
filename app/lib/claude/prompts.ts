@@ -256,13 +256,49 @@ export function reviewUserPrompt(
     parts.push(`## Traveler Preferences\n\n${formatPreferences(preferences)}`)
   }
 
+  // ── Seasonal conditions (same block as Pass 1) ─────────────────────────────
+  // The reviewer needs sunset time for Check 8 and cold-water month for Check 10.
+  if (board.weather_context) {
+    const wc = board.weather_context
+    const travelMonth = wc.travel_month
+    const w = travelMonth ? wc.months[travelMonth] : null
+
+    if (travelMonth && w) {
+      const coldMonths = ["november", "december", "january", "february", "march", "april"]
+      const isColMonth = coldMonths.some(m => travelMonth.toLowerCase().includes(m))
+      const coldWaterWarning = isColMonth
+        ? `\n⚠️ COLD WATER MONTH: ${travelMonth} river temperatures are 35–55°F. Any wading hike without a drysuit/wetsuit warning in its planning_note is a Check 10 violation.`
+        : ""
+
+      parts.push(`## Seasonal Conditions — ${travelMonth}
+
+Sunrise: ${w.sunrise} | Sunset: ${w.sunset} (${w.daylight_hours} hrs daylight)
+
+⚠️ HARD CONSTRAINT — SUNSET: No activity may end after ${w.sunset}. Any activity ending after ${w.sunset} is a Check 8 violation → MOVE or REMOVE.${coldWaterWarning}
+
+Travel implications for ${travelMonth}:
+${wc.travel_implications.map(i => `- ${i}`).join("\n")}`)
+    }
+  }
+
+  // ── Strenuous activities (needed for couple back-to-back check) ──────────────
+  // The itinerary JSON rows don't include effort level. Provide a list of known
+  // strenuous activities so the reviewer can identify back-to-back violations.
+  const strenuousExps = board.themes
+    .flatMap(t => t.experiences)
+    .filter(e => e.effort === "strenuous")
+    .map(e => e.name)
+  if (strenuousExps.length > 0) {
+    parts.push(`## Strenuous Activities (for Check 1 — back-to-back strenuous detection)\n\nThe following experiences from the board are effort: strenuous. If any two of these appear on consecutive days in the itinerary, that is a back-to-back strenuous violation for couple party type.\n\n${strenuousExps.map(n => `- ${n}`).join("\n")}`)
+  }
+
   // Summarise clusters for the reviewer
   const clusterSummary = clusters.clusters.map(c =>
     `- ${c.name} (${c.id}): ${c.experience_ids.join(", ")}${c.cluster_note ? ` — NOTE: ${c.cluster_note}` : ""}`
   ).join("\n")
   parts.push(`## Geographic Clusters\n\n${clusterSummary}`)
 
-  parts.push(`## Your Task\n\nReview the draft itinerary above against all checks in the system prompt. Fix any violations. Return the complete corrected itinerary as valid JSON.`)
+  parts.push(`## Your Task\n\nReview the draft itinerary above against all 10 checks in the system prompt. Fix any violations. Return the complete corrected itinerary as valid JSON.`)
 
   return parts.join("\n\n")
 }
@@ -339,6 +375,32 @@ Total days: ${days}
 Every day starts and ends at the accommodation base above. The first travel row of each day should route from the accommodation to the first activity. The last activity of each day should end near the accommodation (or dinner nearby).`)
 
   parts.push(`## Destination Context\n\n${board.destination_context.soul}\n\nDefining pillars: ${board.destination_context.defining_pillars.join(" · ")}`)
+
+  // ── Seasonal conditions (from weather context) ─────────────────────────────
+  // Injected here so the planner knows sunset time, cold-water conditions, and
+  // any seasonal access restrictions BEFORE building the schedule.
+  if (board.weather_context) {
+    const wc = board.weather_context
+    const travelMonth = wc.travel_month
+    const w = travelMonth ? wc.months[travelMonth] : null
+
+    if (travelMonth && w) {
+      const coldMonths = ["november", "december", "january", "february", "march", "april"]
+      const isColMonth = coldMonths.some(m => travelMonth.toLowerCase().includes(m))
+      const coldWaterWarning = isColMonth
+        ? `\n⚠️ COLD WATER MONTH: ${travelMonth} river and stream temperatures are typically 35–55°F. Any wading hike planning_note MUST specify drysuit/wetsuit requirement and day-before gear rental. This is a safety rule, not a comfort note.`
+        : ""
+
+      parts.push(`## Seasonal Conditions — ${travelMonth}
+
+Sunrise: ${w.sunrise} | Sunset: ${w.sunset} (${w.daylight_hours} hrs daylight)
+
+⚠️ HARD CONSTRAINT — SUNSET: No activity may end after ${w.sunset}. Every afternoon activity must end at least 30 minutes before sunset. Do not start any hike within 2 hours of ${w.sunset}.${coldWaterWarning}
+
+Travel implications for ${travelMonth}:
+${wc.travel_implications.map(i => `- ${i}`).join("\n")}`)
+    }
+  }
 
   if (preferences && Object.keys(preferences).length > 0) {
     parts.push(`## Traveler Preferences\n\n${formatPreferences(preferences)}`)
