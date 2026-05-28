@@ -75,6 +75,6 @@ Per-experience try/catch. On failure: original `local_tip` is kept. Never blocks
 
 ## Open technical items
 
-- Tip enhancement system prompt is inlined in `prompts.ts` as a string, not in `prompts/` as a `.md` file. This means prompt changes do NOT invalidate the board cache. Should be moved to `prompts/tip-enhancement.md`. **This is a known gap.**
+- ~~Tip enhancement system prompt was inlined in `prompts.ts` as a string~~ — **fixed**: moved to `prompts/tip-enhancement.md` so prompt changes now correctly invalidate the board cache via the prompt hash mechanism.
 - No automated scoring of tip quality before caching — a bad rewrite is cached and served
 - ~60 tips × 1 LLM call = 60 parallel Gemini calls. At scale this could hit rate limits.

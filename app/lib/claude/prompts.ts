@@ -56,31 +56,49 @@ export function queryGeneratorUserPrompt(
   ].join("\n")
 }
 
-// ─── Stage 0.7: Experience Extractor ─────────────────────────────────────────
+// ─── Stage 0.7a: Experience Extractor — single page (map phase) ──────────────
 
-export function experienceExtractorSystemPrompt(): string {
-  return load("experience-extractor.md")
+export function extractFromPageSystemPrompt(): string {
+  return load("experience-extractor-page.md")
 }
 
-export function experienceExtractorUserPrompt(
+export function extractFromPageUserPrompt(
   destination: string,
-  searchResults: Array<{ query: string; title: string; url: string; content: string }>
+  query: string,
+  url: string,
+  content: string
 ): string {
-  const snippets = searchResults
-    .map(
-      (r, i) =>
-        `### Result ${i + 1}\n**Query:** ${r.query}\n**Title:** ${r.title}\n**URL:** ${r.url}\n**Content:** ${r.content}`
-    )
-    .join("\n\n")
-
   return [
-    `Extract verified real experiences for: **${destination}**`,
+    `**Destination we are building a travel board for:** ${destination}`,
+    `**Search query that found this page:** ${query}`,
+    `**URL:** ${url}`,
     "",
-    "Below are raw search results. Extract only experiences you can verify from these snippets.",
+    "**Page content:**",
+    content,
     "",
-    snippets,
+    `Extract all clearly named real experiences relevant to visiting ${destination}. Return ONLY the JSON array.`,
+  ].join("\n")
+}
+
+// ─── Stage 0.7b: Experience Deduplicator (reduce phase) ──────────────────────
+
+export function dedupSystemPrompt(): string {
+  return load("experience-dedup.md")
+}
+
+export function dedupUserPrompt(
+  candidates: Array<{ name: string; location: string; category: string; key_facts: string[] }>,
+  destination: string
+): string {
+  return [
+    `Destination: **${destination}**`,
     "",
-    "Return ONLY the JSON array of GroundedExperience objects.",
+    `Merge and deduplicate these ${candidates.length} candidate experiences extracted from multiple web sources.`,
+    "Note: source_urls are tracked separately — do NOT include them in your output.",
+    "",
+    JSON.stringify(candidates, null, 2),
+    "",
+    "Return ONLY the merged JSON array. Each object: { name, location, category, key_facts }. No source_urls field.",
   ].join("\n")
 }
 
@@ -166,15 +184,7 @@ ${lines.join("\n\n")}`)
 // ─── Node 4: Tip Enhancement ──────────────────────────────────────────────────
 
 export function tipEnhancementSystemPrompt(): string {
-  return `You are a hyper-specific travel tip writer. Your only job is to write one local_tip for a specific named travel experience.
-
-Rules — non-negotiable:
-- The tip must be impossible to detach from this exact named place. It cannot appear verbatim in a generic travel guide.
-- BANNED phrases (do not write any of these): "arrive early", "bring binoculars", "book in advance", "book early", "wear comfortable shoes", "check the weather", "visit in the morning", "secure a good spot", "pack a picnic", "can get crowded", "during peak season", "small group sizes"
-- DO write: a specific named pullout or viewpoint, what you'll see from a particular angle, the thing only repeat visitors know, a non-obvious access point, a specific feature within the larger area, best positioning intel
-- HALLUCINATION GUARD — only cite specific times if they follow a real, verifiable pattern (geyser eruption schedules, sunrise/sunset, tidal patterns, scheduled ferry departures, ranger program times). Do NOT invent precise clock times like "10:47 AM" or "3:23 PM" — fabricated times actively mislead travelers. If timing matters, describe it in terms of conditions ("when the steam rises vertically in cool morning air", "at low tide", "after the crowds thin in late afternoon") rather than invented clock times.
-- One or two sentences max. Concrete. Actionable. Tied to this exact place.
-- Return ONLY the tip text. No JSON. No "Sure!" No explanation.`
+  return load("tip-enhancement.md")
 }
 
 export function tipEnhancementUserPrompt(

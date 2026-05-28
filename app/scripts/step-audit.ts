@@ -9,9 +9,9 @@
  *   npx tsx scripts/step-audit.ts 1 "Zion National Park"
  *   npx tsx scripts/step-audit.ts 2 "Zion National Park" "November 2026"
  *   npx tsx scripts/step-audit.ts 3 "Zion National Park"
- *   npx tsx scripts/step-audit.ts 4                         # reads .audit-queries.json
- *   npx tsx scripts/step-audit.ts 5                         # reads .audit-search-results.json
- *   npx tsx scripts/step-audit.ts 6 "Zion National Park"   # reads .audit-search-results.json + .audit-scraped.json
+ *   npx tsx scripts/step-audit.ts 4                          # reads .audit-queries.json
+ *   npx tsx scripts/step-audit.ts 5                          # reads .audit-search-results.json
+ *   npx tsx scripts/step-audit.ts 6 "Zion National Park"    # reads .audit-search-results.json → map → reduce
  */
 
 import fs from "fs"
@@ -29,17 +29,16 @@ if (fs.existsSync(envFile)) {
 }
 
 // Audit file paths — intermediate results saved for cross-step inspection
-const QUERIES_FILE        = path.join(ROOT, ".audit-queries.json")
-const SEARCH_FILE         = path.join(ROOT, ".audit-search-results.json")
-const SCRAPED_FILE        = path.join(ROOT, ".audit-scraped.json")
-const EXPERIENCES_FILE    = path.join(ROOT, ".audit-experiences.json")
+const QUERIES_FILE     = path.join(ROOT, ".audit-queries.json")
+const SEARCH_FILE      = path.join(ROOT, ".audit-search-results.json")
+const MAP_FILE         = path.join(ROOT, ".audit-map-results.json")
+const EXPERIENCES_FILE = path.join(ROOT, ".audit-experiences.json")
 
 async function main() {
-  const { getDestinationContext }  = await import("../lib/pipeline/destination-context.js")
-  const { getWeatherContext }      = await import("../lib/pipeline/weather-context.js")
-  const { generateQueries, annotateResults, extractExperiences } = await import("../lib/pipeline/experiences.js")
-  const { tavilyBatchSearch }      = await import("../lib/tavily/client.js")
-  const { scrapeUrls }             = await import("../lib/scraper/client.js")
+  const { getDestinationContext }                          = await import("../lib/pipeline/destination-context.js")
+  const { getWeatherContext }                              = await import("../lib/pipeline/weather-context.js")
+  const { generateQueries, extractFromPage, dedupExperiences } = await import("../lib/pipeline/experiences.js")
+  const { tavilyBatchSearch }                              = await import("../lib/tavily/client.js")
 
   const [,, stepArg, destArg, monthArg] = process.argv
   const step  = parseInt(stepArg ?? "1")
@@ -96,7 +95,8 @@ async function main() {
     const results = await tavilyBatchSearch(queries, 3, true)
     fs.writeFileSync(SEARCH_FILE, JSON.stringify(results, null, 2))
 
-    console.log(`Total results: ${results.length}\n`)
+    const withRawContent = results.filter(r => (r.raw_content ?? "").length > 200).length
+    console.log(`Total results: ${results.length}  (${withRawContent} with raw_content, ${results.length - withRawContent} snippet-only)\n`)
     results.forEach(r => {
       const rcLen = (r.raw_content ?? "").length
       const tier = rcLen > 200 ? `raw_content ${rcLen}c` : `snippet only`
@@ -108,59 +108,108 @@ async function main() {
     console.log(`📄 Saved to: .audit-search-results.json`)
   }
 
-  // ── Step 5: Page scraping ────────────────────────────────────────────────────
+  // ── Step 5: Content preview (replaces blanket scraping) ─────────────────────
+  // Shows which content source each result will use in the map phase.
+  // Selective scraping (for high-score pages missing raw_content) happens
+  // inside extractFromPage during step 6 — not as a separate blanket pass.
   if (step === 5) {
     if (!fs.existsSync(SEARCH_FILE)) {
       console.error("Run step 4 first.")
       process.exit(1)
     }
     const searchResults = JSON.parse(fs.readFileSync(SEARCH_FILE, "utf8"))
-    const urls: string[] = searchResults.map((r: any) => r.url)
 
-    console.log(`\n── Step 5: Page Scraping ─────────────────────────────────────`)
-    console.log(`Scraping ${urls.length} URLs...\n`)
+    console.log(`\n── Step 5: Content Source Preview ───────────────────────────`)
+    console.log(`(Blanket scraping removed — content resolved per-page in map phase)\n`)
 
-    const scraped = await scrapeUrls(urls)
-    scraped.forEach(r => {
-      console.log(`  ✅ [${r.text.length}c] ${r.url}`)
-      console.log(`     ${r.text.slice(0, 120).replace(/\n/g, " ")}...`)
+    let rawCount = 0, snippetCount = 0, scrapeCount = 0
+
+    for (const r of searchResults) {
+      const rcLen = (r.raw_content ?? "").length
+      const hasRc = rcLen > 200
+        && !String(r.raw_content ?? "").trimStart().startsWith("data:")
+        && ((String(r.raw_content ?? "").match(/[a-z ,.!?]/gi)?.length ?? 0) / rcLen) > 0.4
+
+      let source: string
+      if (hasRc) {
+        source = `✅ tavily raw_content (${rcLen}c)`
+        rawCount++
+      } else if ((r.score ?? 0) >= 0.7) {
+        source = `🔍 selective scrape (score=${r.score?.toFixed(2)})`
+        scrapeCount++
+      } else {
+        source = `⚠️  snippet only (score=${r.score?.toFixed(2)})`
+        snippetCount++
+      }
+      console.log(`  ${source}`)
+      console.log(`    ${r.url}`)
       console.log()
-    })
-
-    const failed = urls.filter(u => !scraped.find(r => r.url === u))
-    if (failed.length) {
-      console.log(`  ⚠️  ${failed.length} failed — will use Tavily fallback:`)
-      failed.forEach(u => console.log(`     - ${u}`))
     }
 
-    fs.writeFileSync(SCRAPED_FILE, JSON.stringify(scraped, null, 2))
-    console.log(`\n📄 Saved to: .audit-scraped.json`)
+    console.log(`Summary: ${rawCount} raw_content, ${scrapeCount} selective scrapes, ${snippetCount} snippet-only`)
+    console.log(`\nNo file saved — content resolved live in step 6 map phase.`)
   }
 
-  // ── Step 6: Experience extraction ───────────────────────────────────────────
+  // ── Step 6: Experience extraction (map → reduce) ─────────────────────────────
   if (step === 6) {
-    if (!fs.existsSync(SEARCH_FILE) || !fs.existsSync(SCRAPED_FILE)) {
-      console.error("Run steps 4 and 5 first.")
+    if (!fs.existsSync(SEARCH_FILE)) {
+      console.error("Run step 4 first.")
       process.exit(1)
     }
 
     const searchResults = JSON.parse(fs.readFileSync(SEARCH_FILE, "utf8"))
-    const scraped = JSON.parse(fs.readFileSync(SCRAPED_FILE, "utf8"))
 
-    console.log(`\n── Step 6: Experience Extraction ────────────────────────────`)
-    console.log(`Destination : ${dest}\n`)
+    console.log(`\n── Step 6: Experience Extraction (map → reduce) ─────────────`)
+    console.log(`Destination : ${dest}`)
+    console.log(`Pages       : ${searchResults.length}\n`)
 
-    const annotated = annotateResults(searchResults, scraped)
-    const totalChars = annotated.reduce((s, r) => s + r.content.length, 0)
-    console.log(`Input: ${annotated.length} pages, ${totalChars} chars (~${Math.round(totalChars / 4)} tokens)\n`)
+    // Map phase
+    console.log(`── Map: extracting from ${searchResults.length} pages in parallel...\n`)
+    const MAP_CONCURRENCY = 20
+    const allCandidates: any[] = []
+    let mapOk = 0, mapFail = 0
 
-    const experiences = await extractExperiences(dest, annotated)
+    for (let i = 0; i < searchResults.length; i += MAP_CONCURRENCY) {
+      const batch = searchResults.slice(i, i + MAP_CONCURRENCY)
+      const settled = await Promise.allSettled(batch.map((r: any) => extractFromPage(r, dest)))
+      settled.forEach((result, j) => {
+        const r = batch[j]
+        if (result.status === "fulfilled") {
+          const count = result.value.length
+          if (count > 0) {
+            console.log(`  ✅ [${count} found] ${r.url}`)
+            result.value.forEach((e: any) => console.log(`       • ${e.name} (${e.category})`))
+          } else {
+            console.log(`  — [0 found] ${r.url}`)
+          }
+          allCandidates.push(...result.value)
+          mapOk++
+        } else {
+          console.log(`  ❌ [failed] ${r.url}`)
+          mapFail++
+        }
+      })
+    }
 
-    console.log(`Extracted ${experiences.length} experiences:\n`)
-    experiences.forEach(e => {
+    console.log(`\nMap result: ${mapOk} pages OK, ${mapFail} failed → ${allCandidates.length} raw candidates`)
+    fs.writeFileSync(MAP_FILE, JSON.stringify(allCandidates, null, 2))
+    console.log(`📄 Saved to: .audit-map-results.json`)
+
+    if (allCandidates.length === 0) {
+      console.log("No candidates — skipping reduce phase.")
+      return
+    }
+
+    // Reduce phase
+    console.log(`\n── Reduce: deduplicating ${allCandidates.length} candidates...\n`)
+    const experiences = await dedupExperiences(allCandidates, dest)
+
+    console.log(`Deduplicated to ${experiences.length} experiences:\n`)
+    experiences.forEach((e: any) => {
       console.log(`  [${e.category}] ${e.name}`)
       console.log(`  Location : ${e.location}`)
-      e.key_facts?.forEach(f => console.log(`    • ${f}`))
+      e.key_facts?.forEach((f: string) => console.log(`    • ${f}`))
+      if (e.source_urls?.length > 1) console.log(`  Sources  : ${e.source_urls.length} pages`)
       console.log()
     })
 

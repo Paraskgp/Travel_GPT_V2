@@ -45,7 +45,7 @@ interface GroundedExperience {
   location: string
   category: string
   key_facts: string[]
-  source_url: string
+  source_urls: string[]   // array — merged from all sources in reduce phase
 }
 
 interface CacheEntry<T> { data: T; generated_at: string; ttl_days: number }

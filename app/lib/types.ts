@@ -24,17 +24,28 @@ export interface GenerateRequest {
 // ─── Search Grounding ─────────────────────────────────────────────────────────
 
 /**
- * A verified real-world experience extracted from search results.
- * Produced by Stage 0.7 (experience extractor) and injected into board generation
- * as the "Known verified experiences" block. This prevents hallucination by
- * constraining the LLM to real, named places.
+ * Raw extraction from a single page (map phase output).
+ * May contain duplicates across pages — fed into dedupExperiences to produce GroundedExperience[].
+ */
+export interface RawExperience {
+  name: string            // Real, specific name of the place or experience
+  location: string        // As specific as the source allows — includes state/region
+  category: string        // "trail" | "restaurant" | "viewpoint" | "museum" | "tour" | ...
+  key_facts: string[]     // 1–4 factual bullets extracted from this page only
+  source_url: string      // The page this was extracted from
+}
+
+/**
+ * A verified real-world experience after deduplication and merging across all sources.
+ * Produced by dedupExperiences (reduce phase) and injected into board generation
+ * as the "Known verified experiences" block — the hallucination firewall.
  */
 export interface GroundedExperience {
   name: string            // The real, verifiable name of the place or experience
-  location: string        // Named location (trail name, neighborhood, restaurant name, etc.)
+  location: string        // Most specific location across all sources
   category: string        // e.g. "trail", "viewpoint", "restaurant", "museum", "tour"
-  key_facts: string[]     // 2–4 factual bullets: distance, elevation, hours, price, etc.
-  source_url: string      // The search result URL that verified this experience
+  key_facts: string[]     // Richest merged set of facts across all sources
+  source_urls: string[]   // All pages that mentioned this experience
 }
 
 // ─── Pipeline Nodes ───────────────────────────────────────────────────────────
