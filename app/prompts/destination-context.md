@@ -64,7 +64,7 @@ Rules:
 - The list must span the full experience spectrum. It cannot be all landmarks, all food, or all in-city. Required coverage slots:
   - At least 1 iconic natural or built landmark every visitor photographs
   - At least 1 defining food experience (market, dish, restaurant institution, culinary ritual)
-  - At least 1 major day trip, if the destination has a day_trips theme — the most famous destination reachable in a day (name it specifically, not "a nearby town")
+  - At least 1 major day trip, if the destination has a day_trips theme — name the thing travelers are going to see, not the town they pass through to get there. If travelers go to a nearby town primarily because it has views of a famous mountain, the mountain is the must_cover entry. If they go to a nearby historic city, name the city. Name the destination, not the gateway.
   - At least 1 time-sensitive experience: a major recurring sporting event, festival, or seasonal phenomenon strongly associated with this destination (note the month or season)
 - For seasonal/event entries: note the timing (e.g. "Aki Basho Sumo Tournament — September", "Cherry Blossom Season — late March to early April").
 - Do not pad with generic experiences. All 10 must be genuine must-covers — the experiences whose absence a senior editor would immediately notice.
