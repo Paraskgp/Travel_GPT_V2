@@ -121,13 +121,26 @@ interface GroundedExperience {
 
 3. **Step 2 — URL tracking:** build `urlsByName` map from pre-grouped list, keyed by normalized name. Source URLs are **stripped entirely from LLM input and output** — they bloat the JSON output and cause output truncation. The LLM never sees or returns URLs.
 
-4. **Step 3 — LLM semantic dedup (one call — input is name/location/category only):**
-   - `key_facts` are **stripped from the LLM input** — the merge decision only needs name + location + category + LLM world knowledge. Sending key_facts (3–4 bullets × 100 chars × 400 entries = ~60k token input) was the root cause of the token overflow crash.
-   - `factsByName` map is built from the pre-grouped list in parallel with `urlsByName` — same lookup pattern, keyed by normalized name.
-   - LLM input: `{ name, location, category }[]` (no `source_url`, no `key_facts`)
-   - Stage: `"experience_dedup"` → Gemini 2.5 Flash, max_tokens: 65536 (thinking tokens + output; now well within budget since input is ~10k tokens)
-   - System prompt: `prompts/experience-dedup.md` — handles true name variations ("Angel's Landing" vs "Angels Landing Hike") that the deterministic step can't catch
-   - Output: `{ name, location, category }[]` — no `key_facts`, no `source_urls`
+4. **Step 3 — LLM semantic dedup (key_facts stripped; chunked for large inputs):**
+
+   Two independent fixes are both required. Neither alone is sufficient:
+
+   **Fix A — key_facts strip (required regardless of city size):**
+   - `key_facts` are stripped from the LLM dedup input and output. The merge decision only needs name + location + category + LLM world knowledge. Sending full key_facts (3–4 bullets × ~100 chars × N entries) caused the input to balloon to 60k+ tokens for moderate cities.
+   - `factsByName` map is built from the pre-grouped list in parallel with `urlsByName`. After dedup, key_facts are stitched back deterministically (same lookup pattern as source_urls).
+   - Reduced per-entry token cost from ~600 chars → ~100 chars (6× reduction).
+
+   **Fix B — chunked dedup (required for large cities with 500+ pre-dedup entries):**
+   - Large cities (Tokyo: 1561 pre-dedup entries) still overflow even with key_facts stripped. The output alone (700+ canonical names × ~80 chars) approaches the max_tokens ceiling when combined with Gemini's thinking token overhead.
+   - Chunk size: `DEDUP_CHUNK_SIZE = 350`. For 1561 entries: 5 chunks of ≤350.
+   - Per chunk: ~35k chars input = ~9k tokens. Thinking ~10k. Output ~200 × 80 chars = 4k tokens. Total ~23k — well within 65536.
+   - Chunks run in parallel (`Promise.allSettled`). Failed chunks are logged and dropped (non-fatal).
+   - Combined chunk outputs (5 × ~200 = ~1000 entries): final single LLM pass over all combined results. Final pass input: ~25k tokens. Output: ~500 × 80 chars = 10k tokens. Total ~35k — fits.
+   - If `preGrouped.length <= DEDUP_CHUNK_SIZE`: single call (no chunking overhead for small destinations).
+
+   LLM input: `{ name, location, category }[]` — no `source_url`, no `key_facts`
+   LLM output: `{ name, location, category }[]` — no `key_facts`, no `source_urls`
+   Stage: `"experience_dedup"` → Gemini 2.5 Flash, max_tokens: 65536
 
 5. **Step 4 — Stitch-back (deterministic):** for each LLM canonical name, look up both `source_urls` (from `urlsByName`) and `key_facts` (from `factsByName`). Exact normalized match first; fall back to substring match. Attach as `source_urls: string[]` and `key_facts: string[]` on the final `GroundedExperience`.
 
@@ -178,7 +191,9 @@ interface GroundedExperience {
 
 - **[DONE 2026-05-28]** Map phase parallelism: `runWithConcurrency(items, 20, fn)` caps parallel Gemini calls at 20. Prevents rate-limit exhaustion on free tier.
 - **[DONE 2026-05-28]** Gemini dedup truncation (output): Gemini 2.5 Flash uses thinking tokens against max_tokens budget. Fixed by setting dedup stage to 65536 (model ceiling) and stripping source_urls from LLM I/O.
-- **[DONE 2026-05-29]** Gemini dedup crash for large cities (input overflow): root cause was sending full key_facts arrays in the LLM dedup input. 400 pre-grouped candidates × ~600 chars of pretty-printed JSON with key_facts = ~60k token input, overwhelming the model before output even starts. Fix: strip key_facts from LLM dedup I/O entirely. key_facts are tracked in a `factsByName` map (same pattern as `urlsByName`) and stitched back deterministically after dedup. LLM input drops to ~10k tokens regardless of candidate count.
+- **[DONE 2026-05-29]** Gemini dedup crash for large cities — two independent root causes, both fixed:
+  1. **key_facts in LLM input**: sending full key_facts arrays (3–4 bullets × ~100 chars × N entries) bloated input to 60k+ tokens. Fixed by stripping key_facts from LLM dedup I/O and stitching them back from `factsByName` after dedup.
+  2. **Output overflow for very large cities**: Tokyo pre-dedup produces 1561 unique names. Even without key_facts, output (700+ canonical entries) combined with Gemini thinking tokens exceeds 65536 max_tokens. Fixed by chunked dedup: split into batches of ≤350, dedup in parallel, final merge pass over combined outputs.
 - **[DONE 2026-05-28]** Content truncation: extractor content capped at 40k chars. Extractor output limit raised from 8192 → 32768 (Gemini 2.5 Flash thinking tokens consume the budget before producing visible output — 16384 was still insufficient for dense pages). Verified: undercanvas.com now extracts 37 experiences (was 0), noahlangphotography.com extracts 19 (was 0).
 - **[PENDING 2026-05-28]** Category taxonomy is free-form. LLM produces inconsistent strings ("canyoneering" vs "canyoneering tour" vs "canyoneering / trail"). Add a closed enum to the extractor prompt.
 - No retry if final `GroundedExperience` count < 30. (2026-05-28)

@@ -171,23 +171,62 @@ function preDedupByName(candidates: RawExperience[]): RawExperience[] {
   }))
 }
 
+// ─── Dedup constants ──────────────────────────────────────────────────────────
+// Large cities produce 1000+ unique names after pre-dedup (Tokyo: 1561).
+// Two independent fixes are needed:
+//
+// 1. key_facts STRIP: key_facts are not needed for the merge decision. Stripping
+//    them reduces per-entry token cost from ~600 chars to ~100 chars (6× reduction).
+//    Without this, even moderate cities hit 60k+ input tokens.
+//
+// 2. CHUNKED DEDUP: even without key_facts, 1500+ entries × output (700+ canonical
+//    names × ~80 chars) approaches Gemini's 65536 max_tokens ceiling when combined
+//    with thinking token overhead. Chunking to ≤350 entries per LLM call keeps
+//    each call well within budget. A final merge pass over all chunk outputs
+//    handles cross-chunk name variations.
+//
+// Neither fix alone is sufficient for large cities like Tokyo.
+const DEDUP_CHUNK_SIZE = 350
+
+type DedupSlim = { name: string; location: string; category: string }
+
+/**
+ * One LLM dedup call over a single chunk of {name, location, category} entries.
+ * Returns [] on failure — one bad chunk does not abort the whole pipeline.
+ */
+async function dedupChunk(
+  chunk: DedupSlim[],
+  dest: string,
+  provider: Provider
+): Promise<DedupSlim[]> {
+  const raw = await callLLM(
+    dedupSystemPrompt(),
+    dedupUserPrompt(chunk, dest),
+    provider,
+    "experience_dedup"
+  )
+  return parseJSON<DedupSlim[]>(raw)
+}
+
+function chunkArray<T>(arr: T[], size: number): T[][] {
+  const chunks: T[][] = []
+  for (let i = 0; i < arr.length; i += size) chunks.push(arr.slice(i, i + size))
+  return chunks
+}
+
 /**
  * Reduce phase: merge and deduplicate raw candidates extracted across all pages.
  *
  * Step 1 (deterministic): pre-dedup by normalized name — groups exact/near-exact name
- *   matches, merges key_facts, and builds a source_url map keyed by canonical name.
- *   Reduces ~500 candidates to ~80-100 unique names before the LLM sees anything.
+ *   matches, merges key_facts, and builds source_url + key_facts maps keyed by name.
+ *   Reduces raw candidates to unique names before the LLM sees anything.
  *
- * Step 2 (LLM): semantic dedup over the pre-grouped list — handles true name variations
- *   ("Angel's Landing" vs "Angels Landing") that the deterministic step can't catch.
- *   key_facts and source_urls are stripped from LLM input and output entirely — the
- *   LLM only sees {name, location, category}, which is all it needs to decide whether
- *   two entries are the same place. Sending full key_facts (3–4 bullets × 100 chars ×
- *   400 entries = ~60k token input) was the root cause of token overflow for large cities.
- *   With key_facts stripped, input is ~10k tokens regardless of candidate count.
+ * Step 2 (LLM, chunked): semantic dedup over pre-grouped {name, location, category}
+ *   — key_facts and source_urls stripped from LLM I/O entirely (not needed for merge
+ *   decisions, only bloat). For inputs > DEDUP_CHUNK_SIZE: parallel chunk passes,
+ *   then one final merge pass over combined outputs.
  *
- * Step 3 (deterministic): reconstruct source_urls and key_facts by fuzzy-matching the
- *   LLM's canonical names back to the pre-grouped maps, then attach them.
+ * Step 3 (deterministic): stitch source_urls + key_facts back from pre-grouped maps.
  *
  * This function is clean-swappable: embedding-based clustering could replace step 2
  * without changing callers.
@@ -200,17 +239,12 @@ export async function dedupExperiences(
   if (candidates.length === 0) return []
 
   // Step 0: filter out clearly off-destination candidates
-  // Candidates whose location doesn't reference the destination region are extraction
-  // noise (e.g. "Yosemite National Park" extracted from an AccuWeather comparison page).
   const destWords = dest.toLowerCase().split(/\s+/).filter(w => w.length > 3)
   const relevant = candidates.filter(c => {
     const loc = c.location.toLowerCase()
-    // Keep if location mentions any meaningful word from the destination name
     if (destWords.some(w => loc.includes(w))) return true
-    // Keep if the name itself mentions a destination word (e.g. "Zion Canyon Shuttle")
     const name = c.name.toLowerCase()
     if (destWords.some(w => name.includes(w))) return true
-    // Keep if no location at all (extractor may omit it for nearby items)
     return false
   })
   console.log(`[dedupExperiences] relevance filter: ${candidates.length} → ${relevant.length} candidates`)
@@ -222,8 +256,7 @@ export async function dedupExperiences(
   const normalize = (s: string) =>
     s.toLowerCase().replace(/['''"]/g, "").replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim()
 
-  // Build URL and key_facts lookups from pre-grouped list (keyed by normalized name).
-  // Both are tracked outside the LLM — the LLM never sees or returns either field.
+  // Build URL and key_facts lookups — both tracked outside the LLM.
   const urlsByName  = new Map<string, string[]>()
   const factsByName = new Map<string, string[]>()
   for (const c of preGrouped) {
@@ -232,21 +265,56 @@ export async function dedupExperiences(
     factsByName.set(key, c.key_facts)
   }
 
-  // Step 2: LLM semantic dedup — input is {name, location, category} only.
-  // key_facts and source_urls are omitted: they bloat the input (60k+ tokens for large
-  // cities) and are not needed for the merge decision.
-  const llmInput = preGrouped.map(({ source_url: _url, key_facts: _facts, ...rest }) => rest)
-  const raw = await callLLM(
-    dedupSystemPrompt(),
-    dedupUserPrompt(llmInput, dest),
-    provider,
-    "experience_dedup"
-  )
-  const merged = parseJSON<Array<{ name: string; location: string; category: string }>>(raw)
+  // Step 2: LLM semantic dedup — {name, location, category} only, no key_facts, no source_urls.
+  const llmInput: DedupSlim[] = preGrouped.map(({ name, location, category }) => ({ name, location, category }))
 
-  // Step 3: stitch source_urls and key_facts back — match LLM canonical name to pre-grouped map.
-  // Exact normalized match first; fall back to fuzzy (first pre-grouped entry whose
-  // normalized name contains the LLM name or vice versa).
+  let merged: DedupSlim[]
+
+  if (llmInput.length <= DEDUP_CHUNK_SIZE) {
+    // Small destination: single LLM call
+    const raw = await callLLM(
+      dedupSystemPrompt(),
+      dedupUserPrompt(llmInput, dest),
+      provider,
+      "experience_dedup"
+    )
+    merged = parseJSON<DedupSlim[]>(raw)
+  } else {
+    // Large destination: chunk → parallel dedup → final merge pass
+    const chunks = chunkArray(llmInput, DEDUP_CHUNK_SIZE)
+    console.log(`[dedupExperiences] chunked dedup: ${llmInput.length} → ${chunks.length} chunks of ≤${DEDUP_CHUNK_SIZE}`)
+
+    const settled = await Promise.allSettled(
+      chunks.map((chunk, i) =>
+        dedupChunk(chunk, dest, provider).then(r => {
+          console.log(`[dedupExperiences] chunk ${i + 1}/${chunks.length}: ${chunk.length} → ${r.length}`)
+          return r
+        })
+      )
+    )
+
+    const combined: DedupSlim[] = []
+    let failures = 0
+    for (const r of settled) {
+      if (r.status === "fulfilled") combined.push(...r.value)
+      else { failures++; console.warn(`[dedupExperiences] chunk failed: ${r.reason}`) }
+    }
+    console.log(`[dedupExperiences] chunks done: ${combined.length} combined (${failures} failed) — final merge pass...`)
+
+    // Final pass: one LLM call over combined chunk outputs.
+    // Combined is much smaller: ~200 per chunk × N chunks.
+    const finalRaw = await callLLM(
+      dedupSystemPrompt(),
+      dedupUserPrompt(combined, dest),
+      provider,
+      "experience_dedup"
+    )
+    merged = parseJSON<DedupSlim[]>(finalRaw)
+    console.log(`[dedupExperiences] final merge: ${combined.length} → ${merged.length}`)
+  }
+
+  // Step 3: stitch source_urls and key_facts back from pre-grouped maps.
+  // Exact normalized match first; fall back to substring match.
   function lookup<T>(map: Map<string, T>, key: string, fallback: T): T {
     const exact = map.get(key)
     if (exact !== undefined) return exact
