@@ -27,6 +27,15 @@ A gap is a **specific named experience** that:
 
 ---
 
+## Also check: theme integrity
+
+Scan each theme for cards that obviously don't belong there. Examples of theme integrity failures:
+- Day Trips theme containing in-city attractions that are NOT excursions outside the main city
+- Seasonal theme containing year-round experiences (not actually seasonal)
+- Hiking/Outdoors theme containing urban or indoor experiences
+
+If you find theme integrity failures, flag them as gaps — e.g. "Mount Fuji Day Trip — Day Trips theme currently has zero actual day trips from Tokyo; all 4 cards are in-city activities."
+
 ## Rules
 
 1. **Check before flagging.** If the board already has the experience under a slightly different name or in a different theme, it is NOT a gap. Only flag things that are truly absent.
