@@ -50,6 +50,8 @@ List of theme IDs from this approved set that genuinely apply to this destinatio
 
 **`signature` is always required.** Every real destination has signature experiences. Do not omit it.
 
+**`seasonal` is required for any destination with recurring seasonal events** — festivals, sporting tournaments (sumo basho, Carnival, marathons), natural phenomena (cherry blossoms, whale migration, northern lights), or major annual gatherings. If must_cover contains any time-sensitive experience, `seasonal` must appear in applicable_themes. The theme covers the destination's full seasonal calendar — it is not about one specific travel month.
+
 A destination with a nightlife scene gets `nightlife` even if the traveler is not a party person. A food-rich city gets `food_drink` and `food_crawls` regardless of dietary preferences. Preferences affect how experiences are ranked within a theme — they never determine whether a theme appears at all.
 
 Only exclude a theme if the destination genuinely has nothing meaningful to offer in that category. Do not force-fit.
@@ -61,10 +63,11 @@ Exactly 10 named experiences that every serious travel guide to this destination
 
 Rules:
 - Specific named experiences, not categories. Not "a volcano" — name the volcano. Not "traditional sports" — name the event and month.
+- **One experience per entry. No parenthetical bundling.** Each entry names exactly one place, event, or experience. "Hakone (for Mount Fuji views)" is two separate must-covers if both are genuinely world-famous — they each get their own entry. Parenthetical qualifiers that describe a second distinct experience are not permitted.
 - The list must span the full experience spectrum. It cannot be all landmarks, all food, or all in-city. Required coverage slots:
   - At least 1 iconic natural or built landmark every visitor photographs
   - At least 1 defining food experience (market, dish, restaurant institution, culinary ritual)
-  - At least 1 major day trip, if the destination has a day_trips theme — name the thing travelers are going to see, not the town they pass through to get there. If travelers go to a nearby town primarily because it has views of a famous mountain, the mountain is the must_cover entry. If they go to a nearby historic city, name the city. Name the destination, not the gateway.
+  - At least 1 major day trip, if the destination has a day_trips theme — name the destination travelers go to experience, not the town they pass through to get there. If the day trip is a famous natural landmark (mountain, canyon, coastline), name the landmark. If it is a historic town or city worth visiting for its own sake, name the town. Do not conflate the two.
   - At least 1 time-sensitive experience: a major recurring sporting event, festival, or seasonal phenomenon strongly associated with this destination (note the month or season)
 - For seasonal/event entries: note the timing (e.g. "Aki Basho Sumo Tournament — September", "Cherry Blossom Season — late March to early April").
 - Do not pad with generic experiences. All 10 must be genuine must-covers — the experiences whose absence a senior editor would immediately notice.

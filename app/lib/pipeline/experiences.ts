@@ -149,15 +149,18 @@ function preDedupByName(candidates: RawExperience[]): RawExperience[] {
 
   for (const c of candidates) {
     const key = normalize(c.name)
+    // Normalize key_facts — extractor LLM sometimes omits the field (returns null/undefined).
+    // Guard here so pre-dedup never throws on a missing field.
+    const facts: string[] = Array.isArray(c.key_facts) ? c.key_facts : []
     if (!grouped.has(key)) {
-      grouped.set(key, { ...c, _all_source_urls: [c.source_url] })
+      grouped.set(key, { ...c, key_facts: facts, _all_source_urls: [c.source_url] })
     } else {
       const existing = grouped.get(key)!
       // Keep richest location (longer = more specific)
       if (c.location.length > existing.location.length) existing.location = c.location
       // Merge key_facts — union by content
       const factsSet = new Set(existing.key_facts)
-      for (const f of c.key_facts) {
+      for (const f of facts) {
         if (!factsSet.has(f)) { factsSet.add(f); existing.key_facts.push(f) }
       }
       existing._all_source_urls.push(c.source_url)

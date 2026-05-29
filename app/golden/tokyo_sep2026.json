@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "destination": "Tokyo, Japan",
+    "travel_month": "September",
+    "created": "2026-05-29",
+    "notes": "September is Aki Basho month. Board must include Mount Fuji as a standalone day trip (not collapsed into Hakone). Seasonal theme should appear for Aki Basho sumo tournament."
+  },
+  "specs": {
+    "grounding": {
+      "required": [
+        "Senso-ji Temple",
+        "Shibuya Crossing",
+        "Tsukiji",
+        "Tokyo Skytree",
+        "Shinjuku Gyoen",
+        "Mount Fuji",
+        "teamLab"
+      ],
+      "forbidden": [
+        "Sakura Blossom Fantasy District",
+        "Neo-Tokyo Virtual Experience Center",
+        "Fuji Sky Lounge"
+      ],
+      "min_count": 80
+    },
+    "board": {
+      "required": [
+        "Senso-ji Temple",
+        "Shibuya Crossing",
+        "Tsukiji",
+        "Tokyo Skytree",
+        "Shinjuku Gyoen",
+        "teamLab"
+      ],
+      "forbidden": [
+        "Sakura Blossom Fantasy District",
+        "Neo-Tokyo Virtual Experience Center"
+      ],
+      "required_effort_levels": {
+        "day_trips": ["light", "moderate"],
+        "food_drink": ["light"],
+        "culture": ["light", "moderate"]
+      },
+      "notes": {
+        "day_trips": "Must include Mount Fuji as a standalone card — not collapsed into Hakone. Hakone may also appear as a separate card (it is a distinct destination). A traveler who visited Hakone did not summit or experience Mount Fuji.",
+        "seasonal": "For September travel, Aki Basho Sumo Tournament (held at Ryogoku Kokugikan, mid-September) should appear on the board. If seasonal theme is absent entirely, that is a gap — September has a defining recurring event.",
+        "food_crawls": "At least one ramen experience and one izakaya or standing bar experience should appear."
+      }
+    }
+  }
+}
