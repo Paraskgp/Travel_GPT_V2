@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TravelGPT V2 — Builder Learnings</title>
+<style>
+  body { font-family: Georgia, serif; max-width: 800px; margin: 60px auto; padding: 0 24px; color: #1a1a1a; line-height: 1.75; font-size: 17px; }
+  h1 { font-size: 26px; margin-bottom: 4px; }
+  h2 { font-size: 20px; margin-top: 56px; margin-bottom: 8px; border-bottom: 1px solid #ddd; padding-bottom: 6px; }
+  h3 { font-size: 17px; margin-top: 32px; margin-bottom: 4px; }
+  p { margin: 12px 0; }
+  ul { margin: 8px 0; padding-left: 22px; }
+  li { margin: 6px 0; }
+  .meta { color: #666; font-size: 14px; margin-bottom: 40px; }
+  .callout { background: #f7f7f7; border-left: 3px solid #999; padding: 12px 18px; margin: 20px 0; font-size: 16px; }
+  .tag { display: inline-block; background: #eee; border-radius: 3px; padding: 1px 7px; font-size: 13px; margin-right: 4px; font-family: monospace; }
+  code { background: #f0f0f0; padding: 1px 5px; border-radius: 3px; font-size: 15px; }
+  hr { border: none; border-top: 1px solid #eee; margin: 48px 0; }
+</style>
+</head>
+<body>
+
+<h1>Building TravelGPT V2 — Everything I Learned in 10 Days</h1>
+<p class="meta">Paras Deshpande &nbsp;·&nbsp; May 2026 &nbsp;·&nbsp; 14 commits &nbsp;·&nbsp; ~12 modules &nbsp;·&nbsp; 2 national parks audited &nbsp;·&nbsp; 1 product shipped</p>
+
+<p>This is not a launch post. This is a retrospective — the raw, unfiltered record of what I got right, what I got badly wrong, and what I'd do differently if I started TravelGPT V2 again tomorrow. I'm writing it for myself as much as anyone else.</p>
+
+<p>The project: build an AI travel planner that takes a destination and generates a board of curated experiences, then converts that board into a personalized day-by-day itinerary. Not a search engine. Not a booking tool. The well-traveled friend who hands you an honest, specific, opinionated plan.</p>
+
+<p>10 days. Two full pipeline passes. Two national parks tested. 37 experience cards audited. Enough bugs to fill a notebook. Here's what actually happened.</p>
+
+<hr>
+
+<h2>Part 1 — How I approached the build as a PM</h2>
+
+<h3>I wrote a PR FAQ before writing a line of code</h3>
+
+<p>The initial commit includes a 629-line <code>Travel_GPT_MLP_PR_FAQ.md</code>. I forced myself to answer questions a journalist would ask about the launched product before the product existed: What does this do? Who is it for? Why does this exist when Google Flights and TripAdvisor already exist? What does it NOT do?</p>
+
+<p>This was the best decision I made in the entire project. The PR FAQ forced clarity that no amount of architecture diagrams would have. Three things it surfaced immediately:</p>
+
+<ul>
+  <li>The product's job is not trip logistics — it's reducing the activation energy from "I want to go somewhere" to "I have a plan I trust"</li>
+  <li>The core differentiator is specificity: a tip that could appear in a guidebook to a different city is not a tip</li>
+  <li>Booking, pricing, and accounts are explicitly out of scope — if I didn't write this down, I would have tried to build them</li>
+</ul>
+
+<p class="callout">Lesson: A PR FAQ is not marketing preparation. It is architecture. It forces you to make product decisions before they become code decisions, which is 10x cheaper.</p>
+
+<h3>I defined core principles, not just features</h3>
+
+<p>The product spec has six principles, not a feature list. Things like: "De-duplication above all. One card per underlying experience, ever." And: "Specificity over generality. A tip that could appear in a guidebook to a different city is not a tip." And: "Board is universal, itinerary is personal."</p>
+
+<p>These principles made dozens of later decisions obvious. When the LLM generated the same kayaking tour from three different operators, the principle "one card, ever" told me exactly what to do. When I debated whether to put party type filtering in board generation or itinerary planning, "board is universal" gave me the answer immediately.</p>
+
+<p class="callout">Lesson: Write principles, not just requirements. A good principle eliminates entire categories of design debates. A feature list just adds more things to disagree about.</p>
+
+<h3>I enforced a docs-before-code gate — in the repo itself</h3>
+
+<p>After one sprint where I wrote code first and the architecture drifted from what I'd intended, I added a hard rule to <code>AGENTS.md</code> and <code>CLAUDE.md</code>:</p>
+
+<p><em>Before writing or editing any code, state: "Docs updated: product-specs/[module].md and implementation-plan/[module].md reflect this change." If you cannot say this, update the docs first. This is not optional.</em></p>
+
+<p>This felt bureaucratic the first time I enforced it on myself. It wasn't. Product specs and implementation plans written before the code forced me to think about module contracts — what goes in, what comes out, what the success criteria are — before touching TypeScript. The resulting code was more modular and the bugs were more legible because the intent was written down separately from the implementation.</p>
+
+<p class="callout">Lesson: The discipline of writing docs first is not process overhead. It is the act of thinking clearly. Code written without that thinking is just fast-moving confusion.</p>
+
+<h3>I defined success criteria per module, not per sprint</h3>
+
+<p>Every <code>product-specs/[module].md</code> has a "Success criteria" section with checkable, specific statements. Not "the itinerary should be good." Things like: "No outdoor hike may be scheduled ending after sunset. No back-to-back strenuous days for a couple. The reviewer's change_log must not contain phantom entries."</p>
+
+<p>These criteria became the prompts for my self-critique sessions. They also made it obvious when something was broken, because the criterion was specific enough to test.</p>
+
+<hr>
+
+<h2>Part 2 — How I harnessed AI as a builder</h2>
+
+<h3>I treated AI as a thinking partner, not an executor</h3>
+
+<p>The biggest shift from how most people use LLMs to how I used them here: I didn't just ask AI to "build the itinerary planner." I asked it to critique the itinerary planner's output using an 11-point structured framework, then asked it to explain the root cause of each failure before proposing a fix.</p>
+
+<p>This matters because "fix the itinerary" produces a patch. "Explain why this happened" produces an architecture change. Almost every significant improvement in this project came from diagnosis before prescription.</p>
+
+<h3>I wrote structured critiques, not vague feedback</h3>
+
+<p>After the first Zion itinerary run, I produced a full critique document — 11 specific failures, each with the exact text from the itinerary, the correct behavior, and the root cause in the prompt or code. Every critique entry answered: <em>Why did this happen, not just what happened?</em></p>
+
+<p>Example: "Pass 2 returned 'No changes — itinerary passed all checks' despite five visible violations. Root cause: the reviewer didn't know the November sunset time, so the sunset violation check had no data to run on." That root cause pointed directly to the fix: inject weather context into Pass 2.</p>
+
+<p class="callout">Lesson: Vague feedback ("the itinerary isn't great") produces vague changes. Specific root-cause analysis produces structural fixes. The difference between a 1-iteration improvement and a permanent fix is the quality of your diagnosis.</p>
+
+<h3>I ran multiple iterations with explicit convergence criteria</h3>
+
+<p>After the critique, I ran the pipeline 3–4 more times and tracked each iteration against the 11 failure modes. Not "does this look better?" but "does this specific check now pass?" The itinerary only graduated when all 11 failures either resolved or were documented as known limitations with a plan.</p>
+
+<h3>I tested on a second destination before claiming the system worked</h3>
+
+<p>After fixing the Zion itinerary, the natural instinct is to ship. Instead, I ran the full pipeline on Yellowstone National Park with a completely different party type (family with young children). This was the most valuable test I ran.</p>
+
+<p>It immediately surfaced that three strings in the prompts were Zion-specific — "Virgin River" in a generic cold-water warning, "Zion Canyon Shuttle" as an example shuttle row, "The Narrows in November" as a planning note example. None of these broke the Zion test because of course they didn't — I'd written the prompts while staring at Zion output. The Yellowstone run made the overfitting visible in 10 minutes.</p>
+
+<p class="callout">Lesson: Your first test case teaches the system. Your second test case tests it. Don't claim generality until you've tested with something genuinely different — different destination, different party type, different season.</p>
+
+<h3>I used AI to audit AI's own inputs</h3>
+
+<p>Board generation is the input to itinerary planning. Bad boards produce bad itineraries. I ran structured board coverage audits for both Yellowstone and Zion — reading every experience card and asking: Is this location real? Can this tip be verified? Is anything dangerous omitted? Are there duplicates?</p>
+
+<p>The Yellowstone audit found a completely invented location ("Tonnage Point" — doesn't exist), a geographic impossibility (one geyser basin "visible from" another 8 miles away), and a museum exhibit that was likely fabricated. The Zion audit found a climbing area that mapped to the wrong state entirely — the coordinates pointed to Cache County, Utah, 280 miles from Zion. These failures were invisible until someone read every card as a skeptic.</p>
+
+<p class="callout">Lesson: LLMs hallucinate most when generating specifics about real places. The more specific the claim — a cave formation name, a directional tip, a distance — the more likely it's been confabulated. Verify the specifics, not the generalities.</p>
+
+<hr>
+
+<h2>Part 3 — The technical patterns that actually worked</h2>
+
+<h3>Move counting to code, not LLMs</h3>
+
+<p>The most reliable fix I made in the entire project: when Yellowstone family_young itineraries kept exceeding the two-activity-per-day limit despite the prompt saying "max 2," I moved the count out of the LLM and into TypeScript. Before calling the reviewer, the code counts activity rows per day, finds violations, and injects explicit directives: "⚠️ Day 3: 3 activity rows — VIOLATION. Must remove 1. Least essential: [name]."</p>
+
+<p>LLMs do not count reliably. They generate a token stream that produces JSON that happens to contain arrays that they didn't enumerate in their working memory. Counting is cheap in code and expensive in LLMs. Do the counting in code, feed the result to the LLM, ask the LLM to fix what the code already identified.</p>
+
+<p class="callout">Pattern: <strong>Pre-flight violation injection.</strong> Use code to detect violations, inject them as explicit directives into the LLM prompt. Never ask an LLM to detect violations in its own output by re-reading it.</p>
+
+<h3>Make reviewer language corrective, not advisory</h3>
+
+<p>Early versions of the reviewer prompt said things like "if the drive between activities exceeds 45 minutes, consider moving one activity." The reviewer would consider it, write about considering it, and leave the activity in place.</p>
+
+<p>The fix was mechanical: replace every "consider," "suggest," "might," and "if possible" with "MOVE," "REMOVE," "ADD," "THIS IS A VIOLATION." The reviewer's job is to fix, not to consult.</p>
+
+<p class="callout">Pattern: <strong>LLMs follow the energy of their instructions.</strong> Advisory language produces advisory behavior. Corrective language produces corrective behavior. Write reviewer prompts the way you'd write a checklist for a quality control step, not the way you'd write an email to a coworker.</p>
+
+<h3>Both pipeline passes need the same context</h3>
+
+<p>A subtle bug: Pass 1 (the planner) received the weather context block with the November sunset time. Pass 2 (the reviewer) did not. So Pass 1 would correctly schedule activities ending before sunset, but Pass 2 would see no sunset time, run no sunset check, and approve activities that violated it.</p>
+
+<p>Every pass in a multi-pass pipeline needs the same ground truth. Not "the reviewer gets a summary of the planner's output." The reviewer gets everything the planner got, plus the planner's output.</p>
+
+<h3>Give the reviewer data it can act on, not data it has to derive</h3>
+
+<p>The reviewer had trouble detecting back-to-back strenuous days for couple itineraries. Why? Because it had to: (a) identify which activity names correspond to strenuous experiences, (b) map them to day numbers, (c) check if any two day numbers differ by 1. That's three steps of derived reasoning on top of the raw data.</p>
+
+<p>The fix: before calling the reviewer, extract all experiences with <code>effort: strenuous</code> from the board and inject them as a pre-computed list: "Strenuous activities: Angels Landing (strenuous), The Narrows (strenuous), West Rim Trail (strenuous)." Now the reviewer just needs to check if those names appear on consecutive days — one step instead of three.</p>
+
+<p class="callout">Pattern: <strong>Pre-compute what the LLM would have to derive.</strong> Every step of reasoning an LLM has to perform is a failure point. If you can compute it in code and inject the result, do that.</p>
+
+<h3>Build null-safe fallbacks for partial data</h3>
+
+<p>The Yellowstone board was generated before the weather context schema was finalized. Its month fields had <code>null</code> for sunrise, sunset, and season type. The first version of the seasonal conditions block would have injected "Sunset: null" and "No activity may end after null" into the prompt — which the LLM would interpret as a literal instruction.</p>
+
+<p>The fix: a two-tier block. If sunset data exists: inject the full block with the hard constraint. If sunset is null: inject only the travel implications, no sunset constraint. The fallback degrades gracefully rather than silently breaking.</p>
+
+<p class="callout">Pattern: <strong>Partial data is worse than no data.</strong> A null injected into a prompt as a literal string causes silent, hard-to-diagnose failures. Check your data before injecting it. Degrade to the next tier.</p>
+
+<h3>The change_log integrity problem</h3>
+
+<p>Reviewers would write change_log entries for changes they didn't actually make. "Removed Angels Landing — strenuous violation" would appear in the log while Angels Landing remained in the output JSON. This is an LLM-specific failure mode: the model writes the change_log optimistically, based on what it planned to do, then generates the JSON separately and unconsciously reverts.</p>
+
+<p>Partial fix: an explicit "Change_log integrity" section in the reviewer prompt requiring verification of every entry before including it. Full fix, not yet implemented: post-process the JSON in code to independently verify claimed removals. The lesson is that LLMs' self-reports about their own output cannot be trusted without verification.</p>
+
+<p class="callout">Pattern: <strong>LLMs report what they intended, not what they did.</strong> Don't trust a change_log, a summary, or a "I've updated X" message in LLM output. Verify the actual output against the claimed change.</p>
+
+<hr>
+
+<h2>Part 4 — What went wrong</h2>
+
+<h3>I tried one-shot itinerary generation first</h3>
+
+<p>The first itinerary pipeline was a single LLM call: "Here's the board. Generate a complete itinerary." The initial commit for itinerary planning (<code>b726ba6</code>) did exactly this. It produced plausible-looking output that was wrong in subtle ways — geographically incoherent, party type rules inconsistently applied, no safety checks, generic planning notes everywhere.</p>
+
+<p>It took a full critique session to understand that the problem wasn't the prompt text — it was the architecture. One LLM call cannot simultaneously enforce geographic clustering, party type rules, temporal constraints, safety checks, and note quality. These are competing attentional demands on a single pass.</p>
+
+<p>The multi-pass architecture (cluster → draft → review) didn't emerge from upfront design. It emerged from debugging a one-shot failure. I should have started there.</p>
+
+<h3>I treated Pass 2 as a light pass when it needed to be heavy</h3>
+
+<p>Early versions of the reviewer prompt were short — a few checks, soft language, "no changes if the itinerary looks good." This produced a rubber stamp. The reviewer would acknowledge violations in its reasoning and then not fix them.</p>
+
+<p>The fix was to make the reviewer a full document: 10 numbered checks, each with hard rules, specific examples of correct and incorrect behavior, and the explicit instruction "do not flag and leave — fix it or remove it." The reviewer is now longer than the planner prompt. That's the right ratio for what it needs to do.</p>
+
+<h3>I wrote prompts while looking at the test case I was fixing</h3>
+
+<p>When I fixed the cold-water warning for November Narrows, I wrote the tip to say "the Virgin River in November." When I fixed the shuttle row example, I used "Zion Canyon Shuttle." When I wrote a planning note example, I used "The Narrows in November." Every fix was correct for the case I was looking at. Every fix was wrong for every other destination.</p>
+
+<p>The Yellowstone run found all three Zion-specific strings and made the pattern obvious: I was writing prompts while staring at Zion output, which meant I was unconsciously training the prompt for Zion. The fix was to replace every destination-specific string with a generic equivalent — "this waterway" instead of "Virgin River," "[Destination] Shuttle" instead of "Zion Canyon Shuttle."</p>
+
+<p class="callout">Lesson: <strong>When you write a prompt fix while staring at a failing test case, you are overfitting.</strong> Every example, every named place, every specific tip in a prompt is a Trojan horse that encodes your current test case. Generalize aggressively.</p>
+
+<h3>Board quality was an afterthought</h3>
+
+<p>The entire itinerary pipeline — three passes, 10 checks, preflight injection, weather context — depends on board quality as its input. I spent weeks on the pipeline before I systematically audited the boards.</p>
+
+<p>When I did audit them, I found: a climbing area mapped to the wrong state. A closed trail presented as a walk-in experience. A non-existent waterfall. Two separate cards for the same trail in the same board, which would let the itinerary schedule that trail twice. An experience rated strenuous in one card and moderate in another.</p>
+
+<p>No amount of pipeline quality fixes a board that contains hallucinated places and contradictory data. The board audit should have come before the pipeline overhaul, not after it.</p>
+
+<p class="callout">Lesson: <strong>In an AI pipeline, the quality of the output is bounded by the quality of the input.</strong> Debugging the transformation when the source data is broken is backwards. Audit inputs first.</p>
+
+<hr>
+
+<h2>Part 5 — Durable takeaways for future AI product builds</h2>
+
+<h3>The architecture I'd start with today</h3>
+
+<p>If I started TravelGPT V2 again, the pipeline design would be: (1) code validates and structures inputs before any LLM call, (2) LLM 1 generates a draft, (3) code detects violations in the draft, (4) LLM 2 receives the draft plus the code-detected violations and fixes them, (5) code verifies the reviewer's claimed changes.</p>
+
+<p>The key insight is that code and LLMs have complementary strengths. Code is deterministic, cheap, and reliable for counting, matching, and structural validation. LLMs are expensive and probabilistic but excellent at generation, judgment, and prose. Design the system so each does what it's good at.</p>
+
+<h3>Specificity is both the hardest and most important thing</h3>
+
+<p>The central product principle — "a tip that could appear in a guidebook to a different city is not a tip" — is brutally hard to enforce programmatically. You can test for banned phrases ("great way to start the morning," "local spirit," "must-see"). You can write reviewer checks for notes that don't reference time, sequence logic, or traveler-specific constraints. But ultimately, specificity requires a model that has actually internalized the standard, which requires many examples, clear negative cases, and persistent enforcement.</p>
+
+<p>This is the hardest unsolved problem in the product. It's also the core value proposition. If the tips and notes aren't specific, TravelGPT is just a fancier trip template. The specificity fight is the product.</p>
+
+<h3>Multi-pass beats one-shot for complex constrained generation</h3>
+
+<p>An itinerary has to be: geographically coherent, temporally sequenced, party-type appropriate, sunset-safe, permit-aware, cold-water-aware, geographically non-conflicting, note-quality compliant, and departure-day clean. No single LLM call reliably handles all of these simultaneously. A draft pass and a review pass separate the generation problem from the constraint satisfaction problem. This separation works.</p>
+
+<h3>The right test for a reviewer: what would a skeptic catch?</h3>
+
+<p>Before treating a reviewer prompt as done, simulate a skeptical reader of the output: someone who knows the destination, checks the map, looks up the sunset time, verifies the permit process, and counts the activity rows. If the skeptic could still find violations, the reviewer is not good enough. The Zion itinerary that Pass 2 approved with "no changes" would have been caught in 30 seconds by a skeptic with a phone.</p>
+
+<h3>Closed-loop testing: commit to a second destination before shipping</h3>
+
+<p>After every significant prompt change, run the full pipeline on a destination you haven't looked at in weeks. If it works on Zion but breaks on Yellowstone, the fix isn't done. A pipeline that works on exactly one destination is not a pipeline — it's a one-off.</p>
+
+<h3>LLMs are good at generation, bad at self-verification</h3>
+
+<p>The phantom change_log pattern, the unreliable activity counting, the tendency to "plan" a fix in the reasoning trace and then not execute it in the output — these are all the same failure mode. LLMs generate tokens that sound like they describe an action; they don't track whether the action was actually performed. Use code to verify what LLMs claim to have done.</p>
+
+<h3>The quality of your diagnosis determines the quality of your fix</h3>
+
+<p>Every time I wrote a vague bug report ("the planning notes aren't good enough") I got a vague fix (slightly different generic phrasing). Every time I wrote a precise root cause ("the reviewer has no data to distinguish a planning note that references sequence logic from one that doesn't, because there's no explicit test criteria in Check 7") I got a structural fix (add explicit test criteria and bad-note trigger phrases to Check 7).</p>
+
+<p>This applies equally whether the "developer" is an AI or a human. Good diagnosis is the high-leverage work. Writing the fix is almost mechanical once the diagnosis is right.</p>
+
+<hr>
+
+<h2>Final thought</h2>
+
+<p>The project is 10 days old and already has two national parks, a 12-module pipeline, structured board audits, a three-pass itinerary system, and a growing library of documented failures that became structural improvements. That pace is only possible because of how the AI collaboration was structured — not "write me code," but "here is what's broken, here is exactly why, here is what correct looks like."</p>
+
+<p>The builders who get the most out of AI systems right now are the ones who are precise about what's broken, skeptical about what's supposedly fixed, and willing to run the second test before claiming success. The model is smart. The quality of its output is mostly a function of the quality of your thinking about what the problem actually is.</p>
+
+<p>That's true with AI. It's also true without it. The tools changed. The work didn't.</p>
+
+<hr>
+<p style="font-size:14px; color:#888;">TravelGPT V2 — github.com/Paraskgp/Travel_GPT_V2 &nbsp;·&nbsp; Built May 2026 &nbsp;·&nbsp; Next.js / OpenAI / Anthropic / Google Places</p>
+
+</body>
+</html>

@@ -2,21 +2,27 @@ import { NextRequest, NextResponse } from "next/server"
 
 const PLACES_API_KEY = process.env.GOOGLE_PLACES_API_KEY ?? ""
 
-// Proxies Google Places photo requests so the API key never reaches the client.
-// Usage: /api/places-photo?ref=<photo_reference>&maxwidth=800
+// Proxies Google Places v1 photo requests so the API key never reaches the client.
+//
+// Usage: /api/places-photo?name=<resource_name>&maxWidthPx=800
+//
+// `name` is the URL-encoded resource name from the Places v1 API, e.g.:
+//   places/ChIJH_5e4bDxAGAR.../photos/AUjq9jlT...
+//
+// The v1 media endpoint: GET https://places.googleapis.com/v1/{name}/media
 export async function GET(req: NextRequest) {
-  const ref = req.nextUrl.searchParams.get("ref")
-  const maxwidth = req.nextUrl.searchParams.get("maxwidth") ?? "800"
+  const name = req.nextUrl.searchParams.get("name")
+  const maxWidthPx = req.nextUrl.searchParams.get("maxWidthPx") ?? "800"
 
-  if (!ref) {
-    return NextResponse.json({ error: "ref is required" }, { status: 400 })
+  if (!name) {
+    return NextResponse.json({ error: "name is required" }, { status: 400 })
   }
 
   if (!PLACES_API_KEY) {
     return NextResponse.json({ error: "Places API not configured" }, { status: 503 })
   }
 
-  const url = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=${maxwidth}&photo_reference=${ref}&key=${PLACES_API_KEY}`
+  const url = `https://places.googleapis.com/v1/${name}/media?maxWidthPx=${maxWidthPx}&key=${PLACES_API_KEY}`
 
   try {
     const res = await fetch(url, { redirect: "follow" })
@@ -30,7 +36,7 @@ export async function GET(req: NextRequest) {
     return new NextResponse(buffer, {
       headers: {
         "Content-Type": contentType,
-        "Cache-Control": "public, max-age=86400", // cache photos for 24h
+        "Cache-Control": "public, max-age=86400",
       },
     })
   } catch (err) {

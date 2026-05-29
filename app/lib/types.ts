@@ -90,16 +90,78 @@ export interface WeatherContext {
 
 // ─── Google Places Enrichment ─────────────────────────────────────────────────
 
+export interface PlaceOpeningHours {
+  open_now:     boolean | null
+  periods:      Array<{
+    open:  { day: number; hour: number; minute: number }
+    close: { day: number; hour: number; minute: number }
+  }> | null
+  weekday_text: string[] | null     // e.g. ["Monday: 9:00 AM – 5:00 PM", ...]
+}
+
+export interface GoogleReview {
+  author:       string
+  rating:       number
+  text:         string
+  publish_time: string
+}
+
 export interface PlacesEnrichment {
-  place_id: string
-  name: string                      // Matched place name from Google
-  rating: number | null             // e.g. 4.7
-  review_count: number | null       // e.g. 1243
-  photo_url: string | null          // Single photo URL (proxied through /api/places-photo)
-  address: string | null
-  coordinates: { lat: number; lng: number } | null
-  maps_url: string | null           // Google Maps link
-  price_level: number | null        // 0 = free, 1–4 = $ to $$$$
+  // ── Identity ────────────────────────────────────────────────────────────────
+  place_id:      string
+  name:          string                                  // Google matched name
+  address:       string | null                           // formatted address
+  short_address: string | null                           // shorter display address
+  coordinates:   { lat: number; lng: number } | null
+  maps_url:      string | null                           // Google Maps URI
+  website:       string | null                           // official site — for future scraping
+  phone:         string | null                           // international format
+
+  // ── Quality signals ─────────────────────────────────────────────────────────
+  rating:        number | null                           // e.g. 4.7
+  review_count:  number | null                           // e.g. 1243
+  price_level:   string | null                           // "PRICE_LEVEL_FREE" | "PRICE_LEVEL_INEXPENSIVE" | "PRICE_LEVEL_MODERATE" | "PRICE_LEVEL_EXPENSIVE" | "PRICE_LEVEL_VERY_EXPENSIVE"
+  reviews:       GoogleReview[] | null                   // up to 5, verbatim from Google
+
+  // ── Status ──────────────────────────────────────────────────────────────────
+  business_status: "OPERATIONAL" | "CLOSED_TEMPORARILY" | "CLOSED_PERMANENTLY" | null
+  opening_hours:   PlaceOpeningHours | null
+
+  // ── Classification ──────────────────────────────────────────────────────────
+  types:        string[] | null                          // e.g. ["museum", "point_of_interest"]
+  primary_type: string | null                            // e.g. "museum"
+
+  // ── Editorial ───────────────────────────────────────────────────────────────
+  editorial_summary: string | null
+
+  // ── Attributes — all direct Google booleans, no inference ───────────────────
+  good_for_children:      boolean | null
+  good_for_groups:        boolean | null
+  reservable:             boolean | null
+  serves_vegetarian_food: boolean | null
+  serves_beer:            boolean | null
+  serves_wine:            boolean | null
+  serves_cocktails:       boolean | null
+  serves_coffee:          boolean | null
+  serves_dessert:         boolean | null
+  serves_breakfast:       boolean | null
+  serves_lunch:           boolean | null
+  serves_dinner:          boolean | null
+  serves_brunch:          boolean | null
+  live_music:             boolean | null
+  outdoor_seating:        boolean | null
+  delivery:               boolean | null
+  dine_in:                boolean | null
+  takeout:                boolean | null
+  payment_options:        Record<string, boolean> | null
+  parking_options:        Record<string, boolean> | null
+  accessibility_options:  Record<string, boolean> | null
+
+  // ── Media ───────────────────────────────────────────────────────────────────
+  photo_url: string | null                               // proxied: /api/places-photo?name=...
+
+  // ── Raw ─────────────────────────────────────────────────────────────────────
+  raw: Record<string, unknown>                           // complete unprocessed API response
 }
 
 // ─── Experience Card ──────────────────────────────────────────────────────────
@@ -130,8 +192,12 @@ export interface Experience {
   // Set by LLM — true if location_hint is findable on Google Maps (should be almost always true)
   is_mappable: boolean
 
-  // Populated by /api/enrich after generation. null until enriched.
+  // Populated by Places enrichment pass. null until enriched.
   places_enrichment: PlacesEnrichment | null
+
+  // Direct projection of places_enrichment.business_status — set by grounding pass.
+  // null when no enrichment. Never inferred — always sourced verbatim from Google.
+  grounding_status: "operational" | "closed_temporarily" | "closed_permanently" | null
 }
 
 // ─── Board ────────────────────────────────────────────────────────────────────

@@ -150,6 +150,17 @@ export async function generateBoard(
     console.log(`[pipeline/board] Places enrichment — ${enrichedCount} cards enriched`)
   }
 
+  // ── Grounding pass — project Google's status signals to card level ───────────
+  // Direct pass-through of places_enrichment.business_status → grounding_status.
+  // No rules engine. No interpretation. What Google says, the card says.
+  enhancedThemes = enhancedThemes.map(theme => ({
+    ...theme,
+    experiences: theme.experiences.map(exp => ({
+      ...exp,
+      grounding_status: groundingStatus(exp.places_enrichment?.business_status ?? null),
+    })),
+  }))
+
   // ── Write to cache ───────────────────────────────────────────────────────────
   cacheWrite(
     dest,
@@ -163,6 +174,21 @@ export async function generateBoard(
 }
 
 // ── Internal ─────────────────────────────────────────────────────────────────
+
+/**
+ * Direct projection of Google's businessStatus string to the card-level grounding_status enum.
+ * No inference. No rules. One field in, one field out.
+ */
+function groundingStatus(
+  status: string | null
+): "operational" | "closed_temporarily" | "closed_permanently" | null {
+  if (!status) return null
+  const s = status.toUpperCase()
+  if (s === "OPERATIONAL")        return "operational"
+  if (s === "CLOSED_TEMPORARILY") return "closed_temporarily"
+  if (s === "CLOSED_PERMANENTLY") return "closed_permanently"
+  return null
+}
 
 const THEME_NAMES: Record<string, string> = {
   signature:    "Signature Experiences",

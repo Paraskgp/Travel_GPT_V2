@@ -166,3 +166,21 @@ This costs nothing today and preserves full architectural flexibility for tomorr
 ## TypeScript is non-negotiable
 
 `npx tsc --noEmit` passes before any work is considered done. Type errors are not warnings. A codebase with type errors is a codebase with hidden assumptions — assumptions that will break at runtime in ways that are hard to diagnose.
+
+---
+
+## Write for the general case — never patch a symptom
+
+When you identify a problem, your job is to fix the class of problem, not the specific instance you observed.
+
+**The wrong move:** You notice a museum is placed in a Nightlife theme. You write a rule: "if opening_hours.close < 19:00 and theme == nightlife, flag it." This rule is brittle, overfitted, and will be wrong as soon as the next edge case appears.
+
+**The right move:** Surface the raw data from the authoritative source (Google's `business_status`, `regularOpeningHours`, `goodForChildren`, etc.) directly onto the card. Let the data speak. The consumer — UI, planner, eval — decides what to do with it. Your job is to faithfully pipe the signal through, not to build a decision tree around it.
+
+Rules of thumb:
+- If you are writing more than one `if/else` branch to fix a specific observed failure, stop. You are patching a symptom. Step back and find the general data model that makes the symptom impossible.
+- External APIs (Google, weather services, etc.) return authoritative signals. Store those signals verbatim. Do not pre-filter, pre-interpret, or discard fields because they don't match a current use case. A field you ignore today is data you cannot use tomorrow.
+- Hardcoded lists (venue names, theme IDs, city names) inside business logic are a smell. If the logic needs to know a specific value to make a decision, the data model is wrong.
+- The best validation logic is no logic — it is storing the right data so the right answer is already present in the record.
+
+**The test:** Could a developer who has never seen this codebase add a new destination, a new theme, or a new party type without changing any validation logic? If yes, the design is general. If no, the logic is overfitted.
