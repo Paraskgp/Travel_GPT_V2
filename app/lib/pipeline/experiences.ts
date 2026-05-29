@@ -180,10 +180,14 @@ function preDedupByName(candidates: RawExperience[]): RawExperience[] {
  *
  * Step 2 (LLM): semantic dedup over the pre-grouped list — handles true name variations
  *   ("Angel's Landing" vs "Angels Landing") that the deterministic step can't catch.
- *   URLs are stripped from LLM input/output (they bloat the output — tracked in step 1).
+ *   key_facts and source_urls are stripped from LLM input and output entirely — the
+ *   LLM only sees {name, location, category}, which is all it needs to decide whether
+ *   two entries are the same place. Sending full key_facts (3–4 bullets × 100 chars ×
+ *   400 entries = ~60k token input) was the root cause of token overflow for large cities.
+ *   With key_facts stripped, input is ~10k tokens regardless of candidate count.
  *
- * Step 3 (deterministic): reconstruct source_urls by fuzzy-matching the LLM's canonical
- *   names back to the pre-grouped map, then attach the collected URLs.
+ * Step 3 (deterministic): reconstruct source_urls and key_facts by fuzzy-matching the
+ *   LLM's canonical names back to the pre-grouped maps, then attach them.
  *
  * This function is clean-swappable: embedding-based clustering could replace step 2
  * without changing callers.
@@ -215,39 +219,50 @@ export async function dedupExperiences(
   const preGrouped = preDedupByName(relevant)
   console.log(`[dedupExperiences] pre-dedup: ${relevant.length} → ${preGrouped.length} candidates`)
 
-  // Build URL lookup from pre-grouped list (keyed by normalized name)
   const normalize = (s: string) =>
     s.toLowerCase().replace(/['''"]/g, "").replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim()
-  const urlsByName = new Map<string, string[]>()
+
+  // Build URL and key_facts lookups from pre-grouped list (keyed by normalized name).
+  // Both are tracked outside the LLM — the LLM never sees or returns either field.
+  const urlsByName  = new Map<string, string[]>()
+  const factsByName = new Map<string, string[]>()
   for (const c of preGrouped) {
     const key = normalize(c.name)
-    // source_url is comma-joined list of all URLs collected during pre-dedup
     urlsByName.set(key, c.source_url.split(", ").filter(Boolean))
+    factsByName.set(key, c.key_facts)
   }
 
-
-  // Step 2: LLM semantic dedup — strip source_url from input, omit from output
-  const llmInput = preGrouped.map(({ source_url: _ignored, ...rest }) => rest)
+  // Step 2: LLM semantic dedup — input is {name, location, category} only.
+  // key_facts and source_urls are omitted: they bloat the input (60k+ tokens for large
+  // cities) and are not needed for the merge decision.
+  const llmInput = preGrouped.map(({ source_url: _url, key_facts: _facts, ...rest }) => rest)
   const raw = await callLLM(
     dedupSystemPrompt(),
     dedupUserPrompt(llmInput, dest),
     provider,
     "experience_dedup"
   )
-  const merged = parseJSON<Array<{ name: string; location: string; category: string; key_facts: string[] }>>(raw)
+  const merged = parseJSON<Array<{ name: string; location: string; category: string }>>(raw)
 
-  // Step 3: reconstruct source_urls — match LLM canonical name back to pre-grouped map
+  // Step 3: stitch source_urls and key_facts back — match LLM canonical name to pre-grouped map.
+  // Exact normalized match first; fall back to fuzzy (first pre-grouped entry whose
+  // normalized name contains the LLM name or vice versa).
+  function lookup<T>(map: Map<string, T>, key: string, fallback: T): T {
+    const exact = map.get(key)
+    if (exact !== undefined) return exact
+    for (const [k, v] of map) {
+      if (k.includes(key) || key.includes(k)) return v
+    }
+    return fallback
+  }
+
   return merged.map(e => {
     const key = normalize(e.name)
-    // Exact match first; fall back to fuzzy (find first pre-grouped entry whose normalized
-    // name contains the LLM name or vice versa)
-    let urls = urlsByName.get(key) ?? []
-    if (urls.length === 0) {
-      for (const [k, v] of urlsByName) {
-        if (k.includes(key) || key.includes(k)) { urls = v; break }
-      }
+    return {
+      ...e,
+      key_facts:   lookup(factsByName, key, []),
+      source_urls: [...new Set(lookup(urlsByName, key, []))],
     }
-    return { ...e, source_urls: [...new Set(urls)] }
   })
 }
 

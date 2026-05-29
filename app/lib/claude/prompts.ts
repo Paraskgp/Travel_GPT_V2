@@ -109,18 +109,18 @@ export function dedupSystemPrompt(): string {
 }
 
 export function dedupUserPrompt(
-  candidates: Array<{ name: string; location: string; category: string; key_facts: string[] }>,
+  candidates: Array<{ name: string; location: string; category: string }>,
   destination: string
 ): string {
   return [
     `Destination: **${destination}**`,
     "",
     `Merge and deduplicate these ${candidates.length} candidate experiences extracted from multiple web sources.`,
-    "Note: source_urls are tracked separately — do NOT include them in your output.",
+    "key_facts and source_urls are tracked separately — do NOT include them in your output.",
     "",
-    JSON.stringify(candidates, null, 2),
+    JSON.stringify(candidates),
     "",
-    "Return ONLY the merged JSON array. Each object: { name, location, category, key_facts }. No source_urls field.",
+    "Return ONLY the merged JSON array. Each object: { name, location, category }. No key_facts, no source_urls.",
   ].join("\n")
 }
 
