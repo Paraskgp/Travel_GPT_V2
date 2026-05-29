@@ -95,11 +95,47 @@ interface PlaceOpeningHours {
 }
 ```
 
-Card-level field (on `Experience`):
+Card-level fields (on `Experience`):
 ```typescript
 grounding_status: "operational" | "closed_temporarily" | "closed_permanently" | null
+// Direct projection of places_enrichment.business_status. null when no enrichment.
+
+is_area_experience: boolean
+// true when Google's types array contains a geographic area classifier.
+// Set by the LLM at generation time; confirmed or overridden by the grounding pass.
+// Never inferred from rating, review count, or any proxy signal.
+
+nav_anchor: string | null
+// For area experiences: the specific named starting point the traveler navigates to.
+// e.g. "Shimokitazawa Station South Exit" or "top of Hanamikoji-dori at Shijo-dori".
+// Set by the LLM. null for point experiences (location_hint is already the destination).
 ```
-Derived from `places_enrichment.business_status` in the grounding pass. `null` when there is no enrichment.
+
+`is_area_experience` is set by the LLM initially using its knowledge of the place. The grounding pass may confirm or override it using Google's authoritative `types` array — no heuristics.
+
+`nav_anchor` is set by the LLM only. The grounding pass does not touch it.
+
+### AREA_TYPES classifier set
+
+The grounding pass uses this set to determine whether a Google-matched result is an area entity:
+
+```typescript
+const GOOGLE_AREA_TYPES = new Set([
+  "neighborhood",
+  "sublocality",
+  "sublocality_level_1",
+  "sublocality_level_2",
+  "locality",
+  "administrative_area_level_1",
+  "administrative_area_level_2",
+  "administrative_area_level_3",
+  "political",
+  "colloquial_area",
+  "route",
+])
+```
+
+This set is the complete classifier. Any `types` value in this set means Google matched an area, not a venue. The set should be extended as Google's taxonomy evolves — it should never be replaced with heuristics.
 
 ## Steps
 
@@ -121,21 +157,38 @@ Derived from `places_enrichment.business_status` in the grounding pass. `null` w
 ### Grounding pass (in `generateBoard`, after enrichment)
 
 Single map over all themes/experiences. For each experience:
-- If `places_enrichment?.business_status` exists → normalize to lowercase and set `grounding_status`
-- Else → `grounding_status = null`
 
-No other logic. The grounding pass is a direct, lossless projection of a single Google field.
+1. **`grounding_status`** — direct projection of `places_enrichment.business_status`:
+   - `"OPERATIONAL"` → `"operational"`
+   - `"CLOSED_TEMPORARILY"` → `"closed_temporarily"`
+   - `"CLOSED_PERMANENTLY"` → `"closed_permanently"`
+   - absent or null → `null`
+
+2. **`is_area_experience`** — set from Google's `types` array using the `GOOGLE_AREA_TYPES` set:
+   - If `places_enrichment.types` contains any value in `GOOGLE_AREA_TYPES` → `true`
+   - If `places_enrichment.types` is present and contains no area classifier → `false`
+   - If `places_enrichment` is `null` (no enrichment) → keep the LLM-generated value unchanged
+
+No other logic. The grounding pass projects Google's own signals to card-level fields. It does not modify `nav_anchor`.
 
 ```typescript
 function groundingStatus(
-  enrichment: PlacesEnrichment | null
+  status: string | null
 ): Experience["grounding_status"] {
-  if (!enrichment?.business_status) return null
-  const s = enrichment.business_status.toLowerCase()
-  if (s === "operational") return "operational"
-  if (s === "closed_temporarily") return "closed_temporarily"
-  if (s === "closed_permanently") return "closed_permanently"
+  if (!status) return null
+  const s = status.toUpperCase()
+  if (s === "OPERATIONAL")        return "operational"
+  if (s === "CLOSED_TEMPORARILY") return "closed_temporarily"
+  if (s === "CLOSED_PERMANENTLY") return "closed_permanently"
   return null
+}
+
+function isAreaExperience(
+  types: string[] | null | undefined,
+  llmValue: boolean
+): boolean {
+  if (!types) return llmValue   // no enrichment — trust LLM
+  return types.some(t => GOOGLE_AREA_TYPES.has(t))
 }
 ```
 
@@ -225,6 +278,10 @@ Places enrichment results are included in the board cache — no separate enrich
 | Returns `null` on network error | Non-fatal failure |
 | `locationHint !== name` → uses `locationHint` as query | Query selection |
 | `locationHint === name` → uses `locationHint + destination` | Fallback query |
+| types `["neighborhood", "political"]` → `is_area_experience: true` | Area classifier — Google types override |
+| types `["museum", "point_of_interest"]` → `is_area_experience: false` | Point venue — Google types override |
+| `null` enrichment → `is_area_experience` retains LLM-generated value | No enrichment → trust LLM |
+| `nav_anchor` is not modified by the grounding pass | nav_anchor is LLM-only |
 
 ## Open technical items
 

@@ -192,6 +192,16 @@ export interface Experience {
   // Set by LLM — true if location_hint is findable on Google Maps (should be almost always true)
   is_mappable: boolean
 
+  // Set by LLM at generation time; confirmed or overridden by the grounding pass using
+  // Google's types array. true when the matched place is a district/region rather than
+  // a specific addressable venue. Never inferred from rating or review count.
+  is_area_experience: boolean
+
+  // For area experiences only: the specific named starting point the traveler should
+  // navigate to (e.g. "Shimokitazawa Station South Exit"). Set by LLM. null for point
+  // experiences, where location_hint is already the navigation destination.
+  nav_anchor: string | null
+
   // Populated by Places enrichment pass. null until enriched.
   places_enrichment: PlacesEnrichment | null
 

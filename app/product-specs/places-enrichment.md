@@ -7,7 +7,7 @@ Attaches comprehensive real-world metadata from Google Places (v1 API) to each m
 This runs in two sub-steps, both after the board is fully generated and tip-enhanced, before the board is cached:
 
 1. **Enrichment** — fetches the full Google Places record for each mappable card and stores it verbatim on `places_enrichment`. No interpretation, no filtering — the complete API response is stored alongside the fields the UI needs today.
-2. **Grounding** — propagates Google's own authoritative status signals (business_status, etc.) to a top-level `grounding_status` field on the card. No rules engine, no heuristics — direct pass-through of what Google says.
+2. **Grounding** — reads Google's own fields (`businessStatus`, `types`) and projects them to two card-level signals: `grounding_status` (operational/closed) and `is_area_experience` (point venue vs. walkable area). No rules engine, no heuristics — Google's own type taxonomy is the classifier.
 
 ## Inputs
 
@@ -46,6 +46,8 @@ Family/experience attributes (all sourced directly from Google booleans, no infe
 
 At the card level, after enrichment:
 - `grounding_status` — direct copy of `places_enrichment.business_status`, normalized to lowercase. `null` if no enrichment.
+- `is_area_experience` — `true` when Google's `types` array contains a geographic area classifier (`neighborhood`, `sublocality`, `locality`, `colloquial_area`, etc.), meaning the matched result is a district or region rather than a specific addressable venue. Set by LLM initially; confirmed or overridden by enrichment using Google's own type taxonomy. Never inferred from review counts or other proxy signals.
+- `nav_anchor` — for area experiences, the specific named starting point the traveler should navigate to (e.g. "Shimokitazawa Station South Exit", "top of Hanamikoji-dori at Shijo-dori"). Set by the LLM at card generation time. `null` for point experiences (where `location_hint` is already the navigation destination).
 
 Cards with `is_mappable: false` receive `null` enrichment and `null` grounding_status.
 
@@ -55,7 +57,10 @@ Cards with `is_mappable: false` receive `null` enrichment and `null` grounding_s
 - The complete raw API response is stored on `places_enrichment.raw` — no fields discarded at fetch time
 - `photo_url` is proxied through `/api/places-photo` — raw Google resource name never sent to client
 - `grounding_status` on every enriched card reflects Google's `businessStatus` field, unchanged
-- Non-fatal: if Places lookup fails for any card, `places_enrichment` and `grounding_status` remain `null` and the board is unaffected
+- `is_area_experience` is `true` on every card whose enriched `types` contains a Google area classifier — and `false` on point venues
+- `nav_anchor` is populated by the LLM for every `is_area_experience: true` card, giving a specific navigable starting point
+- Area experience `long_description` contains a stop-by-stop table of 3–5 named venues in walking order
+- Non-fatal: if Places lookup fails for any card, `places_enrichment`, `grounding_status`, and `is_area_experience` remain at their LLM-generated defaults; the board is unaffected
 - API key is never exposed to the client — all calls are server-side only
 
 ## Evaluation criteria

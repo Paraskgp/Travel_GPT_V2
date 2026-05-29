@@ -95,6 +95,8 @@ You must return valid JSON matching this exact schema. No markdown fences, no co
           "weather_sensitivity": string | null, // e.g. "Avoid in rain — trail becomes slippery" or "Better in cooler months". null if weather-independent.
           "location_hint": string,  // A specific named place that resolves to a single Google Maps pin — the exact place the traveler should navigate to. Rules: (1) Use the name of the thing itself, not a nearby landmark used to access it. For a trail, use the trail name ("Emerald Pools Trail"), not the lodge or visitor center near the trailhead ("Zion Lodge"). For a viewpoint, use the viewpoint name. For a restaurant, use the restaurant name. (2) Must be a specific named entity — not a neighbourhood, district, or area. Examples of CORRECT: "Philosopher's Path (Tetsugaku-no-Michi), Kyoto" / "Kiyomizu-dera Temple, Kyoto" / "Angels Landing Trail, Zion" / "Nishiki Market, Kyoto" / "Haleakalā Summit, Maui". Examples of WRONG: "Zion Lodge" for an Emerald Pool Trail card / "Zion Canyon Visitor Center" for a Watchman Trail card / "Higashiyama district" / "central Kyoto" / "near Shijo Street". (3) If the experience is a general activity (e.g. "watch the sunset"), anchor it to the single best named spot to do it from — not "the area around" that spot.
           "is_mappable": boolean,  // true if location_hint is a specific named place findable on Google Maps. This should be true for almost every experience — if you have a location_hint, it is mappable. Only false for experiences that are genuinely unanchored to any place (e.g. "practice the local language", "observe daily life").
+          "is_area_experience": boolean, // true if this experience covers a walkable district or neighborhood rather than a single addressable venue. Examples: "Exploring Shimokitazawa", "Higashiyama Walking Course", "Fremont neighborhood crawl". false for any experience anchored to a single named place (temple, restaurant, trail, museum). When true, long_description must end with a stop-by-stop table (see below).
+          "nav_anchor": string | null, // For area experiences only: the exact named starting point a traveler types into maps to begin the experience. Must be a specific navigable entity — a station exit, a named intersection, a landmark. Examples: "Shimokitazawa Station South Exit", "top of Hanamikoji-dori at Shijo-dori intersection", "Fremont Troll (under Aurora Bridge)". null for point experiences (location_hint is already the destination).
           "personalization_note": string | null,
           "places_enrichment": null  // always null — populated later by the enrich API
         }
@@ -103,6 +105,28 @@ You must return valid JSON matching this exact schema. No markdown fences, no co
   ]
 }
 ```
+
+---
+
+## Area Experiences — long_description table requirement
+
+When `is_area_experience` is `true`, the `long_description` must end with a stop-by-stop table. The table gives the traveler a concrete walking sequence so they are never standing in a neighborhood wondering what to do next.
+
+Format (Markdown table, 3–5 stops in walking order from `nav_anchor`):
+
+```
+| Stop | Name | What it is | Don't miss |
+|------|------|------------|------------|
+| 1 | [specific named place] | [one sentence] | [one specific thing] |
+| 2 | [specific named place] | [one sentence] | [one specific thing] |
+...
+```
+
+Rules:
+- Every row must be a specific named place — a shop, shrine, stall, viewpoint, passage, or building. No generic descriptions like "local market area" or "traditional streets".
+- Stops must be in walking order from the `nav_anchor`. A traveler should be able to follow them in sequence without backtracking.
+- 3 stops minimum, 5 maximum. Tighter is better — don't pad.
+- "Don't miss" should be the single most specific thing about that stop that a guidebook wouldn't tell you.
 
 ---
 

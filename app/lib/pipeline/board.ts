@@ -150,14 +150,19 @@ export async function generateBoard(
     console.log(`[pipeline/board] Places enrichment — ${enrichedCount} cards enriched`)
   }
 
-  // ── Grounding pass — project Google's status signals to card level ───────────
-  // Direct pass-through of places_enrichment.business_status → grounding_status.
+  // ── Grounding pass — project Google's signals to card-level fields ──────────
+  // Two projections, both lossless pass-throughs of Google's own data:
+  //   1. business_status → grounding_status (operational/closed)
+  //   2. types[]         → is_area_experience (point venue vs. walkable area)
   // No rules engine. No interpretation. What Google says, the card says.
+  // If enrichment is null, grounding_status is null and is_area_experience
+  // retains the LLM-generated value — Google's absence is not an override.
   enhancedThemes = enhancedThemes.map(theme => ({
     ...theme,
     experiences: theme.experiences.map(exp => ({
       ...exp,
       grounding_status: groundingStatus(exp.places_enrichment?.business_status ?? null),
+      is_area_experience: resolveIsArea(exp.places_enrichment?.types ?? null, exp.is_area_experience),
     })),
   }))
 
@@ -188,6 +193,41 @@ function groundingStatus(
   if (s === "CLOSED_TEMPORARILY") return "closed_temporarily"
   if (s === "CLOSED_PERMANENTLY") return "closed_permanently"
   return null
+}
+
+/**
+ * Google's place type taxonomy values that indicate an area/region entity rather than
+ * a specific addressable venue. When any of these appear in a place's `types` array,
+ * the Google match is a geographic area — not a pin.
+ *
+ * Source: https://developers.google.com/maps/documentation/places/web-service/place-types
+ * Extend this set as Google's taxonomy evolves. Never replace with heuristics.
+ */
+const GOOGLE_AREA_TYPES = new Set([
+  "neighborhood",
+  "sublocality",
+  "sublocality_level_1",
+  "sublocality_level_2",
+  "locality",
+  "administrative_area_level_1",
+  "administrative_area_level_2",
+  "administrative_area_level_3",
+  "political",
+  "colloquial_area",
+  "route",
+])
+
+/**
+ * Resolve is_area_experience from Google's types array.
+ * If enrichment types are present, Google's taxonomy is authoritative.
+ * If types is null (no enrichment), fall back to the LLM-generated value.
+ */
+function resolveIsArea(
+  types: string[] | null,
+  llmValue: boolean
+): boolean {
+  if (!types) return llmValue
+  return types.some(t => GOOGLE_AREA_TYPES.has(t))
 }
 
 const THEME_NAMES: Record<string, string> = {
