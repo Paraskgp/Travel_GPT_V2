@@ -60,10 +60,14 @@ Approved theme IDs: signature, unique_local, food_drink, food_crawls, adventure,
 Exactly 10 named experiences that every serious travel guide to this destination covers. These are the experiences whose absence a senior editor would immediately notice. They become required anchors — any board generated for this destination must include a card for each, or flag the omission.
 
 Rules:
-- Specific named experiences, not categories. "Mount Fuji Day Trip" not "volcano". "Aki Basho Sumo Tournament" not "traditional sports". "Sensoji Temple, Asakusa" not "a temple".
-- Include a mix: iconic landmarks, defining food experiences, one major seasonal/sporting event if one is strongly associated with this destination, one day trip if relevant.
-- For seasonal/event entries: note the month if the event is month-specific (e.g. "Aki Basho Sumo Tournament — September").
-- Do not pad with generic experiences. If a destination only has 7 truly essential experiences, make the remaining 3 the next tier of near-essential ones — but all 10 must be genuine.
+- Specific named experiences, not categories. Not "a volcano" — name the volcano. Not "traditional sports" — name the event and month.
+- The list must span the full experience spectrum. It cannot be all landmarks, all food, or all in-city. Required coverage slots:
+  - At least 1 iconic natural or built landmark every visitor photographs
+  - At least 1 defining food experience (market, dish, restaurant institution, culinary ritual)
+  - At least 1 major day trip, if the destination has a day_trips theme — the most famous destination reachable in a day (name it specifically, not "a nearby town")
+  - At least 1 time-sensitive experience: a major recurring sporting event, festival, or seasonal phenomenon strongly associated with this destination (note the month or season)
+- For seasonal/event entries: note the timing (e.g. "Aki Basho Sumo Tournament — September", "Cherry Blossom Season — late March to early April").
+- Do not pad with generic experiences. All 10 must be genuine must-covers — the experiences whose absence a senior editor would immediately notice.
 
 ---
 

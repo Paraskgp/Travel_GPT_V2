@@ -7,9 +7,7 @@ Surface the best nearby destinations and excursions that are worth a full or hal
 
 Before generating any cards, answer this question: **What is the single most famous, most booked, most talked-about day trip from this destination?** Every serious travel guide leads their day trips section with it. It is not optional. It must be the first card in this theme.
 
-For Tokyo: Mount Fuji (via Fuji Five Lakes / Kawaguchiko or the 5th Station bus from Shinjuku). Not Hakone. Hakone is a different experience — onsen town with distant Fuji views. Mount Fuji is the mountain itself. They are not the same card. A traveler who did Hakone did not do Mount Fuji.
-
-This applies everywhere: for Paris it's the Loire Valley or Mont Saint-Michel. For Rome it's the Amalfi Coast or Pompeii. For Barcelona it's Montserrat. Do not skip the iconic anchor because you've covered something nearby that has a view of it.
+Do not skip it because you've already included something nearby that has a view of it, or something in the same general region. Proximity to an iconic destination is not the same as visiting it. A traveler who visited the nearby town did not do the iconic thing.
 
 ## What belongs here
 - Nearby towns, villages, regions, or natural areas worth a full outing
@@ -24,13 +22,12 @@ This applies everywhere: for Paris it's the Loire Valley or Mont Saint-Michel. F
 - A nearby place-with-a-view-of-X as a substitute for X itself
 
 ## Collapse trap — do not fall into this
-The most common day trips failure: generating a nearby destination that has views of the iconic place instead of the iconic place itself, then treating the two as equivalent.
 
-- Hakone has views of Mount Fuji. Hakone is not Mount Fuji. Both can be on the board.
-- The Belvedere has views of the Matterhorn. It is not the Matterhorn.
-- A viewpoint near the Grand Canyon is not the Grand Canyon.
+The most common day trips failure: generating a nearby destination that has views of the iconic place, then treating the two as the same experience.
 
-If the iconic destination is reachable as a day trip (even if it's 2–3 hours away), it gets a card. The nearby proxy gets its own separate card if it's worth a separate outing.
+A town near an iconic mountain is not the iconic mountain. A viewpoint near a canyon is not the canyon. A spa town with distant views of a landmark is not the landmark. If the iconic destination is reachable as a day trip — even if it takes 2–3 hours — it gets its own card. The nearby alternative can also appear if it's worth a separate outing, but it does not substitute.
+
+Ask yourself: if a traveler did only the nearby option, would they feel they had done the iconic thing? If the answer is no, they are two separate cards.
 
 ## Card guidance
 - `long_description` must include: exact travel time from the main base, how to get there (which train line, bus route, car), how long to budget at the destination, and what specifically to do once there — not just the name of the place
