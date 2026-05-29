@@ -16,6 +16,7 @@ Generates a structured understanding of a destination's identity — its soul, d
 - **Honest notes** — real caveats: crowds, permit requirements, access constraints, seasonal dangers
 - **Applicable themes** — which of the 16 experience themes genuinely apply here (e.g. Zion gets `hiking` and `adventure`; it does not get `nightlife` or `shopping`)
 - **Recommended stay area** — the best base area/neighborhood/lodge, with a one-sentence reason
+- **Must cover** — exactly 10 experiences that every serious travel guide to this destination covers. These are the experiences whose absence a senior editor would immediately notice. They become required anchors for board generation — the board must have a card for each, or flag it as an explicit gap. Format: specific named experiences, not categories ("Mount Fuji Day Trip" not "a volcano", "Aki Basho Sumo Tournament" not "traditional sports").
 
 ## Success criteria
 
@@ -23,6 +24,7 @@ Generates a structured understanding of a destination's identity — its soul, d
 - Soul text must be specific to this destination — must not read as interchangeable with a similar destination
 - Recommended stay area must be a real, named place (not "near the park" or "central area")
 - Honest notes must include at least one real friction point (crowds, permits, access, season)
+- `must_cover` contains exactly 10 named experiences — specific enough that they resolve to a real place or event, not a category
 - Output is valid JSON matching the `DestinationContext` type
 
 ## Evaluation criteria

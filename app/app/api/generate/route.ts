@@ -73,9 +73,13 @@ export async function POST(
 
   const weatherContext = await getWeatherContext(dest, travelMonthLabel ?? "unknown", weatherMonthSlug, provider)
 
-  const experiences = await getExperiences(dest, destContext, provider)
+  // Pass travel month so event-specific queries are added for sports, festivals, etc.
+  const travelMonthName = start_date
+    ? new Date(start_date + "T00:00:00").toLocaleString("en-US", { month: "long" })
+    : null
+  const experiences = await getExperiences(dest, destContext, travelMonthName, provider)
 
-  const themes = await generateBoard(dest, destContext, weatherContext, experiences, boardPrefs(fullPrefs), provider)
+  const { themes, eval_gaps } = await generateBoard(dest, destContext, weatherContext, experiences, boardPrefs(fullPrefs), provider)
 
   // ── Response ─────────────────────────────────────────────────────────────────
 
@@ -84,6 +88,7 @@ export async function POST(
     destination_context: destContext,
     weather_context: weatherContext,
     themes,
+    eval_gaps,
     ...(Object.keys(fullPrefs).length > 0 ? { preferences: fullPrefs } : {}),
     generated_at: new Date().toISOString(),
   }

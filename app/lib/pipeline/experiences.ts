@@ -1,5 +1,5 @@
 import { callLLM, Provider } from "../llm/client"
-import { cacheRead, cacheWrite, TTL } from "../cache"
+import { cacheRead, cacheWrite, TTL, CacheKey } from "../cache"
 import {
   queryGeneratorSystemPrompt, queryGeneratorUserPrompt,
   extractFromPageSystemPrompt, extractFromPageUserPrompt,
@@ -35,15 +35,17 @@ async function runWithConcurrency<T, R>(
  * Stage 1: Generate targeted search queries for a destination.
  * 3 queries per applicable theme (broad + depth + corner case)
  * plus 5 cross-cutting queries (iconic, official data, food, logistics, recent tips).
+ * When travelMonth is provided, adds 4 event-specific queries for that month.
  */
 export async function generateQueries(
   dest: string,
   themes: string[],
+  travelMonth: string | null = null,
   provider: Provider = "openai"
 ): Promise<string[]> {
   const raw = await callLLM(
     queryGeneratorSystemPrompt(),
-    queryGeneratorUserPrompt(dest, themes),
+    queryGeneratorUserPrompt(dest, themes, travelMonth),
     provider,
     "query_generator"
   )
@@ -255,21 +257,31 @@ export async function dedupExperiences(
  * Run the full grounding pipeline: queries → Tavily → map (parallel per-page
  * extraction) → reduce (LLM dedup) → cache.
  * Checks cache first. Non-fatal: returns [] on any failure so board generation continues.
+ *
+ * @param travelMonth - e.g. "September". When provided, adds event-specific search queries
+ *   for sports tournaments, festivals, and concerts in that month. Also used to key the cache
+ *   so event results don't bleed across months.
  */
 export async function getExperiences(
   dest: string,
   destCtx: DestinationContext,
+  travelMonth: string | null = null,
   provider: Provider = "openai"
 ): Promise<GroundedExperience[]> {
-  const cached = cacheRead<GroundedExperience[]>(dest, "experiences")
+  // Cache key includes travel month so event-specific results are scoped to the right month
+  const cacheKey: CacheKey = travelMonth
+    ? `experiences_${travelMonth.toLowerCase().replace(/\s+/g, "_")}` as `experiences_${string}`
+    : "experiences"
+
+  const cached = cacheRead<GroundedExperience[]>(dest, cacheKey)
   if (cached) {
     console.log(`[pipeline/experiences] cache HIT — ${cached.length} experiences`)
     return cached
   }
 
   try {
-    // Stage 1: queries
-    const queries = await generateQueries(dest, destCtx.applicable_themes, provider)
+    // Stage 1: queries (includes event queries when travelMonth is provided)
+    const queries = await generateQueries(dest, destCtx.applicable_themes, travelMonth, provider)
     console.log(`[pipeline/experiences] ${queries.length} queries generated`)
 
     // Stage 2: search
@@ -301,7 +313,7 @@ export async function getExperiences(
     const experiences = await dedupExperiences(candidates, dest, provider)
     console.log(`[pipeline/experiences] ${experiences.length} experiences after dedup`)
 
-    cacheWrite(dest, "experiences", experiences, TTL.EXPERIENCES)
+    cacheWrite(dest, cacheKey, experiences, TTL.EXPERIENCES)
     return experiences
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err)

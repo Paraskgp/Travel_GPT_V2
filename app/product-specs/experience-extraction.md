@@ -14,6 +14,7 @@ A verified name with partial facts is better than a missing entry.
 
 - Destination name
 - List of annotated results (from search & scraping module)
+- Travel month (optional) — when provided, the query generator adds event-specific queries for that month: sports tournaments, music festivals, major games, seasonal markets, and public holidays. Without a travel month, event queries are omitted (event results would be date-agnostic and less useful).
 
 ## Outputs
 

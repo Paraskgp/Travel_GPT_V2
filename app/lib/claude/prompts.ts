@@ -52,15 +52,27 @@ export function queryGeneratorSystemPrompt(): string {
 
 export function queryGeneratorUserPrompt(
   destination: string,
-  applicableThemes: string[]
+  applicableThemes: string[],
+  travelMonth: string | null = null
 ): string {
+  const eventBlock = travelMonth
+    ? [
+        "",
+        `Travel month: **${travelMonth}** — add 4 event-specific queries for this month (sports tournaments, music festivals, cultural events, public holidays). See the "when a travel month is provided" section in the system prompt.`,
+      ].join("\n")
+    : ""
+
+  const baseQueryCount = applicableThemes.length * 3 + 5
+  const totalExpected = travelMonth ? baseQueryCount + 4 : baseQueryCount
+
   return [
     `Destination: **${destination}**`,
     "",
     `Applicable themes (${applicableThemes.length}): ${applicableThemes.join(", ")}`,
     "",
     `Generate exactly 3 queries per theme (${applicableThemes.length * 3} theme queries) plus the 5 required cross-cutting queries.`,
-    "Total expected: ~" + (applicableThemes.length * 3 + 5) + " queries.",
+    `Total expected: ~${totalExpected} queries.`,
+    eventBlock,
     "",
     "Return ONLY the flat JSON array of query strings.",
   ].join("\n")
@@ -130,7 +142,11 @@ export function themeUserPrompt(
   const parts: string[] = []
 
   // ── Destination context block ──────────────────────────────────────────────
-  parts.push(`## Destination Context\n\n**Destination:** ${destination}\n\n**Soul:**\n${destContext.soul}\n\n**Defining pillars:** ${destContext.defining_pillars.join(" · ")}\n\n**Best for:** ${destContext.best_for.join(", ")}\n\n**Honest notes:**\n${destContext.honest_notes.map(n => `- ${n}`).join("\n")}`)
+  const mustCoverBlock = destContext.must_cover?.length
+    ? `\n\n**Must cover (required — every board for this destination must have a card for each):**\n${destContext.must_cover.map((e, i) => `${i + 1}. ${e}`).join("\n")}`
+    : ""
+
+  parts.push(`## Destination Context\n\n**Destination:** ${destination}\n\n**Soul:**\n${destContext.soul}\n\n**Defining pillars:** ${destContext.defining_pillars.join(" · ")}\n\n**Best for:** ${destContext.best_for.join(", ")}\n\n**Honest notes:**\n${destContext.honest_notes.map(n => `- ${n}`).join("\n")}${mustCoverBlock}`)
 
   // ── Weather context block ──────────────────────────────────────────────────
   if (weatherContext) {
@@ -189,6 +205,12 @@ ${lines.join("\n\n")}`)
   parts.push(`## Your Task\n\nGenerate experiences for the **${themeId}** theme at ${destination}.\n\n${themeGuide}\n\nReturn only valid JSON matching the output format in the system prompt.`)
 
   return parts.join("\n\n")
+}
+
+// ─── Node 3b: Board Completeness Eval ────────────────────────────────────────
+
+export function boardEvalSystemPrompt(): string {
+  return load("board-eval.md")
 }
 
 // ─── Node 4: Tip Enhancement ──────────────────────────────────────────────────

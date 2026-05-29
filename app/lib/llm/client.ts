@@ -12,6 +12,7 @@ export type Stage =
   | "experience_dedup"          // merges raw candidates into canonical list (reduce phase) — cheap
   | "tip_enhancement"           // rewrites a single local tip — cheap
   | "board_generation"          // generates experience cards — quality matters, keep strong model
+  | "board_eval"                // completeness audit — senior editor gap detection, moderate quality
   | "destination_context"       // destination metadata — moderate quality needed
   | "weather_context"           // weather summary — cheap
   | "default"

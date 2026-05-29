@@ -59,6 +59,10 @@ export interface DestinationContext {
   applicable_themes: string[]       // Theme IDs from the approved list that genuinely apply here
   recommended_stay_area: string     // Best area/lodge/neighborhood to base yourself — used as itinerary anchor
   recommended_stay_reason: string   // One sentence explaining why
+  must_cover: string[]              // Exactly 10 named experiences every serious guide to this destination covers.
+                                    // Specific enough to resolve to a real place or event, not a category.
+                                    // e.g. "Mount Fuji Day Trip", "Aki Basho Sumo Tournament (September)"
+                                    // Board generation uses this as a required coverage checklist.
 }
 
 export type SeasonType = "off_season" | "shoulder_season" | "peak_season"
@@ -226,6 +230,8 @@ export interface Board {
   themes: Theme[]
   preferences?: Preferences
   generated_at: string
+  eval_gaps: string[]   // Named experiences missing from the board — output of the completeness eval pass.
+                        // Empty array when no gaps found or eval was skipped. Never null.
 }
 
 // ─── Clustering ──────────────────────────────────────────────────────────────

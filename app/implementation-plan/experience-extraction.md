@@ -2,10 +2,21 @@
 
 ## Owns
 
-`lib/pipeline/experiences.ts` → `generateQueries(dest, themes, provider)`
+`lib/pipeline/experiences.ts` → `generateQueries(dest, themes, travelMonth, provider)`
 `lib/pipeline/experiences.ts` → `extractFromPage(result, provider)` → `RawExperience[]` — map step
 `lib/pipeline/experiences.ts` → `dedupExperiences(candidates, dest, provider)` → `GroundedExperience[]` — reduce step
-`lib/pipeline/experiences.ts` → `getExperiences(dest, destCtx, provider)` — full pipeline with cache
+`lib/pipeline/experiences.ts` → `getExperiences(dest, destCtx, travelMonth, provider)` — full pipeline with cache
+
+### Date-aware event queries
+
+When `travelMonth` is provided, the query generator adds a dedicated event query batch alongside the theme queries:
+
+- `"[destination] [month] events festivals 2026"` — broad event sweep
+- `"[destination] sports tournament [month] tickets"` — major sporting events (sumo basho, baseball, football, tennis)
+- `"[destination] concerts music festival [month]"` — music and arts events
+- `"[destination] public holiday [month] special events"` — national holidays, special openings
+
+Without `travelMonth`, these queries are omitted. The experiences cache key includes the travel month slug so month-specific results don't bleed into cached boards for different months.
 
 ## Architecture — map-reduce
 

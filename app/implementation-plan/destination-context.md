@@ -24,6 +24,7 @@ interface DestinationContext {
   applicable_themes: string[]
   recommended_stay_area: string
   recommended_stay_reason: string
+  must_cover: string[]   // exactly 10 named experiences every serious guide covers
 }
 ```
 

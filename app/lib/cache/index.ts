@@ -37,11 +37,12 @@ export interface CacheEntry<T> {
 }
 
 export type CacheKey =
-  | "canonical_name"         // raw input → canonical destination name
+  | "canonical_name"                // raw input → canonical destination name
   | "destination_context"
-  | `weather_${string}`      // e.g. "weather_november"
-  | "experiences"            // search-grounded experience list
-  | `board_${string}`        // e.g. "board_abc123de" (prompt hash suffix)
+  | `weather_${string}`             // e.g. "weather_november"
+  | "experiences"                   // search-grounded experience list (no travel month)
+  | `experiences_${string}`         // e.g. "experiences_september" — month-scoped with event queries
+  | `board_${string}`               // e.g. "board_abc123de" (prompt hash suffix)
 
 // ─── Slug ─────────────────────────────────────────────────────────────────────
 

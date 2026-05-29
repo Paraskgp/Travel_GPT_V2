@@ -6,7 +6,13 @@ import {
 } from "../claude/prompts"
 import { DestinationContext, WeatherContext, GroundedExperience, Theme, Preferences } from "../types"
 import { enrichExperience } from "../places/client"
+import { evaluateBoard } from "./board-eval"
 import { parseJSON } from "../utils/parse-json"
+
+export interface BoardResult {
+  themes: Theme[]
+  eval_gaps: string[]
+}
 
 /**
  * Generate (or load from cache) the full board for a destination.
@@ -16,6 +22,8 @@ import { parseJSON } from "../utils/parse-json"
  *   2. Server-side experience deduplication
  *   3. Tip enhancement pass (parallel per experience)
  *   4. Google Places enrichment pass (parallel, only for is_mappable experiences)
+ *   5. Grounding pass (business_status → grounding_status, types → is_area_experience)
+ *   6. Board completeness eval (senior-editor gap detection)
  *
  * Cache: keyed by prompt hash — auto-invalidates when any prompt file changes.
  *
@@ -29,12 +37,12 @@ export async function generateBoard(
   experiences: GroundedExperience[],
   prefs: Preferences,
   provider: Provider = "openai"
-): Promise<Theme[]> {
+): Promise<BoardResult> {
   const bKey = boardCacheKey()
-  const cached = cacheRead<{ themes: Theme[]; generated_at: string }>(dest, bKey)
+  const cached = cacheRead<{ themes: Theme[]; eval_gaps?: string[]; generated_at: string }>(dest, bKey)
   if (cached) {
     console.log(`[pipeline/board] cache HIT — ${cached.themes.length} themes`)
-    return cached.themes
+    return { themes: cached.themes, eval_gaps: cached.eval_gaps ?? [] }
   }
 
   // ── Wave 1: Signature theme ──────────────────────────────────────────────────
@@ -166,16 +174,27 @@ export async function generateBoard(
     })),
   }))
 
+  // ── Board completeness eval ──────────────────────────────────────────────────
+  // Senior-editor pass: what's clearly missing that every serious guide covers?
+  // Non-fatal — eval failure yields [] and board is cached normally.
+  const evalGaps = await evaluateBoard(dest, enhancedThemes, provider)
+  if (evalGaps.length > 0) {
+    console.log(`[pipeline/board] completeness gaps (${evalGaps.length}):`)
+    evalGaps.forEach(g => console.log(`  ⚠️  ${g}`))
+  } else {
+    console.log("[pipeline/board] completeness eval — no gaps found")
+  }
+
   // ── Write to cache ───────────────────────────────────────────────────────────
   cacheWrite(
     dest,
     bKey,
-    { themes: enhancedThemes, generated_at: new Date().toISOString() },
+    { themes: enhancedThemes, eval_gaps: evalGaps, generated_at: new Date().toISOString() },
     TTL.BOARD,
     bKey.replace("board_", "")
   )
 
-  return enhancedThemes
+  return { themes: enhancedThemes, eval_gaps: evalGaps }
 }
 
 // ── Internal ─────────────────────────────────────────────────────────────────
