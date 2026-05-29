@@ -150,18 +150,26 @@ export async function callLLM(
       baseURL: "https://generativelanguage.googleapis.com/v1beta/openai/",
     })
     const MAX_RETRIES = 3
+    // Per-call timeout: Gemini API occasionally hangs (no response, no 429).
+    // Without a timeout, the OpenAI SDK default (600s) lets one hung call hold
+    // an entire batch of 20 concurrent map-phase extractors for 10 minutes.
+    // 90s is ample for any legitimate Gemini response (even dedup with heavy thinking).
+    const GEMINI_TIMEOUT_MS = 90_000
     let lastError: unknown
 
     for (let attempt = 0; attempt < MAX_RETRIES; attempt++) {
       try {
-        const response = await client.chat.completions.create({
-          model,
-          max_tokens: maxTokens,
-          messages: [
-            { role: "system", content: systemPrompt },
-            { role: "user",   content: userPrompt },
-          ],
-        })
+        const response = await client.chat.completions.create(
+          {
+            model,
+            max_tokens: maxTokens,
+            messages: [
+              { role: "system", content: systemPrompt },
+              { role: "user",   content: userPrompt },
+            ],
+          },
+          { timeout: GEMINI_TIMEOUT_MS }
+        )
         const choice = response.choices[0]
         if (choice.finish_reason === "length") {
           console.warn("[callLLM] Gemini response cut off by max_tokens limit")

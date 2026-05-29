@@ -189,6 +189,8 @@ interface GroundedExperience {
 
 ## Open technical items
 
+- **[DONE 2026-05-29]** Gemini map phase hanging indefinitely: `client.chat.completions.create()` had no per-call timeout. With batch-and-wait concurrency, one hung Gemini call (Gemini API stops responding without 429) holds the entire batch of 20 pages for up to 600 seconds (SDK default). Fixed: added explicit 90-second timeout to all Gemini API calls in `lib/llm/client.ts`.
+
 - **[DONE 2026-05-28]** Map phase parallelism: `runWithConcurrency(items, 20, fn)` caps parallel Gemini calls at 20. Prevents rate-limit exhaustion on free tier.
 - **[DONE 2026-05-28]** Gemini dedup truncation (output): Gemini 2.5 Flash uses thinking tokens against max_tokens budget. Fixed by setting dedup stage to 65536 (model ceiling) and stripping source_urls from LLM I/O.
 - **[DONE 2026-05-29]** Gemini dedup crash for large cities — two independent root causes, both fixed:
