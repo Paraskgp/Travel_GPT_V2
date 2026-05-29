@@ -64,12 +64,13 @@
   },
   "Tokyo, Japan": {
     "slug": "tokyo-japan",
-    "last_updated": "2026-05-28T20:19:51.762Z",
+    "last_updated": "2026-05-29T18:02:02.813Z",
     "keys": [
       "canonical_name",
       "destination_context",
       "weather_september",
-      "board_a39e54a9"
+      "board_a39e54a9",
+      "board_28f74deb"
     ]
   },
   "Kyoto, Japan": {

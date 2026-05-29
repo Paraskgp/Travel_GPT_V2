@@ -169,6 +169,46 @@ This costs nothing today and preserves full architectural flexibility for tomorr
 
 ---
 
+## Fix the root cause. Never put a bandage.
+
+When something is broken, your first job is to find **why** it broke — not to add a guardrail around the symptom.
+
+**The wrong diagnostic process:**
+1. Mount Fuji is missing from the Tokyo day trips board.
+2. Add "Mount Fuji" to the destination context `must_cover` list.
+3. Add a board eval rule to flag its absence.
+
+Both of those are bandages. They fix the specific instance. They do nothing for the next destination where a different iconic day trip is missing.
+
+**The right diagnostic process:**
+1. Mount Fuji is missing from the Tokyo day trips board.
+2. Ask: what is supposed to generate day trips? The day trips theme prompt.
+3. Ask: what does the day trips prompt tell the LLM to do? "Surface the best nearby destinations."
+4. Ask: is that instruction sufficient to guarantee the most iconic day trip appears? No — it gives the LLM no structure for ordering, no requirement to start from the canonical answer, and no guard against collapsing a nearby proxy (Hakone) into the iconic destination (Mount Fuji).
+5. **Fix the day trips prompt** so the root cause cannot recur for any destination.
+
+The bandage approach compounds over time — you end up with a codebase full of destination-specific rules that break silently when a new city is added. The root cause fix works for every destination, present and future, without any additional work.
+
+**How to find the root cause:**
+
+Trace the failure to the earliest point in the pipeline where a correct output would have prevented it. That is where the fix belongs.
+
+- LLM output missing something → is the prompt asking for it? Fix the prompt.
+- Prompt is asking for it but LLM ignores it → is the instruction specific enough? Strengthen the instruction.
+- Search didn't surface a result → is the query specific enough? Fix the query generator.
+- Data is present but discarded → is the pipeline dropping it? Fix the pipeline.
+- Data is stored but UI ignores it → fix the UI or the data contract.
+
+Do not skip levels. Do not add a downstream guardrail to compensate for an upstream gap. Fix upstream.
+
+**Rules of thumb:**
+- If you are adding a rule that references a specific destination, venue, or experience name, stop. That is a bandage.
+- If fixing a problem requires touching a file two or more layers downstream from where the problem originates, you are probably fixing the wrong layer.
+- `must_cover` and eval gaps are quality signals, not fixes. They tell you something is wrong. They do not replace fixing the thing that is wrong.
+- If a prompt is producing bad output, the answer is almost always a better prompt — not a validator on the output.
+
+---
+
 ## Write for the general case — never patch a symptom
 
 When you identify a problem, your job is to fix the class of problem, not the specific instance you observed.

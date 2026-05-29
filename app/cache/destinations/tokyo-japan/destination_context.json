@@ -1,29 +1,29 @@
 {
   "data": {
     "destination": "Tokyo, Japan",
-    "soul": "Tokyo is not merely a city; it is a sprawling, pulsating ecosystem where hyper-modernity dances in constant tension with ancient traditions. It's a place where serene Shinto shrines nestle beneath towering skyscrapers, and robot restaurants exist just blocks from meticulously crafted kaiseki meals. The soul of Tokyo lies in its relentless pursuit of perfection and aesthetic excellence in every minute detail, from a perfectly timed bullet train to a single piece of nigiri sushi. It’s a city that can feel overwhelmingly vast and complex, yet operates with an almost serene efficiency and politeness that belies its frenetic pace. The light here shifts from the neon glow of Shibuya to the quiet filtered sun in a traditional garden, revealing a city of endless discovery, where each neighborhood feels like a distinct world, inviting you to lose yourself in its unique rhythm and character.\n\nWhat draws people back is this sense of constant evolution paired with an unwavering commitment to quality and service. It’s the thrill of stumbling upon a tiny ramen shop with a line stretching around the block, the quiet contemplation in a perfectly manicured park, or the electric energy of a karaoke bar. Tokyo teaches you to appreciate the small things done extraordinarily well, and to embrace a future that somehow respectfully carries its past forward. It's a place that is simultaneously alien and deeply familiar, offering a sensory overload that somehow grounds you in its unique order.",
+    "soul": "Tokyo is a city of exhilarating, almost exhausting, contradictions and ceaseless motion. It is where ancient Shinto shrines stand serene amidst neon-drenched skyscrapers, where meticulous garden design meets the frenetic energy of a Shibuya scramble. The very air hums with a hyper-efficient pulse, driven by an inherent pride in precision, aesthetics, and unparalleled service, known as 'omotenashi.' Yet, beneath this futuristic veneer, centuries of tradition persist, woven into daily life from a bowl of ramen to the quiet reverence of a tea ceremony. To truly experience Tokyo is to embrace its layered complexity: the quiet calm found in a tiny, perfect izakaya, the electrifying rush of discovery in a hidden alley, and the profound sense that you are witnessing the past and the future converging in a dazzling, uniquely Japanese symphony of urban existence.",
     "defining_pillars": [
-      "Seamless blend of ancient tradition and futuristic innovation",
-      "World's most diverse and high-quality culinary scene",
-      "Neighborhoods each possessing a unique personality and vibe",
-      "Hyper-efficient, silent, and expansive public transport",
-      "Deep-seated culture of impeccable service and politeness",
-      "Fashion-forward trends and distinctive pop culture"
+      "Hyper-efficient, ubiquitous public transportation",
+      "World-leading culinary scene, from street food to Michelin stars",
+      "Seamless blend of ancient tradition and cutting-edge technology",
+      "Pinnacle of urban design and architectural innovation",
+      "Epicenter of global pop culture and fashion trends",
+      "Obsession with meticulous detail and exceptional service"
     ],
     "best_for": [
-      "Urban explorers who thrive on sensory richness and density",
-      "Food obsessives seeking Michelin-starred excellence and street food gems",
-      "Culture enthusiasts intrigued by the old-meets-new dynamic",
-      "Design and architecture aficionados appreciating cutting-edge aesthetics",
-      "Shopaholics looking for unique fashion, tech, and artisan goods",
-      "Travelers prioritizing safety, cleanliness, and efficiency"
+      "Food obsessives eager to explore diverse culinary landscapes",
+      "Urban explorers seeking endless discovery in a vast metropolis",
+      "Design and architecture enthusiasts",
+      "Pop culture and fashion trend-followers",
+      "Culture seekers interested in both modern and traditional Japan",
+      "Travelers who appreciate efficiency and order amidst chaos"
     ],
     "honest_notes": [
-      "The city's sheer scale can be overwhelming; planning ahead and focusing on specific neighborhoods is crucial.",
-      "While major tourist areas have English signage, a basic understanding of Japanese phrases or a translation app will greatly enhance your experience.",
-      "Tokyo can be expensive, especially for accommodation and high-end dining; budget accordingly.",
-      "Public transport is excellent but requires mastering a complex network of train and subway lines.",
-      "Personal space, particularly on crowded trains during rush hour, is minimal; embrace the squeeze."
+      "Tokyo is immense and can feel overwhelming; planning for transit time between districts is crucial.",
+      "English proficiency can be limited outside major tourist areas, though navigation is generally well-signed.",
+      "Accommodation can be expensive, and room sizes are often smaller than in Western cities.",
+      "Many top attractions, especially museums and popular restaurants, require advance booking.",
+      "The subway and train system is extensive and efficient but can be complex for first-timers; a Pasmo/Suica card is essential."
     ],
     "applicable_themes": [
       "signature",
@@ -39,12 +39,23 @@
       "rainy_day",
       "nightlife",
       "shopping",
-      "day_trips",
-      "seasonal"
+      "day_trips"
     ],
     "recommended_stay_area": "Shinjuku",
-    "recommended_stay_reason": "Shinjuku offers exceptional public transport connectivity to nearly every other major Tokyo hub, diverse dining and shopping, vibrant nightlife, and a tranquil park, making it the most balanced and convenient base for exploring the entire city."
+    "recommended_stay_reason": "As a major transportation hub, Shinjuku offers direct access via the JR Yamanote line and multiple subway lines to nearly all major districts, alongside its own diverse offerings of nightlife, shopping, parks, and city views.",
+    "must_cover": [
+      "Shibuya Crossing",
+      "Sensoji Temple, Asakusa",
+      "Meiji Jingu Shrine, Harajuku",
+      "Tokyo Skytree",
+      "Tsukiji Outer Market",
+      "Ueno Park & Museums",
+      "Shinjuku Gyoen National Garden",
+      "Ghibli Museum, Mitaka",
+      "Harajuku Takeshita Street",
+      "teamLab Planets"
+    ]
   },
-  "generated_at": "2026-05-28T20:05:23.720Z",
+  "generated_at": "2026-05-29T17:51:10.025Z",
   "ttl_days": 180
 }
