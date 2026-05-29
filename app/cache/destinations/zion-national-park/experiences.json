@@ -1,0 +1,3182 @@
+{
+  "data": [
+    {
+      "name": "Angels Landing",
+      "location": "Zion National Park, Utah — trailhead at The Grotto (Shuttle Stop 6) via West Rim Trail",
+      "category": "trail",
+      "key_facts": [
+        "Permit required year-round via recreation.gov lottery (seasonal and day-before options)",
+        "Application fee: $6, per person fee (if selected): $3",
+        "One of Zion National Park’s most iconic and nerve-wracking hikes",
+        "Leads adventurers to the top of a towering sandstone peak (1,488–1,827 ft elevation gain)",
+        "Thrilling route rewards hikers with breathtaking panoramic views (360-degree panorama of Zion Canyon)",
+        "Features steep switchbacks (Walter's Wiggles, 21 switchbacks) and a narrow, exposed ridge with dangerous drop-offs",
+        "Final half-mile uses chain handrails on exposed Class 3 terrain; incredibly treacherous with many deaths reported due to falls",
+        "4.3–5.4 miles round-trip, typically 3–5 hours depending on pace",
+        "Can hike to Scout Lookout without a permit (closer you get without a permit)",
+        "Best hiked in cooler weather (fall & spring) for less exhaustion and fewer crowds",
+        "Winter conditions: trail can be icy near the top; microspikes recommended; should not be attempted if snow and ice are on the trail",
+        "Early morning or late afternoon provides clearest views and cooler temperatures (summer temperatures can exceed 100 degrees)",
+        "Look for California Condors soaring above cliffs and ridges",
+        "Requires hiking shoes that grip and gloves for chains",
+        "Not safe for young children to go the extra 0.5 miles past Scout Lookout",
+        "Descending in the dark can be dangerous",
+        "Access requires the free park shuttle to The Grotto Trailhead"
+      ],
+      "source_urls": [
+        "https://www.undercanvas.com/blog/what-to-do-during-your-stay-at-under-canvas-zion",
+        "https://www.getyourguide.com/zion-national-park-l32179/ttd",
+        "https://www.undercanvas.com/camps/zion/adventure",
+        "https://www.recreation.gov/permits/4251915",
+        "https://www.facebook.com/zionnps/posts/the-zion-wilderness-permit-office-in-the-zion-canyon-visitor-center-will-be-issu/1901354126562218",
+        "https://zionwhitebisonresort.com/wildlife-watching-in-zion-national-park",
+        "https://hikingguy.com/hikes/observation-point-zion",
+        "https://www.grandcanyontrust.org/hikes/cpe-observation-point-trail",
+        "https://therivatzion.com/sightseeing/birdwatching-in-zion-during-late-fall",
+        "https://www.nps.gov/zion/planyourvisit/zion-canyon-trail-descriptions.htm",
+        "https://jameskaiser.com/zion/hiking/west-rim",
+        "https://www.facebook.com/groups/americansouthwest/posts/1389987338297403",
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down",
+        "https://www.alltrails.com/parks/us/utah/zion-national-park/kids",
+        "https://www.allwaysadventure.com/discover-the-best-zion-hikes-with-kids",
+        "https://girlwhotravelstheworld.com/best-sunset-spots-in-zion-national-park",
+        "https://zionwildflower.com/winter-activities-to-enjoy-from-our-zion-park-cabins",
+        "https://saltlakemagazine.com?p=123856",
+        "https://www.nps.gov/zion/planyourvisit/planning-guide.htm",
+        "https://therivatzion.com/sightseeing/fall-in-zion-autumn-colors-and-pleasant-hikes",
+        "https://morethanjustparks.com/best-time-to-visit-zion-national-park",
+        "https://wildlandtrekking.com/zion-visitor-guide/visiting-zion-in-march",
+        "https://www.facebook.com/openroading/posts/hiking-angels-landing-in-zion-national-park-heres-what-you-need-to-know-this-is-/1280174723833471",
+        "https://www.facebook.com/groups/543165101611964/posts/1005828962012240",
+        "https://zionnationalpark.com/angels-landing",
+        "https://www.exploreziontours.com/blog/best-places-to-eat-in-springdale-utah-near-zion-national-park",
+        "https://therivatzion.com/things-to-do/permits-and-reservations-in-zion-2025-guide",
+        "https://reservenature.com/blogs/zion-permits-guide",
+        "https://watchmanvillas.com/will-you-need-a-reservation-to-visit-zion-national-park-in-2025",
+        "https://www.zionponderosa.com/blog/2025/04/planning-your-perfect-zion-national-park-vacation-tips-from-the-pros",
+        "https://www.allwaysadventure.com/first-timers-guide-to-visiting-zion-national-park"
+      ]
+    },
+    {
+      "name": "The Narrows",
+      "location": "Zion National Park, Utah — Virgin River, accessible via Riverside Walk from Temple of Sinawava (Shuttle Stop 9). Top-Down starts at Chamberlain’s Ranch.",
+      "category": "trail, canyoneering",
+      "key_facts": [
+        "Legendary slot canyon hike, ranked among the top 10 in the nation",
+        "Wading, walking, and sometimes swimming in the Virgin River, which becomes the trail",
+        "Features towering 1,000–1,500-foot canyon walls",
+        "Bottom-Up Day Hike: Up to 10 miles round-trip (to Big Spring and back), 4–8 hours duration, no permit needed (you go as far as comfortable and return), most turn around at Orderville Canyon Junction (~2.5 miles in)",
+        "Top-Down Day Hike: 16–17 miles one-way, 10–14 hours, strenuous, for experienced hikers only, permit required (Advance/Daily Lottery, Walk-In Permits), starts at Chamberlain’s Ranch",
+        "Top-Down Overnight Trip: 16–17 miles over 2 days, strenuous but paced, 12 campsites along the way, permit required (limit 40 persons/day), requires Restop® bags for human waste, starts at Chamberlain’s Ranch",
+        "Water levels highly variable and can reach chest-level or require swimming",
+        "Closed if Virgin River exceeds 150 cubic feet per second (CFS) for bottom-up, 120 CFS for top-down",
+        "Constant micro-adjustments needed due to slippery rocks; travel is rough and slippery in cold, fast-flowing water",
+        "Water can be very cold (38-40°F in winter/early spring); drysuits, wetsuits, neoprene socks, and sturdy wooden poles recommended for cool weather",
+        "Flash flood risk; always check weather and river conditions (NPS page) before hiking",
+        "Cyanotoxin bacteria bloom (Dec 2020 & current); do not put heads under or drink water (even filtered)",
+        "Best done late May through October; typically not hikeable in early spring due to high, cold water from snowmelt",
+        "One of Zion National Park's main attractions; expect large crowds in peak months (summer)",
+        "Wall Street is the narrowest section (1500-foot walls, 22 feet wide), minimum 6 miles round-trip from Temple of Sinawava to reach",
+        "Big Spring is the turnaround point for the Bottom-Up hike and a potential water refill for Top-Down hikers",
+        "Access to Temple of Sinawava requires the free park shuttle; Chamberlain’s Ranch road access dependent on water/snow levels",
+        "Gear rental available in Springdale (e.g., Zion Outfitters) for water shoes, waders, drysuits, and trekking sticks"
+      ],
+      "source_urls": [
+        "https://www.undercanvas.com/blog/what-to-do-during-your-stay-at-under-canvas-zion",
+        "https://www.getyourguide.com/zion-national-park-l32179/ttd",
+        "https://www.monicagoes.com/blog/emerald-pools",
+        "https://ouradventurejournal.com/stroller-friendly-hikes-at-zion",
+        "https://www.undercanvas.com/camps/zion/adventure",
+        "https://whereandwander.com/the-narrows-bottom-up-hike-complete-guide",
+        "https://www.grandcanyontrust.org/hikes/cpe-observation-point-trail",
+        "https://www.gotheredothatllc.com/read-go-there-do-that-blogs/best-hikes-in-zion-national-park",
+        "https://www.allwaysadventure.com/discover-the-best-zion-hikes-with-kids",
+        "https://www.bigbravenomad.com/blog/what-to-do-in-zion-national-park-with-kids",
+        "http://www.travelingstroller.com/2018/08/zion-national-park-best-hikes-and.html",
+        "https://www.zionadventurephotog.com/single-post/2018/03/22/hiking-the-riverside-walk-trail-zion-national-park",
+        "https://saltlakemagazine.com?p=123856",
+        "https://www.nps.gov/zion/planyourvisit/seasons.htm",
+        "https://zionnationalpark.com/best-time-to-visit",
+        "https://www.nps.gov/zion/planyourvisit/planning-guide.htm",
+        "https://therivatzion.com/sightseeing/fall-in-zion-autumn-colors-and-pleasant-hikes",
+        "https://morethanjustparks.com/best-time-to-visit-zion-national-park",
+        "https://wildlandtrekking.com/zion-visitor-guide/visiting-zion-in-march",
+        "https://www.exploreziontours.com/blog/best-places-to-eat-in-springdale-utah-near-zion-national-park",
+        "https://reservenature.com/blogs/zion-permits-guide",
+        "https://www.zionponderosa.com/blog/2025/04/planning-your-perfect-zion-national-park-vacation-tips-from-the-pros"
+      ]
+    },
+    {
+      "name": "Emerald Pools Trails (System)",
+      "location": "Zion National Park, Utah — starts at Zion Lodge bus stop (Shuttle Stop 5)",
+      "category": "trail",
+      "key_facts": [
+        "A series of trails leading to three scenic spots: Lower, Middle, and Upper Emerald Pools, with potential waterfalls",
+        "Total distance 1.2 to 3 miles loop/round-trip depending on desired route",
+        "Difficulty ranges from easy (Lower) to moderate/strenuous (Middle/Upper)",
+        "Leads to beautiful waterfalls that cascade from Heaps Canyon (relying on seasonal snowmelt or heavy rain), best enjoyed when flowing",
+        "Not recommended in driest summer and fall months when waterfalls are likely to be dry",
+        "The tranquil pools provide a vital water source, making this trail a hotspot for wildlife (mule deer)",
+        "One of the most popular hikes in the park, located halfway up Zion Canyon on its western wall",
+        "Shuttle recommended to the trailhead if staying outside the park or in campgrounds",
+        "No permit required",
+        "Expect some rocky and uneven terrain as you go higher; watch your step due to slippery rocks and loose dirt",
+        "Bring a rain jacket for parts of the trail where you walk under falls",
+        "Good option for variety without a full-day commitment"
+      ],
+      "source_urls": [
+        "https://noahlangphotography.com/blog/best-things-to-do-zion-national-park",
+        "https://www.dwhike.com/Hikes-in-the-West/Utah-Hikes/Zion-National-Park-Emerald-Pools",
+        "https://www.undercanvas.com/blog/your-guide-to-zion-national-park-wildlife",
+        "https://www.gotheredothatllc.com/read-go-there-do-that-blogs/best-hikes-in-zion-national-park",
+        "https://schoandjo.com/best-hikes-in-zion-national-park",
+        "https://www.facebook.com/groups/hurricaneut/posts/4559781217587299",
+        "https://www.alltrails.com/parks/us/utah/zion-national-park/kids",
+        "https://www.allwaysadventure.com/discover-the-best-zion-hikes-with-kids",
+        "https://therivatzion.com/sightseeing/fall-in-zion-autumn-colors-and-pleasant-hikes",
+        "https://morethanjustparks.com/best-time-to-visit-zion-national-park",
+        "https://therivatzion.com/things-to-do/permits-and-reservations-in-zion-2025-guide",
+        "https://www.allwaysadventure.com/first-timers-guide-to-visiting-zion-national-park"
+      ]
+    },
+    {
+      "name": "Lower Emerald Pool Trail",
+      "location": "Zion National Park, Utah — trailhead across from Zion Lodge (Shuttle Stop 5)",
+      "category": "trail",
+      "key_facts": [
+        "Easiest section of the Emerald Pools system",
+        "1.2–1.4 miles roundtrip, with very little elevation gain (131 ft ascent)",
+        "Paved trail, smooth and wide; suitable for most visitors, including families with strollers (jogger stroller recommended)",
+        "Leads to a beautiful pool and behind a 'waterfall' (seasonal)",
+        "Features lush scenery and trees with yellow leaves in late October",
+        "Some minor drop-offs, caution advised"
+      ],
+      "source_urls": [
+        "https://www.nps.gov/thingstodo/hike-lower-emerald-pool-trail.htm",
+        "https://www.dwhike.com/Hikes-in-the-West/Utah-Hikes/Zion-National-Park-Emerald-Pools",
+        "https://www.alltrails.com/parks/us/utah/zion-national-park/kids"
+      ]
+    },
+    {
+      "name": "Middle Emerald Pool Trail",
+      "location": "Zion National Park, Utah — part of the Emerald Pools system, linked from Lower Emerald Pools",
+      "category": "trail",
+      "key_facts": [
+        "Least impressive of the three pools, though arguably it touts the nicest views",
+        "Moderate difficulty, involves some elevation gain and short bursts of scrambling",
+        "Not stroller-friendly; rocky and uneven terrain, watch your step due to slippery ground and loose dirt",
+        "May be closed for rehabilitation (check park conditions)"
+      ],
+      "source_urls": [
+        "https://www.dwhike.com/Hikes-in-the-West/Utah-Hikes/Zion-National-Park-Emerald-Pools"
+      ]
+    },
+    {
+      "name": "Upper Emerald Pool Trail",
+      "location": "Zion National Park, Utah — part of the Emerald Pools system, linked from Middle Emerald Pools",
+      "category": "trail",
+      "key_facts": [
+        "Moderate to strenuous difficulty, involving significant elevation gain and scrambling",
+        "Not stroller-friendly; rocky and uneven terrain, watch your step due to slippery ground and loose dirt",
+        "Formed at the base of a towering 300' rock wall out from which sprays a delicate fount of water (seasonal), offering a dramatic view"
+      ],
+      "source_urls": [
+        "https://www.dwhike.com/Hikes-in-the-West/Utah-Hikes/Zion-National-Park-Emerald-Pools"
+      ]
+    },
+    {
+      "name": "Zion Canyon Shuttle System",
+      "location": "Zion National Park, Utah — operating in Zion Canyon (from Zion Canyon Visitor Center to the Temple of Sinawava), also serves Springdale",
+      "category": "transportation",
+      "key_facts": [
+        "Free service, crucial during busiest times of year when private vehicle parking in Zion Canyon is banned",
+        "Operates from March through November, with an additional holiday window (e.g., Dec 26 - Jan 2)",
+        "Serves Zion Canyon Scenic Drive, with nine stops including Zion Canyon Visitor Center (Stop 1), Zion Human History Museum (Stop 2), Canyon Junction (Stop 3), Zion Lodge (Stop 5), The Grotto (Stop 6), and Temple of Sinawava (Stop 9)",
+        "The full loop takes about 45 minutes one way",
+        "Can have wait times of 30-45 minutes by 9 AM in summer; recommend arriving early",
+        "No tickets, no reservations, no additional cost beyond entrance pass",
+        "Strollers can be brought on board (folded or on bike rack, depending on driver's directions)",
+        "Allows for relaxed wildlife viewing and covers more ground for birdwatchers",
+        "Shuttle bus is required to access most popular trails in Zion Canyon during peak season; check nps.gov/zion for schedules",
+        "Operates less frequently and for fewer hours each day in fall; typically used only during holidays in winter, allowing private vehicles on Zion Canyon Scenic Drive outside these times"
+      ],
+      "source_urls": [
+        "https://www.gotheredothatllc.com/read-go-there-do-that-blogs/best-hikes-in-zion-national-park",
+        "https://zionnationalpark.com/best-time-to-visit",
+        "https://www.zionponderosa.com/blog/2025/04/planning-your-perfect-zion-national-park-vacation-tips-from-the-pros"
+      ]
+    },
+    {
+      "name": "Canyon Overlook Trail",
+      "location": "Zion National Park, Utah — perched over Zion Canyon, trailhead on the east side of the Zion-Mount Carmel Tunnel on Zion-Mount Carmel Highway",
+      "category": "trail",
+      "key_facts": [
+        "Short, easy to moderate day hike with little elevation change (1.1–1.2 miles / 1.6–1.9 km round-trip)",
+        "Estimated time: 25 minutes to 1 hour",
+        "Leads to a stunning, dramatic overlook above the Great Arch, with panoramic views of Zion Canyon and the Towers of the Virgin",
+        "Very popular, especially at sunset, but sunrise is best to avoid crowds and for perfect photo light",
+        "Offers narrow ledges, a wooden bridge, and light scrambling; caution advised with younger children due to drop-offs",
+        "No permit needed",
+        "Outside the shuttle zone, allowing direct access by vehicle to the trailhead",
+        "Limited parking; recommend hiking as soon as you find an open spot",
+        "One of the best viewpoints in the park, offering a great effort-to-payoff ratio",
+        "May want to skip if afraid of heights; has railings for safety"
+      ],
+      "source_urls": [
+        "https://noahlangphotography.com/blog/best-things-to-do-zion-national-park",
+        "https://www.dwhike.com/Hikes-in-the-West/Utah-Hikes/Zion-National-Park-Emerald-Pools",
+        "https://www.tripadvisor.com/ShowTopic-g143057-i1449-k11028755-Seeking_suggestions_for_lightly_trafficked_hikes_trails-Zion_National_Park_Utah.html",
+        "https://hikingguy.com/hikes/observation-point-zion",
+        "https://www.grandcanyontrust.org/hikes/cpe-observation-point-trail",
+        "https://schoandjo.com/best-hikes-in-zion-national-park",
+        "https://www.allwaysadventure.com/discover-the-best-zion-hikes-with-kids",
+        "https://www.bigbravenomad.com/blog/what-to-do-in-zion-national-park-with-kids",
+        "http://www.travelingstroller.com/2018/08/zion-national-park-best-hikes-and.html",
+        "https://morethanjustparks.com/best-time-to-visit-zion-national-park",
+        "https://wildlandtrekking.com/zion-visitor-guide/visiting-zion-in-march",
+        "https://therivatzion.com/things-to-do/permits-and-reservations-in-zion-2025-guide",
+        "https://www.allwaysadventure.com/first-timers-guide-to-visiting-zion-national-park"
+      ]
+    },
+    {
+      "name": "Observation Point Trail (via East Mesa)",
+      "location": "Zion National Park, Utah — upper elevations along the rim of Zion Canyon, accessible via East Mesa Trailhead (near Zion Ponderosa Ranch Resort)",
+      "category": "trail",
+      "key_facts": [
+        "7.0–7.9 miles / 11.3–12.7 km round-trip distance",
+        "Difficulty: Moderate, with 700–702 ft elevation gain; takes 3–4 hours",
+        "Offers unmatched rim-level vistas that rival the Grand Canyon’s perspective, including a direct view of Angels Landing from above and across the entire length of Zion Canyon",
+        "Considered by many to be the best viewpoint in the park (6,512–6,521 ft elevation)",
+        "Relatively flat and shaded in parts, sees far fewer visitors and is less crowded than many canyon trails",
+        "No permits, shuttles, or chains needed for this route",
+        "Best to go late April through early June or September through October; open year-round, but dirt road not plowed in winter (may require snowshoe/ski an extra 2.8 miles each way)",
+        "Trailhead located outside the park’s east entrance, about an hour drive from the Visitor Center (E Mesa Trail, Springdale, UT 84767)",
+        "Trailhead has only 15 parking spots, surrounding area is private with strict no-parking (Zion Ponderosa Ranch property); recommend arriving early",
+        "Shuttle service available from Zion Ponderosa Ranch Resort ($7.50, check in at main building)",
+        "Dirt road section to trailhead usually passable by low-clearance cars when dry; 4x4 recommended if raining or snowy/muddy",
+        "For the first 3.4 miles along the East Mesa Trail, there aren’t many views; descends about 320 ft before the Observation Point junction",
+        "Views into Mystery Canyon and Echo Canyon along the route",
+        "Very exposed hike throughout much of the day; bring at least 1L of water, sunscreen, UV-protective clothing, and a wide-brimmed hat",
+        "Old route from Zion Canyon using lower East Mesa / Weeping Rock Trail closed indefinitely due to rockfall (since August 2019)"
+      ],
+      "source_urls": [
+        "https://noahlangphotography.com/blog/best-things-to-do-zion-national-park"
+      ]
+    },
+    {
+      "name": "Riverside Walk",
+      "location": "Zion National Park, Utah — starts at Temple of Sinawava shuttle stop (Stop 9)",
+      "category": "trail",
+      "key_facts": [
+        "Easy, paved, wheelchair accessible and stroller-friendly trail",
+        "1.9–2.2 miles / 3.5 km round-trip, takes most people one to two hours to complete",
+        "Follows the Virgin River through the canyon, offering captivating views of the river and canyon",
+        "Leads to the entrance of The Narrows hike (the point where the maintained trail disappears into the Virgin River)",
+        "Notably cooler due to air coming off the river and canyon walls shading from the sun; peaceful and shaded path",
+        "Popular trail option for guided hikes",
+        "Perfect for spotting birds that thrive near water, like American Dippers and Belted Kingfishers",
+        "Especially beautiful in the morning light, much less crowded before 10 a.m.",
+        "Bathrooms and water fill stations at the trailhead",
+        "Accessible by car in winter when shuttles are not running",
+        "No permit required",
+        "A dirt trail runs along the Virgin River as an alternative path"
+      ],
+      "source_urls": [
+        "https://ouradventurejournal.com/stroller-friendly-hikes-at-zion",
+        "https://www.undercanvas.com/camps/zion/adventure",
+        "https://www.zionguru.com/rentals/narrows",
+        "https://therivatzion.com/sightseeing/birdwatching-in-zion-during-late-fall",
+        "https://schoandjo.com/best-hikes-in-zion-national-park",
+        "https://www.allwaysadventure.com/discover-the-best-zion-hikes-with-kids",
+        "https://zionwhitebisonresort.com/kids-activities-in-zion-national-park",
+        "https://www.facebook.com/groups/543165101611964/posts/813541901240948",
+        "https://morethanjustparks.com/best-time-to-visit-zion-national-park"
+      ]
+    },
+    {
+      "name": "Zion Horseback Riding (Under Canvas Zion)",
+      "location": "Zion National Park, Utah — leaves from Under Canvas Zion camp",
+      "category": "tour, horseback riding",
+      "key_facts": [
+        "Authentic western experience with professional cowboys, weaving through Zion’s desert landscape",
+        "Leaves directly from Under Canvas Zion camp",
+        "Duration: 2 hours",
+        "Operates: Monday – Saturday, March 13 – November 2 (no Sunday tours)",
+        "Included: Expert guide, gentle horse, saddle bag (for personal items), helmet",
+        "Minimum age: Youth must be able to sit up on their own (Youth 6 years and under use a Buddy Seat and ride with adult)",
+        "Party size: 1-14 people",
+        "Required attire: Long pants, close-toed shoes"
+      ],
+      "source_urls": [
+        "https://www.undercanvas.com/blog/what-to-do-during-your-stay-at-under-canvas-zion"
+      ]
+    },
+    {
+      "name": "Sand Bench Trail",
+      "location": "Zion National Park, Utah — near the mouth of Zion Canyon, walking distance from Zion Lodge",
+      "category": "trail",
+      "key_facts": [
+        "4.2–7.6 miles / 6.8–12.2 km loop (5.6 miles loop also common)",
+        "Difficulty: Moderate (728 ft elevation gain)",
+        "Estimated time: 2 hours",
+        "Lesser-known hidden gem, good day hike to get away from crowds; very quiet",
+        "Majority of the loop follows a very soft, sandy surface (wear sand appropriate shoes)",
+        "Boasts great views of the canyon and a popular viewpoint of the Court of the Patriarchs",
+        "Can be a fun, quiet trail-running adventure",
+        "Recommend going left (clockwise) on the loop for easier elevation gain on rocky area instead of sand",
+        "Try it out at sunrise",
+        "Shuttle recommended to the trailhead if staying outside the park or in campgrounds",
+        "Allows horses March to October"
+      ],
+      "source_urls": [
+        "https://noahlangphotography.com/blog/best-things-to-do-zion-national-park",
+        "https://www.gotheredothatllc.com/read-go-there-do-that-blogs/best-hikes-in-zion-national-park"
+      ]
+    },
+    {
+      "name": "Weeping Rock Trail",
+      "location": "Zion National Park, Utah — near Weeping Rock shuttle stop",
+      "category": "trail",
+      "key_facts": [
+        "Easiest hike, 0.3 miles / 0.5 km",
+        "Leads to a large rock alcove with dripping springs (Weeping Springs alcove)",
+        "Waterfall does not run year-round, relies on rain and snowmelt; cascades pour off the canyon walls in spring",
+        "Reopened in September 2025 after repairs from a 2023 rockfall event"
+      ],
+      "source_urls": [
+        "https://noahlangphotography.com/blog/best-things-to-do-zion-national-park",
+        "https://noahlangphotography.com/blog/east-mesa-trail-observation-point-zion-national-park",
+        "http://www.travelingstroller.com/2018/08/zion-national-park-best-hikes-and.html"
+      ]
+    },
+    {
+      "name": "Grapevine Trail (Left Fork Falls)",
+      "location": "Zion National Park, Utah — off Kolob Terrace Road, outside of Zion Canyon",
+      "category": "trail",
+      "key_facts": [
+        "2.2 miles / 3.5 km",
+        "Little-known day hike",
+        "Leads down a steep river canyon to the Left Fork of North Creek",
+        "Ends at a hidden waterfall and swimming hole",
+        "Can be affected by flash flooding"
+      ],
+      "source_urls": [
+        "https://noahlangphotography.com/blog/best-things-to-do-zion-national-park"
+      ]
+    },
+    {
+      "name": "Moqui Sand Caves Trail",
+      "location": "Kanab, Utah — just outside of Kanab, about a 30-minute drive from the East Entrance on Zion–Mount Carmel Highway",
+      "category": "trail",
+      "key_facts": [
+        "1.2 miles / 1.9 km",
+        "Easy, roadside day hike",
+        "Great short adventure to escape the summer heat or find something less crowded",
+        "Can be combined with a trip to The Wave in the North Coyote Buttes area"
+      ],
+      "source_urls": [
+        "https://noahlangphotography.com/blog/best-things-to-do-zion-national-park"
+      ]
+    },
+    {
+      "name": "Coral Pink Sand Dunes State Park",
+      "location": "Near Kanab, Utah — just to the south of Zion",
+      "category": "state park",
+      "key_facts": [
+        "Stunningly beautiful 5.3-square-mile (13.6-square-km) dune field",
+        "Fun place to run around and explore",
+        "Especially beautiful at sunset when golden light brings out colors"
+      ],
+      "source_urls": [
+        "https://noahlangphotography.com/blog/best-things-to-do-zion-national-park",
+        "https://zionwildflower.com/winter-activities-to-enjoy-from-our-zion-park-cabins"
+      ]
+    },
+    {
+      "name": "Kanarra Falls Trail",
+      "location": "Near Kolob Canyons entrance of Zion National Park, Utah",
+      "category": "trail",
+      "key_facts": [
+        "3.7 miles / 6.0 km",
+        "Short, easy out-and-back hike",
+        "Features a number of small waterfalls cascading down a very beautiful, narrow canyon",
+        "Recommended to hike early to beat the crowds and the heat during summer"
+      ],
+      "source_urls": [
+        "https://noahlangphotography.com/blog/best-things-to-do-zion-national-park"
+      ]
+    },
+    {
+      "name": "Antelope Canyon (Upper and Lower) Tour",
+      "location": "Page, Arizona — 1 hour, 45-minute drive from the East Entrance in Zion",
+      "category": "tour",
+      "key_facts": [
+        "Renowned slot canyon beloved by travelers from across the world",
+        "A separate article exists comparing Upper vs. Lower Antelope Canyon"
+      ],
+      "source_urls": [
+        "https://noahlangphotography.com/blog/best-things-to-do-zion-national-park"
+      ]
+    },
+    {
+      "name": "Zion Adventure Tours",
+      "location": "Springdale, Kanab, Utah — and areas to the north (local guides)",
+      "category": "tour operator",
+      "key_facts": [
+        "Offer incredible adventure tours, many of which are hidden gems known only to locals",
+        "Good for adventures just beyond the park boundary"
+      ],
+      "source_urls": [
+        "https://noahlangphotography.com/blog/best-things-to-do-zion-national-park"
+      ]
+    },
+    {
+      "name": "Arches National Park",
+      "location": "Moab, Utah",
+      "category": "national park",
+      "key_facts": [
+        "Makes for a great road trip when combined with Zion National Park"
+      ],
+      "source_urls": [
+        "https://noahlangphotography.com/blog/best-things-to-do-zion-national-park"
+      ]
+    },
+    {
+      "name": "Canyonlands National Park",
+      "location": "Moab, Utah",
+      "category": "national park",
+      "key_facts": [
+        "Makes for a great road trip when combined with Zion National Park"
+      ],
+      "source_urls": [
+        "https://noahlangphotography.com/blog/best-things-to-do-zion-national-park"
+      ]
+    },
+    {
+      "name": "Bryce Canyon National Park",
+      "location": "Bryce Canyon City area, Utah — 1-hour, 20-minute drive from the East Entrance in Zion to the North Entrance in Bryce",
+      "category": "national park",
+      "key_facts": [
+        "Author has a long, detailed article with favorite things to do, including uncrowded hidden gems",
+        "Offers daily guided snowshoe tours (last around 2 hours, cover about 1 mile)",
+        "Need to bring your own snowshoes for guided tours (park rangers provide poles)",
+        "Popular for cross-country skiing"
+      ],
+      "source_urls": [
+        "https://noahlangphotography.com/blog/best-things-to-do-zion-national-park",
+        "https://zionwildflower.com/winter-activities-to-enjoy-from-our-zion-park-cabins",
+        "https://www.facebook.com/openroading/posts/hiking-angels-landing-in-zion-national-park-heres-what-you-need-to-know-this-is-/1280174723833471"
+      ]
+    },
+    {
+      "name": "River Rock Roasting Company",
+      "location": "La Verkin, Utah — gateway town outside of Zion Canyon",
+      "category": "restaurant",
+      "key_facts": [
+        "Locally owned roastery",
+        "Serves everything from coffee and baked goods in the morning to cold beer and amazing food for dinner",
+        "Beautiful outdoor patio overlooks the Virgin River Canyon",
+        "Great place to sit back and enjoy an evening, especially with a cold beer at sunset"
+      ],
+      "source_urls": [
+        "https://noahlangphotography.com/blog/best-things-to-do-zion-national-park"
+      ]
+    },
+    {
+      "name": "Sedona",
+      "location": "Sedona, Arizona — 4-hour and 40-minute drive from the East Entrance of Zion National Park",
+      "category": "destination",
+      "key_facts": [
+        "Features the Red Rock Ranger District of the Coconino National Forest",
+        "Author has a detailed guide covering best things to see and do, including sunrise/sunset hikes, hidden caves, and great places to eat"
+      ],
+      "source_urls": [
+        "https://noahlangphotography.com/blog/best-things-to-do-zion-national-park"
+      ]
+    },
+    {
+      "name": "Grand Canyon National Park",
+      "location": "South Rim, Arizona — four-hour-and-45-minute drive from Zion National Park",
+      "category": "national park",
+      "key_facts": [
+        "Author has an entirely separate article about it",
+        "Includes favorite sunrise and sunset spots, day hikes, backcountry adventures below the rim, and insider advice"
+      ],
+      "source_urls": [
+        "https://noahlangphotography.com/blog/best-things-to-do-zion-national-park"
+      ]
+    },
+    {
+      "name": "Peek-a-Boo & Spooky Slot Canyons",
+      "location": "Grand Staircase–Escalante National Monument, Utah — accessed via Hole-in-the-Rock Road out of Escalante",
+      "category": "trail, canyoneering",
+      "key_facts": [
+        "6.0 miles / 9.7 km",
+        "One of the most beautiful places to explore in southern Utah",
+        "Accessed via Hole-in-the-Rock Road, which is incredibly tedious and slow",
+        "2WD or 4WD vehicle may be necessary depending on the time of year (e.g., summer monsoonal season)",
+        "Recommended to call the Escalante Interagency Visitor Center prior to heading out",
+        "Booking with one of the local guides out of Kanab is recommended for a safer experience"
+      ],
+      "source_urls": [
+        "https://noahlangphotography.com/blog/best-things-to-do-zion-national-park"
+      ]
+    },
+    {
+      "name": "Escalante Interagency Visitor Center",
+      "location": "Escalante, Utah — in Grand Staircase–Escalante National Monument",
+      "category": "visitor center",
+      "key_facts": [
+        "Recommended to call prior to heading out to Peek-a-Boo & Spooky Slot Canyons for current road conditions"
+      ],
+      "source_urls": [
+        "https://noahlangphotography.com/blog/best-things-to-do-zion-national-park"
+      ]
+    },
+    {
+      "name": "Cathedral Wash Trail",
+      "location": "Glen Canyon National Recreation Area, Marble Canyon, Arizona",
+      "category": "trail",
+      "key_facts": [
+        "3.4 miles / 5.5 km",
+        "One of the top day hiking recommendations outside of Page and Grand Canyon National Park",
+        "Much quicker and easier than Bright Angel, South Kaibab, or North Kaibab trails for hiking to the Colorado River",
+        "Requires some Class 3 scrambling"
+      ],
+      "source_urls": [
+        "https://noahlangphotography.com/blog/best-things-to-do-zion-national-park"
+      ]
+    },
+    {
+      "name": "Kolob Canyons (Section of Zion National Park)",
+      "location": "Zion National Park, Utah — northwest corner of Zion National Park, separate entrance off I-15",
+      "category": "national park section, canyon system",
+      "key_facts": [
+        "Less-crowded section of the park, sees a fraction of the traffic compared to the main canyon",
+        "About a 40-minute to 1 hour, 20 minute drive from the main Zion Canyon entrance",
+        "Ideal for spotting mule deer, songbirds, and ringtails",
+        "Look for California Condors soaring above cliffs and ridges; early morning or late afternoon often provides the clearest views",
+        "Accessed via Kolob Canyons Road, a five-mile scenic drive along crimson canyons",
+        "Features narrow parallel box canyons cut into the western edge of the Colorado Plateau, forming majestic peaks and 2,000-foot cliff walls",
+        "Experience fewer other hikers compared to Zion Canyon; offers solitude and vivid crimson cliffs accented by fall foliage",
+        "Access regularly closes in inclement weather in winter, stunning with red and white rock layers when snow is on higher terrain",
+        "Features gorgeous red rock, slot canyons, and wonderful ancient lava flows",
+        "Average temperature in March is a high of 58 and a low of 32 degrees Fahrenheit (14/0 degrees Celsius)",
+        "Plan to spend at least half a day exploring this part of the park"
+      ],
+      "source_urls": [
+        "https://www.recreation.gov/permits/4251915",
+        "https://www.undercanvas.com/blog/your-guide-to-zion-national-park-wildlife",
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down",
+        "https://saltlakemagazine.com?p=123856",
+        "https://zionnationalpark.com/best-time-to-visit"
+      ]
+    },
+    {
+      "name": "Kolob Canyons Visitor Center",
+      "location": "Zion National Park, Utah — Kolob Canyons region",
+      "category": "visitor center",
+      "key_facts": [
+        "Rangers provide information on hikes",
+        "Issues Wilderness permits",
+        "Taylor Creek Trailhead is located just 2 miles from here",
+        "Open 8:00 am to 5:00 pm (example from March 9, 2019 to May 4, 2019)"
+      ],
+      "source_urls": [
+        "https://wherearethosemorgans.com/taylor-creek-trail-zion-kolob-canyon",
+        "https://www.facebook.com/zionnps/posts/the-zion-wilderness-permit-office-in-the-zion-canyon-visitor-center-will-be-issu/1901354126562218"
+      ]
+    },
+    {
+      "name": "Timber Creek Overlook Trail",
+      "location": "Zion National Park, Utah — Kolob Canyons section, starts at the end of Kolob Canyons Road",
+      "category": "trail",
+      "key_facts": [
+        "Easy to Moderate, 1–1.1 miles / 1.77 km round-trip",
+        "Estimated time: 30 minutes",
+        "Short climb rewarding with sweeping views of the canyons and the Kolob Canyon Viewpoint",
+        "Best at sunrise",
+        "No permit required",
+        "Nice parking lot and restrooms at the beginning of the trail",
+        "Perfect for visiting Zion National Park with a baby or toddlers",
+        "Delivers sweeping views without the crowds; a quick walk to a fantastic viewpoint"
+      ],
+      "source_urls": [
+        "https://wherearethosemorgans.com/taylor-creek-trail-zion-kolob-canyon",
+        "https://schoandjo.com/best-hikes-in-zion-national-park",
+        "https://www.bigbravenomad.com/blog/what-to-do-in-zion-national-park-with-kids",
+        "https://therivatzion.com/sightseeing/fall-in-zion-autumn-colors-and-pleasant-hikes",
+        "https://morethanjustparks.com/best-time-to-visit-zion-national-park",
+        "https://www.allwaysadventure.com/first-timers-guide-to-visiting-zion-national-park"
+      ]
+    },
+    {
+      "name": "Hidden Creek Canyon",
+      "location": "Near Zion National Park, Utah",
+      "category": "canyoneering tour",
+      "key_facts": [
+        "From $89",
+        "Duration: 4 hours",
+        "Difficulty: Beginner",
+        "Best For Groups"
+      ],
+      "source_urls": [
+        "https://eastzionadventures.com/canyoneering-tours"
+      ]
+    },
+    {
+      "name": "Powell's Way - Full Day",
+      "location": "Near Zion National Park, Utah",
+      "category": "canyoneering tour",
+      "key_facts": [
+        "From $219",
+        "Duration: 7 hours",
+        "Difficulty: Rugged, Intermediate"
+      ],
+      "source_urls": [
+        "https://eastzionadventures.com/canyoneering-tours"
+      ]
+    },
+    {
+      "name": "Coral Sands Canyon",
+      "location": "Near Zion National Park, Utah",
+      "category": "canyoneering tour",
+      "key_facts": [
+        "From $149",
+        "Duration: 5 hours",
+        "Difficulty: Intermediate"
+      ],
+      "source_urls": [
+        "https://eastzionadventures.com/canyoneering-tours"
+      ]
+    },
+    {
+      "name": "Stone Hollow Canyon",
+      "location": "Near Zion National Park, Utah",
+      "category": "canyoneering tour",
+      "key_facts": [
+        "From $219",
+        "Duration: 7 hours",
+        "Difficulty: Advanced"
+      ],
+      "source_urls": [
+        "https://eastzionadventures.com/canyoneering-tours"
+      ]
+    },
+    {
+      "name": "Elkheart Canyon",
+      "location": "Near Zion National Park, Utah",
+      "category": "canyoneering tour",
+      "key_facts": [
+        "From $169",
+        "Duration: 4 hours",
+        "Difficulty: Beginner",
+        "Best Seller"
+      ],
+      "source_urls": [
+        "https://eastzionadventures.com/canyoneering-tours"
+      ]
+    },
+    {
+      "name": "Rock Drop Canyon",
+      "location": "Near Zion National Park, Utah",
+      "category": "canyoneering tour",
+      "key_facts": [
+        "From $149",
+        "Duration: 4 hours",
+        "Difficulty: Mild"
+      ],
+      "source_urls": [
+        "https://eastzionadventures.com/canyoneering-tours"
+      ]
+    },
+    {
+      "name": "Zion Guided Sunset Hike",
+      "location": "Zion National Park, Utah — The Watchman Trail or Pa’rus Trail. Meeting Point: Springdale, UT",
+      "category": "tour, hiking",
+      "key_facts": [
+        "Price: $224 per adult (18+), $155 per youth (4-17)",
+        "Duration: 3 hours",
+        "Operates: May 22 – September 30",
+        "Included: Expert guide",
+        "Minimum age: 4 years",
+        "Party size: 2-6 people"
+      ],
+      "source_urls": []
+    },
+    {
+      "name": "Watchman Trail",
+      "location": "Zion National Park, Utah — starts right at the Visitor Center",
+      "category": "trail",
+      "key_facts": [
+        "Moderate hike, 3–3.3 miles / 5.1–5.3 km round-trip",
+        "Estimated time: 1.5–2 hours",
+        "A local favorite, offers stunning views of Zion’s majestic cliffs and serene landscapes",
+        "Steady climb to a panoramic viewpoint overlooking Zion Canyon and the iconic Watchman Peak, lower Zion Canyon, and Springdale",
+        "Excellent vantage points for observing raptors (Red-tailed Hawks, Golden Eagles) and chance to glimpse California Condors",
+        "Frequent sightings of desert bighorn sheep and mule deer, especially near dusk",
+        "No shuttle required; trailhead parking lot is half a mile from the south entrance",
+        "No permit required",
+        "Quite sun-exposed, bring sunscreen, UV-protective clothing, and a wide-brimmed hat",
+        "Optional loop at the summit, but the main overlook is the highlight",
+        "Good if you are afraid of heights, but still want the views of Zion Canyon",
+        "Great for sunset and sunrise views; recommend bringing a reliable light source for the hike back down",
+        "Accessible and pleasant year-round"
+      ],
+      "source_urls": [
+        "https://www.undercanvas.com/camps/zion/adventure",
+        "https://therivatzion.com/sightseeing/birdwatching-in-zion-during-late-fall",
+        "https://schoandjo.com/best-hikes-in-zion-national-park",
+        "https://zionwhitebisonresort.com/kids-activities-in-zion-national-park",
+        "https://www.bigbravenomad.com/blog/what-to-do-in-zion-national-park-with-kids",
+        "https://www.facebook.com/zionnps/posts/whats-the-best-spot-for-sunset-is-one-of-the-more-common-questions-rangers-get-a/1016153327214683",
+        "https://morethanjustparks.com/best-time-to-visit-zion-national-park",
+        "https://therivatzion.com/things-to-do/permits-and-reservations-in-zion-2025-guide"
+      ]
+    },
+    {
+      "name": "Pa'rus Trail",
+      "location": "Zion National Park, Utah — access from the Visitor Center or Canyon Junction",
+      "category": "trail",
+      "key_facts": [
+        "Named after the Paiute word for 'bubbling water'",
+        "One of the newer and most accessible trails in Zion National Park",
+        "Easy difficulty, 1.7 miles one way (3.4–3.5 miles / 5.6 km round-trip)",
+        "Estimated time: 1-2 hours",
+        "Wide, paved trail, mostly flat with gentle slopes",
+        "Only trail in Zion open to bicycles (bike rental available) and pets; also wheelchair-accessible",
+        "Skirts the Virgin River in the flat and open lower section of Zion Canyon, including several pedestrian bridges",
+        "Winds through open meadows and edge habitats, prime time for spotting migrating sparrows, juncos and towhees",
+        "Offers stunning views of Zion’s majestic cliffs and serene landscapes, including The Watchman",
+        "Connects to a dirt spur trail to the Zion Human History Museum (spur trail not wheelchair accessible)",
+        "No shuttle needed to access",
+        "No permit required",
+        "Not much shade; sunshade for stroller recommended in summer (can be very hot)",
+        "Perfect for families with young children and for sunset and stargazing (only recommended night time trail)",
+        "Lined with golden cottonwoods in October; wildflowers start popping in late March"
+      ],
+      "source_urls": [
+        "https://www.citrusmilo.com/zionguide/parustrail.php",
+        "https://cliffroselodge.com/september-featured-hike-2",
+        "https://ouradventurejournal.com/stroller-friendly-hikes-at-zion",
+        "https://www.facebook.com/groups/hurricaneut/posts/4559781217587299",
+        "https://www.allwaysadventure.com/discover-the-best-zion-hikes-with-kids",
+        "https://www.facebook.com/groups/543165101611964/posts/813541901240948"
+      ]
+    },
+    {
+      "name": "Private Guided Hiking - Zion National Park (Customizable)",
+      "location": "Zion National Park, Utah. Meeting Point: Springdale, UT",
+      "category": "tour, hiking",
+      "key_facts": [
+        "Duration: 4 or 8 hours",
+        "Operates: March 12 – November 2",
+        "Included: Expert guide, shuttle (in-Park transportation), trail customization",
+        "Picnic lunch included for 8-hour tour",
+        "Popular trail options: Emerald Pools, Scout’s Lookout, Kayenta Trail, Riverside Walk, The Watchman",
+        "Angels Landing, The Narrows, The Subway are not available for this tour (except Angels Landing for 8-hour tour if permits are self-obtained)",
+        "Minimum age: 4 years",
+        "Party size: 2-12 people (2 adult minimum)",
+        "Costs: 4 hours: $224 per adult (18+), $155 per youth (4-17); 8 hours: $349 per adult (18+), $214 per youth (4-17)"
+      ],
+      "source_urls": [
+        "https://www.recreation.gov/permits/4251915",
+        "https://www.undercanvas.com/blog/your-guide-to-zion-national-park-wildlife",
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down",
+        "https://saltlakemagazine.com?p=123856",
+        "https://zionnationalpark.com/best-time-to-visit"
+      ]
+    },
+    {
+      "name": "Kayenta Trail",
+      "location": "Zion National Park, Utah — starts/ends at The Grotto or Zion Lodge shuttle stops",
+      "category": "trail",
+      "key_facts": [
+        "Moderate difficulty, 2.3 miles / 3.7 km round-trip",
+        "Estimated time: 1–1.5 hours",
+        "Popular trail option for guided hikes, family-friendly and equally beautiful",
+        "Commonly done as a point-to-point trail, requiring the park shuttle",
+        "Follows the Kayenta Trail to the Lower and Upper Emerald Pools",
+        "Offers great views of Zion"
+      ],
+      "source_urls": [
+        "https://www.undercanvas.com/camps/zion/adventure",
+        "https://www.alltrails.com/parks/us/utah/zion-national-park/kids"
+      ]
+    },
+    {
+      "name": "The Subway (Left Fork of North Creek)",
+      "location": "Zion National Park, Utah — Left Fork of North Creek",
+      "category": "canyoneering, trail",
+      "key_facts": [
+        "One of Zion’s top 3 iconic and most famous routes, known for its tubular canyon formations",
+        "Strenuous, full-day hike through twisting slot canyons, stream crossings, slick rock, and boulder scrambles, often requiring climbing down waterfalls",
+        "7.2–9 miles / 11.6–14.5 km length, Estimated Time: 6-9 hours",
+        "Permit required (Wilderness Permits) via a special seasonal lottery system on recreation.gov (due to huge popularity)",
+        "Lottery applications cost $5.00 (non-refundable); entrants can request three prioritized trip dates",
+        "Best done between late spring and early fall when water levels are lower and temperatures are manageable",
+        "Recommend two pairs of shoes (hiking boots for dry, water shoes with neoprene socks for wet) and hiking poles",
+        "More intense and difficult than The Narrows as it requires climbing down waterfalls and scrambling over boulders",
+        "Upper Left Fork (Das Boot) and Russell Gulch are canyoneering trips that exit through The Subway and require permits in conjunction with The Subway permit"
+      ],
+      "source_urls": [
+        "https://www.canyoneeringusa.com/zion/wilderness-permits"
+      ]
+    },
+    {
+      "name": "Private Guided Hiking - Greater Zion (Customizable)",
+      "location": "Greater Zion Area, Utah. Meeting Point: Under Canvas Zion – Lobby",
+      "category": "tour, hiking",
+      "key_facts": [
+        "Duration: 4 or 8 hours",
+        "Operates: March 12 – November 2",
+        "Included: Expert guide, transportation, trail customization",
+        "Picnic lunch included for 8-hour tour",
+        "Popular trails: Guacamole, Wire Mesa, Canyon Overlook, various East Side trails, Water Canyon (for 8-hour tour)",
+        "Minimum age: 4 years",
+        "Car seat or booster seat required for children under 7 years and/or 4’9″",
+        "Party size: 2-12 people (2 adult minimum)",
+        "Costs: 4 hours: $249 per adult (18+), $164 per youth (4-17); 8 hours: $384 per adult (18+), $234 per youth (4-17)"
+      ],
+      "source_urls": []
+    },
+    {
+      "name": "Guacamole Trail",
+      "location": "Greater Zion Area, Utah",
+      "category": "trail",
+      "key_facts": [
+        "Popular trail option for guided hikes outside Zion National Park"
+      ],
+      "source_urls": [
+        "https://www.undercanvas.com/camps/zion/adventure"
+      ]
+    },
+    {
+      "name": "Wire Mesa Trail",
+      "location": "Greater Zion Area, Utah",
+      "category": "trail",
+      "key_facts": [
+        "Popular trail option for guided hikes outside Zion National Park"
+      ],
+      "source_urls": [
+        "https://www.undercanvas.com/camps/zion/adventure"
+      ]
+    },
+    {
+      "name": "East Side Trails (Greater Zion Area)",
+      "location": "Greater Zion Area, Utah",
+      "category": "trail area",
+      "key_facts": [
+        "Various trail options on the East Side of the greater Zion area",
+        "Located at a much higher elevation than Zion Canyon"
+      ],
+      "source_urls": [
+        "https://www.undercanvas.com/camps/zion/adventure"
+      ]
+    },
+    {
+      "name": "Water Canyon Trail",
+      "location": "Greater Zion Area, Utah",
+      "category": "trail",
+      "key_facts": [
+        "Popular trail option for guided hikes outside Zion National Park"
+      ],
+      "source_urls": []
+    },
+    {
+      "name": "Private Guided Hiking & Adventure Choice (Zion Area)",
+      "location": "Zion National Park and greater area, Utah. Meeting Point: Under Canvas Zion – Lobby",
+      "category": "tour, adventure activities",
+      "key_facts": [
+        "Cost: $444 per adult (18+), $309 per youth (4-17)",
+        "Duration: 8 hours",
+        "Operates: March 12 – November 2",
+        "Included: Expert guide, transportation, guided hiking (morning activity in Zion National Park or greater area), Adventure Choice (afternoon activity – canyoneering, rock climbing, biking, mountain biking), picnic lunch, tour-specific equipment (harness, helmet, bike, etc)",
+        "Minimum age: 4 years for hiking, canyoneering, rock climbing; 12 years for Mountain biking; 13 years for E-biking",
+        "Party size: 1-12 people"
+      ],
+      "source_urls": [
+        "https://www.undercanvas.com/camps/zion/adventure"
+      ]
+    },
+    {
+      "name": "Lamb's Knoll Climbing Site",
+      "location": "Southern Utah — 5 miles / 12 minutes from Under Canvas Zion",
+      "category": "climbing area, canyoneering",
+      "key_facts": [
+        "Features sandstone, limestone, and basalt formations for climbing",
+        "Offers dry slot canyons for canyoneering",
+        "Location for stargazing tours",
+        "A potential canyoneering location for Red Desert Adventure tours (Westside)"
+      ],
+      "source_urls": [
+        "https://reddesertadventure.com/trip/half-day-canyon"
+      ]
+    },
+    {
+      "name": "Private Via Ferrata & Canyoneering (East Zion)",
+      "location": "East Zion – Mt Carmel Junction, Utah. Meeting Point: Virgin, UT",
+      "category": "canyoneering tour, via ferrata",
+      "key_facts": [
+        "Cost: $659 for 1-2 people, $1,319 for 3-4 people",
+        "Duration: 6 hours",
+        "Operates: March 13 – November 2",
+        "Included: Expert guide, high-clearance transportation (during tour only), harness and helmet, rappel device and ropes",
+        "Activities: thrilling technical slot canyon descent, culminating in an exciting mandatory via ferrata (protected climbing route) exit, hiking, scrambling, down climbing, rappelling, occasionally wading or swimming",
+        "Minimum age: 12 years",
+        "Maximum weight: 275 pounds",
+        "Maximum waist size: 44 inches",
+        "Party size: 1-4 guests"
+      ],
+      "source_urls": [
+        "https://www.undercanvas.com/camps/zion/adventure"
+      ]
+    },
+    {
+      "name": "East Zion – Mt Carmel Junction",
+      "location": "East Zion, Utah — Mt Carmel Junction (near Virgin, UT)",
+      "category": "location",
+      "key_facts": [
+        "Site for a private Via Ferrata & Canyoneering tour"
+      ],
+      "source_urls": [
+        "https://www.undercanvas.com/camps/zion/adventure"
+      ]
+    },
+    {
+      "name": "Group Stargazing (Zion International Dark Sky Park)",
+      "location": "Lamb’s Knoll, Southern Utah — near Zion National Park’s International Dark Sky Park. Meeting Point: Lamb’s Knoll Climbing Site",
+      "category": "educational program, tour",
+      "key_facts": [
+        "Price: $189 per adult (13+), $104 per youth (7-12)",
+        "Duration: 2 hours",
+        "Operates: March 15 – November 1",
+        "Included: Professional astronomer, telescope and binoculars (state of the art night sky viewing), deep-sky and long exposure photography (emailed afterward), zero gravity pods, blankets, warm beverages",
+        "Minimum age: 7 years",
+        "Party size: 1-18 people",
+        "Weather: Tours heavily impacted by weather; rescheduling or refund available if unsuitable"
+      ],
+      "source_urls": [
+        "https://www.undercanvas.com/camps/zion/adventure"
+      ]
+    },
+    {
+      "name": "Zion National Park’s International Dark Sky Park",
+      "location": "Zion National Park, Utah",
+      "category": "dark sky park",
+      "key_facts": [
+        "Certified Dark Sky Astronomers lead stargazing experiences here"
+      ],
+      "source_urls": [
+        "https://www.undercanvas.com/camps/zion/adventure"
+      ]
+    },
+    {
+      "name": "Private Horseback Ride (Under Canvas Zion)",
+      "location": "Under Canvas Zion, Utah. Meeting Point: Under Canvas Zion – Lobby",
+      "category": "tour, horseback riding",
+      "key_facts": [
+        "Cost: $649 for 1-2 riders, $249 per additional rider, $119 per buddy seat",
+        "Duration: 2 hours",
+        "Operates: Monday – Saturday, March 13 – November 2 (no Sunday tours)",
+        "Included: Expert guide, gentle horse, saddle bag (for personal items), helmet",
+        "Minimum age: Youth must be able to sit up on their own (Youth 6 years and under use a Buddy Seat and ride with adult)",
+        "Party size: 1-14 people",
+        "Required attire: Long pants, close-toed shoes"
+      ],
+      "source_urls": [
+        "https://www.undercanvas.com/camps/zion/adventure",
+        "https://www.undercanvas.com/blog/your-guide-to-zion-national-park-wildlife"
+      ]
+    },
+    {
+      "name": "Under Canvas Zion (Glamping Resort)",
+      "location": "Zion National Park, Utah — 20 minutes from the park entrance",
+      "category": "camp, lodging",
+      "key_facts": [
+        "Safari-inspired accommodations",
+        "Starting point for private horseback rides and meeting point for some tours",
+        "Located just 20 minutes from the park entrance"
+      ],
+      "source_urls": [
+        "https://www.undercanvas.com/camps/zion/adventure",
+        "https://www.undercanvas.com/blog/your-guide-to-zion-national-park-wildlife"
+      ]
+    },
+    {
+      "name": "Bike & E-bike Rentals (Zion Area)",
+      "location": "Zion National Park, Utah / Springdale, Utah",
+      "category": "rental service, transportation",
+      "key_facts": [
+        "Provides direct access to the scenic Pa’rus Trail",
+        "Half or full-day E-bike Rentals also available (e.g., from Zion White Bison Resort)",
+        "Offers fast, flowy single track, exposed rim trails, and technical red rock terrain (for Mountain Bike guided trips)"
+      ],
+      "source_urls": [
+        "https://www.undercanvas.com/camps/zion/adventure"
+      ]
+    },
+    {
+      "name": "Red Desert Adventure (Tour Operator)",
+      "location": "Zion National Park Area, Utah — operates from Virgin, La Verkin, and Mount Carmel Junction",
+      "category": "tour operator",
+      "key_facts": [
+        "Offers guided canyoneering, rock climbing, via ferrata, and family adventures",
+        "Provides private guides, transportation to/from starting location, and all technical equipment",
+        "Phone: (435) 668-2888",
+        "Offers Half Day Canyoneering (approx. 4 hours, easy–moderate+, 3-6+ rappels, min age 5, available year-round, customizable difficulty, private trips, pricing varies by group size: $430/1, $215/2, $185/3, $160/4, $145/5, $135/6+), visiting various canyons including Lambs Knoll, Yankee Doodle (involves wading), Unnamed Canyon (features 'The Cathedral Room'), Solar Canyon, Bitter Creek, Cottonwood Creek, Upper Red Cave, Lower Red Cave, Dianes Canyon (Huntress), White Lamanite"
+      ],
+      "source_urls": [
+        "https://reddesertadventure.com/trip/half-day-canyon"
+      ]
+    },
+    {
+      "name": "Zion Outfitters (Gear Rental)",
+      "location": "Springdale, Utah — right outside Zion National Park",
+      "category": "gear rental",
+      "key_facts": [
+        "Open daily 7 am - 9 pm",
+        "Equipment can be taken out the evening before (4 pm - 8 pm) or on the morning of your hike",
+        "All equipment is due back by 8 pm the day of your hike",
+        "Warm Weather Package: $32 (+ $16/additional day) includes water shoes, neoprene socks, hiking pole",
+        "Dry Pants Package: $49 (+ $25/additional day) includes Warm Weather Package + Dry Pants",
+        "Dry Bib Package: $55 (+ $28/additional day) includes Warm Weather Package + Dry Bib",
+        "Waterproof Backpack: $12",
+        "Recommended for renting full-length waders, water shoes, and trekking sticks for The Narrows",
+        "Can outfit you with waders or drysuits, sturdy wooden poles and felt-bottom shoes (for The Narrows)"
+      ],
+      "source_urls": [
+        "https://whereandwander.com/the-narrows-bottom-up-hike-complete-guide",
+        "https://schoandjo.com/best-hikes-in-zion-national-park"
+      ]
+    },
+    {
+      "name": "Big Spring (The Narrows Landmark)",
+      "location": "Zion National Park, Utah — within The Narrows trail (approx. 4.5 miles from Temple of Sinawava)",
+      "category": "landmark",
+      "key_facts": [
+        "Turnaround point for The Narrows Bottom-Up hike (you cannot hike beyond this point without a permit)",
+        "Possibility to refill water if there is flow (for Top-Down hikers)"
+      ],
+      "source_urls": [
+        "https://www.undercanvas.com/blog/what-to-do-during-your-stay-at-under-canvas-zion",
+        "https://www.getyourguide.com/zion-national-park-l32179/ttd",
+        "https://www.monicagoes.com/blog/emerald-pools",
+        "https://ouradventurejournal.com/stroller-friendly-hikes-at-zion",
+        "https://www.undercanvas.com/camps/zion/adventure",
+        "https://whereandwander.com/the-narrows-bottom-up-hike-complete-guide",
+        "https://www.grandcanyontrust.org/hikes/cpe-observation-point-trail",
+        "https://www.gotheredothatllc.com/read-go-there-do-that-blogs/best-hikes-in-zion-national-park",
+        "https://www.allwaysadventure.com/discover-the-best-zion-hikes-with-kids",
+        "https://www.bigbravenomad.com/blog/what-to-do-in-zion-national-park-with-kids",
+        "http://www.travelingstroller.com/2018/08/zion-national-park-best-hikes-and.html",
+        "https://www.zionadventurephotog.com/single-post/2018/03/22/hiking-the-riverside-walk-trail-zion-national-park",
+        "https://saltlakemagazine.com?p=123856",
+        "https://www.nps.gov/zion/planyourvisit/seasons.htm",
+        "https://zionnationalpark.com/best-time-to-visit",
+        "https://www.nps.gov/zion/planyourvisit/planning-guide.htm",
+        "https://therivatzion.com/sightseeing/fall-in-zion-autumn-colors-and-pleasant-hikes",
+        "https://morethanjustparks.com/best-time-to-visit-zion-national-park",
+        "https://wildlandtrekking.com/zion-visitor-guide/visiting-zion-in-march",
+        "https://www.exploreziontours.com/blog/best-places-to-eat-in-springdale-utah-near-zion-national-park",
+        "https://reservenature.com/blogs/zion-permits-guide",
+        "https://www.zionponderosa.com/blog/2025/04/planning-your-perfect-zion-national-park-vacation-tips-from-the-pros"
+      ]
+    },
+    {
+      "name": "Zion Canyon Visitor Center",
+      "location": "Zion National Park, Utah — South Entrance Area, 1 Zion Park Blvd, Springdale UT 84767",
+      "category": "visitor center",
+      "key_facts": [
+        "Stop 1 for the Zion Canyon Shuttle, shuttle bus departs from here to Weeping Rock Trailhead and other stops",
+        "Pa'rus Trail starts just north of it",
+        "Houses the Wilderness Permit Desk (Zion Canyon Wilderness Desk), where wilderness permits for Narrows, Subway, overnight climbing, and backcountry camping can be picked up in person",
+        "Wilderness Permit Desk staff can relay recent conditions reports and update on current weather conditions and possible closures (a weather report is posted)",
+        "Any permits remaining after the Last Minute Drawing are available in person via this desk",
+        "Parking available, but recommended to arrive early",
+        "Get a park map, weather update, road conditions, and possible closures",
+        "Explore the outdoor educational walk where you’ll learn about Zion’s animals, ecology and deep-rooted history",
+        "Park Rangers are a wonderful resource; rangers give both the Junior Ranger book and badge at the same time"
+      ],
+      "source_urls": [
+        "https://www.facebook.com/zionnps/posts/the-zion-wilderness-permit-office-in-the-zion-canyon-visitor-center-will-be-issu/1901354126562218",
+        "https://www.bigbravenomad.com/blog/what-to-do-in-zion-national-park-with-kids"
+      ]
+    },
+    {
+      "name": "Chamberlain’s Ranch Trailhead",
+      "location": "Zion National Park, Utah — 1.5 hours drive from the Zion Visitor Center",
+      "category": "trailhead",
+      "key_facts": [
+        "Trailhead for The Narrows Top-Down hike (both overnight and one-day options)",
+        "Road access is highly dependent on water levels and snow (can be inaccessible from November through late June in heavy snow years)"
+      ],
+      "source_urls": [
+        "https://whereandwander.com/the-narrows-bottom-up-hike-complete-guide",
+        "https://www.zionguru.com/rentals/narrows"
+      ]
+    },
+    {
+      "name": "Red Rock Shuttle",
+      "location": "Zion National Park, Utah — services to Chamberlain’s Ranch",
+      "category": "transportation service",
+      "key_facts": [
+        "Offers departure times at 6:00 am, 9:30 am, 1:00 pm and 5:00 pm",
+        "Cost: $60 with 3 passenger minimum"
+      ],
+      "source_urls": [
+        "https://whereandwander.com/the-narrows-bottom-up-hike-complete-guide"
+      ]
+    },
+    {
+      "name": "Orderville Canyon Junction",
+      "location": "Zion National Park, Utah — approx. 2.5 miles into The Narrows Bottom-Up hike",
+      "category": "landmark",
+      "key_facts": [
+        "A split in the canyon, where the main path goes left",
+        "Crowds tend to thin out past this point",
+        "Mandatory turnaround point for some guided hikes in the Narrows (at the beginning of the Wall Street section)"
+      ],
+      "source_urls": [
+        "https://whereandwander.com/the-narrows-bottom-up-hike-complete-guide"
+      ]
+    },
+    {
+      "name": "Wall Street (The Narrows Section)",
+      "location": "Zion National Park, Utah — within The Narrows canyon",
+      "category": "viewpoint, trail section",
+      "key_facts": [
+        "Narrowest section of The Narrows, where 1500-foot walls enclose the river, which is merely 22 feet wide",
+        "Area described with narrow passages and towering walls, like a 'natural cathedral'",
+        "Sandstone gets lit up like fire without any direct sunlight",
+        "Minimum 6 miles round-trip (from Temple of Sinawava) required to reach"
+      ],
+      "source_urls": [
+        "https://www.undercanvas.com/blog/what-to-do-during-your-stay-at-under-canvas-zion",
+        "https://www.getyourguide.com/zion-national-park-l32179/ttd",
+        "https://www.monicagoes.com/blog/emerald-pools",
+        "https://ouradventurejournal.com/stroller-friendly-hikes-at-zion",
+        "https://www.undercanvas.com/camps/zion/adventure",
+        "https://whereandwander.com/the-narrows-bottom-up-hike-complete-guide",
+        "https://www.grandcanyontrust.org/hikes/cpe-observation-point-trail",
+        "https://www.gotheredothatllc.com/read-go-there-do-that-blogs/best-hikes-in-zion-national-park",
+        "https://www.allwaysadventure.com/discover-the-best-zion-hikes-with-kids",
+        "https://www.bigbravenomad.com/blog/what-to-do-in-zion-national-park-with-kids",
+        "http://www.travelingstroller.com/2018/08/zion-national-park-best-hikes-and.html",
+        "https://www.zionadventurephotog.com/single-post/2018/03/22/hiking-the-riverside-walk-trail-zion-national-park",
+        "https://saltlakemagazine.com?p=123856",
+        "https://www.nps.gov/zion/planyourvisit/seasons.htm",
+        "https://zionnationalpark.com/best-time-to-visit",
+        "https://www.nps.gov/zion/planyourvisit/planning-guide.htm",
+        "https://therivatzion.com/sightseeing/fall-in-zion-autumn-colors-and-pleasant-hikes",
+        "https://morethanjustparks.com/best-time-to-visit-zion-national-park",
+        "https://wildlandtrekking.com/zion-visitor-guide/visiting-zion-in-march",
+        "https://www.exploreziontours.com/blog/best-places-to-eat-in-springdale-utah-near-zion-national-park",
+        "https://reservenature.com/blogs/zion-permits-guide",
+        "https://www.zionponderosa.com/blog/2025/04/planning-your-perfect-zion-national-park-vacation-tips-from-the-pros"
+      ]
+    },
+    {
+      "name": "Upper Narrows",
+      "location": "Zion National Park, Utah — within the Top-Down Narrows hike",
+      "category": "section of trail",
+      "key_facts": [
+        "Located 5 miles into the Top-Down hike",
+        "Offers spectacular foreshadowing of things to come"
+      ],
+      "source_urls": [
+        "https://www.zionguru.com/rentals/narrows"
+      ]
+    },
+    {
+      "name": "Deep Creek (The Narrows Landmark)",
+      "location": "Zion National Park, Utah — within the Top-Down Narrows hike",
+      "category": "landmark",
+      "key_facts": [
+        "Junction point along the Top-Down Narrows hike",
+        "Suggested place for lunch and to relax feet during the thru-hike"
+      ],
+      "source_urls": [
+        "https://www.undercanvas.com/blog/what-to-do-during-your-stay-at-under-canvas-zion",
+        "https://www.getyourguide.com/zion-national-park-l32179/ttd",
+        "https://www.monicagoes.com/blog/emerald-pools",
+        "https://ouradventurejournal.com/stroller-friendly-hikes-at-zion",
+        "https://www.undercanvas.com/camps/zion/adventure",
+        "https://whereandwander.com/the-narrows-bottom-up-hike-complete-guide",
+        "https://www.grandcanyontrust.org/hikes/cpe-observation-point-trail",
+        "https://www.gotheredothatllc.com/read-go-there-do-that-blogs/best-hikes-in-zion-national-park",
+        "https://www.allwaysadventure.com/discover-the-best-zion-hikes-with-kids",
+        "https://www.bigbravenomad.com/blog/what-to-do-in-zion-national-park-with-kids",
+        "http://www.travelingstroller.com/2018/08/zion-national-park-best-hikes-and.html",
+        "https://www.zionadventurephotog.com/single-post/2018/03/22/hiking-the-riverside-walk-trail-zion-national-park",
+        "https://saltlakemagazine.com?p=123856",
+        "https://www.nps.gov/zion/planyourvisit/seasons.htm",
+        "https://zionnationalpark.com/best-time-to-visit",
+        "https://www.nps.gov/zion/planyourvisit/planning-guide.htm",
+        "https://therivatzion.com/sightseeing/fall-in-zion-autumn-colors-and-pleasant-hikes",
+        "https://morethanjustparks.com/best-time-to-visit-zion-national-park",
+        "https://wildlandtrekking.com/zion-visitor-guide/visiting-zion-in-march",
+        "https://www.exploreziontours.com/blog/best-places-to-eat-in-springdale-utah-near-zion-national-park",
+        "https://reservenature.com/blogs/zion-permits-guide",
+        "https://www.zionponderosa.com/blog/2025/04/planning-your-perfect-zion-national-park-vacation-tips-from-the-pros"
+      ]
+    },
+    {
+      "name": "Mystery Falls",
+      "location": "Zion National Park, Utah — approx. ½-mile into the river beyond Riverside Walk",
+      "category": "waterfall",
+      "key_facts": [
+        "Nice treat for young kids and less ambitious day hikers"
+      ],
+      "source_urls": [
+        "https://www.zionguru.com/rentals/narrows"
+      ]
+    },
+    {
+      "name": "Mystery Canyon",
+      "location": "Zion National Park, Utah — visible from a viewpoint on the East Mesa route to Observation Point",
+      "category": "canyoneering",
+      "key_facts": [
+        "A special lottery system is in effect for permits due to huge popularity",
+        "Permits are managed via a Seasonal Lottery; not available on the advanced reservation page",
+        "Lottery applications cost $5.00 and are non-refundable",
+        "Lottery entrants have the opportunity to request three prioritized trip dates",
+        "Great view up into Mystery Canyon from a viewpoint about 2 miles into the East Mesa route to Observation Point"
+      ],
+      "source_urls": [
+        "https://www.recreation.gov/permits/4251915",
+        "https://www.canyoneeringusa.com/zion/wilderness-permits",
+        "https://hikingguy.com/hikes/observation-point-zion"
+      ]
+    },
+    {
+      "name": "Orderville Canyon (Canyoneering)",
+      "location": "Zion National Park, Utah",
+      "category": "canyoneering",
+      "key_facts": [
+        "Requires a permit when exiting Englestead Canyon"
+      ],
+      "source_urls": [
+        "https://www.recreation.gov/permits/4251915"
+      ]
+    },
+    {
+      "name": "Zion Wilderness Permit Station",
+      "location": "Zion National Park, Utah",
+      "category": "permit office",
+      "key_facts": [
+        "Itinerary changes can be made here (subject to availability)",
+        "Wilderness permits can be picked up here by bringing confirmation email and proof of identity"
+      ],
+      "source_urls": [
+        "https://www.recreation.gov/permits/4251915"
+      ]
+    },
+    {
+      "name": "Lava Point Road",
+      "location": "Zion National Park, Utah",
+      "category": "road",
+      "key_facts": [
+        "Closed for the season"
+      ],
+      "source_urls": [
+        "https://www.recreation.gov/permits/4251915"
+      ]
+    },
+    {
+      "name": "Upper West Rim Trailhead",
+      "location": "Zion National Park, Utah",
+      "category": "trailhead",
+      "key_facts": [
+        "Closed for the season"
+      ],
+      "source_urls": [
+        "https://www.recreation.gov/permits/4251915"
+      ]
+    },
+    {
+      "name": "Zion National Park (General Information)",
+      "location": "Springdale, Utah — 1 Zion Park Blvd, Springdale UT 84767",
+      "category": "national park, administrative",
+      "key_facts": [
+        "Phone Number: 435-772-0170",
+        "Covers 229 square miles",
+        "Charges a fee to enter",
+        "One of the most popular national parks in the world",
+        "Utah’s lowest park in both elevation and latitude; weather tends to be fair year-round, expect rain but rarely snow",
+        "Open year-round",
+        "Quietest times occur from November through February",
+        "Busiest times are from May through July",
+        "Experiences highest visitation on Memorial Day, Independence Day, Labor Day, and park-sponsored 'free' days",
+        "Entrance and camping fees are fixed year-round; shuttle fees are free",
+        "Virtual Museum Exhibit: Birds available online (zionpark.org/wethekeepers/)",
+        "Ranger Programs are free and offer learning about landscapes, plants, animals, and history (some require advance registration)"
+      ],
+      "source_urls": [
+        "https://www.recreation.gov/permits/4251915",
+        "https://www.undercanvas.com/blog/your-guide-to-zion-national-park-wildlife",
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down",
+        "https://saltlakemagazine.com?p=123856",
+        "https://zionnationalpark.com/best-time-to-visit"
+      ]
+    },
+    {
+      "name": "Zion Human History Museum",
+      "location": "Zion National Park, Utah — accessible via a dirt spur trail from the Pa'rus Trail (spur trail not wheelchair accessible)",
+      "category": "museum",
+      "key_facts": [
+        "Stop 2 for the Zion Canyon Shuttle",
+        "Displays the rich human history of Zion National Park",
+        "Perfect place to learn facts about Zion National Park for kids",
+        "Takes visitors through American Indian culture, stories of historic pioneer settlement, and Zion's growth as a national park",
+        "Illustrates the effects of water and how it creates Zion's scenery and sanctuary",
+        "Where you can watch the 22-minute national park video (also available free online)",
+        "Great option when the weather has taken a downward turn or you need a break from hiking outdoors",
+        "Usually opens in spring for limited hours, closes at the end of November after Thanksgiving, and remains closed in winter"
+      ],
+      "source_urls": [
+        "https://www.citrusmilo.com/zionguide/parustrail.php",
+        "https://www.bigbravenomad.com/blog/what-to-do-in-zion-national-park-with-kids",
+        "https://zionwildflower.com/winter-activities-to-enjoy-from-our-zion-park-cabins",
+        "https://wildlandtrekking.com/zion-visitor-guide/visiting-zion-in-march"
+      ]
+    },
+    {
+      "name": "Kolob Terrace Road (Scenic Drive)",
+      "location": "Zion National Park, Utah — from the town of Virgin",
+      "category": "scenic drive",
+      "key_facts": [
+        "Suggested area for bird watching and observing birds in the sky",
+        "Higher elevations are quieter in late fall, offering sightings of species not always visible in the main canyon",
+        "Mountain Bluebirds, Clark’s Nutcrackers and Northern Flickers can often be found here before the first snows arrive",
+        "Cool, clear air enhances visibility",
+        "Offers great views of the breathtaking sunset-glow on the towering cliffs of Zion Canyon in the distance",
+        "Make sure to check the weather before driving; access to the upper part closes in winter",
+        "Boasts many miles of hiking trails at higher elevation than the main canyon of the park"
+      ],
+      "source_urls": [
+        "https://www.nps.gov/zion/learn/nature/birds.htm",
+        "https://therivatzion.com/sightseeing/birdwatching-in-zion-during-late-fall",
+        "https://www.facebook.com/zionnps/posts/whats-the-best-spot-for-sunset-is-one-of-the-more-common-questions-rangers-get-a/1016153327214683",
+        "https://www.nps.gov/zion/planyourvisit/seasons.htm"
+      ]
+    },
+    {
+      "name": "Zion Canyon Casitas",
+      "location": "Springdale, Utah",
+      "category": "lodging",
+      "key_facts": [
+        "Located in the heart of Springdale, steps from the Zion Shuttle and the renowned Bit and Spur Restaurant",
+        "Offers luxurious accommodations tailored for nature enthusiasts",
+        "Constructed with sustainable materials, adorned with exquisite artwork and designer furnishings",
+        "Features fully stocked kitchens, plush bedding, and private patios with breathtaking views"
+      ],
+      "source_urls": [
+        "https://www.zioncanyoncasitas.com/birding"
+      ]
+    },
+    {
+      "name": "Angels Landing Guided Tour (with Permits)",
+      "location": "Zion National Park, Utah — Angel’s Landing. Meeting Point: Zion Pedestrian Entrance Bridge or Springdale, UT",
+      "category": "tour, hiking",
+      "key_facts": [
+        "Duration: 6-8 hours",
+        "Operates: limited dates March 13 – November 2",
+        "Included: Expert guide, shuttle (in-Park transportation), Angels Landing permit (tour offers exclusive permits), picnic lunch (for private day hike)",
+        "Minimum age: 4 years (Group), 8 years (Private)",
+        "Party size: 1-6 people (2 adult minimum for group)",
+        "Difficulty: Strenuous – 4.3 miles round-trip with 1,827′ elevation gain",
+        "Designed for those unsure if they have the technical expertise to hike Angels Landing",
+        "Expert guide is well-versed in safety information and will assess conditions",
+        "Includes use of a top-of-the-line day pack and hiking poles (for private day hike)"
+      ],
+      "source_urls": [
+        "https://www.undercanvas.com/blog/what-to-do-during-your-stay-at-under-canvas-zion",
+        "https://www.getyourguide.com/zion-national-park-l32179/ttd",
+        "https://www.undercanvas.com/camps/zion/adventure",
+        "https://www.recreation.gov/permits/4251915",
+        "https://www.facebook.com/zionnps/posts/the-zion-wilderness-permit-office-in-the-zion-canyon-visitor-center-will-be-issu/1901354126562218",
+        "https://zionwhitebisonresort.com/wildlife-watching-in-zion-national-park",
+        "https://hikingguy.com/hikes/observation-point-zion",
+        "https://www.grandcanyontrust.org/hikes/cpe-observation-point-trail",
+        "https://therivatzion.com/sightseeing/birdwatching-in-zion-during-late-fall",
+        "https://www.nps.gov/zion/planyourvisit/zion-canyon-trail-descriptions.htm",
+        "https://jameskaiser.com/zion/hiking/west-rim",
+        "https://www.facebook.com/groups/americansouthwest/posts/1389987338297403",
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down",
+        "https://www.alltrails.com/parks/us/utah/zion-national-park/kids",
+        "https://www.allwaysadventure.com/discover-the-best-zion-hikes-with-kids",
+        "https://girlwhotravelstheworld.com/best-sunset-spots-in-zion-national-park",
+        "https://zionwildflower.com/winter-activities-to-enjoy-from-our-zion-park-cabins",
+        "https://saltlakemagazine.com?p=123856",
+        "https://www.nps.gov/zion/planyourvisit/planning-guide.htm",
+        "https://therivatzion.com/sightseeing/fall-in-zion-autumn-colors-and-pleasant-hikes",
+        "https://morethanjustparks.com/best-time-to-visit-zion-national-park",
+        "https://wildlandtrekking.com/zion-visitor-guide/visiting-zion-in-march",
+        "https://www.facebook.com/openroading/posts/hiking-angels-landing-in-zion-national-park-heres-what-you-need-to-know-this-is-/1280174723833471",
+        "https://www.facebook.com/groups/543165101611964/posts/1005828962012240",
+        "https://zionnationalpark.com/angels-landing",
+        "https://www.exploreziontours.com/blog/best-places-to-eat-in-springdale-utah-near-zion-national-park",
+        "https://therivatzion.com/things-to-do/permits-and-reservations-in-zion-2025-guide",
+        "https://reservenature.com/blogs/zion-permits-guide",
+        "https://watchmanvillas.com/will-you-need-a-reservation-to-visit-zion-national-park-in-2025",
+        "https://www.zionponderosa.com/blog/2025/04/planning-your-perfect-zion-national-park-vacation-tips-from-the-pros",
+        "https://www.allwaysadventure.com/first-timers-guide-to-visiting-zion-national-park"
+      ]
+    },
+    {
+      "name": "Walter’s Wiggles",
+      "location": "Zion National Park, Utah — section of Angel's Landing trail / West Rim Trail",
+      "category": "trail section",
+      "key_facts": [
+        "21 steep switchbacks, a notable feature on the climb to Scout Lookout"
+      ],
+      "source_urls": [
+        "https://www.gotheredothatllc.com/read-go-there-do-that-blogs/best-hikes-in-zion-national-park"
+      ]
+    },
+    {
+      "name": "Scout Lookout",
+      "location": "Zion National Park, Utah — on the West Rim Trail, before the chained section of Angels Landing",
+      "category": "viewpoint, trail",
+      "key_facts": [
+        "Provides an incredible view of the canyon floor",
+        "No permit required to hike to this point; closest you get to Angel's Landing without a permit",
+        "West Rim Trail officially ends here; crowds often line up for the final push to Angels Landing, where rangers check permits",
+        "A lower, but no less spectacular, alternative to Angels Landing",
+        "Part of the Angels Landing trail, offering views and restrooms",
+        "Solid challenge with rewarding views (3.6 miles / 5.8 km, 2-3 hours, hard difficulty to reach)",
+        "1,100 feet elevation gain in under 2 miles (from Grotto)"
+      ],
+      "source_urls": [
+        "https://www.gotheredothatllc.com/read-go-there-do-that-blogs/best-hikes-in-zion-national-park",
+        "https://www.nps.gov/zion/planyourvisit/zion-canyon-trail-descriptions.htm",
+        "https://jameskaiser.com/zion/hiking/west-rim",
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down",
+        "https://www.bigbravenomad.com/blog/what-to-do-in-zion-national-park-with-kids",
+        "https://wildlandtrekking.com/zion-visitor-guide/visiting-zion-in-march",
+        "https://www.facebook.com/openroading/posts/hiking-angels-landing-in-zion-national-park-heres-what-you-need-to-know-this-is-/1280174723833471",
+        "https://zionnationalpark.com/angels-landing"
+      ]
+    },
+    {
+      "name": "The Grotto (Shuttle Stop 6)",
+      "location": "Zion National Park, Utah — accessible via Zion Canyon Shuttle (Stop 6)",
+      "category": "shuttle stop, picnic site",
+      "key_facts": [
+        "Shuttle Stop 6, a primary access point for Angels Landing, West Rim Trail, and other trails",
+        "Walking distance from Zion Lodge",
+        "Includes The Grotto Picnic Area near the Virgin River, offering panoramic canyon views that enhance mealtime"
+      ],
+      "source_urls": [
+        "https://jameskaiser.com/zion/hiking/west-rim"
+      ]
+    },
+    {
+      "name": "West Rim Trail",
+      "location": "Zion National Park, Utah — connects Lava Point to The Grotto Shuttle Stop",
+      "category": "trail",
+      "key_facts": [
+        "Challenging and popular trail, 14.2–14.9 miles length, 3,400 feet elevation change (1,433 ft elevation gain from Lava Point), strenuous difficulty",
+        "Can be hiked as a single day trip (for strong hikers) or an overnight backpacking trip (1-2 days)",
+        "Permits required for all backpackers who camp along the trail (8 campsites available), day hikers do not need permits (to Scout Lookout)",
+        "Starts 3/4 of a mile southeast of Lava Point (Top-Down route); officially ends at Scout Lookout, but hikers continue to The Grotto Shuttle Stop (#6) for shuttle access",
+        "Gets significant snow, often limiting access (upper portions can be sketchy without traction devices due to ice in winter)",
+        "Used to access Angels Landing trailhead (includes Walter’s Wiggles, steep switchbacks)",
+        "Goes through \"the refrigerator\" (shady valleys)",
+        "Dogs not allowed; involves scrambling, rocky terrain, forests, rivers, and stunning views",
+        "Accesses dependable water sources like Sawmill Spring (1 mile from trailhead), Potato Hollow Spring (5.2 miles, last dependable source before Cabin Spring), and West (Cabin) Spring (9.8 miles)"
+      ],
+      "source_urls": [
+        "https://www.gotheredothatllc.com/read-go-there-do-that-blogs/best-hikes-in-zion-national-park",
+        "https://www.nps.gov/zion/planyourvisit/zion-canyon-trail-descriptions.htm",
+        "https://jameskaiser.com/zion/hiking/west-rim",
+        "https://www.facebook.com/groups/americansouthwest/posts/1389987338297403",
+        "https://www.alltrails.com/parks/us/utah/zion-national-park/kids",
+        "https://zionnationalpark.com/best-time-to-visit",
+        "https://zionnationalpark.com/angels-landing"
+      ]
+    },
+    {
+      "name": "Zion Narrows Riverside Walk",
+      "location": "Zion National Park, Utah — at the end of the Zion Canyon Scenic Drive (Temple of Sinawava shuttle stop)",
+      "category": "trail",
+      "key_facts": [
+        "Easy and accessible, paved out-and-back trail, ~2 miles (one-way) or 2.1 miles / 3.4 km round-trip",
+        "Estimated time: 1–1.5 hours",
+        "Follows the Virgin River to the mouth of The Narrows, allowing you to see the narrowing of the canyon",
+        "Excellent option for those who want to experience some of The Narrows Canyon but aren’t ready to brave the cold waters",
+        "Includes the maintained trail portion of The Narrows, not the full river route",
+        "Water and a restroom at the trailhead",
+        "For guided hikes, there is a mandatory turnaround point at the junction with Orderville Canyon (at the beginning of the Wall Street section)",
+        "Guided hikes typically cover about 1 mile on the paved Riverside Walk plus about 1.5 miles in the river",
+        "Rating: 4.6 (Moderate difficulty)"
+      ],
+      "source_urls": [
+        "https://www.gotheredothatllc.com/read-go-there-do-that-blogs/best-hikes-in-zion-national-park"
+      ]
+    },
+    {
+      "name": "Kolob Terrace (Section of Zion National Park)",
+      "location": "Zion National Park, Utah — least visited section of Zion, accessed via Kolob Terrace Road",
+      "category": "national park section",
+      "key_facts": [
+        "Quieter and least visited section of Zion",
+        "Gets significant snow, often limiting access",
+        "Boasts many miles of hiking trails at higher elevation than the main canyon of the park",
+        "Offers remote access to several trails, including Lava Point"
+      ],
+      "source_urls": [
+        "https://www.recreation.gov/permits/4251915",
+        "https://www.undercanvas.com/blog/your-guide-to-zion-national-park-wildlife",
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down",
+        "https://saltlakemagazine.com?p=123856",
+        "https://zionnationalpark.com/best-time-to-visit"
+      ]
+    },
+    {
+      "name": "Zion-Mount Carmel Highway",
+      "location": "Zion National Park, Utah — takes travelers through the center of Zion National Park, part of Utah State Route 9, between Canyon Junction and the park's east entrance",
+      "category": "scenic drive",
+      "key_facts": [
+        "Historic, 12-mile highway that takes riders up an unbelievable set of steep switchbacks with incredible views of Zion Canyon",
+        "Includes a 1.1-mile tunnel (Zion-Mount Carmel Tunnel)",
+        "Offers pullouts for incredible views",
+        "Sits higher in elevation and runs about 10 degrees cooler than the canyon floor",
+        "Outside the shuttle zone; you can drive directly to trailheads on this side",
+        "Spectacular with checkerboard sandstone patterns",
+        "Starting on June 7, 2026, large vehicles will not be allowed to drive on the Zion-Mt. Carmel Highway between Canyon Junction and the park's east entrance",
+        "Until June 6, 2026, large vehicles can drive on the highway, given they are not too large to fit through the Zion-Mt. Carmel Tunnel"
+      ],
+      "source_urls": [
+        "https://www.bigbravenomad.com/blog/what-to-do-in-zion-national-park-with-kids",
+        "https://thefoxesphotography.com/elopement-photographer/zion-canyon-overlook-trail-sunset",
+        "https://www.allwaysadventure.com/first-timers-guide-to-visiting-zion-national-park"
+      ]
+    },
+    {
+      "name": "Checkerboard Mesa",
+      "location": "Zion National Park, Utah — along Zion-Mount Carmel Highway",
+      "category": "viewpoint, natural feature",
+      "key_facts": [
+        "Visible from the Zion-Mount Carmel Highway, known for its distinct grid-like patterns"
+      ],
+      "source_urls": [
+        "https://www.bigbravenomad.com/blog/what-to-do-in-zion-national-park-with-kids"
+      ]
+    },
+    {
+      "name": "Court of the Patriarchs",
+      "location": "Zion National Park, Utah — along Zion Canyon Scenic Drive",
+      "category": "viewpoint",
+      "key_facts": [
+        "Popular viewpoint, consisting of three prominent sandstone peaks: Abraham, Isaac, and Jacob",
+        "Boasts great views of the canyon and is visible from the Sand Bench Trail"
+      ],
+      "source_urls": [
+        "https://www.gotheredothatllc.com/read-go-there-do-that-blogs/best-hikes-in-zion-national-park",
+        "https://zionwhitebisonresort.com/kids-activities-in-zion-national-park",
+        "https://www.bigbravenomad.com/blog/what-to-do-in-zion-national-park-with-kids"
+      ]
+    },
+    {
+      "name": "Zion Adventure Company",
+      "location": "Zion National Park, Utah",
+      "category": "tour operator",
+      "key_facts": [
+        "Provides various adventure services in the park (details not specified)"
+      ],
+      "source_urls": [
+        "http://www.travelingstroller.com/2018/08/zion-national-park-best-hikes-and.html"
+      ]
+    },
+    {
+      "name": "Zion Adventure Photog",
+      "location": "Zion National Park, Utah",
+      "category": "photography service",
+      "key_facts": [
+        "Photography service capturing memories against the backdrop of Zion + Southern Utah",
+        "Offers services for family vacations, couples, surprise proposals, and intimate elopements"
+      ],
+      "source_urls": [
+        "https://www.zionadventurephotog.com/single-post/2018/03/22/hiking-the-riverside-walk-trail-zion-national-park"
+      ]
+    },
+    {
+      "name": "Zion-Mount Carmel Tunnel",
+      "location": "Zion National Park, Utah — on the Zion-Mount Carmel Highway",
+      "category": "landmark, transportation infrastructure",
+      "key_facts": [
+        "Just over a mile long, completed in 1930",
+        "Vehicles wider than 7 feet 10 inches (2.4 m) and/or taller than 11 feet 4 inches (3.4 m) are required to have a tunnel permit",
+        "Tunnel permits can be purchased at a park entrance (small fee to pass through for tall camper vans or those towing a trailer)",
+        "The tunnel is open to large vehicles from 8:00 am to 4:30 pm every day; if an escort is required, plan to arrive no later than 4:15 pm",
+        "Most cars or SUVs can drive through the Zion-Mt. Carmel Tunnel at any time",
+        "It is unlawful for large vehicles to traverse the tunnel without traffic control",
+        "No lights inside, but has several huge 'windows' cut out of the rock"
+      ],
+      "source_urls": [
+        "https://thefoxesphotography.com/elopement-photographer/zion-canyon-overlook-trail-sunset"
+      ]
+    },
+    {
+      "name": "Zion Canyon Brew Pub",
+      "location": "Springdale, Utah — steps outside the park entrance, next to Zion Outfitter",
+      "category": "restaurant, brewery",
+      "key_facts": [
+        "Offers original burgers and other pub-style fare",
+        "Serves handcrafted ales & local beers",
+        "Features plenty of outdoor seating with views of Zion's sandstone formations",
+        "Often hosts live music",
+        "Great for easy group dinners and post-hike food and drinks"
+      ],
+      "source_urls": [
+        "https://cliffroselodge.com",
+        "https://www.zionadventurephotog.com/single-post/best-restaurants-near-zion-national-park",
+        "https://www.exploreziontours.com/blog/best-places-to-eat-in-springdale-utah-near-zion-national-park"
+      ]
+    },
+    {
+      "name": "Anthera",
+      "location": "Springdale, Utah — in Cliffrose Lodge near the south entrance of Zion National Park",
+      "category": "restaurant, fine dining",
+      "key_facts": [
+        "Casual fine dining with a social plates menu designed for sharing",
+        "Uses fresh, locally and regionally-sourced ingredients, prioritizing Utah sources",
+        "Fish and seafood sourced from the West Coast",
+        "Cuisine influences include Chilean, Pan Pacific, and American",
+        "Master Chef Shon Foster named 2023 Utah Chef of the Year"
+      ],
+      "source_urls": [
+        "https://www.anthera.co"
+      ]
+    },
+    {
+      "name": "Zion Wildflower Resort",
+      "location": "Virgin, Utah — 100 Kolob Terrace Rd.",
+      "category": "lodging, glamping",
+      "key_facts": [
+        "Lobby is open 8 AM to 10 PM",
+        "Café open from 7 AM to 11 AM for breakfast daily, and for the evening from 6 PM to 10 PM daily",
+        "Pool is heated starting April 1st until the Saturday after Thanksgiving",
+        "Spa will be heated when opening on February 9th and stay heated until closing 2026",
+        "Offers Pet-Friendly Lodging (dogs only, $50 fee for the first night, $25 each night after)",
+        "Heating units in each tent"
+      ],
+      "source_urls": [
+        "https://zionwildflower.com/winter-activities-to-enjoy-from-our-zion-park-cabins"
+      ]
+    },
+    {
+      "name": "Cedar Breaks National Monument",
+      "location": "Southern Utah",
+      "category": "national monument",
+      "key_facts": [
+        "One of the best spots for snowshoeing in Southern Utah",
+        "Park Rangers lead guided snowshoe hikes on Saturdays (free of charge, need to sign up online in advance, rangers provide snowshoes)",
+        "Alpine Pond Trail available for self-guided snowshoeing"
+      ],
+      "source_urls": [
+        "https://zionwildflower.com/winter-activities-to-enjoy-from-our-zion-park-cabins"
+      ]
+    },
+    {
+      "name": "Ruby’s Inn",
+      "location": "Just outside Bryce Canyon National Park, Utah",
+      "category": "equipment rental",
+      "key_facts": [
+        "Rent cross-country skis",
+        "Allows skiing directly into Bryce Canyon National Park on specific roads"
+      ],
+      "source_urls": [
+        "https://zionwildflower.com/winter-activities-to-enjoy-from-our-zion-park-cabins"
+      ]
+    },
+    {
+      "name": "Zion Ponderosa Ranch Resort Accommodations",
+      "location": "Zion Ponderosa Ranch Resort, near Zion National Park, Utah",
+      "category": "lodging, resort",
+      "key_facts": [
+        "Offers various lodging options on its 4,000+ acres, sitting on the park’s east boundary at 6,500 feet elevation (10 degrees cooler than Zion Canyon)",
+        "Vacation Homes: Fully equipped with modern comforts, high-end amenities, many with incredible views",
+        "Cabin Suites: Cozy cabin experience with modern conveniences, rustic décor, air conditioning, private bedroom, full bathroom, living room, and a porch, many overlooking Zion National Park",
+        "Cowboy Cabins: Authentic cowboy experience with a queen sized bunk bed, table, and a porch; access to excellent shower, bath, and laundry facilities",
+        "Conestoga Wagons: Modeled after 19th-century pioneer covered wagons, updated with WiFi access, heaters, and electricity; includes 1 king bed and 2 twin bunk beds (sleeps up to 6 people), with private outdoor relaxation space",
+        "Glamping: Combines luxury camping with hotel-style amenities, featuring canvas tents with plush beds, WiFi, heaters, and a private deck overlooking stunning Zion views; access to nearby showers, bathrooms, and laundry facilities"
+      ],
+      "source_urls": [
+        "https://hikingguy.com/hikes/observation-point-zion",
+        "https://schoandjo.com/best-hikes-in-zion-national-park",
+        "https://www.zionponderosa.com/blog/2023/03/best-lodging-options-for-a-zion-winter",
+        "https://www.zionponderosa.com/blog/2025/04/planning-your-perfect-zion-national-park-vacation-tips-from-the-pros"
+      ]
+    },
+    {
+      "name": "Open Sky Zion",
+      "location": "Virgin, Utah",
+      "category": "glamping, lodging",
+      "key_facts": [
+        "Luxe safari-style tents with fireplaces and heated floors",
+        "Many features the resort’s namesake Open Sky roofs for stargazing",
+        "On-site destination restaurant, Black Sage"
+      ],
+      "source_urls": [
+        "http://stayopensky.com"
+      ]
+    },
+    {
+      "name": "Black Sage",
+      "location": "Virgin, Utah — near Zion National Park, located at Open Sky Resort (up Dalton Wash Road, a county-maintained gravel road)",
+      "category": "restaurant, fine dining",
+      "key_facts": [
+        "Farm-to-table fine dining with jaw-dropping views and an excellent wine list",
+        "Led by acclaimed Chef Charles Parcell, redefining farm-to-table dining with refined, off-the-grid cuisine",
+        "Each plate celebrates locally sourced ingredients from regional farms and purveyors",
+        "Offers intimate indoor space with stunning views or an outdoor covered patio available into the winter season",
+        "Open in February; reservations required; reportedly booked 19 times on a recent day"
+      ],
+      "source_urls": [
+        "https://saltlakemagazine.com?p=123856",
+        "https://www.opentable.com/features/restaurants-that-are-worth-the-drive-springdale-zion-national-park-ut"
+      ]
+    },
+    {
+      "name": "Hotel De Novo Springdale",
+      "location": "Springdale, Utah — less than 3 miles from Zion’s southern entrance (entrance to Zion Canyon)",
+      "category": "hotel, lodging",
+      "key_facts": [
+        "A proud member of the Tapestry Collection by Hilton",
+        "Exterior looks like many generic western-town cabins, but Hilton has renovated this prime location",
+        "Features functional, well-appointed rooms with views of Zion Canyon from your window",
+        "Offers a heated infinity pool on the banks of the Virgin River"
+      ],
+      "source_urls": [
+        "http://hilton.com/en/hotels/sgumtup-hotel-de-novo"
+      ]
+    },
+    {
+      "name": "Stargazing Zion",
+      "location": "Springdale, Utah — near Zion National Park",
+      "category": "tour, educational program",
+      "key_facts": [
+        "Offers expert-led telescope tours under the ultra-dark sky"
+      ],
+      "source_urls": [
+        "http://stargazingzion.com"
+      ]
+    },
+    {
+      "name": "Zion Canyon Hot Spring Resort",
+      "location": "La Verkin, Utah",
+      "category": "hot springs resort",
+      "key_facts": [
+        "Opened in fall 2025",
+        "Features 32 natural mineral hot springs and 16 mineral pools",
+        "Plus saunas and a cold plunge",
+        "Offers a 21-and-over area"
+      ],
+      "source_urls": [
+        "http://zioncanyonhotsprings.com"
+      ]
+    },
+    {
+      "name": "Zion Canyon Scenic Drive",
+      "location": "Zion National Park, Utah — extends from Canyon Junction to the Temple of Sinawava",
+      "category": "scenic drive",
+      "key_facts": [
+        "Takes you down the middle of the famous Zion Canyon, offering easy access to wildlife (Canyon Wrens echo off canyon walls, Wild Turkeys near Zion Lodge)",
+        "Used by buses and by bikes (after the Pa'rus Trail, bikes must pull over to allow buses to pass)",
+        "You will see the Court of the Patriarchs, Angel’s Landing (from the bottom), Zion Lodge, and it will take you all the way to Temple of Sinawava",
+        "Closed to private vehicles from Spring through Fall (open to Shuttle & Lodge guests only); access requires the park shuttle bus",
+        "Park shuttle returns to full time use in spring, is required in summer, and runs less frequently/fewer hours in fall",
+        "Open to private vehicles when the shuttle does not run during some winter periods (e.g., typically used only during holidays like Christmas/New Year's week)",
+        "Suggest getting to the park before dawn to guarantee entry if driving during open periods"
+      ],
+      "source_urls": [
+        "https://www.citrusmilo.com/zionguide/parustrail.php",
+        "https://therivatzion.com/sightseeing/birdwatching-in-zion-during-late-fall",
+        "https://www.bigbravenomad.com/blog/what-to-do-in-zion-national-park-with-kids",
+        "https://www.nps.gov/zion/planyourvisit/seasons.htm",
+        "https://zionnationalpark.com/best-time-to-visit",
+        "https://morethanjustparks.com/best-time-to-visit-zion-national-park"
+      ]
+    },
+    {
+      "name": "Zion-Mount Carmel Highway",
+      "location": "Zion National Park, Utah — between Canyon Junction and the park's east entrance (part of Utah State Route 9)",
+      "category": "scenic drive",
+      "key_facts": [
+        "Historic, 12-mile highway that takes riders up an unbelievable set of steep switchbacks with incredible views of Zion Canyon",
+        "Includes a 1.1-mile tunnel (Zion-Mount Carmel Tunnel)",
+        "Offers pullouts for incredible views",
+        "Sits higher in elevation and runs about 10 degrees cooler than the canyon floor",
+        "Outside the shuttle zone; you can drive directly to trailheads on this side",
+        "Spectacular with checkerboard sandstone patterns and a tunnel carved through the mountain",
+        "Starting on June 7, 2026, large vehicles will not be allowed to drive on this highway between Canyon Junction and the park's east entrance",
+        "Until June 6, 2026, large vehicles can drive on the highway, given they are not too large to fit through the Zion-Mt. Carmel Tunnel"
+      ],
+      "source_urls": [
+        "https://www.bigbravenomad.com/blog/what-to-do-in-zion-national-park-with-kids",
+        "https://thefoxesphotography.com/elopement-photographer/zion-canyon-overlook-trail-sunset",
+        "https://www.allwaysadventure.com/first-timers-guide-to-visiting-zion-national-park"
+      ]
+    },
+    {
+      "name": "Zion-Mount Carmel Tunnel",
+      "location": "Zion National Park, Utah — on the Zion-Mount Carmel Highway",
+      "category": "landmark, transportation infrastructure",
+      "key_facts": [
+        "Just over a mile long, completed in 1930",
+        "Vehicles wider than 7 feet 10 inches (2.4 m) and/or taller than 11 feet 4 inches (3.4 m) are required to have a tunnel permit (small fee for tall camper vans or those towing a trailer)",
+        "Tunnel permits can be purchased at a park entrance",
+        "The tunnel is open to large vehicles with traffic control from 8:00 am to 4:30 pm every day; if an escort is required, plan to arrive to a vehicle entrance no later than 4:15 pm",
+        "Most cars or SUVs can drive through the Zion-Mt. Carmel Tunnel at any time without traffic control",
+        "Some pick-up trucks are too large to fit through the tunnel without traffic control; it is unlawful for large vehicles to traverse the tunnel without traffic control",
+        "No lights inside, but has several huge 'windows' cut out of the rock"
+      ],
+      "source_urls": [
+        "https://thefoxesphotography.com/elopement-photographer/zion-canyon-overlook-trail-sunset"
+      ]
+    },
+    {
+      "name": "Kolob Canyons Road (Scenic Drive)",
+      "location": "Kolob Canyons, Zion National Park, Utah",
+      "category": "scenic drive",
+      "key_facts": [
+        "Five-mile scenic drive with amazing views of the crimson canyons",
+        "Visitors have access to various trails and scenic viewpoints along this road",
+        "Ends at a viewpoint overlooking the Finger Canyons"
+      ],
+      "source_urls": [
+        "https://zionwhitebisonresort.com/wildlife-watching-in-zion-national-park",
+        "https://therivatzion.com/sightseeing/birdwatching-in-zion-during-late-fall",
+        "https://schoandjo.com/best-hikes-in-zion-national-park",
+        "https://www.bigbravenomad.com/blog/what-to-do-in-zion-national-park-with-kids",
+        "https://www.nps.gov/zion/planyourvisit/seasons.htm",
+        "https://therivatzion.com/sightseeing/fall-in-zion-autumn-colors-and-pleasant-hikes",
+        "https://wildlandtrekking.com/zion-visitor-guide/visiting-zion-in-march",
+        "https://therivatzion.com/things-to-do/permits-and-reservations-in-zion-2025-guide",
+        "https://www.allwaysadventure.com/first-timers-guide-to-visiting-zion-national-park"
+      ]
+    },
+    {
+      "name": "Kolob Canyon Viewpoint",
+      "location": "Kolob Canyons, Zion National Park, Utah — at the end of Timber Creek Overlook Trail",
+      "category": "viewpoint",
+      "key_facts": [
+        "Amazing overlook, offering sweeping views of the canyon system",
+        "From here, you may see Mount Trumbull 100 miles away at the north rim of the Grand Canyon"
+      ],
+      "source_urls": [
+        "https://www.bigbravenomad.com/blog/what-to-do-in-zion-national-park-with-kids"
+      ]
+    },
+    {
+      "name": "La Verkin Creek Trail",
+      "location": "Kolob Canyons, Zion National Park, Utah",
+      "category": "trail",
+      "key_facts": [
+        "Moderate 14.0 mile trail (round trip)",
+        "Great way to get into the true wilderness of Zion",
+        "Not heavily trafficked, offering solitude",
+        "Takes hikers to Kolob Arch, one of the world’s largest natural arches"
+      ],
+      "source_urls": [
+        "https://www.bigbravenomad.com/blog/what-to-do-in-zion-national-park-with-kids"
+      ]
+    },
+    {
+      "name": "Zion National Park Ranger Programs & Junior Ranger Program",
+      "location": "Zion National Park, Utah — available at any park visitor center",
+      "category": "educational program",
+      "key_facts": [
+        "Engages kids with Zion’s educational program; a fun way for children to learn about the park's environment and earn a badge",
+        "Self-guided Junior Ranger booklet available for visitors who are four years old and older (free at visitor centers or for download)",
+        "National Park Service Ranger-led Programs encompass guided hikes, wildlife talks, and interactive junior ranger activities",
+        "Deepen kids’ understanding of the park, its history, and the natural world; perfect for all ages",
+        "Free to attend; some programs require advance registration at a visitor center"
+      ],
+      "source_urls": [
+        "https://www.recreation.gov/permits/4251915",
+        "https://www.undercanvas.com/blog/your-guide-to-zion-national-park-wildlife",
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down",
+        "https://saltlakemagazine.com?p=123856",
+        "https://zionnationalpark.com/best-time-to-visit"
+      ]
+    },
+    {
+      "name": "Zion National Park Film",
+      "location": "Online resource (related to Zion National Park, Utah)",
+      "category": "educational program",
+      "key_facts": [
+        "Can be seen for free online at all times of year",
+        "Accessed via zionpark.org/wethekeepers/"
+      ],
+      "source_urls": [
+        "https://www.nps.gov/zion/planyourvisit/seasons.htm"
+      ]
+    },
+    {
+      "name": "Kolob Canyons Trails",
+      "location": "Zion National Park, Utah — northwest corner of Zion National Park",
+      "category": "trail area",
+      "key_facts": [
+        "Several hiking options are located in Kolob Canyons, offering a quieter experience away from the main canyon crowds"
+      ],
+      "source_urls": [
+        "https://www.nps.gov/zion/planyourvisit/planning-guide.htm"
+      ]
+    },
+    {
+      "name": "Zion Wilderness",
+      "location": "Zion National Park, Utah",
+      "category": "wilderness area, hiking area",
+      "key_facts": [
+        "Explore the many trails that access the Zion Wilderness, offering solitude and remote adventures"
+      ],
+      "source_urls": [
+        "https://www.nps.gov/zion/planyourvisit/planning-guide.htm"
+      ]
+    },
+    {
+      "name": "Zion National Park Photography Tours",
+      "location": "Zion National Park, Utah",
+      "category": "tour, photography",
+      "key_facts": [
+        "Offers expert guidance for capturing the stunning landscapes of Zion National Park"
+      ],
+      "source_urls": [
+        "https://therivatzion.com/sightseeing/fall-in-zion-autumn-colors-and-pleasant-hikes"
+      ]
+    },
+    {
+      "name": "Big Bend Pullout",
+      "location": "Zion National Park, Utah — Zion Canyon Scenic Drive",
+      "category": "scenic stop",
+      "key_facts": [
+        "Location to view the Great White Throne",
+        "Accessible by driving your own vehicle in winter when the shuttle is not running"
+      ],
+      "source_urls": [
+        "https://morethanjustparks.com/best-time-to-visit-zion-national-park"
+      ]
+    },
+    {
+      "name": "Finger Canyons",
+      "location": "Zion National Park, Utah — Kolob Canyons section",
+      "category": "natural landmark",
+      "key_facts": [
+        "Overlooked from the end of the 5-mile scenic drive in Kolob Canyons, offering stunning views of these parallel box canyons"
+      ],
+      "source_urls": [
+        "https://morethanjustparks.com/best-time-to-visit-zion-national-park"
+      ]
+    },
+    {
+      "name": "East Zion Adventures (Tour Operator)",
+      "location": "Near Zion National Park, Utah",
+      "category": "tour operator, adventure activities",
+      "key_facts": [
+        "Offers Sunset jeep tours (use code AFV10 for 10% off)",
+        "Provides guided canyoneering tours, jeep tours, horseback riding, guided hiking, UTV tours, and resort activities",
+        "Offers half-day or full-day slot canyon tour options",
+        "Provides a climbing wall and rappelling class, with a team of certified guides offering comprehensive introduction to techniques like rappelling and rope work"
+      ],
+      "source_urls": [
+        "https://www.instagram.com/reel/DYK2wM9lTwA",
+        "https://eastzionadventures.com/canyoneering-tours"
+      ]
+    },
+    {
+      "name": "Private Jeep Tour (Under Canvas Zion)",
+      "location": "Zion National Park, Utah — leaves from Under Canvas Zion camp",
+      "category": "tour, jeep tour",
+      "key_facts": [
+        "Leaves directly from Under Canvas Zion camp",
+        "Expert guides show places most visitors see only in photographs"
+      ],
+      "source_urls": [
+        "https://www.undercanvas.com/blog/what-to-do-during-your-stay-at-under-canvas-zion"
+      ]
+    },
+    {
+      "name": "Zion Horseback Tour",
+      "location": "Zion National Park, Utah",
+      "category": "tour, horseback riding",
+      "key_facts": [
+        "Locally guided tours are a great way to have a quieter experience",
+        "Explores parts of Zion that few ever see",
+        "Good for escaping crowds in busy areas like Zion Canyon"
+      ],
+      "source_urls": [
+        "https://noahlangphotography.com/blog/best-things-to-do-zion-national-park"
+      ]
+    },
+    {
+      "name": "Zion Canyon E-Bike Tour",
+      "location": "Springdale, Utah — for exploring Zion Canyon",
+      "category": "tour, e-bike",
+      "key_facts": [
+        "Can be one of the best ways to explore Zion Canyon and the trails at your own pace",
+        "Helps escape crowds",
+        "Parking in Zion Canyon is banned when the Zion Shuttle is operational",
+        "Parking in the main lots outside of the canyon is extremely limited and competitive"
+      ],
+      "source_urls": [
+        "https://noahlangphotography.com/blog/best-things-to-do-zion-national-park"
+      ]
+    },
+    {
+      "name": "Rock Climbing Adventure (Greater Zion Area)",
+      "location": "Greater Zion area, Utah",
+      "category": "climbing",
+      "key_facts": [
+        "Famous for sandstone and vertical walls",
+        "Beloved climber’s paradise with well-developed routes both inside and outside the park",
+        "Caters to beginners and experienced climbers"
+      ],
+      "source_urls": [
+        "https://www.undercanvas.com/blog/what-to-do-during-your-stay-at-under-canvas-zion"
+      ]
+    },
+    {
+      "name": "Mountain Bike Guided Trips (Zion Area)",
+      "location": "Zion National Park, Utah",
+      "category": "tour, mountain biking",
+      "key_facts": [
+        "Explore alluring local trail systems",
+        "Offers fast, flowy single track, exposed rim trails, and technical red rock terrain",
+        "World-class mountain biking terrain for first timers and experts"
+      ],
+      "source_urls": [
+        "https://www.undercanvas.com/blog/what-to-do-during-your-stay-at-under-canvas-zion"
+      ]
+    },
+    {
+      "name": "Taylor Creek Trail (Middle Fork)",
+      "location": "Zion National Park, Utah — Kolob Canyons section; trailhead is a prominent parking lot on the left (north) side of the road a little over 2 miles from the Kolob Canyons entrance",
+      "category": "trail",
+      "key_facts": [
+        "Moderate difficulty (on the easier side of moderate), 5 miles / 8 km round-trip",
+        "Estimated time: 2-3 hours (family-friendly, children-friendly)",
+        "Maintained trail stays on the banks close to the water and often crosses the streambed (approx. 20 shallow stream crossings); wear shoes you don’t mind getting wet",
+        "Middle Fork of Taylor Creek usually has very light flow, but flow can be higher during the spring runoff",
+        "Leads to the impressive Double Arch Alcove (highlight of the canyon) and passes by two historic homestead log cabins (Larson Cabin and Fife Cabin, dating back to 1930s)",
+        "450-728 feet elevation gain",
+        "Runs east-west, mostly in the shade; busiest of the 4 trails in Kolob Canyons",
+        "No permit required",
+        "Not accessible for wheelchairs or strollers; not dog friendly",
+        "Trailhead parking has about 30 spaces and a vault toilet",
+        "Trailhead is a 40-mile (45 minute) drive from Springdale"
+      ],
+      "source_urls": [
+        "https://www.citrusmilo.com/zionguide/taylorcreek.php",
+        "https://wherearethosemorgans.com/taylor-creek-trail-zion-kolob-canyon",
+        "https://www.bigbravenomad.com/blog/what-to-do-in-zion-national-park-with-kids"
+      ]
+    },
+    {
+      "name": "Larson Cabin",
+      "location": "Zion National Park, Utah — Kolob Canyons section, on the Taylor Creek Trail; located on the north side of the stream near the confluence of the North Fork of Taylor Creek",
+      "category": "historical site",
+      "key_facts": [
+        "Historic homestead log cabin built in the early 1930’s, long pre-dates Kolob Canyons' absorption by Zion's park boundaries in 1956",
+        "Photogenic"
+      ],
+      "source_urls": [
+        "https://www.citrusmilo.com/zionguide/taylorcreek.php",
+        "https://wherearethosemorgans.com/taylor-creek-trail-zion-kolob-canyon"
+      ]
+    },
+    {
+      "name": "Fife Cabin",
+      "location": "Zion National Park, Utah — Kolob Canyons section, on the Taylor Creek Trail; located about half a mile upstream from the Larson Cabin in the Middle Fork of Taylor Creek",
+      "category": "historical site",
+      "key_facts": [
+        "Historic homestead log cabin built in the early 1930’s, long pre-dates Kolob Canyons' absorption by Zion's park boundaries in 1956",
+        "Photogenic and in more attractive surroundings"
+      ],
+      "source_urls": [
+        "https://www.citrusmilo.com/zionguide/taylorcreek.php",
+        "https://wherearethosemorgans.com/taylor-creek-trail-zion-kolob-canyon"
+      ]
+    },
+    {
+      "name": "Double Arch Alcove",
+      "location": "Zion National Park, Utah — Kolob Canyons section, at the end of the maintained Taylor Creek Trail, Middle Fork of Taylor Creek",
+      "category": "natural feature",
+      "key_facts": [
+        "Highlight of the canyon; an extremely photogenic cave-like formation where the sandstone is undercut and water seeps through, coloring the rock with black and white lines",
+        "A magical Zion landmark, gigantic, deep and vast",
+        "Turnaround point for Taylor Creek Trail; continuing past is not recommended due to unmaintained trail and boulder climbing"
+      ],
+      "source_urls": [
+        "https://www.citrusmilo.com/zionguide/taylorcreek.php",
+        "https://wherearethosemorgans.com/taylor-creek-trail-zion-kolob-canyon"
+      ]
+    },
+    {
+      "name": "Zion Lodge",
+      "location": "Zion National Park, Utah — in the middle of Zion Canyon (Shuttle Stop 5)",
+      "category": "facility, lodging",
+      "key_facts": [
+        "Trailhead for Emerald Pools Hike is directly across the road",
+        "Wild Turkeys can often be seen near Zion Lodge and open meadows",
+        "Serves as a starting point for Emerald Pools Trail and Emerald Pools and Zion Lodge via Kayenta Trail",
+        "Open year-round, offering special winter rates and packages",
+        "Accommodations include historic cabins (two double beds, full bath, gas log fireplace, private porch) and hotel rooms (private porch or balcony)",
+        "All rooms feature air conditioning, phones, radio alarm clocks, and hairdryers; King Suite includes private balcony, full bathroom, ample storage, mini-fridge, king-sized bed, pull-out couch, recliner chair, and small dining table",
+        "Guests can drive on Zion Canyon Road and park at the lodge; many trailheads start right at the lodge"
+      ],
+      "source_urls": [
+        "https://www.monicagoes.com/blog/emerald-pools",
+        "https://therivatzion.com/sightseeing/birdwatching-in-zion-during-late-fall",
+        "https://www.alltrails.com/parks/us/utah/zion-national-park/kids",
+        "https://www.bigbravenomad.com/blog/what-to-do-in-zion-national-park-with-kids"
+      ]
+    },
+    {
+      "name": "Canyon Junction",
+      "location": "Zion National Park, Utah — northern end of Pa'rus Trail (Shuttle Stop 3)",
+      "category": "scenic stop, shuttle stop",
+      "key_facts": [
+        "Stop 3 for the Zion Canyon Shuttle",
+        "Pa'rus Trail ends here",
+        "Canyon Junction bridge used to be a popular spot for sunset photography but is now shut down by NPS due to dangerous crowding",
+        "Bicyclists continue from here up Zion Canyon Scenic Drive"
+      ],
+      "source_urls": [
+        "https://www.citrusmilo.com/zionguide/parustrail.php"
+      ]
+    },
+    {
+      "name": "South Campground",
+      "location": "Zion National Park, Utah — just north of the Visitor Center",
+      "category": "campground",
+      "key_facts": [
+        "Pa'rus Trail starts here",
+        "117 site campground",
+        "Can host tents or RVs, but does not have any hook-ups (potable water available, has a dump station)",
+        "Does not have restrooms, but campers have access to the restroom at Watchman campground",
+        "Cost: $20 per site per night",
+        "Reservations required",
+        "Opens during spring, closes in winter",
+        "Sells out months in advance for holiday weekends like Memorial Day and Labor Day; can usually be booked with a couple weeks' notice in winter"
+      ],
+      "source_urls": [
+        "https://www.citrusmilo.com/zionguide/parustrail.php",
+        "https://www.bigbravenomad.com/blog/what-to-do-in-zion-national-park-with-kids",
+        "https://www.nps.gov/zion/planyourvisit/seasons.htm",
+        "https://morethanjustparks.com/best-time-to-visit-zion-national-park"
+      ]
+    },
+    {
+      "name": "Virgin River",
+      "location": "Zion National Park, Utah — flows through Zion Canyon, skirts the Pa'rus Trail",
+      "category": "natural feature, river",
+      "key_facts": [
+        "Pa'rus Trail skirts the river, including several pedestrian bridges crossing it",
+        "Several spots give access to the river below",
+        "Visible from Observation Point (below Angel's Landing and the road)",
+        "American Dippers often seen along the river; waterfowl may gather near calmer stretches",
+        "The Riverside Walk trail follows the Virgin River",
+        "Shallow and gentle currents, offering a secure environment for young swimmers (except for Narrows sections with bacteria warnings)"
+      ],
+      "source_urls": [
+        "https://www.citrusmilo.com/zionguide/parustrail.php",
+        "https://hikingguy.com/hikes/observation-point-zion",
+        "https://therivatzion.com/sightseeing/birdwatching-in-zion-during-late-fall",
+        "https://zionwhitebisonresort.com/kids-activities-in-zion-national-park"
+      ]
+    },
+    {
+      "name": "Temple of Sinawava (Shuttle Stop 9)",
+      "location": "Zion National Park, Utah — terminus of Zion Canyon Scenic Drive (Shuttle Stop 9)",
+      "category": "natural formation, shuttle stop",
+      "key_facts": [
+        "The furthest point up Zion Canyon for bikers",
+        "Starting point for the Bottom-Up Zion Narrows Day Hike and connects to the Riverside Walk (trailhead for Riverside Walk Trail)",
+        "Last shuttle stop in the canyon",
+        "Finishing point for The Narrows Top-Down hike"
+      ],
+      "source_urls": [
+        "https://www.citrusmilo.com/zionguide/parustrail.php",
+        "https://www.zionguru.com/rentals/narrows",
+        "https://zionwhitebisonresort.com/kids-activities-in-zion-national-park",
+        "https://www.zionadventurephotog.com/single-post/2018/03/22/hiking-the-riverside-walk-trail-zion-national-park"
+      ]
+    },
+    {
+      "name": "Cliffrose Lodge",
+      "location": "Springdale, Utah — 281 Zion Park Blvd",
+      "category": "lodging",
+      "key_facts": [
+        "Located within walking distance up the Virgin River from the Pa'rus Trail",
+        "4.7 / 5 rating based on 2,500+ reviews"
+      ],
+      "source_urls": [
+        "https://cliffroselodge.com/september-featured-hike-2"
+      ]
+    },
+    {
+      "name": "Zion Pizza & Noodle Co.",
+      "location": "Springdale, Utah — a few minutes drive from the park entrance",
+      "category": "restaurant",
+      "key_facts": [
+        "Offers good service, attentive to toddlers",
+        "Serves pizza and pasta (signature pizzas, hearty pasta dishes, salads)",
+        "Wait time can be long during peak season (45-60 minutes); recommended to get there right when it opens",
+        "Features a beer garden with a long list of drafts from local Utah breweries and other favorites",
+        "A longtime favorite for wood-fired pizzas and a laid-back atmosphere, great for easy group dinners and post-hike carb loading"
+      ],
+      "source_urls": [
+        "https://ouradventurejournal.com/stroller-friendly-hikes-at-zion",
+        "https://www.zionadventurephotog.com/single-post/best-restaurants-near-zion-national-park",
+        "https://www.exploreziontours.com/blog/best-places-to-eat-in-springdale-utah-near-zion-national-park"
+      ]
+    },
+    {
+      "name": "Whiptail Grill",
+      "location": "Springdale, Utah — half a mile outside the entrance to Zion",
+      "category": "restaurant",
+      "key_facts": [
+        "Good place to stop on the way home after a day at the park",
+        "Serves Mexican-inspired dishes with a creative twist",
+        "Highlights include their Famous Goat Cheese Chile Relleno and spaghetti squash enchiladas",
+        "Also offers tacos, burritos, and burgers"
+      ],
+      "source_urls": [
+        "https://ouradventurejournal.com/stroller-friendly-hikes-at-zion",
+        "https://www.zionadventurephotog.com/single-post/best-restaurants-near-zion-national-park"
+      ]
+    },
+    {
+      "name": "Best Western Plus Zion Canyon Inn and Suites",
+      "location": "Springdale, Utah",
+      "category": "accommodation",
+      "key_facts": [
+        "Recommended as a kid-friendly hotel",
+        "Has a shallow section in the swimming pool"
+      ],
+      "source_urls": [
+        "https://ouradventurejournal.com/stroller-friendly-hikes-at-zion"
+      ]
+    },
+    {
+      "name": "Springdale Town Park",
+      "location": "Springdale, Utah",
+      "category": "park",
+      "key_facts": [
+        "Has a playground and lots of running space",
+        "Good for toddlers to burn off energy in the mornings before it gets too hot"
+      ],
+      "source_urls": [
+        "https://ouradventurejournal.com/stroller-friendly-hikes-at-zion"
+      ]
+    },
+    {
+      "name": "Snow Canyon State Park",
+      "location": "St. George, Utah — ~1 hour west of Zion National Park",
+      "category": "state park",
+      "key_facts": [
+        "Oasis of red-rock tranquility",
+        "Offers plenty of hikes, ranging from easy strolls perfect for kids to long scrambles over the red-rock dunes"
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/ZionNP/comments/b7aust/hidden_gems_near_the_park",
+        "http://stateparks.utah.gov/parks/snow-canyon"
+      ]
+    },
+    {
+      "name": "Zion Horseback Tour",
+      "location": "Zion National Park, Utah",
+      "category": "tour, horseback riding",
+      "key_facts": [
+        "Locally guided tours are a great way to have a quieter experience",
+        "Explores parts of Zion that few ever see",
+        "Good for escaping crowds in busy areas like Zion Canyon"
+      ],
+      "source_urls": [
+        "https://noahlangphotography.com/blog/best-things-to-do-zion-national-park"
+      ]
+    },
+    {
+      "name": "Zion National Park Photography Tours",
+      "location": "Zion National Park, Utah",
+      "category": "tour, photography",
+      "key_facts": [
+        "Offers expert guidance for capturing the stunning landscapes of Zion National Park"
+      ],
+      "source_urls": [
+        "https://therivatzion.com/sightseeing/fall-in-zion-autumn-colors-and-pleasant-hikes"
+      ]
+    },
+    {
+      "name": "Lava Point",
+      "location": "Zion National Park, Utah — one of the highest points in Zion, near the West Rim Trailhead",
+      "category": "viewpoint",
+      "key_facts": [
+        "Offers panoramic views",
+        "Starting point for West Rim Trail (Top-Down)",
+        "Access closes in winter"
+      ],
+      "source_urls": [
+        "https://jameskaiser.com/zion/hiking/west-rim",
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down",
+        "https://www.nps.gov/zion/planyourvisit/seasons.htm"
+      ]
+    },
+    {
+      "name": "Lava Point Campground",
+      "location": "Zion National Park, Utah — near the Kolob Canyons section, located at 7,890 feet",
+      "category": "campground",
+      "key_facts": [
+        "Usually only open May-September, weather permitting",
+        "Only has 6 primitive campsites, available first come, first serve",
+        "Has pit toilets and trash cans, but no water",
+        "Private hiking shuttles often drop hikers off here for the West Rim Trail"
+      ],
+      "source_urls": [
+        "https://jameskaiser.com/zion/hiking/west-rim",
+        "https://www.bigbravenomad.com/blog/what-to-do-in-zion-national-park-with-kids"
+      ]
+    },
+    {
+      "name": "Wildcat Trail",
+      "location": "Zion National Park, Utah — intersects with the West Rim Trail on Horse Pasture Plateau",
+      "category": "trail",
+      "key_facts": [
+        "Junction with West Rim Trail (distance not specified, serves as a connector)"
+      ],
+      "source_urls": [
+        "https://jameskaiser.com/zion/hiking/west-rim"
+      ]
+    },
+    {
+      "name": "Sawmill Spring",
+      "location": "Zion National Park, Utah — on the West Rim Trail, 1 mile from the trailhead",
+      "category": "water source",
+      "key_facts": [
+        "First of three dependable springs on the West Rim Trail",
+        "A spur trail leads to it",
+        "Zion wilderness desk posts which springs are currently flowing"
+      ],
+      "source_urls": [
+        "https://jameskaiser.com/zion/hiking/west-rim"
+      ]
+    },
+    {
+      "name": "Potato Hollow Spring",
+      "location": "Zion National Park, Utah — on the West Rim Trail, 5.2 miles from the trailhead",
+      "category": "water source",
+      "key_facts": [
+        "Last dependable water source before Cabin Spring",
+        "Backpackers should replenish water here",
+        "Located off the spur trail to campsite 8"
+      ],
+      "source_urls": [
+        "https://jameskaiser.com/zion/hiking/west-rim"
+      ]
+    },
+    {
+      "name": "Telephone Canyon Trail",
+      "location": "Zion National Park, Utah — intersects with the West Rim Trail (6.8 miles from trailhead) and near West (Cabin) Spring",
+      "category": "trail",
+      "key_facts": [
+        "Offers a 1.8-mile shortcut to West (Cabin) Spring",
+        "Southern junction is near West (Cabin) Spring"
+      ],
+      "source_urls": [
+        "https://jameskaiser.com/zion/hiking/west-rim"
+      ]
+    },
+    {
+      "name": "West (Cabin) Spring",
+      "location": "Zion National Park, Utah — on the West Rim Trail, 9.8 miles from the trailhead, near the southern junction with Telephone Canyon Trail",
+      "category": "water source",
+      "key_facts": [
+        "A spur trail heads to it",
+        "After replenishing water, continue along spur trail to an exposed lookout with stunning views"
+      ],
+      "source_urls": [
+        "https://jameskaiser.com/zion/hiking/west-rim"
+      ]
+    },
+    {
+      "name": "Mount Majestic",
+      "location": "Zion National Park, Utah — West Rim Trail curves around its base",
+      "category": "peak",
+      "key_facts": [
+        "West Rim Trail curves around its base",
+        "Offers fantastic views"
+      ],
+      "source_urls": [
+        "https://jameskaiser.com/zion/hiking/west-rim",
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down"
+      ]
+    },
+    {
+      "name": "Refrigerator Canyon",
+      "location": "Zion National Park, Utah — West Rim Trail ascends its eastern edge",
+      "category": "canyon, trail section",
+      "key_facts": [
+        "Shady valleys, offering a cool respite",
+        "Cairns (small rock piles) mark the sometimes faint trail"
+      ],
+      "source_urls": [
+        "https://jameskaiser.com/zion/hiking/west-rim"
+      ]
+    },
+    {
+      "name": "Little Siberia",
+      "location": "Zion National Park, Utah",
+      "category": "region",
+      "key_facts": [
+        "Trail passes through this region, known for its cold, shaded environment"
+      ],
+      "source_urls": [
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down"
+      ]
+    },
+    {
+      "name": "Springdale, Utah",
+      "location": "Springdale, Utah — adjacent to Zion National Park",
+      "category": "town",
+      "key_facts": [
+        "Becoming a year-round destination, making a great base camp for visits to the park",
+        "Has warmer temperatures than the higher elevations of the West Rim Trail in summer",
+        "Outfitters are available for traction cleats (for winter hiking)",
+        "Visiting in the off-season (December through February) eases hotel and lodging costs"
+      ],
+      "source_urls": [
+        "https://jameskaiser.com/zion/hiking/west-rim",
+        "https://saltlakemagazine.com?p=123856",
+        "https://zionnationalpark.com/best-time-to-visit"
+      ]
+    },
+    {
+      "name": "West Rim Trail (Top-Down)",
+      "location": "Zion National Park, Utah — starts at Lava Point, ends at The Grotto Shuttle Stop (#6)",
+      "category": "trail",
+      "key_facts": [
+        "Hard difficulty, 14.9 miles length, 1,433 ft elevation gain (point to point)",
+        "The trail starts at Lava Point (one of Zion's highest points)",
+        "Camping is allowed (backpacking permits required for 8 campsites along the trail)",
+        "Dogs not allowed; involves scrambling, rocky terrain, hiking, backpacking through forests, rivers, and offering extensive views",
+        "Gets significant snow, often limiting access; upper portions can be sketchy without traction devices due to ice in winter"
+      ],
+      "source_urls": [
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down"
+      ]
+    },
+    {
+      "name": "North Creek",
+      "location": "Zion National Park, Utah",
+      "category": "river",
+      "key_facts": [
+        "First viewpoint on West Rim Trail looks at North Creek"
+      ],
+      "source_urls": [
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down"
+      ]
+    },
+    {
+      "name": "South Guardian Angel",
+      "location": "Zion National Park, Utah",
+      "category": "peak",
+      "key_facts": [
+        "First viewpoint on West Rim Trail looks at South Guardian Angel"
+      ],
+      "source_urls": [
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down"
+      ]
+    },
+    {
+      "name": "Potato Hollow",
+      "location": "Zion National Park, Utah",
+      "category": "valley",
+      "key_facts": [
+        "Trail gently descends into this valley"
+      ],
+      "source_urls": [
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down"
+      ]
+    },
+    {
+      "name": "Hammerhead Viewpoint",
+      "location": "Zion National Park, Utah",
+      "category": "viewpoint",
+      "key_facts": [
+        "Hikers ascend steeply to reach this viewpoint on the West Rim Trail"
+      ],
+      "source_urls": [
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down"
+      ]
+    },
+    {
+      "name": "Horse Pasture Plateau",
+      "location": "Zion National Park, Utah",
+      "category": "plateau",
+      "key_facts": [
+        "Summit reached after elevation gain; junction with Wildcat Trail"
+      ],
+      "source_urls": [
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down"
+      ]
+    },
+    {
+      "name": "Right Fork (Canyon)",
+      "location": "Zion National Park, Utah",
+      "category": "canyon",
+      "key_facts": [
+        "Clear views available from West Rim Trail"
+      ],
+      "source_urls": [
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down"
+      ]
+    },
+    {
+      "name": "Greatheart Mesa",
+      "location": "Zion National Park, Utah",
+      "category": "mesa",
+      "key_facts": [
+        "Clear views available from West Rim Trail"
+      ],
+      "source_urls": [
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down"
+      ]
+    },
+    {
+      "name": "Ivins Mountain",
+      "location": "Zion National Park, Utah",
+      "category": "mountain",
+      "key_facts": [
+        "Clear views available from West Rim Trail"
+      ],
+      "source_urls": [
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down"
+      ]
+    },
+    {
+      "name": "Inclined Temple",
+      "location": "Zion National Park, Utah",
+      "category": "geological feature",
+      "key_facts": [
+        "Clear views available from West Rim Trail"
+      ],
+      "source_urls": [
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down"
+      ]
+    },
+    {
+      "name": "Castle Dome",
+      "location": "Zion National Park, Utah",
+      "category": "peak",
+      "key_facts": [
+        "Fantastic views available from West Rim Trail"
+      ],
+      "source_urls": [
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down"
+      ]
+    },
+    {
+      "name": "Heaps Canyon",
+      "location": "Zion National Park, Utah",
+      "category": "canyon",
+      "key_facts": [
+        "Fantastic views available from West Rim Trail; waterfalls cascade from here to Emerald Pools"
+      ],
+      "source_urls": [
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down"
+      ]
+    },
+    {
+      "name": "Behunin Canyon",
+      "location": "Zion National Park, Utah",
+      "category": "canyon",
+      "key_facts": [
+        "Fantastic views available from West Rim Trail"
+      ],
+      "source_urls": [
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down"
+      ]
+    },
+    {
+      "name": "White Cliffs",
+      "location": "Zion National Park, Utah",
+      "category": "geological feature",
+      "key_facts": [
+        "Exposed areas with nearly vertical walls encountered on West Rim Trail"
+      ],
+      "source_urls": [
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down"
+      ]
+    },
+    {
+      "name": "Campsite 1 (West Rim Trail)",
+      "location": "Zion National Park, Utah — along the West Rim Trail",
+      "category": "campsite",
+      "key_facts": [
+        "Backpacking campsite, requires a permit for overnight use"
+      ],
+      "source_urls": [
+        "https://www.gotheredothatllc.com/read-go-there-do-that-blogs/best-hikes-in-zion-national-park",
+        "https://www.nps.gov/zion/planyourvisit/zion-canyon-trail-descriptions.htm",
+        "https://jameskaiser.com/zion/hiking/west-rim",
+        "https://www.facebook.com/groups/americansouthwest/posts/1389987338297403",
+        "https://www.alltrails.com/parks/us/utah/zion-national-park/kids",
+        "https://zionnationalpark.com/best-time-to-visit",
+        "https://zionnationalpark.com/angels-landing"
+      ]
+    },
+    {
+      "name": "Campsite 2 (West Rim Trail)",
+      "location": "Zion National Park, Utah — along the West Rim Trail",
+      "category": "campsite",
+      "key_facts": [
+        "Backpacking campsite, requires a permit for overnight use"
+      ],
+      "source_urls": [
+        "https://www.gotheredothatllc.com/read-go-there-do-that-blogs/best-hikes-in-zion-national-park",
+        "https://www.nps.gov/zion/planyourvisit/zion-canyon-trail-descriptions.htm",
+        "https://jameskaiser.com/zion/hiking/west-rim",
+        "https://www.facebook.com/groups/americansouthwest/posts/1389987338297403",
+        "https://www.alltrails.com/parks/us/utah/zion-national-park/kids",
+        "https://zionnationalpark.com/best-time-to-visit",
+        "https://zionnationalpark.com/angels-landing"
+      ]
+    },
+    {
+      "name": "Campsite 3 (West Rim Trail)",
+      "location": "Zion National Park, Utah — along the West Rim Trail",
+      "category": "campsite",
+      "key_facts": [
+        "Backpacking campsite, requires a permit for overnight use"
+      ],
+      "source_urls": [
+        "https://www.gotheredothatllc.com/read-go-there-do-that-blogs/best-hikes-in-zion-national-park",
+        "https://www.nps.gov/zion/planyourvisit/zion-canyon-trail-descriptions.htm",
+        "https://jameskaiser.com/zion/hiking/west-rim",
+        "https://www.facebook.com/groups/americansouthwest/posts/1389987338297403",
+        "https://www.alltrails.com/parks/us/utah/zion-national-park/kids",
+        "https://zionnationalpark.com/best-time-to-visit",
+        "https://zionnationalpark.com/angels-landing"
+      ]
+    },
+    {
+      "name": "Campsite 4 (West Rim Trail)",
+      "location": "Zion National Park, Utah — along the West Rim Trail",
+      "category": "campsite",
+      "key_facts": [
+        "Backpacking campsite, requires a permit for overnight use"
+      ],
+      "source_urls": [
+        "https://www.gotheredothatllc.com/read-go-there-do-that-blogs/best-hikes-in-zion-national-park",
+        "https://www.nps.gov/zion/planyourvisit/zion-canyon-trail-descriptions.htm",
+        "https://jameskaiser.com/zion/hiking/west-rim",
+        "https://www.facebook.com/groups/americansouthwest/posts/1389987338297403",
+        "https://www.alltrails.com/parks/us/utah/zion-national-park/kids",
+        "https://zionnationalpark.com/best-time-to-visit",
+        "https://zionnationalpark.com/angels-landing"
+      ]
+    },
+    {
+      "name": "Campsite 5 (West Rim Trail)",
+      "location": "Zion National Park, Utah — along the West Rim Trail",
+      "category": "campsite",
+      "key_facts": [
+        "Backpacking campsite, requires a permit for overnight use"
+      ],
+      "source_urls": [
+        "https://www.gotheredothatllc.com/read-go-there-do-that-blogs/best-hikes-in-zion-national-park",
+        "https://www.nps.gov/zion/planyourvisit/zion-canyon-trail-descriptions.htm",
+        "https://jameskaiser.com/zion/hiking/west-rim",
+        "https://www.facebook.com/groups/americansouthwest/posts/1389987338297403",
+        "https://www.alltrails.com/parks/us/utah/zion-national-park/kids",
+        "https://zionnationalpark.com/best-time-to-visit",
+        "https://zionnationalpark.com/angels-landing"
+      ]
+    },
+    {
+      "name": "Campsite 6 (West Rim Trail)",
+      "location": "Zion National Park, Utah — along the West Rim Trail",
+      "category": "campsite",
+      "key_facts": [
+        "Backpacking campsite, requires a permit for overnight use"
+      ],
+      "source_urls": [
+        "https://www.gotheredothatllc.com/read-go-there-do-that-blogs/best-hikes-in-zion-national-park",
+        "https://www.nps.gov/zion/planyourvisit/zion-canyon-trail-descriptions.htm",
+        "https://jameskaiser.com/zion/hiking/west-rim",
+        "https://www.facebook.com/groups/americansouthwest/posts/1389987338297403",
+        "https://www.alltrails.com/parks/us/utah/zion-national-park/kids",
+        "https://zionnationalpark.com/best-time-to-visit",
+        "https://zionnationalpark.com/angels-landing"
+      ]
+    },
+    {
+      "name": "Campsite 7 (West Rim Trail)",
+      "location": "Zion National Park, Utah — along the West Rim Trail",
+      "category": "campsite",
+      "key_facts": [
+        "Backpacking campsite, requires a permit for overnight use"
+      ],
+      "source_urls": [
+        "https://www.gotheredothatllc.com/read-go-there-do-that-blogs/best-hikes-in-zion-national-park",
+        "https://www.nps.gov/zion/planyourvisit/zion-canyon-trail-descriptions.htm",
+        "https://jameskaiser.com/zion/hiking/west-rim",
+        "https://www.facebook.com/groups/americansouthwest/posts/1389987338297403",
+        "https://www.alltrails.com/parks/us/utah/zion-national-park/kids",
+        "https://zionnationalpark.com/best-time-to-visit",
+        "https://zionnationalpark.com/angels-landing"
+      ]
+    },
+    {
+      "name": "Goose Creek Knoll",
+      "location": "Zion National Park, Utah",
+      "category": "peak",
+      "key_facts": [
+        "A distinctive peak in Zion National Park"
+      ],
+      "source_urls": [
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down"
+      ]
+    },
+    {
+      "name": "Northgate Peaks Trail (via Kolob Terrace)",
+      "location": "Zion National Park, Utah — Kolob Terrace section",
+      "category": "trail",
+      "key_facts": [
+        "5.7–5.9 miles / 9.2 km length",
+        "Difficulty: Moderate to Hard",
+        "Estimated time: 2-3 hours",
+        "Offers a peaceful escape with incredible panoramic views from East Northgate Peak",
+        "Mostly flat and easy for the first two-thirds, then climbs steeply up East Northgate Peak over exposed sandstone",
+        "Trail can be hard to follow as it transitions from dirt to open sandstone near the summit",
+        "No permit required"
+      ],
+      "source_urls": [
+        "https://schoandjo.com/best-hikes-in-zion-national-park",
+        "https://zionnationalpark.com/best-time-to-visit"
+      ]
+    },
+    {
+      "name": "Floating Rock via Zion Narrows Riverside Walk",
+      "location": "Zion National Park, Utah",
+      "category": "trail variation",
+      "key_facts": [
+        "4.9 rating, Moderate difficulty, 6.4 mi length",
+        "Estimated time: 3.5–4 hr"
+      ],
+      "source_urls": [
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down"
+      ]
+    },
+    {
+      "name": "Zion Narrows Bottom Up to Big Springs",
+      "location": "Zion National Park, Utah",
+      "category": "trail",
+      "key_facts": [
+        "4.9 rating, Hard difficulty, 9.3 mi length",
+        "This route leads hikers from the Temple of Sinawava upriver to Big Springs, which is the farthest point one can go without a permit."
+      ],
+      "source_urls": [
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down"
+      ]
+    },
+    {
+      "name": "Left Fork (Subway) Top Down Canyoneering Route",
+      "location": "Zion National Park, Utah",
+      "category": "canyoneering",
+      "key_facts": [
+        "4.8 rating, Strenuous difficulty, 8.1 mi length",
+        "This is a technical canyoneering route for experienced adventurers requiring permits."
+      ],
+      "source_urls": [
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down"
+      ]
+    },
+    {
+      "name": "Observation Point and East Rim via East Mesa Trail",
+      "location": "Zion National Park, Utah",
+      "category": "trail",
+      "key_facts": [
+        "4.8 rating, Moderate difficulty, 7.9 mi length",
+        "Estimated time: 3–3.5 hr",
+        "This route combines the East Mesa Trail to reach Observation Point and potentially offers views of the East Rim."
+      ],
+      "source_urls": [
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down"
+      ]
+    },
+    {
+      "name": "Virgin River Walk",
+      "location": "Zion National Park, Utah",
+      "category": "trail",
+      "key_facts": [
+        "4.4 rating, Easy difficulty, 1.2 mi length",
+        "Estimated time: 0.5–1 hr",
+        "A shorter, easier version or section of the Riverside Walk along the Virgin River."
+      ],
+      "source_urls": [
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down"
+      ]
+    },
+    {
+      "name": "Hop Valley and Kolob Arch Trail",
+      "location": "Zion National Park, Utah",
+      "category": "trail",
+      "key_facts": [
+        "A long, remote trail in the Kolob Canyons section, leading to the majestic Kolob Arch."
+      ],
+      "source_urls": [
+        "https://www.alltrails.com/trail/us/utah/west-rim-trail-top-down"
+      ]
+    },
+    {
+      "name": "Mystery Canyon Falls",
+      "location": "Zion National Park, Utah",
+      "category": "waterfall",
+      "key_facts": [
+        "A waterfall located within Mystery Canyon, likely encountered during canyoneering trips."
+      ],
+      "source_urls": [
+        "https://www.alltrails.com/parks/us/utah/zion-national-park/kids"
+      ]
+    },
+    {
+      "name": "Lower Pine Creek Waterfall",
+      "location": "Zion National Park, Utah",
+      "category": "waterfall",
+      "key_facts": [
+        "A waterfall on Pine Creek, a tributary within Zion Canyon, often accessible via technical canyoneering routes."
+      ],
+      "source_urls": [
+        "https://www.alltrails.com/parks/us/utah/zion-national-park/kids"
+      ]
+    },
+    {
+      "name": "Family Adventures Tour (All Ways Adventure)",
+      "location": "Zion National Park, Utah — offered by All Ways Adventure",
+      "category": "tour, family adventure",
+      "key_facts": [
+        "Designed with families in mind, combining fun, safety, and educational experiences",
+        "Customizable to family comfort level and interests (hiking, rock scrambling, canyoneering)",
+        "Includes guided family hikes suitable for all ages, easy rock scrambling for adventurous kids",
+        "Includes nature-based games and educational stops",
+        "Offers custom itineraries"
+      ],
+      "source_urls": [
+        "https://www.allwaysadventure.com/discover-the-best-zion-hikes-with-kids"
+      ]
+    },
+    {
+      "name": "Zion Lodge Picnic Area",
+      "location": "Zion National Park, Utah",
+      "category": "picnic area",
+      "key_facts": [
+        "A designated area for picnicking near Zion Lodge, offering convenience and scenic surroundings."
+      ],
+      "source_urls": [
+        "https://zionwhitebisonresort.com/kids-activities-in-zion-national-park"
+      ]
+    },
+    {
+      "name": "Watchman Campground Picnic Area",
+      "location": "Zion National Park, Utah",
+      "category": "picnic area",
+      "key_facts": [
+        "A designated area for picnicking within Watchman Campground."
+      ],
+      "source_urls": [
+        "https://zionwhitebisonresort.com/kids-activities-in-zion-national-park"
+      ]
+    },
+    {
+      "name": "Zion White Bison Resort E-bike Rentals",
+      "location": "Zion White Bison Resort, Zion National Park area, Utah",
+      "category": "rental service, e-bike",
+      "key_facts": [
+        "Offers half or full-day E-bike Rentals"
+      ],
+      "source_urls": [
+        "https://zionwhitebisonresort.com/kids-activities-in-zion-national-park"
+      ]
+    },
+    {
+      "name": "Watchman Campground",
+      "location": "Springdale, Utah — within Zion National Park",
+      "category": "campground",
+      "key_facts": [
+        "190 site campground, can host tents or RVs; some sites offer electric hook-ups (Loop B is designated for RVs only)",
+        "Has 7 accessible sites",
+        "Cost: $20 per site per night (non electric) & $30 per site per night (electric)",
+        "Reservations required; sells out months in advance for holiday weekends like Memorial Day and Labor Day",
+        "Can usually be booked with a couple weeks' notice in winter"
+      ],
+      "source_urls": [
+        "https://www.bigbravenomad.com/blog/what-to-do-in-zion-national-park-with-kids",
+        "https://morethanjustparks.com/best-time-to-visit-zion-national-park"
+      ]
+    },
+    {
+      "name": "Zion Crest Campground & RV Park",
+      "location": "Zion National Park, Utah — just outside the eastern boundary of the park (part of Zion Ponderosa Ranch Resort)",
+      "category": "campground, RV park",
+      "key_facts": [
+        "RV and camping enthusiasts can find a clean and well-kept place to stay",
+        "Campers will also have access to dining and recreation services offered by Zion Ponderosa Ranch Resort",
+        "Bryce Canyon National Park is just 75 minutes away"
+      ],
+      "source_urls": [
+        "https://www.bigbravenomad.com/blog/what-to-do-in-zion-national-park-with-kids"
+      ]
+    },
+    {
+      "name": "Zion Canyon Campground",
+      "location": "Springdale, Utah — South Entrance",
+      "category": "campground",
+      "key_facts": [
+        "Offers 133 full hook-up campsites and 47 tent sites",
+        "Offers full shower facilities, BBQ grills, fire pits, playgrounds, and more",
+        "The only campground in Springdale, thus booking well in advance is essential"
+      ],
+      "source_urls": [
+        "https://www.bigbravenomad.com/blog/what-to-do-in-zion-national-park-with-kids"
+      ]
+    },
+    {
+      "name": "Holiday Inn Express Springdale",
+      "location": "Springdale, Utah — just outside of Zion National Park, among the red rock cliffs of Zion Canyon",
+      "category": "lodging, hotel",
+      "key_facts": [
+        "Recently renovated, offering spectacular scenic views, a fantastic location, and excellent amenities",
+        "Features a seasonal swimming pool and year-round hot tub with amazing views",
+        "Walking paths near the Virgin River and manicured grounds provide spaces to recharge in nature",
+        "Offers easy access to Zion and the town of Springdale via the free shuttle",
+        "Includes a delicious hot breakfast"
+      ],
+      "source_urls": [
+        "https://www.bigbravenomad.com/blog/what-to-do-in-zion-national-park-with-kids"
+      ]
+    },
+    {
+      "name": "Sandbench Trail",
+      "location": "Zion National Park, Utah — along the Virgin River",
+      "category": "trail",
+      "key_facts": [
+        "7.6 miles trail (round trip)",
+        "Follows along the Virgin River for the first part",
+        "Second half of the trail is more scenic",
+        "Not a heavily trafficked trail",
+        "Allows horses March to October"
+      ],
+      "source_urls": [
+        "https://www.bigbravenomad.com/blog/what-to-do-in-zion-national-park-with-kids"
+      ]
+    },
+    {
+      "name": "Canyon Trail Rides",
+      "location": "Zion National Park, Utah",
+      "category": "tour, horseback riding",
+      "key_facts": [
+        "Offers horseback riding tours within Zion National Park (details not specified)"
+      ],
+      "source_urls": [
+        "http://www.travelingstroller.com/2018/08/zion-national-park-best-hikes-and.html"
+      ]
+    },
+    {
+      "name": "Archeology Trail",
+      "location": "Zion National Park, Utah",
+      "category": "trail",
+      "key_facts": [
+        "A trail focusing on archaeological points of interest within the park."
+      ],
+      "source_urls": [
+        "https://zionnationalpark.com/angels-landing"
+      ]
+    },
+    {
+      "name": "Chinle Trail",
+      "location": "Zion National Park, Utah",
+      "category": "trail",
+      "key_facts": [
+        "A trail located in Zion National Park, typically in a more remote area, known for its dinosaur tracks and scenic views."
+      ],
+      "source_urls": [
+        "https://zionnationalpark.com/angels-landing"
+      ]
+    },
+    {
+      "name": "Zion Traverse: Lee Pass to East Rim Trailhead",
+      "location": "Zion National Park, Utah",
+      "category": "trail, backpacking",
+      "key_facts": [
+        "A strenuous, multi-day backpacking route across Zion National Park, traversing varied terrain",
+        "Involves 8,467 ft of total ascent"
+      ],
+      "source_urls": [
+        "https://www.alltrails.com/parks/us/utah/zion-national-park"
+      ]
+    },
+    {
+      "name": "East Rim Trail to Mystery",
+      "location": "Zion National Park, Utah",
+      "category": "trail",
+      "key_facts": [
+        "A specific segment or connection of the East Rim Trail leading towards Mystery Canyon."
+      ],
+      "source_urls": [
+        "https://www.alltrails.com/parks/us/utah/zion-national-park"
+      ]
+    },
+    {
+      "name": "Canyon Coffee",
+      "location": "Springdale, Utah — half a mile from the entrance to Zion",
+      "category": "cafe",
+      "key_facts": [
+        "Offers coffee, tea, local pastries, and quick bites for breakfast",
+        "Patio provides scenic views of the park"
+      ],
+      "source_urls": [
+        "https://www.zionadventurephotog.com/single-post/best-restaurants-near-zion-national-park"
+      ]
+    },
+    {
+      "name": "Deep Creek Coffee",
+      "location": "Springdale, Utah — about a mile outside the entrance to Zion",
+      "category": "cafe",
+      "key_facts": [
+        "Laid-back local joint",
+        "Offers coffee, specialty lattes, tea, fruit smoothies",
+        "Serves breakfast and lunch fare like bagel sammies and quinoa bowls"
+      ],
+      "source_urls": [
+        "https://www.zionadventurephotog.com/single-post/best-restaurants-near-zion-national-park"
+      ]
+    },
+    {
+      "name": "Park House Cafe",
+      "location": "Springdale, Utah — about 2 miles outside the park entrance",
+      "category": "cafe",
+      "key_facts": [
+        "Offers classic American fare like eggs benedicts and omelettes for breakfast",
+        "Serves burgers and hearty sandwiches for lunch",
+        "Described as a homey space perfect for brunch"
+      ],
+      "source_urls": [
+        "https://www.zionadventurephotog.com/single-post/best-restaurants-near-zion-national-park"
+      ]
+    },
+    {
+      "name": "MeMe’s Cafe",
+      "location": "Springdale, Utah — about a mile and a half from the entrance to Zion near shuttle stop 5",
+      "category": "cafe",
+      "key_facts": [
+        "Famous for its crepes, including both savory and sweet options",
+        "Offers a range of other eats for breakfast, lunch, or dinner",
+        "Known for sandwiches, especially pork options like Hawaiian, Cubano, and BBQ pork"
+      ],
+      "source_urls": [
+        "https://www.zionadventurephotog.com/single-post/best-restaurants-near-zion-national-park"
+      ]
+    },
+    {
+      "name": "Fire & Smoke BBQ",
+      "location": "Kanarraville, Utah — just outside of the Kolob Canyons area of Zion",
+      "category": "restaurant",
+      "key_facts": [
+        "Serves authentic Texas-style BBQ, including brisket, ribs, pulled pork, and smoked turkey",
+        "Offers sandwiches or 'protein-style' meat platters",
+        "Hours are limited, so check before visiting"
+      ],
+      "source_urls": [
+        "https://www.zionadventurephotog.com/single-post/best-restaurants-near-zion-national-park"
+      ]
+    },
+    {
+      "name": "Bit & Spur Restaurant & Saloon",
+      "location": "Springdale, Utah — about a mile and a half from the park near Springdale shuttle stop #6",
+      "category": "restaurant",
+      "key_facts": [
+        "Offers an eclectic menu of contemporary Mexican & Southwestern fare",
+        "Dishes include sweet potato tamales, roasted poblano mac & cheese, and chicken mole",
+        "Serves many margarita options",
+        "Features a big grass lawn for kids in the summer"
+      ],
+      "source_urls": [
+        "https://www.zionadventurephotog.com/single-post/best-restaurants-near-zion-national-park"
+      ]
+    },
+    {
+      "name": "AÑU",
+      "location": "Springdale, Utah — in Hotel DeNovo, about 3 miles outside the park entrance",
+      "category": "restaurant, fusion",
+      "key_facts": [
+        "Decor blends modern elegance with rustic touches",
+        "Cuisine combines Chinese and Japanese influences with South American cuisine",
+        "Features panoramic windows providing stunning views of Zion while dining"
+      ],
+      "source_urls": [
+        "https://www.zionadventurephotog.com/single-post/best-restaurants-near-zion-national-park"
+      ]
+    },
+    {
+      "name": "Zion Canyon Candy Company",
+      "location": "Springdale, Utah",
+      "category": "sweet treats, shop",
+      "key_facts": [
+        "Old-school candy shop with fudge, sweets, and nostalgic favorites"
+      ],
+      "source_urls": [
+        "https://www.exploreziontours.com/blog/best-places-to-eat-in-springdale-utah-near-zion-national-park"
+      ]
+    },
+    {
+      "name": "Switchback Grille",
+      "location": "Springdale (Zion National Park), Utah — at the foot of the Watchman rock formation in Zion Canyon",
+      "category": "restaurant, steak & fish house",
+      "key_facts": [
+        "Booked 15 times today",
+        "Features hand-selected USDA Prime beef, Certified Angus Beef and a daily fresh fish menu",
+        "Offers stunning views of the West Temple",
+        "Full bar service with the area’s most extensive wine list",
+        "Banquet and catering services are available year round",
+        "Includes a cozy sports grill with pub favorites",
+        "No online reservations for parties of over 10 people (24 hours notice required)"
+      ],
+      "source_urls": [
+        "https://www.opentable.com/features/restaurants-that-are-worth-the-drive-springdale-zion-national-park-ut"
+      ]
+    },
+    {
+      "name": "Spotted Dog Cafe",
+      "location": "Springdale (Zion National Park), Utah — just outside the breathtaking entrance to Zion National Park",
+      "category": "cafe, bistro",
+      "key_facts": [
+        "Booked 20 times today",
+        "Casual American bistro with cozy, art-filled dining rooms or a charming Euro-style sidewalk cafe",
+        "Focus on fresh, local ingredients",
+        "Kitchen, led by Chef Hatch, handcrafts every dish, from sauces made from scratch to celebrated Lamb Shank and Lemon Cake",
+        "Open daily for lunch and dinner"
+      ],
+      "source_urls": [
+        "https://www.opentable.com/features/restaurants-that-are-worth-the-drive-springdale-zion-national-park-ut"
+      ]
+    },
+    {
+      "name": "All Ways Adventure (Tour Operator)",
+      "location": "East Zion, Utah — operated by All Ways Adventure (based in Kanab, UT)",
+      "category": "tour operator, adventure activities",
+      "key_facts": [
+        "Private, guided adventures, no experience necessary, expert guides provide all gear and instruction",
+        "Offers Canyoneering Tours (rappel, scramble, and hike through pristine slot canyons, exclusive access to areas outside the national park)",
+        "Offers Off-Roading Tours (deep into the backcountry in a comfortable, capable 4x4 vehicle, discover hidden arches, remote overlooks, and ancient petroglyphs, exclusive access to areas outside the national park)"
+      ],
+      "source_urls": []
+    }
+  ],
+  "generated_at": "2026-05-28T16:13:43.296Z",
+  "ttl_days": 90
+}

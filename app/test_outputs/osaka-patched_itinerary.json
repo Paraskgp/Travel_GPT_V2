@@ -1,0 +1,302 @@
+{
+  "itinerary": {
+    "destination": "Osaka, Japan",
+    "start_date": "2026-09-26",
+    "end_date": "2026-09-30",
+    "days": [
+      {
+        "date": "2026-09-26",
+        "day_number": 1,
+        "day_title": "Arrival and Initial Exploration",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "15:30",
+            "end_time": "16:30",
+            "title": "Authentic Okonomiyaki Experience",
+            "notes": "For the authentic griddle-side show without the ground-floor wait, head directly to the second floor, which often has open counter seats ideal for watching your Yamaimo-yaki cooked right in front of you.",
+            "planning_note": "After arriving in Osaka and checking into your accommodation, head to Okonomiyaki Mizuno in Dotonbori for a quintessential Osakan lunch. The setting will align with the family’s need for an engaging yet relaxed start.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Okonomiyaki+Mizuno+Osaka",
+            "experience_id": "okonomiyaki-experience",
+            "effort": "easy"
+          },
+          {
+            "type": "activity",
+            "start_time": "17:00",
+            "end_time": "19:00",
+            "title": "Stroll Through Hozenji Yokocho",
+            "notes": "Pause where the cobblestone path narrows between the traditional wooden storefronts; when the lanterns illuminate, seek out the subtle, hand-painted details on the noren curtains that often mark the entrance to centuries-old establishments.",
+            "planning_note": "Begin the evening with a stroll through Hozenji Yokocho, a historical alleyway that offers a tranquil transition into the vibrant city experience. It’s a gentle introduction for young children, with the option to pause and take in the atmosphere.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Hozenji+Yokocho+Alley+Osaka",
+            "experience_id": "hozenji-yokocho-alley",
+            "effort": "easy"
+          },
+          {
+            "type": "travel",
+            "start_time": "19:00",
+            "end_time": "19:15",
+            "title": "Return to Namba",
+            "notes": "Return to your accommodation in Namba after exploring.",
+            "planning_note": null,
+            "maps_url": null,
+            "experience_id": null,
+            "effort": null
+          }
+        ]
+      },
+      {
+        "date": "2026-09-27",
+        "day_number": 2,
+        "day_title": "Cultural and Historical Exploration",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "08:00",
+            "end_time": "09:00",
+            "title": "Breakfast at Hotel",
+            "notes": "Start the day with a hearty breakfast at your accommodation.",
+            "planning_note": "Fuel up with a nourishing breakfast at your hotel to prepare for a packed day exploring Osaka’s history and culture.",
+            "maps_url": null,
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "activity",
+            "start_time": "09:30",
+            "end_time": "11:30",
+            "title": "Explore Osaka Castle",
+            "notes": "For an iconic castle silhouette, especially when the light softens in late afternoon, position yourself in the Nishinomaru Garden near the Tea Ceremony House to capture the main tower framed by its historical walls.",
+            "planning_note": "Arrive early at Osaka Castle to enjoy cooler temperatures and smaller morning crowds, which is better for young children.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Osaka+Castle+Osaka",
+            "experience_id": "osaka-castle-tour",
+            "effort": "moderate"
+          },
+          {
+            "type": "meal",
+            "start_time": "12:00",
+            "end_time": "13:00",
+            "title": "Lunch at Kuromon Ichiba Market",
+            "notes": "For the ultimate tuna experience, bypass the initial tourist-heavy sashimi stalls and seek out the vendors deeper within the market that prepare maguro-don bowls fresh to order.",
+            "planning_note": "Visit Kuromon Market for a dynamic lunch in the heart of Osaka's food culture. Ideal for introducing regional flavors to children.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Kuromon+Ichiba+Market+Osaka",
+            "experience_id": "kuromon-ichiba-market",
+            "effort": "easy"
+          },
+          {
+            "type": "activity",
+            "start_time": "13:30",
+            "end_time": "15:30",
+            "title": "Visit Osaka Aquarium Kaiyukan",
+            "notes": "For an unparalleled perspective of the whale sharks, pause at the bottom-most level of the central Pacific Ocean tank.",
+            "planning_note": "Perfect for an afternoon rest after lunch, providing both kids and adults a chance to unwind while watching marine life.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Osaka+Aquarium+Kaiyukan+Osaka",
+            "experience_id": "osaka-aquarium-kaiyukan",
+            "effort": "easy"
+          },
+          {
+            "type": "travel",
+            "start_time": "15:30",
+            "end_time": "16:00",
+            "title": "Return to Namba",
+            "notes": null,
+            "planning_note": null,
+            "maps_url": null,
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "meal",
+            "start_time": "17:00",
+            "end_time": "18:00",
+            "title": "Dinner at Namba Parks",
+            "notes": "Admire how the rain washes the stone and amplifies the reflections of the shops below, creating a tranquil, subdued atmosphere.",
+            "planning_note": "Early dinner allows time for the family to relax and enjoy the unique shopping mall setting. Perfect after a day of exploration.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Namba+Parks+Osaka",
+            "experience_id": "explore-namba-parks",
+            "effort": "easy"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-28",
+        "day_number": 3,
+        "day_title": "Creative and Fun Activities",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "08:00",
+            "end_time": "09:00",
+            "title": "Breakfast at Hotel",
+            "notes": "Start the day with a nutritious breakfast to energize.",
+            "planning_note": "A strong breakfast at the hotel ensures everyone in the family is ready for a creative day ahead.",
+            "maps_url": null,
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "activity",
+            "start_time": "09:30",
+            "end_time": "11:30",
+            "title": "Kids Plaza Osaka Visit",
+            "notes": "In the Hundertwasser-designed 'Kids Town,' find the less obvious spiral slide hidden inside one of the castle turrets.",
+            "planning_note": "A morning at Kids Plaza offers both fun and educational experiences, perfect for young children.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Kids+Plaza+Osaka",
+            "experience_id": "kids-plaza-osaka",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "12:00",
+            "end_time": "13:00",
+            "title": "Lunch at Umeda Sky Building",
+            "notes": "Enjoy the unique views while dining, preparing the family for an afternoon of creativity.",
+            "planning_note": "Lunch with an enchanting view sets the perfect backdrop for an afternoon of easygoing exploration.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Umeda+Sky+Building+Osaka",
+            "experience_id": "discover-umeda-sky-building",
+            "effort": "easy"
+          },
+          {
+            "type": "activity",
+            "start_time": "14:00",
+            "end_time": "16:00",
+            "title": "Explore Nakanoshima Museum of Art",
+            "notes": "Stroll through the ground-level public passage that cuts directly through the museum's black cube.",
+            "planning_note": "In case of rain or just a slow afternoon, this museum offers creative inspiration and a comfortable temperature, ideal for family visits.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Nakanoshima+Museum+of+Art+Osaka",
+            "experience_id": "nakanoshima-museum-of-art",
+            "effort": "easy"
+          },
+          {
+            "type": "travel",
+            "start_time": "16:00",
+            "end_time": "16:30",
+            "title": "Return to Namba",
+            "notes": null,
+            "planning_note": null,
+            "maps_url": null,
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "meal",
+            "start_time": "17:00",
+            "end_time": "18:00",
+            "title": "Dinner at Hotel",
+            "notes": "Relax with a simple dinner at your hotel after an artful day.",
+            "planning_note": "A hotel dinner lets the family wind down in comfort after a creatively charged day. Perfect for preparing kids for bedtime.",
+            "maps_url": null,
+            "experience_id": null,
+            "effort": null
+          }
+        ]
+      },
+      {
+        "date": "2026-09-29",
+        "day_number": 4,
+        "day_title": "Nature and Relaxation Day",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "08:00",
+            "end_time": "09:00",
+            "title": "Breakfast at Hoshino Coffee Roastery",
+            "notes": "Inquire about the 'Roastery Select' single-origin pour-over for a unique morning coffee experience.",
+            "planning_note": "Kick off the day with an aromatic breakfast at Hoshino Coffee Roastery, offering a zen-like start to a relaxed day.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Hoshino+Coffee+Osaka",
+            "experience_id": "hoshino-coffee-roastery",
+            "effort": "easy"
+          },
+          {
+            "type": "activity",
+            "start_time": "10:00",
+            "end_time": "11:00",
+            "title": "Picnic at Osaka Castle Park",
+            "notes": "Position your picnic blanket on the grassy slope just east of the Tamon-yagura turret for views.",
+            "planning_note": "A simple lunch at Osaka Castle Park offers relaxation and leisure in an iconic setting, perfect for young families.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Osaka+Castle+Park+Osaka",
+            "experience_id": "osaka-jo-koen",
+            "effort": "easy"
+          },
+          {
+            "type": "activity",
+            "start_time": "11:30",
+            "end_time": "13:30",
+            "title": "Visit Osaka Museum of History",
+            "notes": "On the 10th floor, look east through the panoramic windows to connect the ancient capital's scale with Osaka Castle.",
+            "planning_note": "An indoor museum visit provides a leisurely mix of education and entertainment, suiting a likely warm midday.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Osaka+Museum+of+History+Osaka",
+            "experience_id": "osaka-museum-of-history",
+            "effort": "easy"
+          },
+          {
+            "type": "travel",
+            "start_time": "13:30",
+            "end_time": "14:00",
+            "title": "Return to Namba",
+            "notes": null,
+            "planning_note": null,
+            "maps_url": null,
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "meal",
+            "start_time": "17:00",
+            "end_time": "18:00",
+            "title": "Dinner at Toyo Izakaya",
+            "notes": "For the full show, sit directly in front of Toyo-chan's grill for a front-row view of the culinary action.",
+            "planning_note": "Choose Toyo Izakaya for a fun dining experience that engages the entire family, perfect for a cumulative taste of Osaka.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Toyo+Izakaya+Osaka",
+            "experience_id": "toyo-izakaya-dining",
+            "effort": "easy"
+          },
+          {
+            "type": "travel",
+            "start_time": "18:00",
+            "end_time": "18:30",
+            "title": "Return to Namba",
+            "notes": null,
+            "planning_note": "Ensure the family returns to accommodation just before sunset.",
+            "maps_url": null,
+            "experience_id": null,
+            "effort": null
+          }
+        ]
+      },
+      {
+        "date": "2026-09-30",
+        "day_number": 5,
+        "day_title": "Departure",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "08:00",
+            "end_time": "09:00",
+            "title": "Breakfast at Hotel",
+            "notes": "Enjoy a relaxed breakfast before checking out.",
+            "planning_note": "Ensure a light, enjoyable breakfast to start the day leisurely before departure.",
+            "maps_url": null,
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "travel",
+            "start_time": "09:30",
+            "end_time": "10:30",
+            "title": "Checkout and Depart for the Airport",
+            "notes": "Ensure ample time for travel and potential delays.",
+            "planning_note": "Leave your accommodation with plenty of time for a stress-free journey to the airport.",
+            "maps_url": null,
+            "experience_id": null,
+            "effort": null
+          }
+        ]
+      }
+    ],
+    "change_log": [
+      "Check 1: Day 1 — adjusted schedule so no activities end after 18:00.",
+      "Check 8: Verified that no outdoor activities end post-sunset, including travel adjustments made."
+    ],
+    "generated_at": "2024-04-29T12:00:00Z"
+  }
+}

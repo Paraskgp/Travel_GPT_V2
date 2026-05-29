@@ -1,0 +1,105 @@
+{
+  "test": {
+    "slug": "test",
+    "last_updated": "2026-05-28T16:07:03.556Z",
+    "keys": [
+      "destination_context",
+      "weather_unknown",
+      "experiences",
+      "board_0fc092cf"
+    ]
+  },
+  "Zion National Park": {
+    "slug": "zion-national-park",
+    "last_updated": "2026-05-28T17:01:07.374Z",
+    "keys": [
+      "weather_november",
+      "experiences",
+      "board_0fc092cf",
+      "weather_may",
+      "canonical_name"
+    ]
+  },
+  "Zion NP": {
+    "slug": "zion-np",
+    "last_updated": "2026-05-28T17:01:09.102Z",
+    "keys": [
+      "canonical_name"
+    ]
+  },
+  "Xayan": {
+    "slug": "xayan",
+    "last_updated": "2026-05-28T17:01:10.433Z",
+    "keys": [
+      "canonical_name"
+    ]
+  },
+  "NYC": {
+    "slug": "nyc",
+    "last_updated": "2026-05-28T17:01:11.512Z",
+    "keys": [
+      "canonical_name"
+    ]
+  },
+  "The Narrows": {
+    "slug": "the-narrows",
+    "last_updated": "2026-05-28T17:01:13.195Z",
+    "keys": [
+      "canonical_name"
+    ]
+  },
+  "paris": {
+    "slug": "paris",
+    "last_updated": "2026-05-28T17:01:14.220Z",
+    "keys": [
+      "canonical_name"
+    ]
+  },
+  "Zion": {
+    "slug": "zion",
+    "last_updated": "2026-05-28T17:01:08.281Z",
+    "keys": [
+      "canonical_name"
+    ]
+  },
+  "Tokyo, Japan": {
+    "slug": "tokyo-japan",
+    "last_updated": "2026-05-28T20:19:51.762Z",
+    "keys": [
+      "canonical_name",
+      "destination_context",
+      "weather_september",
+      "board_a39e54a9"
+    ]
+  },
+  "Kyoto, Japan": {
+    "slug": "kyoto-japan",
+    "last_updated": "2026-05-28T20:27:04.183Z",
+    "keys": [
+      "canonical_name",
+      "destination_context",
+      "weather_september",
+      "board_a39e54a9"
+    ]
+  },
+  "Osaka, Japan": {
+    "slug": "osaka-japan",
+    "last_updated": "2026-05-28T20:16:54.301Z",
+    "keys": [
+      "canonical_name",
+      "destination_context",
+      "weather_september",
+      "board_a39e54a9"
+    ]
+  },
+  "Tokyo": {
+    "slug": "tokyo",
+    "last_updated": "2026-05-29T12:34:36.111Z",
+    "keys": [
+      "canonical_name",
+      "destination_context",
+      "weather_may",
+      "board_a39e54a9"
+    ]
+  }
+}

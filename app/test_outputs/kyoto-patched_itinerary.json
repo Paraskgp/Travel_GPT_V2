@@ -1,0 +1,201 @@
+{
+  "itinerary": {
+    "destination": "Kyoto, Japan",
+    "start_date": "2026-09-21",
+    "end_date": "2026-09-26",
+    "days": [
+      {
+        "date": "2026-09-21",
+        "day_number": 1,
+        "day_title": "Arrival and Evening in Gion",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "16:00",
+            "end_time": "17:00",
+            "title": "Gion District",
+            "notes": "As the machiya lanterns begin to glow on Hanamikoji Dori, discreetly position yourself at the mouth of a smaller stone-paved alley south of Shijo-dori, as maiko and geiko often emerge from these residential lanes heading to their teahouse engagements.",
+            "planning_note": "A leisurely introduction to Kyoto's iconic district; evening lighting enhances the experience. Perfect timing as you'll arrive post-check-in and with enough time to explore before dinner.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Gion+District+Kyoto",
+            "experience_id": "gion-district",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "18:00",
+            "end_time": "20:00",
+            "title": "Kaiseki Dining Experience at Kikunoi",
+            "notes": "Upon completion of your final course, accept the offer of matcha and observe the specific chawan (tea bowl) presented; these are meticulously selected from renowned Kyoto kilns, often reflecting the exact micro-season.",
+            "planning_note": "Introduce the family to Kyoto's elaborate culinary art with a Kaiseki dinner at Kikunoi. Secure a private room in advance, allowing the atmosphere to set the stage for subsequent days.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Kikunoi+Gion+Kyoto",
+            "experience_id": "kaiseki-dining",
+            "effort": "easy"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-22",
+        "day_number": 2,
+        "day_title": "Exploring Arashiyama",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "08:00",
+            "end_time": "08:30",
+            "title": "Arashiyama Bamboo Grove",
+            "notes": "To truly hear the famed 'Kaze no Oto' (sound of the wind) unique to Arashiyama, seek the short, less-trodden path that veers slightly uphill just before the main grove exit near Okochi Sanso Villa.",
+            "planning_note": "Begin early to avoid crowds and enjoy a meditative start to the day. It's a serene place that allows for immersive family moments in nature.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Arashiyama+Bamboo+Grove+Kyoto",
+            "experience_id": "arashiyama-bamboo-grove",
+            "effort": "easy"
+          },
+          {
+            "type": "activity",
+            "start_time": "08:45",
+            "end_time": "10:45",
+            "title": "Tenryu-ji Temple",
+            "notes": "Experience the tranquility of Zen gardens and the harmony of temple architecture, with the mountains serving as a majestic backdrop.",
+            "planning_note": "A seamless addition after the Bamboo Grove. The early morning provides a calm setting for temple exploration, setting a peaceful tone for the day.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Tenryu-ji+Temple+Kyoto",
+            "experience_id": null,
+            "effort": "easy"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-23",
+        "day_number": 3,
+        "day_title": "Historic Kyoto and Cultural Touchstones",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "08:00",
+            "end_time": "10:00",
+            "title": "Fushimi Inari Shrine",
+            "notes": "At the Yotsu-suji junction, follow the right-hand path towards Negari-sha Shrine; this quieter route reveals more intimate, moss-covered fox altars distinct from the larger main path.",
+            "planning_note": "A must-visit early in the morning to experience the shrine in its quieter and cooler moments. Provides an iconic Kyoto experience with plenty of kid-friendly exploration.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Fushimi+Inari+Shrine+Kyoto",
+            "experience_id": "fushimi-inari-shrine",
+            "effort": "moderate"
+          },
+          {
+            "type": "activity",
+            "start_time": "10:30",
+            "end_time": "12:00",
+            "title": "Kyoto Railway Museum",
+            "notes": "For the best photo opportunities of the Umekoji Steam Locomotive Museum’s historic roundhouse and operating turntable from above, ascend to the pedestrian bridge connecting the main museum building to Umekoji Park.",
+            "planning_note": "Great for young children fascinated by trains, balancing cultural attractions with child-friendly activities. A good indoor alternative if weather turns.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Kyoto+Railway+Museum",
+            "experience_id": "kyoto-rail-museum",
+            "effort": "easy"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-24",
+        "day_number": 4,
+        "day_title": "Temples and Traditions",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "08:00",
+            "end_time": "10:00",
+            "title": "Signs of Autumn at Nanzen-ji",
+            "notes": "For autumn's fiery display, position yourself near the lower arches of the Suirokaku aqueduct to frame the crimson momiji against the weathered red brick.",
+            "planning_note": "Begin the day with serene temple exploration, offering reflections of early autumn and fewer crowds in the morning.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Nanzen-ji+Temple+Kyoto",
+            "experience_id": "signs-of-autumn-at-nanzen-ji",
+            "effort": "easy"
+          },
+          {
+            "type": "activity",
+            "start_time": "13:00",
+            "end_time": "15:00",
+            "title": "Kyoto National Museum",
+            "notes": "When approaching the Heisei Chishinkan Wing, turn to admire the grand Meiji Kotokan Hall, specifically its red brick facade.",
+            "planning_note": "Plan a cultural afternoon exploring exhibits and artifacts that captivate young imaginations. An indoor option for weather variability.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Kyoto+National+Museum",
+            "experience_id": "kyoto-national-museum",
+            "effort": "easy"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-25",
+        "day_number": 5,
+        "day_title": "Castles and Scenic Beauty",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "08:45",
+            "end_time": "10:30",
+            "title": "Nijo Castle Exploration",
+            "notes": "Inside Ninomaru Palace, pause on the corridor planks just before the main reception chambers; this is where the nightingale floors' deliberate squeak is most audible.",
+            "planning_note": "Explore the historic castle early in the day to experience the intricate gardens and fascinating architecture in cooler weather.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Nijo+Castle+Kyoto",
+            "experience_id": "nijo-castle-exploration",
+            "effort": "moderate"
+          },
+          {
+            "type": "activity",
+            "start_time": "11:00",
+            "end_time": "12:30",
+            "title": "Kyoto Imperial Palace Gardens",
+            "notes": "Recommended to pause and enjoy the picturesque walkways and serene ponds.",
+            "planning_note": "Free and expansive, the gardens provide a leisurely continuation from Nijo Castle with plenty of space for the family to enjoy a stroll.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Kyoto+Imperial+Palace",
+            "experience_id": null,
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "12:45",
+            "end_time": "13:45",
+            "title": "Lunch at Kyoto Handicraft Center Café",
+            "notes": "Opt for Japanese convenience dishes or pick up snacks to enjoy outside.",
+            "planning_note": "A practical choice near the Palace Gardens, allowing rest and refreshment before continuing the day.",
+            "maps_url": null,
+            "experience_id": null,
+            "effort": "easy"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-26",
+        "day_number": 6,
+        "day_title": "Departure",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "08:00",
+            "end_time": "09:00",
+            "title": "Breakfast at Ryōan-ji",
+            "notes": "Enjoy a traditional Japanese breakfast with views of Zen gardens.",
+            "planning_note": "A perfect morning to connect with Kyoto's serene beginnings before checking out.",
+            "maps_url": null,
+            "experience_id": null,
+            "effort": "easy"
+          },
+          {
+            "type": "travel",
+            "start_time": "09:30",
+            "end_time": "11:00",
+            "title": "Checkout and transit to departure location",
+            "notes": null,
+            "planning_note": "Allow ample time for a hassle-free morning packing and ensure transit to the station/airport with plenty of buffer for potential delays.",
+            "maps_url": null,
+            "experience_id": null,
+            "effort": null
+          }
+        ]
+      }
+    ],
+    "change_log": [
+      "Check 1: Day 2 — removed 'Monkey Park Iwatayama' and 'Boat Ride on the Hozu River' to comply with the maximum of two activities per family_young preference.",
+      "Check 1: Day 3 — removed 'Nijo Castle' to comply with the maximum of two activities per family_young preference.",
+      "Check 1: Day 4 — removed 'Kyo-yuzen Dyeing Experience' to comply with the maximum of two activities per family_young preference.",
+      "Check 1: Day 5 — removed 'Philosopher's Path' to comply with the maximum of two activities per family_young preference."
+    ],
+    "generated_at": "2023-10-05T12:00:00Z"
+  }
+}

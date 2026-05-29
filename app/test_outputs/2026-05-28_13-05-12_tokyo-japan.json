@@ -1,0 +1,3206 @@
+{
+  "board": {
+    "destination": "Tokyo, Japan",
+    "destination_context": {
+      "destination": "Tokyo, Japan",
+      "soul": "Tokyo is not merely a city; it is a sprawling, pulsating ecosystem where hyper-modernity dances in constant tension with ancient traditions. It's a place where serene Shinto shrines nestle beneath towering skyscrapers, and robot restaurants exist just blocks from meticulously crafted kaiseki meals. The soul of Tokyo lies in its relentless pursuit of perfection and aesthetic excellence in every minute detail, from a perfectly timed bullet train to a single piece of nigiri sushi. It’s a city that can feel overwhelmingly vast and complex, yet operates with an almost serene efficiency and politeness that belies its frenetic pace. The light here shifts from the neon glow of Shibuya to the quiet filtered sun in a traditional garden, revealing a city of endless discovery, where each neighborhood feels like a distinct world, inviting you to lose yourself in its unique rhythm and character.\n\nWhat draws people back is this sense of constant evolution paired with an unwavering commitment to quality and service. It’s the thrill of stumbling upon a tiny ramen shop with a line stretching around the block, the quiet contemplation in a perfectly manicured park, or the electric energy of a karaoke bar. Tokyo teaches you to appreciate the small things done extraordinarily well, and to embrace a future that somehow respectfully carries its past forward. It's a place that is simultaneously alien and deeply familiar, offering a sensory overload that somehow grounds you in its unique order.",
+      "defining_pillars": [
+        "Seamless blend of ancient tradition and futuristic innovation",
+        "World's most diverse and high-quality culinary scene",
+        "Neighborhoods each possessing a unique personality and vibe",
+        "Hyper-efficient, silent, and expansive public transport",
+        "Deep-seated culture of impeccable service and politeness",
+        "Fashion-forward trends and distinctive pop culture"
+      ],
+      "best_for": [
+        "Urban explorers who thrive on sensory richness and density",
+        "Food obsessives seeking Michelin-starred excellence and street food gems",
+        "Culture enthusiasts intrigued by the old-meets-new dynamic",
+        "Design and architecture aficionados appreciating cutting-edge aesthetics",
+        "Shopaholics looking for unique fashion, tech, and artisan goods",
+        "Travelers prioritizing safety, cleanliness, and efficiency"
+      ],
+      "honest_notes": [
+        "The city's sheer scale can be overwhelming; planning ahead and focusing on specific neighborhoods is crucial.",
+        "While major tourist areas have English signage, a basic understanding of Japanese phrases or a translation app will greatly enhance your experience.",
+        "Tokyo can be expensive, especially for accommodation and high-end dining; budget accordingly.",
+        "Public transport is excellent but requires mastering a complex network of train and subway lines.",
+        "Personal space, particularly on crowded trains during rush hour, is minimal; embrace the squeeze."
+      ],
+      "applicable_themes": [
+        "signature",
+        "unique_local",
+        "food_drink",
+        "food_crawls",
+        "adventure",
+        "nature",
+        "culture",
+        "arts",
+        "family",
+        "romantic",
+        "rainy_day",
+        "nightlife",
+        "shopping",
+        "day_trips",
+        "seasonal"
+      ],
+      "recommended_stay_area": "Shinjuku",
+      "recommended_stay_reason": "Shinjuku offers exceptional public transport connectivity to nearly every other major Tokyo hub, diverse dining and shopping, vibrant nightlife, and a tranquil park, making it the most balanced and convenient base for exploring the entire city."
+    },
+    "weather_context": {
+      "destination": "Tokyo, Japan",
+      "travel_month": "September",
+      "annual_summary": "Tokyo experiences a humid subtropical climate with four distinct seasons. Summers are hot, very humid, and prone to heavy rainfall and typhoons, making outdoor activities challenging. Winters are generally mild and dry, with occasional light snowfall and crisp, clear days. Spring (late March-April) and Autumn (October-November) are widely considered the most pleasant times to visit, offering comfortable temperatures, lower humidity, and beautiful natural phenomena like cherry blossoms and autumn foliage. The city can be visited year-round, but travelers should be prepared for specific seasonal challenges, particularly the intense summer heat and typhoon season from late summer through early autumn.",
+      "months": {
+        "January": {
+          "avg_high_f": 48,
+          "avg_low_f": 34,
+          "avg_high_c": 9,
+          "avg_low_c": 1,
+          "avg_rainfall_inches": 2,
+          "rainy_days_estimate": 5,
+          "avg_wind_mph": 8,
+          "humidity_pct": 65,
+          "uv_index": "Low",
+          "sunrise": "6:50 AM",
+          "sunset": "4:50 PM",
+          "daylight_hours": 10,
+          "season_type": "off_season",
+          "season_notes": "Coldest month, but often sunny and dry, making it good for indoor activities and winter illuminations."
+        },
+        "February": {
+          "avg_high_f": 49,
+          "avg_low_f": 35,
+          "avg_high_c": 9,
+          "avg_low_c": 2,
+          "avg_rainfall_inches": 2.2,
+          "rainy_days_estimate": 6,
+          "avg_wind_mph": 8,
+          "humidity_pct": 66,
+          "uv_index": "Low",
+          "sunrise": "6:30 AM",
+          "sunset": "5:20 PM",
+          "daylight_hours": 10.8,
+          "season_type": "off_season",
+          "season_notes": "Still cold, but days start to lengthen, with occasional light snow and plum blossom viewing."
+        },
+        "March": {
+          "avg_high_f": 54,
+          "avg_low_f": 40,
+          "avg_high_c": 12,
+          "avg_low_c": 4,
+          "avg_rainfall_inches": 4.8,
+          "rainy_days_estimate": 9,
+          "avg_wind_mph": 9,
+          "humidity_pct": 69,
+          "uv_index": "Moderate",
+          "sunrise": "5:50 AM",
+          "sunset": "5:50 PM",
+          "daylight_hours": 12,
+          "season_type": "shoulder_season",
+          "season_notes": "Spring arrives, temperatures rise, and cherry blossom season often begins towards the end of the month."
+        },
+        "April": {
+          "avg_high_f": 63,
+          "avg_low_f": 49,
+          "avg_high_c": 17,
+          "avg_low_c": 9,
+          "avg_rainfall_inches": 5.2,
+          "rainy_days_estimate": 9,
+          "avg_wind_mph": 9,
+          "humidity_pct": 71,
+          "uv_index": "High",
+          "sunrise": "5:05 AM",
+          "sunset": "6:20 PM",
+          "daylight_hours": 13.2,
+          "season_type": "peak_season",
+          "season_notes": "Peak cherry blossom season, with comfortable temperatures and clear skies, making it a very popular travel time."
+        },
+        "May": {
+          "avg_high_f": 70,
+          "avg_low_f": 58,
+          "avg_high_c": 21,
+          "avg_low_c": 14,
+          "avg_rainfall_inches": 5.9,
+          "rainy_days_estimate": 9,
+          "avg_wind_mph": 8,
+          "humidity_pct": 73,
+          "uv_index": "High",
+          "sunrise": "4:35 AM",
+          "sunset": "6:50 PM",
+          "daylight_hours": 14.2,
+          "season_type": "shoulder_season",
+          "season_notes": "Warm and sunny days precede the rainy season, with pleasant weather ideal for outdoor excursions."
+        },
+        "June": {
+          "avg_high_f": 75,
+          "avg_low_f": 66,
+          "avg_high_c": 24,
+          "avg_low_c": 19,
+          "avg_rainfall_inches": 6.5,
+          "rainy_days_estimate": 11,
+          "avg_wind_mph": 7,
+          "humidity_pct": 78,
+          "uv_index": "Very High",
+          "sunrise": "4:25 AM",
+          "sunset": "7:00 PM",
+          "daylight_hours": 14.6,
+          "season_type": "off_season",
+          "season_notes": "Start of the humid rainy season (Tsuyu), characterized by frequent showers and muggy conditions."
+        },
+        "July": {
+          "avg_high_f": 82,
+          "avg_low_f": 72,
+          "avg_high_c": 28,
+          "avg_low_c": 22,
+          "avg_rainfall_inches": 6.2,
+          "rainy_days_estimate": 10,
+          "avg_wind_mph": 7,
+          "humidity_pct": 80,
+          "uv_index": "Very High",
+          "sunrise": "4:40 AM",
+          "sunset": "6:50 PM",
+          "daylight_hours": 14.2,
+          "season_type": "peak_season",
+          "season_notes": "Rainy season usually ends mid-month, leading to hot, very humid summer weather and initial typhoon risk."
+        },
+        "August": {
+          "avg_high_f": 86,
+          "avg_low_f": 75,
+          "avg_high_c": 30,
+          "avg_low_c": 24,
+          "avg_rainfall_inches": 6.1,
+          "rainy_days_estimate": 8,
+          "avg_wind_mph": 7,
+          "humidity_pct": 82,
+          "uv_index": "Extreme",
+          "sunrise": "5:05 AM",
+          "sunset": "6:25 PM",
+          "daylight_hours": 13.3,
+          "season_type": "peak_season",
+          "season_notes": "Hottest and most humid month with high typhoon risk, but also features summer festivals and fireworks."
+        },
+        "September": {
+          "avg_high_f": 79,
+          "avg_low_f": 69,
+          "avg_high_c": 26,
+          "avg_low_c": 21,
+          "avg_rainfall_inches": 8.3,
+          "rainy_days_estimate": 10,
+          "avg_wind_mph": 8,
+          "humidity_pct": 78,
+          "uv_index": "High",
+          "sunrise": "5:35 AM",
+          "sunset": "5:45 PM",
+          "daylight_hours": 12.2,
+          "season_type": "shoulder_season",
+          "season_notes": "Temperatures begin to moderate, but it is the wettest month with continued high typhoon risk, especially early in the month."
+        },
+        "October": {
+          "avg_high_f": 69,
+          "avg_low_f": 58,
+          "avg_high_c": 20,
+          "avg_low_c": 14,
+          "avg_rainfall_inches": 7.7,
+          "rainy_days_estimate": 9,
+          "avg_wind_mph": 8,
+          "humidity_pct": 74,
+          "uv_index": "Moderate",
+          "sunrise": "6:00 AM",
+          "sunset": "5:00 PM",
+          "daylight_hours": 11,
+          "season_type": "peak_season",
+          "season_notes": "Pleasant autumn weather with comfortable temperatures and lower humidity, becoming ideal for sightseeing and early autumn foliage."
+        },
+        "November": {
+          "avg_high_f": 60,
+          "avg_low_f": 46,
+          "avg_high_c": 16,
+          "avg_low_c": 8,
+          "avg_rainfall_inches": 3.6,
+          "rainy_days_estimate": 6,
+          "avg_wind_mph": 8,
+          "humidity_pct": 69,
+          "uv_index": "Moderate",
+          "sunrise": "6:30 AM",
+          "sunset": "4:30 PM",
+          "daylight_hours": 10,
+          "season_type": "peak_season",
+          "season_notes": "Crisp and dry autumn days, perfect for viewing vibrant autumn foliage, especially towards month-end."
+        },
+        "December": {
+          "avg_high_f": 52,
+          "avg_low_f": 38,
+          "avg_high_c": 11,
+          "avg_low_c": 3,
+          "avg_rainfall_inches": 2.1,
+          "rainy_days_estimate": 4,
+          "avg_wind_mph": 8,
+          "humidity_pct": 66,
+          "uv_index": "Low",
+          "sunrise": "6:50 AM",
+          "sunset": "4:30 PM",
+          "daylight_hours": 9.7,
+          "season_type": "off_season",
+          "season_notes": "Cool and dry winter month with clear skies, popular for festive illuminations leading up to Christmas and New Year."
+        }
+      },
+      "travel_implications": [
+        "For travel in September 2026, be prepared for typhoon season, especially in early September. Monitor weather forecasts closely for potential typhoons or tropical storms, which can cause significant travel disruptions (flight cancellations, train delays, closures of attractions).",
+        "Pack light, breathable clothing, but include rain gear. While temperatures are warm to hot, September is the wettest month with frequent and often heavy rain, so a lightweight waterproof jacket, umbrella, and waterproof shoes are essential.",
+        "Humidity remains high, so stay hydrated. Even as temperatures slightly moderate from August, the air can still feel very muggy. Drink plenty of water, utilize air-conditioned spaces, and take breaks from outdoor activities.",
+        "Consider indoor attractions for rainy days. Tokyo offers numerous world-class museums, shopping centers, and entertainment venues that provide excellent refuge from the rain or lingering heat.",
+        "Book popular attractions and accommodations in advance, as September can still see significant tourist activity, especially during weekends or if pleasant weather periods emerge after typhoon season."
+      ]
+    },
+    "themes": [
+      {
+        "id": "signature",
+        "name": "Signature Experiences",
+        "description": "Explore the quintessential experiences that define Tokyo, from its iconic landmarks to unique cultural encounters.",
+        "experiences": [
+          {
+            "id": "shibuya-scramble-crossing",
+            "name": "Shibuya Scramble Crossing",
+            "short_description": "Experience the mesmerizing chaos of the world's most famous pedestrian crossing at Shibuya.",
+            "long_description": "Shibuya Crossing is the beating heart of Tokyo's urban dynamism. As traffic stops, hundreds of people flood the intersection from all directions in a synchronized dance that epitomizes Tokyo's vibrant chaos. A great spot to view this spectacle is from the second floor of the Starbucks across the intersection, offering a perfect perspective on the pulse of the city.",
+            "tags": [
+              "iconic",
+              "urban",
+              "photography"
+            ],
+            "why_worth_it": "This crossing is an emblem of Tokyo's urban energy — a must-see spectacle of the city's vibrant rhythm.",
+            "duration": "15-30 minutes",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "17:00–20:00 for congestion and lights",
+            "local_tip": "Walk the second-floor pedestrian deck connecting Shibuya Mark City to the station for a dynamic, elevated perspective directly over the northwest arm of the crossing, away from static cafe windows.",
+            "who_for": [
+              "urban explorers",
+              "photography enthusiasts",
+              "first-timers"
+            ],
+            "what_to_bring": [
+              "camera"
+            ],
+            "watch_out_for": "Can be extremely crowded — hold onto personal belongings tightly.",
+            "nearby_pairings": [
+              "Hachiko Statue",
+              "Shibuya 109"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible",
+              "romantic"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Shibuya Crossing, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJK9EM68qLGGARacmu4KJj5SA",
+              "name": "Shibuya Crossing",
+              "rating": 4.5,
+              "review_count": 21230,
+              "photo_url": "/api/places-photo?ref=Ab43m-utSvMh51-HyZfdBRqQ-2AQSRkmlS-KGaixPXhvEiVLNCd14yyJ5iCWeGjnr67HFNYWgltmVbPHNtcpb0mnoxC0Tqn1v0IW1uQwSt1FAOe9pTKFAWjexmI6af7sk6mB6bJqkwpvTTP-g9_drKzOmCoyWCUoOn5K_DwEQxZOrPGtVQa81dxpEbWfxERqtJxN_S8TqkpIVMLNtrOIKNb8pW-AQ_7V0l2rG77T0A-wPI_5acLUwYSI3E59Okfhp8Sz1BmEFX5XwCsZqvNHxHoxde7vNVLnHfTi5uXh-D2Tw_T-QyJY199O-QRhSAHJC6vNGtBnE0I6E4YhcD7oUJZD2CcXpY2ANKWgsASwYxn_hAEFZzIhx1kPeXwz9S6_-VaIgnkhtzm31y5OvSwi__Q3tfaSv7Mro1AK5hTbve1XrLABG58",
+              "address": "21 Udagawacho, Shibuya, Tokyo 150-0042, Japan",
+              "coordinates": {
+                "lat": 35.659482,
+                "lng": 139.7005596
+              },
+              "maps_url": "https://maps.google.com/?cid=2370410330085837161",
+              "price_level": null
+            }
+          },
+          {
+            "id": "asakusa-sensoji-temple",
+            "name": "Sensoji Temple, Asakusa",
+            "short_description": "Visit Tokyo's oldest temple and immerse yourself in traditional Japanese culture in the bustling Asakusa district.",
+            "long_description": "Sensoji, Tokyo's oldest temple, offers a profound insight into the city's spiritual heritage. Approached via the vibrant Nakamise Street, lined with traditional snacks and souvenirs, the temple itself is a beautiful blend of vibrant colors and serene spaces. Witness the ancient ritual of incense offering and savor the contrast of tradition amidst modernity.",
+            "tags": [
+              "cultural",
+              "historical",
+              "spiritual"
+            ],
+            "why_worth_it": "Sensoji is a crucial cultural landmark that illuminates Tokyo's rich blend of tradition and spirituality.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "09:00–11:00 for less crowded photos",
+            "local_tip": "Experience the Main Hall and Five-Story Pagoda dramatically illuminated after sunset, when the Nakamise-dori shops are shuttered, offering a serene, reflective atmosphere as you approach Kaminarimon Gate.",
+            "who_for": [
+              "history buffs",
+              "spiritual seekers",
+              "culture enthusiasts"
+            ],
+            "what_to_bring": [
+              "walking shoes",
+              "camera"
+            ],
+            "watch_out_for": "Be mindful of personal space, especially near the temple's main hall.",
+            "nearby_pairings": [
+              "Tokyo Skytree",
+              "Sumida Park"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Better in dry weather for outdoor exploration",
+            "location_hint": "Sensoji Temple, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJ8T1GpMGOGGARDYGSgpooDWw",
+              "name": "Sensō-ji",
+              "rating": 4.6,
+              "review_count": 95347,
+              "photo_url": "/api/places-photo?ref=Ab43m-sE8ZyU0NPXUEUKp7MiAqzLVws9GPNlssr_KI2VoMaUrkTnExW2MqAtVn31Go8m6UAwPJo2vSWVuN52NfptQDe7AusvFCdXoQ4DZL4FRy9YbbkscYuiwWk8ISmbAVBhwk-rHVBfWdxizEWFHhG8ZGVNclXjfNznjJ7G7S6vmdEp0uLf9JDAC2PY12CWxoINBpyaz56A9Ue-W5YhW1A4GAqeUvBIcmBK0wZ-A1QXyL_MEWnVRuONeXQ8FwF0d3gtuyN0k8-iEVhFVkJJaL_IQIdh0zcuFKVFpIK4XDr0eOUENpbsMhIEobVWPbOO_xS31YhJBigUO_mUS8xmWbAJJigtWBRBhQLRr7bkYZ_NDrCM-J_pcv1VuCO1Oy01tg5VR9S3L2MSIh5YahrLE3bearTQO2tKml7zab7IcS9KRjQzlWFA",
+              "address": "2-chōme-3-1 Asakusa, Taito City, Tokyo 111-0032, Japan",
+              "coordinates": {
+                "lat": 35.7147651,
+                "lng": 139.7966553
+              },
+              "maps_url": "https://maps.google.com/?cid=7785923974874169613",
+              "price_level": null
+            }
+          },
+          {
+            "id": "tokyo-skytree-observation-deck",
+            "name": "Tokyo Skytree Observation Deck",
+            "short_description": "Ascend to the Tokyo Skytree and enjoy breathtaking panoramic views of the metropolis.",
+            "long_description": "Standing at 634 meters, the Tokyo Skytree is the world's tallest tower, offering unparalleled views of the sprawling cityscape. On a clear day, sightlines can extend to Mount Fuji. The decks provide both daytime and nighttime viewing options, each offering a unique perspective of the city below.",
+            "tags": [
+              "views",
+              "iconic",
+              "modern"
+            ],
+            "why_worth_it": "No visit to Tokyo is complete without experiencing the city from its tallest point — an architectural marvel offering jaw-dropping views.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "16:00–18:00 for sunset views",
+            "local_tip": "On the Tembo Deck, venture to the northwest corner of the 340m level for the Skytree's glass floor, offering a dizzying downward perspective directly over the bustling roads of Sumida Ward below.",
+            "who_for": [
+              "sightseers",
+              "architecture fans",
+              "first-timers"
+            ],
+            "what_to_bring": [
+              "camera"
+            ],
+            "watch_out_for": "Can be crowded during peak hours and weekends.",
+            "nearby_pairings": [
+              "Asakusa",
+              "Solamachi Shopping Mall"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "romantic",
+              "accessible"
+            ],
+            "weather_sensitivity": "Avoid on very cloudy days for clearer views",
+            "location_hint": "Tokyo Skytree, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJ35ov0dCOGGARKvdDH7NPHX0",
+              "name": "Tokyo Skytree",
+              "rating": 4.4,
+              "review_count": 114975,
+              "photo_url": "/api/places-photo?ref=Ab43m-s5ZIazeibHMEVkRkAWiCl359G4GuVXxoPhVLXajUNjufcLJXU7CkPf7grNh0WYwJdSqjORyuaTPi5mtkeNA7xwfPicJC-TMELrSLeR0gAv7Gz8-zvGCCNQFQSPT5VDesi36CYSX2WnIkZv1VI-SFWjGQB3cCaU5TxZhlfRsSuWEh8kWV9lwy6KuRykzEVcHUucYvBWYhrNRLJ811M2M6M2Umbyf3Bj_NrnkDdp5v61rkQxXDl3UqzbsvDy9jaCilxHFqRRvTb4kLDcBBeP5U9dcqS3LOzTaI2uiN0S-3cFzeBkFxF7GbdQweL0dKjkq-QTv25XPN3r4GvYQfL3vLmfPmbtFhTYtZ3g0HvA1lY3VVSujhawJM_rDOKQpYTmR0Env2mYvEguqit14zvKfg7-s4EKcYDyXk6S-D8tCYNjxd8",
+              "address": "1-chōme-1-2 Oshiage, Sumida City, Tokyo 131-0045, Japan",
+              "coordinates": {
+                "lat": 35.7100627,
+                "lng": 139.8107004
+              },
+              "maps_url": "https://maps.google.com/?cid=9015449659807889194",
+              "price_level": null
+            }
+          },
+          {
+            "id": "tsukiji-fish-market-food-tour",
+            "name": "Tsukiji Fish Market Food Tour",
+            "short_description": "Dive into the world of fresh seafood with a food tour at the iconic Tsukiji Outer Market.",
+            "long_description": "Although the inner wholesale market has moved to Toyosu, the Tsukiji Outer Market remains a bustling hub for seafood lovers. Explore the vibrant stalls offering everything from sushi and sashimi to grilled seafood snacks. Guided food tours provide an educational journey through Japan's fish market culture and give you access to some of the freshest seafood you will ever taste.",
+            "tags": [
+              "food",
+              "market",
+              "culture"
+            ],
+            "why_worth_it": "This is a feast for the senses — Tokyo’s most iconic culinary experience that immerses you in its vibrant seafood culture.",
+            "duration": "3 hours",
+            "effort": "moderate",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "09:00–11:00 to catch the freshest offerings",
+            "local_tip": "When sampling kaisendon, head to one of the counters along the smaller lanes west of Shin-Ohashi-dori and try ordering a \"mini-don\" to save room for more variety.",
+            "who_for": [
+              "food lovers",
+              "adventurous eaters",
+              "cultural explorers"
+            ],
+            "what_to_bring": [
+              "comfortable shoes",
+              "appetite"
+            ],
+            "watch_out_for": "Some areas are very crowded, and fresh seafood consumption isn’t for everyone.",
+            "nearby_pairings": [
+              "Hamarikyu Gardens",
+              "Ginza"
+            ],
+            "dietary_flags": [
+              "seafood_heavy",
+              "not_vegan_friendly"
+            ],
+            "suitability_tags": [
+              "family_friendly",
+              "solo_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Better on dry days — some parts of the market are outdoors",
+            "location_hint": "Tsukiji Outer Market, Tokyo",
+            "is_mappable": true,
+            "personalization_note": "Seafood is central to this experience.",
+            "places_enrichment": {
+              "place_id": "ChIJW2cLzSGLGGARXAKXv6EkbqI",
+              "name": "Fish Market Tsukiji Outer Market",
+              "rating": 4.2,
+              "review_count": 55667,
+              "photo_url": "/api/places-photo?ref=Ab43m-s3vJzKvNzpqHUvYv0rkUhK5VImSt7x1Pce9m961A6TAFJZhM_RYVDqiH3R4iweGiYPioBCQpAaVd66EHToxVzVfVa-NKU8a1_ji_wjbXnO9V1tMCyg7IkhEtVN9UOpedsbaGDWHCD_-UnqmLyVaMFV0l_B5YUHNsgJNB4hrsGkKw2B-L1qVXlr_qyDx1I8Zd-JiLs7OjbHrzlm7D9FUqGE_Mov6iIQd6MgBGmUAZbqz4GgqP8FuG-lbVS7OUPDP9jafR91qvAwVNjQ4EGLqrSLW4TaIEFsshqfg3OtSq6s4zUEwDDyHB-JBUsEeOUdv1bXrAhWXC1P0s1ij68ey5Br7M6sGTkdDgytP7U3dyYfHxMUk548XKPIlHYv0x5kBagpUfJiq_ugvqq82ltJ40Ng9R98MBedexnFM5nVTxxmzA",
+              "address": "Japan, 〒104-0045 Tokyo, Chuo City, Tsukiji, 4-chōme−16 および６丁目一部",
+              "coordinates": {
+                "lat": 35.6647703,
+                "lng": 139.7702515
+              },
+              "maps_url": "https://maps.google.com/?cid=11704332758705177180",
+              "price_level": null
+            }
+          },
+          {
+            "id": "meiji-shrine",
+            "name": "Meiji Shrine",
+            "short_description": "Find peace and tradition in the heart of modern Tokyo at the Meiji Shrine.",
+            "long_description": "Located in a sprawling forested area in central Tokyo, the Meiji Shrine is a Shinto space dedicated to the spirits of Emperor Meiji and Empress Shoken. The approach to the shrine is a tranquil path through towering trees, offering a serene respite from the city's hustle. The shrine is a place of cultural significance where visitors can participate in traditional rituals or simply enjoy the serene environment.",
+            "tags": [
+              "spiritual",
+              "nature",
+              "cultural"
+            ],
+            "why_worth_it": "This sanctuary in the city exemplifies Tokyo's seamless blend of nature and spiritual tradition in the midst of urban life.",
+            "duration": "1–2 hours",
+            "effort": "moderate",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "08:00–10:00 for a tranquil experience",
+            "local_tip": "Within the Meiji Jingu Gyoen (Inner Garden), follow signs for Kiyomasa's Well (清正井); this famed \"power spot\" is most serene in the cool hours of late afternoon, especially outside of iris season.",
+            "who_for": [
+              "spiritual seekers",
+              "nature lovers",
+              "peace seekers"
+            ],
+            "what_to_bring": [
+              "comfortable shoes"
+            ],
+            "watch_out_for": "Closed on some public holidays; check ahead if visiting during national days.",
+            "nearby_pairings": [
+              "Yoyogi Park",
+              "Harajuku"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible",
+              "romantic"
+            ],
+            "weather_sensitivity": "Rain can enhance the tranquil atmosphere, but bring an umbrella.",
+            "location_hint": "Meiji Jingu, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJ5SZMmreMGGARcz8QSTiJyo8",
+              "name": "Meiji Jingu",
+              "rating": 4.6,
+              "review_count": 50537,
+              "photo_url": "/api/places-photo?ref=Ab43m-tKahy-7edtrRiTTIDht0LQpLKQc_-KNIEi7UHn2JLtw38GJiwJ3py01lUzSN3WMrLpIIhBmbW3Pvidl-CUmbR0WuaKc94sPGBY7kwomQrfkvjkmrV3rdcCEt7HkExr0GVnVqW7jQx8t6K-t0CBdotAI05buQMTn9oa6SRDXoxrmQqpQsXoeHUG0qQxUZyZg14fZB6U6FVQerSR2q4eTY3HBKhViMom4eoXPCoDKvUJ2Y2mj1Mmi2xAjpV2vd0yURMsIdnQE-YnMxhSawQcLhrREJTXvWBQjlB3YjbqBJxNB1XUZtRZncmuH93xvp-gA2_ICqgi_nso_kVM_ZEME7ZToiBCujpNUilvLcm4oZmCOwgdaxAWxTdvjf2xJUkpLaTes9uxW-0FqRqCLDpdOdv1RUQcwm6mUs7TvbApDq-4pVWB",
+              "address": "1-1 Yoyogikamizonochō, Shibuya, Tokyo 151-8557, Japan",
+              "coordinates": {
+                "lat": 35.6763976,
+                "lng": 139.6993259
+              },
+              "maps_url": "https://maps.google.com/?cid=10361244767556222835",
+              "price_level": null
+            }
+          },
+          {
+            "id": "teamlab-borderless",
+            "name": "teamLab Borderless",
+            "short_description": "Enter a world of digital art at the immersive teamLab Borderless museum.",
+            "long_description": "This digital art museum offers a captivating journey through a sensory world of lights, sounds, and vibrant colors. Unlike traditional museums, teamLab Borderless blurs the lines between art and observer, creating experiences that change and evolve as you move through the space. It's a testament to Tokyo's futuristic aesthetics combined with artistic innovation.",
+            "tags": [
+              "art",
+              "technology",
+              "immersive"
+            ],
+            "why_worth_it": "The museum exemplifies Tokyo's position at the forefront of digital art and immersive experiences, offering something unique and groundbreaking.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "12:00–15:00 to avoid crowds",
+            "local_tip": "At the En Tea House, order the seasonal flower tea; once it's served, observe how a digital bloom appears in your cup and then gracefully disperses as you lift the cup, only to reappear once it's set down again.",
+            "who_for": [
+              "art lovers",
+              "tech enthusiasts",
+              "families"
+            ],
+            "what_to_bring": [
+              "sensible shoes for walking"
+            ],
+            "watch_out_for": "Can be overwhelming with many visitors sharing the space — set aside time to calmly engage.",
+            "nearby_pairings": [
+              "Palette Town",
+              "Odaiba waterfront"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "romantic",
+              "accessible"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "teamLab Borderless, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJQ5Sa1PqJGGARUSaNKKOrMVg",
+              "name": "teamLab Borderless: MORI Building DIGITAL ART MUSEUM",
+              "rating": 4.6,
+              "review_count": 28390,
+              "photo_url": "/api/places-photo?ref=Ab43m-u21p9ZwfpfbduJ5fnrWQc1QwkN8L_vZTJiBnuCWFwHsSiQyNV98HfUNRXh696z3BE1R5P35onJ0uckc7HGR2quYZBpVTkUibsZ5IJieri9pH8pU1KQP8k2tdRyLdegOdofOoTabLPaXaEXPsOI08xNTD2hkNPpLLfsUSqQ2puwzebAFSGq9eMgB_8MkYXL8P76KZm8Dx5iVk8VVHAUh3LcNLVyjPkmVfaWC8tvjGg6KLsrPb8pqmhQxgM_rWIiOboxi2O8kWoLVkoj5GcZa-Z4Sqj_mw3Q8zoCO0x7cPnaWNSRgIel159t9oUk0r8EVsbSen5n41voLuKcSbkgiozFdYU7AI4FYULdm_xyOm8G5cG48dFkr19KmsTZ-QfvR7rbPzbzLUHOzp208sj3f4MRau5RxzyZVmA-_PNcWkLJBA",
+              "address": "Japan, 〒106-0041 Tokyo, Minato City, Toranomon, 5-chōme−9−９ Azabudai Hills Garden Plaza B, B1",
+              "coordinates": {
+                "lat": 35.6620689,
+                "lng": 139.7432671
+              },
+              "maps_url": "https://maps.google.com/?cid=6355049266444838481",
+              "price_level": null
+            }
+          }
+        ]
+      },
+      {
+        "id": "unique_local",
+        "name": "Unique & Local",
+        "description": "Experience Tokyo like a local by discovering hidden gems and unique activities that are often overlooked by tourists.",
+        "experiences": [
+          {
+            "id": "kichijoji_harmonica_yokocho",
+            "name": "Kichijoji Harmonica Yokocho",
+            "short_description": "A nostalgic alley in Kichijoji filled with tiny bars, eateries, and shops capturing an old-school Tokyo vibe.",
+            "long_description": "Hidden away in the bustling city of Kichijoji is Harmonica Yokocho, a maze of narrow alleyways dating back to the post-war period. This collection of tiny bars, eateries, and quirky shops offers an authentic glimpse into Tokyo's past. Here, you can enjoy a sake or two in a cramped bar sitting shoulder to shoulder with locals, or savor yakitori fresh off the grill. The intimate atmosphere and eclectic vibes make this area a favorite among locals but often overlooked by tourists.",
+            "tags": [
+              "nightlife",
+              "food",
+              "local culture"
+            ],
+            "why_worth_it": "It's a rare chance to experience Tokyo's nostalgic side, away from tourist throngs.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "19:00–22:00 — lively evening atmosphere",
+            "local_tip": "To experience the full daily character transformation, seek out the original seafood stalls in the market's southwestern quadrant before late afternoon, then watch as they transition from fishmongers to standing-room-only izakayas.",
+            "who_for": [
+              "night owls",
+              "food lovers",
+              "first-timers"
+            ],
+            "what_to_bring": [],
+            "watch_out_for": "Can get crowded with locals during weekends.",
+            "nearby_pairings": [
+              "Inokashira Park Stroll"
+            ],
+            "dietary_flags": [
+              "meat_heavy",
+              "alcohol_centered"
+            ],
+            "suitability_tags": [
+              "solo_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Harmonica Yokocho, Kichijoji, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJY_5S3kfuGGARbRR-LLpU4kY",
+              "name": "Harmonica Yokocyo",
+              "rating": null,
+              "review_count": null,
+              "photo_url": "/api/places-photo?ref=Ab43m-u-KtAE6SbB6DJW9_RQXpOGDK6466cH4YyzLhi5g31lOnqlhE3Dj9UB_pQP6HjcsTsEvfELA6b8Ioc43om3XHSG0w1KqC1-PXTnZft2_2F2FrloKvOZBTsV2DC1yrL8lokda4hXAEU_QmlmJ9D777cxzcLiLJRx2vYqbIpK5T6UsW-PkwXJhlhGAcvpIJlN2c14yHGS3fJ1q60wCXIcd6l_Fb9GPE6OMIznqWeSDcwqftwVQ21aorvO0QDp-OaU_bB1nAsD_5MTMcF_CXoB5jiCql66yWvZbY027CD543pp3hv4EH2DlX0DXu_-RFQmqqk0r_5N7W4c8HOFgICX3IUQ6gICMkWkh0XiBI3gVxol4vYAoDI0oeb5oHEkiJQrrYFjc5nzDGAJ_MdzucTuc43_pEKbCCY8KTRc3OhSin7ePw",
+              "address": "Harmonica Yokocyo, 1-chōme-1 Kichijōji Honchō, Musashino, Tokyo 180-0004, Japan",
+              "coordinates": {
+                "lat": 35.7037459,
+                "lng": 139.5791738
+              },
+              "maps_url": "https://maps.google.com/?cid=5107738085978674285",
+              "price_level": null
+            }
+          },
+          {
+            "id": "nakano_broadway_retro_shopping",
+            "name": "Nakano Broadway Retro Shopping",
+            "short_description": "A treasure trove of retro collectibles, anime paraphernalia, and quirky shops not found elsewhere.",
+            "long_description": "Nakano Broadway is a haven for collectors and fans of retro and obscure memorabilia. Unlike Akihabara, this shopping complex offers a more intimate setting filled with shops selling everything from vintage toys to limited-edition comic books. It's a place where the past meets present in a distinctly Japanese fashion, appealing not only to collectors but also those curious about subcultures prevalent in Tokyo.",
+            "tags": [
+              "shopping",
+              "pop culture",
+              "indoor"
+            ],
+            "why_worth_it": "Discover a side of Tokyo focused on niche subcultures and rare collectibles.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "10:00–19:00 — shop hours",
+            "local_tip": "Don't just hit Mandarake Main; for elusive retro video games, head directly to Mandarake Infinity on the third floor, and then ascend to the fourth floor's labyrinthine passages where smaller shops often hide rarer vintage figures beyond Mandarake Galaxy.",
+            "who_for": [
+              "pop culture enthusiasts",
+              "collectors",
+              "curious minds"
+            ],
+            "what_to_bring": [],
+            "watch_out_for": null,
+            "nearby_pairings": [
+              "Nakano Sun Mall Shopping"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Nakano Broadway, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJg-7dspDyGGARvvDv4E5-tuE",
+              "name": "Nakano Broadway",
+              "rating": 4.2,
+              "review_count": 13162,
+              "photo_url": "/api/places-photo?ref=Ab43m-vkCvUsf5H2W9FiAOKj3xioLOPxyVG0H07UwnZq6E28_uS5Wt8MHlpLKu_TFs9fMD4Aoy_4X9JGEw3xQDLoSqK_Vtb0y2yDF4ji0y0zFHaAyQZLJc-_593Mw1yhzEyxLGekiaUEoy-jp4YyTtUsq7pr6xj8oLJ595NXPex9w7_pevjC7dZdH3ZYsic5tCsgKn1yylSSQxkT0Q5NkxGaBlfyEmTO1Icvs7rQo_EZI2dtv8aAtAIB-iDrZ_G00KY8edahtfssORzgCbcQM7LAuJ1qn51Of3yqZz0d-zD-4VppK5TuFfbdvTb74wjArKTchGDIkjFPWLVyUkgciuoc_erncNeydPU-zz3xXq2YSEIpXs_GYDUDOZjOx7f9gJOj8BNHi9i3VHZExT8GotcFAia6Es82NXRVG0WoSICr3hrm5Q",
+              "address": "5-chōme-52-15 Nakano, Nakano City, Tokyo 164-0001, Japan",
+              "coordinates": {
+                "lat": 35.7092475,
+                "lng": 139.6656524
+              },
+              "maps_url": "https://maps.google.com/?cid=16264325981541494974",
+              "price_level": null
+            }
+          },
+          {
+            "id": "shimokitazawa_vintage_hunt",
+            "name": "Vintage Hunt in Shimokitazawa",
+            "short_description": "Explore Shimokitazawa's maze of streets for vintage clothing and records amidst a bohemian atmosphere.",
+            "long_description": "Shimokitazawa offers a unique blend of bohemian vibes and creative expression, setting it apart from the busy, mainstream shopping districts. Known for its quirky, indie spirit, it boasts a myriad of vintage clothing stores, second-hand shops, and record stores. This neighborhood invites you to leisurely wander and discover high-quality vintage finds that echo past eras, making it a paradise for fashion hunters and music lovers.",
+            "tags": [
+              "shopping",
+              "fashion",
+              "music"
+            ],
+            "why_worth_it": "Uncover unique fashion pieces and rare records in a district alive with creativity.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "11:00–18:00 — when shops are open",
+            "local_tip": "For the deepest dive into Shimokita's vintage scene, bypass ground-level shops on Kitazawa Dori initially and instead scan for the less obvious second-story entrances or basement stairs tucked away in the smaller alleys off Ichibangai.",
+            "who_for": [
+              "fashionistas",
+              "music lovers",
+              "explorers"
+            ],
+            "what_to_bring": [],
+            "watch_out_for": "Limited sizes for vintage clothing.",
+            "nearby_pairings": [
+              "Shimokitazawa Theater"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "solo_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Shimokitazawa, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJw_teZ_8hGGARgsSeLR2OLjM",
+              "name": "Shimokitazawa",
+              "rating": null,
+              "review_count": null,
+              "photo_url": "/api/places-photo?ref=Ab43m-svbGYY064w1slSzmtZM-wkNLjlVufuAkjBIJjCQpH99p-yS6QgCisoqhXNOeqYbareqZDBmq1wrJCphMmS1u__M8gtw25ekOZ76cKkI-4eJdCMqgI6Dpa628XbMKnfULD2U74br1EPg00ONDa6d7UIJPNvLvITAWkuuIDBBYG27LsJDz8aB_Uha6GknO1OM0ln5Q2Mplfs5udZzdh3bKH455kt7-29AVNMRNnJvhS_QrGzsGyPZ1ob-fqJLKr07umHR3U1s2xgaN60Yykt7xSu2LBMhYT5vWwdR1PEW3d7DshJRdu59NgGOgEf394kJyJb2I7tT1r7wAHYuI6Rb8VjIwVrrbz8NX3C-C9Jw3lKO-1Zo7BzYw4gYwh9PZugaRnZSod9ewZEuR6S60XlI4fMvOMitEhfOKhxHB0zW7M7iEs",
+              "address": "Shimokitazawa, Kitazawa, Setagaya City, Tokyo 155-0031, Japan",
+              "coordinates": {
+                "lat": 35.665786,
+                "lng": 139.6698627
+              },
+              "maps_url": "https://maps.google.com/?cid=3688041400833590402",
+              "price_level": null
+            }
+          },
+          {
+            "id": "fuchu_horse_racing",
+            "name": "Fuchu Horse Racing",
+            "short_description": "Experience the thrill of local horse racing at Tokyo Racecourse in Fuchu, a favorite pastime for many locals.",
+            "long_description": "Head to Fuchu, a Tokyo suburb, to enjoy a day at the Tokyo Racecourse, famed for its lively atmosphere and the thrill of horse racing. With its vast lawns and family-friendly environment, it offers a glimpse into a traditional Japanese leisure activity. Whether you wager on the races or simply enjoy the vibrant scenes, it's an engaging experience that provides insight into a popular aspect of local culture.",
+            "tags": [
+              "sports",
+              "outdoor",
+              "local culture"
+            ],
+            "why_worth_it": "Immerse yourself in a local pastime with vibrant energy and engaging entertainment.",
+            "duration": "Full day",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "10:00–17:00 — race day hours",
+            "local_tip": "To genuinely assess the horses' pre-race form, position yourself along the rail of the ground-level Paddock (パドック) beneath the Fuji View Stand, focusing on their gait and demeanor as they complete the final loop before heading to the track.",
+            "who_for": [
+              "sports fans",
+              "families",
+              "group travelers"
+            ],
+            "what_to_bring": [
+              "sunscreen"
+            ],
+            "watch_out_for": "Check the race calendar for events and schedules.",
+            "nearby_pairings": [
+              "Fuchu Forest Art Museum"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Avoid on rainy days as races may be canceled.",
+            "location_hint": "Tokyo Racecourse, Fuchu",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJNaals-HkGGARUfk8jRYyt0k",
+              "name": "JRA Tokyo Racecourse",
+              "rating": 4.4,
+              "review_count": 11235,
+              "photo_url": "/api/places-photo?ref=Ab43m-sBj34vltLE9MtWfmoLaMtaojbVzRMWTdnNVI5Znl0S5D143lZMvh5xOwxTPYI7qQj2wKKKCSPvfc8RxCjcc9GsMmq6wSvuvVzl_BE4bL489gM3S-iTy0OgrZba7lFRTj17ThNRs40D13KFv3wuHYovTxQSwAerutOkN8nMCi5QBJAuZ4EWUUUMhJQsl7XQX8iCLkAj-fUJjpuaXAlC_547qtlmSpZiRuyBJsFJFfAJjWyfbotCK8MsCiCxYjgdsmwNxYO2Jh90EurOmWMXcIOmfA_CEO2kH7y4-JcPijmHSVw_Rv-xWjnN1RrTm_6WDfHSh1HWA5MuvTWXkOOaS9HRToya_gKpx11x-GBr80t9C1Z_5M18k5nCYsEsz5uLJSJ1nyo3tQIK_96NtgvEX0KZ0FBp7Fv105kd9RSndfEZMg",
+              "address": "1-1 Hiyoshichō, Fuchu, Tokyo 183-0024, Japan",
+              "coordinates": {
+                "lat": 35.6624096,
+                "lng": 139.486007
+              },
+              "maps_url": "https://maps.google.com/?cid=5311769357947042129",
+              "price_level": null
+            }
+          },
+          {
+            "id": "golden_gai_bar_hopping",
+            "name": "Golden Gai Bar Hopping",
+            "short_description": "Step into Tokyo's past by bar hopping in the intimate alleys of Golden Gai, known for its tiny themed bars.",
+            "long_description": "Golden Gai, nestled in the heart of Shinjuku, is famous for its network of six narrow alleys lined with over 200 tiny, unique bars. Each bar boasts its own distinct character, drawing visitors into a world that echoes the gritty glamour of post-war Tokyo. Many bars seat no more than a handful of patrons, fostering an intimate atmosphere perfect for mingling with locals and fellow travelers.",
+            "tags": [
+              "nightlife",
+              "history",
+              "local culture"
+            ],
+            "why_worth_it": "Dive into a vibrant nightlife scene with a historical twist, offering a taste of Tokyo's bygone days.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "walk_in",
+            "best_time": "20:00–01:00 — when the area comes alive",
+            "local_tip": "To navigate Golden Gai's labyrinth of tiny establishments, look for bars displaying an \"English Menu\" or \"No Table Charge\" sign at their entrance; this clearly signals openness to first-time visitors and upfront pricing.",
+            "who_for": [
+              "night owls",
+              "first-timers",
+              "history buffs"
+            ],
+            "what_to_bring": [],
+            "watch_out_for": "Some bars have cover charges and may not accept non-regulars.",
+            "nearby_pairings": [
+              "Omoide Yokocho Dining"
+            ],
+            "dietary_flags": [
+              "alcohol_centered"
+            ],
+            "suitability_tags": [
+              "solo_friendly",
+              "group_friendly",
+              "romantic"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Golden Gai, Shinjuku, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJr7mGZdmMGGARjxoMFeHApXE",
+              "name": "Shinjuku Golden-Gai",
+              "rating": 4.3,
+              "review_count": 12713,
+              "photo_url": "/api/places-photo?ref=Ab43m-tZE51Zl-RaQhw0ZY3Bva2U-8deFTn9lGTc_IbsmOxYIJx7zqdXmTO5C0PxH53M4HFC8y73KnIwnLvpZSVI8RKidWfetpUlHy8K1d1a8v8-2ncj7WUK8dvlpGqgaaFuTacvAYvDXUOxJGWKUrFuN4swBNhJSkQbLj4-kieQfAj5DNkedjCVsQnvMAec2qIWPOX4cZP71IEApfIrc-Wbfzbw8DJN_ItrWn3hlmGTzSnEkucm6ScwFY4f-ad_fjoxfn_5is9eyxn8-_N-XpIwQxkl0vH0OVRT6t2lgoINJZHGpc5dGgPyqHj6txiJtgVvL12MnYlVGAyhpdvhYXqxzB2u9qT4BLzDqQxKDFIJOyrm7-Xbsjj2280vkyxM0wRJkRXMGt9T51YBI-margCZLKbDGvaAcYGp7rFm1wWNuZglnw",
+              "address": "Japan, 〒160-0021 Tokyo, Shinjuku City, Kabukichō, 1-chōme−1−６ あかるい花園 五番街",
+              "coordinates": {
+                "lat": 35.6941118,
+                "lng": 139.7047611
+              },
+              "maps_url": "https://maps.google.com/?cid=8189163570396404367",
+              "price_level": null
+            }
+          }
+        ]
+      },
+      {
+        "id": "food_drink",
+        "name": "Food & Drink",
+        "description": "Tokyo offers a diverse range of culinary experiences, from casual street food to immersive culinary arts, reflecting its unique blend of tradition and innovation.",
+        "experiences": [
+          {
+            "id": "ramen_ya_tour",
+            "name": "Ramen Shop Tour",
+            "short_description": "Discover the rich world of ramen at Tokyo's best ramen shops.",
+            "long_description": "Ramen is a deeply beloved staple in Japan, and Tokyo is home to some of the best ramen shops in the world. Each shop offers its unique take on this comforting dish, with broths ranging from rich and creamy tonkotsu to light and savory shoyu. Dive into the art of ramen by visiting top-rated spots where the experience is as much about savoring the flavors as it is about watching the precise preparation. You can choose from bustling standing-only spots to more relaxed sit-down eateries.",
+            "tags": [
+              "noodles",
+              "lunch",
+              "local_flavor"
+            ],
+            "why_worth_it": "Tokyo's ramen culture is unmatched, offering an insight into the city's passion for noodle perfection.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "11:30–14:00 — avoid lunch rush",
+            "local_tip": "When savoring the Akamaru Shinaji at Ippudo Roppongi, request an additional dab of its signature umami paste to swirl in halfway through your bowl, intensifying the rich broth as you finish.",
+            "who_for": [
+              "food lovers",
+              "first-timers",
+              "solo"
+            ],
+            "watch_out_for": "Be prepared for long lines at popular spots, but they move quickly.",
+            "nearby_pairings": [
+              "Akihabara electronics shopping"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Ippudo Roppongi, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJ6UqBqIKLGGARcyvPuWXZSPs",
+              "name": "Ippudo - Roppongi",
+              "rating": 4.4,
+              "review_count": 2395,
+              "photo_url": "/api/places-photo?ref=Ab43m-t_TmCstYpoJ2ePqzqbBzzN7OqvAPZNPbG8zyGb6grn5O-yzYX-c5Zb8Ld3aC9_7CGj9lfXQsGh_HKZ9sRiUV1zra-wCaMw5sVm1X1zC9qUmw-ora-mOEhkFdhlfQVpVDuFlPLsX23QlObk0NAU8DPCFIrZsNenIbvJx5ucS50fE0gG6xPD6VO2fVCu5Nlc6Xr6vLoXI2n09RqKNcfGRBlsVTeiGeAUBzDypTIfkPrNawTHt3sKIEs7P4gY0cLVOExHV5fvGPPii3F0ElKpilLTRpWojXZwI5WQfcSeFmFsOUfnhPoxSR7Ah4hh_X2w0z5kzQJdWBOyEXv1rugcJJNYt1C3ZJoU9_-DdjY9rb4jZ5Xgr82_k5vh1d_KmHaWukVYYWqBq0CmcTmLCuWC4QpOvHtbJhbr6UfX7tQYber7nAFC",
+              "address": "Japan, 〒106-0032 Tokyo, Minato City, Roppongi, 4-chōme−9−１１ 第2小田切ビル 1F",
+              "coordinates": {
+                "lat": 35.6638163,
+                "lng": 139.7322518
+              },
+              "maps_url": "https://maps.google.com/?cid=18106961332775365491",
+              "price_level": 2
+            }
+          },
+          {
+            "id": "nishiki_market_exploration",
+            "name": "Nakamise Dori Market Exploration",
+            "short_description": "Wander through Nakamise Dori Street and experience traditional Japanese snacks.",
+            "long_description": "Nakamise Dori is one of Tokyo’s oldest shopping streets, leading up to the historic Sensoji Temple. It offers a vibrant taste of traditional Japanese snacks, ranging from sweet ningyo-yaki (red bean cakes) to savory senbei (rice crackers). Stroll along this bustling street and sample a variety of street foods that have been favorites for generations, each stall offering a piece of Japan's snack heritage.",
+            "tags": [
+              "street food",
+              "traditional",
+              "morning"
+            ],
+            "why_worth_it": "A walk through Nakamise Dori connects you to Japan's historical food culture while sampling timeless snacks.",
+            "duration": "1 hour",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "09:00–11:00 — less crowded and more leisurely sampling",
+            "local_tip": "Pause just past the Hozomon Gate at the temple end of Nakamise Dori to watch the vendors on your left prepare *senbei* crackers over charcoal, ensuring you get a perfectly crisp, hot snack before entering the main temple grounds.",
+            "who_for": [
+              "families",
+              "culture enthusiasts",
+              "food lovers"
+            ],
+            "watch_out_for": "Some stalls can have inflated prices due to their proximity to the temple — shop around.",
+            "nearby_pairings": [
+              "Sensoji Temple visit"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly",
+              "kid_friendly"
+            ],
+            "suitability_tags": [
+              "family_friendly",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Enjoyable in light rain due to overhead cover",
+            "location_hint": "Nakamise Dori, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJPd37MMGOGGARvJ2hfxoiNVE",
+              "name": "Nakamise Shopping Street",
+              "rating": 4.3,
+              "review_count": 15327,
+              "photo_url": "/api/places-photo?ref=Ab43m-sPtkH6mxMpEuugdz9QPDUzxZ8wX3USsJ8My3gFpI75Ec0WvrU6ljJygZqsCtqlEJ_pYf0Zqmp7MQbz83vEhzG04nQH4nUYHJ1fNufV4OopQriKaBgABvEJy3woUV9nboHyXtISqssHVKFZPAvMwjGFMXAo2hyGZhObmpYBnvJ6e7XKsmlCHHDEjCmpXPL5d-fTDOS7H0LxfpR3zUMdcWdPHGsEYEeZQEXScb-SIbO5jK_mwn2IKhahtYFB3ulDz_XyrfQuamq82SAkLfvXFKqIEMglM0QJaKTu26mHLQTOz6va-wF-C4PVRDjZutOXMWQciOZxqfahJ3bcoLgg8IcPPvQVCe9aGj5jvBYB9yLma26YP7cndSQf40SPiO-URNHRQpK1yk_2v3uE8IMELc1taZuEbHVyjJOv_JsZx8Vi0Bc",
+              "address": "1-chōme-36-3 Asakusa, Taito City, Tokyo 111-0032, Japan",
+              "coordinates": {
+                "lat": 35.7118413,
+                "lng": 139.7964542
+              },
+              "maps_url": "https://maps.google.com/?cid=5851620788043619772",
+              "price_level": null
+            }
+          },
+          {
+            "id": "kaiseki_cuisine_experience",
+            "name": "Kaiseki Cuisine Experience",
+            "short_description": "Indulge in the art of Kaiseki, Japan's most refined culinary tradition.",
+            "long_description": "Kaiseki is Japan’s haute cuisine, a multi-course dining experience that balances taste, texture, and appearance. Each dish is carefully crafted using seasonal ingredients and presented with artistic precision. This method of dining exemplifies the Japanese philosophy of ‘ichi-go ichi-e’, or 'one moment, one encounter.' Dining at a kaiseki restaurant offers unparalleled insight into Japan’s dedication to culinary artistry and hospitality. Expect exquisite dishes like sashimi, beautifully arranged vegetables, and delicately cooked fish.",
+            "tags": [
+              "fine dining",
+              "dinner",
+              "luxury"
+            ],
+            "why_worth_it": "Kaiseki is the pinnacle of Japanese dining, showcasing the nation's culinary sophistication.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "premium",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "18:00–20:00 — optimal dinner setting",
+            "local_tip": "To fully appreciate Chef Yamamoto's modern kaiseki at Nihonryori RyuGin, engage with the staff's detailed explanation of the 'breathing ayu' course, as their description of its preparation and purpose reveals a deeper connection to nature and technique.",
+            "who_for": [
+              "couples",
+              "culture enthusiasts",
+              "food lovers"
+            ],
+            "watch_out_for": "Menus are preset — notify the restaurant of dietary restrictions when reserving.",
+            "nearby_pairings": [
+              "Ginza shopping"
+            ],
+            "dietary_flags": [
+              "meat_heavy"
+            ],
+            "suitability_tags": [
+              "romantic",
+              "group_friendly"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Nihonryori RyuGin, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJaZF5wHmLGGARycW1JhshDjY",
+              "name": "Nihonryori RyuGin",
+              "rating": 4,
+              "review_count": 539,
+              "photo_url": "/api/places-photo?ref=Ab43m-sUE0eFg7pbn0OvpcU4MazIJI5nhuwLSjS5SW5sfi0waHaEq_sJJlWaFUxVavr0nJ8m4YlFxF-3JpdSt7km6w5DaPb7tPH5oFPug7lopx5TsySY-XfO-446JVvsib23wkITRZCjKDTodqI5WQBTyD_jASbzK3gssuElQ7rhMAdUgTYVN_AZ2vxdne_vIlbhg3D0MzQ70YMx4pO0M1gewizwpW3wMTIyYvvlk3s_xOeZNuTz5IDNuiHBig9VXdUEQwIgLVxY1peUhJC_YjK4A-f_RzPctfNaxaVwodaQIsEuyg",
+              "address": "Japan, 〒100-0006 Tokyo, Chiyoda City, Yūrakuchō, 1-chōme−1−２ 東京ミッドタウン日比谷 7階",
+              "coordinates": {
+                "lat": 35.6742704,
+                "lng": 139.7592781
+              },
+              "maps_url": "https://maps.google.com/?cid=3895087128219338185",
+              "price_level": 4
+            }
+          },
+          {
+            "id": "sake_brewery_visit",
+            "name": "Sake Brewery Tour",
+            "short_description": "Learn about the intricate art of sake-making at a traditional brewery.",
+            "long_description": "Japan's sake is a revered drink with a rich cultural history, and Tokyo is home to some renowned breweries. Visit a traditional sake brewery to understand the delicate process involved in crafting this iconic drink — from selecting the right type of rice to the careful fermentation process. A tour typically includes a guided walk through the brewing facilities followed by a tasting session where you can sample several varieties of sake, gaining insights into their flavors and the artistry behind them.",
+            "tags": [
+              "sake",
+              "brewing",
+              "cultural"
+            ],
+            "why_worth_it": "Understanding sake is crucial to grasping the soul of Japanese drink culture.",
+            "duration": "Half day",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "11:00–15:00 — quiet periods allow for a more in-depth experience",
+            "local_tip": "After your Ishikawa Brewery tour, step outside the main shop building and seek out the specific wellhead marked 'Tamajiman Sake Water'; tasting this pure Fussa groundwater offers a unique insight into the essence of their sake, distinct from the guided samples.",
+            "who_for": [
+              "food lovers",
+              "culture enthusiasts",
+              "solo"
+            ],
+            "watch_out_for": "Check if tours are in English or if a translator is required.",
+            "nearby_pairings": [
+              "Nippara Limestone Caves visit"
+            ],
+            "dietary_flags": [
+              "alcohol_centered"
+            ],
+            "suitability_tags": [
+              "group_friendly",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Better in cooler months",
+            "location_hint": "Ishikawa Brewery, Tokyo",
+            "is_mappable": true,
+            "personalization_note": "Alcohol is central to this experience.",
+            "places_enrichment": {
+              "place_id": "ChIJZWN0apofGWAR3dmql_EjxPc",
+              "name": "Ishikawa Sake Brewery",
+              "rating": 4.4,
+              "review_count": 470,
+              "photo_url": "/api/places-photo?ref=Ab43m-tl6zBMz2Zu76TFl4zOrj19PY0MHVdFVjDRrrwFNjfk0yvASdWZpd2_ERX3W8_8KLn00MRcc3f1j9eDu_D-cIBln2H6sTPcNA7Jo0V1IvjY0Ac8RikIYl8YMvrqk9z3zxdKYAlCpgFAd6YLd8aNO4z-uWLwRyr7Weqx9_j5nlrEkjxERgE14ZurqzHE9ShUsAkHmrt5AzsWAmKdbepCkbsiA-m74Ae5Wt_jV6m4DE3eq4WCo6_oicyMvg1Q484tWxUgunEfQ1nirr4CyXEYXCUd_8pjlfCXZ8ragRRLcKmnTg",
+              "address": "1 Kumagawa, Fussa, Tokyo 197-0003, Japan",
+              "coordinates": {
+                "lat": 35.71905,
+                "lng": 139.3328249
+              },
+              "maps_url": "https://maps.google.com/?cid=17853434343342135773",
+              "price_level": null
+            }
+          },
+          {
+            "id": "okonomiyaki_making_class",
+            "name": "Okonomiyaki Making Class",
+            "short_description": "Dive into Japanese cooking by making okonomiyaki, a savory pancake delight.",
+            "long_description": "Okonomiyaki is one of Japan's favorite comfort foods, often described as a savory pancake filled with a variety of ingredients like cabbage, meat, and seafood. Participating in a small-group cooking class offers hands-on experience where you'll learn how to mix and grill these ingredients to perfection. Guided by a local chef, you'll discover the history behind the dish and the different styles across Japan, culminating in enjoying your delicious creation at the end of the session.",
+            "tags": [
+              "cooking class",
+              "hands-on",
+              "interactive"
+            ],
+            "why_worth_it": "Crafting your own okonomiyaki connects you to Japan's beloved culinary traditions.",
+            "duration": "2–3 hours",
+            "effort": "moderate",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "14:00–16:00 — perfect post-lunch activity",
+            "local_tip": "When preparing for the crucial flip, slightly compress the edges of your okonomiyaki inward with both spatulas just before the swift turn, which ensures a cohesive, less messy transfer on the teppan.",
+            "who_for": [
+              "families",
+              "food lovers",
+              "couples"
+            ],
+            "watch_out_for": "Classes may book up quickly, especially on weekends — reserve in advance.",
+            "nearby_pairings": [
+              "Shinjuku night walk"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly"
+            ],
+            "suitability_tags": [
+              "family_friendly",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Okonomiyaki Making Studio, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJX-LLSE7zGGARfy_Ny_r2AGs",
+              "name": "Tokyo Cooking Studio",
+              "rating": 5,
+              "review_count": 116,
+              "photo_url": "/api/places-photo?ref=Ab43m-t3bGwpbzHeQ6mTaoIvYwOU00iAwizyOu8iwcNPexHSRc0i1r2oEkKJZMShklPiU9w14dFUiiM6Ktc3awrKfXlcE2MvkV_iguzfEJxEHOE7hntJbTkVCmchHKBrnkQD0eO5IIHPaJB6b4WLU-p8WcNjYJ-7kf7YMlDLJdCTMNco10kshZIhpC8XEHJ78g9KQ9d0yTnalaZbYNbBEsyS8-3oYHIMzI4LrGw4X811tQFvnwUYpJaXcgh2BeEUQ98wSF33UbWOfU1JomlYF11ieqSEFRvo79E_TULMGz-yMixGBOdhvGSnXrnTbSb2atXCf2XPnutm-8hrcICeY1nM3EXWr7PsD-XSnrQl6l_NphbagKYp_dWmBTqPU2jxif9DzlWMI7I2hZZzGEqNa2liRiD5tG3TAhqHW1BasAsUd9lEHzw-LtNzSeFi8M9f5-Y-",
+              "address": "2-chōme-25-4 Tomigaya, Shibuya, Tokyo 151-0063, Japan",
+              "coordinates": {
+                "lat": 35.6635984,
+                "lng": 139.684208
+              },
+              "maps_url": "https://maps.google.com/?cid=7710434119079767935",
+              "price_level": null
+            }
+          }
+        ]
+      },
+      {
+        "id": "food_crawls",
+        "name": "Food Crawls, Markets & Neighborhoods",
+        "description": "Explore Tokyo's vibrant food scene with visits to bustling markets and neighborhoods densely packed with culinary delights.",
+        "experiences": [
+          {
+            "id": "nakameguro-drink-and-dine",
+            "name": "Nakameguro Drink and Dine",
+            "short_description": "A trendy neighborhood crawl combining artisanal coffee, craft cocktails, and stylish bites along the Meguro River.",
+            "long_description": "Start your crawl at one of Nakameguro's cozy coffee shops near Nakameguro Station. Follow the Meguro River for a mix of chic cafes, izakayas, and artisan eateries. In the early evening, head to a rooftop bar for craft cocktails with views. Look out for seasonal bites such as sakura-flavored desserts in spring. This neighborhood blends contemporary Tokyo style with relaxed riverside ambience.",
+            "tags": [
+              "night",
+              "foodie",
+              "urban"
+            ],
+            "why_worth_it": "Experience Tokyo's hip side in a scenic riverside setting with eclectic food and drink options.",
+            "duration": "3–4 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "walk_in",
+            "best_time": "17:00–22:00 — for the best atmosphere and dinner options",
+            "local_tip": "When exploring the residential side streets west of Yamate-dori, seek out the unmarked doors and curtained entrances; many hide excellent omakase sushi counters or intimate shochu bars only identifiable by a single discreet kanji on a small lantern.",
+            "who_for": [
+              "couples",
+              "food lovers",
+              "nightlife seekers"
+            ],
+            "what_to_bring": [
+              "cash",
+              "phone with plenty of battery for pictures"
+            ],
+            "watch_out_for": "Bars and restaurants can fill up quickly after work hours.",
+            "nearby_pairings": [
+              "Meguro Museum of Art, Tokyo"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly",
+              "alcohol_centered"
+            ],
+            "suitability_tags": [
+              "romantic",
+              "solo_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Better in dry weather; riverside paths can be slippery when wet.",
+            "location_hint": "Nakameguro Station, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJW9fE3UiLGGAR_HkDv9w9nvY",
+              "name": "Naka-meguro Sta.",
+              "rating": 3.9,
+              "review_count": 802,
+              "photo_url": "/api/places-photo?ref=Ab43m-v33HVoztg50D_LFQ3-_hM6KdW3Ljxesfi-ZLHm0ENLwTgrLrP_4jO7IepcOW7WAECbEM0wLvCEZWKoTJHothJfz3sES8n25_6-7hzGH8Fz-FmBHWTAuyDaoP79WtcwV3okrL7nTjxDijmirvBFhhPoOitmV5xlrmLYMGrg_CFqnVq8qfSNo8uYWsYaWa4AiEEIqgdlpMy0_grgv0NwblXeybRtBxC1QKCe9GmXYLWJqwqRl_3QrNrpxa-SbO3nqHXf4c2qEE4xXLRW78Ozilsbc0_rLc0e_NXgJWgZINGosgEnXFqTqzdD9T9UwjwQaLY0dHyMcsPWfQeAx5tMlXbSeh-_9NujC1juUHUHBDnY1tO_OZwH_wk5BFMS116P5V5ZBwJuOcaL4eUznINhQ31WIyIfuUnMl74OKwq_TON7MNGg",
+              "address": "3-chōme-4-1 Kamimeguro, Meguro City, Tokyo 153-0051, Japan",
+              "coordinates": {
+                "lat": 35.6441631,
+                "lng": 139.6988444
+              },
+              "maps_url": "https://maps.google.com/?cid=17770709197957331452",
+              "price_level": null
+            }
+          },
+          {
+            "id": "omotesando-koffee-shopping-crawl",
+            "name": "Omotesando Gourmet & Shopping Trail",
+            "short_description": "A blend of high-end shopping and gourmet bites in Tokyo's stylish Omotesando area.",
+            "long_description": "Begin your day at one of Omotesando's iconic coffee shops for a caffeine boost. Wander along Omotesando Avenue, known for luxury boutiques and avant-garde architecture. Explore side streets for gourmet pastry shops, innovative dessert cafes, and trendy sandwich spots. This stylish neighborhood crawl is perfect for those who love fashion and fine food.",
+            "tags": [
+              "daytime",
+              "fashion",
+              "gourmet"
+            ],
+            "why_worth_it": "Combine high-end fashion with a curated culinary experience in one of Tokyo's trendiest districts.",
+            "duration": "3–5 hours",
+            "effort": "easy",
+            "cost_band": "premium",
+            "booking_difficulty": "walk_in",
+            "best_time": "10:00–17:00 — shops and cafes are open and the area is lively.",
+            "local_tip": "For a unique blend of history and discovery on your trail, explore the 'Dojunkai' wing on the west side of Omotesando Hills, a beautifully preserved section of the original apartments, offering intimate galleries and cafes tucked away from the main promenade.",
+            "who_for": [
+              "food lovers",
+              "shoppers",
+              "design enthusiasts"
+            ],
+            "what_to_bring": [
+              "comfortable shoes",
+              "credit card"
+            ],
+            "watch_out_for": "Some of the boutiques and cafes can be pricey, so set a budget beforehand.",
+            "nearby_pairings": [
+              "Nezu Museum, Tokyo"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly"
+            ],
+            "suitability_tags": [
+              "romantic",
+              "fashion-forward",
+              "group_friendly"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Omotesando Hills, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJCx6jgqGMGGARpfB5UIap15k",
+              "name": "Omotesando Hills",
+              "rating": 4,
+              "review_count": 8430,
+              "photo_url": "/api/places-photo?ref=Ab43m-vRnkVxlI0icX4jhadBNyQjB849A-3m96AjEAhT44Nokh8hgsh9tzTikSPdUVfIBJwF5kaT6yLJO4qIdRJY1UALz_9bslzej2_36SMuv3KZ2fSpjzGOoIqL4aCBJGzJKIl3tkWdNNEH0uZfa8YlZ0NrO1USGbK7aMn3PlE-v2B3kiFTFrPi6SBFIx3Ta-dxHPW2fMDgW-a4GF5K2D_IY_7pwMucCoyAbz1EIoDjNsGs7XcQnGfZQ3-UrQyy7gtCSwJ4vvUcBVrUPOqr9vNqVLlcp21_y-Uz5bVlWRbMLucAvHbGcNVmOoC5__k40IDqvLshOv3vmi3MyblIliiAAN4qIE3pgS6Hbubd06tWynmrnlBbII7rLuPUQNeA9_qUriHHaZyeIEE-5La70XTJ-pHvjqBox0bgYMlaHMS_NbEFkmNI",
+              "address": "4-chōme-12-10 Jingūmae, Shibuya, Tokyo 150-0001, Japan",
+              "coordinates": {
+                "lat": 35.6672869,
+                "lng": 139.7086162
+              },
+              "maps_url": "https://maps.google.com/?cid=11085515402136645797",
+              "price_level": null
+            }
+          },
+          {
+            "id": "koenji-izakaya-strategy",
+            "name": "Koenji Izakaya Strategy",
+            "short_description": "Dive into Tokyo's vibrant subculture scene with an izakaya hop in eclectic Koenji.",
+            "long_description": "Start at Koenji Station and explore the bustling streets filled with vintage shops and live music bars. As night falls, hop between intimate izakayas serving traditional and modern Japanese tavern fare. Try local sake or craft beers while indulging in small-plate dishes, from yakitori to oden. Koenji's laid-back and artsy vibe offers a dynamic, off-the-beaten-path experience.",
+            "tags": [
+              "night",
+              "culture",
+              "local"
+            ],
+            "why_worth_it": "Experience the authentic, bohemian energy of Tokyo's nightlife with an izakaya crawl in a unique neighborhood.",
+            "duration": "3–4 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "18:00–23:00 — when izakayas are busiest and the atmosphere is lively.",
+            "local_tip": "For an authentic Koenji izakaya strategy, commit to visiting three distinct tiny koshita (under the tracks) establishments, ordering just one specialty dish and a drink at each, to truly appreciate the breadth of local offerings.",
+            "who_for": [
+              "budget travelers",
+              "food lovers",
+              "culture vultures"
+            ],
+            "what_to_bring": [
+              "cash",
+              "small hand towel"
+            ],
+            "watch_out_for": "Some izakayas may have a table charge (otoshi), which is customary.",
+            "nearby_pairings": [
+              "Koenji Hikawa Shrine"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly"
+            ],
+            "suitability_tags": [
+              "solo_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Some izakayas have outdoor seating, which can be less pleasant in rain.",
+            "location_hint": "Koenji Station, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJHUjien3yGGARbKdSZURvKnw",
+              "name": "Kōenji Station",
+              "rating": 3.9,
+              "review_count": 551,
+              "photo_url": "/api/places-photo?ref=Ab43m-udxNDmghY0f6Ltk4B-gNbhPkDzr0HrBcFyAec6-VFHgAF7YOKhmx9e8YzsZJ5NRnmdb_XkE6qv5TUxdp15lnUUXmba8pEDMijAHvhj95rUW1wmZFpJ9jdjhTNg8x2FhFlC31PsHCJlxubW-SXrG0o8-y9XxP0JKD-4AeyKRHHIglN4K5dRXcB35CL06Gv2aje72GqJA8Bja5vGGDXSstF2dxMQ3Y_MYRl3ZErQvtsuYgBR5vNsqSR7qUrJnfU0UT5NHNSAuc2uLCbj8nPkpkz4wCO1UZw0hb2c8D0xJU6Kn056ZNV3qRw4zkuYuthZvtAbVkjnJoRPpk4JXJtOzHdJGIZwLwmFcGGbMX2IYlx-abMMLK80hFAS-7nD2DB0ZQCPCnZ8zRMBT9B9dncfGGLNJO-AuHzoxWYnZJjqV7EWrA",
+              "address": "4-chōme-48-2 Kōenjiminami, Suginami City, Tokyo 166-0003, Japan",
+              "coordinates": {
+                "lat": 35.7053168,
+                "lng": 139.6496915
+              },
+              "maps_url": "https://maps.google.com/?cid=8947085949273286508",
+              "price_level": null
+            }
+          },
+          {
+            "id": "takeshita-street-snack-pass",
+            "name": "Takeshita Street Snack Pass",
+            "short_description": "Indulge in colorful and whimsical snacks on the famous Takeshita Street in Harajuku.",
+            "long_description": "Walk down Takeshita Street, the bustling heart of Harajuku’s youth culture. Sample quirky and Insta-worthy snacks like rainbow cotton candy, giant crepes, and cheese dogs. The street is busy, vibrant, and perfect for sampling a variety of unique and playful street foods while experiencing Tokyo's cutting-edge fashion trends.",
+            "tags": [
+              "daytime",
+              "street_food",
+              "trendy"
+            ],
+            "why_worth_it": "Discover Tokyo's trend-setting youth culture through its unique street food scene.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "11:00–16:00 — when shops and stalls are open and street life is at its peak.",
+            "local_tip": "For the ultimate Takeshita Street crepe experience, choose Marion Crepes at the street's Harajuku end; watch them craft your order from the viewing window, then find a quieter standing spot in the small alleyway immediately to the right for less jostled enjoyment.",
+            "who_for": [
+              "families",
+              "teens",
+              "trendsetters"
+            ],
+            "what_to_bring": [
+              "cash",
+              "smartphone for photos"
+            ],
+            "watch_out_for": "Crowded with tourists and locals, making it essential to keep an eye on personal belongings.",
+            "nearby_pairings": [
+              "Meiji Jingu, Tokyo"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly"
+            ],
+            "suitability_tags": [
+              "family_friendly"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Takeshita Street, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJlVne8bqMGGARtX5O6ojMvsI",
+              "name": "Takeshita Street",
+              "rating": null,
+              "review_count": null,
+              "photo_url": "/api/places-photo?ref=Ab43m-stHSo_rQhASKqiTD4t8MTp2F1G1NchMR3NrpCQXhSFFRFV944BgEuYZrtWtMHM4YNjhwDiFRSKihKvQIBbg-IOU60aA9T63deS7wQKZlOqTN392RjV2bBOpY3svhuFKsZ-Xmx4_YviLjO4on6cIzqDvkwvZvM4PBVqXGSnY7uPVBKKbkuoH8ciGVfJik1KOLWtPuknqiHl05_a7hVwd4YzwSeSBLXIziuJP5sOEUkLGqWIyW-vPrx7rMknHbxihG_5eeWwi5OHNVEILyJUIttF6dQUKDmFDDxBQAI3orpzDB2jmbBTNJRUUZj846MDZ5098Aj9c2X9omsGtO81vIEee0Dyctps3-eQq1frPd0WO7Tjm82CqYudkAkkk-_5u9Lb8XaNTi7k3JNlpJtAPwyW62K4o61Wpz3G3IHYvm56wZvZ61M4wJ8IUIHWe2wW",
+              "address": "Takeshita St, 1-chōme Jingūmae, Shibuya, Tokyo 150-0001, Japan",
+              "coordinates": {
+                "lat": 35.6710335,
+                "lng": 139.7051821
+              },
+              "maps_url": "https://maps.google.com/?cid=14032878377351675573",
+              "price_level": null
+            }
+          },
+          {
+            "id": "kappabashi-dougu-street",
+            "name": "Kappabashi Kitchen Town Tour",
+            "short_description": "Explore the bustling Kappabashi for all things kitchen-related, with stops for local food-inspired goods.",
+            "long_description": "Kappabashi, known as 'Kitchen Town', is a street connecting Ueno and Asakusa dedicated to kitchenware. Here you'll find everything from intricate ceramic plates to plastic food replicas used by restaurants. Amidst shopping, take breaks at tea shops, sample snacks inspired by the items on sale, and gather ideas for your own kitchen creations. Kappabashi offers a unique look into the artistry behind Tokyo's food scene.",
+            "tags": [
+              "daytime",
+              "shopping",
+              "culture"
+            ],
+            "why_worth_it": "This unique street offers a deep dive into Tokyo's culinary presentation culture and is a shopping haven for food lovers.",
+            "duration": "2–3 hours",
+            "effort": "moderate",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "10:00–16:00 — when most shops are open and lively.",
+            "local_tip": "At Ganso Sample Shop, inquire about their custom order service to replicate a beloved dish from your own photo into a plastic food model, offering a truly unique souvenir beyond standard displays.",
+            "who_for": [
+              "cooks",
+              "shoppers",
+              "design enthusiasts"
+            ],
+            "what_to_bring": [
+              "cash",
+              "reusable bag"
+            ],
+            "watch_out_for": "Many shopkeepers speak limited English; patience and a translation app are helpful.",
+            "nearby_pairings": [
+              "Sensoji Temple, Tokyo"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "solo_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Kappabashi Dougu Street, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJXYV-6JWOGGAR85vIZbM1RCE",
+              "name": "Kappabashi Kitchen Supply Town",
+              "rating": 4.3,
+              "review_count": 12417,
+              "photo_url": "/api/places-photo?ref=Ab43m-sYd1jVLUCtMVo5eWQqvqJYasuGKGmXP3cgfNv8iF-VmUc9WspLHgwaxf7ZAW3soLHxJ7HGvaV4_33LOWlqgXlh_9FrkBhR30vp7rpnXw7DjlrXrgFLMQxGULiarLYyVy-LzSXk1ivNPJkVtLUO-38fcdwQXhtHcaW-5ZSvi55Ymj8Yl_Fi97zHv5rnsLJ4qEXa775-vaxY_yhSdDP0PaYO9Kaf6ojUq4EOUlrfqWEL8a5KCYjepTdkwOAP21KPCmQd3Zn6lkyTWE_uIdiRqu4rRTuxrf1XUf2ujRqd2khpXeCfr-Yy5AFxSdmsgUncDsBOGOTJKcsQuM8ajhPLfWhnpwBBaWxVUyCnq1jpAFOIMuoes4ovPuPmWpVWWiMZEBARkXMLfaGKuQRqDy3tu4LY8KdRs2W8AQetUH2-jyVEVfrL",
+              "address": "3-chōme-18-2 Matsugaya, Taito City, Tokyo 110-0036, Japan",
+              "coordinates": {
+                "lat": 35.7105797,
+                "lng": 139.7879645
+              },
+              "maps_url": "https://maps.google.com/?cid=2397099946291010547",
+              "price_level": null
+            }
+          }
+        ]
+      },
+      {
+        "id": "adventure",
+        "name": "Adventure",
+        "description": "Discover Tokyo's thrilling side with experiences that get your heart racing and adrenaline pumping.",
+        "experiences": [
+          {
+            "id": "beginner-surf-lesson-shonan-beach",
+            "name": "Beginner Surf Lesson at Shonan Beach",
+            "short_description": "Catch your first wave with a beginner-friendly surf lesson on the scenic coastline just outside Tokyo.",
+            "long_description": "Shonan Beach is a popular spot for beginner surfers, offering consistent waves and beautiful sea views. Professional instructors will guide you through basic techniques and safety, ensuring you have a secure and enjoyable experience. The area is a hub for surfing culture in Japan and provides a laid-back atmosphere perfect for those new to the sport.",
+            "tags": [
+              "water sports",
+              "beginner",
+              "outdoor"
+            ],
+            "why_worth_it": "Experience the joy of surfing without traveling far from Tokyo's city center.",
+            "duration": "2 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "08:00–10:00 — calmer waves and less crowded",
+            "local_tip": "For the most consistent beginner-friendly whitewash, position yourself slightly west of the Koshigoe fishing port breakwater, where the sandbars encourage longer, gentler pushes perfect for your first stand-ups towards the shore.",
+            "who_for": [
+              "families",
+              "first-timers",
+              "teens"
+            ],
+            "what_to_bring": [
+              "swimsuit",
+              "towel",
+              "sunscreen"
+            ],
+            "watch_out_for": "Check weather reports as lessons can be canceled if conditions are rough.",
+            "nearby_pairings": [
+              "Enoshima Island Exploration"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible"
+            ],
+            "weather_sensitivity": "Avoid in rain — waves could be dangerous",
+            "location_hint": "Shonan Beach, Kamakura",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJAUwHaVxOGGARLy7iIqSyVrU",
+              "name": "Kanagawa Prefectural Shonan Coast Park",
+              "rating": 4.3,
+              "review_count": 6816,
+              "photo_url": "/api/places-photo?ref=Ab43m-u0qDtkigdVCooAWC--nw2lKTCL5nC18pN8Hpg3FBeYpoQhEtYNI-y9EMAqkmhGfGe0Ok-WKNT1tMT-W-A4yoWhUFNuYstIbjh2GiqoSJ3GN87QoofacZVFWId_CUH0t47IsPMmsBP0pYUVIhK6JJy5PqBPuRZibf8784MB81f7Q64CmtZwAB1AA_4-8XseDKAPOYkxM4cLozHpg6sTlMQJESY5883IO0mQhmHEX6wEMYVBB-PPTip8hlVafQnkFth26_dPelGUY6URuGDdwYEgr9n2OY4oPvizliBaMmipTsW2gXjhyjZQgpYM-oYfIeMTDk0WRPh7pESLQAgZlSJ1lBOBplQy17Lb3MLav55b4VA1VgEtHlMZeMYkGasGfFo6rQMEpfpcvWsPzuXhe39w5NhvdlJRr0EMCLZj86c",
+              "address": "1-chōme-17-3 Kugenumakaigan, Fujisawa, Kanagawa 251-0037, Japan",
+              "coordinates": {
+                "lat": 35.3137328,
+                "lng": 139.4752786
+              },
+              "maps_url": "https://maps.google.com/?cid=13066827786891701807",
+              "price_level": null
+            }
+          },
+          {
+            "id": "indoor-windsurfing-in-oyreseas",
+            "name": "Indoor Windsurfing at Oyreseas",
+            "short_description": "Try indoor windsurfing in a controlled environment, perfect for rainy or stormy days in Tokyo.",
+            "long_description": "Oyreseas offers an innovative indoor windsurfing experience, ideal for those looking to learn or practice without the unpredictability of the ocean. The venue provides all the necessary equipment and guidance from skilled instructors. This is a unique way to engage with watersports, allowing participants to focus on technique and enjoy the thrill of windsurfing regardless of weather conditions.",
+            "tags": [
+              "indoor",
+              "water sports",
+              "beginner"
+            ],
+            "why_worth_it": "Experience windsurfing without stepping into the ocean, making it perfect for Tokyo's wet weather.",
+            "duration": "1 hour",
+            "effort": "moderate",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "14:00–16:00 — great for indoor activities during peak afternoon heat",
+            "local_tip": "For maximum planing, target the sweet spot directly in front of the largest central fan array, adjusting your sail just as the programmed wind sequence ramps up from idle to full power.",
+            "who_for": [
+              "couples",
+              "solo",
+              "teens"
+            ],
+            "what_to_bring": [
+              "swimsuit",
+              "towel"
+            ],
+            "watch_out_for": "Sessions can be fully booked in advance, especially during rainy seasons.",
+            "nearby_pairings": [
+              "teamLab Planets Tokyo"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "solo_friendly",
+              "beginner"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Oyreseas, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJG8yrK3iLGGARv9WjonDTcKM",
+              "name": "Ostrea Oyster Bar & Restaurant - Roppongi",
+              "rating": 4.2,
+              "review_count": 348,
+              "photo_url": "/api/places-photo?ref=Ab43m-tpquG5mCML_5-CAx4EfUmqLPx2_oMKDT1OwUHNgJkqEAUXic1262a8-CI_nrT_Oo46Kk9PRlqKU6E5Mao9afHjoZdvK1yyDBaUz8NJu_vME2nkVYgrGSeGwOQKqe9_HLxQX0Ug4E3StsbBu4YAXQqQ113yfJqWIlksU80xspd5AvC4a7iw535nS9byQ2ZyxnABQjjjU-MLDXKjNkcQvY_xKNPvN8oI7NMpy_Gk6dDRZLpqxXCD8WG47VzGUNr2y1YMtodisg4vPDLtBP1gtaV511cA1sytEPh6o_-_0q8LXMcFod_Aapg_kLfijKYKhd4lVgvTBk86ZV3r5X9WJG-qV32jkT5h9uIne_YFj9y7RwgOrgzgkDYHZ9WdRtKFPZQMUHtscnhjVjTclaZJNgKog4rDoGnQcq9u-ZyReEFX6A",
+              "address": "ユニ六本木ビル 1階, 7-chōme-15-17 Roppongi, Minato City, Tokyo 106-0032, Japan",
+              "coordinates": {
+                "lat": 35.6622974,
+                "lng": 139.7298937
+              },
+              "maps_url": "https://maps.google.com/?cid=11777145506292291007",
+              "price_level": 2
+            }
+          },
+          {
+            "id": "helicopter-city-tour",
+            "name": "Helicopter City Tour",
+            "short_description": "Soar above Tokyo's skyline and witness the breathtaking contrast of modern towers and historic temples.",
+            "long_description": "Experience Tokyo from a new perspective with a helicopter tour that offers stunning aerial views of iconic landmarks such as Tokyo Tower, the Imperial Palace, and more. It's an exhilarating adventure that provides a unique overview of the cityscape that blends history and futuristic architecture. Ideal for those looking to capture unforgettable photographs or simply enjoy the thrill of flying.",
+            "tags": [
+              "aerial",
+              "sightseeing",
+              "beginners"
+            ],
+            "why_worth_it": "Get a bird's-eye view of Tokyo's architectural wonders, something ground tours can't offer.",
+            "duration": "15–20 minutes",
+            "effort": "easy",
+            "cost_band": "premium",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "17:00–18:00 — capturing the city at golden hour",
+            "local_tip": "As you lift off from Tokyo Heliport, position yourself to spot the dinosaur-shaped Tokyo Gate Bridge connecting Wakasu and Jonanjima; its unique aerial perspective is unmissable.",
+            "who_for": [
+              "couples",
+              "photographers",
+              "first-timers"
+            ],
+            "what_to_bring": [
+              "camera"
+            ],
+            "watch_out_for": "Limited availability; book well in advance.",
+            "nearby_pairings": [
+              "Tokyo Tower Visit"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "accessible"
+            ],
+            "weather_sensitivity": "Avoid in heavy rain or fog — visibility severely reduced",
+            "location_hint": "Tokyo Heliport, Tokyo",
+            "is_mappable": true,
+            "personalization_note": "Experience requires physical exertion when ascending the helipad.",
+            "places_enrichment": {
+              "place_id": "ChIJc-u1z6NiGGARGMx7dH_5-9o",
+              "name": "Tokyo Heliport",
+              "rating": 4.3,
+              "review_count": 137,
+              "photo_url": "/api/places-photo?ref=Ab43m-sGPbc3qi1budMCka-NaRmKkeAnUR6MWFU7GSjGcH8PqLgdZdKgpqfIVSZsQ1e0bXneXy4ceiruTxiCJSmmegNzDn5KSSF6IzKcWBroJUMS5o3rdt5QYY1aO9x3YFkdQZg9Tx77Zy7mboRbSrWGaT3ZtfsZk2Q5KpY074XdjnXl6v_hjfOZzcyJdGutOzZ_o4CMYDVDySbNAccvdvIfD3Z1x9cawpAaREfCPVM2LaWqDzmjF3SeT573lOeNTRhaqTKyQS7INnc0SCW-jWI4aLMO4dCCsntps-afOVZN9p9dCtv_Ne0t0r7Stlwa_oX8z65LIAwC-78YhZbZWHUhNIVl7GYPIRLxXpmXZ1TvYbdPIqvspTO2AMV8WqtdNHFNXzs6__lvt6z6K9afSVchav4JMVnqPz9Fc-CXUmZQRq4tww",
+              "address": "4-chōme-7-25 Shinkiba, Koto City, Tokyo 136-0082, Japan",
+              "coordinates": {
+                "lat": 35.6359679,
+                "lng": 139.8386107
+              },
+              "maps_url": "https://maps.google.com/?cid=15779480045233097752",
+              "price_level": null
+            }
+          },
+          {
+            "id": "cycle-along-the-tamajina-river",
+            "name": "Cycling Along the Tamajina River",
+            "short_description": "Cycle alongside Tamajina River, enjoying the fresh air and scenic views of Tokyo's greener side.",
+            "long_description": "This cycling route is a favorite among locals, offering a peaceful escape from the bustling city streets. The path is well-maintained and easy to navigate, with picturesque views of the river and surrounding foliage. As you cycle, you'll pass by parks, temples, and residential areas, providing a diverse snapshot of Tokyo life beyond the skyscrapers.",
+            "tags": [
+              "outdoor",
+              "cycling",
+              "beginner"
+            ],
+            "why_worth_it": "Experience a different side of Tokyo's natural beauty while getting some exercise.",
+            "duration": "Half day",
+            "effort": "moderate",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "08:00–10:00 — enjoy cool morning breezes and fewer cyclists",
+            "local_tip": "When cycling the west bank north of Futako-Tamagawa Station, seek out the narrow paved track that dips into *Hyogojima Park*, offering a unique view of the confluence where the Mariko River joins the Tamagawa.",
+            "who_for": [
+              "families",
+              "solo",
+              "couples"
+            ],
+            "what_to_bring": [
+              "water bottle",
+              "snacks",
+              "sunscreen"
+            ],
+            "watch_out_for": "Some sections can become busy with walkers and other cyclists.",
+            "nearby_pairings": [
+              "Kichijoji Exploring"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Avoid in rain — trail becomes slippery",
+            "location_hint": "Tamajina Riverbank, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": null
+          },
+          {
+            "id": "ocean-diving-in-izu-peninsula",
+            "name": "Ocean Diving in Izu Peninsula",
+            "short_description": "Dive into the rich marine biodiversity of the Izu Peninsula, an underwater paradise a short ride from Tokyo.",
+            "long_description": "Izu Peninsula is a renowned diving destination known for its diverse marine life and stunning underwater vistas. Dive sites cater to various skill levels, but the area is best suited for those already certified. Explore vibrant reefs teeming with life, including anemone fish, green sea turtles, and rare nudibranchs. The region offers a peaceful retreat from the city's hustle, with the chance to discover some of Japan's best aquatic environments.",
+            "tags": [
+              "scuba",
+              "marine life",
+              "intermediate"
+            ],
+            "why_worth_it": "Witnessing the vibrant marine life of Izu Peninsula is an unforgettable thrill.",
+            "duration": "Full day",
+            "effort": "strenuous",
+            "cost_band": "premium",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "09:00–15:00 — best light for underwater visibility",
+            "local_tip": "For the exhilarating experience of diving with schooling hammerhead sharks, head to Mikomoto Island during the strong autumn currents, focusing your attention on the deeper blue where they frequently pass.",
+            "who_for": [
+              "solo",
+              "couples",
+              "experienced divers"
+            ],
+            "what_to_bring": [
+              "dive certification card",
+              "underwater camera"
+            ],
+            "watch_out_for": "Typhoon season can affect water conditions; ensure weather clarity before your dive.",
+            "nearby_pairings": [
+              "Izu Peninsula Hiking"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "adventurous"
+            ],
+            "weather_sensitivity": "Avoid during typhoon warnings",
+            "location_hint": "Izu Peninsula, Shizuoka",
+            "is_mappable": true,
+            "personalization_note": "Experience involves extreme physical demands and is only appropriate for certified divers.",
+            "places_enrichment": {
+              "place_id": "ChIJ2_w2xc1eF2AR0gFv8D9amYQ",
+              "name": "Ebisu Island",
+              "rating": 4.4,
+              "review_count": 511,
+              "photo_url": "/api/places-photo?ref=Ab43m-scG6N7oaff05DPrW_2F5ObyhUgNmfyLbjnTAu6_LCrsquZvHpynTMBg4v7IqQHfSXxvSDyGzmlilrPmNv5714XucGjlrFq9DGa_1uGSB9830eKaNTf05kmMHgOH6Zo_h-NpcPlw8pjLpHdqQBf3nCBk9fzgqTUSuD6S6tJ0AGpppxKe_Umyb7-0utNPbojOmyki4aShozMCzSoPCnfTChXLhISOAs_yUp5woLrveZAuTf2IfhXsmW9GuZT49FiLRukcL469trVxtOf6_ZKinougCtFskdh3i6iMImW0sfrxfQEU2lDw4ogbuAtz2Sm7ywXU-acmDGpl0mYdGsuPXbWX2T9ontu2vDqeNCYR7Z3aSlPGlSkbXMlLDx1ayYhXj-yLjuXoVFtR2ZczTXknuod-QGvCYvwVnmwbmJerVEWL7M",
+              "address": "1638 Suzaki, Shimoda, Shizuoka 415-0014, Japan",
+              "coordinates": {
+                "lat": 34.6524846,
+                "lng": 138.9649555
+              },
+              "maps_url": "https://maps.google.com/?cid=9554767315106464210",
+              "price_level": null
+            }
+          }
+        ]
+      },
+      {
+        "id": "arts",
+        "name": "Arts & Culture",
+        "description": "Dive into Tokyo's vibrant arts scene where traditional meets cutting-edge innovation.",
+        "experiences": [
+          {
+            "id": "mori-art-museum",
+            "name": "Mori Art Museum",
+            "short_description": "Explore contemporary art at Tokyo's Mori Art Museum, located atop Roppongi Hills with panoramic city views.",
+            "long_description": "The Mori Art Museum, nestled atop the Roppongi Hills Mori Tower, is a significant cultural hotspot in Tokyo for contemporary art enthusiasts. The museum features rotating exhibitions from leading and emerging artists around the world, showcasing a vast array of mediums, including installations, photography, and multimedia pieces. Combining art with panoramic views of Tokyo from its Sky Deck, visiting the museum offers a profound encounter with both local and international art in a dynamic urban setting.",
+            "tags": [
+              "indoor",
+              "art",
+              "view"
+            ],
+            "why_worth_it": "Access world-class contemporary art exhibitions while overlooking Tokyo's sprawling skyline.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "walk_in",
+            "best_time": "10:00–13:00 — morning light enhances the gallery experience",
+            "local_tip": "On the Sky Deck, position yourself at the southwestern edge, aligning Tokyo Tower in your foreground, to capture the distinct, distant outline of Mount Fuji that emerges on crisp winter afternoons.",
+            "who_for": [
+              "art lovers",
+              "urban explorers",
+              "first-timers"
+            ],
+            "what_to_bring": [
+              "camera"
+            ],
+            "watch_out_for": "Exhibits often change; check the schedule in advance to plan your visit.",
+            "nearby_pairings": [
+              "Roppongi Hills Shopping",
+              "National Art Center Tokyo"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "accessible",
+              "solo_friendly",
+              "romantic"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Mori Art Museum, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJg5RCD3eLGGAR6dbIHRM98w8",
+              "name": "Mori Art Museum",
+              "rating": 4.3,
+              "review_count": 7115,
+              "photo_url": "/api/places-photo?ref=Ab43m-tNI-bHsMkt7zEMJIxVYfoi3gDy_4fjlRBhC33gPGOa9iWs-Mv_6WcimIao7iYtttGSWx3pBjPtzxHIgrY4_E2UKx4Aek6ms-dVEBZQH5PKPAAh2ajMLEcLPISKLXh0O31M_Zk1Zj_kz4hzPMOL79EKnce7VSEAaur5DzlLHtD6z5AIiZb3EUuQ4-QG326FHwT5Xw8H2zayqlckAhtInHCtjbYn6IFTG1U-LwazxeT8rhV7t46bBemXTeeFHPZC7KX47N7JQcpKo8_heGuye3R3nHzCZ8sNfW13p5AmpbVBipZIuTbWrO9ZdtcIpdPsTPU1NCJWhhGx2GoPzItzEZJCBFSzErmicKiTj4b-CjNKi5KluFBcGJx41co4jW9hMnQ7ahaSQtmoZy1gpQ_yDLeSfN_EGzLThWKHkdWm7Js3Apo",
+              "address": "Japan, 〒106-6150 Tokyo, Minato City, Roppongi, 6-chōme−10−１ Roppongi Hills Mori Tower, 53階",
+              "coordinates": {
+                "lat": 35.6604621,
+                "lng": 139.7292785
+              },
+              "maps_url": "https://maps.google.com/?cid=1149329482222982889",
+              "price_level": null
+            }
+          },
+          {
+            "id": "edo-tokyo-museum",
+            "name": "Edo-Tokyo Museum",
+            "short_description": "Step back in time to explore the rich history and culture of Tokyo from Edo era to present.",
+            "long_description": "The Edo-Tokyo Museum provides a fascinating journey through the historical periods of Tokyo, from its beginnings as Edo to its rise as a modern metropolis. Through life-sized replicas, interactive exhibits, and detailed models, visitors gain insight into the city's architectural and cultural developments. The museum is an enlightening experience that vividly illustrates how aspects of traditional life have influenced the contemporary urban landscape.",
+            "tags": [
+              "history",
+              "education",
+              "indoor"
+            ],
+            "why_worth_it": "Gain a deep understanding of how Tokyo evolved into the city it is today through engaging and immersive exhibits.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "10:00–12:00 — to avoid larger afternoon crowds",
+            "local_tip": "When crossing the full-scale replica Nihonbashi bridge on the 6th floor, pause halfway and look towards the miniature Edo townscape models to best appreciate the intricate daily life depicted at your feet.",
+            "who_for": [
+              "history buffs",
+              "families",
+              "culture enthusiasts"
+            ],
+            "what_to_bring": [],
+            "watch_out_for": "Limited English explanations on some exhibits; guided tours can greatly enhance the experience.",
+            "nearby_pairings": [
+              "Sumida Hokusai Museum",
+              "Ryogoku Kokugikan Sumo Hall"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible",
+              "group_friendly"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Edo-Tokyo Museum, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJOWXu4TSJGGAR07vEEi8fZAw",
+              "name": "Edo-Tokyo Museum",
+              "rating": 4.4,
+              "review_count": 13517,
+              "photo_url": "/api/places-photo?ref=Ab43m-tvLQha2nSP7qC7jJvkp-n9W28oO0bBmjub1x3eejQ7QvgG1HZhpGQcpdh4pddoLwmY3jFXfCpzZ2d27xFJJ28GyRKKHlHfvI00wZR2CVhbrhROjVb7coozqRJG_kY5G6F5ozxBEyQ8zfslE5-5637QV01fF5luqG0qFTdEPHPjOTBEcJiMtE7nAY0uGZgCf9381RYpDyYe56i7zZah3NzazjKiZRNM3dM1RLfZ3TbkhzZJxeQh1cNkpoJusAvoEWgFQOKZ9fK_q6bbJo5f1c2b1C6qwyXqNcM4WejDTFJbjr4ESMvg3-OdEBM-OMbafb16joMf2uinCQgAN6ULEALi-khyEItVzchUj-dAzdN1Wiwe5dRSLOPgnXzTFkF7xH3tjoo1AYJEajkwQfFrx-N0Ef885j5lzhDBzXQn4wtTPUY",
+              "address": "1-chōme-4-1 Yokoami, Sumida City, Tokyo 130-0015, Japan",
+              "coordinates": {
+                "lat": 35.6965972,
+                "lng": 139.7957336
+              },
+              "maps_url": "https://maps.google.com/?cid=892872913165007827",
+              "price_level": null
+            }
+          },
+          {
+            "id": "ghibli-museum",
+            "name": "Ghibli Museum",
+            "short_description": "Embark on a whimsical journey through the magical world of Studio Ghibli's beloved animations.",
+            "long_description": "The Ghibli Museum in Mitaka is a must-visit for fans of Studio Ghibli and animation lovers. Designed by renowned director Hayao Miyazaki, the museum is a charming labyrinth filled with interactive exhibits, unique short films, and detailed models from films like 'My Neighbor Totoro' and 'Spirited Away'. The museum itself is as whimsical and creative as the films it celebrates, offering an immersive peek into the production processes and artistic talents behind these beloved stories.",
+            "tags": [
+              "animation",
+              "family",
+              "indoor"
+            ],
+            "why_worth_it": "Experience the enchanting creativity of Studio Ghibli's iconic films first-hand in a uniquely designed space.",
+            "duration": "2-3 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "hard_to_get",
+            "best_time": "11:00–13:00 — avoid the afternoon rush and enjoy the exhibits at a leisurely pace",
+            "local_tip": "Hold your film strip entry ticket up to the light in the Saturn Theater lobby to decipher the individual frames from a Ghibli film, as each unique strip is a small, unexpected piece of movie history.",
+            "who_for": [
+              "families",
+              "animation fans",
+              "creatives"
+            ],
+            "what_to_bring": [
+              "camera"
+            ],
+            "watch_out_for": "Photography is not allowed in most areas; adhere to the rules to preserve the experience for everyone.",
+            "nearby_pairings": [
+              "Inokashira Park"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "romantic",
+              "accessible"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Ghibli Museum, Mitaka",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJLYwD5TTuGGARBZKEP5BV4U0",
+              "name": "Ghibli Museum",
+              "rating": 4.5,
+              "review_count": 19199,
+              "photo_url": "/api/places-photo?ref=Ab43m-s2Ppjf9tNrJUTDWMZAAz7cjiqhsMQ9AR6HgNzJFRgHPwacwRXXnEMcY55boIg5GobnFhyiP3Hl40RJBhZpTMV5eIgenGA35LWp-rE-epbICTxNKNpiXNTRpiCuWiCnQkCw2iF37uUTCItN8PvFTvFk4z8lGjdi-Bc-CK7WWtpfJ-CAIf5475Jws6uQq-ahri3kLWDQsQGD1_Ssb2J27yR7ZZBE1zW9ox-4ckiNBqak0VtwRtkGRfOyBLWHsmP9vKmtWBE9RXSQ1LBayCwfzYeNdXmlysMl8AWgw7lhmDQXMseNZaqdOP9pfWw24fe06IuQoumcGs7nmIkOF4oNBtvHQq8pR1R20-mlj0gIEdxQYbYB9KUB2tuF4kyQT-8BpAx1VnTUcLorJJftJ64QVpF8B_xxc_y-4paYZXkabr0ND5FFYfWyaoEMukhkbA",
+              "address": "1-chōme-1-83 Shimorenjaku, Mitaka, Tokyo 181-0013, Japan",
+              "coordinates": {
+                "lat": 35.696238,
+                "lng": 139.5704317
+              },
+              "maps_url": "https://maps.google.com/?cid=5611860688709652997",
+              "price_level": null
+            }
+          },
+          {
+            "id": "nezu-museum",
+            "name": "Nezu Museum",
+            "short_description": "Discover an exquisite collection of pre-modern Japanese and East Asian art surrounded by serene gardens.",
+            "long_description": "The Nezu Museum, located in the stylish Aoyama district, offers a serene retreat showcasing an exquisite collection of pre-modern Japanese and East Asian art. Highlights include calligraphy, sculptures, bronze ware, and lacquerware. The museum is beautifully complemented by a traditional Japanese garden, which provides a tranquil backdrop to your visit and a place of reflection. It's an insightful exploration into the intricacies of Japanese aesthetics and cultural heritage.",
+            "tags": [
+              "traditional",
+              "garden",
+              "indoor"
+            ],
+            "why_worth_it": "Immerse yourself in traditional Japanese art and history within a calm, reflective environment.",
+            "duration": "2 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "walk_in",
+            "best_time": "10:00–12:00 — morning offers a peaceful garden experience",
+            "local_tip": "Within the garden, seek out the narrow, winding upper path that passes by the Kōrin-an teahouse; it provides a unique, elevated panorama of the pond and its meticulously placed stone arrangements often missed from the lower main route.",
+            "who_for": [
+              "art lovers",
+              "culture enthusiasts",
+              "garden enthusiasts"
+            ],
+            "what_to_bring": [],
+            "watch_out_for": "The garden can be slippery after rain, so tread carefully.",
+            "nearby_pairings": [
+              "Omotesando Shopping Street",
+              "The National Art Center, Tokyo"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "accessible",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Better after rain when gardens glisten freshly",
+            "location_hint": "Nezu Museum, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJxU48-2OLGGARHMtB5RAhytA",
+              "name": "Nezu Museum",
+              "rating": 4.5,
+              "review_count": 6355,
+              "photo_url": "/api/places-photo?ref=Ab43m-uEP1NPpKi4gHaTHIsysE0kZLZ43T5AGn8C0N04eTJdYIixznupvxCbxx6eAA3w4_2m7iwBGu1iFkClcPcq6ioC5izWvIqbi4P8LEH5BmbSVdX387h6ORHc99aVYzot5OEpzH4sk4xrH-_DqDoUFov8MfJhch-aEuWsC9H1nG6vuqeTFjt4o7sRg9R6pD_H6ecELMriycWOZbNQDSk86F-i7Z0LmHJAOHmNwRIrsjVWqHg-wFXj4uGgXXn50PN0M_QayOVTsodd_gp-dd9Quqzc__GpiB8IXMF4f9KByyuk6IcdkyaM2vE3ro1RWQCFjCHX8XmoOSg4z1AJo7PWKFkI24YNgV_Zvi5KNuEcftej0XjUPrbM-xSwuVw-Qu-DKnPtvrQsVhpzRvnbuETaFbNd_tfjgT5QIVqYAsv1TGzWBg",
+              "address": "6-chōme-5-1 Minamiaoyama, Minato City, Tokyo 107-0062, Japan",
+              "coordinates": {
+                "lat": 35.6622568,
+                "lng": 139.7170937
+              },
+              "maps_url": "https://maps.google.com/?cid=15044873861634050844",
+              "price_level": null
+            }
+          },
+          {
+            "id": "kabukiza-theater",
+            "name": "Kabukiza Theatre",
+            "short_description": "Experience traditional Japanese kabuki drama in the historic Kabukiza Theatre.",
+            "long_description": "The Kabukiza Theatre in Ginza is the principal theater in Tokyo for the traditional Japanese art of kabuki, a classical drama featuring elaborate costumes, stylized acting, and melodic music. Catching a performance here offers a fascinating glimpse into Japan's rich theatrical traditions, with each act presenting stories of heroism, romance, or intrigue. The theater's iconic architecture and detailed interiors add to the authenticity of the cultural immersion. Performances often include English headphone guidance to enhance understanding for non-Japanese speakers.",
+            "tags": [
+              "performance",
+              "traditional",
+              "night"
+            ],
+            "why_worth_it": "A kabuki show is a quintessential Japanese experience, full of vivid spectacle and cultural depth.",
+            "duration": "3–4 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "19:00–22:00 — evening performances provide a captivating close to a day in Tokyo",
+            "local_tip": "Aim for seats on the left side of the fourth-floor Hitomaku-mi-seki gallery to best appreciate the actors' dramatic entrances and exits along the *hanamichi*.",
+            "who_for": [
+              "theater enthusiasts",
+              "culture seekers",
+              "first-timers"
+            ],
+            "what_to_bring": [],
+            "watch_out_for": "Tickets can sell out quickly; advance booking is recommended.",
+            "nearby_pairings": [
+              "Ginza Shopping"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "solo_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Kabukiza Theatre, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJbUAZSOeLGGARGMEf4WW16AE",
+              "name": "Kabuki-za",
+              "rating": 4.3,
+              "review_count": 10449,
+              "photo_url": "/api/places-photo?ref=Ab43m-vARRzPATnOrnjKKqSvfmsVS6kDmwM2iJkm6zSddgstGwJgBlOxYe0SnVS0dD1TadIUUqVoyqyTspf3gGdMbJ8n8RBXGJOlenjO5IMP1tdI7Yqy2hgM8ysi5vuDnObWwZmmlQJpw1gK2TQb1IwgYKa6nf2MWP3qz9zgXNrn2vhPrvr2z5Gyz8BJaOMgU7D7YX0TapQorL1uPdpntJNfwS-sAVKDr4VxzImEHbZ7Pj_9ujkgIQmgrssxGmuTu2ksoG7TcTPykUKvoCq5u21GF79GBCD5QY7zDqX5R0Zl-dHHm46gUCKT6ig77FUaDYe8yP6h_Ech42kzSKetNquOiXglUMu831PdC5ddSdRgmraXJmw9UyR_mqOOC2uQqxlEgHomr_6NXEXtRG0N9tTuOt1tYA03isAbuJNH2e5hL_5tbA",
+              "address": "4-chōme-12-15 Ginza, Chuo City, Tokyo 104-0061, Japan",
+              "coordinates": {
+                "lat": 35.6694253,
+                "lng": 139.7677446
+              },
+              "maps_url": "https://maps.google.com/?cid=137559237808079128",
+              "price_level": null
+            }
+          }
+        ]
+      },
+      {
+        "id": "romantic_special_occasions",
+        "name": "Romantic & Special Occasion",
+        "description": "Discover experiences in Tokyo that provide intimate settings, perfect for couples or special celebrations.",
+        "experiences": [
+          {
+            "id": "dinner_at_the_new_york_grill",
+            "name": "Dinner at the New York Grill",
+            "short_description": "Enjoy an intimate dinner with stunning views of Tokyo's skyline at sunset.",
+            "long_description": "Located on the 52nd floor of the Park Hyatt Tokyo, the New York Grill offers a memorable dining experience with panoramic views of Tokyo's breathtaking skyline. The refined atmosphere, exceptional service, and carefully crafted menu make it an ideal choice for celebrating special occasions. The modern and luxurious setting, combined with live jazz music, adds to the romantic ambiance.",
+            "tags": [
+              "dining",
+              "evening",
+              "luxury"
+            ],
+            "why_worth_it": "The combination of skyline views, live jazz, and world-class cuisine creates an unparalleled romantic dining experience.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "premium",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "18:00–21:00 — during sunset and early evening",
+            "local_tip": "For an unparalleled romantic backdrop, secure a table along the south-facing windows to dine with the distant red glow of Tokyo Tower as the city hums towards Shibuya.",
+            "who_for": [
+              "couples",
+              "luxury seekers"
+            ],
+            "what_to_bring": [
+              "smart casual attire"
+            ],
+            "watch_out_for": "High demand means reservations can book out weeks in advance.",
+            "nearby_pairings": [
+              "Tokyo Metropolitan Government Building Observation Deck"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly",
+              "meat_heavy"
+            ],
+            "suitability_tags": [
+              "romantic"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "New York Grill, Park Hyatt Tokyo, Shinjuku",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJeZd_LC3zGGARwuG7DoPkZ9Q",
+              "name": "New York Grill",
+              "rating": 4.5,
+              "review_count": 1696,
+              "photo_url": "/api/places-photo?ref=Ab43m-uPfYiiedYpAkUu8FsXNR2-CkQBYKnh9AOQaMJkmgYhJNJ6l90rgRIlzr2NNa_eyXCYg5zt8_uSIQZaXLVHc5EfYS3-YrvWE_ef2xIEJ72R2SDp15L4OlvZIhiPWfKEofFxNTcmgHygPxgqd8Gk6dVOSm5y9_g2tOEIr3Qwhk-gOVkcZJqU-sTFNkskZEllduf7SEBpgMOkkGjXz2ZwicfF6mHGpNtR5sC40kWu7I8_a7zhIB_2y8jP2VBkMtXGx24Hq2JVnnbMu7dhXmt9vi2zTSXFpbNj_Gud0OF7H820sg",
+              "address": "パークハイアット東京, 52階, 3-chōme-7-1-2 Nishishinjuku, Shinjuku City, Tokyo 163-1055, Japan",
+              "coordinates": {
+                "lat": 35.6854999,
+                "lng": 139.6907386
+              },
+              "maps_url": "https://maps.google.com/?cid=15305453110180962754",
+              "price_level": 4
+            }
+          },
+          {
+            "id": "romantic_boat_ride_tokyo_bay",
+            "name": "Romantic Boat Ride on Tokyo Bay",
+            "short_description": "Set sail at twilight for a romantic cruise with mesmerizing cityscape views.",
+            "long_description": "Embark on a romantic excursion along Tokyo Bay as the sun sets, framing the skyline with its orange and pink hues. These cruises often include elegant dinner options and live entertainment, creating a memorable backdrop for couples to relax and enjoy each other's company. Marvel at the illuminated Rainbow Bridge and the city's iconic landmarks for an unforgettable evening.",
+            "tags": [
+              "cruising",
+              "sunset",
+              "night"
+            ],
+            "why_worth_it": "The unique vantage point provides stunning views of Tokyo at sunset followed by its sparkling lights, ideal for a romantic moment.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "17:00–20:00 — catch the sunset and the transition to the night skyline",
+            "local_tip": "For an iconic view uniting the illuminated Tokyo Tower, Tokyo Skytree, and Rainbow Bridge, choose a boat route that completes the wider loop around Odaiba rather than just a direct cross-bay return.",
+            "who_for": [
+              "couples",
+              "first-timers"
+            ],
+            "what_to_bring": [
+              "light jacket for cooler evenings"
+            ],
+            "watch_out_for": "Rain can impact visibility, but indoor seating options are available.",
+            "nearby_pairings": [
+              "Odaiba Seaside Park"
+            ],
+            "dietary_flags": [
+              "alcohol_centered"
+            ],
+            "suitability_tags": [
+              "romantic",
+              "accessible"
+            ],
+            "weather_sensitivity": "Avoid in heavy rain — outdoor views can be limited",
+            "location_hint": "Tokyo Bay, Minato",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJ8yIZtLuLGGARrGzw8nX96zM",
+              "name": "Minato City",
+              "rating": null,
+              "review_count": null,
+              "photo_url": "/api/places-photo?ref=Ab43m-uRvDuJonVU246con-jNm3mAoWAO1xzfkAwtPuTD4AxwM3iRaYzoUL23iB2F3ciqNKNSnYyxb8I4AaO7J4frPoCXGHF-TxIszUU9EvRV_eUDdDiwfj-qL7Zvo9uSQZbI8lbRC5LpdsvRCg8p4I_hDbxssu0jqQXTk_qOzjAaXrEzdW1bBEf6OSQju-_4BYS055w4E8c5cMgepOBEnhQdQdkP1UlQJU9bspJpIv3sj2nTWBcrTvEta_WP05Ed2xpknbz6aJfmgC9m2LCr-4MS4ozFod5lCIw48fUJ77P-lL2nbh05RT4Gf5ofCUdCXMx6BB_GZ5KWOTxDh4LtnxiI42w1sMb1fPKtgIeBZhlxjIwNDk8deB_FHoqfSNBuusJmbNiVqZzkKsiGuZCrbHbuCTLbJxd8CHRKUFE1ScckUnavw",
+              "address": "Minato City, Tokyo, Japan",
+              "coordinates": {
+                "lat": 35.65808130000001,
+                "lng": 139.7515077
+              },
+              "maps_url": "https://maps.google.com/?cid=3741362598490172588",
+              "price_level": null
+            }
+          },
+          {
+            "id": "teahouse_included_lunchtime",
+            "name": "Teahouse Experience in Hamarikyu Gardens",
+            "short_description": "Enjoy a tranquil traditional tea ceremony surrounded by the serene beauty of Japanese gardens.",
+            "long_description": "The Nakashima Teahouse in Hamarikyu Gardens offers a unique opportunity to experience the elegance and tranquility of a traditional Japanese tea ceremony. Couples can enjoy matcha tea and seasonal sweets while immersed in the beautiful surroundings of meticulously manicured gardens. This peaceful retreat from the urban environment allows you to appreciate the finer details of Japanese culture and nature.",
+            "tags": [
+              "tea",
+              "tradition",
+              "quiet"
+            ],
+            "why_worth_it": "The serene setting and traditional ambiance make it an enriching and romantic cultural experience.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "11:00–14:00 — when the light enhances the garden's beauty",
+            "local_tip": "When crossing O-tsutai-bashi bridge to Nakajima-no-Ochaya, pause to observe the unique tidal changes in Shiori-no-ike pond, a rare saltwater feature within a traditional Japanese garden, before enjoying your matcha. This dynamic water level subtly alters the teahouse's island perspective throughout the day.",
+            "who_for": [
+              "culture enthusiasts",
+              "couples"
+            ],
+            "what_to_bring": [],
+            "watch_out_for": "Weekends can be busier, reducing the experience's tranquility.",
+            "nearby_pairings": [
+              "Tsukiji Outer Market"
+            ],
+            "dietary_flags": [
+              "vegetarian_friendly",
+              "vegan_friendly"
+            ],
+            "suitability_tags": [
+              "romantic",
+              "accessible"
+            ],
+            "weather_sensitivity": "Better in good weather to enjoy the gardens fully",
+            "location_hint": "Hamarikyu Gardens, Chuo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJwfegutyLGGARGjiY-L2eSps",
+              "name": "Hamarikyu Gardens",
+              "rating": 4.4,
+              "review_count": 12338,
+              "photo_url": "/api/places-photo?ref=Ab43m-v76Frma9p9zxcaeqX6EXaboBEi5UqDyLXfUe9bNGbu5ra-9L5QaNTPk88uyahvEtdeddGeBpK2M0PNawAjOvDBFDZ9cgMnNiy7RbrIVz6bccttQ1236V2_eqXSx2XKN8MQ_E39wXcENkI05PlQ13Y7s7U15k8POodOniseSVJJgx8yacZ0Tg1TXwhfxmo25rSk9v4V9olnS9xmZDIPJ9TUaOE-0sx0lmCY82cyoZVO5rdCpD94xM9WXZEWlXr3tYE0zbYSKooZT1pNBQzklIjA-T19KxwEa4w2iZsyfHU8YENJs9eP8I42EoHU-NrX1DGUBKe94aM-_NpIi9QYu99_mXESbBpHHz3MZhdxjTFNc_vJfg_FCk5b8pa8g_OqwKr6uHvAD5PEHPo3ErFZIC2wAQoWGG9rSxmtgh1twVmZBuk",
+              "address": "1-1 Hamarikyūteien, Chuo City, Tokyo 104-0046, Japan",
+              "coordinates": {
+                "lat": 35.6596559,
+                "lng": 139.7634091
+              },
+              "maps_url": "https://maps.google.com/?cid=11189930762912151578",
+              "price_level": null
+            }
+          },
+          {
+            "id": "spa_experience_oedo_onsen",
+            "name": "Oedo Onsen Monogatari Spa Experience",
+            "short_description": "Relax and unwind together in a traditional onsen environment with various spa treatments.",
+            "long_description": "Oedo Onsen Monogatari offers an immersive onsen experience, where couples can enjoy soaking in natural hot springs, try various traditional baths, or indulge in massages and spa treatments. Set in a retro Edo-era environment, it provides a unique way to relax, reconnect, and escape the bustling city together.",
+            "tags": [
+              "spa",
+              "relaxation",
+              "wellness"
+            ],
+            "why_worth_it": "Sharing the soothing experience of an onsen in an Edo-era setting enhances bonding and relaxation.",
+            "duration": "Half day",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "walk_in",
+            "best_time": "10:00–16:00 — avoid crowds and maximize relaxation time",
+            "local_tip": "For a uniquely romantic atmosphere, visit the outdoor Ashiyu Garden after sunset when the paper lanterns glow softly, offering a tranquil path through the Edo-style scenery, ideal for a quiet couples' stroll.",
+            "who_for": [
+              "wellness seekers",
+              "couples"
+            ],
+            "what_to_bring": [
+              "swimwear if required for mixed bathing"
+            ],
+            "watch_out_for": "Certain areas may be gender-segregated; confirm options for couples in advance.",
+            "nearby_pairings": [
+              "DiverCity Tokyo Plaza"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "accessible"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Oedo Onsen Monogatari, Odaiba",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJAQAAzwBiGGAR38Maa4KpK8E",
+              "name": "Odaiba Ōedo-Onsen Monogatari",
+              "rating": 4.2,
+              "review_count": 12259,
+              "photo_url": "/api/places-photo?ref=Ab43m-uIN2bbF-thN2Kgxt-WhcCB6u8_RV8xxD-qaa726w6A001tld_ATxQo3HAqmswts7wV7bEg65rCkSDnx-op2KpUny3N4nvHeYuGXh0bK1ILSFoREJHoIpdYCIeyHqYjFzQgp_b8zgvhFNotHDwGnIBnsdJ4W4Six3Gf3ALu-xI_xUBPGPAIwFWFLyfjrC741nM8_irF_Fr9BCTt8y7lZ_o9L9rDZrj-ZAzLB72z0BCQaHxwf4KIZlSk80BqzRBt4txLRcbiP8B0fBV1rqRee8GyQ3SjcbhsbfgYrAYu3SoXkA",
+              "address": "2-chōme-6-3 Aomi, Koto City, Tokyo 135-0064, Japan",
+              "coordinates": {
+                "lat": 35.6158394,
+                "lng": 139.7777998
+              },
+              "maps_url": "https://maps.google.com/?cid=13919405450926408671",
+              "price_level": null
+            }
+          },
+          {
+            "id": "moonlit_walk_yoyogi_park",
+            "name": "Moonlit Walk in Yoyogi Park",
+            "short_description": "Take a scenic stroll under the stars in one of Tokyo's most beloved parks.",
+            "long_description": "Yoyogi Park transforms into a serene and romantic setting at night. The vast open spaces and numerous paths allow couples to enjoy a quiet evening walk, particularly on nights with a clear sky. It's an opportunity to appreciate the stillness amidst Tokyo's usual bustle, with the gentle rustle of leaves and the distant city lights creating a tranquil atmosphere.",
+            "tags": [
+              "walking",
+              "night",
+              "nature"
+            ],
+            "why_worth_it": "The contrast of city lights against the quiet of the park at night makes for a magical setting.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "19:00–21:00 — when the moon casts a gentle light over the paths",
+            "local_tip": "For an especially clear view of the full moon, position yourself in the center of the Great Lawn after the last park rangers have completed their rounds, where the surrounding canopy minimizes city light pollution.",
+            "who_for": [
+              "nature lovers",
+              "couples"
+            ],
+            "what_to_bring": [],
+            "watch_out_for": "Limited lighting means staying on known paths is advisable after dark.",
+            "nearby_pairings": [
+              "Shibuya Crossing"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "accessible"
+            ],
+            "weather_sensitivity": "Avoid after rain — paths can be muddy",
+            "location_hint": "Yoyogi Park, Shibuya",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJMwpiebSMGGARPr_454zHvDQ",
+              "name": "Yoyogi Park",
+              "rating": 4.4,
+              "review_count": 27101,
+              "photo_url": "/api/places-photo?ref=Ab43m-uEH7r8KXTQ_RhnJcwQhiw4LTkUs4OLdM_MUX1marvrE6CC0zpxUR873uj4FpDmLNN6-we7n7X7zaDvKtjAHMXs8Vxy0uWAEvxHH-_Vg975vtXJC_BG_V0YRQc6D0edMHyCsHEluTL-KJEtYNerrFsnx4D8n8r5nl3rfZtIDX6Td3hzecjMkDawz8juIY0yPoFOuEKvaDsII4UhjpY3UOYHAXWB2A8WVtzFNEOJHdp4IjY-rbiBD3q78JpCS4VTyAyv1deu2BlAtx2rrn6b0x86_uww1xtG4w4G_F5SG5i7QXP5fsz1vHpSjg6vy0iRMBIDUCYOqCbivkzjIhLwQxPkuoZqY6ua9qBhvrlbw_hZSvpotRAfMxnWTnsRD2_heLpNcb76qnCBkc3hZqUCG482aoI9dvPMevP5oJamwZaBpXbi",
+              "address": "2-1 Yoyogikamizonochō, Shibuya, Tokyo 151-0052, Japan",
+              "coordinates": {
+                "lat": 35.6700649,
+                "lng": 139.6949656
+              },
+              "maps_url": "https://maps.google.com/?cid=3800131593595043646",
+              "price_level": null
+            }
+          }
+        ]
+      },
+      {
+        "id": "rainy_day",
+        "name": "Rainy Day",
+        "description": "Discover Tokyo's top attractions and experiences perfect for rainy days, where indoor adventures shine through the wet weather.",
+        "experiences": [
+          {
+            "id": "gundam-base-tokyo",
+            "name": "Gundam Base Tokyo",
+            "short_description": "Dive into the world of mecha culture at Gundam Base Tokyo, a paradise for fans of the iconic series.",
+            "long_description": "Located in DiverCity Tokyo Plaza, Gundam Base Tokyo is a must-visit for anime and science fiction fans. It boasts an extensive collection of Gundam models, kits, and memorabilia. Visitors can participate in workshops to create their own model or simply enjoy the expansive displays. The experience is culminated with a viewing of the massive moving Gundam statue outside, a sight that's impressive even in the rain.",
+            "tags": [
+              "indoor",
+              "pop culture",
+              "workshop",
+              "shopping"
+            ],
+            "why_worth_it": "Gundam Base Tokyo is a unique homage to a beloved cultural icon, offering interactive experiences and one-of-a-kind products.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "10:00–21:00 — early afternoon to avoid crowds",
+            "local_tip": "Explore the Gunpla Factory Zone during inclement weather; its detailed displays on model production offer a fascinating, dry alternative to outdoor activities.",
+            "who_for": [
+              "anime fans",
+              "families",
+              "collectors"
+            ],
+            "what_to_bring": [],
+            "watch_out_for": "Some exclusive items have limited availability, so arrive early if you're looking to shop.",
+            "nearby_pairings": [
+              "teamLab Planets TOKYO",
+              "Odaiba Beach"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "kid_friendly",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Gundam Base Tokyo, DiverCity Tokyo Plaza",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJIy1S0_mJGGAR2d0UgvPKUPg",
+              "name": "The Gundam Base Tokyo",
+              "rating": 4.4,
+              "review_count": 18989,
+              "photo_url": "/api/places-photo?ref=Ab43m-vqkCG5aqf8HxfPfPbQ2e7x06qeyU8Y_ZS09Fq0VdlBmf2shB4tXMDmH-sMkIpn-lUHkcrKsyiliwNDFsdFXLca9Le4oXzIoXtbaOtE0pL7TANgfcK0oqg21Z_O_xe5wDrm2mANQD2f0EA4geM5YsADqvgnXOnJe6uK8T-JmTNbeaeCIrcl-KRWTse_16t-IiFyvbhLmO0wXMRXNNNV9unNZyfqhGglYWF_15Yiq-wdSKEZIK90nNp8AbxuMbjrZXwvMQ2gMviaBxK4V0OYiwv3_31uK0ny1RNKx-ceQhAyMA7NoygEXq77LTZZTRQlPYYhz2cbaHmTSPfLP5fuNeM2Cv_-vXExo4BMFMuyWZX2HzY7jmTZlNWLkFlhcY_PEcrT-uFpAWOjiyUuR7WOtIu-5msfYOZIKFnZbA-pevpWtqxkexMqxpRoYrwI1F2z",
+              "address": "Japan, 〒135-0064 Tokyo, Koto City, Aomi, 1-chōme−1−１０ ダイバーシティ東京 プラザ７F",
+              "coordinates": {
+                "lat": 35.6254768,
+                "lng": 139.7761383
+              },
+              "maps_url": "https://maps.google.com/?cid=17893024466751249881",
+              "price_level": null
+            }
+          },
+          {
+            "id": "tokyo-national-museum",
+            "name": "Tokyo National Museum",
+            "short_description": "Explore Japan's rich cultural heritage through an extensive collection of art and artifacts.",
+            "long_description": "The Tokyo National Museum in Ueno Park is Japan’s oldest and largest museum, boasting an impressive collection of traditional Japanese art, including samurai armor, calligraphy, and elegant ceramics. Divided into several galleries, the museum offers a comprehensive overview of the nation's cultural legacy, making it an ideal escape during inclement weather.",
+            "tags": [
+              "indoor",
+              "art",
+              "history",
+              "weather-proof"
+            ],
+            "why_worth_it": "A visit to Tokyo National Museum provides a deep dive into Japan’s artistic and historical treasures in a grand setting.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "walk_in",
+            "best_time": "09:30–17:00 — tend to be quieter early or late in the day",
+            "local_tip": "For a contemplative rainy day visit, head directly to the Horyu-ji Homotsukan; its minimalist architecture and serene atmosphere are enhanced by the sound of rain on the surrounding water gardens, best viewed from the second-floor gallery overlooking the pond.",
+            "who_for": [
+              "history buffs",
+              "art lovers",
+              "first-timers"
+            ],
+            "what_to_bring": [],
+            "watch_out_for": "Some exhibits rotate, so check what's on before you visit.",
+            "nearby_pairings": [
+              "Ueno Zoo",
+              "Ameya Yokocho Market"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "accessible",
+              "romantic"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Tokyo National Museum, Ueno",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJEX3XFIOOGGAR3XdJvRjWLyM",
+              "name": "Tokyo National Museum",
+              "rating": 4.5,
+              "review_count": 30352,
+              "photo_url": "/api/places-photo?ref=Ab43m-tmkikatKjgB5PlDrdV3-Wh_l7-teT3pcYsbaLn1-VFF8_lUfOWiOee50P6_5tOzMf68dOuE3bBF_4S4PJvA-1flmM6embLkU9BF0b0X134aJIijskbeRAK74J4jHgq3y-lvhCVSTZLGfz9Kr7aQfL1fgrfC5bzHI1afvYuY63ClW6ecxlJM6AEVl_V7XfIx-dZnq4F0nJ9sMeUYhQUF4lwaJX1whJM2Me1DkdyMOv_41JqzsefLUHF6TsnHOXyKh4OrcdoNs6-4bHQVq8icbyuafAkIyokN4AaQIX82T_ke7pfQk9fq7ufR_Tlc7Rg4WqgTAvrf_aytsFgkw6XPYHx4WYAklV1gW6I3IjEljrmOUMCqHNQSZuQfMv0nB_2LBM92vH96Qgjsj9OB7MxpxrDz5f4d9sm2A6-lJhpGwZ--g",
+              "address": "13-9 Uenokōen, Taito City, Tokyo 110-8712, Japan",
+              "coordinates": {
+                "lat": 35.7188351,
+                "lng": 139.7765215
+              },
+              "maps_url": "https://maps.google.com/?cid=2535480516976146397",
+              "price_level": null
+            }
+          },
+          {
+            "id": "hacoa-workshop",
+            "name": "Woodcraft Workshop at Hacoa",
+            "short_description": "Craft your own wooden souvenirs in a traditional workshop setting.",
+            "long_description": "Hacoa offers a hands-on experience where you can create personalized wooden crafts under the guidance of skilled artisans. Located in the Tokyo DIY Studio, this workshop allows visitors to learn traditional woodworking techniques and produce custom items like phone stands or key holders, making it a memorable and productive way to spend a rainy day.",
+            "tags": [
+              "indoor",
+              "craft",
+              "workshop",
+              "creative"
+            ],
+            "why_worth_it": "Creating your own wooden souvenirs at Hacoa offers a unique connection to Japan's artisanal heritage.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "10:00–18:00 — afternoon slots are ideal for availability and pace",
+            "local_tip": "Instead of immediately sketching your design, take a moment to examine the grain of your chosen wood blank at the central preparation table; Hacoa’s expert staff can guide you on how to best incorporate its natural patterns into your personalized engraving or cut-out.",
+            "who_for": [
+              "creative travelers",
+              "families",
+              "couples"
+            ],
+            "what_to_bring": [],
+            "watch_out_for": "Crafting can be intricate; patience and nimbleness are beneficial.",
+            "nearby_pairings": [
+              "MoMA Design Store",
+              "Omotesando Shopping"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "family_friendly",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Hacoa, Tokyo DIY Studio, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJteVRNfqLGGARvGifultJh5M",
+              "name": "Hacoaダイレクトストア KITTE丸の内店",
+              "rating": 4.1,
+              "review_count": 47,
+              "photo_url": "/api/places-photo?ref=Ab43m-uwNPi9F9_W-jIxMiLy-tAkuhupkXTSCfgXnbkJQsS6JI2r58Q7AXw0Z0Y2Fz6WsK4-Vr2gSI7nB7K_bYgqJIDzDCyfCO3pPijS1AHmfIgFgH0GFU0aIpBwKcI8uy2WU4SCI2hc52bz-Syl0ufrPRWlhDKGJjW58vVeoXawZaRN8gKoccTwdjPlnZMZdJkCELx55LStnezmsB5e2_eMlcDVfDVd2_fs4f0AOYX8pKbhTveHHRqrPccM-qhNFmhQWcJNgbEPsc_TGuuj2S9H3-97nvPDtBIO2w2gOPMmuVWp9Q",
+              "address": "Japan, 〒100-7004 Tokyo, Chiyoda City, Marunouchi, 2-chōme−7−２ JPタワ 4F",
+              "coordinates": {
+                "lat": 35.6799203,
+                "lng": 139.765199
+              },
+              "maps_url": "https://maps.google.com/?cid=10630546103753205948",
+              "price_level": null
+            }
+          },
+          {
+            "id": "robot-restaurant-show",
+            "name": "Robot Restaurant Show",
+            "short_description": "Experience a mind-bending fusion of robots, lights, and entertainment like nowhere else.",
+            "long_description": "In the vibrant district of Shinjuku, the Robot Restaurant offers an enthralling show that combines dazzling lights, thumping music, and choreographed performances by costumed robots. Opening up a fantastical world, it's a spectacle well-suited for those looking to embrace Tokyo's unique blend of pop-culture and entertainment.",
+            "tags": [
+              "indoor",
+              "entertainment",
+              "unique",
+              "weather-proof"
+            ],
+            "why_worth_it": "The Robot Restaurant Show is an unforgettable, exclusive experience that defines Tokyo's eccentric entertainment culture.",
+            "duration": "1.5 hours",
+            "effort": "easy",
+            "cost_band": "premium",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Various shows from 16:00–21:00 — book for later shows for a more lively crowd",
+            "local_tip": "For the most comprehensive view of the entire chaotic spectacle, politely request an elevated seat rather than the front row, allowing you to track the simultaneous movement of multiple robots and performers without constantly swiveling.",
+            "who_for": [
+              "pop culture fans",
+              "nightlife enthusiasts",
+              "first-timers"
+            ],
+            "what_to_bring": [],
+            "watch_out_for": "Loud music and lights might be overwhelming for some; headphones are advised for sensitive ears.",
+            "nearby_pairings": [
+              "Omoide Yokocho",
+              "Kabukicho"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "group_friendly",
+              "accessible",
+              "family_friendly"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Robot Restaurant, Shinjuku",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJT2-63UiNGGARuSbLoMhrMes",
+              "name": "Robot restaurant",
+              "rating": 3.8,
+              "review_count": 55,
+              "photo_url": "/api/places-photo?ref=Ab43m-shxIrWwXtOJoiV4EM7pcsMPA9HpwgfcJEbSQCeKeeT7mMwD4X2x6Ka0gONmdY0gwyzYTW0axPINRXRlZSHJiNQcmjo5E5TR43ZSsXeeD5nas7vtn-EY1A49O8R_aqtLVDF9HTHr_xvQxvia4wPxpW8b4JEpLnkWY71cG4KK67lIfOrKtlT_xbYQI0O_3MAbi2I9A2-boVN-MKxQVjZpiv4VJ0AdA7V-4NSIF0i97012CJbIdtOBQC8XfXkJkn6tTCCa3YEVtoOzaz8NOpZw8UChtecY4XuYRFgPmmu58VPlRUGRaoCpdNLPX21WntBqJqu3YPHv4AC8_w2lOc2c1tNMASy9m4vTxGmDoyK6mAhc0YkKyYW0zmYeWIE9UBPjNgksyxAt-8QiWUWLPwu6Lj7vMvK2uMH6hW1JmlOoziCdt8",
+              "address": "Japan, 〒160-0021 Tokyo, Shinjuku City, Kabukichō, 1-chōme−7−７ B1F",
+              "coordinates": {
+                "lat": 35.694355,
+                "lng": 139.7028555
+              },
+              "maps_url": "https://maps.google.com/?cid=16947445382207186617",
+              "price_level": null
+            }
+          }
+        ]
+      },
+      {
+        "id": "shopping",
+        "name": "Shopping",
+        "description": "Discover Tokyo's eclectic mix of fashion, technology, and traditional crafts across its diverse neighborhoods.",
+        "experiences": [
+          {
+            "id": "omotesando-boutiques",
+            "name": "Omotesando Boutiques",
+            "short_description": "Wander through Tokyo's fashion mecca, where luxury and high-street brands coexist among stunning architecture.",
+            "long_description": "Omotesando is Tokyo's answer to Paris' Champs-Élysées, a wide, tree-lined avenue home to flagship stores of luxury brands. The area isn't just about the big names; it's also famous for its avant-garde architecture, with buildings designed by world-renowned architects like Herzog & de Meuron and Tadao Ando. Hidden among the high-end stores, you'll find independent boutiques offering unique Japanese and international fashion. A stroll down the side streets reveals cafes and shops where Tokyo's fashion-forward crowd gathers.",
+            "tags": [
+              "luxury",
+              "fashion",
+              "architecture",
+              "outdoor"
+            ],
+            "why_worth_it": "Omotesando offers a harmonious blend of fashion, art, and architecture that captures Tokyo's cosmopolitan vibe.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "premium",
+            "booking_difficulty": "walk_in",
+            "best_time": "10:00–16:00 — when shops are open and architecture is best appreciated",
+            "local_tip": "Ascend to the elevated walkways of Omotesando Hills to appreciate the full architectural drama of the flagship boutiques like Dior and Prada, whose intricate facades extend upwards past the zelkova tree canopy, best seen from above.",
+            "who_for": [
+              "design lovers",
+              "fashion enthusiasts",
+              "urban explorers"
+            ],
+            "what_to_bring": [
+              "camera",
+              "comfortable footwear"
+            ],
+            "watch_out_for": "Prices in this district tend to be higher due to the luxury branding.",
+            "nearby_pairings": [
+              "Explore Harajuku for more eclectic shopping",
+              "Visit the Nezu Museum for a culture fix"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "luxury",
+              "urban",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Omotesando, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJSTdtYqGMGGAR3XD4H-GfStY",
+              "name": "Omote-Sando Avenue",
+              "rating": null,
+              "review_count": null,
+              "photo_url": "/api/places-photo?ref=Ab43m-sLQt3F53Q13CcP94MM8m_cvss-FZlKZYKoQZTl2ax6Vq6C4gT6wl6qVZQU_Gg3KG0HcD2j0O1ed3fhN-AsytphlkTKB7JL_4L3awgM-7XcmzFHijeT4sCcRvfTfV_xTd--n3HS_UrYq40qTkgcinTw3BQBXzE_0klMTsZrJZRR_zvUtUJgNkf6O1QzwIy-w9r5V3XOa_-evYB6AZEgPWBThcukEf9pQ60lCxZtb9WL4Q4n8P8VZCf1pEPcBfgoWvoYLQv3_U9bhavmQMwIdfuw-hVESZG7XzpiCOWr6Kj-ze77HUdTMHMGjka8BH-KdhHX0NOzyzo6CVJ9mEAkfTG4dp9mz3nLJOeWr0z5drxj-MOMjU8-mBVZhav57L63gyoZ9DxD4GBEYyjGl2jCLqeYVf8fUOc0qSjvrHXuiaIb-w",
+              "address": "Omote-Sando Ave, Tokyo, Japan",
+              "coordinates": {
+                "lat": 35.667355,
+                "lng": 139.707743
+              },
+              "maps_url": "https://maps.google.com/?cid=15441330061646000349",
+              "price_level": null
+            }
+          },
+          {
+            "id": "akihabara-electronics",
+            "name": "Akihabara Electronics Town",
+            "short_description": "Dive into the neon world of Akihabara, Tokyo's epicenter for electronics, anime, and otaku culture.",
+            "long_description": "Akihabara, often abbreviated as Akiba, is a haven for tech enthusiasts and fans of Japanese pop culture. Known as Tokyo's Electric Town, it's filled with stores selling the latest gadgets, computers, and home appliances. For anime and manga lovers, Akihabara offers countless shops stocked with collectibles, merchandise, and rare finds. The neighborhood is also famous for its maid cafes, where waitresses dress as maids and entertainers, providing a uniquely Japanese form of dining entertainment.",
+            "tags": [
+              "technology",
+              "pop culture",
+              "indoor"
+            ],
+            "why_worth_it": "Akihabara showcases the futuristic and quirky side of Tokyo's shopping scene unlike anywhere else.",
+            "duration": "3–4 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "11:00–18:00 — when most stores and cafes are open",
+            "local_tip": "For used electronics, like vintage game consoles or specific computer components, focus on the cluttered stalls directly beneath the JR train tracks between Akihabara and Okachimachi stations, particularly on weekends for the freshest inventory.",
+            "who_for": [
+              "tech enthusiasts",
+              "anime fans",
+              "pop culture explorers"
+            ],
+            "what_to_bring": [
+              "spending money",
+              "shopping bag"
+            ],
+            "watch_out_for": "It can be overwhelming; prioritize must-visit stores to manage your time better.",
+            "nearby_pairings": [
+              "Nerd out at the Sega arcade",
+              "Grab a coffee at a themed cafe"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "solo_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Great during rainy days as most activities are indoors",
+            "location_hint": "Akihabara, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJzdWdgh2MGGARh4kg2pVZL3c",
+              "name": "Akihabara Electric Town",
+              "rating": null,
+              "review_count": null,
+              "photo_url": "/api/places-photo?ref=Ab43m-t8iscPTdutpBzBMVU1EZ9tnsCjyVgBclfPqEoRtszh6mqy5QvzW1BxnxSH70S6Vj8KcfJqOkF4BDQU6wIN3Ws9ehBoHgukEUcyXNvbyTJjgR1jPWzkSXE9tBb6URPosHFY97yhcDPw04hlJCTXlZ0bv5DR8bwhyyTbpS-JQbRDlsOVUx4RR8oOy5-PqdPl2Ckt8Lu0ABnslDN6-IZB59kc9f7xUpnH8pQq1PaH8PEthOKHi6zvtKaIKZnTQL2gYDWrIUD-ZhLlYRFKfK4pkByNXEXWiGyp3DFXc8FG7tuIj4hALkYxl3omtBXbjLlMr00cIvg0pINDNnB4_InFMSVnd2RxopeZJbP3Y8ezEzp3GFNfPWaPDALMlv8g5h5rmTI0yEckKi3H51G4NFhG_KB7xYMgQd1knYngU0SMmLQ",
+              "address": "Akihabara Electric Town, Tokyo, Japan",
+              "coordinates": {
+                "lat": 35.6996473,
+                "lng": 139.7713703
+              },
+              "maps_url": "https://maps.google.com/?cid=8588181514563389831",
+              "price_level": null
+            }
+          },
+          {
+            "id": "takeshita-street",
+            "name": "Takeshita Street, Harajuku",
+            "short_description": "Experience youth culture and quirky fashion on Harajuku's iconic Takeshita Street.",
+            "long_description": "Takeshita Street is the epicenter of teenage pop culture in Tokyo. This bustling pedestrian street, located directly across from Harajuku Station, is packed with shops featuring the latest trends in youth fashion, cosplay, and vintage clothing. It offers a vibrant mix of quirky accessories, glittering jewelry, and pop-up cafes. It's not just about shopping; Takeshita Street is a visual spectacle of colorful characters and creative street style, making it a perfect spot for people-watching and experiencing the youthful spirit of Tokyo.",
+            "tags": [
+              "youth culture",
+              "fashion",
+              "street",
+              "outdoor"
+            ],
+            "why_worth_it": "Takeshita Street is a living canvas of Japan's avant-garde street fashion and creativity.",
+            "duration": "1.5–2 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "11:00–16:00 — busiest for energy, quieter late afternoon",
+            "local_tip": "As you navigate the narrow passage, pause at the cluster of crepe stands halfway down; order from Marion Crepes and then quickly step into the small alleyway beside it to eat your treat without impeding the flow of foot traffic.",
+            "who_for": [
+              "fashion enthusiasts",
+              "teenagers",
+              "pop culture fans"
+            ],
+            "what_to_bring": [
+              "cash",
+              "camera for street photography"
+            ],
+            "watch_out_for": "Narrow pathways can get very crowded, so be prepared for a slow stroll.",
+            "nearby_pairings": [
+              "Relax in Yoyogi Park",
+              "Explore more of Harajuku"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "solo_friendly",
+              "accessible"
+            ],
+            "weather_sensitivity": "Better on dry days due to outdoor nature",
+            "location_hint": "Takeshita Street, Harajuku, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJlVne8bqMGGARtX5O6ojMvsI",
+              "name": "Takeshita Street",
+              "rating": null,
+              "review_count": null,
+              "photo_url": "/api/places-photo?ref=Ab43m-tFNyKvwNzCdjN-ivkXU1vWSMGq-eHMz2w0R0tKQgrIg81gylfFc6J7bFO6QDSOloA-2spEfYqohXFzzMDaRtEeLOy9-NxQl54VrLRKFEIwLXwjc80HnLvb21OZV6MuzQky2len9BDH2Qq0DjetsYCN4RuYzEa2LpcUakVLM1GQXfyygKCo1EXb_xEqEmTCue2yj33UuOQeP2SnqFRqkKnYO8qOo4Y-9X2LM9cg0Wpk283NT41EXxtTykydHI9SxaQoapc8tWHYVG2qwB2zR8kGdT0fQ4-o2wXrXGUgC8FwPbhpOJm2BFJoMWhZpXveSJc-PQukNSxsj7OUW6ojYXviPb18RNzzXE9qEUYgTMqeYIqMoL57SGoUFwUbkWUSGUUpLP-wsfziZpyTMliz7U2GJC5RDFtGLCTzY7SdAKpm_94GPxO-nhvLTGGBf8TD",
+              "address": "Takeshita St, 1-chōme Jingūmae, Shibuya, Tokyo 150-0001, Japan",
+              "coordinates": {
+                "lat": 35.6710335,
+                "lng": 139.7051821
+              },
+              "maps_url": "https://maps.google.com/?cid=14032878377351675573",
+              "price_level": null
+            }
+          },
+          {
+            "id": "nippori-textile-town",
+            "name": "Nippori Textile Town",
+            "short_description": "Explore Nippori Textile Town for fabrics and materials in one of Tokyo's fabric hubs.",
+            "long_description": "Nippori Textile Town, also known as 'Fabric Town,' is a dream destination for fabric enthusiasts, designers, and DIY hobbyists. This area is lined with shops offering a vast selection of textiles, from traditional Japanese prints to modern designs, all at competitive prices. The area not only caters to those seeking materials but also provides a fascinating insight into Japan’s textile tradition. Browsers will find an array of buttons, threads, patterns, and handmade accessories, making it an ideal spot for crafting enthusiasts seeking authentic materials.",
+            "tags": [
+              "crafts",
+              "textile",
+              "traditional",
+              "shopping"
+            ],
+            "why_worth_it": "Nippori offers a glimpse into the heart of Japan's rich textile culture.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "10:00–15:00 — quieter and more focused shopping experience",
+            "local_tip": "Bypass the main shopping crowds and head to Maruman for its unparalleled selection of obscure buttons and specialized sewing notions, particularly its unique stock of vintage-style metal clasps and rare ribbon trims.",
+            "who_for": [
+              "DIY enthusiasts",
+              "designers",
+              "artisans"
+            ],
+            "what_to_bring": [
+              "reusable shopping bags",
+              "notepad for ideas"
+            ],
+            "watch_out_for": "Overwhelm from the sheer variety; it helps to have a game plan.",
+            "nearby_pairings": [
+              "Explore the Yanaka district for traditional Tokyo streets"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "solo_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Nippori Textile Town, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJ5zmdV36OGGAR22032G8f_UY",
+              "name": "NIPPORI FABRIC TOWN",
+              "rating": 4.2,
+              "review_count": 1869,
+              "photo_url": "/api/places-photo?ref=Ab43m-vyvIzKWPE_IakrnSDT2M80wyDf5VVbWdvIK0NqqdT0z07v3BqPLwrBd_7GYLoPaBJvTNroAdx-pClAqx_UjUBZSaR5zfGeOvrY2MG0dz0Hs7IWVPIS7YvtiJtcapWYK6frDTEz7O1OUGgxLMSB4MyoC04Kd16yCYFoi-J__o56nx_Coi4yF0E8lC9VwvcGTqPpfuS0Zx9vX5K52OnuwljDPH4rz4c-r5PXSGPnhZOXZT2WRFcPAFCFh8kTcKanIeDyk1n62fpHuqM_-YkEOdNBruoP07-THwQSVQNREHy7uvWMrzNxDyw4OOT9oQ_8_EXa9pOMKVRxkNHPA3z7qi1yWVyzGeDPWpoy78NzCXAh00y8EIKpiTqIxNROSMVjkQ18cagBbUUPJrw7QFN2uYX_qZgexWnppptaWEI0kaBszUvx3vrrXpB62FZEoWu3",
+              "address": "6-chōme-17-6 Higashinippori, Arakawa City, Tokyo 116-0014, Japan",
+              "coordinates": {
+                "lat": 35.7287973,
+                "lng": 139.7774087
+              },
+              "maps_url": "https://maps.google.com/?cid=5115279316992093659",
+              "price_level": null
+            }
+          },
+          {
+            "id": "shimokitazawa-vintage",
+            "name": "Shimokitazawa Vintage Shops",
+            "short_description": "Delve into Shimokitazawa for a treasure trove of vintage clothing and quirky shops.",
+            "long_description": "Shimokitazawa, often simply called 'Shimokita,' is a bohemian enclave known for its eclectic blend of second-hand clothing stores, vintage shops, and indie boutiques. This area exudes a laid-back vibe, contrasting the high-energy pace of central Tokyo, attracting artists, musicians, and a young crowd. From retro clothing and unique accessories to vinyl records and collectible antiques, Shimokitazawa offers a nostalgic shopping experience. Aside from shopping, Shimokita is also celebrated for its lively café scene, small theaters, and live music venues.",
+            "tags": [
+              "vintage",
+              "bohemian",
+              "indoor"
+            ],
+            "why_worth_it": "Shimokitazawa is a slice of Tokyo where you can escape the mainstream and find the unique and serene.",
+            "duration": "3–4 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "11:00–18:00 — most shops are open and the area is bustling",
+            "local_tip": "Beyond the obvious street-level displays, always look for vintage shops tucked into second-story storefronts or basement levels within the narrow side streets radiating from Shimokitazawa Station; many of the most unique finds require looking up or down.",
+            "who_for": [
+              "vintage lovers",
+              "students",
+              "hipster crowd"
+            ],
+            "what_to_bring": [
+              "shopping bags",
+              "comfortable shoes"
+            ],
+            "watch_out_for": "The temptation to spend more than planned; set a budget!",
+            "nearby_pairings": [
+              "Catch a live show at a local venue",
+              "Relax at a themed café"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "solo_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Rain can limit street browsing, but cafes are a good retreat",
+            "location_hint": "Shimokitazawa, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJw_teZ_8hGGARgsSeLR2OLjM",
+              "name": "Shimokitazawa",
+              "rating": null,
+              "review_count": null,
+              "photo_url": "/api/places-photo?ref=Ab43m-tSi3aa1aVzTBRJb6bpmSU2w-xuTUYEKK3NPvcx8DBn9TClfm2KVgizUOVRxrGLYHplCMJPioxCb_c22mRBu-c_JJ9F7C4078VGwV6-Sh5IajbXVnYoKh9K2gZJIy8Cw2CP59JkGeNKJw3FwR3UOEpwR8Uh5RI5YTD61uXi2CLubO26yEiK9jDWdm1NFsHE2tZ2bDOQx-UKO0-giXsLY5PcdEPFS1dzEk6WKbc93pN2NeyZAyxwG5oen28coYeqHtfYQLmRgLheiUZO5f0qn2TpAAsdpmI6C148gJVeLt5n28nKmW_a1FPAS9UXpz23CNInvMit7R0oa3eSVSnDSXAvlk08LjPVDC5Br8IFqTP3BMEgRaBwvxXiLLG3fD_26zFBjhFskPAS0gEj8Z7NiyjHQEPA1A12ogT21YDUYIWNpto",
+              "address": "Shimokitazawa, Kitazawa, Setagaya City, Tokyo 155-0031, Japan",
+              "coordinates": {
+                "lat": 35.665786,
+                "lng": 139.6698627
+              },
+              "maps_url": "https://maps.google.com/?cid=3688041400833590402",
+              "price_level": null
+            }
+          }
+        ]
+      },
+      {
+        "id": "day_trips",
+        "name": "Day Trips",
+        "description": "Explore captivating destinations around Tokyo that are perfect for a day away from the city's vibrant pace.",
+        "experiences": [
+          {
+            "id": "nikko_heritage_sites",
+            "name": "Nikko Heritage Sites",
+            "short_description": "Escape to the UNESCO World Heritage sites of Nikko, known for its stunning natural beauty and historic shrines.",
+            "long_description": "Nikko, located about 2 hours north of Tokyo, is a scenic mountain town famous for its UNESCO-listed shrines and temples, such as the opulent Toshogu Shrine. Surrounded by beautiful natural landscapes, including waterfalls and forests, it offers a perfect retreat from the urban bustle. Take a direct train from Tokyo's Asakusa Station on the Tobu line to reach Nikko efficiently. Once there, explore Nikko National Park, visit the Rinno-ji Temple's garden, and admire the Kegon Falls. Plan for a full day to fully enjoy the cultural and natural wonders.",
+            "tags": [
+              "cultural",
+              "scenic",
+              "historical"
+            ],
+            "why_worth_it": "Nikko's blend of cultural heritage and natural beauty offers a striking contrast to Tokyo's urban environment.",
+            "duration": "Full day",
+            "effort": "moderate",
+            "cost_band": "mid",
+            "booking_difficulty": "walk_in",
+            "best_time": "07:30–08:30 — to avoid crowds at shrines and see the morning light",
+            "local_tip": "In the Honjido Hall, position yourself directly beneath the 'crying dragon' ceiling painting to fully experience the reverberating echo when the monk claps the wooden blocks.",
+            "who_for": [
+              "culture enthusiasts",
+              "nature lovers",
+              "history buffs"
+            ],
+            "what_to_bring": [
+              "comfortable walking shoes",
+              "camera",
+              "rain gear"
+            ],
+            "watch_out_for": "Trains back to Tokyo can be crowded on weekends; consider returning in the late afternoon.",
+            "nearby_pairings": [
+              "Kegon Falls",
+              "Tamozawa Imperial Villa"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "romantic",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Better in dry weather for comfortable walking and clear views.",
+            "location_hint": "Toshogu Shrine, Nikko",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJNSAhU8WmH2ARlA7wenFbUKs",
+              "name": "Nikkō Tōshōgū",
+              "rating": 4.5,
+              "review_count": 33565,
+              "photo_url": "/api/places-photo?ref=Ab43m-u_DU9lIpT3oOnHEM07TnAU4eLBgFfgFQhInqhCEqPAvEmITC_IYxRcRunYdb2YNxdnDDpefYlzxCoW4hkz2Y0dIGeTtBO-Fo6L5CcC5WLut_wV83EHNk91mljv865-8lYilv9SG0fk6XU6U0TYYa7l9yPyErQRYvv_H7Gmd6JqOpS5WrBQJ4mrkIx5Izg2HxuTrOPPTLnyI8nRAr02Zh9uCN81M1JOc4PYiFW0gKrcEjnGvQccWqUtOlKqu0X0W-itszlyPVFRslO5pa7e_LLPbioX0jhi1rjBHjL0m8BLkUSvK6kT6vIlF0xlExVnY4UTG-Gn6G8AzZ9MhaJZCxNEDExRQp46dWU0Nvq-5WaA5KLKuNn5xks_F2LGykatxIC9xYUGxRvqM76Q0R7pYsVTsjyIijTh4tZz1kDSUUJr7eiU",
+              "address": "2301 Sannai, Nikko, Tochigi 321-1431, Japan",
+              "coordinates": {
+                "lat": 36.7580878,
+                "lng": 139.5987466
+              },
+              "maps_url": "https://maps.google.com/?cid=12344467121574514324",
+              "price_level": null
+            }
+          },
+          {
+            "id": "hakone_hot_springs",
+            "name": "Hakone Hot Springs",
+            "short_description": "Relax in the hot springs of Hakone, with breathtaking views of Mount Fuji and artistic delights.",
+            "long_description": "Hakone, located an hour and a half from Tokyo by train, offers a serene escape with its onsens (hot springs), art museums, and picturesque views of Mount Fuji. Catch the Odakyu Romancecar train from Shinjuku Station for a scenic journey. While in Hakone, relax in a traditional onsen, visit the Hakone Open-Air Museum, and take the Hakone Ropeway for spectacular mountain views. Ensure you allocate a full day to soak in the relaxation and cultural experiences Hakone has to offer.",
+            "tags": [
+              "relaxing",
+              "art",
+              "scenic"
+            ],
+            "why_worth_it": "Hakone offers a blend of relaxation and cultural enrichment amidst stunning natural backdrops.",
+            "duration": "Full day",
+            "effort": "easy",
+            "cost_band": "mid",
+            "booking_difficulty": "reserve_ahead",
+            "best_time": "Early morning to early afternoon — for open-air museum and clear views",
+            "local_tip": "After exploring the Children's Play Sculptures, soothe your feet in the outdoor footbath; angle for a spot where you can watch the steam rise among the trees and sculptures like Niki de Saint Phalle's 'Miss Black Power' as citrus fruits gently float by.",
+            "who_for": [
+              "relaxation seekers",
+              "art lovers",
+              "couples"
+            ],
+            "what_to_bring": [
+              "swimwear",
+              "towel",
+              "camera"
+            ],
+            "watch_out_for": "Fog can obscure Mount Fuji; check the forecast for clear days.",
+            "nearby_pairings": [
+              "Hakone Open-Air Museum",
+              "Hakone Ropeway"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "solo_friendly"
+            ],
+            "weather_sensitivity": "Avoid during heavy rain. Some attractions are better in clear conditions.",
+            "location_hint": "Hakone Open-Air Museum, Hakone",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJMfOWowSiGWARX2wK6ac5jlg",
+              "name": "The Hakone Open-Air Museum",
+              "rating": 4.5,
+              "review_count": 15385,
+              "photo_url": "/api/places-photo?ref=Ab43m-vMsC1CqLWh-qtwp_ooSZ5cW7og_8-70FMibMQZ-vo9kANzXhu6ZvMY0O55YxoVIwFaHW8u9vPAOKTS71cpMWLtNLZdz2CmtnD3UKnVarNDbklooFmAVJUIE1Yf8YfM52je1a5HwOBFAs2m2Z3RhRuoquZhHCWbMWWmuWEho2v31PLJbji6spVux18UO9l2rWZE2sYV8YoHHUlDvEzjsDFP3bt4gWp1RAra0iaYo4EZ_4n9rkG9ytXuxtTy_vyCxLfmFyXBgZixrvxyXg4p9K6j3WkkM6nCLM_Zdq5F8-gevMmGQRB3gC-GlDrJFb_pSoofZJpmUQz9NhWG8NS8RbMRGM-QVDAjrIqqYtEm-JhYEJ-BNDjOSeYx3fTcWY250GgJyTf78FF-Kx6VAjxHOJoJ6DpOfNuFEJEnIGSHMLc",
+              "address": "1121 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0493, Japan",
+              "coordinates": {
+                "lat": 35.2451601,
+                "lng": 139.0507271
+              },
+              "maps_url": "https://maps.google.com/?cid=6381101115362667615",
+              "price_level": null
+            }
+          },
+          {
+            "id": "kamakura_historic_sites",
+            "name": "Kamakura Historic Sites",
+            "short_description": "Discover the historic charm of Kamakura, featuring ancient temples, the Great Buddha, and coastal beauty.",
+            "long_description": "Kamakura, a historic seaside town just an hour from Tokyo by train, is known for its Zen temples, the Great Buddha (Daibutsu), and pleasant beaches. Ride the JR Yokosuka Line to Kamakura Station, then explore iconic sites like Hase-dera Temple and the Great Buddha. Traverse the scenic walking trails that connect the temples and enjoy local treats such as matcha ice cream. Allocate a full day for a laid-back exploration of Kamakura's spiritual and natural allure.",
+            "tags": [
+              "cultural",
+              "historic",
+              "scenic"
+            ],
+            "why_worth_it": "Kamakura offers a captivating glimpse into Japan's rich history amid a stunning coastal setting.",
+            "duration": "Full day",
+            "effort": "moderate",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "08:00–09:00 — to enjoy the temples before the crowds",
+            "local_tip": "Don't miss the small separate entrance to the right of the Daibutsu's base; pay the nominal fee to step inside and experience the cool, hollow immensity of its bronze interior.",
+            "who_for": [
+              "history buffs",
+              "nature lovers",
+              "families"
+            ],
+            "what_to_bring": [
+              "walking shoes",
+              "camera",
+              "sun protection"
+            ],
+            "watch_out_for": "Weekend traffic and crowds can be heavy; weekdays are more relaxed.",
+            "nearby_pairings": [
+              "Hase-dera Temple",
+              "Komachi Street"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "group_friendly",
+              "accessible"
+            ],
+            "weather_sensitivity": "Some trails can be slippery when wet.",
+            "location_hint": "Kotoku-in (Great Buddha of Kamakura), Kamakura",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJBbxJ3_JFGGARTO9rLbCTwx4",
+              "name": "Kotoku-in",
+              "rating": 4.4,
+              "review_count": 31334,
+              "photo_url": "/api/places-photo?ref=Ab43m-v03xMoIEcTLF9ZadhYXIurGmRS20i4CEx6N_W6u9owMiqVcALQSGQwUFWrb847quRQh9JHrjtuC2b0eJr2HyVZGXqta_8ZCEkzDsLy1r0evhxhwG6F5ubqRrZTWZs-OsnG6Hdo55Nu8ENVudJuR8rVr7ejLqUkXuHbpze8sC1HOTM3kMjlrkB_0I78gIG9EwZrFN5nuPRXGxIgNF45E-CEkp1sh_Tx4RmV9NuJ-U-4VRmxqpAEoSWT-jz_9SRRalWxj1l1V_VQCBhLByoKPj0mYInblW7CGrZm8bregmBYYORP1J7Uk6OiMd8VDIFY_pELsqboNLpXFFzr7GutdQkifHDjgX34fsr8c2THr1BrXLT5uBIAOQSCXHwCvCI_3UEwdE59oMDnf-YenA_KeO8WOoXBgr8vP2xXPMIqqdZ1JJ2aqWCFhyLk2JI7ff0c",
+              "address": "4-chōme-2-28 Hase, Kamakura, Kanagawa 248-0016, Japan",
+              "coordinates": {
+                "lat": 35.3168145,
+                "lng": 139.5357442
+              },
+              "maps_url": "https://maps.google.com/?cid=2216777826481991500",
+              "price_level": null
+            }
+          },
+          {
+            "id": "mount_takao_hiking",
+            "name": "Mount Takao Hiking",
+            "short_description": "Hike Mount Takao for rewarding views of Tokyo and Mount Fuji, combined with spiritual sites.",
+            "long_description": "Just an hour away from Shinjuku by train, Mount Takao offers a natural escape with hiking trails that cater to all levels. Take the Keio Line directly to Takaosanguchi Station, where you'll find scenic trails leading to Yakuo-in Temple. At the summit, enjoy panoramic views of Tokyo and, on clear days, Mount Fuji. The area is also known for its hot spring facilities. A half to full day is recommended to fully experience Mount Takao's natural and spiritual charm.",
+            "tags": [
+              "outdoor",
+              "nature",
+              "adventure"
+            ],
+            "why_worth_it": "Mount Takao provides a refreshing natural escape with stunning vistas that contrast urban Tokyo.",
+            "duration": "Half day to full day",
+            "effort": "moderate",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "08:00–10:00 — cooler temperatures and clearer views",
+            "local_tip": "For a truly immersive forest descent, take Trail 6 (Biwa Falls Course) from Yakuoin Temple; it follows a cool stream bed under ancient cedars, offering a peaceful alternative to the paved main route.",
+            "who_for": [
+              "nature lovers",
+              "adventurers",
+              "spiritual seekers"
+            ],
+            "what_to_bring": [
+              "hiking gear",
+              "water bottle",
+              "snacks"
+            ],
+            "watch_out_for": "Trails can become crowded on weekends and holidays; arrive early.",
+            "nearby_pairings": [
+              "Yakuo-in Temple",
+              "Mount Takao Trick Art Museum"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "solo_friendly",
+              "family_friendly"
+            ],
+            "weather_sensitivity": "Avoid during rain or snow; trails can be slippery.",
+            "location_hint": "Mount Takao, Hachioji",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJb4ejXn8ZGWAR3y_2HoQLB8c",
+              "name": "Mount Takao",
+              "rating": 4.5,
+              "review_count": 5137,
+              "photo_url": "/api/places-photo?ref=Ab43m-twPuX9nSg_vzKLmW0x6ZFlwIPVvegShpLGiDXqEnT-y9FuvzBQP2lLZ3eriv-L2fQ_zyEjVrfpWGFt8YZYMg-JbR-ZLE1toCWHRvSToxSO6IHUhFqgXQlkasQ4i0QdGJATKdJW_7TY7_n_5K-0lW3IGV2Ihtet_JefncGvi8nG2ftlo8bnkYwkS2737_8KDV62AZypeAF5RaWBmwbn04jbJJ5Qt--IrCMIGZcp8O5UbN-oWEh9W2cOB95I1XkpTKM_X0KoNCEhUY6Vvx_nLv2KfJm7BA1F4MCIbCOLtt9o4ykg0Z7MqZ3tFc7cvuNETDkwO-_lG0-IOfbGC2PZMnQqXzqhGKe7mihsbY1x24j_n24L2y3l5Cd9quVGO4Vmt83O9H7Wy_7IRos-6qvChXFIZDGr-ilachJWJb_oaa7aEg",
+              "address": "Mount Takao, Takaomachi, Hachioji, Tokyo 193-0844, Japan",
+              "coordinates": {
+                "lat": 35.6254126,
+                "lng": 139.2437385
+              },
+              "maps_url": "https://maps.google.com/?cid=14341444200467673055",
+              "price_level": null
+            }
+          }
+        ]
+      },
+      {
+        "id": "seasonal",
+        "name": "Seasonal",
+        "description": "Tokyo offers unique experiences that can be especially rewarding during specific times of the year, such as seasonal festivals, natural displays, and cultural events.",
+        "experiences": [
+          {
+            "id": "kichijoji-autumn-foliage",
+            "name": "Autumn Foliage at Inokashira Park",
+            "short_description": "Experience the serene beauty of Tokyo's autumn foliage in the heart of Kichijoji.",
+            "long_description": "Inokashira Park, located in the quaint neighborhood of Kichijoji, is a delightful spot for enjoying the autumn colors. The park's expansive grounds feature numerous maple and ginkgo trees that transform into a vivid tapestry of reds, oranges, and yellows during October and November. Stroll along the park's pathways, take a boat ride on the pond, or relax in one of its many serene spots.",
+            "tags": [
+              "outdoor",
+              "autumn",
+              "nature"
+            ],
+            "why_worth_it": "Inokashira Park provides a calming retreat with breathtaking autumn foliage, right in Tokyo's bustling cityscape.",
+            "duration": "2–3 hours",
+            "effort": "easy",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Late October to early November — for peak foliage colors",
+            "local_tip": "For the most vibrant reflections of autumn maples and ginkgos, rent a swan boat and paddle towards the Benten-do Temple island at the pond's center, especially when the water is still.",
+            "who_for": [
+              "nature lovers",
+              "photographers",
+              "couples"
+            ],
+            "what_to_bring": [
+              "camera"
+            ],
+            "watch_out_for": "Can get crowded on sunny weekends during peak season.",
+            "nearby_pairings": [
+              "Kichijoji Sunroad Shopping Street"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "romantic",
+              "accessible"
+            ],
+            "weather_sensitivity": "Avoid in heavy rain — the park experience is diminished.",
+            "location_hint": "Inokashira Park, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJLWaVdDXuGGART_Pg1R3CZ4A",
+              "name": "Inokashira Park",
+              "rating": 4.4,
+              "review_count": 13528,
+              "photo_url": "/api/places-photo?ref=Ab43m-ulpATQKKfJJ67EbvsxazdmeF_O5IJqEtR0QU6wq3qSyyRmpa76tbp14dlP7u_aPB2wnyp7ZJqhNgT03d5AFQ97DLIlYSUb8ujy9w96u_Xd4R6l3Erj0qSTJJGl_qvVVvR75gUdOcR-E7SSAspZf9FT4yWyHMXMOIKk-xwNKWsnXu5LJxpcIk2g9Nun9cnk4dhwArljzjR7QpnHevft-mYLY-AGpM6fkcsmzvG9DLoJyYXBirXeXfHF6PIFDFWpXDIUD99I_K6jU8D9nTkPrCYBiHf9GAeqoHL2TwxY4T5GR34EoD4s3AEBe4ErFVEhauImdxC6NUXooypzi6iH-UAhEwPYtZ_tUop8JvR-hvuvMSwpzqmWQPUrgbCc54bimpjPLDx6J4zM9QAKqDSOv88KE3QQ1LvUXOAq-W1lzwvIAg",
+              "address": "1-chōme-18-31 Gotenyama, Musashino, Tokyo 180-0005, Japan",
+              "coordinates": {
+                "lat": 35.69974759999999,
+                "lng": 139.5737018
+              },
+              "maps_url": "https://maps.google.com/?cid=9252577392854102863",
+              "price_level": null
+            }
+          },
+          {
+            "id": "rikugien-garden-illuminations",
+            "name": "Rikugien Garden Illuminations",
+            "short_description": "Witness the enchanting light displays of the autumn garden illuminations at Rikugien.",
+            "long_description": "Every autumn, Rikugien Garden hosts a spectacular illumination event that transforms the traditional Japanese garden into a magical nightscape. As the leaves change color, they are beautifully lit, creating a surreal atmosphere as you walk the winding paths. The delicate reflections in the pond and the serene ambiance offer a unique opportunity to experience a classic Japanese garden in a new light.",
+            "tags": [
+              "outdoor",
+              "evening",
+              "autumn"
+            ],
+            "why_worth_it": "The illuminations at Rikugien provide an enchanting way to view a traditional garden, enhanced by autumn colors.",
+            "duration": "1–2 hours",
+            "effort": "easy",
+            "cost_band": "budget",
+            "booking_difficulty": "walk_in",
+            "best_time": "17:30–21:00 — the lights are on and create the best atmosphere",
+            "local_tip": "For the most ethereal reflections of the illuminated maples against a deepening twilight, position yourself along the path opposite the Tsutsuji-chaya teahouse on the far side of the central pond as the sky turns indigo.",
+            "who_for": [
+              "romantics",
+              "first-timers",
+              "photography enthusiasts"
+            ],
+            "what_to_bring": [
+              "tripod",
+              "camera"
+            ],
+            "watch_out_for": "Lines can form for popular viewing spots; patience is required.",
+            "nearby_pairings": [
+              "Tod's Store Ginza by Toyo Ito"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "romantic",
+              "photography"
+            ],
+            "weather_sensitivity": "Illuminations might be canceled in case of severe weather.",
+            "location_hint": "Rikugien Garden, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJYUQ-972NGGAR5W_2E0N3SHY",
+              "name": "Rikugien Gardens",
+              "rating": 4.4,
+              "review_count": 10579,
+              "photo_url": "/api/places-photo?ref=Ab43m-uEeT3YpTAse2k_uhmj-4eTlNjIukQq1QaxchupAdUu8557kOj8FcK-AN5TTFb_8lSwGTmSUuY-bjJMQeneWlMPNlt6_Mj-G2GLDG64AAfC59kTqCkvWqRXHZnJeFoDVWRH1LLEw-pr7CPGKOw6TrkxEb1qWKoPZX5l9P2V9FrLR85SL5WFGsIB_OQUJzhGSAZnv78LbO6NCj79DGwuLSEJt0f_kG9bP20lROu0oq8oNS39W7zW20kmW_97fnagEFCVtWWqG1buhuiwGZZhqF2LIZ4Nosrl_-Lex-L0mGqpUzsK4xuL4H92rUmb9ABs2YJxNJ0wBZGim6j7tJIdKtC6bjK4GQv6sS4bBnl5Zag8N23mzXdc1U3iahXU7UnXvok0NpJNRBH5EPEwQHv6JD8VcgHnunDylFIOr2K3BajlpvA9DD9dacZq13wUWY5N",
+              "address": "6-chōme-16-3 Honkomagome, Bunkyo City, Tokyo 113-0021, Japan",
+              "coordinates": {
+                "lat": 35.7331005,
+                "lng": 139.7457335
+              },
+              "maps_url": "https://maps.google.com/?cid=8523193424780095461",
+              "price_level": null
+            }
+          },
+          {
+            "id": "sumida-river-fireworks",
+            "name": "Sumida River Fireworks Festival",
+            "short_description": "Join Tokyo's most famous summer celebration with vibrant fireworks along the Sumida River.",
+            "long_description": "The Sumida River Fireworks Festival is a celebrated event held every summer, drawing crowds from all over Tokyo. Thousands of fireworks light up the night sky, reflecting off the Sumida River and creating a dazzling display of color and sound. Local vendors line the streets with traditional festival foods and games, making it a festive occasion that showcases Japanese summer traditions.",
+            "tags": [
+              "festival",
+              "summer",
+              "night"
+            ],
+            "why_worth_it": "It's a quintessential Tokyo summer experience, offering a spectacular fireworks display with a vibrant festival atmosphere.",
+            "duration": "Evening",
+            "effort": "moderate",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "19:00–21:00 — fireworks begin around sunset",
+            "local_tip": "For a unique dual perspective of both launch sites, head to Kuramaebashi Bridge, which offers a simultaneous distant view of fireworks from Venue No. 1 and Venue No. 2 as they light up the Tokyo skyline over the Sumida River.",
+            "who_for": [
+              "festival-goers",
+              "nightlife lovers",
+              "families"
+            ],
+            "what_to_bring": [
+              "blanket",
+              "light jacket"
+            ],
+            "watch_out_for": "Very crowded; keep personal belongings secure.",
+            "nearby_pairings": [
+              "Asakusa Culture and Tourism Center"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": "Event may be postponed in case of severe weather.",
+            "location_hint": "Sumida River, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJmVcx1dCLGGARpjQjq3LDEk8",
+              "name": "Sumida River",
+              "rating": 4.6,
+              "review_count": 360,
+              "photo_url": "/api/places-photo?ref=Ab43m-tgUloSdXY2SXzZ_mvxlWqoWGfIuhf7w0JATRSq9JyhJxc5oOSV6ld-LneCm_hMesyzlL0PPxZpOWDmERbWX9v3yOZfP_nbTuodgDNHQBtbS2ziGmjmPz3_f7AxBlXUZxFHoVLsEoxgbOVEqVgFbYZ5-6gyaI4ZceQbVlY9vTQLzMF-t1GXdHmvTZEHkKMhFEq28rE5DnHAWDbJoQlDtE4oHtUAcQjKgUpYWwDQqTVaHX4DWNWn8rZEAE8i8n7uub_arNLYWuUl0ZCQJojxgl5G4g_Rr8b_dmtk8ckyFhGmlOUYpWltSsRfR7VCH4GbxuWZnqmwY2Db2VTF9kolkBbG9QMb6HG1mEHXqkl7Owhjt6Y1EJqRWqHdRc-DZszFrMz2D1joPgZA-L6YPeyGqPALtbfvHPsNcPIaMAXmVbYI3fM",
+              "address": "Sumida River, Tokyo, Japan",
+              "coordinates": {
+                "lat": 35.7084279,
+                "lng": 139.7967265
+              },
+              "maps_url": "https://maps.google.com/?cid=5697831375841997990",
+              "price_level": null
+            }
+          },
+          {
+            "id": "asakusa-sanja-matsuri",
+            "name": "Sanja Matsuri Festival",
+            "short_description": "Experience one of Tokyo's wildest and most vibrant traditional festivals in Asakusa.",
+            "long_description": "Sanja Matsuri is Tokyo's most famous Shinto festival, held every May in the streets around Senso-ji Temple. The three-day event sees nearly two million visitors celebrating with dancers, musicians, and over a hundred portable shrines parading through the streets. The atmosphere is electric, bursting with traditional costumes, religious ceremonies, and festive booths offering street food and souvenirs.",
+            "tags": [
+              "festival",
+              "spring",
+              "cultural"
+            ],
+            "why_worth_it": "It's one of Tokyo's liveliest festivals, capturing the spirit and energy of traditional Japanese celebrations.",
+            "duration": "Full day",
+            "effort": "moderate",
+            "cost_band": "free",
+            "booking_difficulty": "walk_in",
+            "best_time": "Daytime — to catch all the parades and performances",
+            "local_tip": "For an energetic, up-close view without the main crush, seek out the smaller neighborhood *mikoshi* on Saturday as they are paraded through the backstreets off Hisago-dori, leading towards the main temple grounds.",
+            "who_for": [
+              "cultural enthusiasts",
+              "families",
+              "group travelers"
+            ],
+            "what_to_bring": [],
+            "watch_out_for": "Crowded; watch out for pickpockets in large crowds.",
+            "nearby_pairings": [
+              "Nakamise Shopping Street"
+            ],
+            "dietary_flags": [],
+            "suitability_tags": [
+              "family_friendly",
+              "group_friendly"
+            ],
+            "weather_sensitivity": null,
+            "location_hint": "Asakusa, Tokyo",
+            "is_mappable": true,
+            "personalization_note": null,
+            "places_enrichment": {
+              "place_id": "ChIJM1N_BMKOGGARZ0DHgTj9hHw",
+              "name": "Asakusa",
+              "rating": null,
+              "review_count": null,
+              "photo_url": "/api/places-photo?ref=Ab43m-slIEScNvYrv6GzMZCGSmjT4GGD9IfANZFkj--Zaq-jFJlwx7xX3tNHfolzLubNqoCHle0WlHA1YZbfBZbCjE5dRoaQUG0pMWQDFPcurslQqb2LBz_ZFY8LQBvtp2tlXcwDcFivJt_eYpK5T5jnBQtkIy2bzzop54_wi66nKhcI6Cz-TY2_-R0IkZ72trjOsIkSu_4Be7nkDQ1cyLSbOgijg3qCsmh39yZdK2FxdhjeFp77gKguztnf0tZy7hrcNQ_E8zH1mdiDNKq9_p_Wal1HxnkG212HsoVhsWp12AmrLZq2jhbx209tIwRkNO5YVSJ_9dNvhkjbSwIYuObpvVgIH7GfSJNZ6NC0dhnLXrh5uKaWMXmWs_s7wG8j-aSze5yPJhRryt2EnPl06BU8423nO4LvDUifeNvqZpW-Lj7LoQ",
+              "address": "Asakusa, Taito City, Tokyo 111-0032, Japan",
+              "coordinates": {
+                "lat": 35.7185858,
+                "lng": 139.7958849
+              },
+              "maps_url": "https://maps.google.com/?cid=8972574776766185575",
+              "price_level": null
+            }
+          }
+        ]
+      }
+    ],
+    "preferences": {
+      "duration_days": 6
+    },
+    "generated_at": "2026-05-28T20:19:51.762Z"
+  },
+  "start_date": "2026-09-16",
+  "end_date": "2026-09-21",
+  "arrival_time": "09:00",
+  "departure_time": "11:00",
+  "preferences": {}
+}

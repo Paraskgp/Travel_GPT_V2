@@ -1,0 +1,18 @@
+{
+  "data": {
+    "destination": "test",
+    "soul": "The provided destination 'test' is not a recognized or real geographic location. As a cultural intelligence researcher, I cannot capture the unique spirit, personality, or defining characteristics of a place that does not exist. To generate meaningful and insightful context, please provide a valid destination name.",
+    "defining_pillars": [],
+    "best_for": [],
+    "honest_notes": [
+      "The input 'test' does not correspond to a real destination.",
+      "Meaningful cultural context cannot be generated for an imaginary location.",
+      "Please provide a valid destination name for an accurate response."
+    ],
+    "applicable_themes": [],
+    "recommended_stay_area": "Not Applicable",
+    "recommended_stay_reason": "Cannot recommend a stay area for a non-existent destination."
+  },
+  "generated_at": "2026-05-28T16:05:16.027Z",
+  "ttl_days": 180
+}
