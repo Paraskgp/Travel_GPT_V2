@@ -5,16 +5,23 @@
  *
  * Usage:
  *   npx tsx scripts/test-grounding.ts "Zion National Park"
+ *   npx tsx scripts/test-grounding.ts "Tokyo, Japan" --openai   # bypass Gemini routing (e.g. quota exhausted)
  */
 import fs from 'fs'
 import path from 'path'
+
+// --openai flag: skip loading GOOGLE_AI_API_KEY from .env.local so stage routing
+// falls back to OpenAI for all stages. Use when Gemini daily quota is exhausted.
+const forceOpenAI = process.argv.includes('--openai')
 
 // Load env
 const envFile = path.resolve(import.meta.dirname, '../.env.local')
 if (fs.existsSync(envFile)) {
   for (const line of fs.readFileSync(envFile, 'utf8').split('\n')) {
     const m = line.match(/^([A-Z_]+)=(.*)$/)
-    if (m && !process.env[m[1]]) process.env[m[1]] = m[2].trim()
+    if (!m || process.env[m[1]]) continue
+    if (forceOpenAI && m[1] === 'GOOGLE_AI_API_KEY') continue // skip → routing falls back to OpenAI
+    process.env[m[1]] = m[2].trim()
   }
 }
 

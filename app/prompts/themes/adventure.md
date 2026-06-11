@@ -11,8 +11,8 @@ Surface experiences that involve physical engagement, risk, or adrenaline — ac
 - Multi-sport or challenge experiences
 
 ## What does NOT belong here
-- Easy scenic walks (those belong in nature or hiking)
-- Boat tours that are primarily sightseeing (nature or signature)
+- Easy scenic walks (those belong in `outdoor`)
+- Boat tours that are primarily sightseeing (`outdoor` or `signature`)
 - Any adventure so mild that "adventure" would mislead the traveler
 
 ## Coverage tiers — include at least one card from each applicable tier where the destination supports it

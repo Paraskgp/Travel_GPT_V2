@@ -17,6 +17,27 @@ Generates the full set of themed experience cards for a destination. Each card i
 - A list of themes, each containing 5–10 experience cards
 - Each card: id, name, short/long description, tags, why_worth_it, duration, effort, cost_band, booking_difficulty, best_time, local_tip, who_for, location_hint, is_mappable, personalization_note, and more
 
+## Theme registry (11 themes)
+
+| ID | Display name | Notes |
+|---|---|---|
+| `signature` | Signature Experiences | Always anchor — runs first |
+| `unique_local` | Unique & Local | Includes destination-specific workshops |
+| `food` | Food & Drink | Merged from food_drink + food_crawls |
+| `culture` | Culture & History | Museums, heritage, ceremonies |
+| `arts` | Arts & Workshops | Contemporary art, general craft workshops |
+| `outdoor` | Scenic, Nature & Hiking | Merged from nature + hiking; effort on card |
+| `adventure` | Adventure & Adrenaline | Adrenaline activities; separate from outdoor |
+| `shopping` | Shopping & Markets | Retail intent |
+| `nightlife` | Nightlife | After-dark |
+| `day_trips` | Day Trips | Leaving the city |
+| `seasonal` | Seasonal & Time-Bound | Events, festivals, phenomena |
+
+**Removed themes (now card attributes):**
+- `rainy_day` → `weather_sensitivity` field on cards
+- `family` → `suitability_tags: family_friendly` on cards
+- `romantic` → `suitability_tags: romantic` on cards
+
 ## Two-wave generation
 
 **Wave 1 — Signature theme alone:**

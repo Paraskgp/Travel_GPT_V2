@@ -17,14 +17,17 @@ Stores pipeline outputs to disk so that repeat requests for the same destination
 
 ## Cache keys and TTLs
 
-| Key | TTL | Invalidated by |
-|---|---|---|
-| `destination_context` | 180 days | TTL expiry |
-| `weather_{month}` | Permanent (-1) | Never — climate averages don't change |
-| `experiences` | 90 days | TTL expiry |
-| `board_{prompt_hash}` | Permanent (-1) | Prompt file change (hash changes → cache miss) |
+| Key | TTL | Invalidated by | Prompt guard |
+|---|---|---|---|
+| `canonical_name` | Permanent | Never — name is stable | None (correct) |
+| `destination_context` | 180 days | TTL expiry or prompt change | Hash of `destination-context.md` stored in entry; stale if hash differs |
+| `weather_{month}` | Permanent | Prompt change only | Hash of `weather-context.md` stored in entry; stale if hash differs |
+| `search_results_{month}` | 90 days | TTL expiry | None — intentional (Tavily credits are real money; manual clear required) |
+| `experiences_{month}` | 90 days | TTL expiry or prompt change | Hash of extractor + dedup prompts stored in entry; stale if hash differs |
+| `board_{prompt_hash}` | Permanent | Prompt file change (hash in key) | Hash of ALL prompts in key — auto-misses on any change |
 
-The board cache key includes an 8-character hash of all `.md` files in `prompts/`. Any prompt edit changes the hash, which changes the key, which causes a cache miss on the next request. Old board files accumulate until pruned via the cache API.
+**How prompt-hash validation works for non-board stages:**
+Each stage writes its own prompt hash into the cache entry's `prompt_hash` field. On read, `cacheRead` compares the stored hash to the current one. If they differ, the entry is treated as a cache miss and regenerated. If the stored entry has no hash (legacy entries), it is kept — backward compatible.
 
 ## Success criteria
 

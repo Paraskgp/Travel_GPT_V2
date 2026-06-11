@@ -56,10 +56,16 @@ When the scraper IS used:
 
 ## Steps
 
-**Tavily batch search:**
-1. Run all queries in parallel via `Promise.allSettled`
-2. Deduplicate results by URL — first occurrence wins, query name preserved
-3. Failed individual queries are logged and skipped (not fatal)
+**Tavily batch search (with cache):**
+1. Check `search_results` (or `search_results_{month}`) cache — return immediately on hit
+2. On cache miss: run all queries in parallel via `Promise.allSettled`
+3. Deduplicate results by URL — first occurrence wins, query name preserved
+4. Failed individual queries are logged and skipped (not fatal)
+5. Write raw results to cache (7-day TTL) before returning
+
+**Score filter (before extraction):**
+- Discard results with `score < 0.5` — these are low-confidence, noise-heavy
+- Log filtered count: `[search-grounding] score filter: N → M results (K discarded)`
 
 **Selective scraping (per-result, triggered by map phase):**
 1. Called per-result only when: `!result.raw_content && result.score >= 0.7`
@@ -80,7 +86,12 @@ When the scraper IS used:
 
 ## Caching
 
-None at this layer. The experience extraction output is cached — search and scrape are ephemeral inputs.
+| Key | TTL | Invalidation |
+|---|---|---|
+| `search_results` | 90 days | Manual cache clear or TTL expiry |
+| `search_results_{month}` | 90 days | Manual cache clear or TTL expiry |
+
+Stores the full `TavilyResult[]` array including `raw_content`. Re-runs within 90 days (e.g. after a dedup failure, prompt iteration, or board regeneration) skip all Tavily API calls and reuse cached page text. Same TTL as experiences — if experiences are still valid, the source data they came from is equally valid.
 
 ## Failure handling
 
@@ -98,10 +109,15 @@ None at this layer. The experience extraction output is cached — search and sc
 | Readable char ratio guard rejects content with <40% letters/punctuation | Binary guard |
 | Selective scrape: only triggered when `!raw_content && score >= 0.7` | Scraper is selective |
 | Selective scrape: NOT triggered when raw_content is present | Scraper is not blanket |
+| Search results cache hit: Tavily API is not called on re-run within 7 days | Cache hit |
+| Score filter: results with score < 0.5 are excluded before extraction | Score filter |
 
 ## Open technical items
 
 - 8-second timeout per URL — some legitimate slow pages may time out
 - No JS rendering — Yelp, OpenTable, TripAdvisor pages return near-empty HTML (Tavily snippet is the fallback)
 - Score threshold for selective scraping (0.7) is a heuristic — not validated against outcome quality
-- `raw_content` enabled by default in `tavilyBatchSearch` — doubles Tavily token usage; acceptable trade-off since raw_content replaces the blanket scrape
+- Score filter threshold (0.5) is a heuristic — not validated; may need tuning for specific destination types
+- Search results cache stores full raw_content — cache files can be large (10-50MB for busy destinations)
+- `raw_content` enabled by default in `tavilyBatchSearch` — acceptable trade-off since raw_content replaces the blanket scrape
+- [2026-06-01] Added search results cache (7-day TTL) and score filter (≥0.5) to reduce Tavily spend on re-runs

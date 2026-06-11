@@ -1,5 +1,5 @@
 import { callLLM, Provider } from "../llm/client"
-import { cacheRead, cacheWrite, TTL } from "../cache"
+import { cacheRead, cacheWrite, TTL, contextPromptHash } from "../cache"
 import { destinationContextSystemPrompt, destinationContextUserPrompt } from "../claude/prompts"
 import { DestinationContext } from "../types"
 import { parseJSON } from "../utils/parse-json"
@@ -13,7 +13,8 @@ export async function getDestinationContext(
   dest: string,
   provider: Provider = "openai"
 ): Promise<DestinationContext> {
-  const cached = cacheRead<DestinationContext>(dest, "destination_context")
+  const ctxHash = contextPromptHash()
+  const cached = cacheRead<DestinationContext>(dest, "destination_context", ctxHash)
   if (cached) return cached
 
   const raw = await callLLM(
@@ -23,6 +24,6 @@ export async function getDestinationContext(
     "destination_context"
   )
   const ctx = parseJSON<DestinationContext>(raw)
-  cacheWrite(dest, "destination_context", ctx, TTL.DESTINATION_CONTEXT)
+  cacheWrite(dest, "destination_context", ctx, TTL.DESTINATION_CONTEXT, ctxHash)
   return ctx
 }

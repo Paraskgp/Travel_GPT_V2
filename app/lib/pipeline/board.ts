@@ -57,13 +57,9 @@ export async function generateBoard(
   let signatureTheme: Theme | null = null
   if (applicableThemes.includes("signature")) {
     try {
-      const raw = await callLLM(
-        sysPrompt,
-        themeUserPrompt("signature", dest, destCtx, weatherCtx, prefs, undefined, groundedInput),
-        provider,
-        "board_generation"
+      signatureTheme = await callThemeWithRetry(
+        "signature", dest, destCtx, weatherCtx, prefs, sysPrompt, undefined, groundedInput, provider
       )
-      signatureTheme = parseJSON<Theme>(raw)
     } catch (err) {
       console.warn("[pipeline/board] signature theme failed:", err)
     }
@@ -78,12 +74,9 @@ export async function generateBoard(
   const remainingThemes = applicableThemes.filter(id => id !== "signature")
   const wave2Results = await Promise.allSettled(
     remainingThemes.map(themeId =>
-      callLLM(
-        sysPrompt,
-        themeUserPrompt(themeId, dest, destCtx, weatherCtx, prefs, usedExperiences, groundedInput),
-        provider,
-        "board_generation"
-      ).then(raw => parseJSON<Theme>(raw))
+      callThemeWithRetry(
+        themeId, dest, destCtx, weatherCtx, prefs, sysPrompt, usedExperiences, groundedInput, provider
+      )
     )
   )
 
@@ -249,21 +242,54 @@ function resolveIsArea(
   return types.some(t => GOOGLE_AREA_TYPES.has(t))
 }
 
+/**
+ * Call the LLM for a single theme and parse the JSON response.
+ * Retries once on JSON parse failure — LLMs occasionally emit unescaped quotes
+ * or truncated output, and a second attempt almost always succeeds.
+ * Always stamps theme.id with the canonical themeId so callers never see LLM-invented IDs.
+ */
+async function callThemeWithRetry(
+  themeId: string,
+  dest: string,
+  destCtx: DestinationContext,
+  weatherCtx: WeatherContext | null,
+  prefs: Preferences,
+  sysPrompt: string,
+  usedExperiences: { name: string; location_hint: string | null }[] | undefined,
+  groundedInput: GroundedExperience[] | undefined,
+  provider: Provider
+): Promise<Theme> {
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {
+      const raw = await callLLM(
+        sysPrompt,
+        themeUserPrompt(themeId, dest, destCtx, weatherCtx, prefs, usedExperiences, groundedInput),
+        provider,
+        "board_generation"
+      )
+      const theme = parseJSON<Theme>(raw)
+      return { ...theme, id: themeId }
+    } catch (err) {
+      if (attempt === 0) {
+        console.warn(`[pipeline/board] theme "${themeId}" parse failed, retrying once...`)
+        continue
+      }
+      throw err
+    }
+  }
+  throw new Error("unreachable")
+}
+
 const THEME_NAMES: Record<string, string> = {
   signature:    "Signature Experiences",
   unique_local: "Unique & Local",
-  food_drink:   "Food & Drink",
-  food_crawls:  "Food Crawls, Markets & Neighborhoods",
-  adventure:    "Adventure",
-  nature:       "Nature & Scenic",
-  hiking:       "Hiking & Outdoors",
+  food:         "Food & Drink",
+  adventure:    "Adventure & Adrenaline",
+  outdoor:      "Scenic, Nature & Hiking",
   culture:      "Culture & History",
   arts:         "Arts & Workshops",
-  family:       "Family-Friendly",
-  romantic:     "Romantic & Special Occasion",
-  rainy_day:    "Rainy Day",
-  nightlife:    "Nightlife",
   shopping:     "Shopping & Markets",
+  nightlife:    "Nightlife",
   day_trips:    "Day Trips",
   seasonal:     "Seasonal & Time-Bound",
 }

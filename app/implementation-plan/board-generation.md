@@ -26,6 +26,14 @@ interface Theme {
 // Board is universal — same board for all party types
 ```
 
+## Theme registry
+
+11 themes: `signature`, `unique_local`, `food`, `culture`, `arts`, `outdoor`, `adventure`, `shopping`, `nightlife`, `day_trips`, `seasonal`
+
+Removed as themes (now card-level attributes): `rainy_day` → `weather_sensitivity`, `family` → `suitability_tags: family_friendly`, `romantic` → `suitability_tags: romantic`
+
+Merged: `food_drink` + `food_crawls` → `food` | `nature` + `hiking` → `outdoor`
+
 ## Steps
 
 1. `cacheRead(dest, boardCacheKey())` — return `cached.themes` if present

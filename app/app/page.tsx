@@ -142,21 +142,7 @@ export default function Home() {
       setStayArea(defaultStayArea)
       setStayAreaChanged(false)
 
-      // Step 2: auto-plan if dates provided
-      if (dates) {
-        setLoadingPhase('plan')
-        setPlanLoading(true)
-        try {
-          const plan = await callPlan(generatedBoard, dates, [], [], defaultStayArea)
-          setItinerary(plan)
-        } catch (planErr) {
-          console.error('Auto-plan failed:', planErr)
-          setPlanError(planErr instanceof Error ? planErr.message : 'Failed to build itinerary')
-        } finally {
-          setPlanLoading(false)
-        }
-      }
-
+      // Board is ready — show it immediately. Itinerary is on-demand via the CTA button.
       setStage('board')
       setTab('experiences')
 
@@ -273,12 +259,7 @@ export default function Home() {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center bg-stone-50 gap-4">
         <div className="w-8 h-8 border-2 border-stone-300 border-t-stone-700 rounded-full animate-spin" />
-        <p className="text-sm text-stone-400">
-          {loadingPhase === 'plan' ? 'Planning your itinerary…' : 'Building your board…'}
-        </p>
-        {loadingPhase === 'plan' && (
-          <p className="text-xs text-stone-300">Board ready · scheduling days now</p>
-        )}
+        <p className="text-sm text-stone-400">Building your board…</p>
       </div>
     )
   }
@@ -330,10 +311,9 @@ export default function Home() {
 
         {board && tab === 'experiences' && (
           <div className="p-4 space-y-6">
-            {/* Itinerary section at top */}
-            {tripDates?.startDate && (
+            {/* Itinerary section — shown after user clicks Plan */}
+            {tripDates?.startDate && itinerary && (
               <div>
-                {/* Assumptions bar */}
                 {stayArea && (
                   <div className="mb-4">
                     <AssumptionsBar
@@ -344,45 +324,43 @@ export default function Home() {
                     />
                   </div>
                 )}
-
                 <div className="flex items-center justify-between mb-3">
                   <h2 className="text-sm font-semibold text-stone-900">Your Itinerary</h2>
-                  {itinerary && (
-                    <button
-                      onClick={handleReplan}
-                      disabled={planLoading}
-                      className={`text-xs px-3 py-1.5 rounded-lg font-medium transition-colors disabled:opacity-40 ${
-                        hasPendingChanges
-                          ? 'bg-stone-900 text-white hover:bg-stone-700'
-                          : 'border border-stone-300 text-stone-600 hover:border-stone-500'
-                      }`}
-                    >
-                      {planLoading ? 'Replanning…' : hasPendingChanges ? 'Replan with changes →' : 'Regenerate'}
-                    </button>
-                  )}
+                  <button
+                    onClick={handleReplan}
+                    disabled={planLoading}
+                    className={`text-xs px-3 py-1.5 rounded-lg font-medium transition-colors disabled:opacity-40 ${
+                      hasPendingChanges
+                        ? 'bg-stone-900 text-white hover:bg-stone-700'
+                        : 'border border-stone-300 text-stone-600 hover:border-stone-500'
+                    }`}
+                  >
+                    {planLoading ? 'Replanning…' : hasPendingChanges ? 'Replan with changes →' : 'Regenerate'}
+                  </button>
                 </div>
-                {planError && !itinerary && (
-                  <div className="rounded-lg border border-red-200 bg-red-50 px-4 py-3 flex items-center justify-between gap-4">
-                    <p className="text-xs text-red-600">{planError}</p>
-                    <button
-                      onClick={handleReplan}
-                      disabled={planLoading}
-                      className="text-xs px-3 py-1.5 bg-red-600 text-white rounded hover:bg-red-700 transition-colors disabled:opacity-40 shrink-0"
-                    >
-                      {planLoading ? 'Retrying…' : 'Try again'}
-                    </button>
-                  </div>
-                )}
-                <ItineraryView
-                  itinerary={itinerary}
-                  loading={planLoading && !itinerary}
-                />
+                <ItineraryView itinerary={itinerary} loading={false} />
+                <div className="border-t border-stone-200 mt-6" />
               </div>
             )}
 
-            {/* Divider */}
-            {tripDates?.startDate && itinerary && (
-              <div className="border-t border-stone-200" />
+            {/* Plan CTA — top (shown when dates set and no itinerary yet) */}
+            {tripDates?.startDate && !itinerary && (
+              <div className="flex flex-col items-center gap-2 py-2">
+                <button
+                  onClick={handleReplan}
+                  disabled={planLoading}
+                  className="w-full max-w-xs py-3 bg-stone-900 text-white text-sm font-medium rounded-xl hover:bg-stone-700 transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
+                >
+                  {planLoading
+                    ? <><span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />Planning your trip…</>
+                    : 'Plan my itinerary →'
+                  }
+                </button>
+                {planError && (
+                  <p className="text-xs text-red-500 text-center">{planError}</p>
+                )}
+                <p className="text-xs text-stone-400">Browse the board below, then let AI build your day-by-day plan</p>
+              </div>
             )}
 
             {/* Board — all themes with include/skip status */}
@@ -403,6 +381,25 @@ export default function Home() {
                 />
               ))}
             </div>
+
+            {/* Plan CTA — bottom */}
+            {tripDates?.startDate && !itinerary && (
+              <div className="flex flex-col items-center gap-2 pt-4 pb-8">
+                <button
+                  onClick={handleReplan}
+                  disabled={planLoading}
+                  className="w-full max-w-xs py-3 bg-stone-900 text-white text-sm font-medium rounded-xl hover:bg-stone-700 transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
+                >
+                  {planLoading
+                    ? <><span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />Planning your trip…</>
+                    : 'Plan my itinerary →'
+                  }
+                </button>
+                {planError && (
+                  <p className="text-xs text-red-500 text-center">{planError}</p>
+                )}
+              </div>
+            )}
           </div>
         )}
 

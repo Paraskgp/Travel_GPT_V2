@@ -29,25 +29,40 @@ const MODELS: Record<Provider, string> = {
   gemini:    "gemini-2.5-flash",
 }
 
+// gpt-4o-mini: $0.15/1M input — comparable to Gemini 2.5 Flash for mechanical tasks
+const CHEAP_MODEL = "gpt-4o-mini"
+
+// Stages that don't need the quality model — fast, high-volume, mechanical tasks
+const CHEAP_STAGES: Stage[] = [
+  "destination_normalization", "query_generator", "experience_extractor",
+  "experience_dedup", "tip_enhancement", "weather_context", "destination_context",
+]
+
+// ── Stage → model resolution ──────────────────────────────────────────────────
+//
+// Returns gpt-4o-mini for cheap stages when provider is OpenAI, MODELS[provider] otherwise.
+//
+function resolveModel(provider: Provider, stage?: Stage): string {
+  if (provider === "openai" && stage && CHEAP_STAGES.includes(stage)) return CHEAP_MODEL
+  return MODELS[provider]
+}
+
 // ── Stage → provider routing ───────────────────────────────────────────────────
 //
-// Cheap stages (query gen, extractor, tips) → Gemini 2.5 Flash
-//   - $0.10/1M input vs $2.50/1M for GPT-4o (25× cheaper)
-//   - 1M context window — ideal for experience extractor with many scraped pages
-//   - No quality difference visible in the product for these stages
+// Cheap stages → gpt-4o-mini (OpenAI) if OPENAI_API_KEY is set
+//   - $0.15/1M input vs $2.50/1M for GPT-4o (16× cheaper for cheap stages)
+//   - Falls back to Gemini 2.5 Flash if no OpenAI key
 //
 // Board generation → GPT-4o (default) or Claude
-//   - This is what users see. DeepSeek V3 / Gemini 2.5 Flash Pro are candidates
-//     once validated via eval-board.ts head-to-head. See PRODUCT_SPEC.md open items.
-//
-// Falls back to the explicitly passed provider if no stage routing applies.
+//   - This is what users see. Quality model stays on the passed provider.
 //
 function resolveProvider(provider: Provider, stage?: Stage): Provider {
   if (!stage || stage === "default") return provider
 
-  // Cheap stages: use Gemini if key is available, otherwise fall back to passed provider
-  const cheapStages: Stage[] = ["destination_normalization", "query_generator", "experience_extractor", "experience_dedup", "tip_enhancement", "weather_context", "destination_context"]
-  if (cheapStages.includes(stage) && GOOGLE_AI_API_KEY) return "gemini"
+  if (CHEAP_STAGES.includes(stage)) {
+    if (OPENAI_API_KEY) return "openai"
+    if (GOOGLE_AI_API_KEY) return "gemini"
+  }
 
   return provider
 }
@@ -105,7 +120,7 @@ export async function callLLM(
   stage?: Stage
 ): Promise<string> {
   const resolvedProvider = resolveProvider(provider, stage)
-  const model = MODELS[resolvedProvider]
+  const model = resolveModel(resolvedProvider, stage)
   const maxTokens = resolveMaxTokens(resolvedProvider, stage)
 
   // ── OpenAI ──────────────────────────────────────────────────────────────────
@@ -153,8 +168,9 @@ export async function callLLM(
     // Per-call timeout: Gemini API occasionally hangs (no response, no 429).
     // Without a timeout, the OpenAI SDK default (600s) lets one hung call hold
     // an entire batch of 20 concurrent map-phase extractors for 10 minutes.
-    // 90s is ample for any legitimate Gemini response (even dedup with heavy thinking).
-    const GEMINI_TIMEOUT_MS = 90_000
+    // Dedup chunks (350 candidates) trigger Gemini 2.5 Flash extended thinking and
+    // routinely exceed 90s. Give dedup 5 minutes; cap extractors at 90s.
+    const GEMINI_TIMEOUT_MS = stage === "experience_dedup" ? 300_000 : 90_000
     let lastError: unknown
 
     for (let attempt = 0; attempt < MAX_RETRIES; attempt++) {
@@ -179,7 +195,8 @@ export async function callLLM(
         lastError = err
         // Gemini 429s look like OpenAI 429s through the compat layer
         const isRateLimit = err instanceof OpenAI.APIError && err.status === 429
-        if (!isRateLimit || attempt === MAX_RETRIES - 1) throw err
+        if (!isRateLimit) throw err
+        if (attempt === MAX_RETRIES - 1) throw err
         const waitMs = parseRetryAfter(err instanceof OpenAI.APIError ? (err.message ?? "") : "")
         console.warn(`[callLLM] Gemini 429 rate limit — waiting ${waitMs}ms before retry ${attempt + 1}/${MAX_RETRIES - 1}`)
         await sleep(waitMs)

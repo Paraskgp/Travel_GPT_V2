@@ -40,6 +40,8 @@ export type CacheKey =
   | "canonical_name"                // raw input → canonical destination name
   | "destination_context"
   | `weather_${string}`             // e.g. "weather_november"
+  | "search_results"                // raw Tavily results (no travel month)
+  | `search_results_${string}`      // e.g. "search_results_september" — month-scoped
   | "experiences"                   // search-grounded experience list (no travel month)
   | `experiences_${string}`         // e.g. "experiences_september" — month-scoped with event queries
   | `board_${string}`               // e.g. "board_abc123de" (prompt hash suffix)
@@ -95,12 +97,53 @@ export function boardCacheKey(): `board_${string}` {
   return `board_${promptHash()}`
 }
 
+// ─── Per-stage prompt hashes ──────────────────────────────────────────────────
+// Each pipeline stage hashes only its own prompt files so that changing an
+// unrelated prompt does not invalidate unrelated caches.
+
+const _stageHashCache = new Map<string, string>()
+
+/** MD5 of specific prompt files (relative to prompts/). Memoized per file set. */
+function stageHash(files: string[]): string {
+  const key = files.slice().sort().join("|")
+  const cached = _stageHashCache.get(key)
+  if (cached) return cached
+
+  const hash = crypto.createHash("md5")
+  for (const file of files.slice().sort()) {
+    const fullPath = path.join(PROMPTS_DIR, file)
+    if (fs.existsSync(fullPath)) {
+      hash.update(file)
+      hash.update(fs.readFileSync(fullPath))
+    }
+  }
+  const result = hash.digest("hex").slice(0, 8)
+  _stageHashCache.set(key, result)
+  return result
+}
+
+/** Hash of the destination-context prompt. Invalidates destination_context cache when the prompt changes. */
+export function contextPromptHash(): string {
+  return stageHash(["destination-context.md"])
+}
+
+/** Hash of the weather-context prompt. Invalidates weather_{month} cache when the prompt changes. */
+export function weatherPromptHash(): string {
+  return stageHash(["weather-context.md"])
+}
+
+/** Hash of the experience extractor + dedup prompts. Invalidates experiences cache when either prompt changes. */
+export function experiencesPromptHash(): string {
+  return stageHash(["experience-extractor-page.md", "experience-dedup.md"])
+}
+
 // ─── TTL constants (days) ─────────────────────────────────────────────────────
 
 export const TTL = {
   CANONICAL_NAME: -1,        // canonical names never change — permanent
   DESTINATION_CONTEXT: 180,  // spirit of a place is stable
   WEATHER: -1,               // climate averages never change — permanent
+  SEARCH_RESULTS: 90,        // raw Tavily results — re-run within 90 days costs 0 Tavily credits
   EXPERIENCES: 90,           // trails/restaurants change over months
   BOARD: -1,                 // no TTL — invalidated only by prompt hash change
 } as const
@@ -116,8 +159,14 @@ function ensureDir(slug: string) {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true })
 }
 
-/** Read a cache entry. Returns null on miss, expired TTL, or read error. */
-export function cacheRead<T>(destination: string, key: CacheKey): T | null {
+/**
+ * Read a cache entry. Returns null on miss, expired TTL, stale prompt hash, or read error.
+ *
+ * @param expectedHash - When provided, the entry is rejected if it has a stored prompt_hash
+ *   that differs from expectedHash. Entries with no stored hash are kept (backward compatible).
+ *   Pass the result of contextPromptHash() / weatherPromptHash() / experiencesPromptHash().
+ */
+export function cacheRead<T>(destination: string, key: CacheKey, expectedHash?: string): T | null {
   const slug = destinationSlug(destination)
   const filePath = entryPath(slug, key)
 
@@ -133,6 +182,13 @@ export function cacheRead<T>(destination: string, key: CacheKey): T | null {
         console.log(`[cache] EXPIRED  ${slug}/${key} (age: ${ageDays.toFixed(1)}d, ttl: ${entry.ttl_days}d)`)
         return null
       }
+    }
+
+    // Prompt hash validation — only reject if BOTH hashes are present AND differ.
+    // Entries without a stored hash are kept (backward compatible).
+    if (expectedHash && entry.prompt_hash && entry.prompt_hash !== expectedHash) {
+      console.log(`[cache] STALE    ${slug}/${key} (prompt changed: ${entry.prompt_hash} → ${expectedHash})`)
+      return null
     }
 
     console.log(`[cache] HIT      ${slug}/${key}`)

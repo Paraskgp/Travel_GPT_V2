@@ -1,5 +1,5 @@
 import { callLLM, Provider } from "../llm/client"
-import { cacheRead, cacheWrite, TTL, CacheKey } from "../cache"
+import { cacheRead, cacheWrite, TTL, CacheKey, experiencesPromptHash } from "../cache"
 import {
   queryGeneratorSystemPrompt, queryGeneratorUserPrompt,
   extractFromPageSystemPrompt, extractFromPageUserPrompt,
@@ -10,18 +10,37 @@ import { tavilyBatchSearch, TavilyResult } from "../tavily/client"
 import { scrapeUrl } from "../scraper/client"
 import { parseJSON } from "../utils/parse-json"
 
-// ─── Concurrency limit ────────────────────────────────────────────────────────
-// Cap parallel Gemini calls in the map phase to avoid rate limits.
-// 83 simultaneous calls would saturate the Gemini free-tier RPM limit.
-const MAP_CONCURRENCY = 20
+// ─── Concurrency and rate limiting ───────────────────────────────────────────
+//
+// MAP_CONCURRENCY: parallel Gemini calls per batch.
+//   Free-tier Gemini 2.5 Flash: ~10 RPM. With concurrency=20 and no delay, 131 pages
+//   exhaust the entire quota during the map phase — leaving nothing for the dedup phase,
+//   which then fails immediately with 429. Lowered to 5 to stay well within the limit.
+//
+// MAP_BATCH_DELAY_MS: pause between map phase batches.
+//   5s delay spreads 131 calls over ~14 minutes rather than ~6 minutes. At paid Gemini
+//   tier (1000 RPM) the delay still fires but 429s never occur, so wall-clock time is
+//   dominated by response latency regardless.
+//
+// DEDUP_CHUNK_DELAY_MS: pause between sequential dedup chunk calls.
+//   Dedup chunks now run sequentially (not in parallel) so failures in one chunk
+//   don't compound with simultaneous quota pressure from another.
+//
+const MAP_CONCURRENCY      = 20
+const MAP_BATCH_DELAY_MS   = 0
+const DEDUP_CHUNK_DELAY_MS = 0
+
+const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms))
 
 async function runWithConcurrency<T, R>(
   items: T[],
   concurrency: number,
-  fn: (item: T) => Promise<R>
+  fn: (item: T) => Promise<R>,
+  batchDelayMs = 0
 ): Promise<PromiseSettledResult<R>[]> {
   const results: PromiseSettledResult<R>[] = []
   for (let i = 0; i < items.length; i += concurrency) {
+    if (i > 0 && batchDelayMs > 0) await sleep(batchDelayMs)
     const batch = items.slice(i, i + concurrency)
     const batchResults = await Promise.allSettled(batch.map(fn))
     results.push(...batchResults)
@@ -304,15 +323,35 @@ export async function dedupExperiences(
     }
     console.log(`[dedupExperiences] chunks done: ${combined.length} combined (${failures} failed) — final merge pass...`)
 
-    // Final pass: one LLM call over combined chunk outputs.
-    // Combined is much smaller: ~200 per chunk × N chunks.
-    const finalRaw = await callLLM(
-      dedupSystemPrompt(),
-      dedupUserPrompt(combined, dest),
-      provider,
-      "experience_dedup"
-    )
-    merged = parseJSON<DedupSlim[]>(finalRaw)
+    // Final pass: dedup across chunk boundaries (catches semantic duplicates that
+    // landed in different chunks). If combined is still large, chunk it again.
+    if (combined.length <= DEDUP_CHUNK_SIZE) {
+      const finalRaw = await callLLM(
+        dedupSystemPrompt(),
+        dedupUserPrompt(combined, dest),
+        provider,
+        "experience_dedup"
+      )
+      merged = parseJSON<DedupSlim[]>(finalRaw)
+    } else {
+      // Too big for one call — do a second chunked pass
+      const mergeChunks = chunkArray(combined, DEDUP_CHUNK_SIZE)
+      console.log(`[dedupExperiences] final merge: ${combined.length} → ${mergeChunks.length} sub-chunks`)
+      const mergeSettled = await Promise.allSettled(
+        mergeChunks.map((chunk, i) =>
+          dedupChunk(chunk, dest, provider).then(r => {
+            console.log(`[dedupExperiences] merge chunk ${i + 1}/${mergeChunks.length}: ${chunk.length} → ${r.length}`)
+            return r
+          })
+        )
+      )
+      const mergePass2: DedupSlim[] = []
+      for (const r of mergeSettled) {
+        if (r.status === "fulfilled") mergePass2.push(...r.value)
+        else console.warn(`[dedupExperiences] merge chunk failed: ${r.reason}`)
+      }
+      merged = mergePass2
+    }
     console.log(`[dedupExperiences] final merge: ${combined.length} → ${merged.length}`)
   }
 
@@ -359,7 +398,8 @@ export async function getExperiences(
     ? `experiences_${travelMonth.toLowerCase().replace(/\s+/g, "_")}` as `experiences_${string}`
     : "experiences"
 
-  const cached = cacheRead<GroundedExperience[]>(dest, cacheKey)
+  const expHash = experiencesPromptHash()
+  const cached = cacheRead<GroundedExperience[]>(dest, cacheKey, expHash)
   if (cached) {
     console.log(`[pipeline/experiences] cache HIT — ${cached.length} experiences`)
     return cached
@@ -370,14 +410,36 @@ export async function getExperiences(
     const queries = await generateQueries(dest, destCtx.applicable_themes, travelMonth, provider)
     console.log(`[pipeline/experiences] ${queries.length} queries generated`)
 
-    // Stage 2: search
-    const searchResults = await tavilyBatchSearch(queries, 3, true)
-    console.log(`[pipeline/experiences] ${searchResults.length} URLs from Tavily`)
+    // Stage 2: search (with cache — re-runs within 7 days spend 0 Tavily credits)
+    // Cache key mirrors the experiences key so month-scoped runs stay scoped.
+    const searchCacheKey: CacheKey = travelMonth
+      ? `search_results_${travelMonth.toLowerCase().replace(/\s+/g, "_")}` as `search_results_${string}`
+      : "search_results"
+
+    let searchResults = cacheRead<ReturnType<typeof tavilyBatchSearch> extends Promise<infer T> ? T : never>(dest, searchCacheKey)
+    if (searchResults) {
+      console.log(`[pipeline/experiences] search cache HIT — ${searchResults.length} URLs (0 Tavily credits)`)
+    } else {
+      searchResults = await tavilyBatchSearch(queries, 3, true)
+      console.log(`[pipeline/experiences] ${searchResults.length} URLs from Tavily`)
+      cacheWrite(dest, searchCacheKey, searchResults, TTL.SEARCH_RESULTS)
+    }
+
     if (searchResults.length === 0) return []
 
-    // Stage 3: map — extract from each page in parallel (capped concurrency)
-    console.log(`[pipeline/experiences] map: extracting from ${searchResults.length} pages (${MAP_CONCURRENCY} at a time)...`)
-    const settled = await runWithConcurrency(searchResults, MAP_CONCURRENCY, r => extractFromPage(r, dest, provider))
+    // Stage 2b: score filter — discard low-confidence results before extraction
+    // Tavily scores: 0.8+ = high confidence, 0.5–0.8 = moderate, <0.5 = noise.
+    // Threshold 0.5 removes ~20–30% of URLs with minimal loss of real experiences.
+    const SCORE_THRESHOLD = 0.5
+    const filtered = searchResults.filter(r => (r.score ?? 0) >= SCORE_THRESHOLD)
+    if (filtered.length < searchResults.length) {
+      console.log(`[pipeline/experiences] score filter: ${searchResults.length} → ${filtered.length} URLs (${searchResults.length - filtered.length} below ${SCORE_THRESHOLD} discarded)`)
+    }
+    if (filtered.length === 0) return []
+
+    // Stage 3: map — extract from each page in parallel (capped concurrency + inter-batch delay)
+    console.log(`[pipeline/experiences] map: extracting from ${filtered.length} pages (${MAP_CONCURRENCY} at a time, ${MAP_BATCH_DELAY_MS}ms between batches)...`)
+    const settled = await runWithConcurrency(filtered, MAP_CONCURRENCY, r => extractFromPage(r, dest, provider), MAP_BATCH_DELAY_MS)
 
     const candidates: RawExperience[] = []
     let mapSuccesses = 0
@@ -399,7 +461,7 @@ export async function getExperiences(
     const experiences = await dedupExperiences(candidates, dest, provider)
     console.log(`[pipeline/experiences] ${experiences.length} experiences after dedup`)
 
-    cacheWrite(dest, cacheKey, experiences, TTL.EXPERIENCES)
+    cacheWrite(dest, cacheKey, experiences, TTL.EXPERIENCES, expHash)
     return experiences
   } catch (err) {
     const msg = err instanceof Error ? err.message : String(err)

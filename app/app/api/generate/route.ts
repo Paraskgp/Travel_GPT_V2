@@ -24,7 +24,7 @@ function boardPrefs(prefs: Preferences): Preferences {
 export async function POST(
   req: NextRequest
 ): Promise<NextResponse<GenerateResponse | ErrorResponse>> {
-  let body: GenerateRequest & { provider?: Provider }
+  let body: GenerateRequest & { provider?: string }
 
   try {
     body = await req.json()
@@ -32,7 +32,9 @@ export async function POST(
     return NextResponse.json({ error: "Invalid JSON body" }, { status: 400 })
   }
 
-  const { destination, month, dates, start_date, end_date, preferences, provider = "openai" } = body
+  const { destination, month, dates, start_date, end_date, preferences, provider: rawProvider = "openai" } = body
+  // Normalize provider alias: "claude" is an alias for "anthropic"
+  const provider: Provider = (rawProvider as string) === "claude" ? "anthropic" : (rawProvider as Provider)
 
   if (!destination?.trim()) {
     return NextResponse.json({ error: "destination is required" }, { status: 400 })

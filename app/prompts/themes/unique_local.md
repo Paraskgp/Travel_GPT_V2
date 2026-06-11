@@ -9,6 +9,7 @@ Surface experiences that a traveler is unlikely to find on their own — things 
 - Neighborhood rituals, small producers, local institutions, community events
 - The kind of thing a well-connected local friend would tell you — not TripAdvisor's top 10
 - Experiences where the value is specifically in knowing about them
+- **Destination-specific hands-on workshops** — experiences where the craft is inseparable from this exact place: perfume creation in Paris, miso or sake brewing in a traditional Kyoto kura, woodblock printing in Tokyo's Asakusa, natural indigo dyeing in Tokushima, Nishijin textile weaving in Kyoto. These carry a memory and authenticity angle that makes them worth seeking out. The test: could this workshop exist in the same form in another city? If yes, it goes in `arts`. If this specific place, tradition, or material is the point, it belongs here.
 
 ## What does NOT belong here
 - Famous, well-marketed tourist experiences (those belong in signature or their specific theme)

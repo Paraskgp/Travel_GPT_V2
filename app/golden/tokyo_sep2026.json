@@ -37,9 +37,9 @@
         "Neo-Tokyo Virtual Experience Center"
       ],
       "required_effort_levels": {
-        "day_trips": ["light", "moderate"],
-        "food_drink": ["light"],
-        "culture": ["light", "moderate"]
+        "day_trips": ["easy", "moderate"],
+        "food_drink": ["easy"],
+        "culture": ["easy", "moderate"]
       },
       "notes": {
         "day_trips": "Must include Mount Fuji as a standalone card — not collapsed into Hakone. Hakone may also appear as a separate card (it is a distinct destination). A traveler who visited Hakone did not summit or experience Mount Fuji.",

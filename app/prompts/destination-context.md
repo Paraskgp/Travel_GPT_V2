@@ -52,11 +52,28 @@ List of theme IDs from this approved set that genuinely apply to this destinatio
 
 **`seasonal` is required for any destination with recurring seasonal events** — festivals, sporting tournaments (sumo basho, Carnival, marathons), natural phenomena (cherry blossoms, whale migration, northern lights), or major annual gatherings. If must_cover contains any time-sensitive experience, `seasonal` must appear in applicable_themes. The theme covers the destination's full seasonal calendar — it is not about one specific travel month.
 
-A destination with a nightlife scene gets `nightlife` even if the traveler is not a party person. A food-rich city gets `food_drink` and `food_crawls` regardless of dietary preferences. Preferences affect how experiences are ranked within a theme — they never determine whether a theme appears at all.
+A destination with a nightlife scene gets `nightlife` even if the traveler is not a party person. A food-rich city gets `food` regardless of dietary preferences. Preferences affect how experiences are ranked within a theme — they never determine whether a theme appears at all.
 
-Only exclude a theme if the destination genuinely has nothing meaningful to offer in that category. Do not force-fit.
+**Bias strongly toward inclusion.** The bar for exclusion is high: a theme is excluded only when the destination genuinely cannot fill 4–5 cards in that category. When in doubt, include it.
 
-Approved theme IDs: signature, unique_local, food_drink, food_crawls, adventure, nature, hiking, culture, arts, family, romantic, rainy_day, nightlife, shopping, day_trips, seasonal
+**Theme-by-theme inclusion logic:**
+- `day_trips` — include if there is any well-known destination reachable as a day trip. Almost every major city, coastal town, and national park qualifies. Tokyo → Nikko, Hakone. Paris → Versailles, Loire Valley. Zion → Bryce Canyon, Grand Canyon. Omitting `day_trips` for a destination with famous nearby excursions is always wrong.
+- `unique_local` — include for any destination with distinct neighborhoods, local institutions, or experiences that are not the first page of Google results. The threshold is low. Nearly every destination qualifies.
+- `outdoor` — include for any destination with parks, coastline, mountains, viewpoints, trails, gardens, or scenic drives within reach. Not only wilderness destinations — city parks and urban green spaces qualify.
+- `arts` — include for any destination with galleries, museums, performance venues, craft studios, or public art scenes. Most cities qualify.
+- `adventure` — include if the destination has at least one adrenaline activity available (surfing, canyoneering, rafting, zip-lining, rock climbing). Coastal and mountain destinations almost always qualify.
+- `culture` — include for any destination with historic sites, temples, monuments, traditional practices, or a distinct cultural identity. Almost universal.
+- `shopping` — include for any destination with markets, distinct retail districts, or craft goods specific to the place.
+- `seasonal` — required when there are major recurring events, festivals, or natural phenomena (see above).
+
+Approved theme IDs: signature, unique_local, food, adventure, outdoor, culture, arts, shopping, nightlife, day_trips, seasonal
+
+Notes on the theme list:
+- `food` covers everything food and drink — iconic dishes, markets, crawl routes, culinary neighborhoods, food-adjacent workshops
+- `outdoor` covers everything from drive-to viewpoints and easy boardwalks through strenuous summit hikes — effort is on the card, not the theme
+- `adventure` is for adrenaline activities only (surfing, climbing, rafting, paragliding) — distinct from outdoor
+- `unique_local` includes destination-specific hands-on workshops (perfume in Paris, miso brewing in Kyoto) where the craft is inseparable from the place
+- Family-friendliness, romantic suitability, and rainy-day fitness are card-level attributes (`suitability_tags`, `weather_sensitivity`) — not separate themes
 
 ### must_cover
 Exactly 10 named experiences that every serious travel guide to this destination covers. These are the experiences whose absence a senior editor would immediately notice. They become required anchors — any board generated for this destination must include a card for each, or flag the omission.

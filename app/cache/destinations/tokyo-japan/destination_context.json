@@ -1,60 +1,58 @@
 {
   "data": {
     "destination": "Tokyo, Japan",
-    "soul": "Tokyo is a city that pulses with a restless, ever-evolving energy, yet remains deeply anchored in a profound respect for tradition and order. It’s a place where ancient shrines stand in the shadow of dazzling neon skyscrapers, and where the relentless march of technological innovation exists in seamless harmony with centuries-old artisanal crafts. This isn't just a clash of old and new, but a paradoxical integration that defines its unique character. The city's efficiency, cleanliness, and polite quietude belie an astounding depth of subcultures, from high fashion to manga, from Michelin-starred kaiseki to humble ramen stalls, each thriving in its own dedicated corner.\n\nWhat draws people back, time and again, is this endless capacity for discovery. Tokyo never reveals all its secrets on a single visit; it demands exploration, rewarding curiosity with unexpected delights around every corner. It's a city of quiet precision and boisterous celebration, of profound calm and exhilarating pace, where every meal is an event, every street a stage, and every moment a testament to a culture that values both radical reinvention and steadfast heritage. It doesn't just embrace the future; it creates it, while never forgetting its past.",
+    "soul": "Tokyo is a city of contrasts, a sprawling metropolis where the ultra-modern brushes shoulders with the deeply traditional on every street corner. This is where neon signs light up ancient shrines, where high-tech skyscrapers tower over peaceful gardens, and where the rhythm of the city pulses in electric bursts of energy. It’s a place that never truly sleeps, yet holds a tranquil pulse in its quiet temples and serene parks, inviting visitors to explore its myriad layers. Underneath the bright lights of Shibuya and the bustling markets of Tsukiji lies a rich cultural tapestry; locals honor their history through rituals, traditional arts, and a profound respect for nature, even in this concrete jungle.",
     "defining_pillars": [
-      "Unparalleled culinary diversity and excellence",
-      "Seamless blend of ancient tradition and futuristic innovation",
-      "Hyper-efficient and punctual public transport",
-      "Distinctive fashion and vibrant subculture scenes",
-      "Impeccable service and deep-rooted politeness",
-      "Architectural marvels and dazzling urban landscapes"
+      "Sushi at the Tsukiji Outer Market",
+      "Shinjuku's neon nightlife and karaoke culture",
+      "Ancient Senso-ji Temple in Asakusa",
+      "Parks like Ueno and Shinjuku Gyoen with seasonal blooms",
+      "Unique subcultures in Harajuku",
+      "The quiet elegance of traditional tea ceremonies"
     ],
     "best_for": [
-      "Food obsessives seeking culinary perfection at all price points",
-      "Urban explorers who thrive in dense, multi-layered cities",
-      "Culture hounds interested in unique subcultures and historical traditions",
-      "Shoppers looking for cutting-edge fashion and niche specialty goods",
-      "Design enthusiasts and contemporary art admirers",
-      "Travelers seeking safety, cleanliness, and highly efficient infrastructure"
+      "Culinary enthusiasts exploring world-renowned sushi and ramen",
+      "Urban explorers interested in experiencing diverse neighborhoods",
+      "History buffs captivated by ancient practices and architecture",
+      "Pop culture fans eager to immerse in anime and manga scenes",
+      "Night owls eager to experience Tokyo's late-night entertainment"
     ],
     "honest_notes": [
-      "Public transport is excellent but can be overwhelming; prepare for crowded trains, especially during rush hour.",
-      "English proficiency varies widely; having a translation app or basic Japanese phrases is highly recommended.",
-      "Tokyo is vast and spread out; expect significant travel time between different neighborhoods.",
-      "While safe, be mindful of specific cultural norms and etiquette, especially regarding noise and public behavior.",
-      "Many popular attractions, especially gardens and traditional sites, close relatively early in the evening."
+      "Tokyo's vast size can be overwhelming; familiarize yourself with the neighborhoods to navigate effectively.",
+      "English signage is common in most tourist areas, but it may be limited in less touristy spots.",
+      "Public transportation is efficient, but rush hour can be packed, so be prepared for crowded trains.",
+      "While Tokyo offers many experiences, some attractions may require advanced reservations.",
+      "The cost of living and dining can be high in major districts; budget accordingly or explore local gems."
     ],
     "applicable_themes": [
       "signature",
       "unique_local",
-      "food_drink",
-      "food_crawls",
+      "food",
+      "adventure",
+      "outdoor",
       "culture",
       "arts",
-      "family",
-      "romantic",
-      "rainy_day",
-      "nightlife",
       "shopping",
+      "nightlife",
       "day_trips",
       "seasonal"
     ],
     "recommended_stay_area": "Shinjuku",
-    "recommended_stay_reason": "Shinjuku offers an ideal balance of excellent transport links to all major areas of Tokyo, a vibrant nightlife, diverse dining, and iconic sights, making it a central and convenient base for first-time visitors.",
+    "recommended_stay_reason": "Shinjuku offers central access to train lines connecting various parts of Tokyo and a vibrant blend of entertainment, dining, and shopping options.",
     "must_cover": [
+      "Tokyo Tower",
       "Shibuya Crossing",
-      "Senso-ji Temple and Nakamise-dori Market (Asakusa)",
-      "Tsukiji Outer Market",
-      "TeamLab Planets TOKYO",
-      "Harajuku's Takeshita Street",
-      "Tokyo Metropolitan Government Building Observation Decks",
-      "Golden Gai in Shinjuku",
-      "Aki Basho Sumo Tournament — September",
-      "Day trip to Hakone for Mount Fuji views and onsen",
-      "Imperial Palace East Garden"
+      "Meiji Shrine",
+      "Tsukiji Outer Market for fresh sushi",
+      "Akihabara for anime and electronic goods",
+      "The Imperial Palace Gardens",
+      "Odaiba for waterfront views and attractions",
+      "Harajuku for youth culture and fashion",
+      "Asakusa's Senso-ji Temple",
+      "Cherry Blossom Viewing at Ueno Park — late March to early April"
     ]
   },
-  "generated_at": "2026-05-29T19:05:55.155Z",
-  "ttl_days": 180
+  "generated_at": "2026-06-11T22:41:32.252Z",
+  "ttl_days": 180,
+  "prompt_hash": "84af9b3b"
 }

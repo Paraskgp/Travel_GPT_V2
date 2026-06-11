@@ -11,8 +11,8 @@
 | Framework | Next.js 15 (App Router) | API routes + React UI in one repo |
 | Language | TypeScript (strict) | Type safety across pipeline |
 | LLM — quality | GPT-4o (OpenAI) | Board generation — quality matters |
-| LLM — cheap | Gemini 2.5 Flash (Google) | Cheap stages: $0.10/1M vs $2.50/1M for GPT-4o |
-| LLM — fallback | Claude Sonnet (Anthropic) | Available but not routed by default |
+| LLM — cheap | gpt-4o-mini (OpenAI) | Cheap stages: $0.15/1M vs $2.50/1M for GPT-4o; falls back to Gemini 2.5 Flash if no OpenAI key |
+| LLM — fallback | Gemini 2.5 Flash (Google) | Cheap-stage fallback when OPENAI_API_KEY unavailable |
 | Search | Tavily API | $0.01/search, structured JSON, no HTML parsing |
 | Scraping | Node built-in fetch | No extra dependency; sufficient for static pages |
 | Places | Google Places API (Text Search + Details) | Rating, photo, coordinates, maps URL |
@@ -82,17 +82,17 @@ README.md                ← Navigation guide
 ## LLM provider routing
 
 ```typescript
-// Cheap stages → Gemini 2.5 Flash (if GOOGLE_AI_API_KEY set)
-const cheapStages = [
-  "query_generator", "experience_extractor", "tip_enhancement",
-  "destination_context", "weather_context"
+// Cheap stages → gpt-4o-mini (if OPENAI_API_KEY set), else Gemini 2.5 Flash
+const CHEAP_STAGES = [
+  "destination_normalization", "query_generator", "experience_extractor",
+  "experience_dedup", "tip_enhancement", "weather_context", "destination_context"
 ]
 
 // Board generation → GPT-4o (quality matters)
 // stage: "board_generation" → stays on passed provider (default: openai)
 ```
 
-Routing is handled automatically by `resolveProvider()` in `lib/llm/client.ts`. Callers pass a `stage` parameter — model selection is not their concern.
+Within OpenAI, `resolveModel()` returns `gpt-4o-mini` for cheap stages and `gpt-4o` for all others. Routing is handled automatically by `resolveProvider()` and `resolveModel()` in `lib/llm/client.ts`. Callers pass a `stage` parameter — model selection is not their concern.
 
 ---
 
@@ -100,13 +100,13 @@ Routing is handled automatically by `resolveProvider()` in `lib/llm/client.ts`. 
 
 | Operation | Cost |
 |---|---|
-| Query generation (Gemini) | ~$0.001 |
+| Query generation (gpt-4o-mini) | ~$0.001 |
 | Tavily search (29 queries × $0.01) | ~$0.29 |
-| Page scraping | $0 (our fetch) |
-| Experience extraction (Gemini, ~80K tokens) | ~$0.008 |
+| Experience extraction (gpt-4o-mini, ~80K tokens) | ~$0.012 |
+| Experience dedup (gpt-4o-mini) | ~$0.005 |
 | Board generation (GPT-4o, ~8 themes × 2K tokens) | ~$0.20 |
-| Tip enhancement (Gemini, ~60 tips × 500 tokens) | ~$0.003 |
-| **Total per fresh board** | **~$0.50** |
+| Tip enhancement (gpt-4o-mini, ~60 tips × 500 tokens) | ~$0.005 |
+| **Total per fresh board** | **~$0.51** |
 | **Repeat request (cache hit)** | **$0** |
 
 ---
