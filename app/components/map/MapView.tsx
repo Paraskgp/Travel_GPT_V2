@@ -6,32 +6,6 @@ import { Experience, Theme } from '@/lib/types'
 
 const GOOGLE_MAPS_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY ?? ''
 
-// Silver/muted style — suppresses POIs and noise so pins stand out
-const MAP_STYLE = [
-  { elementType: 'geometry', stylers: [{ color: '#f5f5f5' }] },
-  { elementType: 'labels.icon', stylers: [{ visibility: 'off' }] },
-  { elementType: 'labels.text.fill', stylers: [{ color: '#616161' }] },
-  { elementType: 'labels.text.stroke', stylers: [{ color: '#f5f5f5' }] },
-  { featureType: 'poi', stylers: [{ visibility: 'off' }] },
-  { featureType: 'poi.park', elementType: 'geometry', stylers: [{ color: '#e8ede8' }] },
-  { featureType: 'road', elementType: 'geometry', stylers: [{ color: '#ffffff' }] },
-  { featureType: 'road.arterial', elementType: 'labels.text.fill', stylers: [{ color: '#757575' }] },
-  { featureType: 'road.highway', elementType: 'geometry', stylers: [{ color: '#e0e0e0' }] },
-  { featureType: 'road.highway', elementType: 'labels.text.fill', stylers: [{ color: '#616161' }] },
-  { featureType: 'road.local', elementType: 'labels.text.fill', stylers: [{ color: '#9e9e9e' }] },
-  { featureType: 'transit', stylers: [{ visibility: 'off' }] },
-  { featureType: 'water', elementType: 'geometry', stylers: [{ color: '#c5dff0' }] },
-  { featureType: 'water', elementType: 'labels.text.fill', stylers: [{ color: '#9e9e9e' }] },
-]
-
-function pinSvg(fill: string, stroke: string, scale = 1) {
-  const r = Math.round(10 * scale)
-  const d = r * 2
-  const inner = r - 2
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${d}" height="${d}" viewBox="0 0 ${d} ${d}"><circle cx="${r}" cy="${r}" r="${inner}" fill="${fill}" stroke="${stroke}" stroke-width="2.5"/></svg>`
-  return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`
-}
-
 interface Props {
   themes: Theme[]
   onSelect: (exp: Experience) => void
@@ -101,7 +75,6 @@ export default function MapView({ themes, onSelect }: Props) {
       <Map
         defaultCenter={center}
         defaultZoom={13}
-        styles={MAP_STYLE}
         className="w-full h-full"
         gestureHandling="greedy"
         disableDefaultUI={false}
@@ -115,11 +88,6 @@ export default function MapView({ themes, onSelect }: Props) {
               key={exp.id}
               position={coords}
               onClick={() => setActiveId(isActive ? null : exp.id)}
-              icon={pinSvg(
-                isActive ? '#1c1917' : '#ffffff',
-                isActive ? '#1c1917' : '#78716c',
-                isActive ? 1.4 : 1,
-              )}
             />
           )
         })}
