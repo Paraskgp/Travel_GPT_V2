@@ -224,3 +224,15 @@ Rules of thumb:
 - The best validation logic is no logic — it is storing the right data so the right answer is already present in the record.
 
 **The test:** Could a developer who has never seen this codebase add a new destination, a new theme, or a new party type without changing any validation logic? If yes, the design is general. If no, the logic is overfitted.
+
+---
+
+## Verify the hot path after every pipeline change
+
+After any change to the pipeline — adding a stage, reordering calls, wiring a new cache — trace the fully-warm cache path from the route handler to the response and confirm nothing expensive runs unnecessarily.
+
+**The failure mode:** a cache check placed inside a function does not help if an expensive operation runs in the caller before that function is reached. The cache hit saves the work inside the function; it does not save the work the caller already did to get there.
+
+**Concrete example (real bug in this codebase):** `getExperiences` ran before `generateBoard` in the route handler. `generateBoard` had a correct board cache check — but it ran too late. On a warm board cache, 460KB of experiences were read from disk (or worse: a new month key triggered the full 10+ minute extraction pipeline) only to be discarded when the board cache hit milliseconds later.
+
+**The rule:** always ask — if every cache hits, does ANY expensive I/O or LLM call still execute? If yes, move the shortest-circuit check to before the first expensive operation. A cache check is cheap. Everything else is not.

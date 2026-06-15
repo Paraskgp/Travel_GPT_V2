@@ -91,6 +91,10 @@ Merged: `food_drink` + `food_crawls` → `food` | `nature` + `hiking` → `outdo
 | `is_mappable: true` experiences have `places_enrichment` when key is set | Enrichment coverage |
 | `local_tip` fields do not contain banned phrases after tip enhancement | Tip quality |
 
+## Experience ordering
+
+Ranking is entirely prompt-driven — the LLM returns experiences in ranked order and the pipeline preserves array order exactly (no post-sort step). The ranking instruction lives in `prompts/system.md` under "## Experience Ranking". Criteria in descending priority: must-cover first → destination-unique → broadly accessible → niche/conditional last. Preferences shift ranking within this order; they do not override the inherent destination hierarchy.
+
 ## Open technical items
 
 - `party_type` stripping done by the route caller (`boardPrefs()`) — not enforced inside `generateBoard`. If a future caller forgets to strip it, board cache may be keyed incorrectly.

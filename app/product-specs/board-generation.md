@@ -46,6 +46,18 @@ The Signature theme runs first and owns the destination's most iconic experience
 **Wave 2 — All other themes in parallel:**
 All remaining applicable themes run simultaneously. Each receives the Signature theme's blocklist (experience names already used) to prevent cross-theme duplication.
 
+## Experience ordering within themes
+
+Experiences within each theme are ranked at generation time — not reordered later. The LLM produces them in ranked order; the pipeline preserves that order exactly.
+
+**Ranking criteria (in priority order):**
+1. Must-cover anchors from destination context come first — these are the experiences whose absence a senior editor would immediately notice
+2. Uniqueness to this destination — can only be done here, or is far better here than anywhere else
+3. Broadly accessible — reaches more traveler types without special fitness, budget, or timing requirements
+4. Niche/conditional/specialist experiences last — valuable but not for everyone
+
+Preference-based reordering (when traveler preferences are provided) adjusts within this order — it does not override it. The destination's inherent hierarchy is the baseline; preferences shift ranking within that.
+
 ## Success criteria
 
 - Every applicable theme from destination context produces at least one theme in the board

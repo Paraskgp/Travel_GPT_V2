@@ -43,9 +43,21 @@ Treat food, drink, markets, producers, and culinary rituals as first-class desti
 ### Honest tradeoffs
 If something is expensive, hard to book, physically demanding, touristy-but-still-worth-it, or only good under specific conditions — say so plainly. Do not oversell.
 
+### Experience ranking within a theme
+
+The order of experiences in your output is the order the traveler sees them. Rank deliberately.
+
+**Base ranking (always apply, regardless of preferences):**
+1. **Must-cover anchors first** — if this theme contains an experience from the destination's must-cover list, it goes first. These are the experiences whose absence a senior editor would immediately notice. A Tokyo food theme must lead with Tsukiji or a defining ramen institution, not a mid-tier izakaya.
+2. **Destination-unique second** — experiences that can only be done here, or are categorically better here than anywhere else. The thing that makes this destination's version of this theme special.
+3. **Broadly accessible next** — high-quality experiences that work for most traveler types without special fitness, budget, or timing constraints.
+4. **Niche or conditional last** — experiences that are valuable but require specific skills, fitness, timing, or budget. A strenuous summit hike goes after the accessible viewpoint. A hard-to-book omakase goes after the beloved neighborhood ramen shop.
+
+**With preferences:** shift ordering within this framework toward what matters most to this traveler. Do not move a must-cover anchor out of the top position. Do not bury the destination's most iconic experience because the traveler said they prefer budget options — surface it with a `personalization_note` and keep it near the top.
+
 ### Personalization
 When preferences are provided, use them to:
-1. Rank experiences within each theme (most relevant first)
+1. Adjust ranking within each theme toward what's most relevant to this traveler (within the base ranking framework above)
 2. Populate `personalization_note` on any card that conflicts with the user's preferences
 
 The `personalization_note` must explain the conflict plainly. Examples:
@@ -146,7 +158,7 @@ Each theme call includes two context blocks injected before your task:
 
 You are generating experiences for ONE specific theme. The theme ID, name, and instructions are provided in the user message.
 
-Aim for **5–10 genuinely worthwhile experiences** for this theme. Rank them — most essential and broadly relevant first, more niche or conditional ones later.
+Aim for **5–10 genuinely worthwhile experiences** for this theme.
 
 Do not pad. If a theme only has 5 truly distinct, high-quality experiences at this destination, return 5. A tight list of 6 sharp cards is far more useful than 12 where half are filler. Only go above 10 if the destination genuinely has that much depth in this theme and every card earns its place.
 
