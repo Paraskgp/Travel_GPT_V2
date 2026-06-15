@@ -65,9 +65,9 @@ Merged: `food_drink` + `food_crawls` → `food` | `nature` + `hiking` → `outdo
 
 ## Caching
 
-- Key: `board_{promptHash}` — e.g. `board_a3f2b1c4`
+- Key: `board_{boardPromptHash()}` — e.g. `board_a3f2b1c4`
 - TTL: -1 (permanent)
-- Invalidation: any `.md` file in `prompts/` changes the hash → cache miss
+- Invalidation: only `system.md`, `themes/*.md`, `tip-enhancement.md`, or `board-eval.md` change the hash → cache miss. Changing `destination-context.md`, `weather-context.md`, or experience extractor prompts does NOT invalidate the board.
 - File: `cache/destinations/{slug}/board_a3f2b1c4.json`
 - Old board files accumulate until pruned via `DELETE /api/cache?destination=X`
 

@@ -2,7 +2,7 @@
 
 ## Owns
 
-`lib/cache/index.ts` → `cacheRead()`, `cacheWrite()`, `boardCacheKey()`, `cacheStatus()`, `listCachedDestinations()`, `destinationSlug()`, `promptHash()`, `contextPromptHash()`, `weatherPromptHash()`, `experiencesPromptHash()`
+`lib/cache/index.ts` → `cacheRead()`, `cacheWrite()`, `boardCacheKey()`, `cacheStatus()`, `listCachedDestinations()`, `destinationSlug()`, `promptHash()`, `boardPromptHash()`, `contextPromptHash()`, `weatherPromptHash()`, `experiencesPromptHash()`
 
 ## Inputs / Outputs
 
@@ -46,14 +46,17 @@ Lowercase, non-alphanumeric characters stripped, spaces → hyphens.
 
 ## Prompt hash — board (global) vs. per-stage (granular)
 
-**Board:** `promptHash()` — MD5 of ALL `.md` files in `prompts/`, sorted alphabetically, first 8 hex chars. Used as part of the board cache key (`board_{hash}`). Any prompt change → different key → automatic cache miss.
+**Board:** `boardPromptHash()` — MD5 of board-relevant prompts only: `system.md`, `tip-enhancement.md`, `board-eval.md`, and all files in `themes/`. Used as the board cache key (`board_{hash}`). Only changes that actually affect board output invalidate the board. Changing `destination-context.md`, `experience-extractor-page.md`, `query-generator.md`, or `weather-context.md` does NOT invalidate the board — those stages have their own independent hashes.
 
-**Per-stage:** `stageHash(files[])` internal helper hashes only the listed files. Three exported wrappers:
-- `contextPromptHash()` — hashes `destination-context.md` only
-- `weatherPromptHash()` — hashes `weather-context.md` only
-- `experiencesPromptHash()` — hashes `experience-extractor-page.md` + `experience-dedup.md`
+**`promptHash()`** still exists as a utility (MD5 of ALL prompts) but is no longer used as the board key. Kept for diagnostics.
 
-Each wrapper is memoized via a shared `Map<string, string>` keyed by the sorted file list, so the hash is computed at most once per process per file set.
+**Per-stage:** `stageHash(entries[])` internal helper hashes specific files and/or directories relative to `prompts/`. When an entry is a directory, all `.md` files inside it are included sorted. Memoized via `Map<string, string>` keyed by sorted entry list.
+
+Exported wrappers:
+- `boardPromptHash()` — `system.md` + `themes/` dir + `tip-enhancement.md` + `board-eval.md`
+- `contextPromptHash()` — `destination-context.md` only
+- `weatherPromptHash()` — `weather-context.md` only
+- `experiencesPromptHash()` — `experience-extractor-page.md` + `experience-dedup.md`
 
 ## TTL behaviour
 

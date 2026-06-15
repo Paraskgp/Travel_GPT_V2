@@ -92,9 +92,10 @@ export function promptHash(): string {
   return _cachedPromptHash
 }
 
-/** Cache key for the board — includes prompt hash so stale boards auto-miss. */
+/** Cache key for the board — includes board-only prompt hash so stale boards auto-miss.
+ *  Only system.md, themes/, tip-enhancement.md, and board-eval.md affect this key. */
 export function boardCacheKey(): `board_${string}` {
-  return `board_${promptHash()}`
+  return `board_${boardPromptHash()}`
 }
 
 // ─── Per-stage prompt hashes ──────────────────────────────────────────────────
@@ -103,23 +104,46 @@ export function boardCacheKey(): `board_${string}` {
 
 const _stageHashCache = new Map<string, string>()
 
-/** MD5 of specific prompt files (relative to prompts/). Memoized per file set. */
-function stageHash(files: string[]): string {
-  const key = files.slice().sort().join("|")
+/**
+ * MD5 of specific prompt files and/or directories (relative to prompts/). Memoized per entry set.
+ * If an entry is a directory, all .md files inside it are included sorted.
+ */
+function stageHash(entries: string[]): string {
+  const key = entries.slice().sort().join("|")
   const cached = _stageHashCache.get(key)
   if (cached) return cached
 
   const hash = crypto.createHash("md5")
-  for (const file of files.slice().sort()) {
-    const fullPath = path.join(PROMPTS_DIR, file)
-    if (fs.existsSync(fullPath)) {
-      hash.update(file)
+
+  function hashEntry(entry: string) {
+    const fullPath = path.join(PROMPTS_DIR, entry)
+    if (!fs.existsSync(fullPath)) return
+    const stat = fs.statSync(fullPath)
+    if (stat.isDirectory()) {
+      const files = fs.readdirSync(fullPath).filter(f => f.endsWith(".md")).sort()
+      for (const file of files) {
+        hash.update(file)
+        hash.update(fs.readFileSync(path.join(fullPath, file)))
+      }
+    } else {
+      hash.update(entry)
       hash.update(fs.readFileSync(fullPath))
     }
   }
+
+  for (const entry of entries.slice().sort()) {
+    hashEntry(entry)
+  }
+
   const result = hash.digest("hex").slice(0, 8)
   _stageHashCache.set(key, result)
   return result
+}
+
+/** Hash of board-relevant prompts only: system.md + themes/ + tip-enhancement.md + board-eval.md.
+ *  Changing destination-context, weather, or extractor prompts does NOT invalidate the board. */
+export function boardPromptHash(): string {
+  return stageHash(["system.md", "themes", "tip-enhancement.md", "board-eval.md"])
 }
 
 /** Hash of the destination-context prompt. Invalidates destination_context cache when the prompt changes. */
