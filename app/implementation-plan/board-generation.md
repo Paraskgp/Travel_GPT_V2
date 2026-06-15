@@ -36,7 +36,10 @@ Merged: `food_drink` + `food_crawls` → `food` | `nature` + `hiking` → `outdo
 
 ## Steps
 
-1. `cacheRead(dest, boardCacheKey())` — return `cached.themes` if present
+0. **Route-level board cache pre-check** (in `route.ts`, before `getExperiences`):
+   - `cacheRead(dest, boardCacheKey())` — if hit, return immediately using cached board + already-fetched destCtx + weatherCtx. Experiences pipeline is **skipped entirely**.
+   - This matters because `getExperiences` is expensive (10+ min for a new month key). Running it before a board cache check wastes that time on data that will be discarded.
+1. `cacheRead(dest, boardCacheKey())` — (called again inside generateBoard as safety net) return `cached.themes` if present
    - Cache key includes prompt hash: `board_{8-char-md5-of-all-.md-files}`
 2. **Wave 1 — Signature theme:**
    - `callLLM(themeSystemPrompt(), themeUserPrompt("signature", ..., experiences), provider, "board_generation")`

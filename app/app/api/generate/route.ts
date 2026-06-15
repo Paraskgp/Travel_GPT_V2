@@ -1,11 +1,12 @@
 import { NextRequest, NextResponse } from "next/server"
 import { Provider } from "@/lib/llm/client"
-import { Board, GenerateRequest, GenerateResponse, ErrorResponse, Preferences } from "@/lib/types"
+import { Board, GenerateRequest, GenerateResponse, ErrorResponse, Preferences, Theme } from "@/lib/types"
 import { normalizeDestination } from "@/lib/pipeline/destination-normalization"
 import { getDestinationContext } from "@/lib/pipeline/destination-context"
 import { getWeatherContext } from "@/lib/pipeline/weather-context"
 import { getExperiences } from "@/lib/pipeline/experiences"
 import { generateBoard } from "@/lib/pipeline/board"
+import { cacheRead, boardCacheKey } from "@/lib/cache"
 
 export const maxDuration = 180
 
@@ -75,13 +76,27 @@ export async function POST(
 
   const weatherContext = await getWeatherContext(dest, travelMonthLabel ?? "unknown", weatherMonthSlug, provider)
 
-  // Pass travel month so event-specific queries are added for sports, festivals, etc.
-  const travelMonthName = start_date
-    ? new Date(start_date + "T00:00:00").toLocaleString("en-US", { month: "long" })
-    : null
-  const experiences = await getExperiences(dest, destContext, travelMonthName, provider)
+  // Short-circuit: if the board is already cached, skip the experiences pipeline entirely.
+  // getExperiences can take 10+ minutes on a new month key — running it before the board
+  // cache check wastes that time on data that will never be used.
+  const bKey = boardCacheKey()
+  const cachedBoardData = cacheRead<{ themes: Theme[]; eval_gaps?: string[] }>(dest, bKey)
 
-  const { themes, eval_gaps } = await generateBoard(dest, destContext, weatherContext, experiences, boardPrefs(fullPrefs), provider)
+  let themes: Theme[]
+  let eval_gaps: string[]
+
+  if (cachedBoardData) {
+    console.log(`[/api/generate] board cache HIT — skipping experiences pipeline`)
+    themes = cachedBoardData.themes
+    eval_gaps = cachedBoardData.eval_gaps ?? []
+  } else {
+    // Pass travel month so event-specific queries are added for sports, festivals, etc.
+    const travelMonthName = start_date
+      ? new Date(start_date + "T00:00:00").toLocaleString("en-US", { month: "long" })
+      : null
+    const experiences = await getExperiences(dest, destContext, travelMonthName, provider)
+    ;({ themes, eval_gaps } = await generateBoard(dest, destContext, weatherContext, experiences, boardPrefs(fullPrefs), provider))
+  }
 
   // ── Response ─────────────────────────────────────────────────────────────────
 
