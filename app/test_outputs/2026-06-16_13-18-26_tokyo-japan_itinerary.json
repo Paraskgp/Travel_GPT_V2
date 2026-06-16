@@ -1,0 +1,3920 @@
+{
+  "itinerary": {
+    "destination": "Tokyo, Japan",
+    "start_date": "2026-09-16",
+    "end_date": "2026-09-21",
+    "days": [
+      {
+        "date": "2026-09-16",
+        "day_number": 1,
+        "day_title": "Arrival and Asakusa Exploration",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "13:00",
+            "end_time": "14:30",
+            "title": "Senso-ji Temple",
+            "notes": "Stand at the edge of the Hozomon Gate just before sunset for stunning photographs.",
+            "planning_note": "Start here for your first afternoon in Tokyo — explore early for quieter experience.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Senso-ji+Temple+Tokyo",
+            "experience_id": "senso-ji-temple",
+            "effort": "easy"
+          },
+          {
+            "type": "activity",
+            "start_time": "15:00",
+            "end_time": "16:30",
+            "title": "Traditional Japanese Tea Ceremony in Asakusa",
+            "notes": "Sit on the tatami mat facing the window for serene views of the garden.",
+            "planning_note": "This tea ceremony allows you to unwind and adjust to local customs.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Traditional+Japanese+Tea+Ceremony+Tokyo",
+            "experience_id": "traditional-tea-ceremony-asakusa",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "17:30",
+            "end_time": "19:00",
+            "title": "Dinner at Asakusa Imahan",
+            "notes": "Known for sukiyaki hot pot, located near Senso-ji Temple.",
+            "planning_note": "Try the sukiyaki hot pot — a specialty near Senso-ji, concluding your day in Asakusa.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Asakusa+Imahan+Tokyo",
+            "experience_id": null,
+            "effort": null
+          }
+        ]
+      },
+      {
+        "date": "2026-09-17",
+        "day_number": 2,
+        "day_title": "Harajuku and Shibuya Experience",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "09:00",
+            "end_time": "11:00",
+            "title": "Meiji Jingu Shrine",
+            "notes": "Approach from the southwestern entrance through a peaceful bamboo grove.",
+            "planning_note": "Start your day surrounded by nature; pairs with a nearby park visit.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Meiji+Jingu+Shrine+Tokyo",
+            "experience_id": "meiji-jingu-shrine",
+            "effort": "easy"
+          },
+          {
+            "type": "activity",
+            "start_time": "11:30",
+            "end_time": "13:00",
+            "title": "Yoyogi Park",
+            "notes": "Visit the northern edge for a tranquil pond, perfect for sunset reflections.",
+            "planning_note": "Informal stroll; contrast to the shrine and leads nicely into lunch.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Yoyogi+Park+Tokyo",
+            "experience_id": "yoyogi-park",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "13:30",
+            "end_time": "14:30",
+            "title": "Lunch at bills Omotesando",
+            "notes": "Famous for its ricotta hotcakes and great views from the terrace.",
+            "planning_note": "Have the ricotta hotcakes; lively area to fuel your Shibuya exploration.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=bills+Omotesando+Tokyo",
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "travel",
+            "start_time": "15:00",
+            "end_time": "15:15",
+            "title": "Walk to Shibuya",
+            "notes": "Short walk connecting Harajuku and Shibuya through pleasant city paths.",
+            "planning_note": null,
+            "maps_url": null,
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "activity",
+            "start_time": "15:30",
+            "end_time": "17:00",
+            "title": "Shibuya Crossing",
+            "notes": "View from the small pedestrian bridge for a fully capturing scene of the crossing.",
+            "planning_note": "Immerse yourself in Shibuya's pulse, perfect time for a pre-dinner walk.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Shibuya+Crossing+Tokyo",
+            "experience_id": "shibuya-crossing",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "18:00",
+            "end_time": "19:30",
+            "title": "Dinner at Jidoriya Kappo Sou",
+            "notes": "A hidden gem for yakitori, offering a tranquil dining experience in bustling Shibuya.",
+            "planning_note": "Try yakitori — embrace local flavors; a fine close to your Shibuya day.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Jidoriya+Kappo+Sou+Tokyo",
+            "experience_id": null,
+            "effort": null
+          }
+        ]
+      },
+      {
+        "date": "2026-09-18",
+        "day_number": 3,
+        "day_title": "Cultural Day in Ueno and Yanaka",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "09:00",
+            "end_time": "12:00",
+            "title": "Ueno Park during Cherry Blossom Season",
+            "notes": "Visit the north side for quiet cherry blossom views against Tokyo's architecture.",
+            "planning_note": "Take a leisurely morning walk; blossoms are best seen earlier in the day.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Ueno+Park+Tokyo",
+            "experience_id": "ueno-park-cherry-blossoms",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "12:30",
+            "end_time": "13:30",
+            "title": "Lunch at Innsyoutei",
+            "notes": "Traditional Japanese dining surrounded by seasonal gardens.",
+            "planning_note": "Enjoy a set lunch, refreshing after the park — aligns with next activity.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Innsyoutei+Ueno+Park+Tokyo",
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "travel",
+            "start_time": "14:00",
+            "end_time": "14:20",
+            "title": "Walk to Yanaka",
+            "notes": "A short stroll connecting Ueno Park and Yanaka for an artistic transition.",
+            "planning_note": null,
+            "maps_url": null,
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "activity",
+            "start_time": "14:30",
+            "end_time": "16:00",
+            "title": "Anko Making Workshop in Yanaka",
+            "notes": "Complete your day with an anko cooking class, learning Japanese sweet-making traditions.",
+            "planning_note": "Transition to a hands-on cultural class, divergent yet enriching afternoon.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Anko+Workshop+Yanaka+Tokyo",
+            "experience_id": "anko-sweet-red-bean-workshop",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "18:00",
+            "end_time": "19:30",
+            "title": "Dinner at Kayaba Coffee",
+            "notes": "A Yanaka classic, known for its retro feel and high-quality katsu sandwiches.",
+            "planning_note": "Try the katsu sandwiches — perfect end in charming Yanaka.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Kayaba+Coffee+Yanaka+Tokyo",
+            "experience_id": null,
+            "effort": null
+          }
+        ]
+      },
+      {
+        "date": "2026-09-19",
+        "day_number": 4,
+        "day_title": "A Day with Ghibli and Mitaka",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "10:00",
+            "end_time": "13:00",
+            "title": "Ghibli Museum",
+            "notes": "Experience the enchanting Ghibli narrative in a quieter setting on the second floor.",
+            "planning_note": "Arrive early to beat the crowd and maximize your time at exhibits.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Ghibli+Museum+Tokyo",
+            "experience_id": "ghibli-museum-visit",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "13:30",
+            "end_time": "14:30",
+            "title": "Lunch at Satou",
+            "notes": "Known in Mitaka for delicious croquette and tonkatsu.",
+            "planning_note": "Enjoy a tonkatsu meal — sustenance post museum; pre-park idyllic fit.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Satou+Mitaka+Tokyo",
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "activity",
+            "start_time": "15:00",
+            "end_time": "16:30",
+            "title": "Inokashira Park Stroll",
+            "notes": "Explore by the pond's northeast shore for serene vistas.",
+            "planning_note": "Perfect place for reflective stroll after cultural immersion.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Inokashira+Park+Tokyo",
+            "experience_id": "inokashira-park",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "18:00",
+            "end_time": "20:00",
+            "title": "Dinner at Harmonica Yokocho",
+            "notes": "Enjoy an izakaya-style dining perfectly suited for Mitaka's night ambiance.",
+            "planning_note": "Savor izakaya style — fits Mitaka's character, closing the day's theme.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Harmonica+Yokocho+Mitaka+Tokyo",
+            "experience_id": null,
+            "effort": null
+          }
+        ]
+      },
+      {
+        "date": "2026-09-20",
+        "day_number": 5,
+        "day_title": "Ginza and Tsukiji Discoveries",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "08:00",
+            "end_time": "10:30",
+            "title": "Tsukiji Outer Market",
+            "notes": "Explore back alleys for exceptional grilled seafood skewers.",
+            "planning_note": "Early visit guarantees seeing freshest produce and avoiding later crowds.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Tsukiji+Outer+Market+Tokyo",
+            "experience_id": "tsukiji-outer-market",
+            "effort": "easy"
+          },
+          {
+            "type": "travel",
+            "start_time": "11:00",
+            "end_time": "11:15",
+            "title": "Walk to Ginza",
+            "notes": "A leisure walk from Tsukiji to Ginza offers a perfect transition to high-end shopping and architecture.",
+            "planning_note": null,
+            "maps_url": null,
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "activity",
+            "start_time": "11:30",
+            "end_time": "13:30",
+            "title": "Kabuki Performance at Kabukiza Theatre",
+            "notes": "Opt for a seat facing the stage directly for full appreciation of costumes and makeup.",
+            "planning_note": "Aligns with afternoon — immediate head to theatre from market enhances cultural segue.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Kabukiza+Theatre+Tokyo",
+            "experience_id": "kabuki-experience-at-kabukiza-theatre",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "14:00",
+            "end_time": "15:30",
+            "title": "Lunch at Sushi Dai",
+            "notes": "Known for the omakase sushi experience near Tsukiji.",
+            "planning_note": "Fresh sushi post-cabuki aligns timing and continues seafood journey.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Sushi+Dai+Tokyo",
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "activity",
+            "start_time": "16:00",
+            "end_time": "17:30",
+            "title": "Kura Sushi Ginza",
+            "notes": "Sit at the counter to enjoy seasonal nigiri express options.",
+            "planning_note": "Late sushi snack rounds out Ginza tour, preview of evening's elegance.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Kura+Sushi+Ginza+Tokyo",
+            "experience_id": "kura-sushi-ginza",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "18:30",
+            "end_time": "20:00",
+            "title": "Dinner at Bar High Five",
+            "notes": "Enjoy custom cocktails and the view of Ginza's evening lights.",
+            "planning_note": "Perfect nighttime end, sip cocktails while embracing Ginza's vibrant after-dark scene.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Bar+High+Five+Ginza+Tokyo",
+            "experience_id": "bar-high-five-cocktails",
+            "effort": null
+          }
+        ]
+      },
+      {
+        "date": "2026-09-21",
+        "day_number": 6,
+        "day_title": "Departure Day",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "09:00",
+            "end_time": "10:00",
+            "title": "Breakfast at Tsukiji Kagura",
+            "notes": "Renowned for traditional Japanese breakfast sets.",
+            "planning_note": "Finish with a filling breakfast to energize for travels back home.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Tsukiji+Kagura+Tokyo",
+            "experience_id": null,
+            "effort": null
+          }
+        ]
+      }
+    ],
+    "change_log": [
+      "Check 7: Day 1 — rewrote Senso-ji Temple planning_note for specificity.",
+      "Check 7: Day 1 — rewrote Traditional Japanese Tea Ceremony planning_note for relevance.",
+      "Check 7: Day 1 — rewrote Dinner at Asakusa Imahan planning_note for meal specificity.",
+      "Check 7: Day 2 — rewrote Meiji Jingu Shrine planning_note for sequence logic.",
+      "Check 7: Day 2 — rewrote Yoyogi Park planning_note for sequence logic.",
+      "Check 7: Day 2 — rewrote Lunch at bills Omotesando planning_note for meal specificity.",
+      "Check 7: Day 2 — rewrote Shibuya Crossing planning_note for clock specificity.",
+      "Check 7: Day 2 — rewrote Dinner at Jidoriya Kappo Sou planning_note for culinary focus.",
+      "Check 7: Day 3 — rewrote Ueno Park during Cherry Blossom Season planning_note for time relevance.",
+      "Check 7: Day 3 — rewrote Lunch at Innsyoutei planning_note for sequence alignment.",
+      "Check 7: Day 3 — rewrote Anko Making Workshop in Yanaka planning_note for cultural emphasis.",
+      "Check 7: Day 3 — rewrote Dinner at Kayaba Coffee planning_note for meal focus.",
+      "Check 7: Day 4 — rewrote Ghibli Museum planning_note for early timing logic.",
+      "Check 7: Day 4 — rewrote Lunch at Satou planning_note for sequence fit post-museum.",
+      "Check 7: Day 4 — rewrote Inokashira Park Stroll planning_note for post-museum reflectiveness.",
+      "Check 7: Day 4 — rewrote Dinner at Harmonica Yokocho planning_note for ending the day fit.",
+      "Check 7: Day 5 — rewrote Tsukiji Outer Market planning_note for early visit importance.",
+      "Check 7: Day 5 — rewrote Kabuki Performance at Kabukiza Theatre planning_note for sequence fit.",
+      "Check 7: Day 5 — rewrote Lunch at Sushi Dai planning_note for timing and thematic continuity.",
+      "Check 7: Day 5 — rewrote Kura Sushi Ginza planning_note for late day dining logic.",
+      "Check 7: Day 5 — rewrote Dinner at Bar High Five planning_note for nighttime fit.",
+      "Check 7: Day 6 — rewrote Breakfast at Tsukiji Kagura planning_note for closing meal relevance."
+    ],
+    "generated_at": "2023-10-20T10:00:00Z"
+  },
+  "clusters": {
+    "clusters": [
+      {
+        "id": "cluster-asakusa",
+        "name": "Asakusa",
+        "anchor_id": "senso-ji-temple",
+        "experience_ids": [
+          "senso-ji-temple",
+          "traditional-tea-ceremony-asakusa",
+          "asakusa-district-exploration"
+        ],
+        "zone": "Taito",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-shibuya",
+        "name": "Shibuya",
+        "anchor_id": "shibuya-crossing",
+        "experience_ids": [
+          "shibuya-crossing",
+          "ebisu-yokocho-night-market",
+          "sg-club-cocktails",
+          "karaoke-kan-experience"
+        ],
+        "zone": "Shibuya",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-harajuku",
+        "name": "Harajuku",
+        "anchor_id": "meiji-jingu-shrine",
+        "experience_ids": [
+          "meiji-jingu-shrine",
+          "yoyogi-park"
+        ],
+        "zone": "Harajuku",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-ginza",
+        "name": "Ginza",
+        "anchor_id": "kura-sushi-ginza",
+        "experience_ids": [
+          "kura-sushi-ginza",
+          "kabuki-experience-at-kabukiza-theatre",
+          "bar-high-five-cocktails"
+        ],
+        "zone": "Chuo",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-ueno",
+        "name": "Ueno Park",
+        "anchor_id": "ueno-park-cherry-blossoms",
+        "experience_ids": [
+          "ueno-park-cherry-blossoms",
+          "cherry-blossom-viewing-ueno-park",
+          "ameyoko-market-crawl",
+          "tokyo-national-museum",
+          "tokyo-metropolitan-art-museum"
+        ],
+        "zone": "Taito",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-shinjuku",
+        "name": "Shinjuku",
+        "anchor_id": "ramen-hayashida",
+        "experience_ids": [
+          "ramen-hayashida",
+          "shinjuku-gyoen-national-garden",
+          "golden-gai-bars"
+        ],
+        "zone": "Shinjuku",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-sumida",
+        "name": "Sumida",
+        "anchor_id": "tokyo-skytree-experience",
+        "experience_ids": [
+          "tokyo-skytree-experience",
+          "edo-tokyo-museum",
+          "sumo-stable-tour",
+          "january-sumo-basho"
+        ],
+        "zone": "Sumida",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-roppongi",
+        "name": "Roppongi",
+        "anchor_id": "mori-art-museum",
+        "experience_ids": [
+          "mori-art-museum",
+          "national-art-center-tokyo",
+          "tokyo-pub-crawl"
+        ],
+        "zone": "Roppongi",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-marunouchi",
+        "name": "Marunouchi",
+        "anchor_id": "tokyo-jazz-club",
+        "experience_ids": [
+          "tokyo-jazz-club",
+          "imperial-palace-east-gardens",
+          "momat-collection"
+        ],
+        "zone": "Chiyoda",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-mitaka",
+        "name": "Mitaka",
+        "anchor_id": "ghibli-museum-visit",
+        "experience_ids": [
+          "ghibli-museum-visit",
+          "inokashira-park"
+        ],
+        "zone": "Kichijōji",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-nakameguro",
+        "name": "Nakameguro",
+        "anchor_id": "nakameguro-district-stroll",
+        "experience_ids": [
+          "nakameguro-district-stroll"
+        ],
+        "zone": "Meguro",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-yokohama",
+        "name": "Yokohama",
+        "anchor_id": "yokohama-urban-escape",
+        "experience_ids": [
+          "yokohama-urban-escape"
+        ],
+        "zone": "Kanagawa",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-mt-takao",
+        "name": "Mount Takao",
+        "anchor_id": "mt-takao-hiking",
+        "experience_ids": [
+          "mt-takao-hiking",
+          "mt-takao-hike",
+          "mt-takao-beer-mount",
+          "autumn-leaves-hiking-mt-takao"
+        ],
+        "zone": "Hachioji",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-mt-fuji",
+        "name": "Mount Fuji",
+        "anchor_id": "mt-fuji-day-trip",
+        "experience_ids": [
+          "mt-fuji-day-trip"
+        ],
+        "zone": "Yamanashi",
+        "cluster_note": "This is a day trip requiring train travel."
+      },
+      {
+        "id": "cluster-hakone",
+        "name": "Hakone",
+        "anchor_id": "hakone-onsen-experience",
+        "experience_ids": [
+          "hakone-onsen-experience"
+        ],
+        "zone": "Kanagawa",
+        "cluster_note": "This is a day trip requiring train travel."
+      },
+      {
+        "id": "cluster-nikko",
+        "name": "Nikko",
+        "anchor_id": "nikko-historic-journey",
+        "experience_ids": [
+          "nikko-historic-journey"
+        ],
+        "zone": "Tochigi",
+        "cluster_note": "This is a day trip requiring train travel."
+      },
+      {
+        "id": "cluster-kamakura",
+        "name": "Kamakura",
+        "anchor_id": "kamakura-seaside-temples",
+        "experience_ids": [
+          "kamakura-seaside-temples"
+        ],
+        "zone": "Kanagawa",
+        "cluster_note": "This is a day trip requiring train travel."
+      },
+      {
+        "id": "cluster-enoshima",
+        "name": "Enoshima",
+        "anchor_id": "enoshima-beach-getaway",
+        "experience_ids": [
+          "enoshima-beach-getaway"
+        ],
+        "zone": "Kanagawa",
+        "cluster_note": "This is a day trip requiring train travel."
+      },
+      {
+        "id": "cluster-tsukiji",
+        "name": "Tsukiji",
+        "anchor_id": "tsukiji-outer-market",
+        "experience_ids": [
+          "tsukiji-outer-market"
+        ],
+        "zone": "Chuo",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-yanaka",
+        "name": "Yanaka",
+        "anchor_id": "anko-sweet-red-bean-workshop",
+        "experience_ids": [
+          "anko-sweet-red-bean-workshop"
+        ],
+        "zone": "Taito",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-tama-river",
+        "name": "Tama River",
+        "anchor_id": "tama-river-pack-rafting",
+        "experience_ids": [
+          "tama-river-pack-rafting"
+        ],
+        "zone": "Tachikawa",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-ome-mitake",
+        "name": "Mitake",
+        "anchor_id": "mt-mitake-rock-climbing",
+        "experience_ids": [
+          "mt-mitake-rock-climbing"
+        ],
+        "zone": "Ome",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-kanda-river",
+        "name": "Kanda River",
+        "anchor_id": "kanda-river-exploration-by-kayak",
+        "experience_ids": [
+          "kanda-river-exploration-by-kayak"
+        ],
+        "zone": "Chiyoda",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-kappabashi-dogugai",
+        "name": "Kappabashi Dougu Street, Tokyo",
+        "anchor_id": "kappabashi-dogugai",
+        "experience_ids": [
+          "kappabashi-dogugai"
+        ],
+        "zone": "Kappabashi Dougu Street, Tokyo",
+        "cluster_note": "Singleton cluster added because the assignment pass omitted this experience."
+      },
+      {
+        "id": "cluster-paragliding-in-omiya",
+        "name": "Omiya, Saitama",
+        "anchor_id": "paragliding-in-omiya",
+        "experience_ids": [
+          "paragliding-in-omiya"
+        ],
+        "zone": "Omiya, Saitama",
+        "cluster_note": "Singleton cluster added because the assignment pass omitted this experience."
+      },
+      {
+        "id": "cluster-akasaka-estate-loop",
+        "name": "Akasaka Estate, Tokyo",
+        "anchor_id": "akasaka-estate-loop",
+        "experience_ids": [
+          "akasaka-estate-loop"
+        ],
+        "zone": "Akasaka Estate, Tokyo",
+        "cluster_note": "Singleton cluster added because the assignment pass omitted this experience."
+      },
+      {
+        "id": "cluster-setsubun-festival",
+        "name": "Senso-ji Temple, Asakusa",
+        "anchor_id": "setsubun-festival",
+        "experience_ids": [
+          "setsubun-festival"
+        ],
+        "zone": "Senso-ji Temple, Asakusa",
+        "cluster_note": "Singleton cluster added because the assignment pass omitted this experience."
+      },
+      {
+        "id": "cluster-ark-hills-autumn-festival",
+        "name": "Ark Hills Ark Karajan Square",
+        "anchor_id": "ark-hills-autumn-festival",
+        "experience_ids": [
+          "ark-hills-autumn-festival"
+        ],
+        "zone": "Ark Hills Ark Karajan Square",
+        "cluster_note": "Singleton cluster added because the assignment pass omitted this experience."
+      },
+      {
+        "id": "cluster-japan-nights-autumn-illuminations",
+        "name": "Rikugien Gardens, Tokyo",
+        "anchor_id": "japan-nights-autumn-illuminations",
+        "experience_ids": [
+          "japan-nights-autumn-illuminations"
+        ],
+        "zone": "Rikugien Gardens, Tokyo",
+        "cluster_note": "Singleton cluster added because the assignment pass omitted this experience."
+      }
+    ],
+    "pairs": [
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-shibuya",
+        "walk_min": 999,
+        "drive_min": 35,
+        "mode": "transit",
+        "note": "Use Ginza Line subway with one transfer at Shibuya Station."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-harajuku",
+        "walk_min": 999,
+        "drive_min": 40,
+        "mode": "transit",
+        "note": "Take Ginza Line then transfer to Yamanote Line at Shibuya."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-ginza",
+        "walk_min": 999,
+        "drive_min": 15,
+        "mode": "transit",
+        "note": "Direct via Toei Asakusa Line to Ginza."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-ueno",
+        "walk_min": 42,
+        "drive_min": 18,
+        "mode": "transit",
+        "note": "Short subway or taxi hop; not a useful walk for most travelers."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-shinjuku",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Take Toei Shinjuku Line; transfer needed."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-sumida",
+        "walk_min": 30,
+        "drive_min": 10,
+        "mode": "walk",
+        "note": "Consider a leisure walk along the river."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-roppongi",
+        "walk_min": 999,
+        "drive_min": 35,
+        "mode": "transit",
+        "note": "Direct via Ginza Line with transfer to Hibiya Line."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-marunouchi",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": "Subway with one transfer at Tokyo Station."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-mitaka",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "transit",
+        "note": "Requires subway and JR Chuo Line."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-nakameguro",
+        "walk_min": 999,
+        "drive_min": 35,
+        "mode": "transit",
+        "note": "Ginza Line and toyoko line recommended via Shibuya."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-yokohama",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "transit",
+        "note": "Take Toei Asakusa Line and transfer to Japan Railways."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-mt-takao",
+        "walk_min": 999,
+        "drive_min": 90,
+        "mode": "transit",
+        "note": "Use train to Hachioji, then Keio Line."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-mt-fuji",
+        "walk_min": 999,
+        "drive_min": 150,
+        "mode": "transit",
+        "note": "A day trip requiring multiple train transfers."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-hakone",
+        "walk_min": 999,
+        "drive_min": 120,
+        "mode": "transit",
+        "note": "Several train transfers needed for day trip."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-nikko",
+        "walk_min": 999,
+        "drive_min": 180,
+        "mode": "transit",
+        "note": "Requires taking a train journey with several transfers."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-kamakura",
+        "walk_min": 999,
+        "drive_min": 90,
+        "mode": "transit",
+        "note": "Day trip with train transfers."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-enoshima",
+        "walk_min": 999,
+        "drive_min": 100,
+        "mode": "transit",
+        "note": "Train journey with several transfers required."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-tsukiji",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": "Direct route via Toei Asakusa Line."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-yanaka",
+        "walk_min": 35,
+        "drive_min": 15,
+        "mode": "transit",
+        "note": null
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-tama-river",
+        "walk_min": 999,
+        "drive_min": 90,
+        "mode": "transit",
+        "note": "Multiple train transfers needed to reach."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-ome-mitake",
+        "walk_min": 999,
+        "drive_min": 120,
+        "mode": "transit",
+        "note": "Long transit with stops and train changes."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-kanda-river",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": "Short transit with a single train transfer."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-kappabashi-dogugai",
+        "walk_min": 25,
+        "drive_min": 10,
+        "mode": "walk",
+        "note": "A short walk from Asakusa."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-paragliding-in-omiya",
+        "walk_min": 999,
+        "drive_min": 100,
+        "mode": "transit",
+        "note": "Travel via train with multiple stops."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-akasaka-estate-loop",
+        "walk_min": 999,
+        "drive_min": 40,
+        "mode": "transit",
+        "note": "Transfer at several stations needed."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-setsubun-festival",
+        "walk_min": 5,
+        "drive_min": 5,
+        "mode": "walk",
+        "note": "Very short walk; same general area."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-ark-hills-autumn-festival",
+        "walk_min": 999,
+        "drive_min": 35,
+        "mode": "transit",
+        "note": "Use subway; multiple transfers."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-japan-nights-autumn-illuminations",
+        "walk_min": 999,
+        "drive_min": 25,
+        "mode": "transit",
+        "note": "Use train transfer at several key stations."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-harajuku",
+        "walk_min": 15,
+        "drive_min": 5,
+        "mode": "walk",
+        "note": "Adjacent districts, pleasant walk."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-ginza",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": "Direct via Ginza Line, no transfer."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-ueno",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Subway with one transfer at Shinjuku."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-shinjuku",
+        "walk_min": 35,
+        "drive_min": 10,
+        "mode": "transit",
+        "note": "Short transit via JR Yamanote."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-sumida",
+        "walk_min": 999,
+        "drive_min": 45,
+        "mode": "transit",
+        "note": "Includes subway transfer."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-roppongi",
+        "walk_min": 999,
+        "drive_min": 15,
+        "mode": "transit",
+        "note": "Direct via Hibiya Line, no transfer."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-marunouchi",
+        "walk_min": 999,
+        "drive_min": 25,
+        "mode": "transit",
+        "note": "Transfer via Tokyo Station needed."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-mitaka",
+        "walk_min": 999,
+        "drive_min": 45,
+        "mode": "transit",
+        "note": "Direct via JR Chuo Line from Shibuya."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-nakameguro",
+        "walk_min": 20,
+        "drive_min": 10,
+        "mode": "walk",
+        "note": "Adjacent neighborhoods, direct walk."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-yokohama",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "transit",
+        "note": "Take JR Shonan-Shinjuku Line or Toyoko Line."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-mt-takao",
+        "walk_min": 999,
+        "drive_min": 75,
+        "mode": "transit",
+        "note": "Direct via Keio Inokashira Line and Keio Line."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-mt-fuji",
+        "walk_min": 999,
+        "drive_min": 140,
+        "mode": "transit",
+        "note": "Requires multiple train changes for day trip."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-hakone",
+        "walk_min": 999,
+        "drive_min": 100,
+        "mode": "transit",
+        "note": "Multiple train transfers for scenic route."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-nikko",
+        "walk_min": 999,
+        "drive_min": 150,
+        "mode": "transit",
+        "note": "Train route requires several transfers."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-kamakura",
+        "walk_min": 999,
+        "drive_min": 80,
+        "mode": "transit",
+        "note": "Train journey involves the Shonan-Shinjuku Line."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-enoshima",
+        "walk_min": 999,
+        "drive_min": 85,
+        "mode": "transit",
+        "note": "Train with a few transfers to the Odakyu Line."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-tsukiji",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Direct via Ginza Line, transfer at Ginza Station."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-yanaka",
+        "walk_min": 999,
+        "drive_min": 45,
+        "mode": "transit",
+        "note": "Yamanote Line with subway transfer required."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-tama-river",
+        "walk_min": 999,
+        "drive_min": 75,
+        "mode": "transit",
+        "note": "Requires JR Chuo Line with transfer."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-ome-mitake",
+        "walk_min": 999,
+        "drive_min": 100,
+        "mode": "transit",
+        "note": "Multiple train transfers needed."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-kanda-river",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": "Short transit ride with at least one transfer."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-kappabashi-dogugai",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Use Ginza Line and further line transfers."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-paragliding-in-omiya",
+        "walk_min": 999,
+        "drive_min": 90,
+        "mode": "transit",
+        "note": "Longer journey requiring JR and local line transfers."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-akasaka-estate-loop",
+        "walk_min": 20,
+        "drive_min": 15,
+        "mode": "walk",
+        "note": "Short walk, located nearby."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-setsubun-festival",
+        "walk_min": 999,
+        "drive_min": 50,
+        "mode": "transit",
+        "note": "Requires complex subway navigation."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-ark-hills-autumn-festival",
+        "walk_min": 25,
+        "drive_min": 12,
+        "mode": "walk",
+        "note": "Short walking path through nearby districts."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-japan-nights-autumn-illuminations",
+        "walk_min": 999,
+        "drive_min": 40,
+        "mode": "transit",
+        "note": "Multiple metro lines needed for transit."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-ginza",
+        "walk_min": 999,
+        "drive_min": 18,
+        "mode": "transit",
+        "note": "Chioda Line direct with no transfers."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-ueno",
+        "walk_min": 999,
+        "drive_min": 32,
+        "mode": "transit",
+        "note": "Subway with central line transfer required."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-shinjuku",
+        "walk_min": 15,
+        "drive_min": 5,
+        "mode": "walk",
+        "note": "Short walk or single station subway trip."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-sumida",
+        "walk_min": 999,
+        "drive_min": 50,
+        "mode": "transit",
+        "note": "Requires two line transfers."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-roppongi",
+        "walk_min": 40,
+        "drive_min": 15,
+        "mode": "transit",
+        "note": "Short train transfer or straightforward walk."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-marunouchi",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": "Direct train connection on Yamanote Line."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-mitaka",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Take Chuo Line from Shinjuku to Mitaka."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-nakameguro",
+        "walk_min": 45,
+        "drive_min": 15,
+        "mode": "transit",
+        "note": "Short subway ride via Tokyo Metro."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-yokohama",
+        "walk_min": 999,
+        "drive_min": 40,
+        "mode": "transit",
+        "note": "Take the JR Shonan-Shinjuku Line."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-mt-takao",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "transit",
+        "note": "Keio Line from Shinjuku to Takao."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-mt-fuji",
+        "walk_min": 999,
+        "drive_min": 150,
+        "mode": "transit",
+        "note": "JR Chuo Line and then bus from Otsuki Station."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-hakone",
+        "walk_min": 999,
+        "drive_min": 120,
+        "mode": "transit",
+        "note": "Take Odakyu Express from Shinjuku."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-nikko",
+        "walk_min": 999,
+        "drive_min": 150,
+        "mode": "transit",
+        "note": "JR Tohoku Shinkansen to Utsunomiya and then JR Nikko Line."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-kamakura",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "transit",
+        "note": "Take the JR Shonan-Shinjuku Line."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-enoshima",
+        "walk_min": 999,
+        "drive_min": 75,
+        "mode": "transit",
+        "note": "Odakyu Line and Enoshima Electric Railway."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-tsukiji",
+        "walk_min": 999,
+        "drive_min": 25,
+        "mode": "transit",
+        "note": "Tokyo Metro Hibiya Line from Ebisu."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-yanaka",
+        "walk_min": 999,
+        "drive_min": 35,
+        "mode": "transit",
+        "note": "Tokyo Metro and JR Line connection required."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-tama-river",
+        "walk_min": 999,
+        "drive_min": 55,
+        "mode": "transit",
+        "note": "Take Chuo Line and transfer at Tachikawa."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-ome-mitake",
+        "walk_min": 999,
+        "drive_min": 90,
+        "mode": "transit",
+        "note": "Take the JR Chuo Line, then transfer to Ome Line."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-kanda-river",
+        "walk_min": 999,
+        "drive_min": 25,
+        "mode": "transit",
+        "note": "Subway ride with one transfer."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-kappabashi-dogugai",
+        "walk_min": 999,
+        "drive_min": 40,
+        "mode": "transit",
+        "note": "Two metro transfers required."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-paragliding-in-omiya",
+        "walk_min": 999,
+        "drive_min": 75,
+        "mode": "transit",
+        "note": "Take the JR Shonan-Shinjuku Line towards Omiya."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-akasaka-estate-loop",
+        "walk_min": 999,
+        "drive_min": 15,
+        "mode": "transit",
+        "note": "Short transit ride with one transfer."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-setsubun-festival",
+        "walk_min": 999,
+        "drive_min": 25,
+        "mode": "transit",
+        "note": "Direct Tokyo Metro ride."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-ark-hills-autumn-festival",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": "Two transfers on Tokyo Metro required."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-japan-nights-autumn-illuminations",
+        "walk_min": 999,
+        "drive_min": 35,
+        "mode": "transit",
+        "note": "Metro ride with one interchange."
+      },
+      {
+        "from_cluster_id": "cluster-ginza",
+        "to_cluster_id": "cluster-ueno",
+        "walk_min": 999,
+        "drive_min": 15,
+        "mode": "transit",
+        "note": "Take Tokyo Metro Ginza Line."
+      },
+      {
+        "from_cluster_id": "cluster-ginza",
+        "to_cluster_id": "cluster-shinjuku",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": "Easy transit connection using Marunouchi Line."
+      },
+      {
+        "from_cluster_id": "cluster-ginza",
+        "to_cluster_id": "cluster-sumida",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Tokyo Metro and Toei Asakusa Line connection."
+      },
+      {
+        "from_cluster_id": "cluster-ginza",
+        "to_cluster_id": "cluster-roppongi",
+        "walk_min": 999,
+        "drive_min": 15,
+        "mode": "transit",
+        "note": "Direct ride on Tokyo Metro Hibiya Line."
+      },
+      {
+        "from_cluster_id": "cluster-ginza",
+        "to_cluster_id": "cluster-marunouchi",
+        "walk_min": 18,
+        "drive_min": 10,
+        "mode": "walk",
+        "note": null
+      },
+      {
+        "from_cluster_id": "cluster-ginza",
+        "to_cluster_id": "cluster-mitaka",
+        "walk_min": 999,
+        "drive_min": 45,
+        "mode": "transit",
+        "note": "Chuo Line from Tokyo Station."
+      },
+      {
+        "from_cluster_id": "cluster-ginza",
+        "to_cluster_id": "cluster-nakameguro",
+        "walk_min": 999,
+        "drive_min": 25,
+        "mode": "transit",
+        "note": "Tokyo Metro Hibiya Line direct ride."
+      },
+      {
+        "from_cluster_id": "cluster-ginza",
+        "to_cluster_id": "cluster-yokohama",
+        "walk_min": 999,
+        "drive_min": 50,
+        "mode": "transit",
+        "note": "JR Tokaido Line from Tokyo Station."
+      },
+      {
+        "from_cluster_id": "cluster-ginza",
+        "to_cluster_id": "cluster-mt-takao",
+        "walk_min": 999,
+        "drive_min": 80,
+        "mode": "transit",
+        "note": "Keio Line connection from Shinjuku."
+      },
+      {
+        "from_cluster_id": "cluster-ginza",
+        "to_cluster_id": "cluster-mt-fuji",
+        "walk_min": 999,
+        "drive_min": 160,
+        "mode": "transit",
+        "note": "Train and bus transfer required."
+      },
+      {
+        "from_cluster_id": "cluster-ginza",
+        "to_cluster_id": "cluster-hakone",
+        "walk_min": 999,
+        "drive_min": 150,
+        "mode": "transit",
+        "note": "Odakyu Romancecar from Shinjuku."
+      },
+      {
+        "from_cluster_id": "cluster-ginza",
+        "to_cluster_id": "cluster-nikko",
+        "walk_min": 999,
+        "drive_min": 180,
+        "mode": "transit",
+        "note": "Shinkansen to Utsunomiya, then local line."
+      },
+      {
+        "from_cluster_id": "cluster-ginza",
+        "to_cluster_id": "cluster-kamakura",
+        "walk_min": 999,
+        "drive_min": 70,
+        "mode": "transit",
+        "note": "JR Line with one transfer at Ofuna."
+      },
+      {
+        "from_cluster_id": "cluster-ginza",
+        "to_cluster_id": "cluster-enoshima",
+        "walk_min": 999,
+        "drive_min": 85,
+        "mode": "transit",
+        "note": "Combination of JR and Enoshima Railways."
+      },
+      {
+        "from_cluster_id": "cluster-ginza",
+        "to_cluster_id": "cluster-tsukiji",
+        "walk_min": 15,
+        "drive_min": 10,
+        "mode": "walk",
+        "note": null
+      },
+      {
+        "from_cluster_id": "cluster-ginza",
+        "to_cluster_id": "cluster-yanaka",
+        "walk_min": 999,
+        "drive_min": 40,
+        "mode": "transit",
+        "note": "Metro line with one transfer at Tokyo Station."
+      },
+      {
+        "from_cluster_id": "cluster-ginza",
+        "to_cluster_id": "cluster-tama-river",
+        "walk_min": 999,
+        "drive_min": 70,
+        "mode": "transit",
+        "note": "Chuo Line service to Tachikawa Station."
+      },
+      {
+        "from_cluster_id": "cluster-ginza",
+        "to_cluster_id": "cluster-ome-mitake",
+        "walk_min": 999,
+        "drive_min": 100,
+        "mode": "transit",
+        "note": "Transfer to Ome Line at Tachikawa."
+      },
+      {
+        "from_cluster_id": "cluster-ginza",
+        "to_cluster_id": "cluster-kanda-river",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": "Short metro ride with transfer."
+      },
+      {
+        "from_cluster_id": "cluster-ginza",
+        "to_cluster_id": "cluster-kappabashi-dogugai",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Metro ride with two transfers."
+      },
+      {
+        "from_cluster_id": "cluster-ginza",
+        "to_cluster_id": "cluster-paragliding-in-omiya",
+        "walk_min": 999,
+        "drive_min": 80,
+        "mode": "transit",
+        "note": "Shinkansen or JR service to Omiya Station."
+      },
+      {
+        "from_cluster_id": "cluster-ginza",
+        "to_cluster_id": "cluster-akasaka-estate-loop",
+        "walk_min": 25,
+        "drive_min": 15,
+        "mode": "walk",
+        "note": null
+      },
+      {
+        "from_cluster_id": "cluster-ginza",
+        "to_cluster_id": "cluster-setsubun-festival",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Direct Tokyo Metro Line ride."
+      },
+      {
+        "from_cluster_id": "cluster-ginza",
+        "to_cluster_id": "cluster-ark-hills-autumn-festival",
+        "walk_min": 999,
+        "drive_min": 15,
+        "mode": "transit",
+        "note": "Metro ride with one direct line."
+      },
+      {
+        "from_cluster_id": "cluster-ginza",
+        "to_cluster_id": "cluster-japan-nights-autumn-illuminations",
+        "walk_min": 999,
+        "drive_min": 35,
+        "mode": "transit",
+        "note": "Two line transfers on Metro Network."
+      },
+      {
+        "from_cluster_id": "cluster-ueno",
+        "to_cluster_id": "cluster-shinjuku",
+        "walk_min": 999,
+        "drive_min": 25,
+        "mode": "transit",
+        "note": "Direct ride on Yamanote Line."
+      },
+      {
+        "from_cluster_id": "cluster-ueno",
+        "to_cluster_id": "cluster-sumida",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": "Direct subway line available."
+      },
+      {
+        "from_cluster_id": "cluster-ueno",
+        "to_cluster_id": "cluster-roppongi",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Multiple Tokyo Metro connections."
+      },
+      {
+        "from_cluster_id": "cluster-ueno",
+        "to_cluster_id": "cluster-marunouchi",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": "JR services via Yamanote Line."
+      },
+      {
+        "from_cluster_id": "cluster-ueno",
+        "to_cluster_id": "cluster-mitaka",
+        "walk_min": 999,
+        "drive_min": 50,
+        "mode": "transit",
+        "note": "Chuo Line from Tokyo Station."
+      },
+      {
+        "from_cluster_id": "cluster-ueno",
+        "to_cluster_id": "cluster-nakameguro",
+        "walk_min": 999,
+        "drive_min": 35,
+        "mode": "transit",
+        "note": "Tokyo Metro transfer needed."
+      },
+      {
+        "from_cluster_id": "cluster-ueno",
+        "to_cluster_id": "cluster-yokohama",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "transit",
+        "note": "Direct train on JR Tokaido Line."
+      },
+      {
+        "from_cluster_id": "cluster-ueno",
+        "to_cluster_id": "cluster-mt-takao",
+        "walk_min": 999,
+        "drive_min": 90,
+        "mode": "transit",
+        "note": "Two train transfers required."
+      },
+      {
+        "from_cluster_id": "cluster-ueno",
+        "to_cluster_id": "cluster-mt-fuji",
+        "walk_min": 999,
+        "drive_min": 180,
+        "mode": "transit",
+        "note": "Long transit combination with bus."
+      },
+      {
+        "from_cluster_id": "cluster-ueno",
+        "to_cluster_id": "cluster-hakone",
+        "walk_min": 999,
+        "drive_min": 160,
+        "mode": "transit",
+        "note": "Commute using JR lines and bus."
+      },
+      {
+        "from_cluster_id": "cluster-ueno",
+        "to_cluster_id": "cluster-nikko",
+        "walk_min": 999,
+        "drive_min": 150,
+        "mode": "transit",
+        "note": "Take Shinkansen, then local line."
+      },
+      {
+        "from_cluster_id": "cluster-ueno",
+        "to_cluster_id": "cluster-kamakura",
+        "walk_min": 999,
+        "drive_min": 80,
+        "mode": "transit",
+        "note": "Transit via JR with one transfer."
+      },
+      {
+        "from_cluster_id": "cluster-ueno",
+        "to_cluster_id": "cluster-enoshima",
+        "walk_min": 999,
+        "drive_min": 95,
+        "mode": "transit",
+        "note": "Combination of railway and metro."
+      },
+      {
+        "from_cluster_id": "cluster-ueno",
+        "to_cluster_id": "cluster-tsukiji",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Tokyo Metro with one transfer."
+      },
+      {
+        "from_cluster_id": "cluster-ueno",
+        "to_cluster_id": "cluster-yanaka",
+        "walk_min": 20,
+        "drive_min": 8,
+        "mode": "walk",
+        "note": null
+      },
+      {
+        "from_cluster_id": "cluster-ueno",
+        "to_cluster_id": "cluster-tama-river",
+        "walk_min": 999,
+        "drive_min": 45,
+        "mode": "transit",
+        "note": null
+      },
+      {
+        "from_cluster_id": "cluster-ueno",
+        "to_cluster_id": "cluster-ome-mitake",
+        "walk_min": 999,
+        "drive_min": 70,
+        "mode": "transit",
+        "note": "Requires train transfer at Tachikawa."
+      },
+      {
+        "from_cluster_id": "cluster-ueno",
+        "to_cluster_id": "cluster-kanda-river",
+        "walk_min": 50,
+        "drive_min": 15,
+        "mode": "transit",
+        "note": "Walk or subway, slightly over walking threshold."
+      },
+      {
+        "from_cluster_id": "cluster-ueno",
+        "to_cluster_id": "cluster-kappabashi-dogugai",
+        "walk_min": 18,
+        "drive_min": 10,
+        "mode": "walk",
+        "note": null
+      },
+      {
+        "from_cluster_id": "cluster-ueno",
+        "to_cluster_id": "cluster-paragliding-in-omiya",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "transit",
+        "note": "Direct train from Ueno Station."
+      },
+      {
+        "from_cluster_id": "cluster-ueno",
+        "to_cluster_id": "cluster-akasaka-estate-loop",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Multiple subway transfers required."
+      },
+      {
+        "from_cluster_id": "cluster-ueno",
+        "to_cluster_id": "cluster-setsubun-festival",
+        "walk_min": 20,
+        "drive_min": 10,
+        "mode": "walk",
+        "note": null
+      },
+      {
+        "from_cluster_id": "cluster-ueno",
+        "to_cluster_id": "cluster-ark-hills-autumn-festival",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Requires subway transfer."
+      },
+      {
+        "from_cluster_id": "cluster-ueno",
+        "to_cluster_id": "cluster-japan-nights-autumn-illuminations",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Convenient by subway."
+      },
+      {
+        "from_cluster_id": "cluster-shinjuku",
+        "to_cluster_id": "cluster-sumida",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Direct subway or a quick train ride."
+      },
+      {
+        "from_cluster_id": "cluster-shinjuku",
+        "to_cluster_id": "cluster-roppongi",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": "Frequent subway or bus connections."
+      },
+      {
+        "from_cluster_id": "cluster-shinjuku",
+        "to_cluster_id": "cluster-marunouchi",
+        "walk_min": 999,
+        "drive_min": 25,
+        "mode": "transit",
+        "note": null
+      },
+      {
+        "from_cluster_id": "cluster-shinjuku",
+        "to_cluster_id": "cluster-mitaka",
+        "walk_min": 999,
+        "drive_min": 40,
+        "mode": "transit",
+        "note": "Direct train from Shinjuku Station."
+      },
+      {
+        "from_cluster_id": "cluster-shinjuku",
+        "to_cluster_id": "cluster-nakameguro",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": "Single train line connection."
+      },
+      {
+        "from_cluster_id": "cluster-shinjuku",
+        "to_cluster_id": "cluster-yokohama",
+        "walk_min": 999,
+        "drive_min": 40,
+        "mode": "transit",
+        "note": "Direct trains available."
+      },
+      {
+        "from_cluster_id": "cluster-shinjuku",
+        "to_cluster_id": "cluster-mt-takao",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "transit",
+        "note": "Direct train access."
+      },
+      {
+        "from_cluster_id": "cluster-shinjuku",
+        "to_cluster_id": "cluster-mt-fuji",
+        "walk_min": 999,
+        "drive_min": 120,
+        "mode": "transit",
+        "note": "Day-trip train required."
+      },
+      {
+        "from_cluster_id": "cluster-shinjuku",
+        "to_cluster_id": "cluster-hakone",
+        "walk_min": 999,
+        "drive_min": 90,
+        "mode": "transit",
+        "note": "Train with transfer at Odawara."
+      },
+      {
+        "from_cluster_id": "cluster-shinjuku",
+        "to_cluster_id": "cluster-nikko",
+        "walk_min": 999,
+        "drive_min": 150,
+        "mode": "transit",
+        "note": "Day-trip via train, transfer required."
+      },
+      {
+        "from_cluster_id": "cluster-shinjuku",
+        "to_cluster_id": "cluster-kamakura",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "transit",
+        "note": "Direct train available."
+      },
+      {
+        "from_cluster_id": "cluster-shinjuku",
+        "to_cluster_id": "cluster-enoshima",
+        "walk_min": 999,
+        "drive_min": 80,
+        "mode": "transit",
+        "note": "Multiple transfers on express train line."
+      },
+      {
+        "from_cluster_id": "cluster-shinjuku",
+        "to_cluster_id": "cluster-tsukiji",
+        "walk_min": 999,
+        "drive_min": 25,
+        "mode": "transit",
+        "note": "Convenient via direct subway."
+      },
+      {
+        "from_cluster_id": "cluster-shinjuku",
+        "to_cluster_id": "cluster-yanaka",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "One train transfer needed."
+      },
+      {
+        "from_cluster_id": "cluster-shinjuku",
+        "to_cluster_id": "cluster-tama-river",
+        "walk_min": 999,
+        "drive_min": 45,
+        "mode": "transit",
+        "note": "Easy train connections."
+      },
+      {
+        "from_cluster_id": "cluster-shinjuku",
+        "to_cluster_id": "cluster-ome-mitake",
+        "walk_min": 999,
+        "drive_min": 70,
+        "mode": "transit",
+        "note": "Requires train transfer at Tachikawa."
+      },
+      {
+        "from_cluster_id": "cluster-shinjuku",
+        "to_cluster_id": "cluster-kanda-river",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": null
+      },
+      {
+        "from_cluster_id": "cluster-shinjuku",
+        "to_cluster_id": "cluster-kappabashi-dogugai",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Requires a subway transfer."
+      },
+      {
+        "from_cluster_id": "cluster-shinjuku",
+        "to_cluster_id": "cluster-paragliding-in-omiya",
+        "walk_min": 999,
+        "drive_min": 50,
+        "mode": "transit",
+        "note": "Direct train available."
+      },
+      {
+        "from_cluster_id": "cluster-shinjuku",
+        "to_cluster_id": "cluster-akasaka-estate-loop",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": "Convenient via subway."
+      },
+      {
+        "from_cluster_id": "cluster-shinjuku",
+        "to_cluster_id": "cluster-setsubun-festival",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Requires transfer in Ueno."
+      },
+      {
+        "from_cluster_id": "cluster-shinjuku",
+        "to_cluster_id": "cluster-ark-hills-autumn-festival",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": null
+      },
+      {
+        "from_cluster_id": "cluster-shinjuku",
+        "to_cluster_id": "cluster-japan-nights-autumn-illuminations",
+        "walk_min": 999,
+        "drive_min": 25,
+        "mode": "transit",
+        "note": "Single subway line."
+      },
+      {
+        "from_cluster_id": "cluster-sumida",
+        "to_cluster_id": "cluster-roppongi",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Quick subway connection available."
+      },
+      {
+        "from_cluster_id": "cluster-sumida",
+        "to_cluster_id": "cluster-marunouchi",
+        "walk_min": 999,
+        "drive_min": 25,
+        "mode": "transit",
+        "note": "Direct subway line access."
+      },
+      {
+        "from_cluster_id": "cluster-sumida",
+        "to_cluster_id": "cluster-mitaka",
+        "walk_min": 999,
+        "drive_min": 50,
+        "mode": "transit",
+        "note": "Requires train transfer."
+      },
+      {
+        "from_cluster_id": "cluster-sumida",
+        "to_cluster_id": "cluster-nakameguro",
+        "walk_min": 999,
+        "drive_min": 40,
+        "mode": "transit",
+        "note": "Multiple subway transfers required."
+      },
+      {
+        "from_cluster_id": "cluster-sumida",
+        "to_cluster_id": "cluster-yokohama",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "transit",
+        "note": "Express train connection."
+      },
+      {
+        "from_cluster_id": "cluster-sumida",
+        "to_cluster_id": "cluster-mt-takao",
+        "walk_min": 999,
+        "drive_min": 80,
+        "mode": "transit",
+        "note": "Transfer to Chuo Line required."
+      },
+      {
+        "from_cluster_id": "cluster-sumida",
+        "to_cluster_id": "cluster-mt-fuji",
+        "walk_min": 999,
+        "drive_min": 150,
+        "mode": "transit",
+        "note": "Long train journey needed."
+      },
+      {
+        "from_cluster_id": "cluster-sumida",
+        "to_cluster_id": "cluster-hakone",
+        "walk_min": 999,
+        "drive_min": 120,
+        "mode": "transit",
+        "note": "Requires train change at Odawara."
+      },
+      {
+        "from_cluster_id": "cluster-sumida",
+        "to_cluster_id": "cluster-nikko",
+        "walk_min": 999,
+        "drive_min": 180,
+        "mode": "transit",
+        "note": "Long train journey with transfers."
+      },
+      {
+        "from_cluster_id": "cluster-sumida",
+        "to_cluster_id": "cluster-kamakura",
+        "walk_min": 999,
+        "drive_min": 80,
+        "mode": "transit",
+        "note": "Direct train available."
+      },
+      {
+        "from_cluster_id": "cluster-sumida",
+        "to_cluster_id": "cluster-enoshima",
+        "walk_min": 999,
+        "drive_min": 100,
+        "mode": "transit",
+        "note": "Multiple train changes required."
+      },
+      {
+        "from_cluster_id": "cluster-sumida",
+        "to_cluster_id": "cluster-tsukiji",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Easy subway connection."
+      },
+      {
+        "from_cluster_id": "cluster-sumida",
+        "to_cluster_id": "cluster-yanaka",
+        "walk_min": 999,
+        "drive_min": 25,
+        "mode": "transit",
+        "note": "Single subway transfer."
+      },
+      {
+        "from_cluster_id": "cluster-sumida",
+        "to_cluster_id": "cluster-tama-river",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "transit",
+        "note": "Direct train ride available."
+      },
+      {
+        "from_cluster_id": "cluster-sumida",
+        "to_cluster_id": "cluster-ome-mitake",
+        "walk_min": 999,
+        "drive_min": 90,
+        "mode": "transit",
+        "note": "Train transfer needed at Tachikawa."
+      },
+      {
+        "from_cluster_id": "cluster-sumida",
+        "to_cluster_id": "cluster-kanda-river",
+        "walk_min": 999,
+        "drive_min": 35,
+        "mode": "transit",
+        "note": "Transfer in Ueno station."
+      },
+      {
+        "from_cluster_id": "cluster-sumida",
+        "to_cluster_id": "cluster-kappabashi-dogugai",
+        "walk_min": 999,
+        "drive_min": 40,
+        "mode": "transit",
+        "note": "Multiple subway line changes."
+      },
+      {
+        "from_cluster_id": "cluster-sumida",
+        "to_cluster_id": "cluster-paragliding-in-omiya",
+        "walk_min": 999,
+        "drive_min": 70,
+        "mode": "transit",
+        "note": "Direct express train connection."
+      },
+      {
+        "from_cluster_id": "cluster-sumida",
+        "to_cluster_id": "cluster-akasaka-estate-loop",
+        "walk_min": 999,
+        "drive_min": 25,
+        "mode": "transit",
+        "note": "Subway with transfer at Asakusa."
+      },
+      {
+        "from_cluster_id": "cluster-sumida",
+        "to_cluster_id": "cluster-setsubun-festival",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Direct via Oedo line."
+      },
+      {
+        "from_cluster_id": "cluster-sumida",
+        "to_cluster_id": "cluster-ark-hills-autumn-festival",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Multiple subways transfer."
+      },
+      {
+        "from_cluster_id": "cluster-sumida",
+        "to_cluster_id": "cluster-japan-nights-autumn-illuminations",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Subway transfer needed."
+      },
+      {
+        "from_cluster_id": "cluster-roppongi",
+        "to_cluster_id": "cluster-marunouchi",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": "Direct via subway."
+      },
+      {
+        "from_cluster_id": "cluster-roppongi",
+        "to_cluster_id": "cluster-mitaka",
+        "walk_min": 999,
+        "drive_min": 50,
+        "mode": "transit",
+        "note": "Requires train transfer."
+      },
+      {
+        "from_cluster_id": "cluster-roppongi",
+        "to_cluster_id": "cluster-nakameguro",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": "Short subway trip."
+      },
+      {
+        "from_cluster_id": "cluster-roppongi",
+        "to_cluster_id": "cluster-yokohama",
+        "walk_min": 999,
+        "drive_min": 50,
+        "mode": "transit",
+        "note": "Direct train connections."
+      },
+      {
+        "from_cluster_id": "cluster-roppongi",
+        "to_cluster_id": "cluster-mt-takao",
+        "walk_min": 999,
+        "drive_min": 90,
+        "mode": "transit",
+        "note": "Convenient train access."
+      },
+      {
+        "from_cluster_id": "cluster-roppongi",
+        "to_cluster_id": "cluster-mt-fuji",
+        "walk_min": 999,
+        "drive_min": 150,
+        "mode": "car",
+        "note": "Train and shuttle transfers required. Plan for early departure."
+      },
+      {
+        "from_cluster_id": "cluster-roppongi",
+        "to_cluster_id": "cluster-hakone",
+        "walk_min": 999,
+        "drive_min": 105,
+        "mode": "car",
+        "note": "Use train to reduce travel time due to traffic."
+      },
+      {
+        "from_cluster_id": "cluster-roppongi",
+        "to_cluster_id": "cluster-nikko",
+        "walk_min": 999,
+        "drive_min": 150,
+        "mode": "car",
+        "note": "Train connection recommended."
+      },
+      {
+        "from_cluster_id": "cluster-roppongi",
+        "to_cluster_id": "cluster-kamakura",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "car",
+        "note": "Train faster due to express services."
+      },
+      {
+        "from_cluster_id": "cluster-roppongi",
+        "to_cluster_id": "cluster-enoshima",
+        "walk_min": 999,
+        "drive_min": 85,
+        "mode": "car",
+        "note": "Consider train for efficiency."
+      },
+      {
+        "from_cluster_id": "cluster-roppongi",
+        "to_cluster_id": "cluster-tsukiji",
+        "walk_min": 999,
+        "drive_min": 18,
+        "mode": "transit",
+        "note": "Subway is direct and efficient."
+      },
+      {
+        "from_cluster_id": "cluster-roppongi",
+        "to_cluster_id": "cluster-yanaka",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Direct subway connections available."
+      },
+      {
+        "from_cluster_id": "cluster-roppongi",
+        "to_cluster_id": "cluster-tama-river",
+        "walk_min": 999,
+        "drive_min": 70,
+        "mode": "car",
+        "note": "Best accessed by car."
+      },
+      {
+        "from_cluster_id": "cluster-roppongi",
+        "to_cluster_id": "cluster-ome-mitake",
+        "walk_min": 999,
+        "drive_min": 85,
+        "mode": "car",
+        "note": "Edge of countryside, best by car."
+      },
+      {
+        "from_cluster_id": "cluster-roppongi",
+        "to_cluster_id": "cluster-kanda-river",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Subway direct access is ideal."
+      },
+      {
+        "from_cluster_id": "cluster-roppongi",
+        "to_cluster_id": "cluster-kappabashi-dogugai",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Subway recommended for direct route."
+      },
+      {
+        "from_cluster_id": "cluster-roppongi",
+        "to_cluster_id": "cluster-paragliding-in-omiya",
+        "walk_min": 999,
+        "drive_min": 85,
+        "mode": "car",
+        "note": "Consider using the JR lines."
+      },
+      {
+        "from_cluster_id": "cluster-roppongi",
+        "to_cluster_id": "cluster-akasaka-estate-loop",
+        "walk_min": 15,
+        "drive_min": 10,
+        "mode": "walk",
+        "note": null
+      },
+      {
+        "from_cluster_id": "cluster-roppongi",
+        "to_cluster_id": "cluster-setsubun-festival",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Suitable for subway travel."
+      },
+      {
+        "from_cluster_id": "cluster-roppongi",
+        "to_cluster_id": "cluster-ark-hills-autumn-festival",
+        "walk_min": 12,
+        "drive_min": 8,
+        "mode": "walk",
+        "note": null
+      },
+      {
+        "from_cluster_id": "cluster-roppongi",
+        "to_cluster_id": "cluster-japan-nights-autumn-illuminations",
+        "walk_min": 999,
+        "drive_min": 35,
+        "mode": "transit",
+        "note": "Consider subway and transfer."
+      },
+      {
+        "from_cluster_id": "cluster-marunouchi",
+        "to_cluster_id": "cluster-mitaka",
+        "walk_min": 999,
+        "drive_min": 45,
+        "mode": "transit",
+        "note": "Direct JR Chuo Line recommended."
+      },
+      {
+        "from_cluster_id": "cluster-marunouchi",
+        "to_cluster_id": "cluster-nakameguro",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": "Tokyo Metro Hibiya Line direct access."
+      },
+      {
+        "from_cluster_id": "cluster-marunouchi",
+        "to_cluster_id": "cluster-yokohama",
+        "walk_min": 999,
+        "drive_min": 40,
+        "mode": "transit",
+        "note": "JR Tokaido Line connects directly."
+      },
+      {
+        "from_cluster_id": "cluster-marunouchi",
+        "to_cluster_id": "cluster-mt-takao",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "transit",
+        "note": "JR Chuo Line followed by keio line train."
+      },
+      {
+        "from_cluster_id": "cluster-marunouchi",
+        "to_cluster_id": "cluster-mt-fuji",
+        "walk_min": 999,
+        "drive_min": 150,
+        "mode": "car",
+        "note": "Multiple train connections needed."
+      },
+      {
+        "from_cluster_id": "cluster-marunouchi",
+        "to_cluster_id": "cluster-hakone",
+        "walk_min": 999,
+        "drive_min": 100,
+        "mode": "car",
+        "note": "Commonly accessed via shinkansen and bus."
+      },
+      {
+        "from_cluster_id": "cluster-marunouchi",
+        "to_cluster_id": "cluster-nikko",
+        "walk_min": 999,
+        "drive_min": 160,
+        "mode": "car",
+        "note": "Direct train option better."
+      },
+      {
+        "from_cluster_id": "cluster-marunouchi",
+        "to_cluster_id": "cluster-kamakura",
+        "walk_min": 999,
+        "drive_min": 65,
+        "mode": "transit",
+        "note": "Yokosuka Line provides direct rail."
+      },
+      {
+        "from_cluster_id": "cluster-marunouchi",
+        "to_cluster_id": "cluster-enoshima",
+        "walk_min": 999,
+        "drive_min": 80,
+        "mode": "transit",
+        "note": "Transfer to Odakyu Line."
+      },
+      {
+        "from_cluster_id": "cluster-marunouchi",
+        "to_cluster_id": "cluster-tsukiji",
+        "walk_min": 999,
+        "drive_min": 15,
+        "mode": "transit",
+        "note": "Walkable from Tokyo Station."
+      },
+      {
+        "from_cluster_id": "cluster-marunouchi",
+        "to_cluster_id": "cluster-yanaka",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Yamanote Line best for this route."
+      },
+      {
+        "from_cluster_id": "cluster-marunouchi",
+        "to_cluster_id": "cluster-tama-river",
+        "walk_min": 999,
+        "drive_min": 70,
+        "mode": "car",
+        "note": "Best accessed by car."
+      },
+      {
+        "from_cluster_id": "cluster-marunouchi",
+        "to_cluster_id": "cluster-ome-mitake",
+        "walk_min": 999,
+        "drive_min": 90,
+        "mode": "car",
+        "note": "Take Ome Line after JR."
+      },
+      {
+        "from_cluster_id": "cluster-marunouchi",
+        "to_cluster_id": "cluster-kanda-river",
+        "walk_min": 999,
+        "drive_min": 25,
+        "mode": "transit",
+        "note": "Reachable via subway, though split across stations."
+      },
+      {
+        "from_cluster_id": "cluster-marunouchi",
+        "to_cluster_id": "cluster-kappabashi-dogugai",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": "Tokyo Metro Ginza Line stops nearby."
+      },
+      {
+        "from_cluster_id": "cluster-marunouchi",
+        "to_cluster_id": "cluster-paragliding-in-omiya",
+        "walk_min": 999,
+        "drive_min": 55,
+        "mode": "transit",
+        "note": "JR serves this direction well."
+      },
+      {
+        "from_cluster_id": "cluster-marunouchi",
+        "to_cluster_id": "cluster-akasaka-estate-loop",
+        "walk_min": 999,
+        "drive_min": 15,
+        "mode": "transit",
+        "note": "Subway offers efficient route."
+      },
+      {
+        "from_cluster_id": "cluster-marunouchi",
+        "to_cluster_id": "cluster-setsubun-festival",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Requires subway and short walk."
+      },
+      {
+        "from_cluster_id": "cluster-marunouchi",
+        "to_cluster_id": "cluster-ark-hills-autumn-festival",
+        "walk_min": 999,
+        "drive_min": 12,
+        "mode": "transit",
+        "note": "Convenient by subway."
+      },
+      {
+        "from_cluster_id": "cluster-marunouchi",
+        "to_cluster_id": "cluster-japan-nights-autumn-illuminations",
+        "walk_min": 999,
+        "drive_min": 35,
+        "mode": "transit",
+        "note": "Subway is preferred."
+      },
+      {
+        "from_cluster_id": "cluster-mitaka",
+        "to_cluster_id": "cluster-nakameguro",
+        "walk_min": 999,
+        "drive_min": 45,
+        "mode": "transit",
+        "note": "Train the best option, JR then Tokyo Metro."
+      },
+      {
+        "from_cluster_id": "cluster-mitaka",
+        "to_cluster_id": "cluster-yokohama",
+        "walk_min": 999,
+        "drive_min": 65,
+        "mode": "transit",
+        "note": "JR Chuo and then a transfer to Tokaido Line."
+      },
+      {
+        "from_cluster_id": "cluster-mitaka",
+        "to_cluster_id": "cluster-mt-takao",
+        "walk_min": 999,
+        "drive_min": 45,
+        "mode": "transit",
+        "note": "JR gets you there with ease."
+      },
+      {
+        "from_cluster_id": "cluster-mitaka",
+        "to_cluster_id": "cluster-mt-fuji",
+        "walk_min": 999,
+        "drive_min": 110,
+        "mode": "car",
+        "note": "Best by train connections."
+      },
+      {
+        "from_cluster_id": "cluster-mitaka",
+        "to_cluster_id": "cluster-hakone",
+        "walk_min": 999,
+        "drive_min": 100,
+        "mode": "car",
+        "note": "Limited direct train options."
+      },
+      {
+        "from_cluster_id": "cluster-mitaka",
+        "to_cluster_id": "cluster-nikko",
+        "walk_min": 999,
+        "drive_min": 175,
+        "mode": "car",
+        "note": "Train connections can be faster."
+      },
+      {
+        "from_cluster_id": "cluster-mitaka",
+        "to_cluster_id": "cluster-kamakura",
+        "walk_min": 999,
+        "drive_min": 70,
+        "mode": "transit",
+        "note": "Efficient by JR trains."
+      },
+      {
+        "from_cluster_id": "cluster-mitaka",
+        "to_cluster_id": "cluster-enoshima",
+        "walk_min": 999,
+        "drive_min": 75,
+        "mode": "transit",
+        "note": "Utilizing transfers aids travel."
+      },
+      {
+        "from_cluster_id": "cluster-mitaka",
+        "to_cluster_id": "cluster-tsukiji",
+        "walk_min": 999,
+        "drive_min": 40,
+        "mode": "transit",
+        "note": "Good for JR and Metro combination."
+      },
+      {
+        "from_cluster_id": "cluster-mitaka",
+        "to_cluster_id": "cluster-yanaka",
+        "walk_min": 999,
+        "drive_min": 35,
+        "mode": "transit",
+        "note": "Accessable via JR from Nishi-Nippori."
+      },
+      {
+        "from_cluster_id": "cluster-mitaka",
+        "to_cluster_id": "cluster-tama-river",
+        "walk_min": 999,
+        "drive_min": 55,
+        "mode": "car",
+        "note": "Reach via multiple car routes."
+      },
+      {
+        "from_cluster_id": "cluster-mitaka",
+        "to_cluster_id": "cluster-ome-mitake",
+        "walk_min": 999,
+        "drive_min": 50,
+        "mode": "car",
+        "note": "Reachable by limited JR service."
+      },
+      {
+        "from_cluster_id": "cluster-mitaka",
+        "to_cluster_id": "cluster-kanda-river",
+        "walk_min": 999,
+        "drive_min": 45,
+        "mode": "transit",
+        "note": "JR lines best fit here."
+      },
+      {
+        "from_cluster_id": "cluster-mitaka",
+        "to_cluster_id": "cluster-kappabashi-dogugai",
+        "walk_min": 999,
+        "drive_min": 45,
+        "mode": "transit",
+        "note": "JR and Metro combined route."
+      },
+      {
+        "from_cluster_id": "cluster-mitaka",
+        "to_cluster_id": "cluster-paragliding-in-omiya",
+        "walk_min": 999,
+        "drive_min": 50,
+        "mode": "transit",
+        "note": "JR lines provide most efficient access."
+      },
+      {
+        "from_cluster_id": "cluster-mitaka",
+        "to_cluster_id": "cluster-akasaka-estate-loop",
+        "walk_min": 999,
+        "drive_min": 40,
+        "mode": "transit",
+        "note": "Metro and short walk required."
+      },
+      {
+        "from_cluster_id": "cluster-mitaka",
+        "to_cluster_id": "cluster-setsubun-festival",
+        "walk_min": 999,
+        "drive_min": 50,
+        "mode": "transit",
+        "note": "Yamanote line and brief walk."
+      },
+      {
+        "from_cluster_id": "cluster-mitaka",
+        "to_cluster_id": "cluster-ark-hills-autumn-festival",
+        "walk_min": 999,
+        "drive_min": 55,
+        "mode": "transit",
+        "note": "Longer complex transit route."
+      },
+      {
+        "from_cluster_id": "cluster-mitaka",
+        "to_cluster_id": "cluster-japan-nights-autumn-illuminations",
+        "walk_min": 999,
+        "drive_min": 50,
+        "mode": "transit",
+        "note": "JR and Metro take some time."
+      },
+      {
+        "from_cluster_id": "cluster-nakameguro",
+        "to_cluster_id": "cluster-yokohama",
+        "walk_min": 999,
+        "drive_min": 40,
+        "mode": "transit",
+        "note": "Direct Tokyo Meguro Line available."
+      },
+      {
+        "from_cluster_id": "cluster-nakameguro",
+        "to_cluster_id": "cluster-mt-takao",
+        "walk_min": 999,
+        "drive_min": 70,
+        "mode": "transit",
+        "note": "Utilize Meguro then JR lines."
+      },
+      {
+        "from_cluster_id": "cluster-nakameguro",
+        "to_cluster_id": "cluster-mt-fuji",
+        "walk_min": 999,
+        "drive_min": 140,
+        "mode": "car",
+        "note": "Long travel; use train if applicable."
+      },
+      {
+        "from_cluster_id": "cluster-nakameguro",
+        "to_cluster_id": "cluster-hakone",
+        "walk_min": 999,
+        "drive_min": 85,
+        "mode": "car",
+        "note": "Utillize Odakyu Line for quick trip."
+      },
+      {
+        "from_cluster_id": "cluster-nakameguro",
+        "to_cluster_id": "cluster-nikko",
+        "walk_min": 999,
+        "drive_min": 150,
+        "mode": "car",
+        "note": "Consider plenty of train connections."
+      },
+      {
+        "from_cluster_id": "cluster-nakameguro",
+        "to_cluster_id": "cluster-kamakura",
+        "walk_min": 999,
+        "drive_min": 75,
+        "mode": "transit",
+        "note": "Train from Nakameguro to Kamakura via Shibuya and Yokohama."
+      },
+      {
+        "from_cluster_id": "cluster-nakameguro",
+        "to_cluster_id": "cluster-enoshima",
+        "walk_min": 999,
+        "drive_min": 90,
+        "mode": "transit",
+        "note": "Train from Nakameguro to Enoshima, usually changes at Shibuya and Fujisawa."
+      },
+      {
+        "from_cluster_id": "cluster-nakameguro",
+        "to_cluster_id": "cluster-tsukiji",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Subway transfer at Shibuya and Ginza for Tsukiji station."
+      },
+      {
+        "from_cluster_id": "cluster-nakameguro",
+        "to_cluster_id": "cluster-yanaka",
+        "walk_min": 999,
+        "drive_min": 45,
+        "mode": "transit",
+        "note": "Train transfer required at Shibuya and Ueno for Yanaka."
+      },
+      {
+        "from_cluster_id": "cluster-nakameguro",
+        "to_cluster_id": "cluster-tama-river",
+        "walk_min": 999,
+        "drive_min": 90,
+        "mode": "car",
+        "note": "Best accessed by car due to outdoor activities."
+      },
+      {
+        "from_cluster_id": "cluster-nakameguro",
+        "to_cluster_id": "cluster-ome-mitake",
+        "walk_min": 999,
+        "drive_min": 120,
+        "mode": "transit",
+        "note": "Trains toward Ome Line, changing at Tachikawa."
+      },
+      {
+        "from_cluster_id": "cluster-nakameguro",
+        "to_cluster_id": "cluster-kanda-river",
+        "walk_min": 999,
+        "drive_min": 40,
+        "mode": "transit",
+        "note": "Subway transfer required at Shibuya."
+      },
+      {
+        "from_cluster_id": "cluster-nakameguro",
+        "to_cluster_id": "cluster-kappabashi-dogugai",
+        "walk_min": 999,
+        "drive_min": 45,
+        "mode": "transit",
+        "note": "Train via Shibuya and Ueno, walking from Tawaramachi Station."
+      },
+      {
+        "from_cluster_id": "cluster-nakameguro",
+        "to_cluster_id": "cluster-paragliding-in-omiya",
+        "walk_min": 999,
+        "drive_min": 90,
+        "mode": "transit",
+        "note": "Train to Omiya via Shibuya, Tokyo, and Ueno."
+      },
+      {
+        "from_cluster_id": "cluster-nakameguro",
+        "to_cluster_id": "cluster-akasaka-estate-loop",
+        "walk_min": 999,
+        "drive_min": 35,
+        "mode": "transit",
+        "note": "Connected to Akasaka by subway via Nagatacho Station."
+      },
+      {
+        "from_cluster_id": "cluster-nakameguro",
+        "to_cluster_id": "cluster-setsubun-festival",
+        "walk_min": 999,
+        "drive_min": 55,
+        "mode": "transit",
+        "note": "Head through Asakusa via Shibuya and Ueno."
+      },
+      {
+        "from_cluster_id": "cluster-nakameguro",
+        "to_cluster_id": "cluster-ark-hills-autumn-festival",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Transit via Shibuya and Tameike-sanno Station."
+      },
+      {
+        "from_cluster_id": "cluster-nakameguro",
+        "to_cluster_id": "cluster-japan-nights-autumn-illuminations",
+        "walk_min": 999,
+        "drive_min": 40,
+        "mode": "transit",
+        "note": "Transit to Komagome Station via Ueno."
+      },
+      {
+        "from_cluster_id": "cluster-yokohama",
+        "to_cluster_id": "cluster-mt-takao",
+        "walk_min": 999,
+        "drive_min": 80,
+        "mode": "transit",
+        "note": "Direct train changes required; bus or cable car at Mt. Takao."
+      },
+      {
+        "from_cluster_id": "cluster-yokohama",
+        "to_cluster_id": "cluster-mt-fuji",
+        "walk_min": 999,
+        "drive_min": 180,
+        "mode": "transit",
+        "note": "Day trip with multiple train changes and bus to base."
+      },
+      {
+        "from_cluster_id": "cluster-yokohama",
+        "to_cluster_id": "cluster-hakone",
+        "walk_min": 999,
+        "drive_min": 110,
+        "mode": "transit",
+        "note": "Via Odawara for the Hakone Tozan Railway."
+      },
+      {
+        "from_cluster_id": "cluster-yokohama",
+        "to_cluster_id": "cluster-nikko",
+        "walk_min": 999,
+        "drive_min": 180,
+        "mode": "transit",
+        "note": "Long distance traveled by Shinkansen from Ueno."
+      },
+      {
+        "from_cluster_id": "cluster-yokohama",
+        "to_cluster_id": "cluster-kamakura",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Direct train from Yokohama to Kamakura station."
+      },
+      {
+        "from_cluster_id": "cluster-yokohama",
+        "to_cluster_id": "cluster-enoshima",
+        "walk_min": 999,
+        "drive_min": 45,
+        "mode": "transit",
+        "note": "Best accessed by Enoden Line via Kamakura."
+      },
+      {
+        "from_cluster_id": "cluster-yokohama",
+        "to_cluster_id": "cluster-tsukiji",
+        "walk_min": 999,
+        "drive_min": 45,
+        "mode": "transit",
+        "note": "Reliant on Tokyo Metro from Yokohama via Tokyo Station."
+      },
+      {
+        "from_cluster_id": "cluster-yokohama",
+        "to_cluster_id": "cluster-yanaka",
+        "walk_min": 999,
+        "drive_min": 65,
+        "mode": "transit",
+        "note": "Trains through Ueno for Yanaka."
+      },
+      {
+        "from_cluster_id": "cluster-yokohama",
+        "to_cluster_id": "cluster-tama-river",
+        "walk_min": 999,
+        "drive_min": 90,
+        "mode": "car",
+        "note": "Drive is most practical as public transit is fragmented."
+      },
+      {
+        "from_cluster_id": "cluster-yokohama",
+        "to_cluster_id": "cluster-ome-mitake",
+        "walk_min": 999,
+        "drive_min": 120,
+        "mode": "transit",
+        "note": "Train changes necessary at multiple points."
+      },
+      {
+        "from_cluster_id": "cluster-yokohama",
+        "to_cluster_id": "cluster-kanda-river",
+        "walk_min": 999,
+        "drive_min": 50,
+        "mode": "transit",
+        "note": "Trains via central Tokyo, transfer at Ueno."
+      },
+      {
+        "from_cluster_id": "cluster-yokohama",
+        "to_cluster_id": "cluster-kappabashi-dogugai",
+        "walk_min": 999,
+        "drive_min": 65,
+        "mode": "transit",
+        "note": "Train via Tokyo Metro with transfer requirements at Ginza."
+      },
+      {
+        "from_cluster_id": "cluster-yokohama",
+        "to_cluster_id": "cluster-paragliding-in-omiya",
+        "walk_min": 999,
+        "drive_min": 85,
+        "mode": "transit",
+        "note": "Train via Akihabara towards Omiya."
+      },
+      {
+        "from_cluster_id": "cluster-yokohama",
+        "to_cluster_id": "cluster-akasaka-estate-loop",
+        "walk_min": 999,
+        "drive_min": 40,
+        "mode": "transit",
+        "note": "Subway transfers via Shibuya and Marunouchi Line."
+      },
+      {
+        "from_cluster_id": "cluster-yokohama",
+        "to_cluster_id": "cluster-setsubun-festival",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "transit",
+        "note": "Trains driving through Ueno and onto Asakusa."
+      },
+      {
+        "from_cluster_id": "cluster-yokohama",
+        "to_cluster_id": "cluster-ark-hills-autumn-festival",
+        "walk_min": 999,
+        "drive_min": 50,
+        "mode": "transit",
+        "note": "Transit via Tameike-sanno Station."
+      },
+      {
+        "from_cluster_id": "cluster-yokohama",
+        "to_cluster_id": "cluster-japan-nights-autumn-illuminations",
+        "walk_min": 999,
+        "drive_min": 70,
+        "mode": "transit",
+        "note": "Transits to Komagome Station through central Tokyo."
+      },
+      {
+        "from_cluster_id": "cluster-mt-takao",
+        "to_cluster_id": "cluster-mt-fuji",
+        "walk_min": 999,
+        "drive_min": 200,
+        "mode": "transit",
+        "note": "Travel involves multiple train connections and a bus."
+      },
+      {
+        "from_cluster_id": "cluster-mt-takao",
+        "to_cluster_id": "cluster-hakone",
+        "walk_min": 999,
+        "drive_min": 120,
+        "mode": "transit",
+        "note": "Bus and train via Odawara towards Hakone."
+      },
+      {
+        "from_cluster_id": "cluster-mt-takao",
+        "to_cluster_id": "cluster-nikko",
+        "walk_min": 999,
+        "drive_min": 240,
+        "mode": "transit",
+        "note": "Long distance transit across multiple lines."
+      },
+      {
+        "from_cluster_id": "cluster-mt-takao",
+        "to_cluster_id": "cluster-kamakura",
+        "walk_min": 999,
+        "drive_min": 90,
+        "mode": "transit",
+        "note": "Bus and train transfers via Yokohama."
+      },
+      {
+        "from_cluster_id": "cluster-mt-takao",
+        "to_cluster_id": "cluster-enoshima",
+        "walk_min": 999,
+        "drive_min": 100,
+        "mode": "transit",
+        "note": "Train to Fujisawa, then local line to Enoshima."
+      },
+      {
+        "from_cluster_id": "cluster-mt-takao",
+        "to_cluster_id": "cluster-tsukiji",
+        "walk_min": 999,
+        "drive_min": 75,
+        "mode": "transit",
+        "note": "Trains via Shinjuku for Ginza and Tsukiji."
+      },
+      {
+        "from_cluster_id": "cluster-mt-takao",
+        "to_cluster_id": "cluster-yanaka",
+        "walk_min": 999,
+        "drive_min": 80,
+        "mode": "transit",
+        "note": "Transit to Yanaka via Ueno requiring changing at central Tokyo."
+      },
+      {
+        "from_cluster_id": "cluster-mt-takao",
+        "to_cluster_id": "cluster-tama-river",
+        "walk_min": 999,
+        "drive_min": 55,
+        "mode": "car",
+        "note": "Easily accessible by car due to rural locations."
+      },
+      {
+        "from_cluster_id": "cluster-mt-takao",
+        "to_cluster_id": "cluster-ome-mitake",
+        "walk_min": 999,
+        "drive_min": 90,
+        "mode": "transit",
+        "note": "Train line change from Takao to Ome via Tachikawa."
+      },
+      {
+        "from_cluster_id": "cluster-mt-takao",
+        "to_cluster_id": "cluster-kanda-river",
+        "walk_min": 999,
+        "drive_min": 80,
+        "mode": "transit",
+        "note": "Trains from Takao to Tokyo Ueno and then by subway."
+      },
+      {
+        "from_cluster_id": "cluster-mt-takao",
+        "to_cluster_id": "cluster-kappabashi-dogugai",
+        "walk_min": 999,
+        "drive_min": 85,
+        "mode": "transit",
+        "note": "Trains from Takao to Tokyo with subways via Tawaramachi."
+      },
+      {
+        "from_cluster_id": "cluster-mt-takao",
+        "to_cluster_id": "cluster-paragliding-in-omiya",
+        "walk_min": 999,
+        "drive_min": 120,
+        "mode": "transit",
+        "note": "Trains with transfer at Tachikawa and Tokyo."
+      },
+      {
+        "from_cluster_id": "cluster-mt-takao",
+        "to_cluster_id": "cluster-akasaka-estate-loop",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "transit",
+        "note": "Trains through Shinjuku, and connecting Tokyo Metro."
+      },
+      {
+        "from_cluster_id": "cluster-mt-takao",
+        "to_cluster_id": "cluster-setsubun-festival",
+        "walk_min": 999,
+        "drive_min": 75,
+        "mode": "transit",
+        "note": "Optimal route through Tokyo for changes to Asakusa."
+      },
+      {
+        "from_cluster_id": "cluster-mt-takao",
+        "to_cluster_id": "cluster-ark-hills-autumn-festival",
+        "walk_min": 999,
+        "drive_min": 70,
+        "mode": "transit",
+        "note": "Subway transfers through Minato via Tokyo Metro."
+      },
+      {
+        "from_cluster_id": "cluster-mt-takao",
+        "to_cluster_id": "cluster-japan-nights-autumn-illuminations",
+        "walk_min": 999,
+        "drive_min": 90,
+        "mode": "transit",
+        "note": "Train via Tokyo with transfer at Ueno for Komagome."
+      },
+      {
+        "from_cluster_id": "cluster-mt-fuji",
+        "to_cluster_id": "cluster-hakone",
+        "walk_min": 999,
+        "drive_min": 120,
+        "mode": "transit",
+        "note": "Multiple transfers via Odawara on scenic route."
+      },
+      {
+        "from_cluster_id": "cluster-mt-fuji",
+        "to_cluster_id": "cluster-nikko",
+        "walk_min": 999,
+        "drive_min": 240,
+        "mode": "transit",
+        "note": "Long travel involving Shinkansen and Nikko Line from Tokyo."
+      },
+      {
+        "from_cluster_id": "cluster-mt-fuji",
+        "to_cluster_id": "cluster-kamakura",
+        "walk_min": 999,
+        "drive_min": 160,
+        "mode": "transit",
+        "note": "Trains with key transfers at Yokohama."
+      },
+      {
+        "from_cluster_id": "cluster-mt-fuji",
+        "to_cluster_id": "cluster-enoshima",
+        "walk_min": 999,
+        "drive_min": 180,
+        "mode": "transit",
+        "note": "Train via Fujisawa followed by Enoden Line."
+      },
+      {
+        "from_cluster_id": "cluster-mt-fuji",
+        "to_cluster_id": "cluster-tsukiji",
+        "walk_min": 999,
+        "drive_min": 180,
+        "mode": "transit",
+        "note": "Long distance tract taking in Tokyo and metro connections."
+      },
+      {
+        "from_cluster_id": "cluster-mt-fuji",
+        "to_cluster_id": "cluster-yanaka",
+        "walk_min": 999,
+        "drive_min": 200,
+        "mode": "transit",
+        "note": "Central Tokyo link-ups required toward Yanaka."
+      },
+      {
+        "from_cluster_id": "cluster-mt-fuji",
+        "to_cluster_id": "cluster-tama-river",
+        "walk_min": 999,
+        "drive_min": 140,
+        "mode": "car",
+        "note": "Suitable for driving for direct access to rural zones."
+      },
+      {
+        "from_cluster_id": "cluster-mt-fuji",
+        "to_cluster_id": "cluster-ome-mitake",
+        "walk_min": 999,
+        "drive_min": 180,
+        "mode": "transit",
+        "note": "Trains through central Tokyo with connections at main stations."
+      },
+      {
+        "from_cluster_id": "cluster-mt-fuji",
+        "to_cluster_id": "cluster-kanda-river",
+        "walk_min": 999,
+        "drive_min": 200,
+        "mode": "transit",
+        "note": "Transfer needed through Ueno for Kanda connections."
+      },
+      {
+        "from_cluster_id": "cluster-mt-fuji",
+        "to_cluster_id": "cluster-kappabashi-dogugai",
+        "walk_min": 999,
+        "drive_min": 200,
+        "mode": "transit",
+        "note": "Train transpositions involving the Tokyo and metro network."
+      },
+      {
+        "from_cluster_id": "cluster-mt-fuji",
+        "to_cluster_id": "cluster-paragliding-in-omiya",
+        "walk_min": 999,
+        "drive_min": 230,
+        "mode": "transit",
+        "note": "Through Tokyo with shifts toward northern commuter routes."
+      },
+      {
+        "from_cluster_id": "cluster-mt-fuji",
+        "to_cluster_id": "cluster-akasaka-estate-loop",
+        "walk_min": 999,
+        "drive_min": 190,
+        "mode": "transit",
+        "note": "Final steps through Tokyo Metro after journey from Fuji."
+      },
+      {
+        "from_cluster_id": "cluster-mt-fuji",
+        "to_cluster_id": "cluster-setsubun-festival",
+        "walk_min": 999,
+        "drive_min": 220,
+        "mode": "transit",
+        "note": "Trains to Asakusa through Tokyo’s central lines."
+      },
+      {
+        "from_cluster_id": "cluster-mt-fuji",
+        "to_cluster_id": "cluster-ark-hills-autumn-festival",
+        "walk_min": 999,
+        "drive_min": 200,
+        "mode": "transit",
+        "note": "Via Tokyo connections including Metro to Ark Hills."
+      },
+      {
+        "from_cluster_id": "cluster-mt-fuji",
+        "to_cluster_id": "cluster-japan-nights-autumn-illuminations",
+        "walk_min": 999,
+        "drive_min": 120,
+        "mode": "transit",
+        "note": "Requires train travel from Mount Fuji area to central Tokyo."
+      },
+      {
+        "from_cluster_id": "cluster-hakone",
+        "to_cluster_id": "cluster-nikko",
+        "walk_min": 999,
+        "drive_min": 210,
+        "mode": "transit",
+        "note": "Involves multiple train transfers with JR passes recommended."
+      },
+      {
+        "from_cluster_id": "cluster-hakone",
+        "to_cluster_id": "cluster-kamakura",
+        "walk_min": 999,
+        "drive_min": 90,
+        "mode": "transit",
+        "note": "Accessible by train with a transfer in Odawara."
+      },
+      {
+        "from_cluster_id": "cluster-hakone",
+        "to_cluster_id": "cluster-enoshima",
+        "walk_min": 999,
+        "drive_min": 85,
+        "mode": "transit",
+        "note": "Train travel via Odawara and Kamakura."
+      },
+      {
+        "from_cluster_id": "cluster-hakone",
+        "to_cluster_id": "cluster-tsukiji",
+        "walk_min": 999,
+        "drive_min": 150,
+        "mode": "transit",
+        "note": "Requires train travel via Odawara to Tokyo."
+      },
+      {
+        "from_cluster_id": "cluster-hakone",
+        "to_cluster_id": "cluster-yanaka",
+        "walk_min": 999,
+        "drive_min": 160,
+        "mode": "transit",
+        "note": "Train travel from Hakone to Tokyo, then local lines."
+      },
+      {
+        "from_cluster_id": "cluster-hakone",
+        "to_cluster_id": "cluster-tama-river",
+        "walk_min": 999,
+        "drive_min": 180,
+        "mode": "transit",
+        "note": "Multiple train transfers required."
+      },
+      {
+        "from_cluster_id": "cluster-hakone",
+        "to_cluster_id": "cluster-ome-mitake",
+        "walk_min": 999,
+        "drive_min": 200,
+        "mode": "transit",
+        "note": "Long travel with train transfers needed."
+      },
+      {
+        "from_cluster_id": "cluster-hakone",
+        "to_cluster_id": "cluster-kanda-river",
+        "walk_min": 999,
+        "drive_min": 130,
+        "mode": "transit",
+        "note": "Train travel required via central Tokyo."
+      },
+      {
+        "from_cluster_id": "cluster-hakone",
+        "to_cluster_id": "cluster-kappabashi-dogugai",
+        "walk_min": 999,
+        "drive_min": 155,
+        "mode": "transit",
+        "note": "Train travel with multiple transfers."
+      },
+      {
+        "from_cluster_id": "cluster-hakone",
+        "to_cluster_id": "cluster-paragliding-in-omiya",
+        "walk_min": 999,
+        "drive_min": 170,
+        "mode": "transit",
+        "note": "Train travel toward Omiya with transfers."
+      },
+      {
+        "from_cluster_id": "cluster-hakone",
+        "to_cluster_id": "cluster-akasaka-estate-loop",
+        "walk_min": 999,
+        "drive_min": 150,
+        "mode": "transit",
+        "note": "Direct train to Tokyo and then local connections."
+      },
+      {
+        "from_cluster_id": "cluster-hakone",
+        "to_cluster_id": "cluster-setsubun-festival",
+        "walk_min": 999,
+        "drive_min": 160,
+        "mode": "transit",
+        "note": "Train travel needed to reach Asakusa from Hakone."
+      },
+      {
+        "from_cluster_id": "cluster-hakone",
+        "to_cluster_id": "cluster-ark-hills-autumn-festival",
+        "walk_min": 999,
+        "drive_min": 145,
+        "mode": "transit",
+        "note": "Train to Tokyo station and then local transit."
+      },
+      {
+        "from_cluster_id": "cluster-hakone",
+        "to_cluster_id": "cluster-japan-nights-autumn-illuminations",
+        "walk_min": 999,
+        "drive_min": 150,
+        "mode": "transit",
+        "note": "Train journey with transfers to Tokyo area."
+      },
+      {
+        "from_cluster_id": "cluster-nikko",
+        "to_cluster_id": "cluster-kamakura",
+        "walk_min": 999,
+        "drive_min": 240,
+        "mode": "transit",
+        "note": "Requires train with a transfer in Tokyo."
+      },
+      {
+        "from_cluster_id": "cluster-nikko",
+        "to_cluster_id": "cluster-enoshima",
+        "walk_min": 999,
+        "drive_min": 250,
+        "mode": "transit",
+        "note": "Train journey via Tokyo, multiple transfers needed."
+      },
+      {
+        "from_cluster_id": "cluster-nikko",
+        "to_cluster_id": "cluster-tsukiji",
+        "walk_min": 999,
+        "drive_min": 210,
+        "mode": "transit",
+        "note": "Train to Tokyo, then subway to Tsukiji."
+      },
+      {
+        "from_cluster_id": "cluster-nikko",
+        "to_cluster_id": "cluster-yanaka",
+        "walk_min": 999,
+        "drive_min": 220,
+        "mode": "transit",
+        "note": "Direct train to Tokyo with local lines to Yanaka."
+      },
+      {
+        "from_cluster_id": "cluster-nikko",
+        "to_cluster_id": "cluster-tama-river",
+        "walk_min": 999,
+        "drive_min": 250,
+        "mode": "transit",
+        "note": "Multiple train transfers required to reach the area."
+      },
+      {
+        "from_cluster_id": "cluster-nikko",
+        "to_cluster_id": "cluster-ome-mitake",
+        "walk_min": 999,
+        "drive_min": 275,
+        "mode": "transit",
+        "note": "Long travel time with multiple transfers involved."
+      },
+      {
+        "from_cluster_id": "cluster-nikko",
+        "to_cluster_id": "cluster-kanda-river",
+        "walk_min": 999,
+        "drive_min": 210,
+        "mode": "transit",
+        "note": "Reachable by train through Tokyo and then local lines."
+      },
+      {
+        "from_cluster_id": "cluster-nikko",
+        "to_cluster_id": "cluster-kappabashi-dogugai",
+        "walk_min": 999,
+        "drive_min": 220,
+        "mode": "transit",
+        "note": "Direct train to Tokyo; transfer needed to go further."
+      },
+      {
+        "from_cluster_id": "cluster-nikko",
+        "to_cluster_id": "cluster-paragliding-in-omiya",
+        "walk_min": 999,
+        "drive_min": 230,
+        "mode": "transit",
+        "note": "Train to Omiya with additional local transfers."
+      },
+      {
+        "from_cluster_id": "cluster-nikko",
+        "to_cluster_id": "cluster-akasaka-estate-loop",
+        "walk_min": 999,
+        "drive_min": 220,
+        "mode": "transit",
+        "note": "Train travel from Nikko to central Tokyo."
+      },
+      {
+        "from_cluster_id": "cluster-nikko",
+        "to_cluster_id": "cluster-setsubun-festival",
+        "walk_min": 999,
+        "drive_min": 230,
+        "mode": "transit",
+        "note": "Requires train travel to Asakusa for the festival."
+      },
+      {
+        "from_cluster_id": "cluster-nikko",
+        "to_cluster_id": "cluster-ark-hills-autumn-festival",
+        "walk_min": 999,
+        "drive_min": 215,
+        "mode": "transit",
+        "note": "Train to Tokyo area, then transfer to Roppongi."
+      },
+      {
+        "from_cluster_id": "cluster-nikko",
+        "to_cluster_id": "cluster-japan-nights-autumn-illuminations",
+        "walk_min": 999,
+        "drive_min": 220,
+        "mode": "transit",
+        "note": "Requires travel to central Tokyo using trains."
+      },
+      {
+        "from_cluster_id": "cluster-kamakura",
+        "to_cluster_id": "cluster-enoshima",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Short train journey using local Enoshima lines."
+      },
+      {
+        "from_cluster_id": "cluster-kamakura",
+        "to_cluster_id": "cluster-tsukiji",
+        "walk_min": 999,
+        "drive_min": 90,
+        "mode": "transit",
+        "note": "Reachable by train via Tokyo with a transfer."
+      },
+      {
+        "from_cluster_id": "cluster-kamakura",
+        "to_cluster_id": "cluster-yanaka",
+        "walk_min": 999,
+        "drive_min": 105,
+        "mode": "transit",
+        "note": "Direct train to Tokyo, then local lines."
+      },
+      {
+        "from_cluster_id": "cluster-kamakura",
+        "to_cluster_id": "cluster-tama-river",
+        "walk_min": 999,
+        "drive_min": 120,
+        "mode": "transit",
+        "note": "Train line connections needed after reaching Tokyo."
+      },
+      {
+        "from_cluster_id": "cluster-kamakura",
+        "to_cluster_id": "cluster-ome-mitake",
+        "walk_min": 999,
+        "drive_min": 150,
+        "mode": "transit",
+        "note": "Takes various connections to reach the destination."
+      },
+      {
+        "from_cluster_id": "cluster-kamakura",
+        "to_cluster_id": "cluster-kanda-river",
+        "walk_min": 999,
+        "drive_min": 100,
+        "mode": "transit",
+        "note": "Train via Tokyo Station with local connections."
+      },
+      {
+        "from_cluster_id": "cluster-kamakura",
+        "to_cluster_id": "cluster-kappabashi-dogugai",
+        "walk_min": 999,
+        "drive_min": 110,
+        "mode": "transit",
+        "note": "Train to Tokyo, then connecting lines."
+      },
+      {
+        "from_cluster_id": "cluster-kamakura",
+        "to_cluster_id": "cluster-paragliding-in-omiya",
+        "walk_min": 999,
+        "drive_min": 130,
+        "mode": "transit",
+        "note": "Longer commute via trains to reach Omiya."
+      },
+      {
+        "from_cluster_id": "cluster-kamakura",
+        "to_cluster_id": "cluster-akasaka-estate-loop",
+        "walk_min": 999,
+        "drive_min": 90,
+        "mode": "transit",
+        "note": "Direct access from Tokyo central via train."
+      },
+      {
+        "from_cluster_id": "cluster-kamakura",
+        "to_cluster_id": "cluster-setsubun-festival",
+        "walk_min": 999,
+        "drive_min": 110,
+        "mode": "transit",
+        "note": "Train to Asakusa station with a change in Tokyo."
+      },
+      {
+        "from_cluster_id": "cluster-kamakura",
+        "to_cluster_id": "cluster-ark-hills-autumn-festival",
+        "walk_min": 999,
+        "drive_min": 95,
+        "mode": "transit",
+        "note": "Transfers required at Tokyo for Roppongi."
+      },
+      {
+        "from_cluster_id": "cluster-kamakura",
+        "to_cluster_id": "cluster-japan-nights-autumn-illuminations",
+        "walk_min": 999,
+        "drive_min": 110,
+        "mode": "transit",
+        "note": "Reachable via Tokyo using trains and metro."
+      },
+      {
+        "from_cluster_id": "cluster-enoshima",
+        "to_cluster_id": "cluster-tsukiji",
+        "walk_min": 999,
+        "drive_min": 95,
+        "mode": "transit",
+        "note": "Involves train travel via Tokyo main lines."
+      },
+      {
+        "from_cluster_id": "cluster-enoshima",
+        "to_cluster_id": "cluster-yanaka",
+        "walk_min": 999,
+        "drive_min": 110,
+        "mode": "transit",
+        "note": "Accessed via Tokyo station using local lines."
+      },
+      {
+        "from_cluster_id": "cluster-enoshima",
+        "to_cluster_id": "cluster-tama-river",
+        "walk_min": 999,
+        "drive_min": 140,
+        "mode": "transit",
+        "note": "Requires multiple train connections."
+      },
+      {
+        "from_cluster_id": "cluster-enoshima",
+        "to_cluster_id": "cluster-ome-mitake",
+        "walk_min": 999,
+        "drive_min": 150,
+        "mode": "transit",
+        "note": "Long train journey with transfers needed."
+      },
+      {
+        "from_cluster_id": "cluster-enoshima",
+        "to_cluster_id": "cluster-kanda-river",
+        "walk_min": 999,
+        "drive_min": 100,
+        "mode": "transit",
+        "note": "Trains through Tokyo station to Kanda."
+      },
+      {
+        "from_cluster_id": "cluster-enoshima",
+        "to_cluster_id": "cluster-kappabashi-dogugai",
+        "walk_min": 999,
+        "drive_min": 105,
+        "mode": "transit",
+        "note": "Reachable by train via Tokyo with changes."
+      },
+      {
+        "from_cluster_id": "cluster-enoshima",
+        "to_cluster_id": "cluster-paragliding-in-omiya",
+        "walk_min": 999,
+        "drive_min": 130,
+        "mode": "transit",
+        "note": "Involves train travel with a transfer at Omiya."
+      },
+      {
+        "from_cluster_id": "cluster-enoshima",
+        "to_cluster_id": "cluster-akasaka-estate-loop",
+        "walk_min": 999,
+        "drive_min": 95,
+        "mode": "transit",
+        "note": "Trains from Tokyo needed to reach destination."
+      },
+      {
+        "from_cluster_id": "cluster-enoshima",
+        "to_cluster_id": "cluster-setsubun-festival",
+        "walk_min": 999,
+        "drive_min": 115,
+        "mode": "transit",
+        "note": "Train to Asakusa with a change in central Tokyo."
+      },
+      {
+        "from_cluster_id": "cluster-enoshima",
+        "to_cluster_id": "cluster-ark-hills-autumn-festival",
+        "walk_min": 999,
+        "drive_min": 90,
+        "mode": "transit",
+        "note": "Requires transfers at Tokyo Station."
+      },
+      {
+        "from_cluster_id": "cluster-enoshima",
+        "to_cluster_id": "cluster-japan-nights-autumn-illuminations",
+        "walk_min": 999,
+        "drive_min": 115,
+        "mode": "transit",
+        "note": "Accessible via Tokyo using train services."
+      },
+      {
+        "from_cluster_id": "cluster-tsukiji",
+        "to_cluster_id": "cluster-yanaka",
+        "walk_min": 999,
+        "drive_min": 35,
+        "mode": "transit",
+        "note": "Easily accessible by Tokyo Metro with transfer."
+      },
+      {
+        "from_cluster_id": "cluster-tsukiji",
+        "to_cluster_id": "cluster-tama-river",
+        "walk_min": 999,
+        "drive_min": 80,
+        "mode": "transit",
+        "note": "Includes train and metro travel across Tokyo."
+      },
+      {
+        "from_cluster_id": "cluster-tsukiji",
+        "to_cluster_id": "cluster-ome-mitake",
+        "walk_min": 999,
+        "drive_min": 120,
+        "mode": "transit",
+        "note": "Longer journey requires multiple train transfers."
+      },
+      {
+        "from_cluster_id": "cluster-tsukiji",
+        "to_cluster_id": "cluster-kanda-river",
+        "walk_min": 999,
+        "drive_min": 25,
+        "mode": "transit",
+        "note": "Quick transfer via Tokyo Metro."
+      },
+      {
+        "from_cluster_id": "cluster-tsukiji",
+        "to_cluster_id": "cluster-kappabashi-dogugai",
+        "walk_min": 999,
+        "drive_min": 40,
+        "mode": "transit",
+        "note": "Short subway ride, requires a transfer."
+      },
+      {
+        "from_cluster_id": "cluster-tsukiji",
+        "to_cluster_id": "cluster-paragliding-in-omiya",
+        "walk_min": 999,
+        "drive_min": 70,
+        "mode": "transit",
+        "note": "Train travel to Omiya involves a transfer."
+      },
+      {
+        "from_cluster_id": "cluster-tsukiji",
+        "to_cluster_id": "cluster-akasaka-estate-loop",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Direct access via Tokyo Metro Line."
+      },
+      {
+        "from_cluster_id": "cluster-tsukiji",
+        "to_cluster_id": "cluster-setsubun-festival",
+        "walk_min": 999,
+        "drive_min": 35,
+        "mode": "transit",
+        "note": "Train to Asakusa station with a metro change."
+      },
+      {
+        "from_cluster_id": "cluster-tsukiji",
+        "to_cluster_id": "cluster-ark-hills-autumn-festival",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": "Short travel time with minimal transfers."
+      },
+      {
+        "from_cluster_id": "cluster-tsukiji",
+        "to_cluster_id": "cluster-japan-nights-autumn-illuminations",
+        "walk_min": 999,
+        "drive_min": 25,
+        "mode": "transit",
+        "note": "Direct subway connection."
+      },
+      {
+        "from_cluster_id": "cluster-yanaka",
+        "to_cluster_id": "cluster-tama-river",
+        "walk_min": 999,
+        "drive_min": 50,
+        "mode": "transit",
+        "note": "Multiple train transfers."
+      },
+      {
+        "from_cluster_id": "cluster-yanaka",
+        "to_cluster_id": "cluster-ome-mitake",
+        "walk_min": 999,
+        "drive_min": 90,
+        "mode": "transit",
+        "note": "Requires train transfer."
+      },
+      {
+        "from_cluster_id": "cluster-yanaka",
+        "to_cluster_id": "cluster-kanda-river",
+        "walk_min": 45,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": "Short train ride."
+      },
+      {
+        "from_cluster_id": "cluster-yanaka",
+        "to_cluster_id": "cluster-kappabashi-dogugai",
+        "walk_min": 22,
+        "drive_min": 15,
+        "mode": "transit",
+        "note": null
+      },
+      {
+        "from_cluster_id": "cluster-yanaka",
+        "to_cluster_id": "cluster-paragliding-in-omiya",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "transit",
+        "note": "Long train ride with transfer."
+      },
+      {
+        "from_cluster_id": "cluster-yanaka",
+        "to_cluster_id": "cluster-akasaka-estate-loop",
+        "walk_min": 999,
+        "drive_min": 35,
+        "mode": "transit",
+        "note": "Direct train available."
+      },
+      {
+        "from_cluster_id": "cluster-yanaka",
+        "to_cluster_id": "cluster-setsubun-festival",
+        "walk_min": 20,
+        "drive_min": 10,
+        "mode": "transit",
+        "note": null
+      },
+      {
+        "from_cluster_id": "cluster-yanaka",
+        "to_cluster_id": "cluster-ark-hills-autumn-festival",
+        "walk_min": 999,
+        "drive_min": 35,
+        "mode": "transit",
+        "note": "Requires one train transfer."
+      },
+      {
+        "from_cluster_id": "cluster-yanaka",
+        "to_cluster_id": "cluster-japan-nights-autumn-illuminations",
+        "walk_min": 30,
+        "drive_min": 15,
+        "mode": "transit",
+        "note": null
+      },
+      {
+        "from_cluster_id": "cluster-tama-river",
+        "to_cluster_id": "cluster-ome-mitake",
+        "walk_min": 999,
+        "drive_min": 55,
+        "mode": "transit",
+        "note": "Direct access via train."
+      },
+      {
+        "from_cluster_id": "cluster-tama-river",
+        "to_cluster_id": "cluster-kanda-river",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "transit",
+        "note": "Long train ride with transfer."
+      },
+      {
+        "from_cluster_id": "cluster-tama-river",
+        "to_cluster_id": "cluster-kappabashi-dogugai",
+        "walk_min": 999,
+        "drive_min": 70,
+        "mode": "transit",
+        "note": "Requires transfer to city line."
+      },
+      {
+        "from_cluster_id": "cluster-tama-river",
+        "to_cluster_id": "cluster-paragliding-in-omiya",
+        "walk_min": 999,
+        "drive_min": 90,
+        "mode": "transit",
+        "note": "Multiple train transfers required."
+      },
+      {
+        "from_cluster_id": "cluster-tama-river",
+        "to_cluster_id": "cluster-akasaka-estate-loop",
+        "walk_min": 999,
+        "drive_min": 75,
+        "mode": "transit",
+        "note": "Requires transfer in Tokyo."
+      },
+      {
+        "from_cluster_id": "cluster-tama-river",
+        "to_cluster_id": "cluster-setsubun-festival",
+        "walk_min": 999,
+        "drive_min": 75,
+        "mode": "transit",
+        "note": "Accessible by multiple train lines."
+      },
+      {
+        "from_cluster_id": "cluster-tama-river",
+        "to_cluster_id": "cluster-ark-hills-autumn-festival",
+        "walk_min": 999,
+        "drive_min": 80,
+        "mode": "transit",
+        "note": "Long transit with transfer."
+      },
+      {
+        "from_cluster_id": "cluster-tama-river",
+        "to_cluster_id": "cluster-japan-nights-autumn-illuminations",
+        "walk_min": 999,
+        "drive_min": 80,
+        "mode": "transit",
+        "note": "Long train ride with transfer."
+      },
+      {
+        "from_cluster_id": "cluster-ome-mitake",
+        "to_cluster_id": "cluster-kanda-river",
+        "walk_min": 999,
+        "drive_min": 100,
+        "mode": "transit",
+        "note": "Transfer at Tachikawa required."
+      },
+      {
+        "from_cluster_id": "cluster-ome-mitake",
+        "to_cluster_id": "cluster-kappabashi-dogugai",
+        "walk_min": 999,
+        "drive_min": 120,
+        "mode": "transit",
+        "note": "Cross-Tokyo travel required."
+      },
+      {
+        "from_cluster_id": "cluster-ome-mitake",
+        "to_cluster_id": "cluster-paragliding-in-omiya",
+        "walk_min": 999,
+        "drive_min": 150,
+        "mode": "transit",
+        "note": "Long transfer to Saitama."
+      },
+      {
+        "from_cluster_id": "cluster-ome-mitake",
+        "to_cluster_id": "cluster-akasaka-estate-loop",
+        "walk_min": 999,
+        "drive_min": 120,
+        "mode": "transit",
+        "note": "Requires Tokyo train network."
+      },
+      {
+        "from_cluster_id": "cluster-ome-mitake",
+        "to_cluster_id": "cluster-setsubun-festival",
+        "walk_min": 999,
+        "drive_min": 130,
+        "mode": "transit",
+        "note": "Multiple train connections needed."
+      },
+      {
+        "from_cluster_id": "cluster-ome-mitake",
+        "to_cluster_id": "cluster-ark-hills-autumn-festival",
+        "walk_min": 999,
+        "drive_min": 140,
+        "mode": "transit",
+        "note": "Transfer at Shinjuku required."
+      },
+      {
+        "from_cluster_id": "cluster-ome-mitake",
+        "to_cluster_id": "cluster-japan-nights-autumn-illuminations",
+        "walk_min": 999,
+        "drive_min": 140,
+        "mode": "transit",
+        "note": "Extended transit time."
+      },
+      {
+        "from_cluster_id": "cluster-kanda-river",
+        "to_cluster_id": "cluster-kappabashi-dogugai",
+        "walk_min": 40,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": null
+      },
+      {
+        "from_cluster_id": "cluster-kanda-river",
+        "to_cluster_id": "cluster-paragliding-in-omiya",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "transit",
+        "note": "Long train ride required."
+      },
+      {
+        "from_cluster_id": "cluster-kanda-river",
+        "to_cluster_id": "cluster-akasaka-estate-loop",
+        "walk_min": 999,
+        "drive_min": 45,
+        "mode": "transit",
+        "note": "Short train ride."
+      },
+      {
+        "from_cluster_id": "cluster-kanda-river",
+        "to_cluster_id": "cluster-setsubun-festival",
+        "walk_min": 55,
+        "drive_min": 25,
+        "mode": "transit",
+        "note": "Direct subway connection."
+      },
+      {
+        "from_cluster_id": "cluster-kanda-river",
+        "to_cluster_id": "cluster-ark-hills-autumn-festival",
+        "walk_min": 999,
+        "drive_min": 45,
+        "mode": "transit",
+        "note": "Multiple transit options available."
+      },
+      {
+        "from_cluster_id": "cluster-kanda-river",
+        "to_cluster_id": "cluster-japan-nights-autumn-illuminations",
+        "walk_min": 40,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": null
+      },
+      {
+        "from_cluster_id": "cluster-kappabashi-dogugai",
+        "to_cluster_id": "cluster-paragliding-in-omiya",
+        "walk_min": 999,
+        "drive_min": 70,
+        "mode": "transit",
+        "note": "Train ride to Saitama required."
+      },
+      {
+        "from_cluster_id": "cluster-kappabashi-dogugai",
+        "to_cluster_id": "cluster-akasaka-estate-loop",
+        "walk_min": 999,
+        "drive_min": 40,
+        "mode": "transit",
+        "note": "Basic city transit route."
+      },
+      {
+        "from_cluster_id": "cluster-kappabashi-dogugai",
+        "to_cluster_id": "cluster-setsubun-festival",
+        "walk_min": 30,
+        "drive_min": 15,
+        "mode": "transit",
+        "note": "Direct train access."
+      },
+      {
+        "from_cluster_id": "cluster-kappabashi-dogugai",
+        "to_cluster_id": "cluster-ark-hills-autumn-festival",
+        "walk_min": 999,
+        "drive_min": 45,
+        "mode": "transit",
+        "note": "Requires transfer via train."
+      },
+      {
+        "from_cluster_id": "cluster-kappabashi-dogugai",
+        "to_cluster_id": "cluster-japan-nights-autumn-illuminations",
+        "walk_min": 35,
+        "drive_min": 18,
+        "mode": "transit",
+        "note": null
+      },
+      {
+        "from_cluster_id": "cluster-paragliding-in-omiya",
+        "to_cluster_id": "cluster-akasaka-estate-loop",
+        "walk_min": 999,
+        "drive_min": 65,
+        "mode": "transit",
+        "note": "Train ride into Tokyo with a transfer."
+      },
+      {
+        "from_cluster_id": "cluster-paragliding-in-omiya",
+        "to_cluster_id": "cluster-setsubun-festival",
+        "walk_min": 999,
+        "drive_min": 70,
+        "mode": "transit",
+        "note": "Train required with potential transfer."
+      },
+      {
+        "from_cluster_id": "cluster-paragliding-in-omiya",
+        "to_cluster_id": "cluster-ark-hills-autumn-festival",
+        "walk_min": 999,
+        "drive_min": 80,
+        "mode": "transit",
+        "note": "Long train ride with necessary transfer."
+      },
+      {
+        "from_cluster_id": "cluster-paragliding-in-omiya",
+        "to_cluster_id": "cluster-japan-nights-autumn-illuminations",
+        "walk_min": 999,
+        "drive_min": 80,
+        "mode": "transit",
+        "note": "Extended train journey."
+      },
+      {
+        "from_cluster_id": "cluster-akasaka-estate-loop",
+        "to_cluster_id": "cluster-setsubun-festival",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": "Direct subway connection possible."
+      },
+      {
+        "from_cluster_id": "cluster-akasaka-estate-loop",
+        "to_cluster_id": "cluster-ark-hills-autumn-festival",
+        "walk_min": 20,
+        "drive_min": 10,
+        "mode": "walk",
+        "note": null
+      },
+      {
+        "from_cluster_id": "cluster-akasaka-estate-loop",
+        "to_cluster_id": "cluster-japan-nights-autumn-illuminations",
+        "walk_min": 999,
+        "drive_min": 25,
+        "mode": "transit",
+        "note": "Short subway ride."
+      },
+      {
+        "from_cluster_id": "cluster-setsubun-festival",
+        "to_cluster_id": "cluster-ark-hills-autumn-festival",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": "Direct subway connection."
+      },
+      {
+        "from_cluster_id": "cluster-setsubun-festival",
+        "to_cluster_id": "cluster-japan-nights-autumn-illuminations",
+        "walk_min": 25,
+        "drive_min": 15,
+        "mode": "transit",
+        "note": "Short train ride available."
+      },
+      {
+        "from_cluster_id": "cluster-ark-hills-autumn-festival",
+        "to_cluster_id": "cluster-japan-nights-autumn-illuminations",
+        "walk_min": 999,
+        "drive_min": 22,
+        "mode": "transit",
+        "note": "Short subway ride."
+      }
+    ]
+  }
+}

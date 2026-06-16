@@ -61,15 +61,10 @@ export function destinationSlug(destination: string): string {
 
 // ─── Prompt hash ──────────────────────────────────────────────────────────────
 
-let _cachedPromptHash: string | null = null
-
 /**
  * MD5 of all prompt .md files. Changes when any prompt is edited.
- * Cached in memory — process restart clears it (picks up new hash).
  */
 export function promptHash(): string {
-  if (_cachedPromptHash) return _cachedPromptHash
-
   const hash = crypto.createHash("md5")
 
   function hashDir(dir: string) {
@@ -89,31 +84,24 @@ export function promptHash(): string {
   }
 
   hashDir(PROMPTS_DIR)
-  _cachedPromptHash = hash.digest("hex").slice(0, 8)
-  return _cachedPromptHash
+  return hash.digest("hex").slice(0, 8)
 }
 
 /** Cache key for the board — includes board-only prompt hash and curation version so stale boards auto-miss.
  *  system.md, themes/, tip-enhancement.md, board-eval.md, and board curation semantics affect this key. */
 export function boardCacheKey(): `board_${string}` {
-  return `board_${boardPromptHash()}_c4`
+  return `board_${boardPromptHash()}_c5`
 }
 
 // ─── Per-stage prompt hashes ──────────────────────────────────────────────────
 // Each pipeline stage hashes only its own prompt files so that changing an
 // unrelated prompt does not invalidate unrelated caches.
 
-const _stageHashCache = new Map<string, string>()
-
 /**
- * MD5 of specific prompt files and/or directories (relative to prompts/). Memoized per entry set.
+ * MD5 of specific prompt files and/or directories (relative to prompts/).
  * If an entry is a directory, all .md files inside it are included sorted.
  */
 function stageHash(entries: string[]): string {
-  const key = entries.slice().sort().join("|")
-  const cached = _stageHashCache.get(key)
-  if (cached) return cached
-
   const hash = crypto.createHash("md5")
 
   function hashEntry(entry: string) {
@@ -137,7 +125,6 @@ function stageHash(entries: string[]): string {
   }
 
   const result = hash.digest("hex").slice(0, 8)
-  _stageHashCache.set(key, result)
   return result
 }
 

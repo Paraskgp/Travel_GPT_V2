@@ -227,7 +227,7 @@ export async function generateBoard(
   // ── Board completeness eval ──────────────────────────────────────────────────
   // Senior-editor pass: what's clearly missing that every serious guide covers?
   // Non-fatal — eval failure yields [] and board is cached normally.
-  const evalGaps = await evaluateBoard(dest, enhancedThemes, provider)
+  const evalGaps = await evaluateBoard(dest, enhancedThemes, destCtx.must_cover ?? [], provider)
   if (evalGaps.length > 0) {
     console.log(`[pipeline/board] completeness gaps (${evalGaps.length}):`)
     evalGaps.forEach(g => console.log(`  ⚠️  ${g}`))
@@ -241,22 +241,26 @@ export async function generateBoard(
   const geographicClusters = await generateGeographicClusters(dest, enhancedThemes, provider)
 
   // ── Write to cache ───────────────────────────────────────────────────────────
-  cacheWrite(
-    dest,
-    bKey,
-    {
-      themes: enhancedThemes,
-      eval_gaps: evalGaps,
-      geographic_clusters: geographicClusters,
-      curation_stats: curated.stats,
-      curation_audit: curated.audit,
-      candidate_enrichment_stats: candidateEnrichment.stats,
-      candidate_enrichment_audit: candidateEnrichment.audit,
-      generated_at: new Date().toISOString(),
-    },
-    TTL.BOARD,
-    bKey.replace("board_", "")
-  )
+  if (geographicClusters) {
+    cacheWrite(
+      dest,
+      bKey,
+      {
+        themes: enhancedThemes,
+        eval_gaps: evalGaps,
+        geographic_clusters: geographicClusters,
+        curation_stats: curated.stats,
+        curation_audit: curated.audit,
+        candidate_enrichment_stats: candidateEnrichment.stats,
+        candidate_enrichment_audit: candidateEnrichment.audit,
+        generated_at: new Date().toISOString(),
+      },
+      TTL.BOARD,
+      bKey.replace("board_", "")
+    )
+  } else {
+    console.warn("[pipeline/board] skipping board cache write because geographic clustering failed")
+  }
 
   return {
     themes: enhancedThemes,

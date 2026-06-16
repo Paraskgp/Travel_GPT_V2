@@ -121,7 +121,7 @@ export function curateExperiencesForBoard(
       continue
     }
 
-    const exclusionReason = exclusionReasonFor(experience, score, isFood, matchingThemes)
+    const exclusionReason = exclusionReasonFor(experience, destContext, score, isFood, matchingThemes)
     if (exclusionReason && !isMustCover) {
       audit.push({
         experience,
@@ -226,14 +226,33 @@ function themeFitScore(
 
 function exclusionReasonFor(
   experience: GroundedExperience,
+  destContext: DestinationContext,
   score: number,
   isFood: boolean,
   matchingThemes: string[]
 ): string | null {
+  const offDestinationReason = offDestinationLeakageReason(experience, destContext)
+  if (offDestinationReason) return offDestinationReason
   if (INFRASTRUCTURE_RE.test(identityText(experience))) return "infrastructure_or_service"
   if (score < MIN_TRIP_WORTHY_SCORE && !isFood) return "not_trip_worthy"
   if (score < 0) return "low_signal_fragment"
   if (matchingThemes.length === 0) return "no_matching_board_theme"
+  return null
+}
+
+function offDestinationLeakageReason(
+  experience: GroundedExperience,
+  destContext: DestinationContext
+): string | null {
+  const destination = normalizeName(destContext.destination)
+  const text = identityText(experience)
+
+  if (destination.includes("tokyo")) {
+    const farDestination = /\b(kyoto|arashiyama|osaka|nara|kobe)\b/i.test(text)
+    const acceptedTokyoExcursion = /\b(fuji|hakone|kamakura|nikko|nikkō|yokohama|kawagoe|enoshima|takao|kawaguchi|yamanashi|chichibu|okutama)\b/i.test(text)
+    if (farDestination && !acceptedTokyoExcursion) return "off_destination_leakage"
+  }
+
   return null
 }
 

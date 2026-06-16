@@ -55,35 +55,40 @@ echo "Dates: $START_DATE → $END_DATE  (arrive $ARRIVAL_TIME, depart $DEPARTURE
 echo "Calling http://localhost:3000/api/plan ..."
 echo ""
 
-BOARD_JSON=$(jq '.board' "$BOARD_FILE")
+BOARD_JSON_FILE=$(mktemp)
+PREFS_JSON_FILE=$(mktemp)
+BODY_FILE=$(mktemp)
+trap 'rm -f "$BOARD_JSON_FILE" "$PREFS_JSON_FILE" "$BODY_FILE"' EXIT
+
+jq '.board' "$BOARD_FILE" > "$BOARD_JSON_FILE"
 
 # Extract preferences from root level (generate.sh stores them there)
 # Fall back to board.preferences for backwards compat
-PREFS_JSON=$(jq '.preferences // .board.preferences // {}' "$BOARD_FILE" 2>/dev/null)
-PARTY_TYPE=$(echo "$PREFS_JSON" | jq -r '.party_type // empty' 2>/dev/null)
+jq '.preferences // .board.preferences // {}' "$BOARD_FILE" > "$PREFS_JSON_FILE" 2>/dev/null
+PARTY_TYPE=$(jq -r '.party_type // empty' "$PREFS_JSON_FILE" 2>/dev/null)
 [ -n "$PARTY_TYPE" ] && echo "Party type  : $PARTY_TYPE"
 
-BODY=$(jq -n \
-  --argjson board "$BOARD_JSON" \
-  --argjson prefs "$PREFS_JSON" \
+jq -n \
+  --slurpfile board "$BOARD_JSON_FILE" \
+  --slurpfile prefs "$PREFS_JSON_FILE" \
   --arg sd "$START_DATE" \
   --arg ed "$END_DATE" \
   --arg at "$ARRIVAL_TIME" \
   --arg dt "$DEPARTURE_TIME" \
   '{
-    board: $board,
-    preferences: $prefs,
+    board: $board[0],
+    preferences: $prefs[0],
     start_date: $sd,
     end_date: $ed,
     arrival_time: $at,
     departure_time: $dt,
     forced_ids: [],
     skipped_ids: []
-  }')
+  }' > "$BODY_FILE"
 
 RESPONSE=$(curl -s -X POST http://localhost:3000/api/plan \
   -H "Content-Type: application/json" \
-  -d "$BODY")
+  --data-binary "@$BODY_FILE")
 
 if [ -z "$RESPONSE" ]; then
   echo "Error: No response. Is 'npm run dev' running?"

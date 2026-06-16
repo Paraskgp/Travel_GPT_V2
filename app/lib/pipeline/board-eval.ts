@@ -28,21 +28,23 @@ function loadPrompt(name: string): string {
 export async function evaluateBoard(
   destination: string,
   themes: Theme[],
+  mustCover: string[],
   provider: Provider = "openai"
 ): Promise<string[]> {
   try {
     // Build a compact card list: just names grouped by theme — no full card data
     const cardList = themes
       .map(t => {
-        const names = t.experiences.map(e => `  - ${e.name}`).join("\n")
+        const names = t.experiences.map(e => `  - ${e.name} (${e.location_hint})`).join("\n")
         return `### ${t.name}\n${names}`
       })
       .join("\n\n")
 
     const userPrompt = [
       `## Destination\n\n${destination}`,
+      `## Must-cover checklist\n\n${mustCover.map(item => `- ${item}`).join("\n")}`,
       `## Current board — all ${themes.flatMap(t => t.experiences).length} cards by theme\n\n${cardList}`,
-      `## Your task\n\nWhat clearly belongs at ${destination} that is completely absent from this board? Return only valid JSON — a flat array of strings. Each string: "Experience name — one sentence reason". Max 8 gaps. Return [] if the board is complete.`,
+      `## Your task\n\nIdentify which items from the must-cover checklist are completely absent from this board. Do not add new ideas beyond that checklist. If a checklist item is covered under a close synonym or specific sub-experience, it is not a gap. Return only valid JSON — a flat array of strings. Each string: "Experience name — one sentence reason". Max 8 gaps. Return [] if the checklist is covered.`,
     ].join("\n\n")
 
     const systemPrompt = loadPrompt("board-eval.md")
