@@ -2,7 +2,7 @@
 
 ## Owns
 
-`lib/cache/index.ts` → `cacheRead()`, `cacheWrite()`, `boardCacheKey()`, `cacheStatus()`, `listCachedDestinations()`, `destinationSlug()`, `promptHash()`, `boardPromptHash()`, `contextPromptHash()`, `weatherPromptHash()`, `experiencesPromptHash()`
+`lib/cache/index.ts` → `cacheRead()`, `cacheWrite()`, `boardCacheKey()`, `cacheStatus()`, `listCachedDestinations()`, `destinationSlug()`, `promptHash()`, `boardPromptHash()`, `contextPromptHash()`, `weatherPromptHash()`, `experiencesPromptHash()`, `candidateEnrichmentPromptHash()`
 
 ## Inputs / Outputs
 
@@ -14,11 +14,13 @@ cacheWrite<T>(destination: string, key: CacheKey, data: T, ttlDays: number, curr
 contextPromptHash(): string     // MD5 of destination-context.md
 weatherPromptHash(): string     // MD5 of weather-context.md
 experiencesPromptHash(): string // MD5 of experience-extractor-page.md + experience-dedup.md
+candidateEnrichmentPromptHash(): string // MD5 of candidate-enrichment.md
 
 type CacheKey =
   | "destination_context"
   | `weather_${string}`    // e.g. "weather_november"
   | "experiences"
+  | "candidate_enrichment"
   | `board_${string}`      // e.g. "board_a3f2b1c4"
 ```
 
@@ -46,7 +48,7 @@ Lowercase, non-alphanumeric characters stripped, spaces → hyphens.
 
 ## Prompt hash — board (global) vs. per-stage (granular)
 
-**Board:** `boardPromptHash()` — MD5 of board-relevant prompts only: `system.md`, `tip-enhancement.md`, `board-eval.md`, and all files in `themes/`. Used as the board cache key (`board_{hash}`). Only changes that actually affect board output invalidate the board. Changing `destination-context.md`, `experience-extractor-page.md`, `query-generator.md`, or `weather-context.md` does NOT invalidate the board — those stages have their own independent hashes.
+**Board:** `boardPromptHash()` — MD5 of board-relevant prompts only: `system.md`, `tip-enhancement.md`, `board-eval.md`, `candidate-enrichment.md`, and all files in `themes/`. Used as the board cache key (`board_{hash}`). Only changes that actually affect board output invalidate the board. Changing `destination-context.md`, `experience-extractor-page.md`, `query-generator.md`, or `weather-context.md` does NOT invalidate the board — those stages have their own independent hashes.
 
 **`promptHash()`** still exists as a utility (MD5 of ALL prompts) but is no longer used as the board key. Kept for diagnostics.
 
@@ -57,6 +59,7 @@ Exported wrappers:
 - `contextPromptHash()` — `destination-context.md` only
 - `weatherPromptHash()` — `weather-context.md` only
 - `experiencesPromptHash()` — `experience-extractor-page.md` + `experience-dedup.md`
+- `candidateEnrichmentPromptHash()` — `candidate-enrichment.md` only
 
 ## TTL behaviour
 
@@ -96,6 +99,7 @@ The rejection path logs: `[cache] STALE {slug}/{key} (prompt changed: {old} → 
 | `boardCacheKey` returns `board_{promptHash}` | Cache key format |
 | `contextPromptHash` returns different value when destination-context.md changes | Per-stage invalidation |
 | `experiencesPromptHash` returns different value when dedup prompt changes | Per-stage invalidation |
+| `candidateEnrichmentPromptHash` returns different value when candidate-enrichment.md changes | Per-stage invalidation |
 
 ## Open technical items
 

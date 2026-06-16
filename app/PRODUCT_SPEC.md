@@ -74,11 +74,20 @@ lib/utils/parse-json.ts               parseJSON<T>() — shared utility, not dup
 
 Each pipeline function owns its full contract: check cache → generate if miss → write cache → return data. Nothing outside knows about cache or LLM calls directly.
 
+### Board geography pipeline (`/api/generate`)
+
+```
+[Board]    Geographic clustering  — LLM assigns every experience to exactly one
+           15–20 min walkable/logical cluster after board cards are created
+
+[Board]    Cluster travel estimates — code generates the cluster pair list;
+           LLM fills travel estimates between cluster anchors only
+```
+
 ### Itinerary planning pipeline (`/api/plan`)
 
 ```
-[Stage 2]  Distance matrix + clustering  — LLM estimates pairwise travel times,
-           groups experiences within 15-min walking distance into clusters
+[Input]    Uses board.geographic_clusters if present; does not recompute geography
 
 [Stage 3]  Itinerary Pass 1 (draft)  — picks 1–2 clusters/day, honors best_time
            anchors, generates planning_note on every row

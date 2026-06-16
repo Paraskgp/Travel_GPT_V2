@@ -9,6 +9,7 @@ This is where the board becomes personal. Party type, dietary preferences, pace,
 ## Inputs
 
 - Full board (all themes and experiences)
+- Board-level geographic clusters and cluster travel estimates (`board.geographic_clusters`)
 - Weather context (from board — sunset/sunrise times, travel implications, seasonal conditions)
 - Start and end dates
 - Arrival time (when the traveler can start on day 1)
@@ -24,15 +25,15 @@ A day-by-day itinerary with:
 - Each day: date, day number, day title, and a list of rows
 - Each row: type (activity/travel/meal), start/end time, title, notes, planning_note, maps_url, experience_id
 
-## Four-stage pipeline
+## Planning pipeline
 
-**Stage 1 — Geographic clustering:**
-LLM estimates pairwise travel times between all experiences and groups those within ~15 minutes walking distance into named clusters. Enables day planning around geographic zones.
+**Precomputed board geography:**
+The planner consumes `board.geographic_clusters`, which is generated and cached during board creation. Itinerary planning does not assign clusters or estimate cluster travel per traveler.
 
-**Stage 2 — Draft itinerary (Pass 1):**
+**Stage 1 — Draft itinerary (Pass 1):**
 Builds the full day-by-day schedule. Picks 1–2 clusters per day. Honours `best_time` anchors (sunrise spots, tide-dependent activities). Generates `planning_note` on every row explaining why each activity is scheduled when it is.
 
-**Stage 3 — Review and refine (Pass 2):**
+**Stage 2 — Review and refine (Pass 2):**
 Runs 7 checks against the draft: party type violations, timing errors, activity density, geographic conflicts, departure day discipline, planning note quality, and forced/skipped compliance. Fixes violations and logs `change_log[]`.
 
 ## Success criteria
@@ -60,12 +61,15 @@ Runs 7 checks against the draft: party type violations, timing errors, activity 
 
 - Stay area is a single fixed location for the entire trip (no multi-base trips)
 - Travel time estimates from the clustering LLM are approximate — not from a real routing API
+- Cluster travel estimates are cluster-to-cluster, anchored on each cluster's representative experience. The system does not maintain an all-pairs experience distance matrix.
+- The cluster pair list is generated at board creation time after cluster assignment. The LLM fills travel fields for requested pairs; it should not invent or omit pairs.
 - Meal rows are generated as part of the itinerary but not tied to specific restaurant cards from the board
 - Pass 2 review is non-fatal — if it fails, Pass 1 draft is returned with a note in `change_log`
 
 ## Open items
 
 - No real routing API (Google Maps Directions, Mapbox) — travel times are LLM estimates
+- Clustering is still LLM-based, but it belongs to board generation/cache. Itinerary planning should not pay clustering latency on every replan.
 - No constraint pre-pass before Pass 1 to extract time-locked anchors (P5 in PRODUCT_SPEC.md — score ceiling at ~62)
 - Multi-destination trips (Grand Canyon + Page, AZ + Sedona) not supported — single destination only
 - Recovery time between strenuous activities not modelled — couple rule (no back-to-back strenuous) is a proxy fix (2026-05-28)

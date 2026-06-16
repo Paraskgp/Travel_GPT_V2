@@ -3,11 +3,10 @@
 import { DestinationContext } from '@/lib/types'
 
 interface Props {
-  destination: string
   context: DestinationContext
 }
 
-export default function SpiritView({ destination, context }: Props) {
+export default function SpiritView({ context }: Props) {
   return (
     <div className="p-4 max-w-2xl mx-auto space-y-6">
       {/* Soul */}

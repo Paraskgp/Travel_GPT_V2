@@ -1,0 +1,147 @@
+{
+  "overall_score": 10,
+  "overall_grade": "F",
+  "summary": "The AI itinerary drastically deviates from the expected destination by planning a trip to Tokyo instead of Yellowstone as intended. The itinerary reflects a complete mismatch to any criteria related to Yellowstone's geographical and cultural environment, leading to minimal to no alignment with the target destination expectations set by the human planner.",
+  "coverage": {
+    "must_have_found": [],
+    "must_have_missing": [
+      "Old Faithful",
+      "Grand Prismatic Spring",
+      "Yellowstone Lake",
+      "Lamar Valley",
+      "Mammoth Hot Springs"
+    ],
+    "coverage_score": 0
+  },
+  "dimension_scores": [
+    {
+      "dimension": "Destination Accuracy",
+      "weight": 1,
+      "score": 0,
+      "weighted_score": 0,
+      "pass": false,
+      "finding": "The AI itinerary plans for a completely different destination (Tokyo, Japan) instead of Yellowstone National Park.",
+      "example": "Destination: Tokyo, Japan"
+    },
+    {
+      "dimension": "Activity Appropriateness",
+      "weight": 0.5,
+      "score": 0,
+      "weighted_score": 0,
+      "pass": false,
+      "finding": "Activities planned are highly specific to Tokyo and not applicable to Yellowstone's setting or natural environment.",
+      "example": "[ACTIVITY] 14:00-17:00 Akihabara Pop Culture Pilgrimage"
+    },
+    {
+      "dimension": "Cultural Relevance",
+      "weight": 0.5,
+      "score": 0,
+      "weighted_score": 0,
+      "pass": false,
+      "finding": "Cultural experiences are rooted in Japanese urban culture and bear no relevance to the wildlife and natural exploration typically associated with Yellowstone.",
+      "example": "[ACTIVITY] 08:30-10:00 Senso-ji Temple"
+    }
+  ],
+  "day_analysis": [
+    {
+      "day_number": 1,
+      "date": "2026-09-16",
+      "ai_title": "Arrival and Initial Explorations in Shinjuku",
+      "golden_title": "N/A",
+      "score": 0,
+      "hits": [],
+      "misses": [
+        "Entire day appropriateness"
+      ],
+      "worst_mistake": "Travel to a completely irrelevant location (Tokyo instead of Yellowstone)."
+    },
+    {
+      "day_number": 2,
+      "date": "2026-09-17",
+      "ai_title": "Cultural Exploration: Asakusa and Akihabara",
+      "golden_title": "N/A",
+      "score": 0,
+      "hits": [],
+      "misses": [
+        "Entire day destination inaccuracy",
+        "Cultural irrelevance"
+      ],
+      "worst_mistake": "Cultural activities completely misplaced for intended Yellowstone itinerary."
+    },
+    {
+      "day_number": 3,
+      "date": "2026-09-18",
+      "ai_title": "Exploring Tradition and Modernity in Tokyo",
+      "golden_title": "N/A",
+      "score": 0,
+      "hits": [],
+      "misses": [
+        "Destination mismatch",
+        "Activity mismatch"
+      ],
+      "worst_mistake": "Mismatch of both destination and activity theme for Yellowstone."
+    },
+    {
+      "day_number": 4,
+      "date": "2026-09-19",
+      "ai_title": "Day Trip to Hakone",
+      "golden_title": "N/A",
+      "score": 0,
+      "hits": [],
+      "misses": [
+        "Destination mismatch",
+        "Activities irrelevant"
+      ],
+      "worst_mistake": "Planning a day trip to another region in Japan instead of exploring Yellowstone."
+    },
+    {
+      "day_number": 5,
+      "date": "2026-09-20",
+      "ai_title": "Harajuku and Odaiba Discovery",
+      "golden_title": "N/A",
+      "score": 0,
+      "hits": [],
+      "misses": [
+        "Cultural relevance",
+        "Timing and scheduling"
+      ],
+      "worst_mistake": "Entirely focused on Japanese urban exploration contrary to requirements for natural park settings."
+    },
+    {
+      "day_number": 6,
+      "date": "2026-09-21",
+      "ai_title": "Departure Day",
+      "golden_title": "N/A",
+      "score": 0,
+      "hits": [],
+      "misses": [
+        "Incorrect departure location",
+        "Destination irrelevance"
+      ],
+      "worst_mistake": "Planning details for Tokyo departure when the intended location is Yellowstone."
+    }
+  ],
+  "top_failures": [
+    {
+      "failure": "Destination Mismatch",
+      "severity": "critical",
+      "description": "The itinerary is incorrectly set in Tokyo, Japan, instead of the intended destination, Yellowstone National Park.",
+      "prompt_fix": "Ensure the initial prompt specifies the correct destination: Yellowstone National Park, not Tokyo."
+    },
+    {
+      "failure": "Activity Irrelevance",
+      "severity": "major",
+      "description": "Activities and cultural experiences in the itinerary are not applicable to Yellowstone National Park.",
+      "prompt_fix": "Instruct the AI to select activities consistent with the environment and culture of Yellowstone National Park."
+    }
+  ],
+  "what_ai_got_right": [],
+  "prompt_improvement_plan": {
+    "itinerary_prompt_changes": [
+      "Specify the destination as Yellowstone National Park, highlight natural features and wildlife exploration."
+    ],
+    "board_generation_changes": [
+      "Emphasize exploring Yellowstone's natural landmarks and wildlife in the board/destination context prompts."
+    ]
+  }
+}

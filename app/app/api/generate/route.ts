@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server"
 import { Provider } from "@/lib/llm/client"
-import { Board, GenerateRequest, GenerateResponse, ErrorResponse, Preferences, Theme } from "@/lib/types"
+import { Board, GenerateRequest, GenerateResponse, ErrorResponse, Preferences, Theme, ClusterResult } from "@/lib/types"
 import { normalizeDestination } from "@/lib/pipeline/destination-normalization"
 import { getDestinationContext } from "@/lib/pipeline/destination-context"
 import { getWeatherContext } from "@/lib/pipeline/weather-context"
@@ -18,7 +18,8 @@ export const maxDuration = 180
  * time only, not during board generation. This keeps the board cache party_type-agnostic.
  */
 function boardPrefs(prefs: Preferences): Preferences {
-  const { party_type: _dropped, ...rest } = prefs
+  const rest = { ...prefs }
+  delete rest.party_type
   return rest
 }
 
@@ -80,22 +81,24 @@ export async function POST(
   // getExperiences can take 10+ minutes on a new month key — running it before the board
   // cache check wastes that time on data that will never be used.
   const bKey = boardCacheKey()
-  const cachedBoardData = cacheRead<{ themes: Theme[]; eval_gaps?: string[] }>(dest, bKey)
+  const cachedBoardData = cacheRead<{ themes: Theme[]; eval_gaps?: string[]; geographic_clusters?: ClusterResult }>(dest, bKey)
 
   let themes: Theme[]
   let eval_gaps: string[]
+  let geographic_clusters: ClusterResult | undefined
 
   if (cachedBoardData) {
     console.log(`[/api/generate] board cache HIT — skipping experiences pipeline`)
     themes = cachedBoardData.themes
     eval_gaps = cachedBoardData.eval_gaps ?? []
+    geographic_clusters = cachedBoardData.geographic_clusters
   } else {
     // Pass travel month so event-specific queries are added for sports, festivals, etc.
     const travelMonthName = start_date
       ? new Date(start_date + "T00:00:00").toLocaleString("en-US", { month: "long" })
       : null
     const experiences = await getExperiences(dest, destContext, travelMonthName, provider)
-    ;({ themes, eval_gaps } = await generateBoard(dest, destContext, weatherContext, experiences, boardPrefs(fullPrefs), provider))
+    ;({ themes, eval_gaps, geographic_clusters } = await generateBoard(dest, destContext, weatherContext, experiences, boardPrefs(fullPrefs), provider))
   }
 
   // ── Response ─────────────────────────────────────────────────────────────────
@@ -105,6 +108,7 @@ export async function POST(
     destination_context: destContext,
     weather_context: weatherContext,
     themes,
+    ...(geographic_clusters ? { geographic_clusters } : {}),
     eval_gaps,
     ...(Object.keys(fullPrefs).length > 0 ? { preferences: fullPrefs } : {}),
     generated_at: new Date().toISOString(),

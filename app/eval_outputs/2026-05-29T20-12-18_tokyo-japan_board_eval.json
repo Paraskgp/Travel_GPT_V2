@@ -1,0 +1,107 @@
+{
+  "stage": "board",
+  "destination": "Tokyo, Japan",
+  "file": "test_outputs/2026-05-29_12-50-12_tokyo-japan.json",
+  "required_found": [
+    "Senso-ji Temple",
+    "Shibuya Crossing",
+    "Tsukiji",
+    "Tokyo Skytree",
+    "teamLab"
+  ],
+  "required_missing": [
+    "Shinjuku Gyoen"
+  ],
+  "forbidden_found": [],
+  "tier_coverage": {
+    "signature": {
+      "easy": 8
+    },
+    "unique_local": {
+      "easy": 5
+    },
+    "food_drink": {
+      "easy": 6
+    },
+    "food_crawls": {
+      "easy": 4,
+      "moderate": 1
+    },
+    "culture": {
+      "easy": 5,
+      "moderate": 1
+    },
+    "arts": {
+      "easy": 3,
+      "moderate": 1
+    },
+    "family_friendly": {
+      "easy": 5
+    },
+    "romantic_special_occasion": {
+      "easy": 4
+    },
+    "rainy_day": {
+      "easy": 6
+    },
+    "nightlife": {
+      "easy": 4,
+      "moderate": 1
+    },
+    "shopping": {
+      "easy": 3,
+      "moderate": 1
+    },
+    "day_trips": {
+      "moderate": 3,
+      "easy": 2
+    },
+    "seasonal_experiences": {
+      "easy": 5
+    }
+  },
+  "tier_missing": [],
+  "duplicate_names": [],
+  "unmappable_count": 0,
+  "total_experiences": 68,
+  "theme_count": 13,
+  "checks": [
+    {
+      "check": "Required experiences on board (5/6)",
+      "passed": false,
+      "detail": "Missing: Shinjuku Gyoen"
+    },
+    {
+      "check": "No hallucinated/forbidden experiences",
+      "passed": true,
+      "detail": "Clean"
+    },
+    {
+      "check": "Tier coverage (effort levels per theme)",
+      "passed": true,
+      "detail": "All tiers covered"
+    },
+    {
+      "check": "No duplicate experience names",
+      "passed": true,
+      "detail": "No duplicates"
+    },
+    {
+      "check": "Experiences are mappable (68/68)",
+      "passed": true,
+      "detail": "All mappable"
+    }
+  ],
+  "score": 93,
+  "tip_quality_score": 26,
+  "tip_quality_findings": [
+    "The majority of tips are generic and fail to provide unique insights or specific advice related to the experience.",
+    "  Ryogoku Kokugikan Sumo Hall (1/10): The tip contains the banned phrase 'book tickets in advance' and suggests arriving early, both of which are generic travel clichés.",
+    "  Rikugien Garden Illumination (1/10): The tip includes 'arrive right at opening', which is a generic suggestion and does not provide a unique insight about the experience.",
+    "  TeamLab Planets TOKYO (1/10): It relies on the cliché 'book tickets in advance' which is a common travel advice and lacks a distinctive element.",
+    "  Mori Art Museum (9/10): This tip offers a great insight into timing for both the art and the view, making it a valuable recommendation without clichés.",
+    "  Yanaka Old Town Walking Tour (1/10): Starting early in the morning to catch the sunrise is an overused suggestion and does not provide a unique aspect of the tour."
+  ],
+  "overall_score": 73,
+  "generated_at": "2026-05-29T20:12:18.320Z"
+}

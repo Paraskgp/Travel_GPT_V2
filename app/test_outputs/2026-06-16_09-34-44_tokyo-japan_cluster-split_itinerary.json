@@ -1,0 +1,1632 @@
+{
+  "itinerary": {
+    "destination": "Tokyo, Japan",
+    "start_date": "2026-09-16",
+    "end_date": "2026-09-21",
+    "days": [
+      {
+        "date": "2026-09-16",
+        "day_number": 1,
+        "day_title": "Arrival in Tokyo and Exploration of Asakusa",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "12:00",
+            "end_time": "13:30",
+            "title": "Senso-ji Temple",
+            "notes": "For a unique perspective of Senso-ji Temple, head to the quiet corner of Asakusa Shrine directly behind the main temple.",
+            "planning_note": "Start your trip with a visit to Senso-ji Temple to avoid crowds and enjoy a peaceful experience. The early afternoon provides a serene atmosphere after your morning arrival.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Senso-ji+Temple+Tokyo",
+            "experience_id": "senso-ji-temple",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "13:30",
+            "end_time": "14:30",
+            "title": "Lunch at Asakusa Menchi",
+            "notes": "Try the famous minced meat cutlet. The secret ingredient is its special batter and delicious soy-based sauce.",
+            "planning_note": "Asakusa Menchi is located right in the heart of Asakusa, perfect for a hearty lunch after exploring Senso-ji.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Asakusa+Menchi+Tokyo"
+          },
+          {
+            "type": "activity",
+            "start_time": "15:00",
+            "end_time": "17:00",
+            "title": "Mokuhankan: Craft Your Own Ukiyo-e",
+            "notes": "Position yourself at the back of the workshop for a closer view of the master printer’s technique.",
+            "planning_note": "Spend your afternoon engaging in traditional Japanese culture. This workshop offers a relaxing yet immersive experience perfect for easing into Tokyo's bustling environment.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Mokuhankan+Tokyo",
+            "experience_id": "mokuhankan-woodblock-printing",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "18:00",
+            "end_time": "19:30",
+            "title": "Dinner at Daikokuya Tempura",
+            "notes": "Known for its famed tempura, a must-try specialty in Asakusa.",
+            "planning_note": "Cap off your first day in Tokyo with traditional tempura, a staple in Asakusa. Located near Senso-ji, it offers a convenient and delicious dinner option.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Daikokuya+Tempura+Tokyo"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-17",
+        "day_number": 2,
+        "day_title": "Exploring Shibuya and Harajuku",
+        "rows": [
+          {
+            "type": "travel",
+            "start_time": "08:00",
+            "end_time": "08:30",
+            "title": "Travel to Shibuya",
+            "notes": null,
+            "planning_note": null,
+            "maps_url": "https://www.google.com/maps/dir/Shinjuku+Station/Shibuya+Station"
+          },
+          {
+            "type": "activity",
+            "start_time": "09:00",
+            "end_time": "09:30",
+            "title": "Shibuya Scramble Crossing",
+            "notes": "For a unique perspective, climb to the rooftop terrace of the Shibuya 109 building just after dusk.",
+            "planning_note": "Kick off the day by experiencing the iconic Shibuya Scramble Crossing in the morning light. It's a less crowded and energetic view before the bustle of daily business.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Shibuya+Scramble+Crossing+Tokyo",
+            "experience_id": "shibuya-scramble-crossing",
+            "effort": "easy"
+          },
+          {
+            "type": "travel",
+            "start_time": "09:30",
+            "end_time": "09:45",
+            "title": "Walk to Harajuku",
+            "notes": null,
+            "planning_note": null,
+            "maps_url": null
+          },
+          {
+            "type": "activity",
+            "start_time": "10:00",
+            "end_time": "11:30",
+            "title": "Meiji Shrine",
+            "notes": "Stand quietly near the torii gate during a light rain for a serene ambiance.",
+            "planning_note": "After the lively Shibuya, enjoy a peaceful morning by visiting Meiji Shrine, one of Tokyo's most important and serene cultural sites.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Meiji+Shrine+Harajuku+Tokyo",
+            "experience_id": "meiji-shrine",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "12:00",
+            "end_time": "13:30",
+            "title": "Lunch at Harajuku Gyoza Lou",
+            "notes": "Famous for its delightful and budget-friendly gyoza.",
+            "planning_note": "Fuel up with delicious gyoza at one of Harajuku’s tucked-away gems before continuing your day.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Harajuku+Gyoza+Lou+Tokyo"
+          },
+          {
+            "type": "activity",
+            "start_time": "14:00",
+            "end_time": "16:30",
+            "title": "Shopping in Harajuku",
+            "notes": "Explore Takeshita Street for unique fashion finds.",
+            "planning_note": "Spend your afternoon browsing the trendy shops and taking in the colorful fashion scene of Harajuku. It’s a vibrant, youthful contrast to the serenity of Meiji Shrine.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Takeshita+Street+Harajuku+Tokyo",
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "meal",
+            "start_time": "18:00",
+            "end_time": "19:30",
+            "title": "Dinner at Ichiran Ramen",
+            "notes": "Indulge in tonkotsu ramen in this popular chain known for its solo dining booths.",
+            "planning_note": "Finish your day with a satisfying bowl of ramen at the famous Ichiran. Enjoy the unique private booths designed to enhance your dining focus.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Ichiran+Ramen+Tokyo"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-18",
+        "day_number": 3,
+        "day_title": "Cultural Deep Dive in Ueno and Yanaka",
+        "rows": [
+          {
+            "type": "travel",
+            "start_time": "08:00",
+            "end_time": "08:45",
+            "title": "Travel to Ueno Park",
+            "notes": null,
+            "planning_note": null,
+            "maps_url": "https://www.google.com/maps/dir/Shinjuku+Station/Ueno+Park+Tokyo"
+          },
+          {
+            "type": "activity",
+            "start_time": "09:00",
+            "end_time": "11:00",
+            "title": "Ueno Park Cherry Blossoms",
+            "notes": "Visit the hilltop near Tokyo Metropolitan Art Museum for views.",
+            "planning_note": "Enjoy a peaceful morning wander through Ueno Park, with its historical significance and beautiful landscapes - the perfect start to a morning of cultural exploration.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Ueno+Park+Tokyo",
+            "experience_id": "ueno-park-cherry-blossoms",
+            "effort": "easy"
+          },
+          {
+            "type": "travel",
+            "start_time": "11:00",
+            "end_time": "11:15",
+            "title": "Walk to Yanaka",
+            "notes": null,
+            "planning_note": null,
+            "maps_url": null
+          },
+          {
+            "type": "activity",
+            "start_time": "11:30",
+            "end_time": "14:00",
+            "title": "Yanaka District Walk",
+            "notes": "Explore side alleys for artisan shops.",
+            "planning_note": "Discover Tokyo’s old-world charm with a walk through Yanaka, exploring its artisanal shops and traditional streets — a stark and pleasant contrast to the bustling city.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Yanaka+Tokyo",
+            "experience_id": "yanaka-district-walk",
+            "effort": "moderate"
+          },
+          {
+            "type": "meal",
+            "start_time": "14:15",
+            "end_time": "15:30",
+            "title": "Lunch at Kayaba Coffee",
+            "notes": "Known for delightful dorayaki and nostalgic ambiance.",
+            "planning_note": "Relax and recharge with a coffee and sweet treats at Kayaba Coffee in the heart of Yanaka, perfectly reflecting the area's nostalgic charm.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Kayaba+Coffee+Tokyo"
+          },
+          {
+            "type": "activity",
+            "start_time": "16:00",
+            "end_time": "17:30",
+            "title": "Yanaka Art Walk",
+            "notes": "Explore hidden galleries for undiscovered art pieces.",
+            "planning_note": "End your cultural day by indulging in the artistic side of Yanaka with an art-focused walk. This leisurely activity allows your mind to wander as much as your feet.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Yanaka+Art+Walk+Tokyo",
+            "experience_id": "yanaka-art-walk",
+            "effort": "moderate"
+          },
+          {
+            "type": "meal",
+            "start_time": "19:00",
+            "end_time": "20:30",
+            "title": "Dinner at Suzuran",
+            "notes": "Experience modern Japanese cuisine with a twist.",
+            "planning_note": "Cap off your evening with a delightful dining experience at Suzuran, known for its modern take on Japanese classics.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Suzuran+Tokyo"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-19",
+        "day_number": 4,
+        "day_title": "Exploring Odaiba and Skytree",
+        "rows": [
+          {
+            "type": "travel",
+            "start_time": "08:00",
+            "end_time": "09:00",
+            "title": "Travel to Odaiba",
+            "notes": null,
+            "planning_note": null,
+            "maps_url": "https://www.google.com/maps/dir/Shinjuku+Station/Odaiba+Tokyo"
+          },
+          {
+            "type": "activity",
+            "start_time": "09:30",
+            "end_time": "12:00",
+            "title": "Teamlab Borderless",
+            "notes": "Check out the 'Forest of Lamps' for a unique view.",
+            "planning_note": "Start your day with a fascinating dive into interactive art at TeamLab Borderless, where you can escape Tokyo’s hustle and melt into a world of digital interaction.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Teamlab+Borderless+Tokyo",
+            "experience_id": "teamlab-borderless",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "12:15",
+            "end_time": "13:30",
+            "title": "Lunch at Aqua City Odaiba",
+            "notes": "Explore various dining options with views of Tokyo Bay.",
+            "planning_note": "Choose from a range of eateries at Aqua City, and soak in views of the bay — an ideal lunch break before further exploration.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Aqua+City+Odaiba+Tokyo"
+          },
+          {
+            "type": "activity",
+            "start_time": "14:00",
+            "end_time": "17:00",
+            "title": "Explore Odaiba",
+            "notes": "Visit the top of Aqua City for the best views of Rainbow Bridge and Tokyo Tower.",
+            "planning_note": "Spend the afternoon in Odaiba, balancing technology with stunning bay views. Perfect spot for low-pressure exploration and scenic relaxation.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Odaiba+Tokyo",
+            "experience_id": "odaiba-futuristic-adventure",
+            "effort": "easy"
+          },
+          {
+            "type": "travel",
+            "start_time": "17:00",
+            "end_time": "17:30",
+            "title": "Transit to Tokyo Skytree",
+            "notes": null,
+            "planning_note": null,
+            "maps_url": "https://www.google.com/maps/dir/Odaiba+Tokyo/Tokyo+Skytree"
+          },
+          {
+            "type": "activity",
+            "start_time": "18:00",
+            "end_time": "20:00",
+            "title": "Tokyo Skytree",
+            "notes": "Visit the open-air deck just after sunset for stunning views.",
+            "planning_note": "End the day experiencing the transition from day to night at Tokyo Skytree. Catch the golden hour and soak in stunning panoramic views of Tokyo.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Tokyo+Skytree+Tokyo",
+            "experience_id": "tokyo-skytree",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "20:30",
+            "end_time": "22:00",
+            "title": "Dinner at Sky Restaurant 634",
+            "notes": "Enjoy a high-altitude dining experience with panoramic city views.",
+            "planning_note": "Finish your exploration day on a high note with dinner at Sky Restaurant 634 located in the Skytree, offering a memorable dining atmosphere.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Sky+Restaurant+634+Tokyo"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-20",
+        "day_number": 5,
+        "day_title": "Richness of Tokyo Station and Shinjuku by Night",
+        "rows": [
+          {
+            "type": "travel",
+            "start_time": "08:30",
+            "end_time": "09:00",
+            "title": "Travel to Tokyo Station",
+            "notes": null,
+            "planning_note": null,
+            "maps_url": "https://www.google.com/maps/dir/Shinjuku+Station/Tokyo+Station"
+          },
+          {
+            "type": "activity",
+            "start_time": "09:15",
+            "end_time": "10:30",
+            "title": "Imperial Palace and East Gardens",
+            "notes": "Visit the northeastern corner for a panoramic view of the stone walls.",
+            "planning_note": "Begin your day with a historical wander through the Imperial Palace, blending calm gardens with Tokyo’s modern backdrop.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Imperial+Palace+Tokyo",
+            "experience_id": "imperial-palace-east-gardens",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "11:00",
+            "end_time": "12:00",
+            "title": "Lunch at Tokyo Ramen Street",
+            "notes": "Seek out the stall known for its tsukemen",
+            "planning_note": "Feast on some of Tokyo’s best ramen for lunch at Tokyo Ramen Street, a culinary hotspot within the bustling Tokyo Station.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Tokyo+Ramen+Street+Tokyo"
+          },
+          {
+            "type": "activity",
+            "start_time": "12:30",
+            "end_time": "15:30",
+            "title": "Edo-Tokyo Museum Visit",
+            "notes": "Explore the rooftop for views of the Skytree.",
+            "planning_note": "Explore Tokyo’s history and development at the Edo-Tokyo Museum. The exhibits offer a profound insight into the city’s evolution.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Edo-Tokyo+Museum+Tokyo",
+            "experience_id": "edo-tokyo-museum",
+            "effort": "easy"
+          },
+          {
+            "type": "travel",
+            "start_time": "15:45",
+            "end_time": "16:15",
+            "title": "Return to Shinjuku",
+            "notes": null,
+            "planning_note": null,
+            "maps_url": "https://www.google.com/maps/dir/Edo-Tokyo+Museum+Tokyo/Shinjuku+Station"
+          },
+          {
+            "type": "activity",
+            "start_time": "16:30",
+            "end_time": "18:00",
+            "title": "Shinjuku Gyoen National Garden",
+            "notes": "Seek out the wooden bridge at the southern end for scenic views.",
+            "planning_note": "End your afternoon with a calming stroll in Shinjuku Gyoen, contrasting the urban energy of Tokyo Station with serene landscapes.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Shinjuku+Gyoen+National+Garden+Tokyo",
+            "experience_id": "shinjuku-gyoen-national-garden",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "19:00",
+            "end_time": "21:00",
+            "title": "Izakaya Crawl in Shinjuku",
+            "notes": "Seek unique seasonal yakitori at the tucked-away stall in Omoide Yokocho.",
+            "planning_note": "Unwind with an evening of traditional Japanese cuisine and drink experiences in Shinjuku’s vibrant izakaya scene.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Omoide+Yokocho+Shinjuku+Tokyo",
+            "experience_id": "izakaya-crawl-in-shinjuku",
+            "effort": "moderate"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-21",
+        "day_number": 6,
+        "day_title": "Departure Day",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "08:00",
+            "end_time": "09:00",
+            "title": "Breakfast at Boulangerie Asanoya",
+            "notes": "Known for its distinguished pastries and breakfast platters.",
+            "planning_note": "Enjoy a hearty breakfast at Boulangerie Asanoya, setting the tone for your final glimpses of Tokyo before departure.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Boulangerie+Asanoya+Tokyo"
+          },
+          {
+            "type": "travel",
+            "start_time": "10:00",
+            "end_time": "11:00",
+            "title": "Return to Shinjuku and checkout",
+            "notes": null,
+            "planning_note": null,
+            "maps_url": null
+          }
+        ]
+      }
+    ],
+    "change_log": [
+      "Check 7: Day 1 — updated planning_note for Senso-ji Temple to be more specific.",
+      "Check 7: Day 2 — updated planning_note for Shibuya Scramble Crossing to reflect time-specific experiences.",
+      "Check 7: Day 3 — added 'moderate' note to reflect planning for Yanaka activities.",
+      "Check 7: Day 4 — updated planning_note for Odaiba exploration noting non-strenuous exploration.",
+      "Check 7: Day 5 — updated planning_note for Edo-Tokyo Museum visit to emphasize timing relevance."
+    ],
+    "generated_at": "2023-10-24T12:00:00Z"
+  },
+  "clusters": {
+    "clusters": [
+      {
+        "id": "cluster-asakusa",
+        "name": "Asakusa",
+        "anchor_id": "senso-ji-temple",
+        "experience_ids": [
+          "senso-ji-temple",
+          "mokuhankan-woodblock-printing",
+          "sumida-river-tokyo-cruise"
+        ],
+        "zone": "Tokyo East",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-shibuya",
+        "name": "Shibuya",
+        "anchor_id": "shibuya-scramble-crossing",
+        "experience_ids": [
+          "shibuya-scramble-crossing"
+        ],
+        "zone": "Tokyo West",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-harajuku",
+        "name": "Harajuku",
+        "anchor_id": "meiji-shrine",
+        "experience_ids": [
+          "meiji-shrine"
+        ],
+        "zone": "Tokyo West",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-ueno-park",
+        "name": "Ueno Park",
+        "anchor_id": "ueno-park-cherry-blossoms",
+        "experience_ids": [
+          "ueno-park-cherry-blossoms"
+        ],
+        "zone": "Tokyo East",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-tokyo-skytree",
+        "name": "Tokyo Skytree",
+        "anchor_id": "tokyo-skytree",
+        "experience_ids": [
+          "tokyo-skytree"
+        ],
+        "zone": "Tokyo East",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-akihabara",
+        "name": "Akihabara",
+        "anchor_id": "akihabara-cultural-experience",
+        "experience_ids": [
+          "akihabara-cultural-experience"
+        ],
+        "zone": "Tokyo East",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-mitaka",
+        "name": "Mitaka",
+        "anchor_id": "ghibli-museum-mitaka",
+        "experience_ids": [
+          "ghibli-museum-mitaka"
+        ],
+        "zone": "Western Suburbs",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-imperial-palace",
+        "name": "Imperial Palace and East Gardens",
+        "anchor_id": "imperial-palace-east-gardens",
+        "experience_ids": [
+          "imperial-palace-east-gardens"
+        ],
+        "zone": "Central Tokyo",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-odaiba",
+        "name": "Odaiba",
+        "anchor_id": "odaiba-futuristic-adventure",
+        "experience_ids": [
+          "odaiba-futuristic-adventure",
+          "cycling-around-tokyo-bay",
+          "teamlab-borderless"
+        ],
+        "zone": "Tokyo Bay",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-yushima-seido",
+        "name": "Yushima Seido",
+        "anchor_id": "yushima-seido-temple",
+        "experience_ids": [
+          "yushima-seido-temple",
+          "yushima-seido-mausoleum-of-confucius"
+        ],
+        "zone": "Central Tokyo",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-yanaka",
+        "name": "Yanaka",
+        "anchor_id": "yanaka-neighborhood-walk",
+        "experience_ids": [
+          "yanaka-neighborhood-walk",
+          "yanaka-district-walk",
+          "yanaka-art-walk"
+        ],
+        "zone": "Tokyo East",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-nezu",
+        "name": "Nezu Shrine",
+        "anchor_id": "nezu-shrine-azalea-festival",
+        "experience_ids": [
+          "nezu-shrine-azalea-festival",
+          "nezu-shrine-and-azalea-festival",
+          "nezu-shrine-explore"
+        ],
+        "zone": "Tokyo North",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-kagurazaka",
+        "name": "Kagurazaka",
+        "anchor_id": "kagurazaka-geisha-experience",
+        "experience_ids": [
+          "kagurazaka-geisha-experience"
+        ],
+        "zone": "Tokyo Central",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-tokyo-station",
+        "name": "Tokyo Station",
+        "anchor_id": "ramen-street-in-tokyo-station",
+        "experience_ids": [
+          "ramen-street-in-tokyo-station",
+          "edo-tokyo-cultural-workshop"
+        ],
+        "zone": "Central Tokyo",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-shinjuku",
+        "name": "Shinjuku",
+        "anchor_id": "izakaya-crawl-in-shinjuku",
+        "experience_ids": [
+          "izakaya-crawl-in-shinjuku",
+          "golden-gai-bar-crawl",
+          "robot-restaurant-show",
+          "shinjuku-gyoen-national-garden"
+        ],
+        "zone": "Tokyo West",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-tokyo-bay-cruise",
+        "name": "Tokyo Bay Cruise",
+        "anchor_id": "sumida-river-tokyo-cruise",
+        "experience_ids": [
+          "sumida-river-tokyo-cruise"
+        ],
+        "zone": "Tokyo East",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-roppongi",
+        "name": "Roppongi",
+        "anchor_id": "mori-art-museum",
+        "experience_ids": [
+          "mori-art-museum"
+        ],
+        "zone": "Tokyo Central",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-minato",
+        "name": "Minato",
+        "anchor_id": "tokyo-tower-illuminations",
+        "experience_ids": [
+          "tokyo-tower-illuminations",
+          "jazz-at-blue-note-tokyo"
+        ],
+        "zone": "Tokyo Central",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-nezu-museum",
+        "name": "Nezu Museum",
+        "anchor_id": "nezu-museum",
+        "experience_ids": [
+          "nezu-museum"
+        ],
+        "zone": "Tokyo Central",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-ryogoku",
+        "name": "Ryogoku",
+        "anchor_id": "edo-tokyo-museum",
+        "experience_ids": [
+          "edo-tokyo-museum",
+          "edo-tokyo-museum-visit",
+          "sumo-basho-tokyo"
+        ],
+        "zone": "Tokyo East",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-korakuen",
+        "name": "Koishikawa Korakuen",
+        "anchor_id": "koishikawa-korakuen-garden",
+        "experience_ids": [
+          "koishikawa-korakuen-garden"
+        ],
+        "zone": "Tokyo Central",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-tsukiji",
+        "name": "Tsukiji",
+        "anchor_id": "tsukiji-outer-market",
+        "experience_ids": [
+          "tsukiji-outer-market"
+        ],
+        "zone": "Tokyo Central",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-okutama",
+        "name": "Okutama",
+        "anchor_id": "rapids-on-the-tamagawa",
+        "experience_ids": [
+          "rapids-on-the-tamagawa"
+        ],
+        "zone": "Western Offbeat",
+        "cluster_note": "Requires train travel from central Tokyo"
+      },
+      {
+        "id": "cluster-tochigi",
+        "name": "Tochigi",
+        "anchor_id": "skydiving-over-tokyo",
+        "experience_ids": [
+          "skydiving-over-tokyo",
+          "paragliding-japan"
+        ],
+        "zone": "Northern Getaway",
+        "cluster_note": "Considerable travel required from central Tokyo"
+      },
+      {
+        "id": "cluster-mount-mitake",
+        "name": "Mount Mitake",
+        "anchor_id": "mount-mitake-hike",
+        "experience_ids": [
+          "mount-mitake-hike"
+        ],
+        "zone": "Tokyo Mountain",
+        "cluster_note": "Considerably outside urban area"
+      },
+      {
+        "id": "cluster-chofu",
+        "name": "Chofu",
+        "anchor_id": "chofu-no-oruri-waterfall-trail",
+        "experience_ids": [
+          "chofu-no-oruri-waterfall-trail"
+        ],
+        "zone": "Tokyo Suburb",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-mount-takao",
+        "name": "Mount Takao",
+        "anchor_id": "mt-takao-hike",
+        "experience_ids": [
+          "mt-takao-hike"
+        ],
+        "zone": "Western Tokyo",
+        "cluster_note": "Popular day-trip from Tokyo"
+      },
+      {
+        "id": "cluster-kyu-furukawa",
+        "name": "Kyu Furukawa Gardens",
+        "anchor_id": "kyu-furukawa-spring-rose-festival",
+        "experience_ids": [
+          "kyu-furukawa-spring-rose-festival"
+        ],
+        "zone": "Tokyo North",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-hibiya",
+        "name": "Hibiya",
+        "anchor_id": "hibiya-music-festival",
+        "experience_ids": [
+          "hibiya-music-festival"
+        ],
+        "zone": "Central Tokyo",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-disneysea",
+        "name": "Tokyo DisneySea",
+        "anchor_id": "tokyo-disneysea",
+        "experience_ids": [
+          "tokyo-disneysea"
+        ],
+        "zone": "Tokyo Bay",
+        "cluster_note": "Full-day activity"
+      },
+      {
+        "id": "cluster-hakone",
+        "name": "Hakone",
+        "anchor_id": "hakone-scenic-adventure",
+        "experience_ids": [
+          "hakone-scenic-adventure"
+        ],
+        "zone": "Hakone Getaway",
+        "cluster_note": "Requires transport from Tokyo"
+      },
+      {
+        "id": "cluster-kamakura",
+        "name": "Kamakura",
+        "anchor_id": "kamakura-historic-day-tour",
+        "experience_ids": [
+          "kamakura-historic-day-tour"
+        ],
+        "zone": "Kamakura Excursion",
+        "cluster_note": "Requires train travel from central Tokyo"
+      },
+      {
+        "id": "cluster-yokohama",
+        "name": "Yokohama",
+        "anchor_id": "yokohama-city-jaunt",
+        "experience_ids": [
+          "yokohama-city-jaunt"
+        ],
+        "zone": "Yokohama Day",
+        "cluster_note": "Requires train travel from central Tokyo"
+      },
+      {
+        "id": "cluster-fuji",
+        "name": "Mount Fuji",
+        "anchor_id": "mount-fuji-excursion",
+        "experience_ids": [
+          "mount-fuji-excursion"
+        ],
+        "zone": "Fuji Day",
+        "cluster_note": "Requires train and bus from Tokyo"
+      },
+      {
+        "id": "cluster-nikko",
+        "name": "Nikko National Park",
+        "anchor_id": "nikko-national-park",
+        "experience_ids": [
+          "nikko-national-park"
+        ],
+        "zone": "Nikko Getaway",
+        "cluster_note": "Requires train travel from Tokyo"
+      }
+    ],
+    "pairs": [
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-shibuya",
+        "walk_min": 999,
+        "drive_min": 43,
+        "mode": "transit",
+        "note": "Subway transfer at Ueno Park; not a practical walk."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-harajuku",
+        "walk_min": 999,
+        "drive_min": 38,
+        "mode": "transit",
+        "note": "Direct subway line available; longer walk distance."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-ueno-park",
+        "walk_min": 25,
+        "drive_min": 12,
+        "mode": "walk",
+        "note": "A comfortable walking distance."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-tokyo-skytree",
+        "walk_min": 23,
+        "drive_min": 10,
+        "mode": "transit",
+        "note": "Direct subway line; walking along Sumida river is scenic."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-akihabara",
+        "walk_min": 28,
+        "drive_min": 14,
+        "mode": "transit",
+        "note": "Direct train line; walking is feasible but not optimal."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-mitaka",
+        "walk_min": 999,
+        "drive_min": 55,
+        "mode": "transit",
+        "note": "Requires train transfer at Shinjuku."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-imperial-palace",
+        "walk_min": 999,
+        "drive_min": 22,
+        "mode": "transit",
+        "note": "Subway trip with minor walking at destination."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-odaiba",
+        "walk_min": 999,
+        "drive_min": 40,
+        "mode": "transit",
+        "note": "Subway followed by bus or taxi to reach."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-yushima-seido",
+        "walk_min": 33,
+        "drive_min": 15,
+        "mode": "transit",
+        "note": "At least one transfer on local train lines."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-yanaka",
+        "walk_min": 28,
+        "drive_min": 14,
+        "mode": "transit",
+        "note": "A direct public transport path is available."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-nezu",
+        "walk_min": 35,
+        "drive_min": 18,
+        "mode": "transit",
+        "note": "Subway ride with minor walking."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-kagurazaka",
+        "walk_min": 999,
+        "drive_min": 24,
+        "mode": "transit",
+        "note": "Requires subway and local train transfer."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-tokyo-station",
+        "walk_min": 999,
+        "drive_min": 21,
+        "mode": "transit",
+        "note": "Subway with potential bus or minor walk."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-shinjuku",
+        "walk_min": 999,
+        "drive_min": 34,
+        "mode": "transit",
+        "note": "A key subway transfer makes this route efficient."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-tokyo-bay-cruise",
+        "walk_min": 999,
+        "drive_min": 40,
+        "mode": "transit",
+        "note": "Train with a transition to the cruise from Asakusa Pier."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-roppongi",
+        "walk_min": 999,
+        "drive_min": 28,
+        "mode": "transit",
+        "note": "Subway with a transfer at Roppongi."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-minato",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Subway followed by a possible short taxi ride."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-nezu-museum",
+        "walk_min": 999,
+        "drive_min": 38,
+        "mode": "transit",
+        "note": "Multiple subway transfers, advisable by car."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-ryogoku",
+        "walk_min": 18,
+        "drive_min": 8,
+        "mode": "walk",
+        "note": "A feasible and comfortable walk."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-korakuen",
+        "walk_min": 999,
+        "drive_min": 25,
+        "mode": "transit",
+        "note": "Direct subway line connection."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-tsukiji",
+        "walk_min": 999,
+        "drive_min": 26,
+        "mode": "transit",
+        "note": "Subway travel with a minor local transfer."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-okutama",
+        "walk_min": 999,
+        "drive_min": 120,
+        "mode": "transit",
+        "note": "Long train ride from central Tokyo."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-tochigi",
+        "walk_min": 999,
+        "drive_min": 120,
+        "mode": "transit",
+        "note": "Train with multiple transitions required."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-mount-mitake",
+        "walk_min": 999,
+        "drive_min": 120,
+        "mode": "transit",
+        "note": "Multiple transitions, consider early departure."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-chofu",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "transit",
+        "note": "Train, local transfers involved."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-mount-takao",
+        "walk_min": 999,
+        "drive_min": 75,
+        "mode": "transit",
+        "note": "Train ride, ensure a train early in the day."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-kyu-furukawa",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Subway with potential minor bus or taxi needed."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-hibiya",
+        "walk_min": 999,
+        "drive_min": 28,
+        "mode": "transit",
+        "note": "Ride on JR Yamanote with a subway transfer."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-disneysea",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "transit",
+        "note": "Disney Resort Line after a rail ride to Maihama."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-hakone",
+        "walk_min": 999,
+        "drive_min": 150,
+        "mode": "transit",
+        "note": "Express train ride preferred; start early."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-kamakura",
+        "walk_min": 999,
+        "drive_min": 90,
+        "mode": "transit",
+        "note": "Rail journey with possible walk or bus at destination."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-yokohama",
+        "walk_min": 999,
+        "drive_min": 80,
+        "mode": "transit",
+        "note": "Direct or with a layover on train lines."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-fuji",
+        "walk_min": 999,
+        "drive_min": 180,
+        "mode": "transit",
+        "note": "Requires train and bus; plan for an all-day excursion."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-nikko",
+        "walk_min": 999,
+        "drive_min": 150,
+        "mode": "transit",
+        "note": "Tobu train services from Asakusa directly available."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-harajuku",
+        "walk_min": 15,
+        "drive_min": 10,
+        "mode": "walk",
+        "note": "A short and popular walk in Tokyo."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-ueno-park",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Subway to Ueno with a major transfer."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-tokyo-skytree",
+        "walk_min": 999,
+        "drive_min": 33,
+        "mode": "transit",
+        "note": "Ride multiple subway lines"
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-akihabara",
+        "walk_min": 999,
+        "drive_min": 24,
+        "mode": "transit",
+        "note": "Direct metro line with no need for transfers."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-mitaka",
+        "walk_min": 999,
+        "drive_min": 40,
+        "mode": "transit",
+        "note": "Suburban train ride; transfer at Kichijoji possible."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-imperial-palace",
+        "walk_min": 999,
+        "drive_min": 29,
+        "mode": "transit",
+        "note": "Requires transit; walking isn't practical."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-odaiba",
+        "walk_min": 999,
+        "drive_min": 40,
+        "mode": "transit",
+        "note": "Subway or taxi connection usually required."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-yushima-seido",
+        "walk_min": 999,
+        "drive_min": 38,
+        "mode": "transit",
+        "note": "Balanced route with subway line and/or bus."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-yanaka",
+        "walk_min": 999,
+        "drive_min": 40,
+        "mode": "transit",
+        "note": "Complex city navigation if relying solely on bus."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-nezu",
+        "walk_min": 999,
+        "drive_min": 42,
+        "mode": "transit",
+        "note": "Subway routes highly recommended."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-kagurazaka",
+        "walk_min": 999,
+        "drive_min": 44,
+        "mode": "transit",
+        "note": "A few critical subway connections needed."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-tokyo-station",
+        "walk_min": 999,
+        "drive_min": 36,
+        "mode": "transit",
+        "note": "Spanning metro line connections mandatory."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-shinjuku",
+        "walk_min": 27,
+        "drive_min": 12,
+        "mode": "transit",
+        "note": "Good walk if the weather is fair."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-tokyo-bay-cruise",
+        "walk_min": 999,
+        "drive_min": 54,
+        "mode": "transit",
+        "note": "On subway line via Shimbashi and then cab hop."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-roppongi",
+        "walk_min": 18,
+        "drive_min": 10,
+        "mode": "walk",
+        "note": "Strolling is one of the better options."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-minato",
+        "walk_min": 22,
+        "drive_min": 12,
+        "mode": "walk",
+        "note": "A comfortable city walk: routes aplenty."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-nezu-museum",
+        "walk_min": 12,
+        "drive_min": 8,
+        "mode": "walk",
+        "note": "Direct meander through a well-trodden path."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-ryogoku",
+        "walk_min": 999,
+        "drive_min": 32,
+        "mode": "transit",
+        "note": "Journey demands multiple subway rides."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-korakuen",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Busy rail channels dominate this route."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-tsukiji",
+        "walk_min": 999,
+        "drive_min": 35,
+        "mode": "transit",
+        "note": "Early transit to Tsukiji is a key move."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-okutama",
+        "walk_min": 999,
+        "drive_min": 120,
+        "mode": "transit",
+        "note": "Outskirts of Tokyo a train ride away."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-tochigi",
+        "walk_min": 999,
+        "drive_min": 150,
+        "mode": "transit",
+        "note": "Major railway commute for Tochigi."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-mount-mitake",
+        "walk_min": 999,
+        "drive_min": 140,
+        "mode": "transit",
+        "note": "Consider railcard for broad train access."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-chofu",
+        "walk_min": 999,
+        "drive_min": 65,
+        "mode": "transit",
+        "note": "Transit connections planned forward."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-mount-takao",
+        "walk_min": 999,
+        "drive_min": 80,
+        "mode": "transit",
+        "note": "Early departure preferred; train-first venture."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-kyu-furukawa",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Rail all the way; passenger pathways aplenty."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-hibiya",
+        "walk_min": 999,
+        "drive_min": 30,
+        "mode": "transit",
+        "note": "Central rail connections; taxi unlikely entity."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-disneysea",
+        "walk_min": 999,
+        "drive_min": 65,
+        "mode": "transit",
+        "note": "Disney-bound rail priority, followed by taxi hop."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-hakone",
+        "walk_min": 999,
+        "drive_min": 150,
+        "mode": "transit",
+        "note": "Flows via express then regular train services."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-kamakura",
+        "walk_min": 999,
+        "drive_min": 90,
+        "mode": "transit",
+        "note": "Prescribed train methods traverse Kamakura."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-yokohama",
+        "walk_min": 999,
+        "drive_min": 70,
+        "mode": "transit",
+        "note": "Fast rail connections show Yokohama close."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-fuji",
+        "walk_min": 999,
+        "drive_min": 180,
+        "mode": "transit",
+        "note": "Express train and bus define the trip's span."
+      },
+      {
+        "from_cluster_id": "cluster-shibuya",
+        "to_cluster_id": "cluster-nikko",
+        "walk_min": 999,
+        "drive_min": 150,
+        "mode": "transit",
+        "note": "Nikko trains' time-friendly operations prevail."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-ueno-park",
+        "walk_min": 999,
+        "drive_min": 35,
+        "mode": "transit",
+        "note": "Train paths make transit solid and needed."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-tokyo-skytree",
+        "walk_min": 999,
+        "drive_min": 37,
+        "mode": "transit",
+        "note": "Requisite rides on rail tickets a deal-breaker."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-akihabara",
+        "walk_min": 999,
+        "drive_min": 28,
+        "mode": "transit",
+        "note": "Effecient by train, impossible by walk."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-mitaka",
+        "walk_min": 999,
+        "drive_min": 35,
+        "mode": "transit",
+        "note": "A classic route under train track travel."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-imperial-palace",
+        "walk_min": 999,
+        "drive_min": 33,
+        "mode": "transit",
+        "note": "Transit struggles a reality; ideal for rail."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-odaiba",
+        "walk_min": 999,
+        "drive_min": 45,
+        "mode": "transit",
+        "note": "Melding public transportation transitions."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-yushima-seido",
+        "walk_min": 999,
+        "drive_min": 42,
+        "mode": "transit",
+        "note": "Requisite rides on rail tickets a deal-breaker."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-yanaka",
+        "walk_min": 999,
+        "drive_min": 45,
+        "mode": "transit",
+        "note": "Transit paths thoroughly welded to process."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-nezu",
+        "walk_min": 999,
+        "drive_min": 46,
+        "mode": "transit",
+        "note": "Kept on the straight and narrow by rail."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-kagurazaka",
+        "walk_min": 999,
+        "drive_min": 50,
+        "mode": "transit",
+        "note": "Time on train side brings positive routes."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-tokyo-station",
+        "walk_min": 999,
+        "drive_min": 35,
+        "mode": "transit",
+        "note": "Central Tokyo brings subways in spotlight."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-shinjuku",
+        "walk_min": 20,
+        "drive_min": 10,
+        "mode": "walk",
+        "note": "Directly walkable."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-tokyo-bay-cruise",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "transit",
+        "note": "Cruise requires metro meeting."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-roppongi",
+        "walk_min": 20,
+        "drive_min": 10,
+        "mode": "walk",
+        "note": "The meandering streets provide a direct experience."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-minato",
+        "walk_min": 22,
+        "drive_min": 12,
+        "mode": "walk",
+        "note": "A calm, pleasant walking route is well-known."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-nezu-museum",
+        "walk_min": 14,
+        "drive_min": 8,
+        "mode": "walk",
+        "note": "Pleasant garden stroll spanning districts."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-ryogoku",
+        "walk_min": 999,
+        "drive_min": 35,
+        "mode": "transit",
+        "note": "Well-known train line traverses"
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-korakuen",
+        "walk_min": 999,
+        "drive_min": 33,
+        "mode": "transit",
+        "note": "A schedule-keeping stopper on transit lines."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-tsukiji",
+        "walk_min": 999,
+        "drive_min": 40,
+        "mode": "transit",
+        "note": "Tokyo's rail axis makes routes palatable."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-okutama",
+        "walk_min": 999,
+        "drive_min": 130,
+        "mode": "transit",
+        "note": "Both train services required longer."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-tochigi",
+        "walk_min": 999,
+        "drive_min": 150,
+        "mode": "transit",
+        "note": "Long train-run for predictable returns."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-mount-mitake",
+        "walk_min": 999,
+        "drive_min": 130,
+        "mode": "transit",
+        "note": "Treacherous tour train patterns abound."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-chofu",
+        "walk_min": 999,
+        "drive_min": 60,
+        "mode": "transit",
+        "note": "Obligatory public transit component."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-mount-takao",
+        "walk_min": 999,
+        "drive_min": 75,
+        "mode": "transit",
+        "note": "Guide-caliber routes across Tokyo."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-kyu-furukawa",
+        "walk_min": 999,
+        "drive_min": 35,
+        "mode": "transit",
+        "note": "Time to spend on Tokyo trains."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-hibiya",
+        "walk_min": 999,
+        "drive_min": 28,
+        "mode": "transit",
+        "note": "Many mainline rail meetings possible."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-disneysea",
+        "walk_min": 999,
+        "drive_min": 65,
+        "mode": "transit",
+        "note": "Enters Tokyo's famed rail system."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-hakone",
+        "walk_min": 999,
+        "drive_min": 155,
+        "mode": "transit",
+        "note": "Far-and-away express needs ride."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-kamakura",
+        "walk_min": 999,
+        "drive_min": 95,
+        "mode": "transit",
+        "note": "Turbos (rail) bound Nikko no-ko."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-yokohama",
+        "walk_min": 999,
+        "drive_min": 80,
+        "mode": "transit",
+        "note": "Foremost rail lines linked direct."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-fuji",
+        "walk_min": 999,
+        "drive_min": 180,
+        "mode": "transit",
+        "note": "Rail & bus the country's bountiful."
+      },
+      {
+        "from_cluster_id": "cluster-harajuku",
+        "to_cluster_id": "cluster-nikko",
+        "walk_min": 999,
+        "drive_min": 152,
+        "mode": "transit",
+        "note": "Worldly wise on railway in Tokyo."
+      },
+      {
+        "from_cluster_id": "cluster-ueno-park",
+        "to_cluster_id": "cluster-tokyo-skytree",
+        "walk_min": 28,
+        "drive_min": 12,
+        "mode": "walk",
+        "note": "An alternative through Sumida landscape."
+      },
+      {
+        "from_cluster_id": "cluster-ueno-park",
+        "to_cluster_id": "cluster-akihabara",
+        "walk_min": 20,
+        "drive_min": 10,
+        "mode": "walk",
+        "note": "Prepare for pedestrian sidestepping tour."
+      },
+      {
+        "from_cluster_id": "cluster-ueno-park",
+        "to_cluster_id": "cluster-mitaka",
+        "walk_min": 999,
+        "drive_min": 50,
+        "mode": "transit",
+        "note": "Utterly viable on city train modes."
+      },
+      {
+        "from_cluster_id": "cluster-ueno-park",
+        "to_cluster_id": "cluster-imperial-palace",
+        "walk_min": 999,
+        "drive_min": 25,
+        "mode": "transit",
+        "note": "The Palace, a high-level train stumble."
+      },
+      {
+        "from_cluster_id": "cluster-ueno-park",
+        "to_cluster_id": "cluster-odaiba",
+        "walk_min": 999,
+        "drive_min": 45,
+        "mode": "transit",
+        "note": "Tokyo bay assists train outreach."
+      },
+      {
+        "from_cluster_id": "cluster-ueno-park",
+        "to_cluster_id": "cluster-yushima-seido",
+        "walk_min": 15,
+        "drive_min": 10,
+        "mode": "walk",
+        "note": "A slight but sovereign stroll indeed."
+      },
+      {
+        "from_cluster_id": "cluster-ueno-park",
+        "to_cluster_id": "cluster-yanaka",
+        "walk_min": 12,
+        "drive_min": 8,
+        "mode": "walk",
+        "note": "Neighborly walking like clockwork."
+      },
+      {
+        "from_cluster_id": "cluster-ueno-park",
+        "to_cluster_id": "cluster-nezu",
+        "walk_min": 18,
+        "drive_min": 14,
+        "mode": "walk",
+        "note": "Following in wistful temple shadows."
+      },
+      {
+        "from_cluster_id": "cluster-ueno-park",
+        "to_cluster_id": "cluster-kagurazaka",
+        "walk_min": 999,
+        "drive_min": 24,
+        "mode": "transit",
+        "note": "Processes Tokyo's train rotations abundantly."
+      }
+    ]
+  }
+}

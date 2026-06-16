@@ -1,0 +1,341 @@
+{
+  "itinerary": {
+    "destination": "Tokyo, Japan",
+    "start_date": "2026-09-16",
+    "end_date": "2026-09-21",
+    "days": [
+      {
+        "date": "2026-09-16",
+        "day_number": 1,
+        "day_title": "Arrival and Shinjuku Exploration",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "11:30",
+            "end_time": "13:00",
+            "title": "Shinjuku Gyoen National Garden",
+            "notes": "Seek out the wooden bridge at the southern end of the English Landscape Garden.",
+            "planning_note": "Perfect first stop after checking in, offering serene views and gentle introductions to local flora without strenuous walking. Start from the Shinjuku entrance.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Shinjuku+Gyoen+National+Garden+Tokyo",
+            "experience_id": "shinjuku-gyoen-national-garden",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "13:15",
+            "end_time": "14:15",
+            "title": "Lunch at Menya Musashi, Shinjuku",
+            "notes": null,
+            "planning_note": "Famous for traditional tonkotsu ramen, great for a hearty start. Located conveniently near your sightseeing spots.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Menya+Musashi+Shinjuku+Tokyo",
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "activity",
+            "start_time": "14:45",
+            "end_time": "16:15",
+            "title": "Senso-ji Temple",
+            "notes": "For a unique perspective, head to the Asakusa Shrine behind. Enjoy serene gardens with seasonal colors.",
+            "planning_note": "Midday's a good time to catch the vibrant temple grounds, balancing historic ambiance and lively local shops.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Senso-ji+Temple+Tokyo",
+            "experience_id": "senso-ji-temple",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "18:00",
+            "end_time": "19:30",
+            "title": "Dinner at Omoide Yokocho, Shinjuku",
+            "notes": null,
+            "planning_note": "Explore an array of small, nostalgic eateries specializing in yakitori, perfect for an immersive local dining experience.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Omoide+Yokocho+Shinjuku+Tokyo",
+            "experience_id": null,
+            "effort": null
+          }
+        ]
+      },
+      {
+        "date": "2026-09-17",
+        "day_number": 2,
+        "day_title": "Cultural Immersion and Pop Culture",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "08:30",
+            "end_time": "10:00",
+            "title": "Yanaka: Tokyo's Living History",
+            "notes": "Explore tranquil alleyways and find hidden gardens offering unique views.",
+            "planning_note": "Ideal for a morning stroll when the area is just waking up, offering a quaint start to the day away from the city's rush.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Yanaka+Ginzo+Tokyo",
+            "experience_id": "yanaka-neighborhood-walk",
+            "effort": "moderate"
+          },
+          {
+            "type": "travel",
+            "start_time": "10:00",
+            "end_time": "10:30",
+            "title": "Travel to Akihabara",
+            "notes": null,
+            "planning_note": null,
+            "maps_url": null,
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "activity",
+            "start_time": "10:30",
+            "end_time": "12:00",
+            "title": "Akihabara Pop Culture Pilgrimage",
+            "notes": "Visit the Yodobashi Akiba store for unique anime merchandise usually missed by tourists.",
+            "planning_note": "Visit the stores that open mid-morning for a varied selection without being swamped by early-morning commuters.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Akihabara+Tokyo",
+            "experience_id": "akihabara-cultural-experience",
+            "effort": "moderate"
+          },
+          {
+            "type": "meal",
+            "start_time": "12:15",
+            "end_time": "13:15",
+            "title": "Lunch at Ichiran Ramen, Akihabara",
+            "notes": null,
+            "planning_note": "Famed vending-machine selection process allows customization, while booths provide unique privacy, perfect for solo dining.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Ichiran+Ramen+Tokyo",
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "travel",
+            "start_time": "13:15",
+            "end_time": "13:45",
+            "title": "Travel to Ueno Park",
+            "notes": null,
+            "planning_note": null,
+            "maps_url": null,
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "activity",
+            "start_time": "13:45",
+            "end_time": "15:45",
+            "title": "Edo-Tokyo Museum Visit",
+            "notes": "Explore replicas and exhibits showcasing Tokyo's evolution from Edo period to present day.",
+            "planning_note": "Spend the cooler afternoon indoors, avoiding potential rain and appreciating the intricate displays without daytime crowds.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Edo-Tokyo+Museum+Tokyo",
+            "experience_id": "edo-tokyo-museum-visit",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "18:00",
+            "end_time": "19:30",
+            "title": "Dinner at Kagaya, Shinjuku",
+            "notes": null,
+            "planning_note": "Discover experimental izakaya dining offering thrilling local flavors, right in the heart of Shinjuku.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Kagaya+Tokyo",
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "activity",
+            "start_time": "20:00",
+            "end_time": "22:00",
+            "title": "Izakaya Crawl in Shinjuku",
+            "notes": "End your evening sampling yakitori with seasonal specialties like quail eggs.",
+            "planning_note": "A perfect close to the day's activities with a laid-back, sociable atmosphere sampling local favorites.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Omoide+Yokocho+Shinjuku",
+            "experience_id": "izakaya-crawl-in-shinjuku",
+            "effort": "moderate"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-18",
+        "day_number": 3,
+        "day_title": "Culinary and Traditional Arts",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "09:00",
+            "end_time": "11:00",
+            "title": "Tsukiji Outer Market",
+            "notes": "Discover freshly grilled street food in tucked-away alleys.",
+            "planning_note": "Start early to experience the bustling market with fresh wares and fewer crowds; taste savory local foods in hidden spots most visitors miss.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Tsukiji+Outer+Market+Tokyo",
+            "experience_id": "tsukiji-outer-market",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "11:00",
+            "end_time": "12:00",
+            "title": "Brunch at Sushi Dai, Tsukiji",
+            "notes": null,
+            "planning_note": "Enjoy incredibly fresh sushi with expertly prepared fish in a renowned location, perfect for sushi enthusiasts willing to queue for quality.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Sushi+Dai+Tokyo",
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "travel",
+            "start_time": "12:15",
+            "end_time": "12:45",
+            "title": "Travel to Asakusa",
+            "notes": null,
+            "planning_note": null,
+            "maps_url": null,
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "activity",
+            "start_time": "13:00",
+            "end_time": "15:00",
+            "title": "Mokuhankan: Craft Your Own Ukiyo-e",
+            "notes": "Observe and participate in a detailed woodblock printing workshop.",
+            "planning_note": "A delightful hands-on experience perfect for arts enthusiasts; offers a deeper appreciation of Japan's rich artisanal heritage.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Mokuhankan+Asakusa+Tokyo",
+            "experience_id": "mokuhankan-woodblock-printing",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "18:30",
+            "end_time": "21:00",
+            "title": "Kaiseki Dinner at Kanda Yabu Soba",
+            "notes": null,
+            "planning_note": "Engage in a multi-course traditional Japanese dining experience that showcases seasonal ingredients and delicate flavors in an intimate setting.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Kanda+Yabu+Soba+Tokyo",
+            "experience_id": "kaiseki-dining-experience",
+            "effort": "easy"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-19",
+        "day_number": 4,
+        "day_title": "Day Trip to Mount Fuji",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "07:00",
+            "end_time": "19:00",
+            "title": "Mount Fuji Excursion",
+            "notes": "Head to the less frequented Oishi Park for best views of Mt. Fuji with seasonal flowers.",
+            "planning_note": "Early departure ensures a full day to explore Mount Fuji's iconic landscapes, with ample time for hikes and photography at serene vista points away from crowds.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Mount+Fuji+Oishi+Park+Japan",
+            "experience_id": "mount-fuji-excursion",
+            "effort": "moderate"
+          },
+          {
+            "type": "meal",
+            "start_time": "19:30",
+            "end_time": "21:00",
+            "title": "Dinner at Gonpachi, Shibuya",
+            "notes": null,
+            "planning_note": "End your day's adventure with delicious Japanese fusion dishes in a lively setting inspired by 'Kill Bill' aesthetics. Conveniently offers group seating.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Gonpachi+Shibuya+Tokyo",
+            "experience_id": null,
+            "effort": null
+          }
+        ]
+      },
+      {
+        "date": "2026-09-20",
+        "day_number": 5,
+        "day_title": "Modern Tokyo and Oceanic Views",
+        "rows": [
+          {
+            "type": "activity",
+            "start_time": "09:30",
+            "end_time": "12:00",
+            "title": "Tokyo Skytree",
+            "notes": "For sunset views transitioning into night at the open-air deck.",
+            "planning_note": "Visit early to start the day with spectacular skyline views, avoiding potential afternoon crowd and humidity buildup.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Tokyo+Skytree+Sumida+Tokyo",
+            "experience_id": "tokyo-skytree",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "12:30",
+            "end_time": "13:30",
+            "title": "Lunch at Tonkatsu Maisen, Omotesando",
+            "notes": null,
+            "planning_note": "Celebrated for its juicy tonkatsu offerings, this lunch spot is perfect for a hearty meal amidst your Tokyo adventure.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Tonkatsu+Maisen+Omotesando+Tokyo",
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "travel",
+            "start_time": "13:45",
+            "end_time": "14:30",
+            "title": "Travel to Odaiba",
+            "notes": null,
+            "planning_note": null,
+            "maps_url": null,
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "activity",
+            "start_time": "14:30",
+            "end_time": "18:00",
+            "title": "Explore Odaiba",
+            "notes": "Head to Aqua City's rooftop for stunning Rainbow Bridge views.",
+            "planning_note": "Perfect example of Tokyo's futuristic side; enjoy sunset over Tokyo Bay, optimizing views post-lunch.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Odaiba+Tokyo",
+            "experience_id": "odaiba-futuristic-adventure",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "19:00",
+            "end_time": "21:00",
+            "title": "Dinner at Sushi Saito, Roppongi",
+            "notes": null,
+            "planning_note": "Savor an upscale sushi experience with a Michelin-starred chef in Roppongi, perfect for the culinary enthusiast.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Sushi+Saito+Roppongi+Tokyo",
+            "experience_id": null,
+            "effort": null
+          }
+        ]
+      },
+      {
+        "date": "2026-09-21",
+        "day_number": 6,
+        "day_title": "Departure Day",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "09:00",
+            "end_time": "10:00",
+            "title": "Breakfast at Ichiran Ramen, Shinjuku",
+            "notes": null,
+            "planning_note": "Perfect for a last Tokyo breakfast — order vending-machine style for quick service; the broth is renowned for flavor.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Ichiran+Ramen+Shinjuku+Tokyo",
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "travel",
+            "start_time": "10:30",
+            "end_time": "12:00",
+            "title": "Check-out and travel to the airport",
+            "notes": null,
+            "planning_note": null,
+            "maps_url": null,
+            "experience_id": null,
+            "effort": null
+          }
+        ]
+      }
+    ],
+    "change_log": [
+      "No changes — itinerary passed all 10 checks."
+    ],
+    "generated_at": "2023-11-23T10:43:00Z"
+  }
+}

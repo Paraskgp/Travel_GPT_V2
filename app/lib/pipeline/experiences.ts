@@ -22,13 +22,8 @@ import { parseJSON } from "../utils/parse-json"
 //   tier (1000 RPM) the delay still fires but 429s never occur, so wall-clock time is
 //   dominated by response latency regardless.
 //
-// DEDUP_CHUNK_DELAY_MS: pause between sequential dedup chunk calls.
-//   Dedup chunks now run sequentially (not in parallel) so failures in one chunk
-//   don't compound with simultaneous quota pressure from another.
-//
 const MAP_CONCURRENCY      = 20
 const MAP_BATCH_DELAY_MS   = 0
-const DEDUP_CHUNK_DELAY_MS = 0
 
 const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms))
 
@@ -91,7 +86,7 @@ export async function generateQueries(
  * while our scraper caps at 4000 chars. For pages that block crawlers (Reddit,
  * Facebook), both Tavily and our scraper fail — snippet is the only option.
  */
-async function resolveContent(result: TavilyResult): Promise<string> {
+export async function resolveSearchResultContent(result: TavilyResult): Promise<string> {
   const snippet = result.content ?? ""
 
   // Binary content guard for raw_content
@@ -135,7 +130,7 @@ export async function extractFromPage(
   dest: string,
   provider: Provider = "openai"
 ): Promise<RawExperience[]> {
-  const raw = await resolveContent(result)
+  const raw = await resolveSearchResultContent(result)
   const content = raw.length > CONTENT_MAX_CHARS ? raw.slice(0, CONTENT_MAX_CHARS) : raw
   if (content.length < 50) return []
 

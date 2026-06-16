@@ -1,11 +1,18 @@
 'use client'
 
-import { Experience } from '@/lib/types'
+import {
+  Experience,
+  FeedbackBoardContext,
+  FeedbackCardContext,
+} from '@/lib/types'
 import { useEffect } from 'react'
+import FeedbackButton from '@/components/feedback/FeedbackButton'
 
 interface Props {
   experience: Experience | null
   onClose: () => void
+  feedbackBoardContext: FeedbackBoardContext | null
+  feedbackCardContext: FeedbackCardContext | null
 }
 
 const EFFORT_COLOR  = { easy: 'text-green-600', moderate: 'text-amber-600', strenuous: 'text-red-600' }
@@ -13,7 +20,12 @@ const EFFORT_BG     = { easy: 'bg-green-50', moderate: 'bg-amber-50', strenuous:
 const COST_LABEL    = { free: 'Free', budget: '$', mid: '$$', premium: '$$$' }
 const BOOKING_LABEL = { walk_in: 'Walk-in', reserve_ahead: 'Reserve ahead', hard_to_get: 'Hard to get' }
 
-export default function ExperienceDetail({ experience: exp, onClose }: Props) {
+export default function ExperienceDetail({
+  experience: exp,
+  onClose,
+  feedbackBoardContext,
+  feedbackCardContext,
+}: Props) {
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) { if (e.key === 'Escape') onClose() }
@@ -59,17 +71,6 @@ export default function ExperienceDetail({ experience: exp, onClose }: Props) {
                     <span className="ml-1 opacity-70">({exp.places_enrichment.review_count.toLocaleString()})</span>
                   )}
                 </span>
-              )}
-              {/* Maps link */}
-              {exp.places_enrichment?.maps_url && (
-                <a
-                  href={exp.places_enrichment.maps_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="absolute bottom-3 right-3 bg-black/60 text-white text-xs px-2 py-1 rounded hover:bg-black/80 transition-colors"
-                >
-                  Open in Maps →
-                </a>
               )}
             </div>
 
@@ -142,6 +143,40 @@ export default function ExperienceDetail({ experience: exp, onClose }: Props) {
                     <span key={tag} className="text-xs text-stone-400 border border-stone-200 px-2 py-0.5 rounded-full">{tag}</span>
                   ))}
                 </div>
+              )}
+
+              {exp.places_enrichment?.maps_url && (
+                <a
+                  href={exp.places_enrichment.maps_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2.5 w-full py-3.5 mt-2 bg-black text-white text-sm font-medium rounded-xl hover:bg-stone-800 active:bg-stone-700 transition-colors"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                  View on Google Maps
+                </a>
+              )}
+
+              {feedbackBoardContext && feedbackCardContext && (
+                <FeedbackButton
+                  surface="detail"
+                  boardContext={feedbackBoardContext}
+                  cardContext={{
+                    ...feedbackCardContext,
+                    visible_fields: {
+                      ...feedbackCardContext.visible_fields,
+                      long_description: exp.long_description,
+                      why_worth_it: exp.why_worth_it,
+                      best_time: exp.best_time,
+                      local_tip: exp.local_tip,
+                      ...(exp.watch_out_for ? { watch_out_for: exp.watch_out_for } : {}),
+                    },
+                  }}
+                  label="Send feedback on this card"
+                  className="w-full py-3.5"
+                />
               )}
             </div>
 

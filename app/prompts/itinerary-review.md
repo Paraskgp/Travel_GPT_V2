@@ -70,7 +70,7 @@ For each day, compute the wall-clock duration of consecutive activity rows (igno
 
 ## Check 4 — Geographic conflicts  `HARD RULE`
 
-For each day, check every consecutive pair of activities. Use the travel pairs provided, or your knowledge of the destination.
+For each day, check every consecutive pair of activities. Use the cluster assignments and cluster travel times provided, or your knowledge of the destination.
 
 - If the drive between consecutive activities exceeds 45 minutes AND there is no travel row between them: ADD the travel row with honest timing.
 - **If total one-way driving time on a single day exceeds 90 minutes (not counting shuttle): MOVE one activity to a different day.** This is not advisory — move it.

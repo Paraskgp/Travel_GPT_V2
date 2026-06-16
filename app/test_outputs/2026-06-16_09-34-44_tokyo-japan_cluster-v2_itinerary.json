@@ -1,0 +1,592 @@
+{
+  "itinerary": {
+    "destination": "Tokyo, Japan",
+    "start_date": "2026-09-16",
+    "end_date": "2026-09-21",
+    "days": [
+      {
+        "date": "2026-09-16",
+        "day_number": 1,
+        "day_title": "Arrival and Initial Explorations in Shinjuku",
+        "rows": [
+          {
+            "type": "travel",
+            "start_time": "12:00",
+            "end_time": "12:30",
+            "title": "Travel from Narita International Airport to Shinjuku",
+            "notes": "Airport Limousine Bus or Narita Express to Shinjuku Station.",
+            "planning_note": null,
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Shinjuku+Tokyo",
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "meal",
+            "start_time": "13:00",
+            "end_time": "14:00",
+            "title": "Lunch at Tsunahachi Shinjuku",
+            "notes": "Known for its traditional tempura dishes.",
+            "planning_note": "Order the tempura set for a balanced meal after your travel.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Tsunahachi+Shinjuku+Tokyo",
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "activity",
+            "start_time": "15:00",
+            "end_time": "17:00",
+            "title": "Shinjuku Gyoen National Garden",
+            "notes": "A beautiful garden ideal for an afternoon walk.",
+            "planning_note": "Start your Tokyo journey with a relaxing walk. This is a peaceful spot to unwind and stretch your legs after the flight.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Shinjuku+Gyoen+Tokyo",
+            "experience_id": "shinjuku-gyoen-national-garden",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "18:00",
+            "end_time": "19:30",
+            "title": "Dinner at Omoide Yokocho",
+            "notes": "Explore diverse yakitori offerings at tiny izakayas.",
+            "planning_note": "Explore various small eateries for a truly Tokyo experience.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Omoide+Yokocho+Shinjuku",
+            "experience_id": null,
+            "effort": null
+          }
+        ]
+      },
+      {
+        "date": "2026-09-17",
+        "day_number": 2,
+        "day_title": "Cultural Exploration: Asakusa and Akihabara",
+        "rows": [
+          {
+            "type": "travel",
+            "start_time": "08:00",
+            "end_time": "08:30",
+            "title": "Travel from Shinjuku to Asakusa",
+            "notes": "Use the Tokyo Metro to reach Asakusa.",
+            "planning_note": null,
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Asakusa+Tokyo",
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "activity",
+            "start_time": "08:30",
+            "end_time": "10:00",
+            "title": "Senso-ji Temple",
+            "notes": "Visit Tokyo's oldest temple to experience traditional culture.",
+            "planning_note": "Start early to enjoy the temple with fewer crowds. Don't miss the hidden gardens behind the main temple.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Senso-ji+Temple+Tokyo",
+            "experience_id": "senso-ji-temple",
+            "effort": "easy"
+          },
+          {
+            "type": "activity",
+            "start_time": "10:30",
+            "end_time": "12:00",
+            "title": "Mokuhankan: Craft Your Own Ukiyo-e",
+            "notes": "Participate in a Ukiyo-e woodblock print workshop.",
+            "planning_note": "A hands-on way to understand a vital part of Japanese art history. Perfect lighting and fewer people make it ideal to focus on crafting.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Mokuhankan+Tokyo",
+            "experience_id": "mokuhankan-woodblock-printing",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "12:30",
+            "end_time": "13:30",
+            "title": "Lunch at Asakusa Kagetsudo",
+            "notes": "Famous for its melon pan (sweet bread).",
+            "planning_note": "Try the famous melon pan for a light, sweet treat.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Asakusa+Kagetsudo",
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "travel",
+            "start_time": "13:45",
+            "end_time": "14:00",
+            "title": "Travel from Asakusa to Akihabara",
+            "notes": "Take the subway to Akihabara.",
+            "planning_note": null,
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Akihabara+Tokyo",
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "activity",
+            "start_time": "14:00",
+            "end_time": "17:00",
+            "title": "Akihabara Pop Culture Pilgrimage",
+            "notes": "Dive into Tokyo’s vibrant anime and tech scene.",
+            "planning_note": "Afternoons are best for visiting as more shops are open. Seek rare finds on the top floors of shops.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Akihabara+Tokyo",
+            "experience_id": "akihabara-cultural-experience",
+            "effort": "moderate"
+          },
+          {
+            "type": "meal",
+            "start_time": "18:00",
+            "end_time": "19:30",
+            "title": "Dinner at Robot Restaurant",
+            "notes": "Experience a whimsical dinner show.",
+            "planning_note": "Book in advance to secure good seats and prepare for a dazzling show.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Robot+Restaurant+Shinjuku",
+            "experience_id": "robot-restaurant-show",
+            "effort": "easy"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-18",
+        "day_number": 3,
+        "day_title": "Exploring Tradition and Modernity in Tokyo",
+        "rows": [
+          {
+            "type": "travel",
+            "start_time": "09:00",
+            "end_time": "09:30",
+            "title": "Travel from Shinjuku to Tsukiji",
+            "notes": "Catch a morning train to Tsukiji Market.",
+            "planning_note": null,
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Tsukiji+Tokyo",
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "activity",
+            "start_time": "09:30",
+            "end_time": "12:00",
+            "title": "Explore Tsukiji Outer Market",
+            "notes": "Try fresh seafood and discover local delicacies.",
+            "planning_note": "Arrive early for the freshest selection. Don't miss the hidden alley with yakitori and tamagoyaki.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Tsukiji+Outer+Market",
+            "experience_id": "tsukiji-outer-market",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "12:30",
+            "end_time": "13:30",
+            "title": "Lunch at Ramen Street in Tokyo Station",
+            "notes": "Sample a variety of ramen dishes.",
+            "planning_note": "Try the tsukemen at the stall in the back corner for a rich, authentic experience.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Ramen+Street+Tokyo+Station",
+            "experience_id": "ramen-street-in-tokyo-station",
+            "effort": "easy"
+          },
+          {
+            "type": "travel",
+            "start_time": "14:00",
+            "end_time": "14:30",
+            "title": "Travel from Tsukiji to Shinjuku",
+            "notes": "Return via the JR line.",
+            "planning_note": null,
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Shinjuku+Tokyo",
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "activity",
+            "start_time": "15:00",
+            "end_time": "16:30",
+            "title": "Golden Gai Bar Crawl",
+            "notes": "Discover Shinjuku’s unique bar scene.",
+            "planning_note": "Explore this vibrant nightlife area early to chat with bartenders about history and unique drinks before it gets crowded.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Golden+Gai+Shinjuku",
+            "experience_id": "golden-gai-bar-crawl",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "17:00",
+            "end_time": "18:30",
+            "title": "Dinner at Ichiran Ramen Shinjuku",
+            "notes": "Famous for its solo booth-style dining.",
+            "planning_note": "Try the unique dining experience where you customize your own bowl of ramen.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Ichiran+Ramen+Shinjuku",
+            "experience_id": null,
+            "effort": null
+          }
+        ]
+      },
+      {
+        "date": "2026-09-19",
+        "day_number": 4,
+        "day_title": "Day Trip to Hakone",
+        "rows": [
+          {
+            "type": "travel",
+            "start_time": "08:00",
+            "end_time": "09:30",
+            "title": "Travel from Shinjuku to Hakone",
+            "notes": "Use the Odakyu Romancecar for a scenic train ride.",
+            "planning_note": null,
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Hakone+Japan",
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "activity",
+            "start_time": "09:30",
+            "end_time": "17:00",
+            "title": "Hakone Scenic Adventure",
+            "notes": "Explore Hakone's beautiful landscapes.",
+            "planning_note": "Spend a full day taking in the serene views and hot springs. Gora Park offers less crowded walking paths with breathtaking views.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Hakone+Yumoto+Station",
+            "experience_id": "hakone-scenic-adventure",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "12:00",
+            "end_time": "13:00",
+            "title": "Lunch at a Local Hakone Ryokan",
+            "notes": "Enjoy a traditional Japanese kaiseki meal.",
+            "planning_note": "Experience authentic kaiseki at a traditional inn - a perfect midpoint break.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Ryokan+Hakone",
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "travel",
+            "start_time": "17:00",
+            "end_time": "18:30",
+            "title": "Return to Shinjuku from Hakone",
+            "notes": "Take the Romancecar back for comfort and ease.",
+            "planning_note": null,
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Shinjuku+Tokyo",
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "meal",
+            "start_time": "19:00",
+            "end_time": "20:30",
+            "title": "Dinner at Takashimaya Times Square Food Hall",
+            "notes": "Sample a variety of dishes at this large, bustling food hall.",
+            "planning_note": "End the day with diverse options and local flavors after your Hakone adventure.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Takashimaya+Times+Square+Shinjuku",
+            "experience_id": null,
+            "effort": null
+          }
+        ]
+      },
+      {
+        "date": "2026-09-20",
+        "day_number": 5,
+        "day_title": "Harajuku and Odaiba Discovery",
+        "rows": [
+          {
+            "type": "travel",
+            "start_time": "09:00",
+            "end_time": "09:30",
+            "title": "Travel from Shinjuku to Harajuku",
+            "notes": "Take the JR Yamanote Line to Harajuku Station.",
+            "planning_note": null,
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Harajuku+Tokyo",
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "activity",
+            "start_time": "09:30",
+            "end_time": "11:00",
+            "title": "Meiji Shrine",
+            "notes": "Visit Meiji Shrine for a peaceful start to your day.",
+            "planning_note": "Arrive early to enjoy the tranquility and beautiful surroundings without the usual crowds.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Meiji+Shrine+Tokyo",
+            "experience_id": "meiji-shrine",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "11:30",
+            "end_time": "12:30",
+            "title": "Brunch at Eggs 'n Things Harajuku",
+            "notes": "Hawaiian favorites with a Japanese twist.",
+            "planning_note": "Known for its pancakes and omelets—a favorite in Harajuku.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Eggs+'n+Things+Harajuku",
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "travel",
+            "start_time": "13:00",
+            "end_time": "13:30",
+            "title": "Travel from Harajuku to Odaiba",
+            "notes": "Use JR Yamanote Line and Yurikamome to reach Odaiba.",
+            "planning_note": null,
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Odaiba+Tokyo",
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "activity",
+            "start_time": "13:30",
+            "end_time": "16:30",
+            "title": "TeamLab Borderless",
+            "notes": "Explore an immersive digital art museum.",
+            "planning_note": "Visit before peak times for a more personal experience with the interactive exhibits.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=TeamLab+Borderless+Odaiba",
+            "experience_id": "teamlab-borderless",
+            "effort": "easy"
+          },
+          {
+            "type": "activity",
+            "start_time": "17:00",
+            "end_time": "19:00",
+            "title": "Explore Odaiba",
+            "notes": "Discover the futuristic side of Tokyo with waterfront views.",
+            "planning_note": "Relax and enjoy sunset views over Tokyo Bay from Aqua City rooftop.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Odaiba+Tokyo",
+            "experience_id": "odaiba-futuristic-adventure",
+            "effort": "easy"
+          },
+          {
+            "type": "meal",
+            "start_time": "19:30",
+            "end_time": "21:00",
+            "title": "Dinner at Bills Odaiba",
+            "notes": "Delicious modern cuisine with bay views.",
+            "planning_note": "Enjoy dinner with a view of the Rainbow Bridge, reflecting on the day’s adventures.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Bills+Odaiba+Tokyo",
+            "experience_id": null,
+            "effort": null
+          }
+        ]
+      },
+      {
+        "date": "2026-09-21",
+        "day_number": 6,
+        "day_title": "Departure Day",
+        "rows": [
+          {
+            "type": "meal",
+            "start_time": "08:30",
+            "end_time": "09:30",
+            "title": "Breakfast at Tsukiji Sushiko Shinjuku",
+            "notes": "Start your day with fresh sushi, a Tokyo staple.",
+            "planning_note": "Enjoy a fresh sushi breakfast—a quintessential Tokyo experience before departure.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Tsukiji+Sushiko+Shinjuku",
+            "experience_id": null,
+            "effort": null
+          },
+          {
+            "type": "travel",
+            "start_time": "10:00",
+            "end_time": "11:00",
+            "title": "Checkout and travel to Narita International Airport",
+            "notes": "Make sure to leave early to account for any potential delays.",
+            "planning_note": "Depart Shinjuku with ample time to reach Narita Airport, considering Tokyo's unpredictable traffic.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Narita+Airport",
+            "experience_id": null,
+            "effort": null
+          }
+        ]
+      }
+    ],
+    "change_log": [
+      "Check 7: Rewrote generic planning notes to reflect meal specifics and itinerary rationale.",
+      "Check 7: Added specific dish recommendations for meals without notes."
+    ],
+    "generated_at": "2023-11-02T12:00:00Z"
+  },
+  "clusters": {
+    "pairs": [
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-ueno",
+        "walk_min": 999,
+        "drive_min": 18,
+        "mode": "transit",
+        "note": "Short subway ride or taxi; walking is too far."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-akihabara",
+        "walk_min": 999,
+        "drive_min": 15,
+        "mode": "transit",
+        "note": "Convenient by train; walking is not feasible."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-shinjuku",
+        "walk_min": 999,
+        "drive_min": 24,
+        "mode": "transit",
+        "note": "Fastest by train; walking would be very long."
+      },
+      {
+        "from_cluster_id": "cluster-asakusa",
+        "to_cluster_id": "cluster-tsukiji",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": "Accessible via subway or bus in central Tokyo."
+      },
+      {
+        "from_cluster_id": "cluster-ueno",
+        "to_cluster_id": "cluster-akihabara",
+        "walk_min": 25,
+        "drive_min": 10,
+        "mode": "walk",
+        "note": "A leisurely walk through local neighborhoods."
+      },
+      {
+        "from_cluster_id": "cluster-ueno",
+        "to_cluster_id": "cluster-shinjuku",
+        "walk_min": 999,
+        "drive_min": 22,
+        "mode": "transit",
+        "note": "A subway or train ride is recommended."
+      },
+      {
+        "from_cluster_id": "cluster-ueno",
+        "to_cluster_id": "cluster-tsukiji",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": "Best reached via subway."
+      },
+      {
+        "from_cluster_id": "cluster-akihabara",
+        "to_cluster_id": "cluster-shinjuku",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": "Easily accessible by JR line."
+      },
+      {
+        "from_cluster_id": "cluster-akihabara",
+        "to_cluster_id": "cluster-tsukiji",
+        "walk_min": 999,
+        "drive_min": 15,
+        "mode": "transit",
+        "note": "Recommended by train or bus."
+      },
+      {
+        "from_cluster_id": "cluster-shinjuku",
+        "to_cluster_id": "cluster-tsukiji",
+        "walk_min": 999,
+        "drive_min": 20,
+        "mode": "transit",
+        "note": "Convenient via public transport."
+      }
+    ],
+    "clusters": [
+      {
+        "id": "cluster-asakusa",
+        "name": "Asakusa",
+        "anchor_id": "senso-ji-temple",
+        "experience_ids": [
+          "senso-ji-temple",
+          "mokuhankan-woodblock-printing",
+          "sumida-river-tokyo-cruise"
+        ],
+        "zone": "Taito",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-ueno",
+        "name": "Ueno Park",
+        "anchor_id": "ueno-park-cherry-blossoms",
+        "experience_ids": [
+          "ueno-park-cherry-blossoms",
+          "nezu-shrine-and-azalea-festival"
+        ],
+        "zone": "Taito",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-akihabara",
+        "name": "Akihabara",
+        "anchor_id": "akihabara-cultural-experience",
+        "experience_ids": [
+          "akihabara-cultural-experience",
+          "edo-tokyo-museum"
+        ],
+        "zone": "Chiyoda",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-shinjuku",
+        "name": "Shinjuku",
+        "anchor_id": "izakaya-crawl-in-shinjuku",
+        "experience_ids": [
+          "izakaya-crawl-in-shinjuku",
+          "shinjuku-gyoen-national-garden",
+          "golden-gai-bar-crawl",
+          "robot-restaurant-show"
+        ],
+        "zone": "Shinjuku",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-tsukiji",
+        "name": "Tsukiji",
+        "anchor_id": "tsukiji-outer-market",
+        "experience_ids": [
+          "tsukiji-outer-market",
+          "ramen-street-in-tokyo-station"
+        ],
+        "zone": "Chuo",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-harajuku",
+        "name": "Harajuku",
+        "anchor_id": "meiji-shrine",
+        "experience_ids": [
+          "meiji-shrine"
+        ],
+        "zone": "Shibuya",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-odaiba",
+        "name": "Odaiba",
+        "anchor_id": "odaiba-futuristic-adventure",
+        "experience_ids": [
+          "odaiba-futuristic-adventure",
+          "teamlab-borderless"
+        ],
+        "zone": "Minato",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-mitake",
+        "name": "Mitake",
+        "anchor_id": "mount-mitake-hike",
+        "experience_ids": [
+          "mount-mitake-hike"
+        ],
+        "zone": "Tokyo Western",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-yokohama",
+        "name": "Yokohama",
+        "anchor_id": "yokohama-city-jaunt",
+        "experience_ids": [
+          "yokohama-city-jaunt"
+        ],
+        "zone": "Kanagawa",
+        "cluster_note": null
+      },
+      {
+        "id": "cluster-hakone",
+        "name": "Hakone",
+        "anchor_id": "hakone-scenic-adventure",
+        "experience_ids": [
+          "hakone-scenic-adventure"
+        ],
+        "zone": "Kanagawa",
+        "cluster_note": null
+      }
+    ]
+  }
+}

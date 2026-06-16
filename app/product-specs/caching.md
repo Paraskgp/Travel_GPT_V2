@@ -24,7 +24,8 @@ Stores pipeline outputs to disk so that repeat requests for the same destination
 | `weather_{month}` | Permanent | Prompt change only | Hash of `weather-context.md` stored in entry; stale if hash differs |
 | `search_results_{month}` | 90 days | TTL expiry | None — intentional (Tavily credits are real money; manual clear required) |
 | `experiences_{month}` | 90 days | TTL expiry or prompt change | Hash of extractor + dedup prompts stored in entry; stale if hash differs |
-| `board_{prompt_hash}` | Permanent | Prompt file change (hash in key) | Hash of board-only prompts: `system.md` + `themes/*.md` + `tip-enhancement.md` + `board-eval.md` — other prompts (destination-context, weather, extractors) do not affect board output and do not invalidate it |
+| `candidate_enrichment` | 90 days | TTL expiry or prompt change | Hash of `candidate-enrichment.md` stored in entry; stale if hash differs |
+| `board_{prompt_hash}` | Permanent | Prompt file change (hash in key) | Hash of board-only prompts: `system.md` + `themes/*.md` + `tip-enhancement.md` + `board-eval.md` + `candidate-enrichment.md` — other prompts (destination-context, weather, extractors) do not affect board output and do not invalidate it |
 
 **How prompt-hash validation works for non-board stages:**
 Each stage writes its own prompt hash into the cache entry's `prompt_hash` field. On read, `cacheRead` compares the stored hash to the current one. If they differ, the entry is treated as a cache miss and regenerated. If the stored entry has no hash (legacy entries), it is kept — backward compatible.

@@ -43,3 +43,6 @@ next-env.d.ts
 # destination cache (generated data — commit .gitkeep only)
 /cache/destinations/*/
 /cache/_index.json
+
+# local feedback capture
+/feedback/*.jsonl

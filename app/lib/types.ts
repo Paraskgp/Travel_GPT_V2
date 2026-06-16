@@ -228,6 +228,7 @@ export interface Board {
   destination_context: DestinationContext
   weather_context: WeatherContext | null
   themes: Theme[]
+  geographic_clusters?: ClusterResult
   preferences?: Preferences
   generated_at: string
   eval_gaps: string[]   // Named experiences missing from the board — output of the completeness eval pass.
@@ -236,12 +237,13 @@ export interface Board {
 
 // ─── Clustering ──────────────────────────────────────────────────────────────
 
-export interface TravelPair {
-  from_id: string             // experience id
-  to_id: string               // experience id
-  walk_min: number            // estimated walking minutes (999 if not walkable)
-  drive_min: number           // estimated driving minutes
-  mode: "walk" | "car"        // recommended mode for a typical traveler
+export interface ClusterTravelPair {
+  from_cluster_id: string     // cluster id
+  to_cluster_id: string       // cluster id
+  walk_min: number            // estimated walking minutes between cluster anchors (999 if not walkable)
+  drive_min: number           // estimated driving/transit minutes between cluster anchors
+  mode: "walk" | "transit" | "car" // recommended mode for a typical traveler
+  note: string | null         // short routing caveat, e.g. train transfer, shuttle, ferry, traffic
 }
 
 export interface ExperienceCluster {
@@ -254,8 +256,16 @@ export interface ExperienceCluster {
 }
 
 export interface ClusterResult {
-  pairs: TravelPair[]
+  pairs: ClusterTravelPair[]
   clusters: ExperienceCluster[]
+}
+
+export interface ClusterAssignmentResult {
+  clusters: ExperienceCluster[]
+}
+
+export interface ClusterTravelResult {
+  pairs: ClusterTravelPair[]
 }
 
 // ─── Itinerary Planning ───────────────────────────────────────────────────────
@@ -313,4 +323,99 @@ export interface GenerateResponse {
 
 export interface ErrorResponse {
   error: string
+}
+
+// ─── Feedback Loop ────────────────────────────────────────────────────────────
+
+export type FeedbackSurface = "board" | "card" | "detail"
+
+export type FeedbackSentiment = "positive" | "negative" | "correction" | "missing" | "other"
+
+export interface FeedbackBoardContext {
+  board_identifier: string
+  destination: string
+  user_input_destination: string | null
+  generated_at: string
+  active_tab: string
+  travel_dates: {
+    start_date: string | null
+    end_date: string | null
+    arrival_time: string | null
+    departure_time: string | null
+  }
+  preferences: Preferences | null
+  summary: {
+    theme_count: number
+    experience_count: number
+    theme_ids: string[]
+    eval_gap_count: number
+    weather_month: string | null
+  }
+}
+
+export interface FeedbackCardContext {
+  experience_id: string
+  experience_name: string
+  theme_id: string
+  theme_name: string
+  visible_fields: {
+    short_description: string
+    long_description?: string
+    why_worth_it?: string
+    best_time?: string
+    local_tip?: string
+    watch_out_for?: string
+    duration: string
+    effort: Experience["effort"]
+    cost_band: Experience["cost_band"]
+    booking_difficulty: Experience["booking_difficulty"]
+    location_hint: string
+    personalization_note: string | null
+    tags: string[]
+  }
+  places_summary: {
+    place_id: string | null
+    matched_name: string | null
+    address: string | null
+    rating: number | null
+    review_count: number | null
+    business_status: PlacesEnrichment["business_status"]
+    primary_type: string | null
+    maps_url: string | null
+  } | null
+  grounding_status: Experience["grounding_status"]
+  is_mappable: boolean
+  is_area_experience: boolean
+  nav_anchor: string | null
+}
+
+export interface FeedbackItineraryContext {
+  show_itinerary_status: boolean
+  is_included: boolean
+  is_forced: boolean
+  is_skipped: boolean
+}
+
+export interface FeedbackContext {
+  surface: FeedbackSurface
+  page_path: string | null
+  board: FeedbackBoardContext
+  card?: FeedbackCardContext
+  itinerary?: FeedbackItineraryContext
+}
+
+export interface FeedbackRequest {
+  sentiment: FeedbackSentiment
+  message: string
+  context: FeedbackContext
+}
+
+export interface FeedbackRecord extends FeedbackRequest {
+  id: string
+  received_at: string
+  schema_version: 1
+}
+
+export interface FeedbackResponse {
+  feedback: FeedbackRecord
 }

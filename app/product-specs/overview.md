@@ -41,6 +41,7 @@ TravelGPT is not a booking engine or a search engine. It is the well-traveled fr
 | **Tip enhancement** | Rewrites generic tips into hyper-specific local intelligence |
 | **Places enrichment** | Attaches Google Places metadata (rating, photo, coordinates) to cards |
 | **Itinerary planning** | Builds a day-by-day schedule from the board |
+| **Feedback loop** | Captures user feedback on boards and cards with compact context for later agent analysis |
 | **Caching** | Stores pipeline outputs to avoid redundant LLM and API calls |
 | **Eval framework** | Scores pipeline outputs against golden reference data |
 

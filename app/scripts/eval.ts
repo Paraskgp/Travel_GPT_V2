@@ -1,4 +1,5 @@
 #!/usr/bin/env npx tsx
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /**
  * Itinerary Evaluator
  *
@@ -70,7 +71,7 @@ function findGolden(itineraryFile: string): string | null {
 }
 
 const itineraryFile = resolveFile(itineraryArg, path.join(ROOT, 'test_outputs'))
-let goldenFile = goldenArg ? resolveFile(goldenArg, path.join(ROOT, 'golden')) : findGolden(itineraryFile)
+const goldenFile = goldenArg ? resolveFile(goldenArg, path.join(ROOT, 'golden')) : findGolden(itineraryFile)
 
 console.log(`\n📋 Itinerary : ${path.relative(ROOT, itineraryFile)}`)
 console.log(`🏆 Golden    : ${goldenFile ? path.relative(ROOT, goldenFile) : 'none — running without golden reference'}`)

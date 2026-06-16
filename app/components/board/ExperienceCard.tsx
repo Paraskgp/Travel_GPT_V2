@@ -1,10 +1,18 @@
 'use client'
 
-import { Experience } from '@/lib/types'
+import {
+  Experience,
+  FeedbackBoardContext,
+  FeedbackCardContext,
+  FeedbackItineraryContext,
+} from '@/lib/types'
+import FeedbackButton from '@/components/feedback/FeedbackButton'
 
 interface Props {
   experience: Experience
   onSelect: () => void
+  feedbackBoardContext: FeedbackBoardContext
+  feedbackCardContext: FeedbackCardContext
   // Itinerary status
   showItineraryStatus?: boolean
   isIncluded?: boolean
@@ -20,16 +28,24 @@ const COST_LABEL   = { free: 'Free', budget: '$', mid: '$$', premium: '$$$' }
 
 export default function ExperienceCard({
   experience: exp, onSelect,
+  feedbackBoardContext, feedbackCardContext,
   showItineraryStatus = false,
   isIncluded = false, isForced = false, isSkipped = false,
   onSkip, onForceInclude, onReset,
 }: Props) {
   const photo  = exp.places_enrichment?.photo_url
   const rating = exp.places_enrichment?.rating
+  const itineraryContext: FeedbackItineraryContext = {
+    show_itinerary_status: showItineraryStatus,
+    is_included: isIncluded,
+    is_forced: isForced,
+    is_skipped: isSkipped,
+  }
 
   return (
     <div
-      className={`relative flex flex-col border rounded-lg overflow-hidden bg-white transition-opacity ${isSkipped ? 'opacity-40' : 'opacity-100'}`}
+      onClick={onSelect}
+      className={`relative flex flex-col border rounded-lg overflow-hidden bg-white transition-opacity cursor-pointer hover:shadow-md hover:border-stone-400 transition-all ${isSkipped ? 'opacity-40' : 'opacity-100'}`}
       style={{ width: 210, flexShrink: 0 }}
     >
       {/* Photo */}
@@ -80,19 +96,19 @@ export default function ExperienceCard({
         )}
 
         {/* Actions */}
-        <div className="flex items-center justify-between pt-1 mt-auto">
-          <button
-            onClick={onSelect}
-            className="text-xs text-stone-400 hover:text-stone-700 transition-colors underline underline-offset-2"
-          >
-            Learn more
-          </button>
-
+        <div className="flex items-center justify-between gap-2 pt-1 mt-auto">
+          <FeedbackButton
+            surface="card"
+            boardContext={feedbackBoardContext}
+            cardContext={feedbackCardContext}
+            itineraryContext={itineraryContext}
+            compact
+          />
           {showItineraryStatus ? (
             <div className="flex gap-1">
               {isSkipped ? (
                 <button
-                  onClick={onReset}
+                  onClick={e => { e.stopPropagation(); onReset?.() }}
                   title="Add back"
                   className="text-xs px-2 py-1 rounded border border-stone-300 text-stone-500 hover:border-stone-500 transition-colors"
                 >
@@ -100,7 +116,7 @@ export default function ExperienceCard({
                 </button>
               ) : isIncluded ? (
                 <button
-                  onClick={onSkip}
+                  onClick={e => { e.stopPropagation(); onSkip?.() }}
                   title="Skip this"
                   className="text-xs px-2 py-1 rounded border border-stone-300 text-stone-500 hover:border-red-300 hover:text-red-600 transition-colors"
                 >
@@ -108,7 +124,7 @@ export default function ExperienceCard({
                 </button>
               ) : (
                 <button
-                  onClick={onForceInclude}
+                  onClick={e => { e.stopPropagation(); onForceInclude?.() }}
                   title="Add to plan"
                   className="text-xs px-2 py-1 rounded border border-emerald-300 text-emerald-700 hover:bg-emerald-50 transition-colors"
                 >

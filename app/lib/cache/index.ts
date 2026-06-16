@@ -44,6 +44,7 @@ export type CacheKey =
   | `search_results_${string}`      // e.g. "search_results_september" — month-scoped
   | "experiences"                   // search-grounded experience list (no travel month)
   | `experiences_${string}`         // e.g. "experiences_september" — month-scoped with event queries
+  | "candidate_enrichment"          // targeted pre-board enrichment for promising experiences
   | `board_${string}`               // e.g. "board_abc123de" (prompt hash suffix)
 
 // ─── Slug ─────────────────────────────────────────────────────────────────────
@@ -92,10 +93,10 @@ export function promptHash(): string {
   return _cachedPromptHash
 }
 
-/** Cache key for the board — includes board-only prompt hash so stale boards auto-miss.
- *  Only system.md, themes/, tip-enhancement.md, and board-eval.md affect this key. */
+/** Cache key for the board — includes board-only prompt hash and curation version so stale boards auto-miss.
+ *  system.md, themes/, tip-enhancement.md, board-eval.md, and board curation semantics affect this key. */
 export function boardCacheKey(): `board_${string}` {
-  return `board_${boardPromptHash()}`
+  return `board_${boardPromptHash()}_c4`
 }
 
 // ─── Per-stage prompt hashes ──────────────────────────────────────────────────
@@ -140,10 +141,10 @@ function stageHash(entries: string[]): string {
   return result
 }
 
-/** Hash of board-relevant prompts only: system.md + themes/ + tip-enhancement.md + board-eval.md.
+/** Hash of board-relevant prompts only: system.md + themes/ + tip-enhancement.md + board-eval.md + board-level clustering prompts.
  *  Changing destination-context, weather, or extractor prompts does NOT invalidate the board. */
 export function boardPromptHash(): string {
-  return stageHash(["system.md", "themes", "tip-enhancement.md", "board-eval.md"])
+  return stageHash(["system.md", "themes", "tip-enhancement.md", "board-eval.md", "candidate-enrichment.md", "distance-cluster.md", "cluster-travel.md"])
 }
 
 /** Hash of the destination-context prompt. Invalidates destination_context cache when the prompt changes. */
@@ -161,6 +162,11 @@ export function experiencesPromptHash(): string {
   return stageHash(["experience-extractor-page.md", "experience-dedup.md"])
 }
 
+/** Hash of the pre-board candidate enrichment prompt. Invalidates targeted candidate research. */
+export function candidateEnrichmentPromptHash(): string {
+  return stageHash(["candidate-enrichment.md"])
+}
+
 // ─── TTL constants (days) ─────────────────────────────────────────────────────
 
 export const TTL = {
@@ -169,6 +175,7 @@ export const TTL = {
   WEATHER: -1,               // climate averages never change — permanent
   SEARCH_RESULTS: 90,        // raw Tavily results — re-run within 90 days costs 0 Tavily credits
   EXPERIENCES: 90,           // trails/restaurants change over months
+  CANDIDATE_ENRICHMENT: 90,  // targeted research changes on the same cadence as the experience corpus
   BOARD: -1,                 // no TTL — invalidated only by prompt hash change
 } as const
 

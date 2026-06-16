@@ -8,9 +8,9 @@
  *   npx ts-node --project tsconfig.json scripts/test-tip-enhancement.ts \
  *     test_outputs/2026-05-19_11-54-03_yellowstone-national-park.json
  */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 import fs from "fs"
-import path from "path"
 import OpenAI from "openai"
 
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY ?? ""

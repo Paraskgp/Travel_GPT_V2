@@ -4,14 +4,22 @@ import {
   themeSystemPrompt, themeUserPrompt,
   tipEnhancementSystemPrompt, tipEnhancementUserPrompt,
 } from "../claude/prompts"
-import { DestinationContext, WeatherContext, GroundedExperience, Theme, Preferences } from "../types"
+import { DestinationContext, WeatherContext, GroundedExperience, Theme, Preferences, ClusterResult } from "../types"
 import { enrichExperience } from "../places/client"
 import { evaluateBoard } from "./board-eval"
+import { CuratedExperienceAuditEntry, CuratedExperienceStats, curateExperiencesForBoard } from "./experience-curation"
+import { CandidateEnrichmentAuditEntry, CandidateEnrichmentStats, enrichPromisingCandidatesForBoard } from "./candidate-enrichment"
+import { generateGeographicClusters } from "./geographic-clustering"
 import { parseJSON } from "../utils/parse-json"
 
 export interface BoardResult {
   themes: Theme[]
   eval_gaps: string[]
+  geographic_clusters?: ClusterResult
+  curation_stats?: CuratedExperienceStats
+  curation_audit?: CuratedExperienceAuditEntry[]
+  candidate_enrichment_stats?: CandidateEnrichmentStats
+  candidate_enrichment_audit?: CandidateEnrichmentAuditEntry[]
 }
 
 /**
@@ -39,10 +47,27 @@ export async function generateBoard(
   provider: Provider = "openai"
 ): Promise<BoardResult> {
   const bKey = boardCacheKey()
-  const cached = cacheRead<{ themes: Theme[]; eval_gaps?: string[]; generated_at: string }>(dest, bKey)
+  const cached = cacheRead<{
+    themes: Theme[]
+    eval_gaps?: string[]
+    geographic_clusters?: ClusterResult
+    curation_stats?: CuratedExperienceStats
+    curation_audit?: CuratedExperienceAuditEntry[]
+    candidate_enrichment_stats?: CandidateEnrichmentStats
+    candidate_enrichment_audit?: CandidateEnrichmentAuditEntry[]
+    generated_at: string
+  }>(dest, bKey)
   if (cached) {
     console.log(`[pipeline/board] cache HIT — ${cached.themes.length} themes`)
-    return { themes: cached.themes, eval_gaps: cached.eval_gaps ?? [] }
+    return {
+      themes: cached.themes,
+      eval_gaps: cached.eval_gaps ?? [],
+      geographic_clusters: cached.geographic_clusters,
+      curation_stats: cached.curation_stats,
+      curation_audit: cached.curation_audit,
+      candidate_enrichment_stats: cached.candidate_enrichment_stats,
+      candidate_enrichment_audit: cached.candidate_enrichment_audit,
+    }
   }
 
   // ── Wave 1: Signature theme ──────────────────────────────────────────────────
@@ -52,13 +77,45 @@ export async function generateBoard(
     : ["signature", ...rawApplicable]
 
   const sysPrompt = themeSystemPrompt()
-  const groundedInput = experiences.length > 0 ? experiences : undefined
+  const initialCuration = curateExperiencesForBoard(experiences, destCtx, applicableThemes)
+  console.log(
+    `[pipeline/board] initial curation: ${initialCuration.stats.input_count} input → ` +
+    `${initialCuration.stats.candidate_count} candidates, ${initialCuration.stats.excluded_from_board_count} excluded`
+  )
+
+  const candidateEnrichment = await enrichPromisingCandidatesForBoard(
+    experiences,
+    initialCuration,
+    dest,
+    destCtx,
+    provider
+  )
+  console.log(
+    `[pipeline/board] candidate enrichment: ${candidateEnrichment.stats.selected_count} selected, ` +
+    `${candidateEnrichment.stats.enriched_count} enriched, ${candidateEnrichment.stats.cached_count} cached, ` +
+    `${candidateEnrichment.stats.failed_count} failed`
+  )
+
+  const curated = curateExperiencesForBoard(candidateEnrichment.experiences, destCtx, applicableThemes)
+  console.log(
+    `[pipeline/board] final curation: ${curated.stats.input_count} input → ${curated.stats.exact_deduped_count} exact-deduped, ` +
+    `${curated.stats.candidate_count} candidates, ${curated.stats.excluded_from_board_count} excluded, ` +
+    `${curated.stats.folded_into_parent_count} folded into parent context`
+  )
+  for (const themeId of applicableThemes) {
+    console.log(`[pipeline/board] curation ${themeId}: ${curated.stats.by_theme[themeId] ?? 0} candidates`)
+  }
+
+  const groundedInputFor = (themeId: string) => {
+    const curatedForTheme = curated.byTheme[themeId] ?? []
+    return curatedForTheme.length > 0 ? curatedForTheme : undefined
+  }
 
   let signatureTheme: Theme | null = null
   if (applicableThemes.includes("signature")) {
     try {
       signatureTheme = await callThemeWithRetry(
-        "signature", dest, destCtx, weatherCtx, prefs, sysPrompt, undefined, groundedInput, provider
+        "signature", dest, destCtx, weatherCtx, prefs, sysPrompt, undefined, groundedInputFor("signature"), provider
       )
     } catch (err) {
       console.warn("[pipeline/board] signature theme failed:", err)
@@ -75,7 +132,7 @@ export async function generateBoard(
   const wave2Results = await Promise.allSettled(
     remainingThemes.map(themeId =>
       callThemeWithRetry(
-        themeId, dest, destCtx, weatherCtx, prefs, sysPrompt, usedExperiences, groundedInput, provider
+        themeId, dest, destCtx, weatherCtx, prefs, sysPrompt, usedExperiences, groundedInputFor(themeId), provider
       )
     )
   )
@@ -178,16 +235,38 @@ export async function generateBoard(
     console.log("[pipeline/board] completeness eval — no gaps found")
   }
 
+  // ── Geographic clustering ───────────────────────────────────────────────────
+  // Board-level geography is universal: it does not depend on party type, dates,
+  // or forced/skipped itinerary choices. Compute once here and cache with board.
+  const geographicClusters = await generateGeographicClusters(dest, enhancedThemes, provider)
+
   // ── Write to cache ───────────────────────────────────────────────────────────
   cacheWrite(
     dest,
     bKey,
-    { themes: enhancedThemes, eval_gaps: evalGaps, generated_at: new Date().toISOString() },
+    {
+      themes: enhancedThemes,
+      eval_gaps: evalGaps,
+      geographic_clusters: geographicClusters,
+      curation_stats: curated.stats,
+      curation_audit: curated.audit,
+      candidate_enrichment_stats: candidateEnrichment.stats,
+      candidate_enrichment_audit: candidateEnrichment.audit,
+      generated_at: new Date().toISOString(),
+    },
     TTL.BOARD,
     bKey.replace("board_", "")
   )
 
-  return { themes: enhancedThemes, eval_gaps: evalGaps }
+  return {
+    themes: enhancedThemes,
+    eval_gaps: evalGaps,
+    geographic_clusters: geographicClusters,
+    curation_stats: curated.stats,
+    curation_audit: curated.audit,
+    candidate_enrichment_stats: candidateEnrichment.stats,
+    candidate_enrichment_audit: candidateEnrichment.audit,
+  }
 }
 
 // ── Internal ─────────────────────────────────────────────────────────────────

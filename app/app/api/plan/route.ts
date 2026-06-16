@@ -1,13 +1,14 @@
 import { NextRequest, NextResponse } from "next/server"
 import { callLLM, Provider } from "@/lib/llm/client"
 import {
-  clusterSystemPrompt, clusterUserPrompt,
   itinerarySystemPrompt, itineraryUserPrompt,
   reviewSystemPrompt, reviewUserPrompt,
 } from "@/lib/claude/prompts"
-import { PlanRequest, PlanResponse, Itinerary, ClusterResult, ErrorResponse } from "@/lib/types"
+import {
+  PlanRequest, PlanResponse, Itinerary, ClusterResult, ErrorResponse,
+} from "@/lib/types"
 
-export const maxDuration = 300  // 5 min — 4 sequential LLM calls need headroom
+export const maxDuration = 300  // 5 min — Pass 1 + Pass 2 can still be large for rich boards
 
 function parseJSON<T>(raw: string): T {
   const stripped = raw
@@ -48,21 +49,13 @@ export async function POST(
   // Merge preferences: request body overrides board-stored preferences
   const resolvedPrefs = { ...(board.preferences ?? {}), ...(preferences ?? {}) }
 
-  // ── Stage 2: Distance matrix + geographic clustering ─────────────────────────
-  let clusters: ClusterResult | undefined
-  try {
-    console.log("[/api/plan] Stage 2: clustering...")
-    const clusterRaw = await callLLM(
-      clusterSystemPrompt(),
-      clusterUserPrompt(board),
-      provider
-    )
-    clusters = parseJSON<ClusterResult>(clusterRaw)
-    console.log(`[/api/plan] Stage 2 done: ${clusters.clusters.length} clusters, ${clusters.pairs.length} pairs`)
-  } catch (err) {
-    // Clustering is best-effort — if it fails, fall through to Pass 1 without clusters
-    console.warn("[/api/plan] Stage 2 (clustering) failed — continuing without clusters:", err)
-    clusters = undefined
+  // Board-level geography is computed and cached during board generation.
+  // Itinerary planning should not recompute it per traveler/replan.
+  const clusters: ClusterResult | undefined = board.geographic_clusters
+  if (clusters) {
+    console.log(`[/api/plan] Using board geographic clusters: ${clusters.clusters.length} clusters, ${clusters.pairs.length} pairs`)
+  } else {
+    console.warn("[/api/plan] Board has no geographic_clusters — continuing without cluster context. Regenerate the board to populate clusters.")
   }
 
   // ── Stage 3: Itinerary Pass 1 (draft) ────────────────────────────────────────

@@ -28,16 +28,15 @@ response: { itinerary: Itinerary, clusters?: ClusterResult }
 
 ## Steps
 
-**Stage 1 — Geographic clustering:**
+**Pre-step — Board geography:**
 ```
-callLLM(clusterSystemPrompt(), clusterUserPrompt(board), provider)
-→ ClusterResult: { pairs: TravelPair[], clusters: ExperienceCluster[] }
+const clusters = board.geographic_clusters
 ```
-- Estimates pairwise travel times between all experience locations
-- Groups experiences within ~15 min walking distance into named clusters
-- Non-fatal: if clustering fails, Pass 1 runs without cluster context
+- Geographic clusters are generated and cached during board generation
+- Planning does not call clustering prompts per traveler or per replan
+- If an old board lacks `geographic_clusters`, planning logs a warning and continues without cluster context
 
-**Stage 2 — Draft itinerary (Pass 1):**
+**Stage 1 — Draft itinerary (Pass 1):**
 ```
 callLLM(itinerarySystemPrompt(), itineraryUserPrompt(board, start_date, end_date, ..., clusters), provider)
 → Itinerary (draft)
@@ -53,7 +52,7 @@ callLLM(itinerarySystemPrompt(), itineraryUserPrompt(board, start_date, end_date
 - Generates `planning_note` on every row (scheduling rationale, not activity description)
 - Fatal: must succeed or request fails
 
-**Stage 3 — Review and refine (Pass 2):**
+**Stage 2 — Review and refine (Pass 2):**
 ```
 callLLM(reviewSystemPrompt(), reviewUserPrompt(draft, board, clusters, prefs), provider)
 → Itinerary (reviewed + corrected)
@@ -80,7 +79,7 @@ None. Itineraries are not cached — they depend on user-specific preferences, d
 
 ## Failure handling
 
-- Clustering failure: non-fatal, logged, planning continues without clusters
+- Missing board geography: non-fatal, logged, planning continues without clusters. Regenerate the board to populate `geographic_clusters`.
 - Pass 1 failure: fatal, returns HTTP 500
 - Pass 2 failure: non-fatal, returns Pass 1 draft
 
@@ -106,7 +105,8 @@ None. Itineraries are not cached — they depend on user-specific preferences, d
 - Not extracted to `lib/pipeline/` — cannot be called from audit scripts or batch tools without an HTTP server running. `prefetch.ts` hits the HTTP endpoint as a workaround.
 - No constraint pre-pass before Pass 1 (P5 — score ceiling at ~62)
 - Travel time estimates are LLM-generated, not from a routing API — can be significantly wrong for driving distances
-- No itinerary caching — every plan request runs 3 LLM calls regardless of whether the inputs are identical to a previous request
+- Cluster travel pairs are coarse zone-to-zone estimates. Intra-cluster movement is assumed walkable unless a cluster note says otherwise.
+- No itinerary caching — every plan request still runs Pass 1 + Pass 2 even when inputs are identical
 - Cold-water detection uses month-name heuristic (Nov–Apr) — not a structured `water_temp_f` field. Destinations where cold water occurs in different months (e.g. glacial rivers in July) will not be flagged. (2026-05-28)
 - Permit detection is text-based (reads `local_tip`) — if a permit requirement is not mentioned in the tip, the check silently passes. (2026-05-28)
 - Weather context `travel_implications` injected verbatim — no filtering for shuttle-specific implications. If a destination's implications don't mention shuttle status, the shuttle language in the prompt remains uncorrected. (2026-05-28)

@@ -1,11 +1,21 @@
 'use client'
 
-import { useState, useCallback, useEffect, useMemo } from 'react'
-import { Board, Experience, Itinerary, Preferences } from '@/lib/types'
+import { useState, useMemo } from 'react'
+import {
+  Board,
+  Experience,
+  FeedbackBoardContext,
+  FeedbackCardContext,
+  Itinerary,
+  Preferences,
+} from '@/lib/types'
+import { buildFeedbackCardContext } from '@/lib/feedback/context'
+import { type DestinationOption, getDestinationByName } from '@/lib/destinations/catalog'
 import WelcomeScreen from '@/components/welcome/WelcomeScreen'
 import InputForm from '@/components/input/InputForm'
 import ThemeSection from '@/components/board/ThemeSection'
 import ExperienceDetail from '@/components/board/ExperienceDetail'
+import FeedbackButton from '@/components/feedback/FeedbackButton'
 import SpiritView from '@/components/board/SpiritView'
 import WeatherTable from '@/components/board/WeatherTable'
 import MapView from '@/components/map/MapView'
@@ -16,6 +26,23 @@ import AssumptionsBar from '@/components/itinerary/AssumptionsBar'
 type Stage = 'welcome' | 'input' | 'loading' | 'board'
 type Tab = 'spirit' | 'weather' | 'experiences' | 'map'
 
+interface GenerationInputContext {
+  destination: string
+  startDate: string
+  endDate: string
+  arrivalTime: string
+  departureTime: string
+  prefs: Preferences
+}
+
+function boardIdentifier(destination: string, dates: GenerationInputContext | null): string {
+  return [
+    destination,
+    dates?.startDate || 'no-start-date',
+    dates?.endDate || 'no-end-date',
+  ].join('__')
+}
+
 export default function Home() {
   const [stage, setStage]       = useState<Stage>('welcome')
   const [tab, setTab]           = useState<Tab>('experiences')
@@ -24,10 +51,11 @@ export default function Home() {
   const [itinerary, setItinerary] = useState<Itinerary | null>(null)
   const [planLoading, setPlanLoading] = useState(false)
   const [planError, setPlanError]     = useState<string | null>(null)
-  const [loadingPhase, setLoadingPhase] = useState<'board' | 'plan'>('board')
   const [loading, setLoading]   = useState(false)
   const [error, setError]       = useState<string | null>(null)
   const [selected, setSelected] = useState<Experience | null>(null)
+  const [generationInput, setGenerationInput] = useState<GenerationInputContext | null>(null)
+  const [selectedDestination, setSelectedDestination] = useState<DestinationOption | null>(null)
 
   // User itinerary signals — accumulated between replans
   const [forcedIds, setForcedIds]     = useState<Set<string>>(new Set())
@@ -46,6 +74,42 @@ export default function Home() {
     }
     return ids
   }, [itinerary])
+
+  const feedbackBoardContext = useMemo<FeedbackBoardContext | null>(() => {
+    if (!board) return null
+    const experienceCount = board.themes.reduce((sum, theme) => sum + theme.experiences.length, 0)
+    return {
+      board_identifier: boardIdentifier(board.destination, generationInput),
+      destination: board.destination,
+      user_input_destination: generationInput?.destination ?? null,
+      generated_at: board.generated_at,
+      active_tab: tab,
+      travel_dates: {
+        start_date: generationInput?.startDate || null,
+        end_date: generationInput?.endDate || null,
+        arrival_time: generationInput?.arrivalTime || null,
+        departure_time: generationInput?.departureTime || null,
+      },
+      preferences: generationInput?.prefs ?? board.preferences ?? null,
+      summary: {
+        theme_count: board.themes.length,
+        experience_count: experienceCount,
+        theme_ids: board.themes.map(theme => theme.id),
+        eval_gap_count: board.eval_gaps.length,
+        weather_month: board.weather_context?.travel_month ?? null,
+      },
+    }
+  }, [board, generationInput, tab])
+
+  const selectedTheme = useMemo(() => {
+    if (!board || !selected) return null
+    return board.themes.find(theme => theme.experiences.some(exp => exp.id === selected.id)) ?? null
+  }, [board, selected])
+
+  const selectedFeedbackCardContext = useMemo<FeedbackCardContext | null>(() => {
+    if (!selected || !selectedTheme) return null
+    return buildFeedbackCardContext(selected, selectedTheme)
+  }, [selected, selectedTheme])
 
   async function callPlan(
     currentBoard: Board,
@@ -92,12 +156,13 @@ export default function Home() {
     setLoading(true)
     setError(null)
     setStage('loading')
+    setSelectedDestination(getDestinationByName(destination) ?? null)
     setBoard(null)
     setItinerary(null)
     setPlanError(null)
     setForcedIds(new Set())
     setSkippedIds(new Set())
-    setLoadingPhase('board')
+    setGenerationInput({ destination, startDate, endDate, arrivalTime, departureTime, prefs })
 
     const dates = startDate ? { startDate, endDate, arrivalTime, departureTime } : null
     setTripDates(dates)
@@ -239,7 +304,14 @@ export default function Home() {
   const hasPendingChanges = forcedIds.size > 0 || skippedIds.size > 0 || stayAreaChanged
 
   if (stage === 'welcome') {
-    return <WelcomeScreen onStart={() => setStage('input')} />
+    return (
+      <WelcomeScreen
+        onSelectDestination={destination => {
+          setSelectedDestination(destination)
+          setStage('input')
+        }}
+      />
+    )
   }
 
   if (stage === 'input') {
@@ -250,7 +322,12 @@ export default function Home() {
             {error}
           </div>
         )}
-        <InputForm onSubmit={handleGenerate} loading={loading} />
+        <InputForm
+          onSubmit={handleGenerate}
+          loading={loading}
+          destination={selectedDestination?.name}
+          onBack={() => setStage('welcome')}
+        />
       </div>
     )
   }
@@ -272,7 +349,12 @@ export default function Home() {
         <div className="max-w-3xl mx-auto flex items-center gap-4 flex-wrap">
           <span className="font-semibold text-stone-900 text-sm shrink-0">TravelGPT</span>
           <div className="flex-1 min-w-0">
-            <InputForm onSubmit={handleGenerate} loading={loading} compact />
+            <InputForm
+              onSubmit={handleGenerate}
+              loading={loading}
+              compact
+              destination={generationInput?.destination ?? selectedDestination?.name}
+            />
           </div>
         </div>
       </header>
@@ -283,16 +365,25 @@ export default function Home() {
           <div className="max-w-3xl mx-auto">
             <div className="flex items-center justify-between gap-4 flex-wrap">
               <h1 className="text-base font-semibold text-stone-900">{board.destination}</h1>
-              <div className="flex bg-stone-100 rounded-lg p-0.5 text-xs font-medium shrink-0">
-                {(['experiences', 'spirit', 'weather', 'map'] as Tab[]).map(t => (
-                  <button
-                    key={t}
-                    onClick={() => setTab(t)}
-                    className={`px-3 py-1.5 rounded-md transition-colors capitalize ${tab === t ? 'bg-white text-stone-900 shadow-sm' : 'text-stone-500 hover:text-stone-700'}`}
-                  >
-                    {t === 'experiences' ? 'Trip' : t === 'spirit' ? 'Spirit' : t === 'weather' ? 'Weather' : 'Map'}
-                  </button>
-                ))}
+              <div className="flex items-center gap-2 shrink-0">
+                {feedbackBoardContext && (
+                  <FeedbackButton
+                    surface="board"
+                    boardContext={feedbackBoardContext}
+                    compact
+                  />
+                )}
+                <div className="flex bg-stone-100 rounded-lg p-0.5 text-xs font-medium">
+                  {(['experiences', 'spirit', 'weather', 'map'] as Tab[]).map(t => (
+                    <button
+                      key={t}
+                      onClick={() => setTab(t)}
+                      className={`px-3 py-1.5 rounded-md transition-colors capitalize ${tab === t ? 'bg-white text-stone-900 shadow-sm' : 'text-stone-500 hover:text-stone-700'}`}
+                    >
+                      {t === 'experiences' ? 'Trip' : t === 'spirit' ? 'Spirit' : t === 'weather' ? 'Weather' : 'Map'}
+                    </button>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -302,7 +393,7 @@ export default function Home() {
       {/* Content */}
       <main className="flex-1 max-w-3xl mx-auto w-full">
         {board && tab === 'spirit' && (
-          <SpiritView destination={board.destination} context={board.destination_context} />
+          <SpiritView context={board.destination_context} />
         )}
 
         {board && tab === 'weather' && (
@@ -366,19 +457,22 @@ export default function Home() {
             {/* Board — all themes with include/skip status */}
             <div className="space-y-1.5">
               {board.themes.map((theme, i) => (
-                <ThemeSection
-                  key={theme.id}
-                  theme={theme}
-                  includedIds={includedIds}
-                  forcedIds={forcedIds}
-                  skippedIds={skippedIds}
-                  onSkip={handleSkip}
-                  onForceInclude={handleForceInclude}
-                  onReset={handleReset}
-                  onSelect={setSelected}
-                  defaultOpen={i < 2}
-                  showItineraryStatus={!!itinerary}
-                />
+                feedbackBoardContext && (
+                  <ThemeSection
+                    key={theme.id}
+                    theme={theme}
+                    feedbackBoardContext={feedbackBoardContext}
+                    includedIds={includedIds}
+                    forcedIds={forcedIds}
+                    skippedIds={skippedIds}
+                    onSkip={handleSkip}
+                    onForceInclude={handleForceInclude}
+                    onReset={handleReset}
+                    onSelect={setSelected}
+                    defaultOpen={i < 2}
+                    showItineraryStatus={!!itinerary}
+                  />
+                )
               ))}
             </div>
 
@@ -419,6 +513,8 @@ export default function Home() {
       <ExperienceDetail
         experience={selected}
         onClose={() => setSelected(null)}
+        feedbackBoardContext={feedbackBoardContext}
+        feedbackCardContext={selectedFeedbackCardContext}
       />
     </div>
   )

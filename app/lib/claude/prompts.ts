@@ -1,6 +1,6 @@
 import fs from "fs"
 import path from "path"
-import { Preferences, DestinationContext, WeatherContext, Board, Experience, ClusterResult, Itinerary, GroundedExperience } from "../types"
+import { Preferences, DestinationContext, WeatherContext, Board, Experience, ClusterResult, Itinerary, GroundedExperience, ExperienceCluster, ClusterTravelPair } from "../types"
 
 const PROMPTS_DIR = path.join(process.cwd(), "prompts")
 
@@ -124,6 +124,47 @@ export function dedupUserPrompt(
   ].join("\n")
 }
 
+// ─── Stage 0.9: Candidate Enrichment — targeted pre-board research ──────────
+
+export function candidateEnrichmentSystemPrompt(): string {
+  return load("candidate-enrichment.md")
+}
+
+export function candidateEnrichmentUserPrompt(
+  destination: string,
+  experience: GroundedExperience,
+  googleFacts: string[],
+  targetedDocs: Array<{ query: string; url: string; title: string; content: string }>
+): string {
+  const googleBlock = googleFacts.length
+    ? googleFacts.map(f => `- ${f}`).join("\n")
+    : "No Google Places facts available."
+
+  const docsBlock = targetedDocs.map((doc, i) => [
+    `### Source ${i + 1}`,
+    `Query: ${doc.query}`,
+    `Title: ${doc.title}`,
+    `URL: ${doc.url}`,
+    "",
+    doc.content,
+  ].join("\n")).join("\n\n")
+
+  return [
+    `Destination: **${destination}**`,
+    "",
+    "Experience:",
+    JSON.stringify(experience, null, 2),
+    "",
+    "Google Places facts:",
+    googleBlock,
+    "",
+    "Targeted research sources:",
+    docsBlock || "No targeted web sources available.",
+    "",
+    "Return ONLY valid JSON matching the schema in the system prompt.",
+  ].join("\n")
+}
+
 // ─── Node 3+: Theme Experience Generation ────────────────────────────────────
 
 export function themeSystemPrompt(): string {
@@ -182,12 +223,14 @@ ${weatherContext.travel_implications.map(i => `- ${i}`).join("\n")}`)
       const facts = e.key_facts.map(f => `    - ${f}`).join("\n")
       return `- **${e.name}** (${e.category})\n  Location: ${e.location}\n${facts}`
     })
-    parts.push(`## ✅ Known Verified Experiences at ${destination}
+    parts.push(`## Curated Board Candidates at ${destination}
 
-These experiences are confirmed real by web search. When generating cards for the ${themeId} theme:
-1. PREFER to build cards around these verified experiences where they fit the theme
-2. Do NOT create a card for a place that contradicts a real place on this list (e.g. don't invent "Emerald Pool Trail" if "Emerald Pools Trail" is on the list)
-3. You may add other real experiences beyond this list — but every card must be a real, verifiable place
+These candidates are confirmed real by web search and pre-curated for the ${themeId} theme. When generating cards:
+1. Prefer to build cards around these candidates where they fit the theme.
+2. Treat child/detail facts as context for the parent candidate, not automatic standalone cards.
+3. A standalone card must be worth real trip time: a traveler visiting from another city or country should reasonably spend 1-3 hours including travel overhead on it.
+4. Do NOT create a card for a place that contradicts a real place on this list (e.g. don't invent "Emerald Pool Trail" if "Emerald Pools Trail" is on the list).
+5. You may add other real experiences beyond this list only when necessary, but every card must be a real, verifiable place.
 
 ${lines.join("\n\n")}`)
   }
@@ -237,13 +280,13 @@ Current tip (likely too generic — do better): "${currentTip}"`
 
 // ─── Itinerary Planning ───────────────────────────────────────────────────────
 
-// ─── Distance + Cluster ───────────────────────────────────────────────────────
+// ─── Geographic Cluster Assignment ────────────────────────────────────────────
 
-export function clusterSystemPrompt(): string {
+export function clusterAssignmentSystemPrompt(): string {
   return load("distance-cluster.md")
 }
 
-export function clusterUserPrompt(board: Board): string {
+export function clusterAssignmentUserPrompt(board: Pick<Board, "destination" | "themes">): string {
   const exps: Array<{ id: string; name: string; location: string }> = []
   for (const theme of board.themes) {
     for (const exp of theme.experiences) {
@@ -255,7 +298,33 @@ export function clusterUserPrompt(board: Board): string {
     .map(e => `- id: ${e.id}\n  name: ${e.name}\n  location: ${e.location}`)
     .join("\n\n")
 
-  return `## Destination\n\n${board.destination}\n\n## Experiences (${exps.length} total)\n\n${expList}\n\n## Your Task\n\nGenerate the distance matrix and clusters for all ${exps.length} experiences listed above. Follow the output format in the system prompt exactly.`
+  return `## Destination\n\n${board.destination}\n\n## Experiences (${exps.length} total)\n\n${expList}\n\n## Your Task\n\nAssign every experience listed above to exactly one geographic cluster. Every input id must appear exactly once. Do not estimate travel times. Follow the output format in the system prompt exactly.`
+}
+
+// Backwards-compatible aliases for older scripts/imports.
+export const clusterSystemPrompt = clusterAssignmentSystemPrompt
+export const clusterUserPrompt = clusterAssignmentUserPrompt
+
+// ─── Cluster Travel Estimates ────────────────────────────────────────────────
+
+export function clusterTravelSystemPrompt(): string {
+  return load("cluster-travel.md")
+}
+
+export function clusterTravelUserPrompt(
+  destination: string,
+  clusters: ExperienceCluster[],
+  pairRequests: Array<Pick<ClusterTravelPair, "from_cluster_id" | "to_cluster_id">>
+): string {
+  const clusterLines = clusters.map(c =>
+    `- id: ${c.id}\n  name: ${c.name}\n  zone: ${c.zone}\n  anchor_id: ${c.anchor_id}\n  experience_ids: [${c.experience_ids.join(", ")}]${c.cluster_note ? `\n  note: ${c.cluster_note}` : ""}`
+  ).join("\n\n")
+
+  const pairLines = pairRequests.map((p, i) =>
+    `${i + 1}. from_cluster_id: ${p.from_cluster_id}\n   to_cluster_id: ${p.to_cluster_id}`
+  ).join("\n")
+
+  return `## Destination\n\n${destination}\n\n## Clusters (${clusters.length})\n\n${clusterLines}\n\n## Required Cluster Pairs (${pairRequests.length})\n\n${pairLines}\n\n## Your Task\n\nFill travel estimates for every required cluster pair above. Return the same ${pairRequests.length} pairs with the same from/to ids.`
 }
 
 // ─── Itinerary Review (Pass 2) ────────────────────────────────────────────────
@@ -344,6 +413,16 @@ ${wc.travel_implications.map(i => `- ${i}`).join("\n")}`)
     `- ${c.name} (${c.id}): ${c.experience_ids.join(", ")}${c.cluster_note ? ` — NOTE: ${c.cluster_note}` : ""}`
   ).join("\n")
   parts.push(`## Geographic Clusters\n\n${clusterSummary}`)
+
+  const clusterTravelSummary = clusters.pairs
+    .filter(p => p.drive_min <= 90)
+    .sort((a, b) => a.drive_min - b.drive_min)
+    .slice(0, 60)
+    .map(p => `- ${p.from_cluster_id} → ${p.to_cluster_id}: ${p.mode === "walk" ? `walk ${p.walk_min} min` : `${p.mode} ${p.drive_min} min`}${p.note ? ` — ${p.note}` : ""}`)
+    .join("\n")
+  if (clusterTravelSummary) {
+    parts.push(`## Cluster Travel Times\n\nUse these to evaluate geographic conflicts. Experiences in the same cluster should not need a travel row unless the cluster note says otherwise.\n\n${clusterTravelSummary}`)
+  }
 
   parts.push(`## Your Task\n\nReview the draft itinerary above against all 10 checks in the system prompt. Fix any violations. Return the complete corrected itinerary as valid JSON.`)
 
@@ -470,16 +549,17 @@ ${wc.travel_implications.map(i => `- ${i}`).join("\n")}`)
     }).join("\n\n")
     parts.push(`## Geographic Clusters\n\nExperiences in the same cluster are within walking distance of each other. Plan each day around 1–2 clusters to minimise travel.\n\n${clusterBlock}`)
 
-    // Include key travel pairs (only short ones are actionable for planning — long ones are just context)
+    // Include cluster travel pairs. These are coarse zone-to-zone estimates; experiences
+    // inside the same cluster are assumed walkable unless cluster_note says otherwise.
     const shortPairs = clusters.pairs
       .filter(p => p.drive_min <= 60)
       .sort((a, b) => a.drive_min - b.drive_min)
       .slice(0, 40) // cap to avoid bloating the prompt
     if (shortPairs.length > 0) {
       const pairBlock = shortPairs.map(p =>
-        `  ${p.from_id} → ${p.to_id}: ${p.mode === "walk" ? `walk ${p.walk_min} min` : `drive ${p.drive_min} min`}`
+        `  ${p.from_cluster_id} → ${p.to_cluster_id}: ${p.mode === "walk" ? `walk ${p.walk_min} min` : `${p.mode} ${p.drive_min} min`}${p.note ? ` — ${p.note}` : ""}`
       ).join("\n")
-      parts.push(`## Key Travel Times (drive ≤ 60 min)\n\n${pairBlock}`)
+      parts.push(`## Cluster Travel Times (drive/transit ≤ 60 min)\n\nUse these when combining 2 clusters in one day or adding travel rows between clusters. Do not add travel rows between experiences in the same cluster unless the cluster note says they are not practically walkable.\n\n${pairBlock}`)
     }
   }
 

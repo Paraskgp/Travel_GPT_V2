@@ -1,0 +1,111 @@
+{
+  "stage": "board",
+  "destination": "Tokyo, Japan",
+  "file": "test_outputs/2026-05-29_12-50-12_tokyo-japan.json",
+  "required_found": [
+    "Senso-ji Temple",
+    "Shibuya Crossing",
+    "Tsukiji",
+    "Tokyo Skytree",
+    "teamLab"
+  ],
+  "required_missing": [
+    "Shinjuku Gyoen"
+  ],
+  "forbidden_found": [],
+  "tier_coverage": {
+    "signature": {
+      "easy": 8
+    },
+    "unique_local": {
+      "easy": 5
+    },
+    "food_drink": {
+      "easy": 6
+    },
+    "food_crawls": {
+      "easy": 4,
+      "moderate": 1
+    },
+    "culture": {
+      "easy": 5,
+      "moderate": 1
+    },
+    "arts": {
+      "easy": 3,
+      "moderate": 1
+    },
+    "family_friendly": {
+      "easy": 5
+    },
+    "romantic_special_occasion": {
+      "easy": 4
+    },
+    "rainy_day": {
+      "easy": 6
+    },
+    "nightlife": {
+      "easy": 4,
+      "moderate": 1
+    },
+    "shopping": {
+      "easy": 3,
+      "moderate": 1
+    },
+    "day_trips": {
+      "moderate": 3,
+      "easy": 2
+    },
+    "seasonal_experiences": {
+      "easy": 5
+    }
+  },
+  "tier_missing": [
+    "day_trips needs light",
+    "food_drink needs light",
+    "culture needs light"
+  ],
+  "duplicate_names": [],
+  "unmappable_count": 0,
+  "total_experiences": 68,
+  "theme_count": 13,
+  "checks": [
+    {
+      "check": "Required experiences on board (5/6)",
+      "passed": false,
+      "detail": "Missing: Shinjuku Gyoen"
+    },
+    {
+      "check": "No hallucinated/forbidden experiences",
+      "passed": true,
+      "detail": "Clean"
+    },
+    {
+      "check": "Tier coverage (effort levels per theme)",
+      "passed": false,
+      "detail": "day_trips needs light, food_drink needs light, culture needs light"
+    },
+    {
+      "check": "No duplicate experience names",
+      "passed": true,
+      "detail": "No duplicates"
+    },
+    {
+      "check": "Experiences are mappable (68/68)",
+      "passed": true,
+      "detail": "All mappable"
+    }
+  ],
+  "score": 78,
+  "tip_quality_score": 62,
+  "tip_quality_findings": [
+    "The tips have a mix of quality insights, with some being more unique and beneficial than others.",
+    "  Vintage Shopping in Shimokitazawa (8/10): This tip offers a specific insight about discounts that many shoppers may not think to ask about, enhancing the shopping experience.",
+    "  Tokyo Skytree Observation Decks (3/10): While the timing is specific, the advice to arrive before sunset borders on cliche and could be interpreted as common knowledge for romantic views.",
+    "  Robot Restaurant Extravaganza (7/10): Providing a tip about booking for special package deals is helpful, though it lacks uniqueness as many attractions offer similar packages.",
+    "  Nakameguro Night Stroll and Bars (9/10): Encouraging visitors to seek out non-descript bars is a strong, concrete insight that highlights hidden gems in the area, enhancing the nightlife experience.",
+    "  Relaxing Onsen Bath and Park Stroll (4/10): The suggestion to visit early for a quieter experience is somewhat generic and doesn't provide a unique edge or insight specific to the location."
+  ],
+  "overall_score": 73,
+  "generated_at": "2026-05-29T20:10:20.343Z"
+}

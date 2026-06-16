@@ -43,6 +43,7 @@ app/
     tavily/client.ts     ← tavilySearch / tavilyBatchSearch
     scraper/client.ts    ← scrapeUrl / scrapeUrls
     places/client.ts     ← enrichExperience
+    feedback/index.ts    ← append-only feedback persistence
     claude/prompts.ts    ← All prompt builders
     utils/parse-json.ts  ← Shared parseJSON<T>()
     types.ts             ← All TypeScript interfaces
@@ -124,5 +125,6 @@ Within OpenAI, `resolveModel()` returns `gpt-4o-mini` for cheap stages and `gpt-
 | Tip enhancement | tip-enhancement.md | tip-enhancement.md |
 | Places enrichment | places-enrichment.md | places-enrichment.md |
 | Itinerary planning | itinerary-planning.md | itinerary-planning.md |
+| Feedback loop | feedback-loop.md | feedback-loop.md |
 | Caching | caching.md | caching.md |
 | Eval framework | eval-framework.md | eval-framework.md |

@@ -1,31 +1,55 @@
 'use client'
 
-import { useState, FormEvent } from 'react'
+import { useMemo, useState, FormEvent } from 'react'
 import { Preferences } from '@/lib/types'
+import { DESTINATION_OPTIONS, getDestinationByName } from '@/lib/destinations/catalog'
 
 const INTERESTS = ['Food', 'Hiking', 'Nature', 'Culture', 'Adventure', 'Arts', 'Nightlife', 'Family']
-const DIETARY   = ['Vegetarian', 'Vegan', 'Halal']
-const PARTY     = [{ label: 'Solo', value: 'solo' }, { label: 'Couple', value: 'couple' }, { label: 'Family', value: 'family_young' }, { label: 'Group', value: 'group' }]
+const DIETARY = ['Vegetarian', 'Vegan', 'Halal']
+const PARTY = [
+  { label: 'Solo', value: 'solo' },
+  { label: 'Couple', value: 'couple' },
+  { label: 'Family', value: 'family_young' },
+  { label: 'Group', value: 'group' },
+]
+const PACE = [
+  { label: 'Relaxed', value: 'relaxed' },
+  { label: 'Moderate', value: 'moderate' },
+  { label: 'Packed', value: 'packed' },
+]
+const BUDGET = [
+  { label: 'Budget', value: 'budget' },
+  { label: 'Mid', value: 'mid' },
+  { label: 'Premium', value: 'premium' },
+]
+const AVOID = ['Crowds', 'Extreme physical', 'Expensive', 'Tourist traps', 'Alcohol']
 
 interface Props {
   onSubmit: (destination: string, startDate: string, endDate: string, arrivalTime: string, departureTime: string, prefs: Preferences) => void
   loading: boolean
   compact?: boolean
+  destination?: string
+  onBack?: () => void
 }
 
-const inputCls = "border border-stone-300 rounded-lg px-3 py-2.5 text-sm text-stone-900 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-400 bg-white"
-const inputSmCls = "border border-stone-300 rounded px-2.5 py-1.5 text-sm text-stone-900 placeholder:text-stone-400 focus:outline-none focus:ring-1 focus:ring-stone-400 bg-white"
+const inputCls = 'border border-stone-300 rounded-lg px-3 py-2.5 text-sm text-stone-900 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-500 bg-white'
+const inputSmCls = 'border border-stone-300 rounded px-2.5 py-1.5 text-sm text-stone-900 placeholder:text-stone-400 focus:outline-none focus:ring-1 focus:ring-stone-500 bg-white'
 
-export default function InputForm({ onSubmit, loading, compact = false }: Props) {
-  const [destination, setDestination] = useState('Yellowstone National Park')
-  const [startDate, setStartDate]     = useState('2026-05-20')
-  const [endDate, setEndDate]         = useState('2026-05-26')
-  const [arrivalTime, setArrivalTime]       = useState('16:00')
-  const [departureTime, setDepartureTime]   = useState('11:00')
-  const [interests, setInterests]           = useState<string[]>([])
-  const [dietary, setDietary]         = useState<string[]>([])
-  const [partyType, setPartyType]     = useState('')
-  const [expanded, setExpanded]       = useState(false)
+export default function InputForm({ onSubmit, loading, compact = false, destination, onBack }: Props) {
+  const [selectedDestination, setSelectedDestination] = useState(destination ?? DESTINATION_OPTIONS[0].name)
+  const [startDate, setStartDate] = useState('')
+  const [endDate, setEndDate] = useState('')
+  const [arrivalTime, setArrivalTime] = useState('')
+  const [departureTime, setDepartureTime] = useState('')
+  const [interests, setInterests] = useState<string[]>([])
+  const [dietary, setDietary] = useState<string[]>([])
+  const [avoid, setAvoid] = useState<string[]>([])
+  const [partyType, setPartyType] = useState('')
+  const [pace, setPace] = useState('moderate')
+  const [budget, setBudget] = useState('mid')
+
+  const destinationDetails = useMemo(() => getDestinationByName(selectedDestination), [selectedDestination])
+  const isComplete = Boolean(selectedDestination && startDate && endDate && arrivalTime && departureTime)
 
   function toggleArr<T>(arr: T[], val: T): T[] {
     return arr.includes(val) ? arr.filter(v => v !== val) : [...arr, val]
@@ -33,190 +57,281 @@ export default function InputForm({ onSubmit, loading, compact = false }: Props)
 
   function handleSubmit(e: FormEvent) {
     e.preventDefault()
-    if (!destination.trim()) return
+    if (!isComplete) return
     const prefs: Preferences = {
+      pace,
+      budget,
       ...(interests.length && { interests: interests.map(i => i.toLowerCase()) }),
-      ...(dietary.length   && { dietary: dietary.map(d => d.toLowerCase()) }),
-      ...(partyType        && { party_type: partyType }),
+      ...(dietary.length && { dietary: dietary.map(d => d.toLowerCase()) }),
+      ...(avoid.length && { avoid: avoid.map(item => item.toLowerCase().replace(/\s+/g, '_')) }),
+      ...(partyType && { party_type: partyType }),
     }
-    onSubmit(destination.trim(), startDate, endDate, arrivalTime, departureTime, prefs)
+    onSubmit(selectedDestination, startDate, endDate, arrivalTime, departureTime, prefs)
   }
 
   if (compact) {
     return (
       <form onSubmit={handleSubmit} className="flex items-center gap-2 flex-wrap">
-        <input
-          value={destination}
-          onChange={e => setDestination(e.target.value)}
-          placeholder="Destination"
-          className={`${inputSmCls} w-40`}
-        />
+        <select
+          value={selectedDestination}
+          onChange={e => setSelectedDestination(e.target.value)}
+          className={`${inputSmCls} w-56`}
+          aria-label="Destination"
+        >
+          {DESTINATION_OPTIONS.map(option => (
+            <option key={option.id} value={option.name}>{option.name}</option>
+          ))}
+        </select>
         <input
           type="date"
           value={startDate}
           onChange={e => setStartDate(e.target.value)}
+          required
           className={`${inputSmCls} w-36`}
+          aria-label="Start date"
         />
         <input
           type="date"
           value={endDate}
           onChange={e => setEndDate(e.target.value)}
+          min={startDate || undefined}
+          required
           className={`${inputSmCls} w-36`}
+          aria-label="End date"
+        />
+        <input
+          type="time"
+          value={arrivalTime}
+          onChange={e => setArrivalTime(e.target.value)}
+          required
+          className={`${inputSmCls} w-28`}
+          aria-label="Arrival time"
+        />
+        <input
+          type="time"
+          value={departureTime}
+          onChange={e => setDepartureTime(e.target.value)}
+          required
+          className={`${inputSmCls} w-28`}
+          aria-label="Departure time"
         />
         <button
           type="submit"
-          disabled={loading || !destination.trim()}
+          disabled={loading || !isComplete}
           className="bg-stone-900 text-white px-3 py-1.5 rounded text-sm font-medium disabled:opacity-40 hover:bg-stone-800 transition-colors"
         >
-          {loading ? 'Generating…' : 'Search'}
+          {loading ? 'Generating...' : 'Generate'}
         </button>
       </form>
     )
   }
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-stone-50 px-4">
-      <form onSubmit={handleSubmit} className="max-w-md w-full space-y-4">
-        <h2 className="text-xl font-semibold text-stone-900">Where are you going?</h2>
-
-        <div className="space-y-3">
-          {/* Destination */}
-          <input
-            value={destination}
-            onChange={e => setDestination(e.target.value)}
-            placeholder="City, region, island, national park…"
-            required
-            autoFocus
-            className={`w-full ${inputCls}`}
-          />
-
-          {/* Date range */}
-          <div className="grid grid-cols-2 gap-2">
-            <div>
-              <label className="block text-xs text-stone-500 mb-1 font-medium">Start date</label>
-              <input
-                type="date"
-                value={startDate}
-                onChange={e => setStartDate(e.target.value)}
-                className={`w-full ${inputCls}`}
+    <main className="min-h-screen bg-[#f7f4ed] px-4 py-5 text-stone-950 sm:px-6">
+      <div className="mx-auto grid min-h-[calc(100vh-2.5rem)] max-w-6xl gap-5 lg:grid-cols-[0.9fr_1.1fr] lg:items-stretch">
+        <section className="overflow-hidden rounded-lg border border-stone-300 bg-white">
+          <div className="relative h-72 bg-stone-200 lg:h-full">
+            {destinationDetails ? (
+              <img
+                src={destinationDetails.imageUrl}
+                alt={destinationDetails.imageAlt}
+                className="h-full w-full object-cover"
               />
-            </div>
-            <div>
-              <label className="block text-xs text-stone-500 mb-1 font-medium">End date</label>
-              <input
-                type="date"
-                value={endDate}
-                onChange={e => setEndDate(e.target.value)}
-                min={startDate || undefined}
-                className={`w-full ${inputCls}`}
-              />
+            ) : null}
+            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-5 text-white">
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-white/70">
+                {destinationDetails?.region ?? 'Selected destination'}
+              </p>
+              <h1 className="mt-1 text-3xl font-semibold tracking-tight">{selectedDestination}</h1>
+              {destinationDetails && (
+                <p className="mt-3 max-w-xl text-sm leading-6 text-white/85">{destinationDetails.pointOfView}</p>
+              )}
             </div>
           </div>
+        </section>
 
-          {/* Arrival + Departure time */}
-          <div className="grid grid-cols-2 gap-2">
+        <form onSubmit={handleSubmit} className="flex flex-col rounded-lg border border-stone-300 bg-white p-4 shadow-sm sm:p-6">
+          <div className="flex items-start justify-between gap-4 border-b border-stone-200 pb-4">
             <div>
-              <label className="block text-xs text-stone-500 mb-1 font-medium">
-                Arrival time <span className="text-stone-400 font-normal">(optional)</span>
-              </label>
-              <input
-                type="time"
-                value={arrivalTime}
-                onChange={e => setArrivalTime(e.target.value)}
-                className={`w-full ${inputCls}`}
-              />
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-stone-500">Trip constraints</p>
+              <h2 className="mt-1 text-2xl font-semibold tracking-tight text-stone-950">Dates, windows, preferences.</h2>
             </div>
-            <div>
-              <label className="block text-xs text-stone-500 mb-1 font-medium">
-                Departure time <span className="text-stone-400 font-normal">(optional)</span>
-              </label>
-              <input
-                type="time"
-                value={departureTime}
-                onChange={e => setDepartureTime(e.target.value)}
-                className={`w-full ${inputCls}`}
-              />
-            </div>
+            {onBack && (
+              <button
+                type="button"
+                onClick={onBack}
+                className="rounded border border-stone-300 px-3 py-1.5 text-sm font-medium text-stone-600 transition-colors hover:border-stone-500 hover:text-stone-950"
+              >
+                Change
+              </button>
+            )}
           </div>
-        </div>
 
-        {/* Preferences — collapsed by default */}
-        <div>
+          <div className="grid gap-5 py-5">
+            <div className="grid gap-3 sm:grid-cols-2">
+              <div>
+                <label className="mb-1 block text-xs font-semibold text-stone-500">Start date</label>
+                <input
+                  type="date"
+                  value={startDate}
+                  onChange={e => setStartDate(e.target.value)}
+                  required
+                  className={`w-full ${inputCls}`}
+                />
+              </div>
+              <div>
+                <label className="mb-1 block text-xs font-semibold text-stone-500">End date</label>
+                <input
+                  type="date"
+                  value={endDate}
+                  onChange={e => setEndDate(e.target.value)}
+                  min={startDate || undefined}
+                  required
+                  className={`w-full ${inputCls}`}
+                />
+              </div>
+            </div>
+
+            <div className="grid gap-3 sm:grid-cols-2">
+              <div>
+                <label className="mb-1 block text-xs font-semibold text-stone-500">Arrival time</label>
+                <input
+                  type="time"
+                  value={arrivalTime}
+                  onChange={e => setArrivalTime(e.target.value)}
+                  required
+                  className={`w-full ${inputCls}`}
+                />
+              </div>
+              <div>
+                <label className="mb-1 block text-xs font-semibold text-stone-500">Departure time</label>
+                <input
+                  type="time"
+                  value={departureTime}
+                  onChange={e => setDepartureTime(e.target.value)}
+                  required
+                  className={`w-full ${inputCls}`}
+                />
+              </div>
+            </div>
+
+            <PreferenceGroup title="Traveling as">
+              {PARTY.map(option => (
+                <ChoiceButton
+                  key={option.value}
+                  selected={partyType === option.value}
+                  onClick={() => setPartyType(value => value === option.value ? '' : option.value)}
+                >
+                  {option.label}
+                </ChoiceButton>
+              ))}
+            </PreferenceGroup>
+
+            <div className="grid gap-4 sm:grid-cols-2">
+              <PreferenceGroup title="Pace">
+                {PACE.map(option => (
+                  <ChoiceButton
+                    key={option.value}
+                    selected={pace === option.value}
+                    onClick={() => setPace(option.value)}
+                  >
+                    {option.label}
+                  </ChoiceButton>
+                ))}
+              </PreferenceGroup>
+
+              <PreferenceGroup title="Budget">
+                {BUDGET.map(option => (
+                  <ChoiceButton
+                    key={option.value}
+                    selected={budget === option.value}
+                    onClick={() => setBudget(option.value)}
+                  >
+                    {option.label}
+                  </ChoiceButton>
+                ))}
+              </PreferenceGroup>
+            </div>
+
+            <PreferenceGroup title="Interests">
+              {INTERESTS.map(item => (
+                <ChoiceButton
+                  key={item}
+                  selected={interests.includes(item)}
+                  onClick={() => setInterests(value => toggleArr(value, item))}
+                >
+                  {item}
+                </ChoiceButton>
+              ))}
+            </PreferenceGroup>
+
+            <PreferenceGroup title="Dietary">
+              {DIETARY.map(item => (
+                <ChoiceButton
+                  key={item}
+                  selected={dietary.includes(item)}
+                  onClick={() => setDietary(value => toggleArr(value, item))}
+                >
+                  {item}
+                </ChoiceButton>
+              ))}
+            </PreferenceGroup>
+
+            <PreferenceGroup title="Avoid">
+              {AVOID.map(item => (
+                <ChoiceButton
+                  key={item}
+                  selected={avoid.includes(item)}
+                  onClick={() => setAvoid(value => toggleArr(value, item))}
+                >
+                  {item}
+                </ChoiceButton>
+              ))}
+            </PreferenceGroup>
+          </div>
+
           <button
-            type="button"
-            onClick={() => setExpanded(v => !v)}
-            className="text-xs text-stone-400 hover:text-stone-600 transition-colors"
+            type="submit"
+            disabled={loading || !isComplete}
+            className="mt-auto w-full rounded-lg bg-stone-950 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-stone-800 disabled:opacity-40"
           >
-            {expanded ? '▲ Hide preferences' : '▼ Add preferences (optional)'}
+            {loading ? 'Building your board...' : 'Build destination board'}
           </button>
+        </form>
+      </div>
+    </main>
+  )
+}
 
-          {expanded && (
-            <div className="mt-3 space-y-3 border border-stone-200 rounded-lg p-3 bg-white">
-              {/* Interests */}
-              <div>
-                <p className="text-xs text-stone-500 mb-1.5 font-medium">Interests</p>
-                <div className="flex flex-wrap gap-1.5">
-                  {INTERESTS.map(i => (
-                    <button
-                      key={i} type="button"
-                      onClick={() => setInterests(v => toggleArr(v, i))}
-                      className={`px-2.5 py-1 rounded-full text-xs border transition-colors ${
-                        interests.includes(i)
-                          ? 'bg-stone-900 text-white border-stone-900'
-                          : 'border-stone-300 text-stone-600 hover:border-stone-400'
-                      }`}
-                    >{i}</button>
-                  ))}
-                </div>
-              </div>
-
-              {/* Dietary */}
-              <div>
-                <p className="text-xs text-stone-500 mb-1.5 font-medium">Dietary</p>
-                <div className="flex flex-wrap gap-1.5">
-                  {DIETARY.map(d => (
-                    <button
-                      key={d} type="button"
-                      onClick={() => setDietary(v => toggleArr(v, d))}
-                      className={`px-2.5 py-1 rounded-full text-xs border transition-colors ${
-                        dietary.includes(d)
-                          ? 'bg-stone-900 text-white border-stone-900'
-                          : 'border-stone-300 text-stone-600 hover:border-stone-400'
-                      }`}
-                    >{d}</button>
-                  ))}
-                </div>
-              </div>
-
-              {/* Party type */}
-              <div>
-                <p className="text-xs text-stone-500 mb-1.5 font-medium">Traveling as</p>
-                <div className="flex flex-wrap gap-1.5">
-                  {PARTY.map(p => (
-                    <button
-                      key={p.value} type="button"
-                      onClick={() => setPartyType(v => v === p.value ? '' : p.value)}
-                      className={`px-2.5 py-1 rounded-full text-xs border transition-colors ${
-                        partyType === p.value
-                          ? 'bg-stone-900 text-white border-stone-900'
-                          : 'border-stone-300 text-stone-600 hover:border-stone-400'
-                      }`}
-                    >{p.label}</button>
-                  ))}
-                </div>
-              </div>
-            </div>
-          )}
-        </div>
-
-        <button
-          type="submit"
-          disabled={loading || !destination.trim()}
-          className="w-full bg-stone-900 text-white py-2.5 rounded-lg text-sm font-medium disabled:opacity-40 hover:bg-stone-800 transition-colors"
-        >
-          {loading ? 'Generating your board…' : 'Discover →'}
-        </button>
-      </form>
+function PreferenceGroup({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <div>
+      <p className="mb-2 text-xs font-semibold uppercase tracking-[0.12em] text-stone-500">{title}</p>
+      <div className="flex flex-wrap gap-2">{children}</div>
     </div>
+  )
+}
+
+function ChoiceButton({
+  selected,
+  onClick,
+  children,
+}: {
+  selected: boolean
+  onClick: () => void
+  children: React.ReactNode
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={`rounded-lg border px-3 py-2 text-sm font-medium transition-colors ${
+        selected
+          ? 'border-stone-950 bg-stone-950 text-white'
+          : 'border-stone-300 bg-stone-50 text-stone-700 hover:border-stone-500 hover:bg-white'
+      }`}
+    >
+      {children}
+    </button>
   )
 }

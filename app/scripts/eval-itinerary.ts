@@ -140,7 +140,6 @@ function extractFacts(): ExtractedFacts {
   const noAfterTime: string = specs.no_activities_after_time ?? '99:99'
   const noBeforeTime: string = specs.no_activities_before_time ?? '00:00'
   const departureDayNumber = itinerary.days.length  // last day
-  const departureTime: string = specs.departure_time ?? '23:59'
   const maxDepartureDayActivities: number = specs.max_departure_day_activities ?? 0
   const shuttleRequired: boolean = specs.shuttle_required ?? false
 

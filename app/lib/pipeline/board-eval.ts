@@ -1,12 +1,13 @@
 import { callLLM, Provider } from "../llm/client"
 import { Theme } from "../types"
 import { parseJSON } from "../utils/parse-json"
+import fs from "fs"
+import path from "path"
 
-const PROMPTS_DIR = require("path").join(process.cwd(), "prompts")
-const fs = require("fs")
+const PROMPTS_DIR = path.join(process.cwd(), "prompts")
 
 function loadPrompt(name: string): string {
-  return fs.readFileSync(require("path").join(PROMPTS_DIR, name), "utf-8")
+  return fs.readFileSync(path.join(PROMPTS_DIR, name), "utf-8")
 }
 
 /**

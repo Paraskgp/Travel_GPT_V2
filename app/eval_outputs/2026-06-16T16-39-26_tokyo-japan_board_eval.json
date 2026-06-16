@@ -1,0 +1,102 @@
+{
+  "stage": "board",
+  "destination": "Tokyo, Japan",
+  "file": "test_outputs/2026-06-16_09-34-44_tokyo-japan.json",
+  "required_found": [
+    "Senso-ji Temple",
+    "Tsukiji",
+    "Tokyo Skytree",
+    "Shinjuku Gyoen",
+    "teamLab"
+  ],
+  "required_missing": [
+    "Shibuya Crossing"
+  ],
+  "forbidden_found": [],
+  "tier_coverage": {
+    "signature": {
+      "easy": 9,
+      "moderate": 1
+    },
+    "unique_local": {
+      "easy": 4,
+      "moderate": 2
+    },
+    "food": {
+      "easy": 3,
+      "moderate": 1
+    },
+    "adventure": {
+      "moderate": 4,
+      "strenuous": 1
+    },
+    "outdoor": {
+      "easy": 3,
+      "moderate": 2
+    },
+    "culture": {
+      "easy": 3,
+      "moderate": 2
+    },
+    "arts": {
+      "easy": 4,
+      "moderate": 1
+    },
+    "nightlife": {
+      "easy": 4
+    },
+    "day_trips": {
+      "moderate": 2,
+      "easy": 3
+    },
+    "seasonal": {
+      "easy": 4
+    }
+  },
+  "tier_missing": [
+    "food_drink needs easy"
+  ],
+  "duplicate_names": [],
+  "unmappable_count": 0,
+  "total_experiences": 53,
+  "theme_count": 10,
+  "checks": [
+    {
+      "check": "Required experiences on board (5/6)",
+      "passed": false,
+      "detail": "Missing: Shibuya Crossing"
+    },
+    {
+      "check": "No hallucinated/forbidden experiences",
+      "passed": true,
+      "detail": "Clean"
+    },
+    {
+      "check": "Tier coverage (effort levels per theme)",
+      "passed": false,
+      "detail": "food_drink needs easy"
+    },
+    {
+      "check": "No duplicate experience names",
+      "passed": true,
+      "detail": "No duplicates"
+    },
+    {
+      "check": "Experiences are mappable (53/53)",
+      "passed": true,
+      "detail": "All mappable"
+    }
+  ],
+  "score": 88,
+  "tip_quality_score": 43,
+  "tip_quality_findings": [
+    "Overall, the tips provide insightful and specific experiences that enrich the visit, particularly excelling in the areas of uniqueness and emotional resonance.",
+    "  Ghibli Museum (9/10): This tip highlights a specific, lesser-known area of the museum that enhances the experience with a unique visual and emotional angle, making it a valuable insight for visitors.",
+    "  Senso-ji Temple (8/10): Offers a specific viewpoint that many might overlook, along with a seasonal context that enriches the visitor experience, though the mention of the temple itself is somewhat common.",
+    "  Nezu Shrine Azalea Festival (10/10): This tip draws attention to a specific spot at the festival that maximizes the beauty of the moment, combining natural elements for an unforgettable experience that is typically missed.",
+    "  Edo-Tokyo Handicraft Workshop (7/10): Provides practical advice on where to gain insights directly from artisans, but may lack the emotional connection or specific scenic aspect that would elevate it further.",
+    "  Traditional Geisha Experience in Kagurazaka (9/10): Encourages visitors to immerse themselves in a unique atmosphere that few others may experience, focusing on specific locations and sounds that enhance authenticity."
+  ],
+  "overall_score": 75,
+  "generated_at": "2026-06-16T16:39:26.369Z"
+}
